@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "wowamod:orangesoulpiece"
+    },
+    {
+      "item": "wowamod:orangesoulpiece"
+    },
+    {
+      "item": "wowamod:orangesoulpiece"
+    },
+    {
+      "item": "wowamod:orangesoulpiece"
+    },
+    {
+      "item": "wowamod:orangesoulpiece"
+    },
+    {
+      "item": "wowamod:orangesoulpiece"
+    },
+    {
+      "item": "wowamod:orangesoulpiece"
+    },
+    {
+      "item": "wowamod:orangesoulpiece"
+    },
+    {
+      "item": "wowamod:orangesoulpiece"
+    }
+  ],
+  "result": {
+    "item": "wowamod:orangesoul",
+    "count": 1
+  }
+}

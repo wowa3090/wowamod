@@ -1,0 +1,16 @@
+{
+  "_fv": 57,
+  "_type": "villagerprofession",
+  "definition": {
+    "displayName": "Emeraldshopper",
+    "pointOfInterest": {
+      "value": "CUSTOM:Blockforprofessia"
+    },
+    "actionSound": {
+      "value": "block.amethyst_cluster.break"
+    },
+    "hat": "None",
+    "professionTextureFile": "texture.png",
+    "zombifiedProfessionTextureFile": "texturemimic.png"
+  }
+}

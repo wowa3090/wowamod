@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wowamod:block/corruptedsoulsblock",
+    "up": "wowamod:block/corruptedsoulsblock",
+    "north": "wowamod:block/corruptedsoulsblock",
+    "east": "wowamod:block/corruptedsoulsblock",
+    "south": "wowamod:block/corruptedsoulsblock",
+    "west": "wowamod:block/corruptedsoulsblock",
+    "particle": "wowamod:block/corruptedsoulsblock"
+  },
+  "render_type": "solid"
+}

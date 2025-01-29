@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 1,
+    "blockingRenderType": 0,
+    "texture": "wowaswordanimation",
+    "customModelName": "wowa_sword:default",
+    "blockingModelName": "Normal blocking",
+    "name": "МЕЧ 3090",
+    "specialInformation": {
+      "fixedValue": [
+        "Меч 3090",
+        "Не сильнее клинка"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Wowamodvkladka"
+    },
+    "harvestLevel": 2,
+    "efficiency": 6.0,
+    "attackSpeed": 2.0,
+    "enchantability": 30,
+    "damageVsEntity": 15.5,
+    "usageCount": 6669,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "WowaswordPKM"
+    },
+    "onEntityHitWith": {
+      "name": "WowaswordPriUdarie"
+    },
+    "onItemInInventoryTick": {
+      "name": "Faza2"
+    },
+    "onItemInUseTick": {
+      "name": "Wowaswordbronya"
+    }
+  }
+}

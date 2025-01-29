@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.RED_FLOWER#4"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:BlacksoulMYPLACE"
+      },
+      {
+        "value": "CUSTOM:Truerose"
+      },
+      {
+        "value": "CUSTOM:WhitesoulMYPLACE"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.RED_FLOWER#0"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Rose"
+    },
+    "name": "rosecraft",
+    "namespace": "mod"
+  }
+}

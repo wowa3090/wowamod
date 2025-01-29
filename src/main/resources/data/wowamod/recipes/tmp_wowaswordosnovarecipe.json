@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "wowamod:magicironingot"
+    },
+    "b": {
+      "item": "wowamod:extractredsoul"
+    },
+    "c": {
+      "item": "wowamod:rainbowemerald"
+    }
+  },
+  "result": {
+    "item": "wowamod:wowaswordosnova",
+    "count": 1
+  }
+}

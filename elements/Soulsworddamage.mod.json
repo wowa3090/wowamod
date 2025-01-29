@@ -1,0 +1,12 @@
+{
+  "_fv": 57,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 0.2,
+    "scaling": "always",
+    "effects": "thorns",
+    "normalDeathMessage": "%1$s Умер от магии душ",
+    "itemDeathMessage": "%1$s Уничтожен %2$s используя %3$s",
+    "playerDeathMessage": "%1$s пытался убежать от %2$s, но потерпел крах"
+  }
+}

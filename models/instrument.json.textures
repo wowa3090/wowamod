@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "instrument_texture"
+      },
+      "name": "default"
+    }
+  }
+}

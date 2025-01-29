@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:obsidian"
+    },
+    {
+      "item": "minecraft:glass_pane"
+    },
+    {
+      "item": "wowamod:ironmass_1"
+    }
+  ],
+  "result": {
+    "item": "wowamod:osnovaaaaglass",
+    "count": 1
+  }
+}

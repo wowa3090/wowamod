@@ -1,0 +1,7 @@
+{
+  "parent": "wowamod:custom/wowa_sword",
+  "textures": {
+    "0": "wowamod:block/texture_wowasword",
+    "particle": "wowamod:item/wowaswordanimation"
+  }
+}

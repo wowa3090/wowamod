@@ -1,0 +1,3729 @@
+{
+  "mod_elements": [
+    {
+      "name": "Wowasword",
+      "type": "tool",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wowasword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/WowaswordItem.java",
+          "src/main/resources/assets/wowamod/models/item/wowasword.json"
+        ]
+      }
+    },
+    {
+      "name": "WowaswordPKM",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wowasword_pkm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/WowaswordPKMProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WowaswordPriUdarie",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wowasword_pri_udarie",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/WowaswordPriUdarieProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Soulcore",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulcore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/SoulcoreItem.java",
+          "src/main/resources/assets/wowamod/models/item/soulcore.json"
+        ]
+      }
+    },
+    {
+      "name": "Redemerald",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redemerald",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/RedemeraldItem.java",
+          "src/main/resources/assets/wowamod/models/item/redemerald.json"
+        ]
+      }
+    },
+    {
+      "name": "Greenemerald",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "greenemerald",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/greenemerald.json",
+          "src/main/java/net/wowamod/item/GreenemeraldItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Blueemerald",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blueemerald",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/blueemerald.json",
+          "src/main/java/net/wowamod/item/BlueemeraldItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Lightblueemerald",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightblueemerald",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/lightblueemerald.json",
+          "src/main/java/net/wowamod/item/LightblueemeraldItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Purpleemerald",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purpleemerald",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/PurpleemeraldItem.java",
+          "src/main/resources/assets/wowamod/models/item/purpleemerald.json"
+        ]
+      }
+    },
+    {
+      "name": "Whiteemerald",
+      "type": "item",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "whiteemerald",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/whiteemerald.json",
+          "src/main/java/net/wowamod/item/WhiteemeraldItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Yellowemerald",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellowemerald",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/yellowemerald.json",
+          "src/main/java/net/wowamod/item/YellowemeraldItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Rainbowemerald",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rainbowemerald",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/RainbowemeraldItem.java",
+          "src/main/resources/assets/wowamod/models/item/rainbowemerald.json"
+        ]
+      }
+    },
+    {
+      "name": "Redemeraldsdelka",
+      "type": "villagertrade",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emeraldssdelka",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Redsoul",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redsoul",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/RedsoulItem.java",
+          "src/main/resources/assets/wowamod/models/item/redsoul.json"
+        ]
+      }
+    },
+    {
+      "name": "Orangesoul",
+      "type": "item",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orangesoul",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/OrangesoulItem.java",
+          "src/main/resources/assets/wowamod/models/item/orangesoul.json"
+        ]
+      }
+    },
+    {
+      "name": "Yellowsoul",
+      "type": "item",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellowsoul",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/yellowsoul.json",
+          "src/main/java/net/wowamod/item/YellowsoulItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Greensoul",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "greensoul",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/GreensoulItem.java",
+          "src/main/resources/assets/wowamod/models/item/greensoul.json"
+        ]
+      }
+    },
+    {
+      "name": "Bluesoul",
+      "type": "item",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bluesoul",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/BluesoulItem.java",
+          "src/main/resources/assets/wowamod/models/item/bluesoul.json"
+        ]
+      }
+    },
+    {
+      "name": "Lightbluesoul",
+      "type": "item",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightbluesoul",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/LightbluesoulItem.java",
+          "src/main/resources/assets/wowamod/models/item/lightbluesoul.json"
+        ]
+      }
+    },
+    {
+      "name": "Purplesoul",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purplesoul",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/purplesoul.json",
+          "src/main/java/net/wowamod/item/PurplesoulItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Redsoulpiece",
+      "type": "item",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redsoulpiece",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/redsoulpiece.json",
+          "src/main/java/net/wowamod/item/RedsoulpieceItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Orangesoulpiece",
+      "type": "item",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orangesoulpiece",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/orangesoulpiece.json",
+          "src/main/java/net/wowamod/item/OrangesoulpieceItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Yellowsoulpiece",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellowsoulpiece",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/yellowsoulpiece.json",
+          "src/main/java/net/wowamod/item/YellowsoulpieceItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Greensoulpiece",
+      "type": "item",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "greensoulpiece",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/greensoulpiece.json",
+          "src/main/java/net/wowamod/item/GreensoulpieceItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Bluesoulpiece",
+      "type": "item",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bluesoulpiece",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/BluesoulpieceItem.java",
+          "src/main/resources/assets/wowamod/models/item/bluesoulpiece.json"
+        ]
+      }
+    },
+    {
+      "name": "Lightbluesoulpiece",
+      "type": "item",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightbluesoulpiece",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/lightbluesoulpiece.json",
+          "src/main/java/net/wowamod/item/LightbluesoulpieceItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Purplesoulpiece",
+      "type": "item",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purplesoulpiece",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/purplesoulpiece.json",
+          "src/main/java/net/wowamod/item/PurplesoulpieceItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Wowabronya",
+      "type": "armor",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wowabronya",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/wowabronya_leggings.json",
+          "src/main/resources/assets/wowamod/models/item/wowabronya_chestplate.json",
+          "src/main/java/net/wowamod/item/WowabronyaItem.java",
+          "src/main/resources/assets/wowamod/models/item/wowabronya_helmet.json",
+          "src/main/resources/assets/wowamod/models/item/wowabronya_boots.json"
+        ]
+      }
+    },
+    {
+      "name": "Soulsvazivatel",
+      "type": "item",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulsvazivatel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/soulsvazivatel.json",
+          "src/main/java/net/wowamod/item/SoulsvazivatelItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Soulcorecraft",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulcorecraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/soulcorecraft.json"
+        ]
+      }
+    },
+    {
+      "name": "Soulsvazivatelcraft",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulsvazivatelcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/soulsvazivatelcraft.json"
+        ]
+      }
+    },
+    {
+      "name": "Redsoulgiving",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redsoulgiving",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/RedsoulgivingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bluesoulgiving",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bluesoulgiving",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/BluesoulgivingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Lightbluesoulgiving",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightbluesoulgiving",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/LightbluesoulgivingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Redsoulcraft",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redsoulcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/redsoulcraft.json"
+        ]
+      }
+    },
+    {
+      "name": "Orangesoulcraft",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orangesoulcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/orangesoulcraft.json"
+        ]
+      }
+    },
+    {
+      "name": "Yellowsoulcraft",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellowsoulcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/yellowsoulcraft.json"
+        ]
+      }
+    },
+    {
+      "name": "Greensoulcraft",
+      "type": "recipe",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "greensoulcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/greensoulcraft.json"
+        ]
+      }
+    },
+    {
+      "name": "Bluesoulcraft",
+      "type": "recipe",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bluesoulcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/bluesoulcraft.json"
+        ]
+      }
+    },
+    {
+      "name": "Lightbluecraft",
+      "type": "recipe",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightbluecraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/lightbluecraft.json"
+        ]
+      }
+    },
+    {
+      "name": "Purplesoulcraft",
+      "type": "recipe",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purplesoulcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/purplesoulcraft.json"
+        ]
+      }
+    },
+    {
+      "name": "Greensoulgiving",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "greensoulgiving",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/GreensoulgivingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Purplesoulgiving",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purplesoulgiving",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/PurplesoulgivingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Yellowsoulgiving",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellowsoulgiving",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/YellowsoulgivingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Orangesoulgiving",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orangesoulgiving",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/OrangesoulgivingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Wowamodvkladka",
+      "type": "tab",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wowamodvkladka",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Orangesoulcraft2",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orangesoulcraft_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/orangesoulcraft_2.json"
+        ]
+      }
+    },
+    {
+      "name": "Superpalka",
+      "type": "item",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "superpalka",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/SuperpalkaItem.java",
+          "src/main/resources/assets/wowamod/models/item/superpalka.json"
+        ]
+      }
+    },
+    {
+      "name": "Superpalkacraft",
+      "type": "recipe",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "superpalkacraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/superpalkacraft.json"
+        ]
+      }
+    },
+    {
+      "name": "Rainbowemeraldcraft",
+      "type": "recipe",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rainbowemeraldcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/rainbowemeraldcraft.json"
+        ]
+      }
+    },
+    {
+      "name": "Wowaswordbronya",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wowaswordbronya",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/WowaswordbronyaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WowabronyaShliemanightvision",
+      "type": "procedure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wowabronya_shliemanightvision",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/WowabronyaShliemanightvisionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Wowabronyachestplate",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wowabronyachestplate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/WowabronyachestplateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Wowabronyashtani",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wowabronyashtani",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/WowabronyashtaniProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Wowabronyatapki",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wowabronyatapki",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/WowabronyatapkiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Wowabronyacraftring",
+      "type": "gui",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wowabronyacraftring",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/world/inventory/WowabronyacraftringMenu.java",
+          "src/main/java/net/wowamod/network/WowabronyacraftringButtonMessage.java",
+          "src/main/java/net/wowamod/client/gui/WowabronyacraftringScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "Crafterbroni",
+      "type": "block",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crafterbroni",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/block/crafterbroni.json",
+          "src/main/resources/assets/wowamod/models/item/crafterbroni.json",
+          "src/main/java/net/wowamod/block/entity/CrafterbroniBlockEntity.java",
+          "src/main/resources/assets/wowamod/blockstates/crafterbroni.json",
+          "src/main/java/net/wowamod/block/CrafterbroniBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Crafterbronicraft",
+      "type": "recipe",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crafterbronicraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/crafterbronicraft.json"
+        ]
+      }
+    },
+    {
+      "name": "Derjatili",
+      "type": "item",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "derjatili",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/DerjatiliItem.java",
+          "src/main/resources/assets/wowamod/models/item/derjatili.json"
+        ]
+      }
+    },
+    {
+      "name": "Derjatelicraft",
+      "type": "recipe",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "derjatelicraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/derjatelicraft.json"
+        ]
+      }
+    },
+    {
+      "name": "Mimictkanb",
+      "type": "item",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mimictkanb",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/mimictkanb.json",
+          "src/main/java/net/wowamod/item/MimictkanbItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Craftingwowabronya",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craftingwowabronya",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/CraftingwowabronyaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Mimic",
+      "type": "livingentity",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mimic",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/mimic_spawn_egg.json",
+          "src/main/java/net/wowamod/entity/MimicEntity.java",
+          "src/main/java/net/wowamod/client/renderer/MimicRenderer.java",
+          "src/main/resources/data/wowamod/forge/biome_modifier/mimic_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "Mimickoja",
+      "type": "item",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mimickoja",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/mimickoja.json",
+          "src/main/java/net/wowamod/item/MimickojaItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Mimictkanbcraft",
+      "type": "recipe",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mimictkanbcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/mimictkanbcraft.json"
+        ]
+      }
+    },
+    {
+      "name": "Emeraldshopper",
+      "type": "villagerprofession",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emeraldshopper",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Emeraldshoppersdelka",
+      "type": "villagertrade",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emeraldshoppersdelka",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Emeraldsgiving",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emeraldsgiving",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/EmeraldsgivingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Neuyazvimost",
+      "type": "potioneffect",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "neuyazvimost",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/potion/NeuyazvimostMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "NeuyazvimostPASSIVEffiekt",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "neuyazvimost_passiv_effiekt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/NeuyazvimostPASSIVEffiektProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Faza2",
+      "type": "procedure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "faza_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/Faza2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Blockforprofessia",
+      "type": "block",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blockforprofessia",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/block/BlockforprofessiaBlock.java",
+          "src/main/resources/assets/wowamod/models/item/blockforprofessia.json",
+          "src/main/resources/assets/wowamod/models/block/blockforprofessia.json",
+          "src/main/resources/assets/wowamod/blockstates/blockforprofessia.json"
+        ]
+      }
+    },
+    {
+      "name": "Blockprofessii",
+      "type": "structure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blockprofessii",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/worldgen/structure/blockprofessii.json",
+          "src/main/resources/data/wowamod/worldgen/structure_set/blockprofessii.json",
+          "src/main/resources/data/wowamod/worldgen/template_pool/blockprofessii.json"
+        ]
+      }
+    },
+    {
+      "name": "Fadingworldbeta2fazasound",
+      "type": "musicdisc",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fadingworldbeta_2fazasound",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/fadingworldbeta_2fazasound.json",
+          "src/main/java/net/wowamod/item/Fadingworldbeta2fazasoundItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Souls",
+      "type": "overlay",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "souls",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/client/screens/SoulsOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "Soulsgiving",
+      "type": "procedure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulsgiving",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/SoulsgivingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Soulsvivod",
+      "type": "procedure",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulsvivod",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/wowamod/procedures/SoulsvivodProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Adarkplacesound",
+      "type": "musicdisc",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adarkplacesound",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/adarkplacesound.json",
+          "src/main/java/net/wowamod/item/AdarkplacesoundItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Dissasebmlyrequired",
+      "type": "musicdisc",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dissasebmlyrequired",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/dissasebmlyrequired.json",
+          "src/main/java/net/wowamod/item/DissasebmlyrequiredItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Purplesoulgiving2",
+      "type": "procedure",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purplesoulgiving_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/Purplesoulgiving2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Nightmare",
+      "type": "livingentity",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nightmare",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/nightmare_spawn_egg.json",
+          "src/main/java/net/wowamod/entity/NightmareEntity.java",
+          "src/main/java/net/wowamod/client/renderer/NightmareRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "Nightmarerising",
+      "type": "overlay",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nightmarerising",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/client/screens/NightmarerisingOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "NightmarerisingUsloviiePokazaNalozhieniia",
+      "type": "procedure",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nightmarerising_usloviie_pokaza_nalozhieniia",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/wowamod/procedures/NightmarerisingUsloviiePokazaNalozhieniiaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Nightmareish",
+      "type": "potioneffect",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nightmareish",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/potion/NightmareishMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "Soulsworddamage",
+      "type": "damagetype",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulsworddamage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/damage_type/soulsworddamage.json"
+        ]
+      }
+    },
+    {
+      "name": "NightmarePriStolknovieniiIghrokaSSushchnostiu",
+      "type": "procedure",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nightmare_pri_stolknovienii_ighroka_s_sushchnostiu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/NightmarePriStolknovieniiIghrokaSSushchnostiuProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Soulsget",
+      "type": "command",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulsget",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/command/SoulsgetCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "Soulsgetprocedure",
+      "type": "procedure",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulsgetprocedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/SoulsgetprocedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TeleportPriNazhatiiKlavishi",
+      "type": "procedure",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleport_pri_nazhatii_klavishi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/TeleportPriNazhatiiKlavishiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Teleport",
+      "type": "keybind",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleport",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/network/TeleportMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "Soulsremoveprocedure",
+      "type": "procedure",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulsremoveprocedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/SoulsremoveprocedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Shadowblade",
+      "type": "tool",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shadowblade",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/shadowblade.json",
+          "src/main/java/net/wowamod/item/ShadowbladeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ShadowbladePriUdarie",
+      "type": "procedure",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shadowblade_pri_udarie",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/ShadowbladePriUdarieProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Soulsremoveall",
+      "type": "procedure",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulsremoveall",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/SoulsremoveallProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Shadowswordpassive",
+      "type": "procedure",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shadowswordpassive",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/ShadowswordpassiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Netherstarsword",
+      "type": "tool",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherstarsword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/netherstarsword.json",
+          "src/main/java/net/wowamod/item/NetherstarswordItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Blagoslovleniestar",
+      "type": "procedure",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blagoslovleniestar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/BlagoslovleniestarProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Blagoslovleniestaref",
+      "type": "potioneffect",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blagoslovleniestaref",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/potion/BlagoslovleniestarefMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "NetherstarswordPriUdariePoSushchnosti",
+      "type": "procedure",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherstarsword_pri_udarie_po_sushchnosti",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/NetherstarswordPriUdariePoSushchnostiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Netherstarrecipe",
+      "type": "recipe",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherstarrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/netherstarrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Redstonecommandblock",
+      "type": "block",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstonecommandblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/redstonecommandblock.json",
+          "src/main/resources/assets/wowamod/blockstates/redstonecommandblock.json",
+          "src/main/resources/assets/wowamod/models/block/redstonecommandblock.json",
+          "src/main/java/net/wowamod/block/RedstonecommandblockBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Magicironblock",
+      "type": "block",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magicironblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/magicironblock.json",
+          "src/main/resources/assets/wowamod/models/block/magicironblock.json",
+          "src/main/resources/assets/wowamod/blockstates/magicironblock.json",
+          "src/main/java/net/wowamod/block/MagicironblockBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Portconstructor",
+      "type": "block",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portconstructor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/blockstates/portconstructor.json",
+          "src/main/java/net/wowamod/block/entity/PortconstructorBlockEntity.java",
+          "src/main/resources/assets/wowamod/models/item/portconstructor.json",
+          "src/main/java/net/wowamod/block/PortconstructorBlock.java",
+          "src/main/resources/assets/wowamod/models/block/portconstructor.json"
+        ]
+      }
+    },
+    {
+      "name": "Interfaceconstructor",
+      "type": "block",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "interfaceconstructor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/interfaceconstructor.json",
+          "src/main/java/net/wowamod/block/entity/InterfaceconstructorBlockEntity.java",
+          "src/main/resources/assets/wowamod/models/block/interfaceconstructor.json",
+          "src/main/java/net/wowamod/block/InterfaceconstructorBlock.java",
+          "src/main/resources/assets/wowamod/blockstates/interfaceconstructor.json"
+        ]
+      }
+    },
+    {
+      "name": "Timer",
+      "type": "potioneffect",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/potion/TimerMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "Constructor",
+      "type": "procedure",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "constructor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/ConstructorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Constructorinterface",
+      "type": "gui",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "constructorinterface",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/client/gui/ConstructorinterfaceScreen.java",
+          "src/main/java/net/wowamod/world/inventory/ConstructorinterfaceMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "PortConstructora",
+      "type": "gui",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "port_constructora",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/client/gui/PortConstructoraScreen.java",
+          "src/main/java/net/wowamod/world/inventory/PortConstructoraMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "PortconstructorPriShchielchkiePKM",
+      "type": "procedure",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portconstructor_pri_shchielchkie_pkm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/PortconstructorPriShchielchkiePKMProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Redstoneport",
+      "type": "block",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstoneport",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/block/RedstoneportBlock.java",
+          "src/main/resources/assets/wowamod/blockstates/redstoneport.json",
+          "src/main/resources/assets/wowamod/models/block/redstoneport.json",
+          "src/main/resources/assets/wowamod/models/item/redstoneport.json"
+        ]
+      }
+    },
+    {
+      "name": "RedstoneportRiedstounVkliuchion",
+      "type": "procedure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstoneport_riedstoun_vkliuchion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/RedstoneportRiedstounVkliuchionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Constructorcreatewowasword",
+      "type": "procedure",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "constructorcreatewowasword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/ConstructorcreatewowaswordProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Wowaswordosnova",
+      "type": "item",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wowaswordosnova",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/wowaswordosnova.json",
+          "src/main/java/net/wowamod/item/WowaswordosnovaItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Redstonecorecraft",
+      "type": "recipe",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstonecorecraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/redstonecorecraft.json"
+        ]
+      }
+    },
+    {
+      "name": "Interfaceconstructorcraft",
+      "type": "recipe",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "interfaceconstructorcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/interfaceconstructorcraft.json"
+        ]
+      }
+    },
+    {
+      "name": "Ekranchik",
+      "type": "item",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ekranchik",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/ekranchik.json",
+          "src/main/java/net/wowamod/item/EkranchikItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Ekranchikrecipe",
+      "type": "recipe",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ekranchikrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/ekranchikrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Magicironingot",
+      "type": "item",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magicironingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/magicironingot.json",
+          "src/main/java/net/wowamod/item/MagicironingotItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Extractlbsoul",
+      "type": "item",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "extractlbsoul",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/ExtractlbsoulItem.java",
+          "src/main/resources/assets/wowamod/models/item/extractlbsoul.json"
+        ]
+      }
+    },
+    {
+      "name": "Kolba",
+      "type": "item",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kolba",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/KolbaItem.java",
+          "src/main/resources/assets/wowamod/models/item/kolba.json"
+        ]
+      }
+    },
+    {
+      "name": "Kolbacraft",
+      "type": "recipe",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kolbacraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/kolbacraft.json"
+        ]
+      }
+    },
+    {
+      "name": "Extractor",
+      "type": "block",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "extractor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/extractor.json",
+          "src/main/java/net/wowamod/block/ExtractorBlock.java",
+          "src/main/resources/assets/wowamod/blockstates/extractor.json",
+          "src/main/resources/assets/wowamod/models/block/extractor.json",
+          "src/main/java/net/wowamod/block/entity/ExtractorBlockEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "Extractgolubaysoul",
+      "type": "fluid",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "extractgolubaysoul",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/extractgolubaysoul_bucket.json",
+          "src/main/resources/assets/wowamod/blockstates/extractgolubaysoul.json",
+          "src/main/java/net/wowamod/fluid/ExtractgolubaysoulFluid.java",
+          "src/main/java/net/wowamod/block/ExtractgolubaysoulBlock.java",
+          "src/main/java/net/wowamod/item/ExtractgolubaysoulItem.java",
+          "src/main/resources/assets/wowamod/models/block/extractgolubaysoul.json",
+          "src/main/java/net/wowamod/fluid/types/ExtractgolubaysoulFluidType.java"
+        ]
+      }
+    },
+    {
+      "name": "Extractorinteface",
+      "type": "gui",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "extractorinteface",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/world/inventory/ExtractorintefaceMenu.java",
+          "src/main/java/net/wowamod/client/gui/ExtractorintefaceScreen.java",
+          "src/main/java/net/wowamod/network/ExtractorintefaceButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "Animationextractor",
+      "type": "procedure",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "animationextractor",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/wowamod/procedures/AnimationextractorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Animationextractor2",
+      "type": "procedure",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "animationextractor_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/Animationextractor2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Magicironingotrecipe",
+      "type": "recipe",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magicironingotrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/magicironingotrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Magicironblockrecipe",
+      "type": "recipe",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magicironblockrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/magicironblockrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Klava",
+      "type": "item",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "klava",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/klava.json",
+          "src/main/java/net/wowamod/item/KlavaItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Klavarecipe",
+      "type": "recipe",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "klavarecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/klavarecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Extractorrecipe",
+      "type": "recipe",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "extractorrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/extractorrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Rotorrecipe",
+      "type": "recipe",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rotorrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/rotorrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Rotor",
+      "type": "item",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rotor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/rotor.json",
+          "src/main/java/net/wowamod/item/RotorItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Redstoneportrecipe",
+      "type": "recipe",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstoneportrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/redstoneportrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Portconstructorrecipe",
+      "type": "recipe",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portconstructorrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/portconstructorrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Redstonecommandblockrecipe",
+      "type": "recipe",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstonecommandblockrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/redstonecommandblockrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Extractredsoul",
+      "type": "item",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "extractredsoul",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/extractredsoul.json",
+          "src/main/java/net/wowamod/item/ExtractredsoulItem.java"
+        ]
+      }
+    },
+    {
+      "name": "TmpWowaswordosnovarecipe",
+      "type": "recipe",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tmp_wowaswordosnovarecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/tmp_wowaswordosnovarecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Guidebook",
+      "type": "gui",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guidebook",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/network/GuidebookButtonMessage.java",
+          "src/main/java/net/wowamod/client/gui/GuidebookScreen.java",
+          "src/main/java/net/wowamod/world/inventory/GuidebookMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "Guidebookitem",
+      "type": "item",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guidebookitem",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/GuidebookitemItem.java",
+          "src/main/resources/assets/wowamod/models/item/guidebookitem.json",
+          "src/main/java/net/wowamod/item/inventory/GuidebookitemInventoryCapability.java"
+        ]
+      }
+    },
+    {
+      "name": "Guidebookstart",
+      "type": "gui",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guidebookstart",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/world/inventory/GuidebookstartMenu.java",
+          "src/main/java/net/wowamod/network/GuidebookstartButtonMessage.java",
+          "src/main/java/net/wowamod/client/gui/GuidebookstartScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "Startguidebook",
+      "type": "procedure",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "startguidebook",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/StartguidebookProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Backguide",
+      "type": "procedure",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "backguide",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/BackguideProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Shadowbladetooltip",
+      "type": "procedure",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shadowbladetooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/wowamod/procedures/ShadowbladetooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Guidebookrecipe",
+      "type": "recipe",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guidebookrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/guidebookrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "WhitesoulMYPLACE",
+      "type": "item",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "whitesoul_myplace",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/WhitesoulMYPLACEItem.java",
+          "src/main/resources/assets/wowamod/models/item/whitesoul_myplace.json"
+        ]
+      }
+    },
+    {
+      "name": "BlacksoulMYPLACE",
+      "type": "item",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blacksoul_myplace",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/BlacksoulMYPLACEItem.java",
+          "src/main/resources/assets/wowamod/models/item/blacksoul_myplace.json"
+        ]
+      }
+    },
+    {
+      "name": "Rose",
+      "type": "item",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rose",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/RoseItem.java",
+          "src/main/resources/assets/wowamod/models/item/rose.json"
+        ]
+      }
+    },
+    {
+      "name": "ShakerosePriNazhatiiKlavishi",
+      "type": "procedure",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shakerose_pri_nazhatii_klavishi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/ShakerosePriNazhatiiKlavishiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Trailofrose2",
+      "type": "particle",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trailofrose_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/particles/trailofrose_2.json",
+          "src/main/java/net/wowamod/client/particle/Trailofrose2Particle.java"
+        ]
+      }
+    },
+    {
+      "name": "CorruptedSoulsBlock",
+      "type": "block",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corrupted_souls_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/block/corrupted_souls_block.json",
+          "src/main/java/net/wowamod/block/CorruptedSoulsBlockBlock.java",
+          "src/main/resources/assets/wowamod/blockstates/corrupted_souls_block.json",
+          "src/main/resources/assets/wowamod/models/item/corrupted_souls_block.json"
+        ]
+      }
+    },
+    {
+      "name": "BlackWallsMyplace",
+      "type": "block",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_walls_myplace",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/block/BlackWallsMyplaceBlock.java",
+          "src/main/resources/assets/wowamod/models/item/black_walls_myplace.json",
+          "src/main/resources/assets/wowamod/models/block/black_walls_myplace.json",
+          "src/main/resources/assets/wowamod/blockstates/black_walls_myplace.json"
+        ]
+      }
+    },
+    {
+      "name": "Myplacevkladka",
+      "type": "tab",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "myplacevkladka",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Test",
+      "type": "blockstates",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/block/test_blockstate_0.json"
+        ]
+      }
+    },
+    {
+      "name": "Myplacezone",
+      "type": "dimension",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "myplacezone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/blockstates/myplacezone_portal.json",
+          "src/main/java/net/wowamod/world/dimension/MyplacezoneDimension.java",
+          "src/main/resources/assets/wowamod/models/item/myplacezone.json",
+          "src/main/resources/assets/wowamod/models/block/myplacezone_portal_ew.json",
+          "src/main/resources/assets/wowamod/models/block/myplacezone_portal_ns.json",
+          "src/main/resources/data/wowamod/dimension/myplacezone.json",
+          "src/main/java/net/wowamod/block/MyplacezonePortalBlock.java",
+          "src/main/java/net/wowamod/item/MyplacezoneItem.java",
+          "src/main/resources/data/wowamod/dimension_type/myplacezone.json",
+          "src/main/java/net/wowamod/world/teleporter/MyplacezoneTeleporter.java",
+          "src/main/java/net/wowamod/world/teleporter/MyplacezonePortalShape.java"
+        ]
+      }
+    },
+    {
+      "name": "MyPlaceBiome",
+      "type": "biome",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "my_place_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/worldgen/placed_feature/my_place_biome_tree.json",
+          "src/main/resources/data/wowamod/worldgen/biome/my_place_biome.json",
+          "src/main/resources/data/wowamod/worldgen/configured_feature/my_place_biome_tree.json"
+        ]
+      }
+    },
+    {
+      "name": "Truerose",
+      "type": "plant",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "truerose",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/block/TrueroseBlock.java",
+          "src/main/resources/data/wowamod/worldgen/configured_feature/truerose.json",
+          "src/main/resources/data/wowamod/worldgen/placed_feature/truerose.json",
+          "src/main/resources/data/wowamod/forge/biome_modifier/truerose_biome_modifier.json",
+          "src/main/resources/assets/wowamod/models/block/truerose.json",
+          "src/main/resources/assets/wowamod/blockstates/truerose.json",
+          "src/main/resources/assets/wowamod/models/item/truerose.json"
+        ]
+      }
+    },
+    {
+      "name": "Rosecraft",
+      "type": "recipe",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rosecraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/rosecraft.json"
+        ]
+      }
+    },
+    {
+      "name": "Myplacestructure",
+      "type": "loottable",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "myplacestructure",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/loot_tables/chests/myplacestructure.json"
+        ]
+      }
+    },
+    {
+      "name": "Myplacestruckture",
+      "type": "structure",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "myplacestruckture",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/worldgen/structure/myplacestruckture.json",
+          "src/main/resources/data/wowamod/worldgen/template_pool/myplacestruckture.json",
+          "src/main/resources/data/wowamod/worldgen/structure_set/myplacestruckture.json"
+        ]
+      }
+    },
+    {
+      "name": "Soulsview",
+      "type": "procedure",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulsview",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/wowamod/procedures/SoulsviewProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SoulsViewbuttonPriNazhatiiKlavishi",
+      "type": "procedure",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "souls_viewbutton_pri_nazhatii_klavishi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/SoulsViewbuttonPriNazhatiiKlavishiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SoulsViewbutton",
+      "type": "keybind",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "souls_viewbutton",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/network/SoulsViewbuttonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "Corruptedsoulsblockrecipe",
+      "type": "recipe",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corruptedsoulsblockrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/corruptedsoulsblockrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Myplacezonekeyrecipe",
+      "type": "recipe",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "myplacezonekeyrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/myplacezonekeyrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Vkeyability",
+      "type": "keybind",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vkeyability",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/network/VkeyabilityMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "VkeyabilityPriNazhatiiKlavishi",
+      "type": "procedure",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vkeyability_pri_nazhatii_klavishi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/VkeyabilityPriNazhatiiKlavishiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AaaGlass",
+      "type": "item",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aaa_glass",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/aaa_glass.json",
+          "src/main/java/net/wowamod/item/AaaGlassItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Ironmass1",
+      "type": "item",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ironmass_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/Ironmass1Item.java",
+          "src/main/resources/assets/wowamod/models/item/ironmass_1.json"
+        ]
+      }
+    },
+    {
+      "name": "Ironplastinewowa",
+      "type": "item",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ironplastinewowa",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/IronplastinewowaItem.java",
+          "src/main/resources/assets/wowamod/models/item/ironplastinewowa.json"
+        ]
+      }
+    },
+    {
+      "name": "Osnovaaaaglass",
+      "type": "item",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "osnovaaaaglass",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/osnovaaaaglass.json",
+          "src/main/java/net/wowamod/item/OsnovaaaaglassItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Osnovaaaglassrecipe",
+      "type": "recipe",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "osnovaaaglassrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/osnovaaaglassrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Aaaglassrecipe",
+      "type": "recipe",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aaaglassrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/aaaglassrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Blackironingot",
+      "type": "item",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blackironingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/BlackironingotItem.java",
+          "src/main/resources/assets/wowamod/models/item/blackironingot.json"
+        ]
+      }
+    },
+    {
+      "name": "Coppermass1",
+      "type": "item",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coppermass_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/coppermass_1.json",
+          "src/main/java/net/wowamod/item/Coppermass1Item.java"
+        ]
+      }
+    },
+    {
+      "name": "Wiresprovoda",
+      "type": "item",
+      "sortid": 188,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wiresprovoda",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/WiresprovodaItem.java",
+          "src/main/resources/assets/wowamod/models/item/wiresprovoda.json"
+        ]
+      }
+    },
+    {
+      "name": "Wiresrecipe",
+      "type": "recipe",
+      "sortid": 189,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wiresrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/wiresrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Instrumentprosto",
+      "type": "item",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "instrumentprosto",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/InstrumentprostoItem.java",
+          "src/main/resources/assets/wowamod/models/item/instrumentprosto.json"
+        ]
+      }
+    },
+    {
+      "name": "Ironmassrecipe",
+      "type": "recipe",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ironmassrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/ironmassrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Coppermassrecipe",
+      "type": "recipe",
+      "sortid": 192,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coppermassrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/coppermassrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Instrumentrecipe",
+      "type": "recipe",
+      "sortid": 193,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "instrumentrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/instrumentrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Myplacezonerecipe",
+      "type": "recipe",
+      "sortid": 194,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "myplacezonerecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/myplacezonerecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Betaelementloot",
+      "type": "lootmodifier",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "betaelementloot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/loot_modifiers/betaelementloot.json"
+        ]
+      }
+    },
+    {
+      "name": "Alphaelement",
+      "type": "item",
+      "sortid": 196,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alphaelement",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/alphaelement.json",
+          "src/main/java/net/wowamod/item/AlphaelementItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Alphaelementloot",
+      "type": "loottable",
+      "sortid": 197,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alphaelementloot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/loot_tables/blocks/alphaelementloot.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "wowaswordupgrade",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "souls",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "faza2",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "extractor",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "GuideBook",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "solo",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "cooldownrose",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "soulsview",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "fadingworld-2faza",
+      "files": [
+        "fadingworld"
+      ],
+      "category": "music",
+      "subtitle": "\u003d)"
+    },
+    {
+      "name": "faza2perexod",
+      "files": [
+        "moie_vidieo1"
+      ],
+      "category": "neutral",
+      "subtitle": "HAHAHAHAHAHAH"
+    },
+    {
+      "name": "happyandsad",
+      "files": [
+        "happyandsad"
+      ],
+      "category": "music",
+      "subtitle": "a dark place"
+    },
+    {
+      "name": "disassembly_required",
+      "files": [
+        "disblyreq"
+      ],
+      "category": "music",
+      "subtitle": "s"
+    },
+    {
+      "name": "nightmare.trojansound",
+      "files": [
+        "223297__glitchedtones__glitch-element-04"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "ambientmyplacezone",
+      "files": [
+        "y2mate.mx-the_end_original-1080p_1"
+      ],
+      "category": "ambient",
+      "subtitle": ""
+    }
+  ],
+  "language_map": {
+    "ru_ru": {
+      "item.wowamod.ironplastinewowa": "iron plastine",
+      "item.wowamodfabric.lightbluesoul": "Голубая душа",
+      "item.wowamodfabric.fadingworldbeta_2fazasound": "Fadingworldbeta2fazasound",
+      "item.wowamodfabric.soulcore": "Ядро Душ",
+      "gui.wowamodfabric.extractorinteface.label_extractorfluid": "ExtractorFluid",
+      "item.wowamod.redsoulpiece": "Частичка Красной души",
+      "effect.wowamodfabric.nightmareish": "NIGHTMARISH ENDINGE",
+      "item.wowamod.rainbowemerald": "Радужный?Изумруд",
+      "item.wowamod.lightbluesoul": "Голубая душа",
+      "item.wowamodfabric.redsoul": "Красная Душа",
+      "gui.wowamod.guidebookstart.label_nachalo": "Начало",
+      "item.wowamodfabric.fadingworldbeta_2fazasound.desc": "beta sound for 2 phase",
+      "key.wowamodfabric.teleport": "Телепорт",
+      "biome.wowamod.my_place_biome": "My Place Biome",
+      "item.wowamod.greenemerald": "Зелёный Изумруд",
+      "entity.wowamod.nightmare": "Nightmare.trojan",
+      "block.wowamod.crafterbroni": "Необычный Механизм",
+      "gui.wowamod.extractorinteface.label_centrifuge": "Beta Centrifuge",
+      "subtitles.fadingworld-2faza": "\u003d)",
+      "item.wowamod.klava": "Клавиатура",
+      "item.wowamod.kolba": "Пустая колба",
+      "block.wowamodfabric.extractor": "Extractor",
+      "block.wowamodfabric.magicironblock": "Сталемагический блок",
+      "item_group.wowamodfabric.wowamodvkladka": "wowa3090mod",
+      "item.wowamodfabric.nightmare_spawn_egg": "Nightmare.trojan Spawn Egg",
+      "gui.wowamod.wowabronyacraftring.button_empty": "Создать",
+      "effect.wowamod.timer": "Timer",
+      "block.wowamodfabric.extractgolubaysoul": "Extractgolubaysoul",
+      "item.wowamod.wowaswordosnova": "Основа для меча",
+      "gui.wowamod.wowabronyacraftring.label_crafting": "Создание предметов",
+      "item.wowamodfabric.orangesoul": "Оранжевая душа",
+      "gui.wowamodfabric.souls.label_souls": "Души",
+      "item.wowamodfabric.lightbluesoulpiece": "Частичка Голубой души",
+      "item.wowamod.aaa_glass": "Усиленное стекло",
+      "item.wowamod.wowabronya_chestplate": "Нагрудник",
+      "item.wowamodfabric.bluesoulpiece": "Частичка Синей души",
+      "gui.wowamodfabric.extractorinteface.button_start": "start",
+      "effect.wowamodfabric.blagoslovleniestaref": "Благословление звезды",
+      "item.wowamod.magicironingot": "Сталемагический слиток",
+      "item.wowamodfabric.wowabronya_chestplate": "Нагрудник ",
+      "item.wowamodfabric.superpalka": "Жезл",
+      "key.wowamod.teleport": "Teleport",
+      "effect.wowamod.neuyazvimost": "Неуязвимость!",
+      "gui.wowamod.guidebook.label_nachalo": "Начало",
+      "item.wowamod.redsoul": "Красная Душа",
+      "item.wowamodfabric.greensoul": "Зелёная душа",
+      "item.wowamod.bluesoulpiece": "Частичка Синий души",
+      "item.wowamod.wowabronya_boots": "Ботинки ",
+      "item.wowamod.blackironingot": "Черное железо",
+      "effect.wowamod.nightmareish": "NIGHTMARISH ENDINGE",
+      "item.wowamod.orangesoul": "Оранжевая душа",
+      "gui.wowamod.guidebook.label_izumrudy": "Изумруды",
+      "gui.wowamod.extractorinteface.label_empty": "---------",
+      "item.wowamod.rose": "Rose",
+      "item.wowamod.rotor": "Rotor",
+      "gui.wowamodfabric.extractorinteface.label_animation": "animation",
+      "item.wowamod.adarkplacesound.desc": "A Dark Place - Happy and Sad",
+      "effect.wowamodfabric.neuyazvimost": "Неуязвимость!",
+      "gui.wowamod.guidebook.label_dushi": "Души",
+      "gui.wowamodfabric.port_constructora.label_port": "TEST form",
+      "item.wowamod.greensoulpiece": "Частичка Зелёной души",
+      "fluid.wowamodfabric.extractgolubaysoul": "Extractgolubaysoul",
+      "block.wowamodfabric.redstonecommandblock": "Р.К.Б",
+      "item.wowamodfabric.wowabronya_leggings": "Поножи ",
+      "item.wowamodfabric.soulsvazivatel": "Связыватель Душ",
+      "item.wowamod.purpleemerald": "Пёрпл Изумруд",
+      "item.wowamodfabric.kolba": "Пустая колба",
+      "gui.wowamodfabric.wowabronyacraftring.label_empty": "\u003e",
+      "death.attack.soulsworddamage": "%1$s Умер от магии душ",
+      "item.wowamod.redemerald": "Красный Изумруд",
+      "item.wowamodfabric.klava": "Клавиатура",
+      "block.wowamod.blockforprofessia": "Профессиональный блок",
+      "item.wowamod.fadingworldbeta_2fazasound": "Fadingworldbeta2fazasound",
+      "entity.minecraft.villager.wowamodfabric.emeraldshopper": "Изумрудный скупщик",
+      "subtitles.disassembly_required": "s",
+      "item.wowamod.greensoul": "Зелёная душа",
+      "item.wowamod.extractgolubaysoul_bucket": "Extractgolubaysoul Bucket",
+      "block.wowamod.magicironblock": "Сталемагический блок",
+      "item.wowamodfabric.yellowsoul": "Жёлтая душа",
+      "gui.wowamod.guidebookstart.label_kozhi_mimika": "Кожи мимика",
+      "item.wowamodfabric.ekranchik": "Экран",
+      "item.wowamod.shadowblade": "Теневой клинок",
+      "item.wowamod.superpalka": "Жезл",
+      "item.wowamod.blacksoul_myplace": "Черная душа из My Place",
+      "item.wowamod.myplacezone": "MyPlaceZone",
+      "item.wowamod.derjatili": "Держатель для необычного механизма",
+      "item_group.wowamod.myplacevkladka": "My place",
+      "gui.wowamod.guidebookstart.label_zhielatielno_zapastis_miediu_i_zhiel": "Желательно запастись медью и железом",
+      "item.wowamod.osnovaaaaglass": "Незакалённое Усиленное стекло",
+      "death.attack.soulsworddamage.player": "%1$s пытался убежать от %2$s, но потерпел крах",
+      "item.wowamodfabric.lightblueemerald": "Голубой Изумруд",
+      "item.wowamod.soulsvazivatel": "Связыватель Душ",
+      "item.wowamodfabric.bluesoul": "Синяя душа",
+      "gui.wowamod.guidebook.label_krafty": "Крафты",
+      "item.wowamod.wowasword": "Клинок Вовы",
+      "item.wowamodfabric.mimic_spawn_egg": "Мимик Спавн",
+      "item.wowamod.nightmare_spawn_egg": "Nightmare.trojan Spawn Egg",
+      "block.wowamod.corrupted_souls_block": "Corrupted Souls Block",
+      "item.wowamodfabric.greenemerald": "Зелёный Изумруд",
+      "item.wowamodfabric.rotor": "Ротор",
+      "block.wowamod.redstonecommandblock": "Р.К.Б",
+      "gui.wowamodfabric.wowabronyacraftring.label_crafting": "Создание предметов",
+      "item.wowamod.wowabronya_helmet": "Шлем",
+      "item.wowamod.yellowsoulpiece": "Частичка Жёлтой души",
+      "item.wowamod.mimic_spawn_egg": "Мимик Spawn Egg",
+      "gui.wowamod.constructorinterface.label_constructor": "Constructor",
+      "entity.wowamod.mimic": "Мимик",
+      "item.wowamod.dissasebmlyrequired": "Dissasebmly Required",
+      "gui.wowamod.port_constructora.label_port": "Основа",
+      "item.wowamodfabric.wowabronya_helmet": "Шлем ",
+      "block.wowamod.extractor": "Extractor",
+      "item.wowamodfabric.redemerald": "Красный Изумруд",
+      "entity.wowamodfabric.nightmare": "Nightmare.trojan",
+      "item.wowamod.whitesoul_myplace": "Белая душа из игры MY PLACE",
+      "item.wowamodfabric.dissasebmlyrequired": "Dissasebmly Required",
+      "item.wowamod.coppermass_1": "Медная масса",
+      "subtitles.happyandsad": "a dark place",
+      "item.wowamodfabric.yellowsoulpiece": "Частичка Жёлтой души",
+      "subtitles.ambientmyplacezone": "",
+      "item.wowamod.dissasebmlyrequired.desc": "Dissasebmly Required",
+      "gui.wowamod.extractorinteface.label_empty1": "|",
+      "gui.wowamodfabric.constructorinterface.label_constructor": "Constructor",
+      "item.wowamod.fadingworldbeta_2fazasound.desc": "beta sound for 2 phase",
+      "item.wowamod.guidebookitem": "Планшет",
+      "item.wowamodfabric.magicironingot": "Сталемагический слиток",
+      "item.wowamod.ironmass_1": "Железная масса",
+      "item.wowamod.wowabronya_leggings": "Поножи",
+      "effect.wowamod.blagoslovleniestaref": "Благословление звезды",
+      "entity.wowamodfabric.mimic": "Мимик",
+      "item.wowamodfabric.yellowemerald": "Жёлтый Изумруд",
+      "subtitles.nightmare.trojansound": "",
+      "item.wowamod.lightblueemerald": "Голубой Изумруд",
+      "gui.wowamod.myplace.label_percent_for_cd": "percent for cd",
+      "gui.wowamodfabric.wowabronyacraftring.button_empty": "Создать",
+      "gui.wowamod.guidebookstart.label_dush": "Душ",
+      "item.wowamodfabric.extractlbsoul": "Экстракт голубой души",
+      "gui.wowamodfabric.extractorinteface.label_centrifuge": "Centrifuge",
+      "item_group.wowamod.wowamodvkladka": "wowa3090mod",
+      "block.wowamod.portconstructor": "Порт конструктора",
+      "key.wowamod.vkeyability": "Ability 1",
+      "item.wowamod.yellowsoul": "Жёлтая душа",
+      "item.wowamodfabric.netherstarsword": "Звёздный меч",
+      "item.wowamodfabric.whiteemerald": "Белый Изумруд",
+      "block.wowamod.redstoneport": "Редстоун порт конструктора",
+      "item.wowamodfabric.blueemerald": "Синий изумруд",
+      "item.wowamod.yellowemerald": "Жёлтый Изумруд",
+      "item.wowamodfabric.rainbowemerald": "Радужный Изумруд",
+      "gui.wowamodfabric.extractorinteface.label_empty1": "|",
+      "item.wowamod.adarkplacesound": "Happy and Sad",
+      "gui.wowamodfabric.extractorinteface.label_energy": "Energy :",
+      "item.wowamod.mimickoja": "\"Кожа\" мимика",
+      "item.wowamodfabric.wowabronya_boots": "Ботинки",
+      "item.wowamodfabric.purplesoul": "Фиолетовая душа",
+      "block.wowamod.black_walls_myplace": "Black Walls Myplace",
+      "item.wowamod.lightbluesoulpiece": "Частичка Голубой души",
+      "item.wowamod.extractlbsoul": "Экстракт голубой души",
+      "item.wowamodfabric.shadowblade": "Теневой клинок",
+      "block.wowamodfabric.portconstructor": "Порт конструктора",
+      "item.wowamodfabric.mimickoja": "\"Кожа\" мимика",
+      "item.wowamodfabric.purpleemerald": "Пёрпл Изумруд",
+      "gui.wowamod.extractorinteface.button_start": "start",
+      "entity.minecraft.villager.wowamod.emeraldshopper": "Изумрудный добытчик",
+      "gui.wowamod.guidebook.label_ekstraktor": "Экстрактор",
+      "block.wowamod.interfaceconstructor": "Интерфейс конструктора",
+      "item.wowamod.instrumentprosto": "\"Инструмент\"",
+      "item.wowamodfabric.purplesoulpiece": "Частичка Фиолетовой души",
+      "item.wowamod.purplesoul": "Фиолетовая душа",
+      "key.wowamod.souls_viewbutton": "Кол-во душ",
+      "block.wowamod.truerose": "Роза",
+      "item.wowamodfabric.extractredsoul": "Extractredsoul",
+      "block.wowamodfabric.crafterbroni": "Необычный Механизм",
+      "block.wowamodfabric.redstoneport": "Редстоун порт конструктора",
+      "item.wowamod.whiteemerald": "Белый Изумруд",
+      "block.wowamod.extractgolubaysoul": "Extractgolubaysoul",
+      "gui.wowamodfabric.extractorinteface.label_empty": "---------",
+      "item.wowamodfabric.adarkplacesound.desc": "A Dark Place - Happy and Sad",
+      "gui.wowamod.guidebookstart.button_nazad": "Назад",
+      "item.wowamodfabric.adarkplacesound": "Happy and Sad",
+      "item.wowamod.soulcore": "ЯдроДуш",
+      "item.wowamodfabric.greensoulpiece": "Частичка Зелёной души",
+      "block.wowamodfabric.blockforprofessia": "Профессиональный блок",
+      "item.wowamod.alphaelement": "Alpha element",
+      "item.wowamodfabric.derjatili": "Держатель для необычного механизма",
+      "item.wowamodfabric.mimictkanb": "Мимикрирующая Ткань",
+      "item.wowamod.orangesoulpiece": "Частичка Оранжевой души",
+      "effect.wowamodfabric.timer": "Таймер",
+      "item.wowamodfabric.extractgolubaysoul_bucket": "Extractgolubaysoul Bucket",
+      "fluid.wowamod.extractgolubaysoul": "Extractgolubaysoul",
+      "gui.wowamod.guidebook.label_multiblok": "Мультиблок",
+      "item.wowamod.netherstarsword": "Звёздный меч",
+      "item.wowamodfabric.redsoulpiece": "Частичка Красной души",
+      "subtitles.faza2perexod": "HAHAHAHAHAHAH",
+      "item.wowamod.blueemerald": "Синий изумруд",
+      "item.wowamod.extractredsoul": "Экстракт красной души",
+      "gui.wowamodfabric.constructorinterface.button_create_test": "create (test)",
+      "item.wowamod.ekranchik": "Экран",
+      "item.wowamod.wiresprovoda": "Провода",
+      "item.wowamodfabric.dissasebmlyrequired.desc": "Dissasebmly Required",
+      "death.attack.soulsworddamage.item": "%1$s Уничтожен %2$s используя %3$s",
+      "gui.wowamod.wowabronyacraftring.label_empty": "\u003e",
+      "item.wowamodfabric.wowasword": "Клинок Вовы",
+      "block.wowamodfabric.interfaceconstructor": "Интерфейс",
+      "item.wowamod.mimictkanb": "Мимикрирующая Ткань",
+      "gui.wowamod.guidebookstart.label_dlia_nachala_vam_ponadobitsia_nait": "Для начала вам понадобиться найти множество ресурсов в виде :",
+      "item.wowamodfabric.orangesoulpiece": "Частичка Оранжевой души",
+      "item.wowamodfabric.wowaswordosnova": "Основа для меча",
+      "gui.wowamod.guidebookstart.label_izumrudov": "Изумрудов",
+      "item.wowamod.bluesoul": "Синяя душа",
+      "item.wowamod.purplesoulpiece": "Частичка Фиолетовой души"
+    },
+    "en_us": {
+      "item.wowamod.ironplastinewowa": "iron plastine",
+      "item.wowamodfabric.lightbluesoul": "Голубая душа",
+      "item.wowamodfabric.fadingworldbeta_2fazasound": "Fadingworldbeta2fazasound",
+      "item.wowamodfabric.soulcore": "ЯдроДуш",
+      "gui.wowamodfabric.extractorinteface.label_extractorfluid": "ExtractorFluid",
+      "item.wowamod.redsoulpiece": "Частичка Красной души",
+      "effect.wowamodfabric.nightmareish": "NIGHTMARISH ENDINGE",
+      "item.wowamod.rainbowemerald": "Радужный Изумруд",
+      "item.wowamod.lightbluesoul": "Голубая душа",
+      "item.wowamodfabric.redsoul": "Красная Душа",
+      "gui.wowamod.guidebookstart.label_nachalo": "Начало",
+      "item.wowamodfabric.fadingworldbeta_2fazasound.desc": "beta sound for 2 phase",
+      "key.wowamodfabric.teleport": "Teleport",
+      "biome.wowamod.my_place_biome": "My Place Biome",
+      "item.wowamod.greenemerald": "Зелёный Изумруд",
+      "entity.wowamod.nightmare": "Nightmare.trojan",
+      "block.wowamod.crafterbroni": "Необычный Механизм",
+      "gui.wowamod.extractorinteface.label_centrifuge": "Beta Centrifuge",
+      "item.wowamod.klava": "Клавиатура",
+      "subtitles.fadingworld-2faza": "\u003d)",
+      "item.wowamod.kolba": "Пустая колба",
+      "block.wowamodfabric.extractor": "Extractor",
+      "item_group.wowamodfabric.wowamodvkladka": "wowa3090mod",
+      "block.wowamodfabric.magicironblock": "Сталемагический блок",
+      "item.wowamodfabric.nightmare_spawn_egg": "Nightmare.trojan Spawn Egg",
+      "gui.wowamod.wowabronyacraftring.button_empty": "Создать",
+      "effect.wowamod.timer": "Timer",
+      "block.wowamodfabric.extractgolubaysoul": "Extractgolubaysoul",
+      "item.wowamod.wowaswordosnova": "Основа для меча",
+      "gui.wowamod.wowabronyacraftring.label_crafting": "Создание предметов",
+      "item.wowamodfabric.orangesoul": "Оранжевая душа",
+      "gui.wowamodfabric.souls.label_souls": "souls",
+      "item.wowamodfabric.lightbluesoulpiece": "Частичка Голубой души",
+      "item.wowamod.aaa_glass": "Усиленное стекло",
+      "item.wowamod.wowabronya_chestplate": "Нагрудник 3090",
+      "item.wowamodfabric.bluesoulpiece": "Частичка Синий души",
+      "gui.wowamodfabric.extractorinteface.button_start": "start",
+      "effect.wowamodfabric.blagoslovleniestaref": "Благословление звезды",
+      "item.wowamod.magicironingot": "Сталемагический слиток",
+      "item.wowamodfabric.wowabronya_chestplate": "Нагрудник 3090",
+      "item.wowamodfabric.superpalka": "Жезл",
+      "key.wowamod.teleport": "Teleport",
+      "effect.wowamod.neuyazvimost": "Неуязвимость!",
+      "item.wowamod.redsoul": "Красная Душа",
+      "gui.wowamod.guidebook.label_nachalo": "Начало",
+      "item.wowamodfabric.greensoul": "Зелёная душа",
+      "item.wowamod.bluesoulpiece": "Частичка Синий души",
+      "item.wowamod.wowabronya_boots": "Ботинки 3090",
+      "item.wowamod.blackironingot": "Черное железо",
+      "effect.wowamod.nightmareish": "NIGHTMARISH ENDINGE",
+      "item.wowamod.orangesoul": "Оранжевая душа",
+      "gui.wowamod.guidebook.label_izumrudy": "Изумруды",
+      "gui.wowamod.extractorinteface.label_empty": "---------",
+      "item.wowamod.rose": "Rose",
+      "item.wowamod.rotor": "Rotor",
+      "gui.wowamodfabric.extractorinteface.label_animation": "animation",
+      "item.wowamod.adarkplacesound.desc": "A Dark Place - Happy and Sad",
+      "effect.wowamodfabric.neuyazvimost": "Неуязвимость!",
+      "gui.wowamod.guidebook.label_dushi": "Души",
+      "gui.wowamodfabric.port_constructora.label_port": "Основа",
+      "item.wowamod.greensoulpiece": "Частичка Зелёной души",
+      "fluid.wowamodfabric.extractgolubaysoul": "Extractgolubaysoul",
+      "block.wowamodfabric.redstonecommandblock": "Р.К.Б",
+      "item.wowamodfabric.wowabronya_leggings": "Поножи 3090",
+      "item.wowamodfabric.soulsvazivatel": "Связыватель Душ",
+      "item.wowamod.purpleemerald": "Пёрпл Изумруд",
+      "item.wowamodfabric.kolba": "Пустая колба",
+      "gui.wowamodfabric.wowabronyacraftring.label_empty": "\u003e",
+      "death.attack.soulsworddamage": "%1$s Умер от магии душ",
+      "item.wowamod.redemerald": "Красный Изумруд",
+      "item.wowamodfabric.klava": "Клавиатура",
+      "block.wowamod.blockforprofessia": "Профессиональный блок",
+      "item.wowamod.fadingworldbeta_2fazasound": "Fadingworldbeta2fazasound",
+      "entity.minecraft.villager.wowamodfabric.emeraldshopper": "Emeraldshopper",
+      "subtitles.disassembly_required": "s",
+      "item.wowamod.greensoul": "Зелёная душа",
+      "item.wowamod.extractgolubaysoul_bucket": "Extractgolubaysoul Bucket",
+      "block.wowamod.magicironblock": "Сталемагический блок",
+      "item.wowamodfabric.yellowsoul": "Жёлтая душа",
+      "gui.wowamod.guidebookstart.label_kozhi_mimika": "Кожи мимика",
+      "item.wowamodfabric.ekranchik": "Экран",
+      "item.wowamod.shadowblade": "Теневой клинок",
+      "item.wowamod.myplacezone": "MyPlaceZone",
+      "item.wowamod.blacksoul_myplace": "Черная душа из My Place",
+      "item.wowamod.superpalka": "Жезл",
+      "item.wowamod.derjatili": "Держатель для необычного механизма",
+      "item_group.wowamod.myplacevkladka": "My place",
+      "gui.wowamod.guidebookstart.label_zhielatielno_zapastis_miediu_i_zhiel": "Желательно запастись медью и железом",
+      "item.wowamod.osnovaaaaglass": "Незакалённое Усиленное стекло",
+      "death.attack.soulsworddamage.player": "%1$s пытался убежать от %2$s, но потерпел крах",
+      "item.wowamodfabric.lightblueemerald": "Голубой Изумруд",
+      "item.wowamod.soulsvazivatel": "Связыватель Душ",
+      "item.wowamodfabric.bluesoul": "Синяя душа",
+      "gui.wowamod.guidebook.label_krafty": "Крафты",
+      "item.wowamod.wowasword": "МЕЧ 3090",
+      "item.wowamodfabric.mimic_spawn_egg": "Мимик Spawn Egg",
+      "item.wowamod.nightmare_spawn_egg": "Nightmare.trojan Spawn Egg",
+      "block.wowamod.corrupted_souls_block": "Corrupted Souls Block",
+      "item.wowamodfabric.greenemerald": "Зелёный Изумруд",
+      "item.wowamodfabric.rotor": "Rotor",
+      "block.wowamod.redstonecommandblock": "Р.К.Б",
+      "gui.wowamodfabric.wowabronyacraftring.label_crafting": "Создание предметов",
+      "item.wowamod.wowabronya_helmet": "Шлем 3090",
+      "item.wowamod.yellowsoulpiece": "Частичка Жёлтой души",
+      "item.wowamod.mimic_spawn_egg": "Мимик Spawn Egg",
+      "gui.wowamod.constructorinterface.label_constructor": "Constructor",
+      "entity.wowamod.mimic": "Мимик",
+      "item.wowamod.dissasebmlyrequired": "Dissasebmly Required",
+      "gui.wowamod.port_constructora.label_port": "Основа",
+      "item.wowamodfabric.wowabronya_helmet": "Шлем 3090",
+      "block.wowamod.extractor": "Extractor",
+      "item.wowamodfabric.redemerald": "Красный Изумруд",
+      "entity.wowamodfabric.nightmare": "Nightmare.trojan",
+      "item.wowamod.whitesoul_myplace": "Белая душа из игры MY PLACE",
+      "item.wowamodfabric.dissasebmlyrequired": "Dissasebmly Required",
+      "item.wowamod.coppermass_1": "Медная масса",
+      "subtitles.happyandsad": "a dark place",
+      "item.wowamodfabric.yellowsoulpiece": "Частичка Жёлтой души",
+      "subtitles.ambientmyplacezone": "",
+      "item.wowamod.dissasebmlyrequired.desc": "Dissasebmly Required",
+      "gui.wowamod.extractorinteface.label_empty1": "|",
+      "gui.wowamodfabric.constructorinterface.label_constructor": "Constructor",
+      "item.wowamod.fadingworldbeta_2fazasound.desc": "beta sound for 2 phase",
+      "item.wowamod.guidebookitem": "Guidebookitem",
+      "item.wowamodfabric.magicironingot": "Сталемагический слиток",
+      "item.wowamod.ironmass_1": "Ironmass ",
+      "item.wowamod.wowabronya_leggings": "Поножи 3090",
+      "effect.wowamod.blagoslovleniestaref": "Благословление звезды",
+      "entity.wowamodfabric.mimic": "Мимик",
+      "item.wowamodfabric.yellowemerald": "Жёлтый Изумруд",
+      "subtitles.nightmare.trojansound": "",
+      "item.wowamod.lightblueemerald": "Голубой Изумруд",
+      "gui.wowamod.myplace.label_percent_for_cd": "percent for cd",
+      "gui.wowamodfabric.wowabronyacraftring.button_empty": "Создать",
+      "gui.wowamod.guidebookstart.label_dush": "Душ",
+      "item.wowamodfabric.extractlbsoul": "Экстракт голубой души",
+      "gui.wowamodfabric.extractorinteface.label_centrifuge": "Beta Centrifuge",
+      "item_group.wowamod.wowamodvkladka": "wowa3090mod",
+      "block.wowamod.portconstructor": "Порт конструктора",
+      "key.wowamod.vkeyability": "Ability 1",
+      "item.wowamod.yellowsoul": "Жёлтая душа",
+      "item.wowamodfabric.netherstarsword": "Звёздный меч",
+      "item.wowamodfabric.whiteemerald": "Белый Изумруд",
+      "block.wowamod.redstoneport": "Редстоун порт конструктора",
+      "item.wowamodfabric.blueemerald": "Синий изумруд",
+      "item.wowamod.yellowemerald": "Жёлтый Изумруд",
+      "item.wowamodfabric.rainbowemerald": "Радужный?Изумруд",
+      "gui.wowamodfabric.extractorinteface.label_empty1": "|",
+      "item.wowamod.adarkplacesound": "Happy and Sad",
+      "gui.wowamodfabric.extractorinteface.label_energy": "Energy :",
+      "item.wowamod.mimickoja": "\"Кожа\" мимика",
+      "item.wowamodfabric.wowabronya_boots": "Ботинки 3090",
+      "item.wowamodfabric.purplesoul": "Фиолетовая душа",
+      "block.wowamod.black_walls_myplace": "Black Walls Myplace",
+      "item.wowamod.lightbluesoulpiece": "Частичка Голубой души",
+      "item.wowamod.extractlbsoul": "Экстракт голубой души",
+      "item.wowamodfabric.shadowblade": "Теневой клинок",
+      "block.wowamodfabric.portconstructor": "Порт конструктора",
+      "item.wowamodfabric.mimickoja": "\"Кожа\" мимика",
+      "item.wowamodfabric.purpleemerald": "Пёрпл Изумруд",
+      "gui.wowamod.extractorinteface.button_start": "start",
+      "entity.minecraft.villager.wowamod.emeraldshopper": "Emeraldshopper",
+      "gui.wowamod.guidebook.label_ekstraktor": "Экстрактор",
+      "block.wowamod.interfaceconstructor": "Интерфейс конструктора",
+      "item.wowamod.instrumentprosto": "\"Инструмент\"",
+      "item.wowamodfabric.purplesoulpiece": "Частичка Фиолетовой души",
+      "item.wowamod.purplesoul": "Фиолетовая душа",
+      "key.wowamod.souls_viewbutton": "Souls View",
+      "block.wowamod.truerose": "Роза",
+      "item.wowamodfabric.extractredsoul": "Extractredsoul",
+      "block.wowamodfabric.crafterbroni": "Необычный Механизм",
+      "block.wowamodfabric.redstoneport": "Редстоун порт конструктора",
+      "item.wowamod.whiteemerald": "Белый Изумруд",
+      "block.wowamod.extractgolubaysoul": "Extractgolubaysoul",
+      "gui.wowamodfabric.extractorinteface.label_empty": "---------",
+      "item.wowamodfabric.adarkplacesound.desc": "A Dark Place - Happy and Sad",
+      "gui.wowamod.guidebookstart.button_nazad": "Назад",
+      "item.wowamodfabric.adarkplacesound": "Happy and Sad",
+      "item.wowamod.soulcore": "ЯдроДуш",
+      "item.wowamodfabric.greensoulpiece": "Частичка Зелёной души",
+      "block.wowamodfabric.blockforprofessia": "Профессиональный блок",
+      "item.wowamod.alphaelement": "Alpha element",
+      "item.wowamodfabric.derjatili": "Держатель для необычного механизма",
+      "item.wowamodfabric.mimictkanb": "Мимикрирующая Ткань",
+      "item.wowamod.orangesoulpiece": "Частичка Оранжевой души",
+      "effect.wowamodfabric.timer": "Timer",
+      "item.wowamodfabric.extractgolubaysoul_bucket": "Extractgolubaysoul Bucket",
+      "fluid.wowamod.extractgolubaysoul": "Extractgolubaysoul",
+      "gui.wowamod.guidebook.label_multiblok": "Мультиблок",
+      "item.wowamod.netherstarsword": "Звёздный меч",
+      "item.wowamodfabric.redsoulpiece": "Частичка Красной души",
+      "subtitles.faza2perexod": "HAHAHAHAHAHAH",
+      "item.wowamod.blueemerald": "Синий изумруд",
+      "item.wowamod.extractredsoul": "Экстракт красной души",
+      "gui.wowamodfabric.constructorinterface.button_create_test": "create (test)",
+      "item.wowamod.ekranchik": "Экран",
+      "item.wowamod.wiresprovoda": "Провода",
+      "item.wowamodfabric.dissasebmlyrequired.desc": "Dissasebmly Required",
+      "death.attack.soulsworddamage.item": "%1$s Уничтожен %2$s используя %3$s",
+      "gui.wowamod.wowabronyacraftring.label_empty": "\u003e",
+      "item.wowamodfabric.wowasword": "МЕЧ 3090",
+      "block.wowamodfabric.interfaceconstructor": "Интерфейс конструктора",
+      "item.wowamod.mimictkanb": "Мимикрирующая Ткань",
+      "gui.wowamod.guidebookstart.label_dlia_nachala_vam_ponadobitsia_nait": "Для начала вам понадобиться найти множество ресурсов в виде :",
+      "item.wowamodfabric.orangesoulpiece": "Частичка Оранжевой души",
+      "item.wowamodfabric.wowaswordosnova": "Основа для меча",
+      "gui.wowamod.guidebookstart.label_izumrudov": "Изумрудов",
+      "item.wowamod.bluesoul": "Синяя душа",
+      "item.wowamod.purplesoulpiece": "Частичка Фиолетовой души"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "wowamod",
+    "modName": "wowamod",
+    "version": "1.0.0",
+    "description": "This Mod will add to your minecraft world items from 3090 Universe.",
+    "author": "wowa3090",
+    "websiteURL": "https://3090.ru",
+    "license": "3090-Universe License",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "schlemwowi",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "particlepresets"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "test version",
+    "modElementsPackage": "net.wowamod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}

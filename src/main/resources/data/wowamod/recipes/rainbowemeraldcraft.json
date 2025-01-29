@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "d e",
+    "fgh"
+  ],
+  "key": {
+    "a": {
+      "item": "wowamod:redemerald"
+    },
+    "b": {
+      "item": "minecraft:emerald"
+    },
+    "c": {
+      "item": "wowamod:whiteemerald"
+    },
+    "d": {
+      "item": "wowamod:greenemerald"
+    },
+    "e": {
+      "item": "wowamod:yellowemerald"
+    },
+    "f": {
+      "item": "wowamod:blueemerald"
+    },
+    "g": {
+      "item": "wowamod:lightblueemerald"
+    },
+    "h": {
+      "item": "wowamod:purpleemerald"
+    }
+  },
+  "result": {
+    "item": "wowamod:rainbowemerald",
+    "count": 1
+  }
+}

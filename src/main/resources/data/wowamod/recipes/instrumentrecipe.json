@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "acd",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "wowamod:blackironingot"
+    },
+    "b": {
+      "item": "wowamod:wiresprovoda"
+    },
+    "c": {
+      "item": "minecraft:diamond_block"
+    },
+    "d": {
+      "item": "wowamod:redemerald"
+    }
+  },
+  "result": {
+    "item": "wowamod:instrumentprosto",
+    "count": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "wowamod:block/interfaceconstructor"
+    },
+    "facing=east": {
+      "model": "wowamod:block/interfaceconstructor",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "wowamod:block/interfaceconstructor",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "wowamod:block/interfaceconstructor",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "wowamod:block/interfaceconstructor",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "wowamod:block/interfaceconstructor",
+      "x": 90
+    }
+  }
+}

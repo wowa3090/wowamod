@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "wowamod:lightbluesoulpiece"
+    },
+    {
+      "item": "wowamod:lightbluesoulpiece"
+    },
+    {
+      "item": "wowamod:lightbluesoulpiece"
+    },
+    {
+      "item": "wowamod:lightbluesoulpiece"
+    },
+    {
+      "item": "wowamod:lightbluesoulpiece"
+    },
+    {
+      "item": "wowamod:lightbluesoulpiece"
+    },
+    {
+      "item": "wowamod:lightbluesoulpiece"
+    },
+    {
+      "item": "wowamod:lightbluesoulpiece"
+    },
+    {
+      "item": "wowamod:lightbluesoulpiece"
+    }
+  ],
+  "result": {
+    "item": "wowamod:lightbluesoul",
+    "count": 1
+  }
+}

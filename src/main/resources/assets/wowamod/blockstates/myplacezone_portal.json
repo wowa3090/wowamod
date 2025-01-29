@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "wowamod:block/myplacezone_portal_ew"
+    },
+    "axis=x": {
+      "model": "wowamod:block/myplacezone_portal_ns"
+    }
+  }
+}

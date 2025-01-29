@@ -1,0 +1,24 @@
+{
+  "_fv": 57,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Fadingworldbeta2fazasound",
+    "rarity": "EPIC",
+    "texture": "superemerald",
+    "description": "beta sound for 2 phase",
+    "creativeTab": {
+      "value": "CUSTOM:Wowamodvkladka"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": true
+    },
+    "music": {
+      "value": "CUSTOM:fadingworld-2faza"
+    },
+    "lengthInTicks": 6060,
+    "analogOutput": 15
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Blackironingot"
+      },
+      {
+        "value": "CUSTOM:Wiresprovoda"
+      },
+      {
+        "value": "CUSTOM:Blackironingot"
+      },
+      {
+        "value": "CUSTOM:Blackironingot"
+      },
+      {
+        "value": "Blocks.DIAMOND_BLOCK"
+      },
+      {
+        "value": "CUSTOM:Redemerald"
+      },
+      {
+        "value": "CUSTOM:Blackironingot"
+      },
+      {
+        "value": "CUSTOM:Wiresprovoda"
+      },
+      {
+        "value": "CUSTOM:Blackironingot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Instrumentprosto"
+    },
+    "name": "instrumentrecipe",
+    "namespace": "mod"
+  }
+}

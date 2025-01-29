@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wowamod:block/bricks",
+    "up": "wowamod:block/bricks",
+    "north": "wowamod:block/bricks",
+    "east": "wowamod:block/bricks",
+    "south": "wowamod:block/bricks",
+    "west": "wowamod:block/bricks",
+    "particle": "wowamod:block/bricks"
+  },
+  "render_type": "solid"
+}

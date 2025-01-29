@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Redemerald"
+      },
+      {
+        "value": "Items.EMERALD"
+      },
+      {
+        "value": "CUSTOM:Whiteemerald"
+      },
+      {
+        "value": "CUSTOM:Greenemerald"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Yellowemerald"
+      },
+      {
+        "value": "CUSTOM:Blueemerald"
+      },
+      {
+        "value": "CUSTOM:Lightblueemerald"
+      },
+      {
+        "value": "CUSTOM:Purpleemerald"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Rainbowemerald"
+    },
+    "name": "rainbowemeraldcraft",
+    "namespace": "mod"
+  }
+}

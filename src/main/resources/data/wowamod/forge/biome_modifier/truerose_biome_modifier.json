@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "wowamod:my_place_biome",
+  "features": "wowamod:truerose",
+  "step": "vegetal_decoration"
+}

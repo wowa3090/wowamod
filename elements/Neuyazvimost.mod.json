@@ -1,0 +1,23 @@
+{
+  "_fv": 57,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Неуязвимость!",
+    "icon": "neuyazvimost.png",
+    "color": {
+      "value": -720896,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "NeuyazvimostPASSIVEffiekt"
+    },
+    "onActiveTick": {
+      "name": "NeuyazvimostPASSIVEffiekt"
+    }
+  }
+}

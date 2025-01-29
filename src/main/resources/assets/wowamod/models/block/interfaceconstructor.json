@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wowamod:block/block_of_iron_texture_je3_be3",
+    "up": "wowamod:block/block_of_iron_texture_je3_be3",
+    "north": "wowamod:block/constructorinterface",
+    "east": "wowamod:block/block_of_iron_texture_je3_be3",
+    "south": "wowamod:block/block_of_iron_texture_je3_be3",
+    "west": "wowamod:block/block_of_iron_texture_je3_be3",
+    "particle": "wowamod:block/block_of_iron_texture_je3_be3"
+  },
+  "render_type": "solid"
+}

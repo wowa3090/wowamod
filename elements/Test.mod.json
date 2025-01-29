@@ -1,0 +1,32 @@
+{
+  "_fv": 57,
+  "_type": "blockstates",
+  "definition": {
+    "block": "CorruptedSoulsBlock",
+    "blockstateList": [
+      {
+        "texture": "corruptedsoulsblock",
+        "textureTop": "corruptedsoulsblock",
+        "textureLeft": "corruptedsoulsblock",
+        "textureFront": "corruptedsoulsblock",
+        "textureRight": "corruptedsoulsblock",
+        "textureBack": "corruptedsoulsblock",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 8.0,
+            "My": 8.0,
+            "Mz": 8.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

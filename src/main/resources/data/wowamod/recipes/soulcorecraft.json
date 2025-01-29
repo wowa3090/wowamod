@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "def",
+    "ghi"
+  ],
+  "key": {
+    "a": {
+      "item": "wowamod:orangesoul"
+    },
+    "b": {
+      "item": "wowamod:redsoul"
+    },
+    "c": {
+      "item": "minecraft:redstone"
+    },
+    "d": {
+      "item": "wowamod:yellowsoul"
+    },
+    "e": {
+      "item": "wowamod:soulsvazivatel"
+    },
+    "f": {
+      "item": "wowamod:purplesoul"
+    },
+    "g": {
+      "item": "wowamod:greensoul"
+    },
+    "h": {
+      "item": "wowamod:bluesoul"
+    },
+    "i": {
+      "item": "wowamod:lightbluesoul"
+    }
+  },
+  "result": {
+    "item": "wowamod:soulcore",
+    "count": 1
+  }
+}

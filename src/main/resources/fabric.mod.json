@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "wowamodfabric",
+  "version": "1.0.0",
+  "name": "wowa3090modfabric1201",
+  "authors": [
+    "wowa3090, MCreator"
+  ],
+  "contact": {
+    "homepage": "https://mcreator.net",
+    "sources": ""
+  },
+  "license": "Academic Free License v3.0",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.mcreator.wowamodfabric.WowamodfabricMod"
+    ],
+    "client": [
+      "net.mcreator.wowamodfabric.ClientInit"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "fabric": "*",
+    "minecraft": "~1.20",
+    "java": ">=17"
+  },
+  "mixins": [
+    "wowamodfabric.mixins.json"
+  ]
+}

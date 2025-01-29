@@ -1,0 +1,7 @@
+{
+  "parent": "wowamod:custom/rose_my_place",
+  "textures": {
+    "0": "wowamod:block/texture_rose",
+    "particle": "wowamod:item/poppy"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "_fv": 57,
+  "_type": "particle",
+  "definition": {
+    "texture": "texture_rose.png",
+    "animate": true,
+    "frameDuration": 1,
+    "width": 0.5,
+    "height": 0.5,
+    "scale": 2.0,
+    "speedFactor": 1.5,
+    "gravity": 0.0,
+    "maxAge": 20,
+    "maxAgeDiff": 0,
+    "angularVelocity": 0.0,
+    "angularAcceleration": 0.0,
+    "canCollide": true,
+    "alwaysShow": true,
+    "renderType": "LIT"
+  }
+}

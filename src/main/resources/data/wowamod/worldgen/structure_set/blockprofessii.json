@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "wowamod:blockprofessii",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 29,
+    "separation": 16,
+    "salt": 899264132
+  }
+}

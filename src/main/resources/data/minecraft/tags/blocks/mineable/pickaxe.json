@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "wowamod:crafterbroni",
+    "wowamod:blockforprofessia",
+    "wowamod:redstonecommandblock",
+    "wowamod:magicironblock",
+    "wowamod:portconstructor",
+    "wowamod:interfaceconstructor",
+    "wowamod:redstoneport",
+    "wowamod:extractor"
+  ]
+}

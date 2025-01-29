@@ -1,0 +1,20 @@
+{
+  "_fv": 57,
+  "_type": "overlay",
+  "definition": {
+    "priority": "HIGHEST",
+    "components": [],
+    "baseTexture": "moshed_2017-5-28_0.50.30.png",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "NightmarerisingUsloviiePokazaNalozhieniia"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

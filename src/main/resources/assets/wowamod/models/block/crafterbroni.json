@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wowamod:block/crafterbroni",
+    "up": "wowamod:block/crafterbronitop",
+    "north": "wowamod:block/crafterbroni",
+    "east": "wowamod:block/crafterbroni",
+    "south": "wowamod:block/crafterbroni",
+    "west": "wowamod:block/crafterbroni",
+    "particle": "wowamod:block/crafterbroni"
+  },
+  "render_type": "solid"
+}

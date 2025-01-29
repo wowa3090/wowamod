@@ -1,0 +1,24 @@
+{
+  "_fv": 57,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Happy and Sad",
+    "rarity": "RARE",
+    "texture": "adarkplacenightmaretrojan",
+    "description": "A Dark Place - Happy and Sad",
+    "creativeTab": {
+      "value": "CUSTOM:Wowamodvkladka"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:happyandsad"
+    },
+    "lengthInTicks": 2400,
+    "analogOutput": 15
+  }
+}

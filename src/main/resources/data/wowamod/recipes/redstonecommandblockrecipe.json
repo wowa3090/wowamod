@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "afa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "minecraft:observer"
+    },
+    "c": {
+      "item": "minecraft:repeater"
+    },
+    "d": {
+      "item": "minecraft:redstone_block"
+    },
+    "e": {
+      "item": "minecraft:comparator"
+    },
+    "f": {
+      "item": "minecraft:lever"
+    }
+  },
+  "result": {
+    "item": "wowamod:redstonecommandblock",
+    "count": 1
+  }
+}

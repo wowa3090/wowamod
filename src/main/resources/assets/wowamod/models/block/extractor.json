@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wowamod:block/constructorsblocks",
+    "up": "wowamod:block/portconstructor",
+    "north": "wowamod:block/testtexturecentrifuge",
+    "east": "wowamod:block/constructorsblocks",
+    "south": "wowamod:block/constructorsblocks",
+    "west": "wowamod:block/constructorsblocks",
+    "particle": "wowamod:block/constructorsblocks"
+  },
+  "render_type": "solid"
+}

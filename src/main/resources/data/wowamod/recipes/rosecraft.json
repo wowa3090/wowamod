@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcd",
+    " e "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:red_tulip"
+    },
+    "b": {
+      "item": "wowamod:blacksoul_myplace"
+    },
+    "c": {
+      "item": "wowamod:truerose"
+    },
+    "d": {
+      "item": "wowamod:whitesoul_myplace"
+    },
+    "e": {
+      "item": "minecraft:poppy"
+    }
+  },
+  "result": {
+    "item": "wowamod:rose",
+    "count": 1
+  }
+}

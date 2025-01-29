@@ -1,0 +1,175 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_soul",
+          "image": "soul.png",
+          "hoveredImage": "",
+          "x": 15,
+          "y": 13
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_dushi",
+          "text": {
+            "fixedValue": "Души"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 33,
+          "y": 16
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blueemerald",
+          "image": "blueemerald.png",
+          "hoveredImage": "",
+          "x": 15,
+          "y": 36
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_izumrudy",
+          "text": {
+            "fixedValue": "Изумруды"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 33,
+          "y": 40
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_netherite_sword",
+          "image": "netherite_sword.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "Startguidebook"
+          },
+          "x": 15,
+          "y": 59
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_nachalo",
+          "text": {
+            "fixedValue": "Начало"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 33,
+          "y": 63
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_kolba",
+          "image": "kolba.png",
+          "hoveredImage": "",
+          "x": 14,
+          "y": 81
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ekstraktor",
+          "text": {
+            "fixedValue": "Экстрактор"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 32,
+          "y": 85
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_magicironingot3",
+          "image": "magicironingot3.png",
+          "hoveredImage": "",
+          "x": 15,
+          "y": 102
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_krafty",
+          "text": {
+            "fixedValue": "Крафты"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 32,
+          "y": 107
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_guidebook_image",
+          "image": "guidebook_image.png",
+          "hoveredImage": "",
+          "x": 16,
+          "y": 128
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_multiblok",
+          "text": {
+            "fixedValue": "Мультиблок"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 57,
+          "y": 138
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

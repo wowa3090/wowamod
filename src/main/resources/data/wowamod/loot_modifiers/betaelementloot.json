@@ -1,0 +1,10 @@
+{
+  "type": "wowamod:wowamod_loot_modifier",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/desert_pyramid"
+    }
+  ],
+  "lootTable": "wowamod:blocks/alphaelementloot"
+}

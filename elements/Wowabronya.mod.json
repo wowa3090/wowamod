@@ -1,0 +1,98 @@
+{
+  "_fv": 57,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "1",
+    "enableBody": true,
+    "textureBody": "2",
+    "enableLeggings": true,
+    "textureLeggings": "3",
+    "enableBoots": true,
+    "textureBoots": "botinki_wowa",
+    "onHelmetTick": {
+      "name": "WowabronyaShliemanightvision"
+    },
+    "onBodyTick": {
+      "name": "Wowabronyachestplate"
+    },
+    "onLeggingsTick": {
+      "name": "Wowabronyashtani"
+    },
+    "onBootsTick": {
+      "name": "Wowabronyatapki"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Wowamodvkladka"
+    },
+    "armorTextureFile": "yyyyyyyy",
+    "helmetName": "Шлем 3090",
+    "bodyName": "Нагрудник 3090",
+    "leggingsName": "Поножи 3090",
+    "bootsName": "Ботинки 3090",
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": []
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
+    "helmetModelName": "Modelwbronyahead",
+    "helmetModelPart": "Head",
+    "helmetModelTexture": "headtexture.png",
+    "bodyModelName": "Modelwbronyahead",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "LeftArm",
+    "armsModelPartR": "RightArm",
+    "bodyModelTexture": "chestplatetexture.png",
+    "leggingsModelName": "Modelwbronyaleg",
+    "leggingsModelPartL": "LeftLeg",
+    "leggingsModelPartR": "RightLeg",
+    "leggingsModelTexture": "botinkiiponojitexture.png",
+    "bootsModelName": "Modelwbronyabotinki",
+    "bootsModelPartL": "LeftBoot",
+    "bootsModelPartR": "RightBoot",
+    "bootsModelTexture": "botinkiiponojitexture.png",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": true,
+    "bodyImmuneToFire": true,
+    "leggingsImmuneToFire": true,
+    "bootsImmuneToFire": true,
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 666,
+    "damageValueHelmet": 8,
+    "damageValueBody": 14,
+    "damageValueLeggings": 12,
+    "damageValueBoots": 8,
+    "enchantability": 30,
+    "toughness": 4.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "block.amethyst_block.place"
+    },
+    "repairItems": []
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "wowamod:redsoulpiece"
+    },
+    {
+      "item": "wowamod:redsoulpiece"
+    },
+    {
+      "item": "wowamod:redsoulpiece"
+    },
+    {
+      "item": "wowamod:redsoulpiece"
+    },
+    {
+      "item": "wowamod:redsoulpiece"
+    },
+    {
+      "item": "wowamod:redsoulpiece"
+    },
+    {
+      "item": "wowamod:redsoulpiece"
+    },
+    {
+      "item": "wowamod:redsoulpiece"
+    },
+    {
+      "item": "wowamod:redsoulpiece"
+    }
+  ],
+  "result": {
+    "item": "wowamod:redsoul",
+    "count": 1
+  }
+}

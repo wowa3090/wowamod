@@ -1,0 +1,30 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="3090-Universe License"
+
+[[mods]]
+modId="wowamod"
+version="1.0.0"
+displayName="wowamod"
+displayURL="https://3090.ru"
+logoFile="logo.png"
+credits="test version"
+authors="wowa3090"
+description="This Mod will add to your minecraft world items from 3090 Universe."
+
+[[dependencies.wowamod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+[[dependencies.wowamod]]
+    modId="particlepresets"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
