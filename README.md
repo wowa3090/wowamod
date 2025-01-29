@@ -4,7 +4,7 @@ Subject: Journey : A Unified Universe of Stories Ending in 3090 – Dive In If Y
 
 Magic combining with Technology! ⚡✨
 
-Explore a world where magic and machinery collide. Traverse time, meet alternate versions of yourself, and uncover secrets from ancient spells to futuristic gadgets.
+Explore a world where magic and machinery collide. 
 
 Key Features:
 
