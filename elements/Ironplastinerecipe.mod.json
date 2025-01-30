@@ -15,34 +15,34 @@
         "value": ""
       },
       {
-        "value": "Blocks.RED_FLOWER#4"
+        "value": ""
       },
       {
         "value": ""
       },
       {
-        "value": "Blocks.RED_FLOWER#0"
+        "value": ""
       },
       {
-        "value": "Items.WHEAT_SEEDS"
-      },
-      {
-        "value": "Blocks.RED_FLOWER#0"
+        "value": "CUSTOM:Ironmass1"
       },
       {
         "value": ""
       },
       {
-        "value": "Blocks.RED_FLOWER#4"
+        "value": ""
+      },
+      {
+        "value": ""
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Myplacezone"
+      "value": "CUSTOM:Ironplastinewowa"
     },
-    "name": "myplacezonekeyrecipe",
+    "name": "ironplastinerecipe",
     "namespace": "mod"
   }
 }

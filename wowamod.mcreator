@@ -2883,19 +2883,6 @@
       }
     },
     {
-      "name": "Myplacezonekeyrecipe",
-      "type": "recipe",
-      "sortid": 176,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "myplacezonekeyrecipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/wowamod/recipes/myplacezonekeyrecipe.json"
-        ]
-      }
-    },
-    {
       "name": "Vkeyability",
       "type": "keybind",
       "sortid": 178,
@@ -3173,6 +3160,19 @@
           "src/main/resources/data/wowamod/loot_tables/blocks/alphaelementloot.json"
         ]
       }
+    },
+    {
+      "name": "Ironplastinerecipe",
+      "type": "recipe",
+      "sortid": 198,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ironplastinerecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/ironplastinerecipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -3298,8 +3298,8 @@
       "subtitles.fadingworld-2faza": "\u003d)",
       "item.wowamod.kolba": "Пустая колба",
       "block.wowamodfabric.extractor": "Extractor",
-      "block.wowamodfabric.magicironblock": "Сталемагический блок",
       "item_group.wowamodfabric.wowamodvkladka": "wowa3090mod",
+      "block.wowamodfabric.magicironblock": "Сталемагический блок",
       "item.wowamodfabric.nightmare_spawn_egg": "Nightmare.trojan Spawn Egg",
       "gui.wowamod.wowabronyacraftring.button_empty": "Создать",
       "effect.wowamod.timer": "Timer",
@@ -3319,8 +3319,8 @@
       "item.wowamodfabric.superpalka": "Жезл",
       "key.wowamod.teleport": "Teleport",
       "effect.wowamod.neuyazvimost": "Неуязвимость!",
-      "gui.wowamod.guidebook.label_nachalo": "Начало",
       "item.wowamod.redsoul": "Красная Душа",
+      "gui.wowamod.guidebook.label_nachalo": "Начало",
       "item.wowamodfabric.greensoul": "Зелёная душа",
       "item.wowamod.bluesoulpiece": "Частичка Синий души",
       "item.wowamod.wowabronya_boots": "Ботинки ",
@@ -3358,9 +3358,9 @@
       "gui.wowamod.guidebookstart.label_kozhi_mimika": "Кожи мимика",
       "item.wowamodfabric.ekranchik": "Экран",
       "item.wowamod.shadowblade": "Теневой клинок",
-      "item.wowamod.superpalka": "Жезл",
-      "item.wowamod.blacksoul_myplace": "Черная душа из My Place",
       "item.wowamod.myplacezone": "MyPlaceZone",
+      "item.wowamod.blacksoul_myplace": "Черная душа из My Place",
+      "item.wowamod.superpalka": "Жезл",
       "item.wowamod.derjatili": "Держатель для необычного механизма",
       "item_group.wowamod.myplacevkladka": "My place",
       "gui.wowamod.guidebookstart.label_zhielatielno_zapastis_miediu_i_zhiel": "Желательно запастись медью и железом",
@@ -3506,12 +3506,12 @@
       "entity.wowamod.nightmare": "Nightmare.trojan",
       "block.wowamod.crafterbroni": "Необычный Механизм",
       "gui.wowamod.extractorinteface.label_centrifuge": "Beta Centrifuge",
-      "subtitles.fadingworld-2faza": "\u003d)",
       "item.wowamod.klava": "Клавиатура",
+      "subtitles.fadingworld-2faza": "\u003d)",
       "item.wowamod.kolba": "Пустая колба",
       "block.wowamodfabric.extractor": "Extractor",
-      "block.wowamodfabric.magicironblock": "Сталемагический блок",
       "item_group.wowamodfabric.wowamodvkladka": "wowa3090mod",
+      "block.wowamodfabric.magicironblock": "Сталемагический блок",
       "item.wowamodfabric.nightmare_spawn_egg": "Nightmare.trojan Spawn Egg",
       "gui.wowamod.wowabronyacraftring.button_empty": "Создать",
       "effect.wowamod.timer": "Timer",
@@ -3531,8 +3531,8 @@
       "item.wowamodfabric.superpalka": "Жезл",
       "key.wowamod.teleport": "Teleport",
       "effect.wowamod.neuyazvimost": "Неуязвимость!",
-      "gui.wowamod.guidebook.label_nachalo": "Начало",
       "item.wowamod.redsoul": "Красная Душа",
+      "gui.wowamod.guidebook.label_nachalo": "Начало",
       "item.wowamodfabric.greensoul": "Зелёная душа",
       "item.wowamod.bluesoulpiece": "Частичка Синий души",
       "item.wowamod.wowabronya_boots": "Ботинки 3090",
@@ -3570,9 +3570,9 @@
       "gui.wowamod.guidebookstart.label_kozhi_mimika": "Кожи мимика",
       "item.wowamodfabric.ekranchik": "Экран",
       "item.wowamod.shadowblade": "Теневой клинок",
-      "item.wowamod.superpalka": "Жезл",
-      "item.wowamod.blacksoul_myplace": "Черная душа из My Place",
       "item.wowamod.myplacezone": "MyPlaceZone",
+      "item.wowamod.blacksoul_myplace": "Черная душа из My Place",
+      "item.wowamod.superpalka": "Жезл",
       "item.wowamod.derjatili": "Держатель для необычного механизма",
       "item_group.wowamod.myplacevkladka": "My place",
       "gui.wowamod.guidebookstart.label_zhielatielno_zapastis_miediu_i_zhiel": "Желательно запастись медью и железом",
@@ -3706,7 +3706,7 @@
   "workspaceSettings": {
     "modid": "wowamod",
     "modName": "wowamod",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "This Mod will add to your minecraft world items from 3090 Universe.",
     "author": "wowa3090",
     "websiteURL": "https://3090.ru",
