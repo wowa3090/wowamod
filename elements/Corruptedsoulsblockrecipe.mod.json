@@ -12,13 +12,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.STONE#0"
+        "value": "Blocks.BONE_BLOCK"
       },
       {
         "value": "Blocks.SOUL_SAND"
       },
       {
-        "value": "Blocks.STONE#0"
+        "value": "Blocks.BONE_BLOCK"
       },
       {
         "value": "Blocks.SOUL_SAND"
@@ -30,13 +30,13 @@
         "value": "Blocks.SOUL_SAND"
       },
       {
-        "value": "Blocks.STONE#0"
+        "value": "Blocks.BONE_BLOCK"
       },
       {
         "value": "Blocks.SOUL_SAND"
       },
       {
-        "value": "Blocks.STONE#0"
+        "value": "Blocks.BONE_BLOCK"
       }
     ],
     "recipeReturnStack": {

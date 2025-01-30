@@ -1,5 +1,5 @@
 {
-  "item.wowamod.ironplastinewowa": "iron plastine",
+  "item.wowamod.ironplastinewowa": "Железная пластина",
   "item.wowamodfabric.lightbluesoul": "Голубая душа",
   "item.wowamodfabric.fadingworldbeta_2fazasound": "Fadingworldbeta2fazasound",
   "item.wowamodfabric.soulcore": "Ядро Душ",
@@ -18,7 +18,6 @@
   "block.wowamod.crafterbroni": "Необычный Механизм",
   "gui.wowamod.extractorinteface.label_centrifuge": "Beta Centrifuge",
   "subtitles.fadingworld-2faza": "\u003d)",
-  "item.wowamod.klava": "Клавиатура",
   "item.wowamod.kolba": "Пустая колба",
   "block.wowamodfabric.extractor": "Extractor",
   "block.wowamodfabric.magicironblock": "Сталемагический блок",
@@ -135,6 +134,7 @@
   "gui.wowamodfabric.wowabronyacraftring.button_empty": "Создать",
   "gui.wowamod.guidebookstart.label_dush": "Душ",
   "item.wowamodfabric.extractlbsoul": "Экстракт голубой души",
+  "item.wowamod.klavaж": "Клавиатура",
   "gui.wowamodfabric.extractorinteface.label_centrifuge": "Centrifuge",
   "item_group.wowamod.wowamodvkladka": "wowa3090mod",
   "block.wowamod.portconstructor": "Порт конструктора",
