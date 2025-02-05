@@ -20,8 +20,8 @@ import net.minecraft.core.BlockPos;
 import java.util.List;
 import java.util.Collections;
 
-public class BlockforprofessiaBlock extends Block {
-	public BlockforprofessiaBlock() {
+public class BlockforprofessiafixBlock extends Block {
+	public BlockforprofessiafixBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.ANVIL).strength(2.5f, 15f).lightLevel(s -> 3).jumpFactor(2f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 

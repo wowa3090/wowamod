@@ -50,6 +50,7 @@ import net.wowamod.item.Fadingworldbeta2fazasoundItem;
 import net.wowamod.item.ExtractredsoulItem;
 import net.wowamod.item.ExtractlbsoulItem;
 import net.wowamod.item.ExtractgolubaysoulItem;
+import net.wowamod.item.EtheriumdarkItem;
 import net.wowamod.item.EkranchikItem;
 import net.wowamod.item.DissasebmlyrequiredItem;
 import net.wowamod.item.DerjatiliItem;
@@ -110,7 +111,6 @@ public class WowamodModItems {
 	public static final RegistryObject<Item> MIMICTKANB = REGISTRY.register("mimictkanb", () -> new MimictkanbItem());
 	public static final RegistryObject<Item> MIMIC_SPAWN_EGG = REGISTRY.register("mimic_spawn_egg", () -> new ForgeSpawnEggItem(WowamodModEntities.MIMIC, -10013184, -5131855, new Item.Properties()));
 	public static final RegistryObject<Item> MIMICKOJA = REGISTRY.register("mimickoja", () -> new MimickojaItem());
-	public static final RegistryObject<Item> BLOCKFORPROFESSIA = block(WowamodModBlocks.BLOCKFORPROFESSIA);
 	public static final RegistryObject<Item> FADINGWORLDBETA_2FAZASOUND = REGISTRY.register("fadingworldbeta_2fazasound", () -> new Fadingworldbeta2fazasoundItem());
 	public static final RegistryObject<Item> ADARKPLACESOUND = REGISTRY.register("adarkplacesound", () -> new AdarkplacesoundItem());
 	public static final RegistryObject<Item> DISSASEBMLYREQUIRED = REGISTRY.register("dissasebmlyrequired", () -> new DissasebmlyrequiredItem());
@@ -149,6 +149,11 @@ public class WowamodModItems {
 	public static final RegistryObject<Item> WIRESPROVODA = REGISTRY.register("wiresprovoda", () -> new WiresprovodaItem());
 	public static final RegistryObject<Item> INSTRUMENTPROSTO = REGISTRY.register("instrumentprosto", () -> new InstrumentprostoItem());
 	public static final RegistryObject<Item> ALPHAELEMENT = REGISTRY.register("alphaelement", () -> new AlphaelementItem());
+	public static final RegistryObject<Item> DARKGRASS = block(WowamodModBlocks.DARKGRASS);
+	public static final RegistryObject<Item> DARKGRASSBLOCKNIZ = block(WowamodModBlocks.DARKGRASSBLOCKNIZ);
+	public static final RegistryObject<Item> DARK_BIOME_ORE = block(WowamodModBlocks.DARK_BIOME_ORE);
+	public static final RegistryObject<Item> ETHERIUMDARK = REGISTRY.register("etheriumdark", () -> new EtheriumdarkItem());
+	public static final RegistryObject<Item> BLOCKFORPROFESSIAFIX = block(WowamodModBlocks.BLOCKFORPROFESSIAFIX);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

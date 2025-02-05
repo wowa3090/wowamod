@@ -13,9 +13,12 @@ import net.wowamod.block.MagicironblockBlock;
 import net.wowamod.block.InterfaceconstructorBlock;
 import net.wowamod.block.ExtractorBlock;
 import net.wowamod.block.ExtractgolubaysoulBlock;
+import net.wowamod.block.DarkgrassblocknizBlock;
+import net.wowamod.block.DarkgrassBlock;
+import net.wowamod.block.DarkBiomeOreBlock;
 import net.wowamod.block.CrafterbroniBlock;
 import net.wowamod.block.CorruptedSoulsBlockBlock;
-import net.wowamod.block.BlockforprofessiaBlock;
+import net.wowamod.block.BlockforprofessiafixBlock;
 import net.wowamod.block.BlackWallsMyplaceBlock;
 import net.wowamod.WowamodMod;
 
@@ -32,7 +35,6 @@ import net.minecraft.world.level.block.Block;
 public class WowamodModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, WowamodMod.MODID);
 	public static final RegistryObject<Block> CRAFTERBRONI = REGISTRY.register("crafterbroni", () -> new CrafterbroniBlock());
-	public static final RegistryObject<Block> BLOCKFORPROFESSIA = REGISTRY.register("blockforprofessia", () -> new BlockforprofessiaBlock());
 	public static final RegistryObject<Block> REDSTONECOMMANDBLOCK = REGISTRY.register("redstonecommandblock", () -> new RedstonecommandblockBlock());
 	public static final RegistryObject<Block> MAGICIRONBLOCK = REGISTRY.register("magicironblock", () -> new MagicironblockBlock());
 	public static final RegistryObject<Block> PORTCONSTRUCTOR = REGISTRY.register("portconstructor", () -> new PortconstructorBlock());
@@ -44,6 +46,10 @@ public class WowamodModBlocks {
 	public static final RegistryObject<Block> BLACK_WALLS_MYPLACE = REGISTRY.register("black_walls_myplace", () -> new BlackWallsMyplaceBlock());
 	public static final RegistryObject<Block> MYPLACEZONE_PORTAL = REGISTRY.register("myplacezone_portal", () -> new MyplacezonePortalBlock());
 	public static final RegistryObject<Block> TRUEROSE = REGISTRY.register("truerose", () -> new TrueroseBlock());
+	public static final RegistryObject<Block> DARKGRASS = REGISTRY.register("darkgrass", () -> new DarkgrassBlock());
+	public static final RegistryObject<Block> DARKGRASSBLOCKNIZ = REGISTRY.register("darkgrassblockniz", () -> new DarkgrassblocknizBlock());
+	public static final RegistryObject<Block> DARK_BIOME_ORE = REGISTRY.register("dark_biome_ore", () -> new DarkBiomeOreBlock());
+	public static final RegistryObject<Block> BLOCKFORPROFESSIAFIX = REGISTRY.register("blockforprofessiafix", () -> new BlockforprofessiafixBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

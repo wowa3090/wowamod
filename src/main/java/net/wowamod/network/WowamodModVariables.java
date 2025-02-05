@@ -79,6 +79,7 @@ public class WowamodModVariables {
 			clone.GuideBook = original.GuideBook;
 			clone.cooldownrose = original.cooldownrose;
 			clone.soulsview = original.soulsview;
+			clone.speed_bronya = original.speed_bronya;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -255,6 +256,7 @@ public class WowamodModVariables {
 		public double GuideBook = 0;
 		public double cooldownrose = 0;
 		public boolean soulsview = false;
+		public boolean speed_bronya = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -270,6 +272,7 @@ public class WowamodModVariables {
 			nbt.putDouble("GuideBook", GuideBook);
 			nbt.putDouble("cooldownrose", cooldownrose);
 			nbt.putBoolean("soulsview", soulsview);
+			nbt.putBoolean("speed_bronya", speed_bronya);
 			return nbt;
 		}
 
@@ -282,6 +285,7 @@ public class WowamodModVariables {
 			GuideBook = nbt.getDouble("GuideBook");
 			cooldownrose = nbt.getDouble("cooldownrose");
 			soulsview = nbt.getBoolean("soulsview");
+			speed_bronya = nbt.getBoolean("speed_bronya");
 		}
 	}
 
@@ -313,6 +317,7 @@ public class WowamodModVariables {
 					variables.GuideBook = message.data.GuideBook;
 					variables.cooldownrose = message.data.cooldownrose;
 					variables.soulsview = message.data.soulsview;
+					variables.speed_bronya = message.data.speed_bronya;
 				}
 			});
 			context.setPacketHandled(true);

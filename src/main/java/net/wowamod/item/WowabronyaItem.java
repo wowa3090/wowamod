@@ -269,7 +269,7 @@ public abstract class WowabronyaItem extends ArmorItem {
 		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 			super.inventoryTick(itemstack, world, entity, slot, selected);
 			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
-				WowabronyatapkiProcedure.execute(entity);
+				WowabronyatapkiProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
 			}
 		}
 	}

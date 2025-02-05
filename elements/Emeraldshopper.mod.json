@@ -4,12 +4,12 @@
   "definition": {
     "displayName": "Emeraldshopper",
     "pointOfInterest": {
-      "value": "CUSTOM:Blockforprofessia"
+      "value": "CUSTOM:Blockforprofessiafix"
     },
     "actionSound": {
       "value": "block.amethyst_cluster.break"
     },
-    "hat": "None",
+    "hat": "Partial",
     "professionTextureFile": "texture.png",
     "zombifiedProfessionTextureFile": "texturemimic.png"
   }

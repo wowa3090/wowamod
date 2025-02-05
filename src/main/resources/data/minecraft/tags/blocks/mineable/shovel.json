@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "wowamod:corrupted_souls_block"
+    "wowamod:corrupted_souls_block",
+    "wowamod:darkgrass",
+    "wowamod:darkgrassblockniz"
   ]
 }

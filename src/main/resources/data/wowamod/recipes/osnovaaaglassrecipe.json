@@ -3,10 +3,16 @@
   "category": "misc",
   "ingredients": [
     {
+      "item": "minecraft:prismarine_shard"
+    },
+    {
       "item": "minecraft:obsidian"
     },
     {
       "item": "minecraft:glass_pane"
+    },
+    {
+      "item": "wowamod:etheriumdark"
     },
     {
       "item": "wowamod:ironmass_1"

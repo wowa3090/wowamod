@@ -12,13 +12,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:Ironplastinewowa"
       },
       {
         "value": "CUSTOM:Magicironingot"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:Ironplastinewowa"
       },
       {
         "value": "CUSTOM:Magicironingot"
@@ -30,13 +30,13 @@
         "value": "CUSTOM:Magicironingot"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:Ironplastinewowa"
       },
       {
         "value": "CUSTOM:Magicironingot"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:Ironplastinewowa"
       }
     ],
     "recipeReturnStack": {

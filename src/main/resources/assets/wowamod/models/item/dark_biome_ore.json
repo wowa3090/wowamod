@@ -1,5 +1,5 @@
 {
-  "parent": "wowamod:block/blockforprofessia",
+  "parent": "wowamod:block/dark_biome_ore",
   "display": {
     "thirdperson": {
       "rotation": [

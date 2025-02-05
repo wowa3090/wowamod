@@ -969,6 +969,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -1129,7 +1145,9 @@
       "locked_code": false,
       "registry_name": "emeraldshopper",
       "metadata": {
-        "files": []
+        "files": [
+          "src/main/resources/assets/wowamod/textures/entity/villager/profession/emeraldshopper.png.mcmeta"
+        ]
       }
     },
     {
@@ -1242,37 +1260,6 @@
             "name": "world",
             "type": "world"
           }
-        ]
-      }
-    },
-    {
-      "name": "Blockforprofessia",
-      "type": "block",
-      "sortid": 73,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blockforprofessia",
-      "metadata": {
-        "files": [
-          "src/main/java/net/wowamod/block/BlockforprofessiaBlock.java",
-          "src/main/resources/assets/wowamod/models/item/blockforprofessia.json",
-          "src/main/resources/assets/wowamod/models/block/blockforprofessia.json",
-          "src/main/resources/assets/wowamod/blockstates/blockforprofessia.json"
-        ]
-      }
-    },
-    {
-      "name": "Blockprofessii",
-      "type": "structure",
-      "sortid": 74,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blockprofessii",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/wowamod/worldgen/structure/blockprofessii.json",
-          "src/main/resources/data/wowamod/worldgen/structure_set/blockprofessii.json",
-          "src/main/resources/data/wowamod/worldgen/template_pool/blockprofessii.json"
         ]
       }
     },
@@ -2883,42 +2870,6 @@
       }
     },
     {
-      "name": "Vkeyability",
-      "type": "keybind",
-      "sortid": 178,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "vkeyability",
-      "metadata": {
-        "files": [
-          "src/main/java/net/wowamod/network/VkeyabilityMessage.java"
-        ]
-      }
-    },
-    {
-      "name": "VkeyabilityPriNazhatiiKlavishi",
-      "type": "procedure",
-      "sortid": 179,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "vkeyability_pri_nazhatii_klavishi",
-      "metadata": {
-        "files": [
-          "src/main/java/net/wowamod/procedures/VkeyabilityPriNazhatiiKlavishiProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "AaaGlass",
       "type": "item",
       "sortid": 180,
@@ -3186,6 +3137,154 @@
           "src/main/java/net/wowamod/Testelementes.java"
         ]
       }
+    },
+    {
+      "name": "Darkbiome",
+      "type": "biome",
+      "sortid": 200,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkbiome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/worldgen/placed_feature/darkbiome_tree.json",
+          "src/main/resources/data/wowamod/worldgen/configured_feature/darkbiome_tree.json",
+          "src/main/resources/data/wowamod/worldgen/biome/darkbiome.json"
+        ]
+      }
+    },
+    {
+      "name": "Darkgrass",
+      "type": "block",
+      "sortid": 201,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkgrass",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/block/DarkgrassBlock.java",
+          "src/main/resources/assets/wowamod/blockstates/darkgrass.json",
+          "src/main/resources/assets/wowamod/models/block/darkgrass.json",
+          "src/main/resources/assets/wowamod/models/item/darkgrass.json"
+        ]
+      }
+    },
+    {
+      "name": "Darkgrassblockniz",
+      "type": "block",
+      "sortid": 202,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkgrassblockniz",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/blockstates/darkgrassblockniz.json",
+          "src/main/java/net/wowamod/block/DarkgrassblocknizBlock.java",
+          "src/main/resources/assets/wowamod/models/item/darkgrassblockniz.json",
+          "src/main/resources/assets/wowamod/models/block/darkgrassblockniz.json"
+        ]
+      }
+    },
+    {
+      "name": "DarkBiomeOre",
+      "type": "block",
+      "sortid": 203,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_biome_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/block/dark_biome_ore.json",
+          "src/main/java/net/wowamod/block/DarkBiomeOreBlock.java",
+          "src/main/resources/data/wowamod/forge/biome_modifier/dark_biome_ore_biome_modifier.json",
+          "src/main/resources/data/wowamod/worldgen/configured_feature/dark_biome_ore.json",
+          "src/main/resources/assets/wowamod/blockstates/dark_biome_ore.json",
+          "src/main/resources/assets/wowamod/models/item/dark_biome_ore.json",
+          "src/main/resources/data/wowamod/worldgen/placed_feature/dark_biome_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "Whatasvazka",
+      "type": "tag",
+      "sortid": 204,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "whatasvazka",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/whatasvazka.json"
+        ]
+      }
+    },
+    {
+      "name": "Etheriumdark",
+      "type": "item",
+      "sortid": 205,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "etheriumdark",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/EtheriumdarkItem.java",
+          "src/main/resources/assets/wowamod/models/item/etheriumdark.json"
+        ]
+      }
+    },
+    {
+      "name": "Darkironrecipe",
+      "type": "recipe",
+      "sortid": 206,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkironrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/darkironrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Ignorbroni",
+      "type": "code",
+      "sortid": 207,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ignorbroni",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/Ignorbroni.java"
+        ]
+      }
+    },
+    {
+      "name": "Blockforprofessiafix",
+      "type": "block",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blockforprofessiafix",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/blockstates/blockforprofessiafix.json",
+          "src/main/resources/assets/wowamod/models/block/blockforprofessiafix.json",
+          "src/main/resources/assets/wowamod/models/item/blockforprofessiafix.json",
+          "src/main/java/net/wowamod/block/BlockforprofessiafixBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Blockforprofessiarecipe",
+      "type": "recipe",
+      "sortid": 209,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blockforprofessiarecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/blockforprofessiarecipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -3233,6 +3332,12 @@
     },
     {
       "name": "soulsview",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "speed_bronya",
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
@@ -3311,6 +3416,7 @@
       "subtitles.fadingworld-2faza": "\u003d)",
       "item.wowamod.klava": "Клавиатура",
       "item.wowamod.kolba": "Пустая колба",
+      "block.wowamod.blockforprofessiafix": "Профессиональный блок",
       "block.wowamodfabric.extractor": "Extractor",
       "item_group.wowamodfabric.wowamodvkladka": "wowa3090mod",
       "block.wowamodfabric.magicironblock": "Сталемагический блок",
@@ -3318,6 +3424,7 @@
       "gui.wowamod.wowabronyacraftring.button_empty": "Создать",
       "effect.wowamod.timer": "Timer",
       "block.wowamodfabric.extractgolubaysoul": "Extractgolubaysoul",
+      "block.wowamod.dark_biome_ore": "Dark Biome Ore",
       "item.wowamod.wowaswordosnova": "Основа для меча",
       "gui.wowamod.wowabronyacraftring.label_crafting": "Создание предметов",
       "item.wowamodfabric.orangesoul": "Оранжевая душа",
@@ -3333,8 +3440,8 @@
       "item.wowamodfabric.superpalka": "Жезл",
       "key.wowamod.teleport": "Teleport",
       "effect.wowamod.neuyazvimost": "Неуязвимость!",
-      "item.wowamod.redsoul": "Красная Душа",
       "gui.wowamod.guidebook.label_nachalo": "Начало",
+      "item.wowamod.redsoul": "Красная Душа",
       "item.wowamodfabric.greensoul": "Зелёная душа",
       "item.wowamod.bluesoulpiece": "Частичка Синий души",
       "item.wowamod.wowabronya_boots": "Ботинки ",
@@ -3361,7 +3468,6 @@
       "death.attack.soulsworddamage": "%1$s Умер от магии душ",
       "item.wowamod.redemerald": "Красный Изумруд",
       "item.wowamodfabric.klava": "Клавиатура",
-      "block.wowamod.blockforprofessia": "Профессиональный блок",
       "item.wowamod.fadingworldbeta_2fazasound": "Fadingworldbeta2fazasound",
       "entity.minecraft.villager.wowamodfabric.emeraldshopper": "Изумрудный скупщик",
       "subtitles.disassembly_required": "s",
@@ -3378,6 +3484,7 @@
       "item.wowamod.derjatili": "Держатель для необычного механизма",
       "item_group.wowamod.myplacevkladka": "My place",
       "gui.wowamod.guidebookstart.label_zhielatielno_zapastis_miediu_i_zhiel": "Желательно запастись медью и железом",
+      "item.wowamod.etheriumdark": "Тёмный Эфир",
       "item.wowamod.osnovaaaaglass": "Незакалённое Усиленное стекло",
       "death.attack.soulsworddamage.player": "%1$s пытался убежать от %2$s, но потерпел крах",
       "item.wowamodfabric.lightblueemerald": "Голубой Изумруд",
@@ -3399,6 +3506,7 @@
       "entity.wowamod.mimic": "Мимик",
       "item.wowamod.dissasebmlyrequired": "Dissasebmly Required",
       "gui.wowamod.port_constructora.label_port": "Основа",
+      "block.wowamod.darkgrassblockniz": "Dark Grass",
       "item.wowamodfabric.wowabronya_helmet": "Шлем ",
       "block.wowamod.extractor": "Extractor",
       "item.wowamodfabric.redemerald": "Красный Изумруд",
@@ -3414,6 +3522,7 @@
       "gui.wowamodfabric.constructorinterface.label_constructor": "Constructor",
       "item.wowamod.fadingworldbeta_2fazasound.desc": "beta sound for 2 phase",
       "item.wowamod.guidebookitem": "Планшет",
+      "biome.wowamod.darkbiome": "Dark",
       "item.wowamodfabric.magicironingot": "Сталемагический слиток",
       "item.wowamod.ironmass_1": "Железная масса",
       "item.wowamod.wowabronya_leggings": "Поножи",
@@ -3430,7 +3539,6 @@
       "gui.wowamodfabric.extractorinteface.label_centrifuge": "Centrifuge",
       "item_group.wowamod.wowamodvkladka": "wowa3090mod",
       "block.wowamod.portconstructor": "Порт конструктора",
-      "key.wowamod.vkeyability": "Ability 1",
       "item.wowamod.yellowsoul": "Жёлтая душа",
       "item.wowamodfabric.netherstarsword": "Звёздный меч",
       "item.wowamodfabric.whiteemerald": "Белый Изумруд",
@@ -3480,6 +3588,7 @@
       "item.wowamodfabric.extractgolubaysoul_bucket": "Extractgolubaysoul Bucket",
       "fluid.wowamod.extractgolubaysoul": "Extractgolubaysoul",
       "gui.wowamod.guidebook.label_multiblok": "Мультиблок",
+      "block.wowamod.darkgrass": "Dark Grass",
       "item.wowamod.netherstarsword": "Звёздный меч",
       "item.wowamodfabric.redsoulpiece": "Частичка Красной души",
       "subtitles.faza2perexod": "HAHAHAHAHAHAH",
@@ -3523,6 +3632,7 @@
       "item.wowamod.klava": "Клавиатура",
       "subtitles.fadingworld-2faza": "\u003d)",
       "item.wowamod.kolba": "Пустая колба",
+      "block.wowamod.blockforprofessiafix": "Профессиональный блок",
       "block.wowamodfabric.extractor": "Extractor",
       "item_group.wowamodfabric.wowamodvkladka": "wowa3090mod",
       "block.wowamodfabric.magicironblock": "Сталемагический блок",
@@ -3530,6 +3640,7 @@
       "gui.wowamod.wowabronyacraftring.button_empty": "Создать",
       "effect.wowamod.timer": "Timer",
       "block.wowamodfabric.extractgolubaysoul": "Extractgolubaysoul",
+      "block.wowamod.dark_biome_ore": "Dark Biome Ore",
       "item.wowamod.wowaswordosnova": "Основа для меча",
       "gui.wowamod.wowabronyacraftring.label_crafting": "Создание предметов",
       "item.wowamodfabric.orangesoul": "Оранжевая душа",
@@ -3545,8 +3656,8 @@
       "item.wowamodfabric.superpalka": "Жезл",
       "key.wowamod.teleport": "Teleport",
       "effect.wowamod.neuyazvimost": "Неуязвимость!",
-      "item.wowamod.redsoul": "Красная Душа",
       "gui.wowamod.guidebook.label_nachalo": "Начало",
+      "item.wowamod.redsoul": "Красная Душа",
       "item.wowamodfabric.greensoul": "Зелёная душа",
       "item.wowamod.bluesoulpiece": "Частичка Синий души",
       "item.wowamod.wowabronya_boots": "Ботинки 3090",
@@ -3573,7 +3684,6 @@
       "death.attack.soulsworddamage": "%1$s Умер от магии душ",
       "item.wowamod.redemerald": "Красный Изумруд",
       "item.wowamodfabric.klava": "Клавиатура",
-      "block.wowamod.blockforprofessia": "Профессиональный блок",
       "item.wowamod.fadingworldbeta_2fazasound": "Fadingworldbeta2fazasound",
       "entity.minecraft.villager.wowamodfabric.emeraldshopper": "Emeraldshopper",
       "subtitles.disassembly_required": "s",
@@ -3590,6 +3700,7 @@
       "item.wowamod.derjatili": "Держатель для необычного механизма",
       "item_group.wowamod.myplacevkladka": "My place",
       "gui.wowamod.guidebookstart.label_zhielatielno_zapastis_miediu_i_zhiel": "Желательно запастись медью и железом",
+      "item.wowamod.etheriumdark": "Тёмный Эфир",
       "item.wowamod.osnovaaaaglass": "Незакалённое Усиленное стекло",
       "death.attack.soulsworddamage.player": "%1$s пытался убежать от %2$s, но потерпел крах",
       "item.wowamodfabric.lightblueemerald": "Голубой Изумруд",
@@ -3611,6 +3722,7 @@
       "entity.wowamod.mimic": "Мимик",
       "item.wowamod.dissasebmlyrequired": "Dissasebmly Required",
       "gui.wowamod.port_constructora.label_port": "Основа",
+      "block.wowamod.darkgrassblockniz": "Dark Grass",
       "item.wowamodfabric.wowabronya_helmet": "Шлем 3090",
       "block.wowamod.extractor": "Extractor",
       "item.wowamodfabric.redemerald": "Красный Изумруд",
@@ -3626,6 +3738,7 @@
       "gui.wowamodfabric.constructorinterface.label_constructor": "Constructor",
       "item.wowamod.fadingworldbeta_2fazasound.desc": "beta sound for 2 phase",
       "item.wowamod.guidebookitem": "Guidebookitem",
+      "biome.wowamod.darkbiome": "Dark",
       "item.wowamodfabric.magicironingot": "Сталемагический слиток",
       "item.wowamod.ironmass_1": "Ironmass ",
       "item.wowamod.wowabronya_leggings": "Поножи 3090",
@@ -3641,7 +3754,6 @@
       "gui.wowamodfabric.extractorinteface.label_centrifuge": "Beta Centrifuge",
       "item_group.wowamod.wowamodvkladka": "wowa3090mod",
       "block.wowamod.portconstructor": "Порт конструктора",
-      "key.wowamod.vkeyability": "Ability 1",
       "item.wowamod.yellowsoul": "Жёлтая душа",
       "item.wowamodfabric.netherstarsword": "Звёздный меч",
       "item.wowamodfabric.whiteemerald": "Белый Изумруд",
@@ -3691,6 +3803,7 @@
       "item.wowamodfabric.extractgolubaysoul_bucket": "Extractgolubaysoul Bucket",
       "fluid.wowamod.extractgolubaysoul": "Extractgolubaysoul",
       "gui.wowamod.guidebook.label_multiblok": "Мультиблок",
+      "block.wowamod.darkgrass": "Dark Grass",
       "item.wowamod.netherstarsword": "Звёздный меч",
       "item.wowamodfabric.redsoulpiece": "Частичка Красной души",
       "subtitles.faza2perexod": "HAHAHAHAHAHAH",
@@ -3720,7 +3833,7 @@
   "workspaceSettings": {
     "modid": "wowamod",
     "modName": "wowamod",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "This Mod will add to your minecraft world items from 3090 Universe.",
     "author": "wowa3090",
     "websiteURL": "https://3090.ru",

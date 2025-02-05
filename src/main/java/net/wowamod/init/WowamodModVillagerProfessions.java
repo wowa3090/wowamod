@@ -33,7 +33,7 @@ import com.google.common.collect.ImmutableSet;
 public class WowamodModVillagerProfessions {
 	private static final Map<String, ProfessionPoiType> POI_TYPES = new HashMap<>();
 	public static final DeferredRegister<VillagerProfession> PROFESSIONS = DeferredRegister.create(ForgeRegistries.VILLAGER_PROFESSIONS, WowamodMod.MODID);
-	public static final RegistryObject<VillagerProfession> EMERALDSHOPPER = registerProfession("emeraldshopper", () -> WowamodModBlocks.BLOCKFORPROFESSIA.get(),
+	public static final RegistryObject<VillagerProfession> EMERALDSHOPPER = registerProfession("emeraldshopper", () -> WowamodModBlocks.BLOCKFORPROFESSIAFIX.get(),
 			() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.amethyst_cluster.break")));
 
 	private static RegistryObject<VillagerProfession> registerProfession(String name, Supplier<Block> block, Supplier<SoundEvent> soundEvent) {

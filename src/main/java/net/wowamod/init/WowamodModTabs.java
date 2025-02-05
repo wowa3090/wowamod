@@ -57,7 +57,6 @@ public class WowamodModTabs {
 				tabData.accept(WowamodModItems.DERJATILI.get());
 				tabData.accept(WowamodModItems.MIMICTKANB.get());
 				tabData.accept(WowamodModItems.MIMICKOJA.get());
-				tabData.accept(WowamodModBlocks.BLOCKFORPROFESSIA.get().asItem());
 				tabData.accept(WowamodModItems.FADINGWORLDBETA_2FAZASOUND.get());
 				tabData.accept(WowamodModItems.ADARKPLACESOUND.get());
 				tabData.accept(WowamodModItems.DISSASEBMLYREQUIRED.get());
@@ -91,6 +90,11 @@ public class WowamodModTabs {
 				tabData.accept(WowamodModItems.WIRESPROVODA.get());
 				tabData.accept(WowamodModItems.INSTRUMENTPROSTO.get());
 				tabData.accept(WowamodModItems.ALPHAELEMENT.get());
+				tabData.accept(WowamodModBlocks.DARKGRASS.get().asItem());
+				tabData.accept(WowamodModBlocks.DARKGRASSBLOCKNIZ.get().asItem());
+				tabData.accept(WowamodModBlocks.DARK_BIOME_ORE.get().asItem());
+				tabData.accept(WowamodModItems.ETHERIUMDARK.get());
+				tabData.accept(WowamodModBlocks.BLOCKFORPROFESSIAFIX.get().asItem());
 			})
 
 					.build());

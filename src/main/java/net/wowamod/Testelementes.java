@@ -24,7 +24,7 @@ public static void onPlayerHurt(LivingHurtEvent event) {
         }
         
         if (hasFullSet) {
-            event.setAmount(event.getAmount() * 0.15f); // 85% поглощение
+            event.setAmount(event.getAmount() * 0.10f); // 85% поглощение
         }
     }
 }

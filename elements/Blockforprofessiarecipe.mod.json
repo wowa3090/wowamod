@@ -9,40 +9,40 @@
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
-    "recipeShapeless": true,
+    "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "Blocks.STONE#0"
       },
       {
-        "value": "Items.PRISMARINE_SHARD"
+        "value": "CUSTOM:AaaGlass"
       },
       {
-        "value": ""
+        "value": "Blocks.STONE#0"
       },
       {
-        "value": "Blocks.OBSIDIAN"
+        "value": "CUSTOM:Ironplastinewowa"
       },
       {
-        "value": "Blocks.GLASS_PANE"
+        "value": "CUSTOM:Redstonecommandblock"
       },
       {
-        "value": "CUSTOM:Etheriumdark"
+        "value": "CUSTOM:Ironplastinewowa"
       },
       {
-        "value": ""
+        "value": "Items.COPPER_INGOT"
       },
       {
-        "value": "CUSTOM:Ironmass1"
+        "value": "CUSTOM:Coppermass1"
       },
       {
-        "value": ""
+        "value": "Items.COPPER_INGOT"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Osnovaaaaglass"
+      "value": "CUSTOM:Blockforprofessiafix"
     },
-    "name": "osnovaaaglassrecipe",
+    "name": "blockforprofessiarecipe",
     "namespace": "mod"
   }
 }

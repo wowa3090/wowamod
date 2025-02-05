@@ -2,12 +2,12 @@
   "_fv": 57,
   "_type": "block",
   "definition": {
-    "texture": "professiablockverh",
-    "textureTop": "professiablockverh",
-    "textureLeft": "professiablock",
-    "textureFront": "professiablock",
-    "textureRight": "professiablock",
-    "textureBack": "professiablock",
+    "texture": "bottomlayer_darkgrass",
+    "textureTop": "toplayer_darkgrass",
+    "textureLeft": "frontlayer_darkgrass",
+    "textureFront": "frontlayer_darkgrass",
+    "textureRight": "frontlayer_darkgrass",
+    "textureBack": "frontlayer_darkgrass",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -18,7 +18,7 @@
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": true,
+    "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
@@ -33,18 +33,18 @@
         "subtract": false
       }
     ],
-    "name": "Профессиональный блок",
+    "name": "Dark Grass",
     "specialInformation": {
       "fixedValue": []
     },
     "hardness": 2.5,
-    "resistance": 15.0,
+    "resistance": 25.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:Wowamodvkladka"
     },
-    "destroyTool": "pickaxe",
+    "destroyTool": "shovel",
     "customDrop": {
       "value": ""
     },
@@ -56,7 +56,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "IRON"
+      "value": "GRASS"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -75,13 +75,13 @@
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
-    "speedFactor": 1.0,
-    "jumpFactor": 2.0,
+    "speedFactor": 0.9,
+    "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "ANVIL"
+      "value": "GROUND"
     },
     "breakSound": {
       "value": ""
@@ -98,7 +98,7 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 3,
+    "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 2,
     "isBonemealable": false,

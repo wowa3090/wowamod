@@ -2,11 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " aa",
-    "aa "
+    " ab",
+    "ab "
   ],
   "key": {
     "a": {
+      "item": "wowamod:ironplastinewowa"
+    },
+    "b": {
       "item": "minecraft:iron_ingot"
     }
   },

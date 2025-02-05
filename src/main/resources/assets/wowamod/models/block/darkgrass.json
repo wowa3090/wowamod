@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wowamod:block/bottomlayer_darkgrass",
+    "up": "wowamod:block/toplayer_darkgrass",
+    "north": "wowamod:block/frontlayer_darkgrass",
+    "east": "wowamod:block/frontlayer_darkgrass",
+    "south": "wowamod:block/frontlayer_darkgrass",
+    "west": "wowamod:block/frontlayer_darkgrass",
+    "particle": "wowamod:block/bottomlayer_darkgrass"
+  },
+  "render_type": "solid"
+}

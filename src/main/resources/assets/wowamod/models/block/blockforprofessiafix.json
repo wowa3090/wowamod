@@ -9,5 +9,5 @@
     "west": "wowamod:block/professiablock",
     "particle": "wowamod:block/professiablockverh"
   },
-  "render_type": "solid"
+  "render_type": "cutout_mipped"
 }
