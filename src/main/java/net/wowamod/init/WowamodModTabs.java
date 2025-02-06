@@ -95,6 +95,11 @@ public class WowamodModTabs {
 				tabData.accept(WowamodModBlocks.DARK_BIOME_ORE.get().asItem());
 				tabData.accept(WowamodModItems.ETHERIUMDARK.get());
 				tabData.accept(WowamodModBlocks.BLOCKFORPROFESSIAFIX.get().asItem());
+				tabData.accept(WowamodModBlocks.ALUMINIUM_ORE_WOWA.get().asItem());
+				tabData.accept(WowamodModItems.BATAREYKA.get());
+				tabData.accept(WowamodModItems.ZAGATOVKABLACKIRON.get());
+				tabData.accept(WowamodModItems.POSUDINA.get());
+				tabData.accept(WowamodModItems.KARMANNIELECTROLIZER.get());
 			})
 
 					.build());

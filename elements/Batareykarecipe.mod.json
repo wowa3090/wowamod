@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 3,
+    "recipeRetstackSize": 1,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Etheriumdark"
+        "value": ""
       },
       {
         "value": "CUSTOM:Etheriumdark"
       },
       {
-        "value": "CUSTOM:Etheriumdark"
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Ironplastinewowa"
+      },
+      {
+        "value": "Items.REDSTONE"
+      },
+      {
+        "value": "CUSTOM:Ironplastinewowa"
+      },
+      {
+        "value": "CUSTOM:Ironplastinewowa"
       },
       {
         "value": "Items.COAL#0"
       },
       {
-        "value": "CUSTOM:Zagatovkablackiron"
-      },
-      {
-        "value": "Items.COAL#0"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:Ironplastinewowa"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Blackironingot"
+      "value": "CUSTOM:Batareyka"
     },
-    "name": "darkironrecipe",
+    "name": "batareykarecipe",
     "namespace": "mod"
   }
 }

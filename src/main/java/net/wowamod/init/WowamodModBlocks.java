@@ -20,6 +20,7 @@ import net.wowamod.block.CrafterbroniBlock;
 import net.wowamod.block.CorruptedSoulsBlockBlock;
 import net.wowamod.block.BlockforprofessiafixBlock;
 import net.wowamod.block.BlackWallsMyplaceBlock;
+import net.wowamod.block.AluminiumBlock;
 import net.wowamod.WowamodMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -50,6 +51,7 @@ public class WowamodModBlocks {
 	public static final RegistryObject<Block> DARKGRASSBLOCKNIZ = REGISTRY.register("darkgrassblockniz", () -> new DarkgrassblocknizBlock());
 	public static final RegistryObject<Block> DARK_BIOME_ORE = REGISTRY.register("dark_biome_ore", () -> new DarkBiomeOreBlock());
 	public static final RegistryObject<Block> BLOCKFORPROFESSIAFIX = REGISTRY.register("blockforprofessiafix", () -> new BlockforprofessiafixBlock());
+	public static final RegistryObject<Block> ALUMINIUM_ORE_WOWA = REGISTRY.register("aluminium_ore_wowa", () -> new AluminiumBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

@@ -2,26 +2,26 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "aaa",
+    " a ",
     "bcb",
-    "ddd"
+    "bdb"
   ],
   "key": {
     "a": {
       "item": "wowamod:etheriumdark"
     },
     "b": {
-      "item": "minecraft:coal"
+      "item": "wowamod:ironplastinewowa"
     },
     "c": {
-      "item": "wowamod:zagatovkablackiron"
+      "item": "minecraft:redstone"
     },
     "d": {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:coal"
     }
   },
   "result": {
-    "item": "wowamod:blackironingot",
-    "count": 3
+    "item": "wowamod:batareyka",
+    "count": 1
   }
 }

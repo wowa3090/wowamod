@@ -4,6 +4,7 @@
  */
 package net.wowamod.init;
 
+import net.wowamod.item.ZagatovkablackironItem;
 import net.wowamod.item.YellowsoulpieceItem;
 import net.wowamod.item.YellowsoulItem;
 import net.wowamod.item.YellowemeraldItem;
@@ -26,6 +27,7 @@ import net.wowamod.item.RainbowemeraldItem;
 import net.wowamod.item.PurplesoulpieceItem;
 import net.wowamod.item.PurplesoulItem;
 import net.wowamod.item.PurpleemeraldItem;
+import net.wowamod.item.PosudinaItem;
 import net.wowamod.item.OsnovaaaaglassItem;
 import net.wowamod.item.OrangesoulpieceItem;
 import net.wowamod.item.OrangesoulItem;
@@ -39,6 +41,7 @@ import net.wowamod.item.LightbluesoulItem;
 import net.wowamod.item.LightblueemeraldItem;
 import net.wowamod.item.KolbaItem;
 import net.wowamod.item.KlavaItem;
+import net.wowamod.item.KarmannielectrolizerItem;
 import net.wowamod.item.IronplastinewowaItem;
 import net.wowamod.item.Ironmass1Item;
 import net.wowamod.item.InstrumentprostoItem;
@@ -60,6 +63,7 @@ import net.wowamod.item.BluesoulItem;
 import net.wowamod.item.BlueemeraldItem;
 import net.wowamod.item.BlacksoulMYPLACEItem;
 import net.wowamod.item.BlackironingotItem;
+import net.wowamod.item.BatareykaItem;
 import net.wowamod.item.AlphaelementItem;
 import net.wowamod.item.AdarkplacesoundItem;
 import net.wowamod.item.AaaGlassItem;
@@ -154,6 +158,11 @@ public class WowamodModItems {
 	public static final RegistryObject<Item> DARK_BIOME_ORE = block(WowamodModBlocks.DARK_BIOME_ORE);
 	public static final RegistryObject<Item> ETHERIUMDARK = REGISTRY.register("etheriumdark", () -> new EtheriumdarkItem());
 	public static final RegistryObject<Item> BLOCKFORPROFESSIAFIX = block(WowamodModBlocks.BLOCKFORPROFESSIAFIX);
+	public static final RegistryObject<Item> ALUMINIUM_ORE_WOWA = block(WowamodModBlocks.ALUMINIUM_ORE_WOWA);
+	public static final RegistryObject<Item> BATAREYKA = REGISTRY.register("batareyka", () -> new BatareykaItem());
+	public static final RegistryObject<Item> ZAGATOVKABLACKIRON = REGISTRY.register("zagatovkablackiron", () -> new ZagatovkablackironItem());
+	public static final RegistryObject<Item> POSUDINA = REGISTRY.register("posudina", () -> new PosudinaItem());
+	public static final RegistryObject<Item> KARMANNIELECTROLIZER = REGISTRY.register("karmannielectrolizer", () -> new KarmannielectrolizerItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

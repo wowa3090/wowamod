@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 3,
+    "recipeRetstackSize": 1,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Etheriumdark"
+        "value": "CUSTOM:Wiresprovoda"
       },
       {
-        "value": "CUSTOM:Etheriumdark"
+        "value": "CUSTOM:Batareyka"
       },
       {
-        "value": "CUSTOM:Etheriumdark"
+        "value": "CUSTOM:Wiresprovoda"
       },
       {
-        "value": "Items.COAL#0"
+        "value": "Items.COPPER_INGOT"
       },
       {
-        "value": "CUSTOM:Zagatovkablackiron"
-      },
-      {
-        "value": "Items.COAL#0"
+        "value": "CUSTOM:Posudina"
       },
       {
         "value": "Items.IRON_INGOT"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:Blackironingot"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "Blocks.LEVER"
+      },
+      {
+        "value": "CUSTOM:Blackironingot"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Blackironingot"
+      "value": "CUSTOM:Karmannielectrolizer"
     },
-    "name": "darkironrecipe",
+    "name": "karmannielectrolizerrecipe",
     "namespace": "mod"
   }
 }

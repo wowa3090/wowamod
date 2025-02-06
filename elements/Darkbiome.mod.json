@@ -123,9 +123,9 @@
         "entity": {
           "value": "CUSTOM:Mimic"
         },
-        "minGroup": 4,
-        "maxGroup": 4,
-        "weight": 25,
+        "minGroup": 2,
+        "maxGroup": 3,
+        "weight": 5,
         "spawnType": "monster"
       }
     ]

@@ -3285,6 +3285,146 @@
           "src/main/resources/data/wowamod/recipes/blockforprofessiarecipe.json"
         ]
       }
+    },
+    {
+      "name": "Aluminium",
+      "type": "block",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aluminium_ore_wowa",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/aluminium_ore_wowa.json",
+          "src/main/java/net/wowamod/block/AluminiumBlock.java",
+          "src/main/resources/data/wowamod/forge/biome_modifier/aluminium_ore_wowa_biome_modifier.json",
+          "src/main/resources/data/wowamod/worldgen/placed_feature/aluminium_ore_wowa.json",
+          "src/main/resources/assets/wowamod/models/block/aluminium_ore_wowa.json",
+          "src/main/resources/assets/wowamod/blockstates/aluminium_ore_wowa.json",
+          "src/main/resources/data/wowamod/worldgen/configured_feature/aluminium_ore_wowa.json"
+        ]
+      }
+    },
+    {
+      "name": "Batareyka",
+      "type": "item",
+      "sortid": 211,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "batareyka",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/batareyka.json",
+          "src/main/java/net/wowamod/item/BatareykaItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Zagatovkablackiron",
+      "type": "item",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zagatovkablackiron",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/zagatovkablackiron.json",
+          "src/main/java/net/wowamod/item/ZagatovkablackironItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Zagatovkarecipe",
+      "type": "recipe",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zagatovkarecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/zagatovkarecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Darkironrecipe2",
+      "type": "recipe",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkironrecipe_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/darkironrecipe_2.json"
+        ]
+      }
+    },
+    {
+      "name": "Posudina",
+      "type": "item",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "posudina",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/PosudinaItem.java",
+          "src/main/resources/assets/wowamod/models/item/posudina.json"
+        ]
+      }
+    },
+    {
+      "name": "Posudinarecipe",
+      "type": "recipe",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "posudinarecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/posudinarecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Karmannielectrolizer",
+      "type": "item",
+      "sortid": 217,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "karmannielectrolizer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/KarmannielectrolizerItem.java",
+          "src/main/resources/assets/wowamod/models/item/karmannielectrolizer.json"
+        ]
+      }
+    },
+    {
+      "name": "Karmannielectrolizerrecipe",
+      "type": "recipe",
+      "sortid": 218,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "karmannielectrolizerrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/karmannielectrolizerrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Batareykarecipe",
+      "type": "recipe",
+      "sortid": 219,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "batareykarecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/batareykarecipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -3413,13 +3553,13 @@
       "entity.wowamod.nightmare": "Nightmare.trojan",
       "block.wowamod.crafterbroni": "Необычный Механизм",
       "gui.wowamod.extractorinteface.label_centrifuge": "Beta Centrifuge",
-      "subtitles.fadingworld-2faza": "\u003d)",
       "item.wowamod.klava": "Клавиатура",
+      "subtitles.fadingworld-2faza": "\u003d)",
       "item.wowamod.kolba": "Пустая колба",
       "block.wowamod.blockforprofessiafix": "Профессиональный блок",
       "block.wowamodfabric.extractor": "Extractor",
-      "item_group.wowamodfabric.wowamodvkladka": "wowa3090mod",
       "block.wowamodfabric.magicironblock": "Сталемагический блок",
+      "item_group.wowamodfabric.wowamodvkladka": "wowa3090mod",
       "item.wowamodfabric.nightmare_spawn_egg": "Nightmare.trojan Spawn Egg",
       "gui.wowamod.wowabronyacraftring.button_empty": "Создать",
       "effect.wowamod.timer": "Timer",
@@ -3449,6 +3589,7 @@
       "effect.wowamod.nightmareish": "NIGHTMARISH ENDINGE",
       "item.wowamod.orangesoul": "Оранжевая душа",
       "gui.wowamod.guidebook.label_izumrudy": "Изумруды",
+      "item.wowamod.zagatovkablackiron": "Заготовка для ч.ж",
       "gui.wowamod.extractorinteface.label_empty": "---------",
       "item.wowamod.rose": "Rose",
       "item.wowamod.rotor": "Rotor",
@@ -3467,6 +3608,7 @@
       "gui.wowamodfabric.wowabronyacraftring.label_empty": "\u003e",
       "death.attack.soulsworddamage": "%1$s Умер от магии душ",
       "item.wowamod.redemerald": "Красный Изумруд",
+      "item.wowamod.karmannielectrolizer": "Карманный электролизер",
       "item.wowamodfabric.klava": "Клавиатура",
       "item.wowamod.fadingworldbeta_2fazasound": "Fadingworldbeta2fazasound",
       "entity.minecraft.villager.wowamodfabric.emeraldshopper": "Изумрудный скупщик",
@@ -3478,9 +3620,9 @@
       "gui.wowamod.guidebookstart.label_kozhi_mimika": "Кожи мимика",
       "item.wowamodfabric.ekranchik": "Экран",
       "item.wowamod.shadowblade": "Теневой клинок",
-      "item.wowamod.myplacezone": "MyPlaceZone",
-      "item.wowamod.blacksoul_myplace": "Черная душа из My Place",
       "item.wowamod.superpalka": "Жезл",
+      "item.wowamod.blacksoul_myplace": "Черная душа из My Place",
+      "item.wowamod.myplacezone": "MyPlaceZone",
       "item.wowamod.derjatili": "Держатель для необычного механизма",
       "item_group.wowamod.myplacevkladka": "My place",
       "gui.wowamod.guidebookstart.label_zhielatielno_zapastis_miediu_i_zhiel": "Желательно запастись медью и железом",
@@ -3534,6 +3676,7 @@
       "gui.wowamod.myplace.label_percent_for_cd": "percent for cd",
       "gui.wowamodfabric.wowabronyacraftring.button_empty": "Создать",
       "gui.wowamod.guidebookstart.label_dush": "Душ",
+      "item.wowamod.posudina": "Емкость",
       "item.wowamodfabric.extractlbsoul": "Экстракт голубой души",
       "item.wowamod.klavaж": "Клавиатура",
       "gui.wowamodfabric.extractorinteface.label_centrifuge": "Centrifuge",
@@ -3560,6 +3703,7 @@
       "item.wowamodfabric.mimickoja": "\"Кожа\" мимика",
       "item.wowamodfabric.purpleemerald": "Пёрпл Изумруд",
       "gui.wowamod.extractorinteface.button_start": "start",
+      "item.wowamod.batareyka": "Батарейка",
       "entity.minecraft.villager.wowamod.emeraldshopper": "Изумрудный добытчик",
       "gui.wowamod.guidebook.label_ekstraktor": "Экстрактор",
       "block.wowamod.interfaceconstructor": "Интерфейс конструктора",
@@ -3593,6 +3737,7 @@
       "item.wowamodfabric.redsoulpiece": "Частичка Красной души",
       "subtitles.faza2perexod": "HAHAHAHAHAHAH",
       "item.wowamod.blueemerald": "Синий изумруд",
+      "block.wowamod.aluminium_ore_wowa": "Бокситы",
       "item.wowamod.extractredsoul": "Экстракт красной души",
       "gui.wowamodfabric.constructorinterface.button_create_test": "create (test)",
       "item.wowamod.ekranchik": "Экран",
@@ -3629,13 +3774,13 @@
       "entity.wowamod.nightmare": "Nightmare.trojan",
       "block.wowamod.crafterbroni": "Необычный Механизм",
       "gui.wowamod.extractorinteface.label_centrifuge": "Beta Centrifuge",
-      "item.wowamod.klava": "Клавиатура",
       "subtitles.fadingworld-2faza": "\u003d)",
+      "item.wowamod.klava": "Клавиатура",
       "item.wowamod.kolba": "Пустая колба",
       "block.wowamod.blockforprofessiafix": "Профессиональный блок",
       "block.wowamodfabric.extractor": "Extractor",
-      "item_group.wowamodfabric.wowamodvkladka": "wowa3090mod",
       "block.wowamodfabric.magicironblock": "Сталемагический блок",
+      "item_group.wowamodfabric.wowamodvkladka": "wowa3090mod",
       "item.wowamodfabric.nightmare_spawn_egg": "Nightmare.trojan Spawn Egg",
       "gui.wowamod.wowabronyacraftring.button_empty": "Создать",
       "effect.wowamod.timer": "Timer",
@@ -3665,6 +3810,7 @@
       "effect.wowamod.nightmareish": "NIGHTMARISH ENDINGE",
       "item.wowamod.orangesoul": "Оранжевая душа",
       "gui.wowamod.guidebook.label_izumrudy": "Изумруды",
+      "item.wowamod.zagatovkablackiron": "Заготовка для ч.ж",
       "gui.wowamod.extractorinteface.label_empty": "---------",
       "item.wowamod.rose": "Rose",
       "item.wowamod.rotor": "Rotor",
@@ -3683,6 +3829,7 @@
       "gui.wowamodfabric.wowabronyacraftring.label_empty": "\u003e",
       "death.attack.soulsworddamage": "%1$s Умер от магии душ",
       "item.wowamod.redemerald": "Красный Изумруд",
+      "item.wowamod.karmannielectrolizer": "Карманный электролизер",
       "item.wowamodfabric.klava": "Клавиатура",
       "item.wowamod.fadingworldbeta_2fazasound": "Fadingworldbeta2fazasound",
       "entity.minecraft.villager.wowamodfabric.emeraldshopper": "Emeraldshopper",
@@ -3694,9 +3841,9 @@
       "gui.wowamod.guidebookstart.label_kozhi_mimika": "Кожи мимика",
       "item.wowamodfabric.ekranchik": "Экран",
       "item.wowamod.shadowblade": "Теневой клинок",
-      "item.wowamod.myplacezone": "MyPlaceZone",
-      "item.wowamod.blacksoul_myplace": "Черная душа из My Place",
       "item.wowamod.superpalka": "Жезл",
+      "item.wowamod.blacksoul_myplace": "Черная душа из My Place",
+      "item.wowamod.myplacezone": "MyPlaceZone",
       "item.wowamod.derjatili": "Держатель для необычного механизма",
       "item_group.wowamod.myplacevkladka": "My place",
       "gui.wowamod.guidebookstart.label_zhielatielno_zapastis_miediu_i_zhiel": "Желательно запастись медью и железом",
@@ -3750,6 +3897,7 @@
       "gui.wowamod.myplace.label_percent_for_cd": "percent for cd",
       "gui.wowamodfabric.wowabronyacraftring.button_empty": "Создать",
       "gui.wowamod.guidebookstart.label_dush": "Душ",
+      "item.wowamod.posudina": "Емкость",
       "item.wowamodfabric.extractlbsoul": "Экстракт голубой души",
       "gui.wowamodfabric.extractorinteface.label_centrifuge": "Beta Centrifuge",
       "item_group.wowamod.wowamodvkladka": "wowa3090mod",
@@ -3775,6 +3923,7 @@
       "item.wowamodfabric.mimickoja": "\"Кожа\" мимика",
       "item.wowamodfabric.purpleemerald": "Пёрпл Изумруд",
       "gui.wowamod.extractorinteface.button_start": "start",
+      "item.wowamod.batareyka": "Батарейка",
       "entity.minecraft.villager.wowamod.emeraldshopper": "Emeraldshopper",
       "gui.wowamod.guidebook.label_ekstraktor": "Экстрактор",
       "block.wowamod.interfaceconstructor": "Интерфейс конструктора",
@@ -3808,6 +3957,7 @@
       "item.wowamodfabric.redsoulpiece": "Частичка Красной души",
       "subtitles.faza2perexod": "HAHAHAHAHAHAH",
       "item.wowamod.blueemerald": "Синий изумруд",
+      "block.wowamod.aluminium_ore_wowa": "Бокситы",
       "item.wowamod.extractredsoul": "Экстракт красной души",
       "gui.wowamodfabric.constructorinterface.button_create_test": "create (test)",
       "item.wowamod.ekranchik": "Экран",

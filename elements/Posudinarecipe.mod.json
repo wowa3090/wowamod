@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 3,
+    "recipeRetstackSize": 1,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Etheriumdark"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Etheriumdark"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Etheriumdark"
+        "value": ""
       },
       {
-        "value": "Items.COAL#0"
+        "value": "Blocks.GLASS"
       },
       {
-        "value": "CUSTOM:Zagatovkablackiron"
+        "value": ""
       },
       {
-        "value": "Items.COAL#0"
+        "value": "Blocks.GLASS"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "Blocks.GLASS"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "Blocks.GLASS"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "Blocks.GLASS"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Blackironingot"
+      "value": "CUSTOM:Posudina"
     },
-    "name": "darkironrecipe",
+    "name": "posudinarecipe",
     "namespace": "mod"
   }
 }

@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "fgf"
+  ],
+  "key": {
+    "a": {
+      "item": "wowamod:wiresprovoda"
+    },
+    "b": {
+      "item": "wowamod:batareyka"
+    },
+    "c": {
+      "item": "minecraft:copper_ingot"
+    },
+    "d": {
+      "item": "wowamod:posudina"
+    },
+    "e": {
+      "item": "minecraft:iron_ingot"
+    },
+    "f": {
+      "item": "wowamod:blackironingot"
+    },
+    "g": {
+      "item": "minecraft:lever"
+    }
+  },
+  "result": {
+    "item": "wowamod:karmannielectrolizer",
+    "count": 1
+  }
+}

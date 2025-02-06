@@ -24,7 +24,7 @@
         "value": "Items.COAL#0"
       },
       {
-        "value": "CUSTOM:Zagatovkablackiron"
+        "value": "CUSTOM:Ironmass1"
       },
       {
         "value": "Items.COAL#0"
@@ -42,7 +42,7 @@
     "recipeReturnStack": {
       "value": "CUSTOM:Blackironingot"
     },
-    "name": "darkironrecipe",
+    "name": "darkironrecipe_2",
     "namespace": "mod"
   }
 }
