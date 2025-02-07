@@ -2,30 +2,33 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "aba",
-    "cde",
-    "fgf"
+    "abc",
+    "def",
+    "ghg"
   ],
   "key": {
     "a": {
-      "item": "wowamod:wiresprovoda"
-    },
-    "b": {
       "item": "wowamod:batareyka"
     },
+    "b": {
+      "item": "minecraft:water_bucket"
+    },
     "c": {
-      "item": "minecraft:copper_ingot"
+      "item": "wowamod:wiresprovoda"
     },
     "d": {
-      "item": "wowamod:posudina"
+      "item": "minecraft:copper_ingot"
     },
     "e": {
-      "item": "minecraft:iron_ingot"
+      "item": "wowamod:posudina"
     },
     "f": {
-      "item": "wowamod:blackironingot"
+      "item": "minecraft:iron_ingot"
     },
     "g": {
+      "item": "wowamod:blackironingot"
+    },
+    "h": {
       "item": "minecraft:lever"
     }
   },

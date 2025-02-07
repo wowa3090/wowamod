@@ -30,13 +30,13 @@
         "value": "Items.IRON_INGOT"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:Ironplastinewowa"
       },
       {
         "value": "Items.DIAMOND"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:Ironplastinewowa"
       }
     ],
     "recipeReturnStack": {

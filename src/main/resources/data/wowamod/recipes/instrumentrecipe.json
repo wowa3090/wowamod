@@ -3,7 +3,7 @@
   "category": "misc",
   "pattern": [
     "aba",
-    "acd",
+    "cde",
     "aba"
   ],
   "key": {
@@ -14,9 +14,12 @@
       "item": "wowamod:alphaelement"
     },
     "c": {
-      "item": "minecraft:diamond_block"
+      "item": "wowamod:multitoolcomponent"
     },
     "d": {
+      "item": "minecraft:diamond_block"
+    },
+    "e": {
       "item": "wowamod:redemerald"
     }
   },

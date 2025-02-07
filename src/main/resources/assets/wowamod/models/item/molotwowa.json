@@ -1,0 +1,8 @@
+{
+  "parent": "wowamod:custom/mol2",
+  "textures": {
+    "0": "wowamod:block/mol",
+    "missing": "wowamod:block/mol",
+    "particle": "wowamod:item/mol"
+  }
+}

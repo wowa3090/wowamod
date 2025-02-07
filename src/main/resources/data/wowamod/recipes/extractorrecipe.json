@@ -4,7 +4,7 @@
   "pattern": [
     "aaa",
     "bcb",
-    "bdb"
+    "ded"
   ],
   "key": {
     "a": {
@@ -17,6 +17,9 @@
       "item": "wowamod:rotor"
     },
     "d": {
+      "item": "wowamod:ironplastinewowa"
+    },
+    "e": {
       "item": "minecraft:diamond"
     }
   },

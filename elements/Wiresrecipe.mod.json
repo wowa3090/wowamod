@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 2,
+    "recipeRetstackSize": 1,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -12,10 +12,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.WOOL"
+        "value": "CUSTOM:Izolationw"
       },
       {
-        "value": "Blocks.WOOL"
+        "value": "CUSTOM:Izolationw"
+      },
+      {
+        "value": "CUSTOM:Izolationw"
       },
       {
         "value": ""
@@ -24,19 +27,16 @@
         "value": "CUSTOM:Coppermass1"
       },
       {
-        "value": "CUSTOM:Coppermass1"
-      },
-      {
         "value": ""
       },
       {
-        "value": "Blocks.WOOL"
+        "value": "CUSTOM:Izolationw"
       },
       {
-        "value": "Blocks.WOOL"
+        "value": "CUSTOM:Izolationw"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Izolationw"
       }
     ],
     "recipeReturnStack": {

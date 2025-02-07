@@ -33,6 +33,8 @@ import net.wowamod.item.OrangesoulpieceItem;
 import net.wowamod.item.OrangesoulItem;
 import net.wowamod.item.NetherstarswordItem;
 import net.wowamod.item.MyplacezoneItem;
+import net.wowamod.item.MultitoolcomponentItem;
+import net.wowamod.item.MolotwowaItem;
 import net.wowamod.item.MimictkanbItem;
 import net.wowamod.item.MimickojaItem;
 import net.wowamod.item.MagicironingotItem;
@@ -42,6 +44,7 @@ import net.wowamod.item.LightblueemeraldItem;
 import net.wowamod.item.KolbaItem;
 import net.wowamod.item.KlavaItem;
 import net.wowamod.item.KarmannielectrolizerItem;
+import net.wowamod.item.IzolationwItem;
 import net.wowamod.item.IronplastinewowaItem;
 import net.wowamod.item.Ironmass1Item;
 import net.wowamod.item.InstrumentprostoItem;
@@ -57,6 +60,7 @@ import net.wowamod.item.EtheriumdarkItem;
 import net.wowamod.item.EkranchikItem;
 import net.wowamod.item.DissasebmlyrequiredItem;
 import net.wowamod.item.DerjatiliItem;
+import net.wowamod.item.CopperplateItem;
 import net.wowamod.item.Coppermass1Item;
 import net.wowamod.item.BluesoulpieceItem;
 import net.wowamod.item.BluesoulItem;
@@ -163,6 +167,10 @@ public class WowamodModItems {
 	public static final RegistryObject<Item> ZAGATOVKABLACKIRON = REGISTRY.register("zagatovkablackiron", () -> new ZagatovkablackironItem());
 	public static final RegistryObject<Item> POSUDINA = REGISTRY.register("posudina", () -> new PosudinaItem());
 	public static final RegistryObject<Item> KARMANNIELECTROLIZER = REGISTRY.register("karmannielectrolizer", () -> new KarmannielectrolizerItem());
+	public static final RegistryObject<Item> MOLOTWOWA = REGISTRY.register("molotwowa", () -> new MolotwowaItem());
+	public static final RegistryObject<Item> IZOLATIONW = REGISTRY.register("izolationw", () -> new IzolationwItem());
+	public static final RegistryObject<Item> COPPERPLATE = REGISTRY.register("copperplate", () -> new CopperplateItem());
+	public static final RegistryObject<Item> MULTITOOLCOMPONENT = REGISTRY.register("multitoolcomponent", () -> new MultitoolcomponentItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

@@ -30,13 +30,13 @@
         "value": "Blocks.IRON_BLOCK"
       },
       {
-        "value": "Items.COPPER_INGOT"
+        "value": "CUSTOM:Copperplate"
       },
       {
-        "value": "Items.COPPER_INGOT"
+        "value": "CUSTOM:Copperplate"
       },
       {
-        "value": "Items.COPPER_INGOT"
+        "value": "CUSTOM:Copperplate"
       }
     ],
     "recipeReturnStack": {

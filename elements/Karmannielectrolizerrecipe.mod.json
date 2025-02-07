@@ -12,10 +12,10 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Wiresprovoda"
+        "value": "CUSTOM:Batareyka"
       },
       {
-        "value": "CUSTOM:Batareyka"
+        "value": "Items.WATER_BUCKET"
       },
       {
         "value": "CUSTOM:Wiresprovoda"

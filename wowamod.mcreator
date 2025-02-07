@@ -3425,6 +3425,101 @@
           "src/main/resources/data/wowamod/recipes/batareykarecipe.json"
         ]
       }
+    },
+    {
+      "name": "Molotwowa",
+      "type": "item",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "molotwowa",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/MolotwowaItem.java",
+          "src/main/resources/assets/wowamod/models/item/molotwowa.json"
+        ]
+      }
+    },
+    {
+      "name": "Izolationw",
+      "type": "item",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "izolationw",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/IzolationwItem.java",
+          "src/main/resources/assets/wowamod/models/item/izolationw.json"
+        ]
+      }
+    },
+    {
+      "name": "Izolationrecipe",
+      "type": "recipe",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "izolationrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/izolationrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Plastinerecipe",
+      "type": "recipe",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plastinerecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/plastinerecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Copperplastinerecipe",
+      "type": "recipe",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copperplastinerecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/copperplastinerecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Copperplate",
+      "type": "item",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copperplate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/CopperplateItem.java",
+          "src/main/resources/assets/wowamod/models/item/copperplate.json"
+        ]
+      }
+    },
+    {
+      "name": "Multitoolcomponent",
+      "type": "item",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "multitoolcomponent",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/MultitoolcomponentItem.java",
+          "src/main/resources/assets/wowamod/models/item/multitoolcomponent.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -3553,20 +3648,22 @@
       "entity.wowamod.nightmare": "Nightmare.trojan",
       "block.wowamod.crafterbroni": "Необычный Механизм",
       "gui.wowamod.extractorinteface.label_centrifuge": "Beta Centrifuge",
-      "item.wowamod.klava": "Клавиатура",
       "subtitles.fadingworld-2faza": "\u003d)",
+      "item.wowamod.klava": "Клавиатура",
       "item.wowamod.kolba": "Пустая колба",
       "block.wowamod.blockforprofessiafix": "Профессиональный блок",
       "block.wowamodfabric.extractor": "Extractor",
-      "block.wowamodfabric.magicironblock": "Сталемагический блок",
       "item_group.wowamodfabric.wowamodvkladka": "wowa3090mod",
+      "block.wowamodfabric.magicironblock": "Сталемагический блок",
       "item.wowamodfabric.nightmare_spawn_egg": "Nightmare.trojan Spawn Egg",
       "gui.wowamod.wowabronyacraftring.button_empty": "Создать",
       "effect.wowamod.timer": "Timer",
+      "item.wowamod.izolationw": "Часть изоляции",
       "block.wowamodfabric.extractgolubaysoul": "Extractgolubaysoul",
       "block.wowamod.dark_biome_ore": "Dark Biome Ore",
       "item.wowamod.wowaswordosnova": "Основа для меча",
       "gui.wowamod.wowabronyacraftring.label_crafting": "Создание предметов",
+      "item.wowamod.multitoolcomponent": "М.Т.К",
       "item.wowamodfabric.orangesoul": "Оранжевая душа",
       "gui.wowamodfabric.souls.label_souls": "Души",
       "item.wowamodfabric.lightbluesoulpiece": "Частичка Голубой души",
@@ -3615,14 +3712,15 @@
       "subtitles.disassembly_required": "s",
       "item.wowamod.greensoul": "Зелёная душа",
       "item.wowamod.extractgolubaysoul_bucket": "Extractgolubaysoul Bucket",
+      "item.wowamod.copperplate": "Медная пластина",
       "block.wowamod.magicironblock": "Сталемагический блок",
       "item.wowamodfabric.yellowsoul": "Жёлтая душа",
       "gui.wowamod.guidebookstart.label_kozhi_mimika": "Кожи мимика",
       "item.wowamodfabric.ekranchik": "Экран",
       "item.wowamod.shadowblade": "Теневой клинок",
-      "item.wowamod.superpalka": "Жезл",
-      "item.wowamod.blacksoul_myplace": "Черная душа из My Place",
       "item.wowamod.myplacezone": "MyPlaceZone",
+      "item.wowamod.blacksoul_myplace": "Черная душа из My Place",
+      "item.wowamod.superpalka": "Жезл",
       "item.wowamod.derjatili": "Держатель для необычного механизма",
       "item_group.wowamod.myplacevkladka": "My place",
       "gui.wowamod.guidebookstart.label_zhielatielno_zapastis_miediu_i_zhiel": "Желательно запастись медью и железом",
@@ -3692,6 +3790,7 @@
       "gui.wowamodfabric.extractorinteface.label_empty1": "|",
       "item.wowamod.adarkplacesound": "Happy and Sad",
       "gui.wowamodfabric.extractorinteface.label_energy": "Energy :",
+      "item.wowamod.molotwowa": "Молот",
       "item.wowamod.mimickoja": "\"Кожа\" мимика",
       "item.wowamodfabric.wowabronya_boots": "Ботинки",
       "item.wowamodfabric.purplesoul": "Фиолетовая душа",
@@ -3774,20 +3873,22 @@
       "entity.wowamod.nightmare": "Nightmare.trojan",
       "block.wowamod.crafterbroni": "Необычный Механизм",
       "gui.wowamod.extractorinteface.label_centrifuge": "Beta Centrifuge",
-      "subtitles.fadingworld-2faza": "\u003d)",
       "item.wowamod.klava": "Клавиатура",
+      "subtitles.fadingworld-2faza": "\u003d)",
       "item.wowamod.kolba": "Пустая колба",
       "block.wowamod.blockforprofessiafix": "Профессиональный блок",
       "block.wowamodfabric.extractor": "Extractor",
-      "block.wowamodfabric.magicironblock": "Сталемагический блок",
       "item_group.wowamodfabric.wowamodvkladka": "wowa3090mod",
+      "block.wowamodfabric.magicironblock": "Сталемагический блок",
       "item.wowamodfabric.nightmare_spawn_egg": "Nightmare.trojan Spawn Egg",
       "gui.wowamod.wowabronyacraftring.button_empty": "Создать",
       "effect.wowamod.timer": "Timer",
+      "item.wowamod.izolationw": "Часть изоляции",
       "block.wowamodfabric.extractgolubaysoul": "Extractgolubaysoul",
       "block.wowamod.dark_biome_ore": "Dark Biome Ore",
       "item.wowamod.wowaswordosnova": "Основа для меча",
       "gui.wowamod.wowabronyacraftring.label_crafting": "Создание предметов",
+      "item.wowamod.multitoolcomponent": "М.Т.К",
       "item.wowamodfabric.orangesoul": "Оранжевая душа",
       "gui.wowamodfabric.souls.label_souls": "souls",
       "item.wowamodfabric.lightbluesoulpiece": "Частичка Голубой души",
@@ -3836,14 +3937,15 @@
       "subtitles.disassembly_required": "s",
       "item.wowamod.greensoul": "Зелёная душа",
       "item.wowamod.extractgolubaysoul_bucket": "Extractgolubaysoul Bucket",
+      "item.wowamod.copperplate": "Медная пластина",
       "block.wowamod.magicironblock": "Сталемагический блок",
       "item.wowamodfabric.yellowsoul": "Жёлтая душа",
       "gui.wowamod.guidebookstart.label_kozhi_mimika": "Кожи мимика",
       "item.wowamodfabric.ekranchik": "Экран",
       "item.wowamod.shadowblade": "Теневой клинок",
-      "item.wowamod.superpalka": "Жезл",
-      "item.wowamod.blacksoul_myplace": "Черная душа из My Place",
       "item.wowamod.myplacezone": "MyPlaceZone",
+      "item.wowamod.blacksoul_myplace": "Черная душа из My Place",
+      "item.wowamod.superpalka": "Жезл",
       "item.wowamod.derjatili": "Держатель для необычного механизма",
       "item_group.wowamod.myplacevkladka": "My place",
       "gui.wowamod.guidebookstart.label_zhielatielno_zapastis_miediu_i_zhiel": "Желательно запастись медью и железом",
@@ -3912,6 +4014,7 @@
       "gui.wowamodfabric.extractorinteface.label_empty1": "|",
       "item.wowamod.adarkplacesound": "Happy and Sad",
       "gui.wowamodfabric.extractorinteface.label_energy": "Energy :",
+      "item.wowamod.molotwowa": "Молот",
       "item.wowamod.mimickoja": "\"Кожа\" мимика",
       "item.wowamodfabric.wowabronya_boots": "Ботинки 3090",
       "item.wowamodfabric.purplesoul": "Фиолетовая душа",

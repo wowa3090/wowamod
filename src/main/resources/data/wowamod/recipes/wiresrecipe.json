@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "aa",
-    "bb",
-    "aa"
+    "aaa",
+    " b ",
+    "aaa"
   ],
   "key": {
     "a": {
-      "tag": "minecraft:wool"
+      "item": "wowamod:izolationw"
     },
     "b": {
       "item": "wowamod:coppermass_1"
@@ -16,6 +16,6 @@
   },
   "result": {
     "item": "wowamod:wiresprovoda",
-    "count": 2
+    "count": 1
   }
 }

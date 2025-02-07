@@ -8,14 +8,14 @@
   ],
   "key": {
     "a": {
-      "item": "wowamod:derjatili"
+      "tag": "minecraft:wool"
     },
     "b": {
-      "item": "wowamod:ironplastinewowa"
+      "item": "wowamod:etheriumdark"
     }
   },
   "result": {
-    "item": "wowamod:rotor",
-    "count": 1
+    "item": "wowamod:izolationw",
+    "count": 3
   }
 }

@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 1,
+    "recipeRetstackSize": 3,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Ironplastinewowa"
+        "value": ""
       },
       {
-        "value": "Items.COMPARATOR"
+        "value": "Blocks.WOOL"
       },
       {
-        "value": "CUSTOM:Ironplastinewowa"
+        "value": ""
       },
       {
-        "value": "Items.REPEATER"
+        "value": "Blocks.WOOL"
       },
       {
-        "value": "Blocks.REDSTONE_BLOCK"
+        "value": "CUSTOM:Etheriumdark"
       },
       {
-        "value": "Items.REPEATER"
+        "value": "Blocks.WOOL"
       },
       {
-        "value": "CUSTOM:Ironplastinewowa"
+        "value": ""
       },
       {
-        "value": "Blocks.LEVER"
+        "value": "Blocks.WOOL"
       },
       {
-        "value": "CUSTOM:Ironplastinewowa"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Redstonecommandblock"
+      "value": "CUSTOM:Izolationw"
     },
-    "name": "redstonecorecraft",
+    "name": "izolationrecipe",
     "namespace": "mod"
   }
 }

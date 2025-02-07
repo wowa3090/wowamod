@@ -100,6 +100,10 @@ public class WowamodModTabs {
 				tabData.accept(WowamodModItems.ZAGATOVKABLACKIRON.get());
 				tabData.accept(WowamodModItems.POSUDINA.get());
 				tabData.accept(WowamodModItems.KARMANNIELECTROLIZER.get());
+				tabData.accept(WowamodModItems.MOLOTWOWA.get());
+				tabData.accept(WowamodModItems.IZOLATIONW.get());
+				tabData.accept(WowamodModItems.COPPERPLATE.get());
+				tabData.accept(WowamodModItems.MULTITOOLCOMPONENT.get());
 			})
 
 					.build());

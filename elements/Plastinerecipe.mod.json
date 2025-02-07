@@ -9,40 +9,40 @@
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
-    "recipeShapeless": false,
+    "recipeShapeless": true,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Ironplastinewowa"
+        "value": ""
       },
       {
-        "value": "Items.COMPARATOR"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Ironplastinewowa"
+        "value": ""
       },
       {
-        "value": "Items.REPEATER"
+        "value": ""
       },
       {
-        "value": "Blocks.REDSTONE_BLOCK"
+        "value": ""
       },
       {
-        "value": "Items.REPEATER"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Ironplastinewowa"
+        "value": "CUSTOM:Molotwowa"
       },
       {
-        "value": "Blocks.LEVER"
+        "value": "Items.IRON_INGOT"
       },
       {
-        "value": "CUSTOM:Ironplastinewowa"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Redstonecommandblock"
+      "value": "CUSTOM:Ironplastinewowa"
     },
-    "name": "redstonecorecraft",
+    "name": "plastinerecipe",
     "namespace": "mod"
   }
 }
