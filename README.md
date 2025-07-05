@@ -12,9 +12,9 @@ Magical Realms
 Technological Wonders: Advanced machines, energy cores 🔧💡
 Stay Updated:
 Join our Telegram for the latest news and updates:
-Telegram Channel 📢
+t.me/Universe3090 📢
 
-Thank you, adventurers! Your curiosity fuels this universe. Gear up, and travel into hystory 3090! 🎮🧙‍♂️🤖
+Thank you, adventurers! Your curiosity fuels this universe. Gear up, and travel into Universe3090! 🎮🧙‍♂️🤖
 
 Your fellow creator,
 wowa3090
