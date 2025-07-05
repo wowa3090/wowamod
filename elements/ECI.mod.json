@@ -55,6 +55,31 @@
           "x": 135,
           "y": 46
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_craftprogress",
+          "text": {
+            "fixedValue": "",
+            "name": "Craftprogress"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 205,
+          "y": 76
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "emeraldcombinerhud.png",
+          "use1Xscale": false,
+          "x": 263,
+          "y": 42
+        }
       }
     ],
     "gridSettings": {

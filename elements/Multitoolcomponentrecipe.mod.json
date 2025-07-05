@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Batareyka"
+      },
+      {
+        "value": "CUSTOM:Darkironplastine"
+      },
+      {
+        "value": "CUSTOM:Wiresprovoda"
+      },
+      {
+        "value": "CUSTOM:Darkironplastine"
+      },
+      {
+        "value": "CUSTOM:Redstonecommandblock"
+      },
+      {
+        "value": "CUSTOM:Darkironplastine"
+      },
+      {
+        "value": "CUSTOM:Rotor"
+      },
+      {
+        "value": "CUSTOM:Darkironplastine"
+      },
+      {
+        "value": "CUSTOM:AluminiumIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Multitoolcomponent"
+    },
+    "name": "multitoolcomponentrecipe",
+    "namespace": "mod"
+  }
+}

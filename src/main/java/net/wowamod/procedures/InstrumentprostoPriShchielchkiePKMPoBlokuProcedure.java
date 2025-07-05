@@ -16,7 +16,7 @@ public class InstrumentprostoPriShchielchkiePKMPoBlokuProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal(("" + (new Object() {
+			_player.displayClientMessage(Component.literal(("V: " + (new Object() {
 				public int getEnergyStored(LevelAccessor level, BlockPos pos) {
 					AtomicInteger _retval = new AtomicInteger(0);
 					BlockEntity _ent = level.getBlockEntity(pos);

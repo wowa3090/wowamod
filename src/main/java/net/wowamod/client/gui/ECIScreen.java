@@ -2,6 +2,7 @@ package net.wowamod.client.gui;
 
 import net.wowamod.world.inventory.ECIMenu;
 import net.wowamod.procedures.EciprocProcedure;
+import net.wowamod.procedures.CraftprogressProcedure;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
@@ -47,6 +48,9 @@ public class ECIScreen extends AbstractContainerScreen<ECIMenu> {
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		guiGraphics.blit(new ResourceLocation("wowamod:textures/screens/emeraldcombinerhud.png"), this.leftPos + 137, this.topPos + 5, 0, 0, 32, 16, 32, 16);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -69,6 +73,9 @@ public class ECIScreen extends AbstractContainerScreen<ECIMenu> {
 		guiGraphics.drawString(this.font,
 
 				EciprocProcedure.execute(world, x, y, z), 9, 9, -12829636, false);
+		guiGraphics.drawString(this.font,
+
+				CraftprogressProcedure.execute(world, x, y, z), 79, 39, -12829636, false);
 	}
 
 	@Override

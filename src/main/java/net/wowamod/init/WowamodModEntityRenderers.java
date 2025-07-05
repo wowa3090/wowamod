@@ -16,7 +16,7 @@ import net.minecraftforge.api.distmarker.Dist;
 public class WowamodModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
-		event.registerEntityRenderer(WowamodModEntities.MIMIC.get(), MimicRenderer::new);
 		event.registerEntityRenderer(WowamodModEntities.NIGHTMARE.get(), NightmareRenderer::new);
+		event.registerEntityRenderer(WowamodModEntities.MIMIC.get(), MimicRenderer::new);
 	}
 }

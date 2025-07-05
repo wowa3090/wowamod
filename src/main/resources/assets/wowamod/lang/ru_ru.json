@@ -160,6 +160,7 @@
   "item_group.wowamod.wowamodvkladka": "Universe3090",
   "block.wowamod.emerald_combiner": "Emerald Combiner",
   "block.wowamod.portconstructor": "Порт конструктора",
+  "item.wowamod.darkironplastine": "Darkironplastine",
   "item.wowamod.yellowsoul": "Жёлтая душа",
   "item.wowamodfabric.netherstarsword": "Звёздный меч",
   "item.wowamod.light_blue_emerald_piece": "Осколок Голубого Изумруда",
@@ -192,6 +193,7 @@
   "item.wowamodfabric.purplesoulpiece": "Частичка Фиолетовой души",
   "item.wowamod.purplesoul": "Фиолетовая душа",
   "key.wowamod.souls_viewbutton": "Кол-во душ",
+  "block.wowamod.dark_iron_machine_casing": "Dark Iron Machine Casing",
   "block.wowamod.truerose": "Роза",
   "item.wowamodfabric.extractredsoul": "Extractredsoul",
   "block.wowamodfabric.crafterbroni": "Необычный Механизм",
@@ -235,7 +237,9 @@
   "gui.wowamod.guidebookstart.label_dlia_nachala_vam_ponadobitsia_nait": "Для начала вам понадобиться найти множество ресурсов в виде :",
   "item.wowamodfabric.orangesoulpiece": "Частичка Оранжевой души",
   "item.wowamodfabric.wowaswordosnova": "Основа для меча",
+  "item.wowamod.aluminiumdiamondbase": "Aluminiumdiamondbase",
   "gui.wowamod.guidebookstart.label_izumrudov": "Изумрудов",
   "item.wowamod.bluesoul": "Синяя душа",
+  "item.wowamod.energyelement": "Energyelement",
   "item.wowamod.purplesoulpiece": "Частичка Фиолетовой души"
 }

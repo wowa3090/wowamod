@@ -1,18 +1,19 @@
 {
   "replace": false,
   "values": [
+    "wowamod:dark_biome_ore",
+    "wowamod:aluminium_ore_wowa",
+    "wowamod:pogranichnik",
+    "wowamod:blockforprofessiafix",
     "wowamod:crafterbroni",
+    "wowamod:emerald_combiner",
+    "wowamod:big_batteryw",
     "wowamod:redstonecommandblock",
     "wowamod:magicironblock",
     "wowamod:portconstructor",
     "wowamod:interfaceconstructor",
     "wowamod:redstoneport",
     "wowamod:extractor",
-    "wowamod:dark_biome_ore",
-    "wowamod:blockforprofessiafix",
-    "wowamod:aluminium_ore_wowa",
-    "wowamod:pogranichnik",
-    "wowamod:emerald_combiner",
-    "wowamod:big_batteryw"
+    "wowamod:dark_iron_machine_casing"
   ]
 }

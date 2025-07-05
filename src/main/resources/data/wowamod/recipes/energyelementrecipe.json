@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bbb",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "wowamod:batareyka"
+    },
+    "b": {
+      "item": "wowamod:wiresprovoda"
+    }
+  },
+  "result": {
+    "item": "wowamod:energyelement",
+    "count": 1
+  }
+}

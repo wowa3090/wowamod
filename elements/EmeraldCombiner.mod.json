@@ -2,12 +2,12 @@
   "_fv": 57,
   "_type": "block",
   "definition": {
-    "texture": "aluminium",
-    "textureTop": "aluminium",
-    "textureLeft": "extractor_pered2",
-    "textureFront": "constructorinterface",
-    "textureRight": "extractor_pered2",
-    "textureBack": "extractor_pered2",
+    "texture": "darkironmachinecasing",
+    "textureTop": "emeraldcombinertop",
+    "textureLeft": "emeraldcombinerwesteastetc",
+    "textureFront": "emeraldcombinerplayer",
+    "textureRight": "emeraldcombinerwesteastetc",
+    "textureBack": "emeraldcombinerwesteastetc",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 2,
@@ -120,7 +120,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onTickUpdate": {
-      "name": "EmeraldCombinerObnovlieniieTika"
+      "name": "EmeraldCraft"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

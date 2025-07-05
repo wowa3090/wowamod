@@ -23,12 +23,12 @@ import net.minecraft.world.entity.Entity;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class WowamodModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, WowamodMod.MODID);
+	public static final RegistryObject<EntityType<NightmareEntity>> NIGHTMARE = register("nightmare", EntityType.Builder.<NightmareEntity>of(NightmareEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(256)
+			.setUpdateInterval(3).setCustomClientFactory(NightmareEntity::new).fireImmune().sized(0.7f, 1.9f));
 	public static final RegistryObject<EntityType<MimicEntity>> MIMIC = register("mimic",
 			EntityType.Builder.<MimicEntity>of(MimicEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MimicEntity::new)
 
 					.sized(0.6f, 2f));
-	public static final RegistryObject<EntityType<NightmareEntity>> NIGHTMARE = register("nightmare", EntityType.Builder.<NightmareEntity>of(NightmareEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(256)
-			.setUpdateInterval(3).setCustomClientFactory(NightmareEntity::new).fireImmune().sized(0.7f, 1.9f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -37,14 +37,14 @@ public class WowamodModEntities {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
-			MimicEntity.init();
 			NightmareEntity.init();
+			MimicEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
-		event.put(MIMIC.get(), MimicEntity.createAttributes().build());
 		event.put(NIGHTMARE.get(), NightmareEntity.createAttributes().build());
+		event.put(MIMIC.get(), MimicEntity.createAttributes().build());
 	}
 }

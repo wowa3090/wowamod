@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "wowamod:molotwowa"
+    },
+    {
+      "item": "wowamod:blackironingot"
+    }
+  ],
+  "result": {
+    "item": "wowamod:darkironplastine",
+    "count": 1
+  }
+}

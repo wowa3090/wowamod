@@ -2,7 +2,7 @@
 package net.wowamod.block;
 
 import net.wowamod.world.inventory.ECIMenu;
-import net.wowamod.procedures.EmeraldCombinerObnovlieniieTikaProcedure;
+import net.wowamod.procedures.EmeraldCraftProcedure;
 import net.wowamod.block.entity.EmeraldCombinerBlockEntity;
 
 import net.minecraftforge.network.NetworkHooks;
@@ -109,7 +109,7 @@ public class EmeraldCombinerBlock extends Block implements EntityBlock {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-		EmeraldCombinerObnovlieniieTikaProcedure.execute(world, x, y, z);
+		EmeraldCraftProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 1);
 	}
 

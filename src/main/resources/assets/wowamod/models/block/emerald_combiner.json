@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "wowamod:block/aluminium",
-    "up": "wowamod:block/aluminium",
-    "north": "wowamod:block/constructorinterface",
-    "east": "wowamod:block/extractor_pered2",
-    "south": "wowamod:block/extractor_pered2",
-    "west": "wowamod:block/extractor_pered2",
-    "particle": "wowamod:block/aluminium"
+    "down": "wowamod:block/darkironmachinecasing",
+    "up": "wowamod:block/emeraldcombinertop",
+    "north": "wowamod:block/emeraldcombinerplayer",
+    "east": "wowamod:block/emeraldcombinerwesteastetc",
+    "south": "wowamod:block/emeraldcombinerwesteastetc",
+    "west": "wowamod:block/emeraldcombinerwesteastetc",
+    "particle": "wowamod:block/darkironmachinecasing"
   },
   "render_type": "solid"
 }

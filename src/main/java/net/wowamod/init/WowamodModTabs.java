@@ -24,7 +24,6 @@ public class WowamodModTabs {
 	public static final RegistryObject<CreativeModeTab> WOWAMODVKLADKA = REGISTRY.register("wowamodvkladka",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.wowamod.wowamodvkladka")).icon(() -> new ItemStack(WowamodModItems.WOWABRONYA_HELMET.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(WowamodModItems.SOULCORE.get());
-				tabData.accept(WowamodModItems.WOWASWORD.get());
 				tabData.accept(WowamodModItems.REDEMERALD.get());
 				tabData.accept(WowamodModItems.GREENEMERALD.get());
 				tabData.accept(WowamodModItems.BLUEEMERALD.get());
@@ -47,13 +46,8 @@ public class WowamodModTabs {
 				tabData.accept(WowamodModItems.BLUESOULPIECE.get());
 				tabData.accept(WowamodModItems.LIGHTBLUESOULPIECE.get());
 				tabData.accept(WowamodModItems.PURPLESOULPIECE.get());
-				tabData.accept(WowamodModItems.WOWABRONYA_HELMET.get());
-				tabData.accept(WowamodModItems.WOWABRONYA_CHESTPLATE.get());
-				tabData.accept(WowamodModItems.WOWABRONYA_LEGGINGS.get());
-				tabData.accept(WowamodModItems.WOWABRONYA_BOOTS.get());
 				tabData.accept(WowamodModItems.SOULSVAZIVATEL.get());
 				tabData.accept(WowamodModItems.SUPERPALKA.get());
-				tabData.accept(WowamodModBlocks.CRAFTERBRONI.get().asItem());
 				tabData.accept(WowamodModItems.DERJATILI.get());
 				tabData.accept(WowamodModItems.MIMICTKANB.get());
 				tabData.accept(WowamodModItems.MIMICKOJA.get());
@@ -61,19 +55,11 @@ public class WowamodModTabs {
 				tabData.accept(WowamodModItems.ADARKPLACESOUND.get());
 				tabData.accept(WowamodModItems.DISSASEBMLYREQUIRED.get());
 				tabData.accept(WowamodModItems.NIGHTMARE_SPAWN_EGG.get());
-				tabData.accept(WowamodModItems.SHADOWBLADE.get());
-				tabData.accept(WowamodModItems.NETHERSTARSWORD.get());
-				tabData.accept(WowamodModBlocks.REDSTONECOMMANDBLOCK.get().asItem());
-				tabData.accept(WowamodModBlocks.MAGICIRONBLOCK.get().asItem());
-				tabData.accept(WowamodModBlocks.PORTCONSTRUCTOR.get().asItem());
-				tabData.accept(WowamodModBlocks.INTERFACECONSTRUCTOR.get().asItem());
-				tabData.accept(WowamodModBlocks.REDSTONEPORT.get().asItem());
 				tabData.accept(WowamodModItems.WOWASWORDOSNOVA.get());
 				tabData.accept(WowamodModItems.EKRANCHIK.get());
 				tabData.accept(WowamodModItems.MAGICIRONINGOT.get());
 				tabData.accept(WowamodModItems.EXTRACTLBSOUL.get());
 				tabData.accept(WowamodModItems.KOLBA.get());
-				tabData.accept(WowamodModBlocks.EXTRACTOR.get().asItem());
 				tabData.accept(WowamodModItems.EXTRACTGOLUBAYSOUL_BUCKET.get());
 				tabData.accept(WowamodModItems.KLAVA.get());
 				tabData.accept(WowamodModItems.ROTOR.get());
@@ -93,9 +79,8 @@ public class WowamodModTabs {
 				tabData.accept(WowamodModBlocks.DARKGRASS.get().asItem());
 				tabData.accept(WowamodModBlocks.DARKGRASSBLOCKNIZ.get().asItem());
 				tabData.accept(WowamodModBlocks.DARK_BIOME_ORE.get().asItem());
-				tabData.accept(WowamodModItems.ETHERIUMDARK.get());
-				tabData.accept(WowamodModBlocks.BLOCKFORPROFESSIAFIX.get().asItem());
 				tabData.accept(WowamodModBlocks.ALUMINIUM_ORE_WOWA.get().asItem());
+				tabData.accept(WowamodModItems.ETHERIUMDARK.get());
 				tabData.accept(WowamodModItems.BATAREYKA.get());
 				tabData.accept(WowamodModItems.ZAGATOVKABLACKIRON.get());
 				tabData.accept(WowamodModItems.POSUDINA.get());
@@ -115,8 +100,27 @@ public class WowamodModTabs {
 				tabData.accept(WowamodModItems.GREEN_EMERALD_PIECE.get());
 				tabData.accept(WowamodModItems.ALUMINIUM_INGOT.get());
 				tabData.accept(WowamodModItems.ALUMINIUM_PLATE.get());
+				tabData.accept(WowamodModBlocks.BLOCKFORPROFESSIAFIX.get().asItem());
+				tabData.accept(WowamodModBlocks.CRAFTERBRONI.get().asItem());
 				tabData.accept(WowamodModBlocks.EMERALD_COMBINER.get().asItem());
 				tabData.accept(WowamodModBlocks.BIG_BATTERYW.get().asItem());
+				tabData.accept(WowamodModBlocks.REDSTONECOMMANDBLOCK.get().asItem());
+				tabData.accept(WowamodModBlocks.MAGICIRONBLOCK.get().asItem());
+				tabData.accept(WowamodModBlocks.PORTCONSTRUCTOR.get().asItem());
+				tabData.accept(WowamodModBlocks.INTERFACECONSTRUCTOR.get().asItem());
+				tabData.accept(WowamodModBlocks.REDSTONEPORT.get().asItem());
+				tabData.accept(WowamodModBlocks.EXTRACTOR.get().asItem());
+				tabData.accept(WowamodModItems.NETHERSTARSWORD.get());
+				tabData.accept(WowamodModItems.SHADOWBLADE.get());
+				tabData.accept(WowamodModItems.WOWASWORD.get());
+				tabData.accept(WowamodModItems.WOWABRONYA_HELMET.get());
+				tabData.accept(WowamodModItems.WOWABRONYA_CHESTPLATE.get());
+				tabData.accept(WowamodModItems.WOWABRONYA_LEGGINGS.get());
+				tabData.accept(WowamodModItems.WOWABRONYA_BOOTS.get());
+				tabData.accept(WowamodModBlocks.DARK_IRON_MACHINE_CASING.get().asItem());
+				tabData.accept(WowamodModItems.DARKIRONPLASTINE.get());
+				tabData.accept(WowamodModItems.ALUMINIUMDIAMONDBASE.get());
+				tabData.accept(WowamodModItems.ENERGYELEMENT.get());
 			})
 
 					.build());

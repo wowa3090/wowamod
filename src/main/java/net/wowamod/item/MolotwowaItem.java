@@ -12,7 +12,7 @@ import java.util.List;
 
 public class MolotwowaItem extends Item {
 	public MolotwowaItem() {
-		super(new Item.Properties().durability(100).rarity(Rarity.UNCOMMON));
+		super(new Item.Properties().durability(300).rarity(Rarity.UNCOMMON));
 	}
 
 	@Override

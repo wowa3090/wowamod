@@ -10,7 +10,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class EciprocProcedure {
 	public static String execute(LevelAccessor world, double x, double y, double z) {
-		return "Energy: " + ((new Object() {
+		return "V: " + ((new Object() {
 			public int getEnergyStored(LevelAccessor level, BlockPos pos) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = level.getBlockEntity(pos);

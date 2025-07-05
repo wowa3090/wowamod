@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcd",
+    " e "
+  ],
+  "key": {
+    "a": {
+      "item": "wowamod:energyelement"
+    },
+    "b": {
+      "item": "wowamod:dark_iron_machine_casing"
+    },
+    "c": {
+      "item": "wowamod:rotor"
+    },
+    "d": {
+      "item": "wowamod:ekranchik"
+    },
+    "e": {
+      "item": "wowamod:klava"
+    }
+  },
+  "result": {
+    "item": "wowamod:emerald_combiner",
+    "count": 1
+  }
+}
