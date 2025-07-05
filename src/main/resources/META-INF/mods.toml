@@ -1,16 +1,16 @@
 modLoader="javafml"
 loaderVersion="[47,)"
-license="3090-Universe License"
+license="Universe3090 License"
 
 [[mods]]
 modId="wowamod"
-version="1.1.1"
+version="1.4.0"
 displayName="wowamod"
-displayURL="https://3090.ru"
+displayURL="https://nosite.com"
 logoFile="logo.png"
 credits="test version"
 authors="wowa3090"
-description="This Mod will add to your minecraft world items from 3090 Universe."
+description="This Mod will add to your minecraft world items from Universe3090 And.. a lot of content"
 
 [[dependencies.wowamod]]
     modId="minecraft"

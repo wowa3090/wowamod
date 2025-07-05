@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "superemerald",
+    "texture": "rainbowemerald2",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Радужный Изумруд",
+    "name": "Комбинированный Изумруд",
     "rarity": "RARE",
     "creativeTab": {
       "value": "CUSTOM:Wowamodvkladka"

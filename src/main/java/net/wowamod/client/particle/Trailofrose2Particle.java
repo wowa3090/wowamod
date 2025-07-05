@@ -36,7 +36,7 @@ public class Trailofrose2Particle extends TextureSheetParticle {
 	protected Trailofrose2Particle(ClientLevel world, double x, double y, double z, double vx, double vy, double vz, SpriteSet spriteSet) {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
-		this.setSize(0.5f, 0.5f);
+		this.setSize(0f, 0f);
 		this.quadSize *= 2f;
 		this.lifetime = 20;
 		this.gravity = 0f;
@@ -44,24 +44,16 @@ public class Trailofrose2Particle extends TextureSheetParticle {
 		this.xd = vx * 1.5;
 		this.yd = vy * 1.5;
 		this.zd = vz * 1.5;
-		this.setSpriteFromAge(spriteSet);
-	}
-
-	@Override
-	public int getLightColor(float partialTick) {
-		return 15728880;
+		this.pickSprite(spriteSet);
 	}
 
 	@Override
 	public ParticleRenderType getRenderType() {
-		return ParticleRenderType.PARTICLE_SHEET_LIT;
+		return ParticleRenderType.PARTICLE_SHEET_OPAQUE;
 	}
 
 	@Override
 	public void tick() {
 		super.tick();
-		if (!this.removed) {
-			this.setSprite(this.spriteSet.get((this.age / 1) % 1 + 1, 1));
-		}
 	}
 }

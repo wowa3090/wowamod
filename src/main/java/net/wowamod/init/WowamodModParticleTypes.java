@@ -15,5 +15,5 @@ import net.minecraft.core.particles.ParticleType;
 
 public class WowamodModParticleTypes {
 	public static final DeferredRegister<ParticleType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.PARTICLE_TYPES, WowamodMod.MODID);
-	public static final RegistryObject<SimpleParticleType> TRAILOFROSE_2 = REGISTRY.register("trailofrose_2", () -> new SimpleParticleType(true));
+	public static final RegistryObject<SimpleParticleType> TRAILOFROSE_2 = REGISTRY.register("trailofrose_2", () -> new SimpleParticleType(false));
 }

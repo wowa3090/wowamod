@@ -8,18 +8,22 @@ import net.wowamod.block.TrueroseBlock;
 import net.wowamod.block.RedstoneportBlock;
 import net.wowamod.block.RedstonecommandblockBlock;
 import net.wowamod.block.PortconstructorBlock;
+import net.wowamod.block.PogranichnikBlock;
 import net.wowamod.block.MyplacezonePortalBlock;
 import net.wowamod.block.MagicironblockBlock;
 import net.wowamod.block.InterfaceconstructorBlock;
 import net.wowamod.block.ExtractorBlock;
 import net.wowamod.block.ExtractgolubaysoulBlock;
+import net.wowamod.block.EmeraldCombinerBlock;
 import net.wowamod.block.DarkgrassblocknizBlock;
 import net.wowamod.block.DarkgrassBlock;
+import net.wowamod.block.DarkStrkBLKBlock;
 import net.wowamod.block.DarkBiomeOreBlock;
 import net.wowamod.block.CrafterbroniBlock;
 import net.wowamod.block.CorruptedSoulsBlockBlock;
 import net.wowamod.block.BlockforprofessiafixBlock;
 import net.wowamod.block.BlackWallsMyplaceBlock;
+import net.wowamod.block.BigBatterywBlock;
 import net.wowamod.block.AluminiumBlock;
 import net.wowamod.WowamodMod;
 
@@ -52,17 +56,23 @@ public class WowamodModBlocks {
 	public static final RegistryObject<Block> DARK_BIOME_ORE = REGISTRY.register("dark_biome_ore", () -> new DarkBiomeOreBlock());
 	public static final RegistryObject<Block> BLOCKFORPROFESSIAFIX = REGISTRY.register("blockforprofessiafix", () -> new BlockforprofessiafixBlock());
 	public static final RegistryObject<Block> ALUMINIUM_ORE_WOWA = REGISTRY.register("aluminium_ore_wowa", () -> new AluminiumBlock());
+	public static final RegistryObject<Block> POGRANICHNIK = REGISTRY.register("pogranichnik", () -> new PogranichnikBlock());
+	public static final RegistryObject<Block> DARK_STRK_BLK = REGISTRY.register("dark_strk_blk", () -> new DarkStrkBLKBlock());
+	public static final RegistryObject<Block> EMERALD_COMBINER = REGISTRY.register("emerald_combiner", () -> new EmeraldCombinerBlock());
+	public static final RegistryObject<Block> BIG_BATTERYW = REGISTRY.register("big_batteryw", () -> new BigBatterywBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
 		@SubscribeEvent
 		public static void blockColorLoad(RegisterColorHandlersEvent.Block event) {
 			TrueroseBlock.blockColorLoad(event);
+			PogranichnikBlock.blockColorLoad(event);
 		}
 
 		@SubscribeEvent
 		public static void itemColorLoad(RegisterColorHandlersEvent.Item event) {
 			TrueroseBlock.itemColorLoad(event);
+			PogranichnikBlock.itemColorLoad(event);
 		}
 	}
 }

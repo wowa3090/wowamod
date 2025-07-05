@@ -80,6 +80,8 @@ public class WowamodModVariables {
 			clone.cooldownrose = original.cooldownrose;
 			clone.soulsview = original.soulsview;
 			clone.speed_bronya = original.speed_bronya;
+			clone.eci = original.eci;
+			clone.eci2 = original.eci2;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -257,6 +259,8 @@ public class WowamodModVariables {
 		public double cooldownrose = 0;
 		public boolean soulsview = false;
 		public boolean speed_bronya = false;
+		public double eci = 0;
+		public double eci2 = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -273,6 +277,8 @@ public class WowamodModVariables {
 			nbt.putDouble("cooldownrose", cooldownrose);
 			nbt.putBoolean("soulsview", soulsview);
 			nbt.putBoolean("speed_bronya", speed_bronya);
+			nbt.putDouble("eci", eci);
+			nbt.putDouble("eci2", eci2);
 			return nbt;
 		}
 
@@ -286,6 +292,8 @@ public class WowamodModVariables {
 			cooldownrose = nbt.getDouble("cooldownrose");
 			soulsview = nbt.getBoolean("soulsview");
 			speed_bronya = nbt.getBoolean("speed_bronya");
+			eci = nbt.getDouble("eci");
+			eci2 = nbt.getDouble("eci2");
 		}
 	}
 
@@ -318,6 +326,8 @@ public class WowamodModVariables {
 					variables.cooldownrose = message.data.cooldownrose;
 					variables.soulsview = message.data.soulsview;
 					variables.speed_bronya = message.data.speed_bronya;
+					variables.eci = message.data.eci;
+					variables.eci2 = message.data.eci2;
 				}
 			});
 			context.setPacketHandled(true);

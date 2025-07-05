@@ -14,7 +14,7 @@ public class NetherstarswordPriUdariePoSushchnostiProcedure {
 			return;
 		if ((sourceentity instanceof Player _plrCldRem1 ? _plrCldRem1.getCooldowns().getCooldownPercent(itemstack.getItem(), 0f) * 100 : 0) == 0) {
 			if (sourceentity instanceof Player _player)
-				_player.getCooldowns().addCooldown(itemstack.getItem(), (int) (1800 * 20));
+				_player.getCooldowns().addCooldown(itemstack.getItem(), (int) (120 * 20));
 			if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(WowamodModMobEffects.BLAGOSLOVLENIESTAREF.get(), 150, 0));
 		}

@@ -49,30 +49,30 @@
     "particleToSpawn": {
       "value": "SMOKE_LARGE"
     },
-    "particlesProbability": 0.1,
-    "rainingPossibility": 0.9,
-    "temperature": 0.5,
+    "particlesProbability": 0.15,
+    "rainingPossibility": 0.0,
+    "temperature": 1.0,
     "spawnBiome": true,
     "spawnInCaves": true,
-    "spawnBiomeNether": false,
+    "spawnBiomeNether": true,
     "genTemperature": {
-      "min": -0.5,
-      "max": 0.5353
+      "min": -0.5414,
+      "max": 1.75
     },
     "genHumidity": {
       "min": -0.5,
       "max": 0.5
     },
     "genContinentalness": {
-      "min": 0.2999,
-      "max": 1.0021
+      "min": 0.1,
+      "max": 0.6522
     },
     "genErosion": {
-      "min": -0.5005999999999999,
-      "max": 0.6032
+      "min": -1.0,
+      "max": 1.0
     },
     "genWeirdness": {
-      "min": -0.9998,
+      "min": -1.0126,
       "max": 1.0017
     },
     "treesPerChunk": 2,
@@ -80,10 +80,10 @@
     "treeType": 1,
     "minHeight": 12,
     "treeStem": {
-      "value": "Blocks.DARK_OAK_WOOD"
+      "value": "CUSTOM:DarkStrkBLK"
     },
     "treeBranch": {
-      "value": "Blocks.DARK_OAK_WOOD"
+      "value": "CUSTOM:DarkStrkBLK"
     },
     "treeVines": {
       "value": ""
@@ -123,9 +123,9 @@
         "entity": {
           "value": "CUSTOM:Mimic"
         },
-        "minGroup": 2,
-        "maxGroup": 3,
-        "weight": 5,
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 1,
         "spawnType": "monster"
       }
     ]

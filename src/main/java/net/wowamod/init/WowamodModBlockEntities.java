@@ -7,7 +7,9 @@ package net.wowamod.init;
 import net.wowamod.block.entity.PortconstructorBlockEntity;
 import net.wowamod.block.entity.InterfaceconstructorBlockEntity;
 import net.wowamod.block.entity.ExtractorBlockEntity;
+import net.wowamod.block.entity.EmeraldCombinerBlockEntity;
 import net.wowamod.block.entity.CrafterbroniBlockEntity;
+import net.wowamod.block.entity.BigBatterywBlockEntity;
 import net.wowamod.WowamodMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -23,6 +25,8 @@ public class WowamodModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> PORTCONSTRUCTOR = register("portconstructor", WowamodModBlocks.PORTCONSTRUCTOR, PortconstructorBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> INTERFACECONSTRUCTOR = register("interfaceconstructor", WowamodModBlocks.INTERFACECONSTRUCTOR, InterfaceconstructorBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> EXTRACTOR = register("extractor", WowamodModBlocks.EXTRACTOR, ExtractorBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> EMERALD_COMBINER = register("emerald_combiner", WowamodModBlocks.EMERALD_COMBINER, EmeraldCombinerBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> BIG_BATTERYW = register("big_batteryw", WowamodModBlocks.BIG_BATTERYW, BigBatterywBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

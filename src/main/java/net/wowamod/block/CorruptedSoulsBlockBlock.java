@@ -1,13 +1,8 @@
 
 package net.wowamod.block;
 
-import org.checkerframework.checker.units.qual.s;
-
-import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
-import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
@@ -29,17 +24,10 @@ import java.util.List;
 import java.util.Collections;
 
 public class CorruptedSoulsBlockBlock extends Block {
-	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 1);
 	public static final DirectionProperty FACING = DirectionalBlock.FACING;
 
 	public CorruptedSoulsBlockBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.SNARE).sound(SoundType.SAND).strength(-1, 3600000).lightLevel(s -> (new Object() {
-			public int getLightLevel() {
-				if (s.getValue(BLOCKSTATE) == 1)
-					return 0;
-				return 0;
-			}
-		}.getLightLevel())).speedFactor(0.9f));
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.SNARE).sound(SoundType.SAND).strength(-1, 3600000).speedFactor(0.9f));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -54,30 +42,8 @@ public class CorruptedSoulsBlockBlock extends Block {
 	}
 
 	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		if (state.getValue(BLOCKSTATE) == 1) {
-			return switch (state.getValue(FACING)) {
-				default -> box(8, 0, 8, 16, 8, 16);
-				case NORTH -> box(0, 0, 0, 8, 8, 8);
-				case EAST -> box(8, 0, 0, 16, 8, 8);
-				case WEST -> box(0, 0, 8, 8, 8, 16);
-				case UP -> box(0, 8, 0, 8, 16, 8);
-				case DOWN -> box(0, 0, 8, 8, 8, 16);
-			};
-		}
-		return switch (state.getValue(FACING)) {
-			default -> box(0, 0, 0, 16, 16, 16);
-			case NORTH -> box(0, 0, 0, 16, 16, 16);
-			case EAST -> box(0, 0, 0, 16, 16, 16);
-			case WEST -> box(0, 0, 0, 16, 16, 16);
-			case UP -> box(0, 0, 0, 16, 16, 16);
-			case DOWN -> box(0, 0, 0, 16, 16, 16);
-		};
-	}
-
-	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-		builder.add(FACING, BLOCKSTATE);
+		builder.add(FACING);
 	}
 
 	@Override

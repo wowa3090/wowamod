@@ -2694,19 +2694,6 @@
       }
     },
     {
-      "name": "Test",
-      "type": "blockstates",
-      "sortid": 164,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "test",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/wowamod/models/block/test_blockstate_0.json"
-        ]
-      }
-    },
-    {
       "name": "Myplacezone",
       "type": "dimension",
       "sortid": 165,
@@ -3520,6 +3507,461 @@
           "src/main/resources/assets/wowamod/models/item/multitoolcomponent.json"
         ]
       }
+    },
+    {
+      "name": "Pogranichnik",
+      "type": "block",
+      "sortid": 229,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pogranichnik",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/pogranichnik.json",
+          "src/main/resources/assets/wowamod/models/block/pogranichnik.json",
+          "src/main/resources/assets/wowamod/blockstates/pogranichnik.json",
+          "src/main/java/net/wowamod/block/PogranichnikBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "WWorldBiomeOne",
+      "type": "biome",
+      "sortid": 230,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "w_world_biome_one",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/worldgen/biome/w_world_biome_one.json"
+        ]
+      }
+    },
+    {
+      "name": "Wworld",
+      "type": "dimension",
+      "sortid": 231,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wworld",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/world/dimension/WworldDimension.java",
+          "src/main/resources/data/wowamod/dimension/wworld.json",
+          "src/main/resources/data/wowamod/dimension_type/wworld.json"
+        ]
+      }
+    },
+    {
+      "name": "TeleporttoWWorld",
+      "type": "keybind",
+      "sortid": 232,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleportto_w_world",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/network/TeleporttoWWorldMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "TeleporttoWWorldPriNazhatiiKlavishi",
+      "type": "procedure",
+      "sortid": 233,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleportto_w_world_pri_nazhatii_klavishi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/TeleporttoWWorldPriNazhatiiKlavishiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DarkStrkBLK",
+      "type": "block",
+      "sortid": 234,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_strk_blk",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/block/dark_strk_blk.json",
+          "src/main/java/net/wowamod/block/DarkStrkBLKBlock.java",
+          "src/main/resources/assets/wowamod/models/item/dark_strk_blk.json",
+          "src/main/resources/assets/wowamod/blockstates/dark_strk_blk.json"
+        ]
+      }
+    },
+    {
+      "name": "RedEmeraldPiece",
+      "type": "item",
+      "sortid": 235,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_emerald_piece",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/red_emerald_piece.json",
+          "src/main/java/net/wowamod/item/RedEmeraldPieceItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BlueEmeraldPiece",
+      "type": "item",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_emerald_piece",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/blue_emerald_piece.json",
+          "src/main/java/net/wowamod/item/BlueEmeraldPieceItem.java"
+        ]
+      }
+    },
+    {
+      "name": "WhiteEmeraldPiece",
+      "type": "item",
+      "sortid": 237,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "white_emerald_piece",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/WhiteEmeraldPieceItem.java",
+          "src/main/resources/assets/wowamod/models/item/white_emerald_piece.json"
+        ]
+      }
+    },
+    {
+      "name": "YellowEmeraldPiece",
+      "type": "item",
+      "sortid": 238,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellow_emerald_piece",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/YellowEmeraldPieceItem.java",
+          "src/main/resources/assets/wowamod/models/item/yellow_emerald_piece.json"
+        ]
+      }
+    },
+    {
+      "name": "LightBlueEmeraldPiece",
+      "type": "item",
+      "sortid": 239,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_blue_emerald_piece",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/LightBlueEmeraldPieceItem.java",
+          "src/main/resources/assets/wowamod/models/item/light_blue_emerald_piece.json"
+        ]
+      }
+    },
+    {
+      "name": "PurpleEmeraldPiece",
+      "type": "item",
+      "sortid": 240,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_emerald_piece",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/purple_emerald_piece.json",
+          "src/main/java/net/wowamod/item/PurpleEmeraldPieceItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GreenEmeraldPiece",
+      "type": "item",
+      "sortid": 241,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_emerald_piece",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/item/green_emerald_piece.json",
+          "src/main/java/net/wowamod/item/GreenEmeraldPieceItem.java"
+        ]
+      }
+    },
+    {
+      "name": "AluminiumIngot",
+      "type": "item",
+      "sortid": 242,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aluminium_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/AluminiumIngotItem.java",
+          "src/main/resources/assets/wowamod/models/item/aluminium_ingot.json"
+        ]
+      }
+    },
+    {
+      "name": "AluminiumPlate",
+      "type": "item",
+      "sortid": 243,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aluminium_plate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/AluminiumPlateItem.java",
+          "src/main/resources/assets/wowamod/models/item/aluminium_plate.json"
+        ]
+      }
+    },
+    {
+      "name": "AluminiumPlastineRecipe",
+      "type": "recipe",
+      "sortid": 244,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aluminium_plastine_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wowamod/recipes/aluminium_plastine_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldCombiner",
+      "type": "block",
+      "sortid": 245,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_combiner",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wowamod/models/block/emerald_combiner.json",
+          "src/main/java/net/wowamod/block/EmeraldCombinerBlock.java",
+          "src/main/resources/assets/wowamod/blockstates/emerald_combiner.json",
+          "src/main/resources/assets/wowamod/models/item/emerald_combiner.json",
+          "src/main/java/net/wowamod/block/entity/EmeraldCombinerBlockEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "ECI",
+      "type": "gui",
+      "sortid": 246,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eci",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/world/inventory/ECIMenu.java",
+          "src/main/java/net/wowamod/client/gui/ECIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "Eciproc",
+      "type": "procedure",
+      "sortid": 247,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eciproc",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/wowamod/procedures/EciprocProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EmeraldCombinerObnovlieniieTika",
+      "type": "procedure",
+      "sortid": 248,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_combiner_obnovlieniie_tika",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/EmeraldCombinerObnovlieniieTikaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BigBatteryw",
+      "type": "block",
+      "sortid": 249,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_batteryw",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/block/entity/BigBatterywBlockEntity.java",
+          "src/main/resources/assets/wowamod/blockstates/big_batteryw.json",
+          "src/main/resources/assets/wowamod/models/item/big_batteryw.json",
+          "src/main/java/net/wowamod/block/BigBatterywBlock.java",
+          "src/main/resources/assets/wowamod/models/block/big_batteryw.json"
+        ]
+      }
+    },
+    {
+      "name": "BigBatterywObnovlieniieTika",
+      "type": "procedure",
+      "sortid": 250,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_batteryw_obnovlieniie_tika",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/BigBatterywObnovlieniieTikaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "InstrumentprostoPriShchielchkiePKMPoBloku",
+      "type": "procedure",
+      "sortid": 251,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "instrumentprosto_pri_shchielchkie_pkm_po_bloku",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/InstrumentprostoPriShchielchkiePKMPoBlokuProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EmeraldCraft",
+      "type": "procedure",
+      "sortid": 252,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_craft",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/EmeraldCraftProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -3576,6 +4018,18 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "eci",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "eci2",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -3636,8 +4090,9 @@
       "item.wowamodfabric.soulcore": "Ядро Душ",
       "gui.wowamodfabric.extractorinteface.label_extractorfluid": "ExtractorFluid",
       "item.wowamod.redsoulpiece": "Частичка Красной души",
+      "block.wowamod.big_batteryw": "Big Battery",
       "effect.wowamodfabric.nightmareish": "NIGHTMARISH ENDINGE",
-      "item.wowamod.rainbowemerald": "Радужный?Изумруд",
+      "item.wowamod.rainbowemerald": "Обьеденённый Изумруд",
       "item.wowamod.lightbluesoul": "Голубая душа",
       "item.wowamodfabric.redsoul": "Красная Душа",
       "gui.wowamod.guidebookstart.label_nachalo": "Начало",
@@ -3653,14 +4108,17 @@
       "item.wowamod.kolba": "Пустая колба",
       "block.wowamod.blockforprofessiafix": "Профессиональный блок",
       "block.wowamodfabric.extractor": "Extractor",
-      "item_group.wowamodfabric.wowamodvkladka": "wowa3090mod",
+      "item_group.wowamodfabric.wowamodvkladka": "Universe3090",
       "block.wowamodfabric.magicironblock": "Сталемагический блок",
       "item.wowamodfabric.nightmare_spawn_egg": "Nightmare.trojan Spawn Egg",
+      "biome.wowamod.w_world_biome_one": "W World Biome One",
       "gui.wowamod.wowabronyacraftring.button_empty": "Создать",
+      "item.wowamod.blue_emerald_piece": "Осколок Синего Изумруда",
       "effect.wowamod.timer": "Timer",
       "item.wowamod.izolationw": "Часть изоляции",
       "block.wowamodfabric.extractgolubaysoul": "Extractgolubaysoul",
       "block.wowamod.dark_biome_ore": "Dark Biome Ore",
+      "item.wowamod.yellow_emerald_piece": "Осколок жёлтого изумруда",
       "item.wowamod.wowaswordosnova": "Основа для меча",
       "gui.wowamod.wowabronyacraftring.label_crafting": "Создание предметов",
       "item.wowamod.multitoolcomponent": "М.Т.К",
@@ -3675,7 +4133,8 @@
       "item.wowamod.magicironingot": "Сталемагический слиток",
       "item.wowamodfabric.wowabronya_chestplate": "Нагрудник ",
       "item.wowamodfabric.superpalka": "Жезл",
-      "key.wowamod.teleport": "Teleport",
+      "block.wowamod.pogranichnik": "Пограничная ткань пространства времени",
+      "key.wowamod.teleport": "Обычный телепорт",
       "effect.wowamod.neuyazvimost": "Неуязвимость!",
       "gui.wowamod.guidebook.label_nachalo": "Начало",
       "item.wowamod.redsoul": "Красная Душа",
@@ -3689,7 +4148,7 @@
       "item.wowamod.zagatovkablackiron": "Заготовка для ч.ж",
       "gui.wowamod.extractorinteface.label_empty": "---------",
       "item.wowamod.rose": "Rose",
-      "item.wowamod.rotor": "Rotor",
+      "item.wowamod.rotor": "Ротор",
       "gui.wowamodfabric.extractorinteface.label_animation": "animation",
       "item.wowamod.adarkplacesound.desc": "A Dark Place - Happy and Sad",
       "effect.wowamodfabric.neuyazvimost": "Неуязвимость!",
@@ -3718,11 +4177,14 @@
       "gui.wowamod.guidebookstart.label_kozhi_mimika": "Кожи мимика",
       "item.wowamodfabric.ekranchik": "Экран",
       "item.wowamod.shadowblade": "Теневой клинок",
+      "item.wowamod.aluminium_ingot": "Алюминиевый слиток",
       "item.wowamod.myplacezone": "MyPlaceZone",
       "item.wowamod.blacksoul_myplace": "Черная душа из My Place",
       "item.wowamod.superpalka": "Жезл",
       "item.wowamod.derjatili": "Держатель для необычного механизма",
       "item_group.wowamod.myplacevkladka": "My place",
+      "item.wowamod.green_emerald_piece": "Осколок Зелёного Изумруда",
+      "gui.wowamod.eci.label_test": "test",
       "gui.wowamod.guidebookstart.label_zhielatielno_zapastis_miediu_i_zhiel": "Желательно запастись медью и железом",
       "item.wowamod.etheriumdark": "Тёмный Эфир",
       "item.wowamod.osnovaaaaglass": "Незакалённое Усиленное стекло",
@@ -3749,6 +4211,7 @@
       "block.wowamod.darkgrassblockniz": "Dark Grass",
       "item.wowamodfabric.wowabronya_helmet": "Шлем ",
       "block.wowamod.extractor": "Extractor",
+      "item.wowamod.aluminium_plate": "Алюминиевая пластина",
       "item.wowamodfabric.redemerald": "Красный Изумруд",
       "entity.wowamodfabric.nightmare": "Nightmare.trojan",
       "item.wowamod.whitesoul_myplace": "Белая душа из игры MY PLACE",
@@ -3775,13 +4238,17 @@
       "gui.wowamodfabric.wowabronyacraftring.button_empty": "Создать",
       "gui.wowamod.guidebookstart.label_dush": "Душ",
       "item.wowamod.posudina": "Емкость",
+      "key.wowamod.teleportto_w_world": "Телепорт в карманный мир",
       "item.wowamodfabric.extractlbsoul": "Экстракт голубой души",
       "item.wowamod.klavaж": "Клавиатура",
       "gui.wowamodfabric.extractorinteface.label_centrifuge": "Centrifuge",
-      "item_group.wowamod.wowamodvkladka": "wowa3090mod",
+      "item_group.wowamod.wowamodvkladka": "Universe3090",
+      "block.wowamod.emerald_combiner": "Emerald Combiner",
       "block.wowamod.portconstructor": "Порт конструктора",
       "item.wowamod.yellowsoul": "Жёлтая душа",
       "item.wowamodfabric.netherstarsword": "Звёздный меч",
+      "item.wowamod.light_blue_emerald_piece": "Осколок Голубого Изумруда",
+      "item.wowamod.purple_emerald_piece": "Осколок перпл изумруда",
       "item.wowamodfabric.whiteemerald": "Белый Изумруд",
       "block.wowamod.redstoneport": "Редстоун порт конструктора",
       "item.wowamodfabric.blueemerald": "Синий изумруд",
@@ -3806,7 +4273,7 @@
       "entity.minecraft.villager.wowamod.emeraldshopper": "Изумрудный добытчик",
       "gui.wowamod.guidebook.label_ekstraktor": "Экстрактор",
       "block.wowamod.interfaceconstructor": "Интерфейс конструктора",
-      "item.wowamod.instrumentprosto": "\"Инструмент\"",
+      "item.wowamod.instrumentprosto": "Мультитул",
       "item.wowamodfabric.purplesoulpiece": "Частичка Фиолетовой души",
       "item.wowamod.purplesoul": "Фиолетовая душа",
       "key.wowamod.souls_viewbutton": "Кол-во душ",
@@ -3820,10 +4287,11 @@
       "item.wowamodfabric.adarkplacesound.desc": "A Dark Place - Happy and Sad",
       "gui.wowamod.guidebookstart.button_nazad": "Назад",
       "item.wowamodfabric.adarkplacesound": "Happy and Sad",
-      "item.wowamod.soulcore": "ЯдроДуш",
+      "item.wowamod.soulcore": "Ядро Душ",
       "item.wowamodfabric.greensoulpiece": "Частичка Зелёной души",
+      "item.wowamod.red_emerald_piece": "Осколок Красного Изумруда",
       "block.wowamodfabric.blockforprofessia": "Профессиональный блок",
-      "item.wowamod.alphaelement": "Alpha element",
+      "item.wowamod.alphaelement": "Альфа элемент",
       "item.wowamodfabric.derjatili": "Держатель для необычного механизма",
       "item.wowamodfabric.mimictkanb": "Мимикрирующая Ткань",
       "item.wowamod.orangesoulpiece": "Частичка Оранжевой души",
@@ -3841,9 +4309,11 @@
       "gui.wowamodfabric.constructorinterface.button_create_test": "create (test)",
       "item.wowamod.ekranchik": "Экран",
       "item.wowamod.wiresprovoda": "Провода",
+      "item.wowamod.white_emerald_piece": "Осколок белого изумруда",
       "item.wowamodfabric.dissasebmlyrequired.desc": "Dissasebmly Required",
       "death.attack.soulsworddamage.item": "%1$s Уничтожен %2$s используя %3$s",
       "gui.wowamod.wowabronyacraftring.label_empty": "\u003e",
+      "block.wowamod.dark_strk_blk": "Блок Отростка Тьмы",
       "item.wowamodfabric.wowasword": "Клинок Вовы",
       "block.wowamodfabric.interfaceconstructor": "Интерфейс",
       "item.wowamod.mimictkanb": "Мимикрирующая Ткань",
@@ -3861,8 +4331,9 @@
       "item.wowamodfabric.soulcore": "ЯдроДуш",
       "gui.wowamodfabric.extractorinteface.label_extractorfluid": "ExtractorFluid",
       "item.wowamod.redsoulpiece": "Частичка Красной души",
+      "block.wowamod.big_batteryw": "Big Battery",
       "effect.wowamodfabric.nightmareish": "NIGHTMARISH ENDINGE",
-      "item.wowamod.rainbowemerald": "Радужный Изумруд",
+      "item.wowamod.rainbowemerald": "Комбинированный Изумруд",
       "item.wowamod.lightbluesoul": "Голубая душа",
       "item.wowamodfabric.redsoul": "Красная Душа",
       "gui.wowamod.guidebookstart.label_nachalo": "Начало",
@@ -3881,11 +4352,14 @@
       "item_group.wowamodfabric.wowamodvkladka": "wowa3090mod",
       "block.wowamodfabric.magicironblock": "Сталемагический блок",
       "item.wowamodfabric.nightmare_spawn_egg": "Nightmare.trojan Spawn Egg",
+      "biome.wowamod.w_world_biome_one": "W World Biome One",
+      "item.wowamod.blue_emerald_piece": "Blue Emerald Piece",
       "gui.wowamod.wowabronyacraftring.button_empty": "Создать",
       "effect.wowamod.timer": "Timer",
       "item.wowamod.izolationw": "Часть изоляции",
       "block.wowamodfabric.extractgolubaysoul": "Extractgolubaysoul",
       "block.wowamod.dark_biome_ore": "Dark Biome Ore",
+      "item.wowamod.yellow_emerald_piece": "Yellow Emerald Piece",
       "item.wowamod.wowaswordosnova": "Основа для меча",
       "gui.wowamod.wowabronyacraftring.label_crafting": "Создание предметов",
       "item.wowamod.multitoolcomponent": "М.Т.К",
@@ -3900,6 +4374,7 @@
       "item.wowamod.magicironingot": "Сталемагический слиток",
       "item.wowamodfabric.wowabronya_chestplate": "Нагрудник 3090",
       "item.wowamodfabric.superpalka": "Жезл",
+      "block.wowamod.pogranichnik": "Пограничная ткань пространства времени",
       "key.wowamod.teleport": "Teleport",
       "effect.wowamod.neuyazvimost": "Неуязвимость!",
       "gui.wowamod.guidebook.label_nachalo": "Начало",
@@ -3943,11 +4418,14 @@
       "gui.wowamod.guidebookstart.label_kozhi_mimika": "Кожи мимика",
       "item.wowamodfabric.ekranchik": "Экран",
       "item.wowamod.shadowblade": "Теневой клинок",
-      "item.wowamod.myplacezone": "MyPlaceZone",
-      "item.wowamod.blacksoul_myplace": "Черная душа из My Place",
+      "item.wowamod.aluminium_ingot": "Aluminium Ingot",
       "item.wowamod.superpalka": "Жезл",
+      "item.wowamod.blacksoul_myplace": "Черная душа из My Place",
+      "item.wowamod.myplacezone": "MyPlaceZone",
       "item.wowamod.derjatili": "Держатель для необычного механизма",
       "item_group.wowamod.myplacevkladka": "My place",
+      "item.wowamod.green_emerald_piece": "Green Emerald Piece",
+      "gui.wowamod.eci.label_test": "test",
       "gui.wowamod.guidebookstart.label_zhielatielno_zapastis_miediu_i_zhiel": "Желательно запастись медью и железом",
       "item.wowamod.etheriumdark": "Тёмный Эфир",
       "item.wowamod.osnovaaaaglass": "Незакалённое Усиленное стекло",
@@ -3974,6 +4452,7 @@
       "block.wowamod.darkgrassblockniz": "Dark Grass",
       "item.wowamodfabric.wowabronya_helmet": "Шлем 3090",
       "block.wowamod.extractor": "Extractor",
+      "item.wowamod.aluminium_plate": "Aluminium Plate",
       "item.wowamodfabric.redemerald": "Красный Изумруд",
       "entity.wowamodfabric.nightmare": "Nightmare.trojan",
       "item.wowamod.whitesoul_myplace": "Белая душа из игры MY PLACE",
@@ -4000,12 +4479,16 @@
       "gui.wowamodfabric.wowabronyacraftring.button_empty": "Создать",
       "gui.wowamod.guidebookstart.label_dush": "Душ",
       "item.wowamod.posudina": "Емкость",
+      "key.wowamod.teleportto_w_world": "Teleport to W World",
       "item.wowamodfabric.extractlbsoul": "Экстракт голубой души",
       "gui.wowamodfabric.extractorinteface.label_centrifuge": "Beta Centrifuge",
       "item_group.wowamod.wowamodvkladka": "wowa3090mod",
+      "block.wowamod.emerald_combiner": "Emerald Combiner",
       "block.wowamod.portconstructor": "Порт конструктора",
       "item.wowamod.yellowsoul": "Жёлтая душа",
       "item.wowamodfabric.netherstarsword": "Звёздный меч",
+      "item.wowamod.light_blue_emerald_piece": "Light Blue Emerald Piece",
+      "item.wowamod.purple_emerald_piece": "Purple Emerald Piece",
       "item.wowamodfabric.whiteemerald": "Белый Изумруд",
       "block.wowamod.redstoneport": "Редстоун порт конструктора",
       "item.wowamodfabric.blueemerald": "Синий изумруд",
@@ -4046,6 +4529,7 @@
       "item.wowamodfabric.adarkplacesound": "Happy and Sad",
       "item.wowamod.soulcore": "ЯдроДуш",
       "item.wowamodfabric.greensoulpiece": "Частичка Зелёной души",
+      "item.wowamod.red_emerald_piece": "Red Emerald Piece",
       "block.wowamodfabric.blockforprofessia": "Профессиональный блок",
       "item.wowamod.alphaelement": "Alpha element",
       "item.wowamodfabric.derjatili": "Держатель для необычного механизма",
@@ -4065,9 +4549,11 @@
       "gui.wowamodfabric.constructorinterface.button_create_test": "create (test)",
       "item.wowamod.ekranchik": "Экран",
       "item.wowamod.wiresprovoda": "Провода",
+      "item.wowamod.white_emerald_piece": "White Emerald Piece",
       "item.wowamodfabric.dissasebmlyrequired.desc": "Dissasebmly Required",
       "death.attack.soulsworddamage.item": "%1$s Уничтожен %2$s используя %3$s",
       "gui.wowamod.wowabronyacraftring.label_empty": "\u003e",
+      "block.wowamod.dark_strk_blk": "Блок Отростка Тьмы",
       "item.wowamodfabric.wowasword": "МЕЧ 3090",
       "block.wowamodfabric.interfaceconstructor": "Интерфейс конструктора",
       "item.wowamod.mimictkanb": "Мимикрирующая Ткань",
@@ -4086,11 +4572,11 @@
   "workspaceSettings": {
     "modid": "wowamod",
     "modName": "wowamod",
-    "version": "1.1.1",
-    "description": "This Mod will add to your minecraft world items from 3090 Universe.",
+    "version": "1.4.0",
+    "description": "This Mod will add to your minecraft world items from Universe3090 And.. a lot of content",
     "author": "wowa3090",
-    "websiteURL": "https://3090.ru",
-    "license": "3090-Universe License",
+    "websiteURL": "https://nosite.com",
+    "license": "Universe3090 License",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "modPicture": "schlemwowi",

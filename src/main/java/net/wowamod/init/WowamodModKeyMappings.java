@@ -6,6 +6,7 @@ package net.wowamod.init;
 
 import org.lwjgl.glfw.GLFW;
 
+import net.wowamod.network.TeleporttoWWorldMessage;
 import net.wowamod.network.TeleportMessage;
 import net.wowamod.network.SoulsViewbuttonMessage;
 import net.wowamod.WowamodMod;
@@ -47,11 +48,25 @@ public class WowamodModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping TELEPORTTO_W_WORLD = new KeyMapping("key.wowamod.teleportto_w_world", GLFW.GLFW_KEY_HOME, "key.categories.wowamod") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				WowamodMod.PACKET_HANDLER.sendToServer(new TeleporttoWWorldMessage(0, 0));
+				TeleporttoWWorldMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(TELEPORT);
 		event.register(SOULS_VIEWBUTTON);
+		event.register(TELEPORTTO_W_WORLD);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -61,6 +76,7 @@ public class WowamodModKeyMappings {
 			if (Minecraft.getInstance().screen == null) {
 				TELEPORT.consumeClick();
 				SOULS_VIEWBUTTON.consumeClick();
+				TELEPORTTO_W_WORLD.consumeClick();
 			}
 		}
 	}

@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "wowamod:block/emerald_combiner"
+    },
+    "facing=east": {
+      "model": "wowamod:block/emerald_combiner",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "wowamod:block/emerald_combiner",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "wowamod:block/emerald_combiner",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "wowamod:block/emerald_combiner",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "wowamod:block/emerald_combiner",
+      "x": 90
+    }
+  }
+}

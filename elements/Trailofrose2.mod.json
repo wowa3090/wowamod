@@ -3,10 +3,10 @@
   "_type": "particle",
   "definition": {
     "texture": "texture_rose.png",
-    "animate": true,
+    "animate": false,
     "frameDuration": 1,
-    "width": 0.5,
-    "height": 0.5,
+    "width": 0.0,
+    "height": 0.0,
     "scale": 2.0,
     "speedFactor": 1.5,
     "gravity": 0.0,
@@ -15,7 +15,7 @@
     "angularVelocity": 0.0,
     "angularAcceleration": 0.0,
     "canCollide": true,
-    "alwaysShow": true,
-    "renderType": "LIT"
+    "alwaysShow": false,
+    "renderType": "OPAQUE"
   }
 }

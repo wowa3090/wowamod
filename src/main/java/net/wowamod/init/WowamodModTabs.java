@@ -104,6 +104,19 @@ public class WowamodModTabs {
 				tabData.accept(WowamodModItems.IZOLATIONW.get());
 				tabData.accept(WowamodModItems.COPPERPLATE.get());
 				tabData.accept(WowamodModItems.MULTITOOLCOMPONENT.get());
+				tabData.accept(WowamodModBlocks.POGRANICHNIK.get().asItem());
+				tabData.accept(WowamodModBlocks.DARK_STRK_BLK.get().asItem());
+				tabData.accept(WowamodModItems.RED_EMERALD_PIECE.get());
+				tabData.accept(WowamodModItems.BLUE_EMERALD_PIECE.get());
+				tabData.accept(WowamodModItems.WHITE_EMERALD_PIECE.get());
+				tabData.accept(WowamodModItems.YELLOW_EMERALD_PIECE.get());
+				tabData.accept(WowamodModItems.LIGHT_BLUE_EMERALD_PIECE.get());
+				tabData.accept(WowamodModItems.PURPLE_EMERALD_PIECE.get());
+				tabData.accept(WowamodModItems.GREEN_EMERALD_PIECE.get());
+				tabData.accept(WowamodModItems.ALUMINIUM_INGOT.get());
+				tabData.accept(WowamodModItems.ALUMINIUM_PLATE.get());
+				tabData.accept(WowamodModBlocks.EMERALD_COMBINER.get().asItem());
+				tabData.accept(WowamodModBlocks.BIG_BATTERYW.get().asItem());
 			})
 
 					.build());

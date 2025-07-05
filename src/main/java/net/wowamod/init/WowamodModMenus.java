@@ -9,6 +9,7 @@ import net.wowamod.world.inventory.PortConstructoraMenu;
 import net.wowamod.world.inventory.GuidebookstartMenu;
 import net.wowamod.world.inventory.GuidebookMenu;
 import net.wowamod.world.inventory.ExtractorintefaceMenu;
+import net.wowamod.world.inventory.ECIMenu;
 import net.wowamod.world.inventory.ConstructorinterfaceMenu;
 import net.wowamod.WowamodMod;
 
@@ -27,4 +28,5 @@ public class WowamodModMenus {
 	public static final RegistryObject<MenuType<ExtractorintefaceMenu>> EXTRACTORINTEFACE = REGISTRY.register("extractorinteface", () -> IForgeMenuType.create(ExtractorintefaceMenu::new));
 	public static final RegistryObject<MenuType<GuidebookMenu>> GUIDEBOOK = REGISTRY.register("guidebook", () -> IForgeMenuType.create(GuidebookMenu::new));
 	public static final RegistryObject<MenuType<GuidebookstartMenu>> GUIDEBOOKSTART = REGISTRY.register("guidebookstart", () -> IForgeMenuType.create(GuidebookstartMenu::new));
+	public static final RegistryObject<MenuType<ECIMenu>> ECI = REGISTRY.register("eci", () -> IForgeMenuType.create(ECIMenu::new));
 }

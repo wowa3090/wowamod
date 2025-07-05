@@ -50,12 +50,12 @@ public class WowamodModBiomes {
 				// Inject biomes to biome source
 				if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
 					List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters().values());
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5f, 0.5353f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(0.2999f, 1.0021f), Climate.Parameter.span(-0.5006f, 0.6032f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(-0.9998f, 1.0017f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("wowamod", "darkbiome")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5f, 0.5353f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(0.2999f, 1.0021f), Climate.Parameter.span(-0.5006f, 0.6032f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(-0.9998f, 1.0017f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("wowamod", "darkbiome")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5f, 0.5353f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(0.2999f, 1.0021f), Climate.Parameter.span(-0.5006f, 0.6032f),
-							Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-0.9998f, 1.0017f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("wowamod", "darkbiome")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5414f, 1.75f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(0.1f, 0.6522f), Climate.Parameter.span(-1f, 1f),
+							Climate.Parameter.point(0.0f), Climate.Parameter.span(-1.0126f, 1.0017f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("wowamod", "darkbiome")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5414f, 1.75f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(0.1f, 0.6522f), Climate.Parameter.span(-1f, 1f),
+							Climate.Parameter.point(1.0f), Climate.Parameter.span(-1.0126f, 1.0017f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("wowamod", "darkbiome")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5414f, 1.75f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(0.1f, 0.6522f), Climate.Parameter.span(-1f, 1f),
+							Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-1.0126f, 1.0017f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("wowamod", "darkbiome")))));
 					chunkGenerator.biomeSource = MultiNoiseBiomeSource.createFromList(new Climate.ParameterList<>(parameters));
 					chunkGenerator.featuresPerStep = Suppliers
 							.memoize(() -> FeatureSorter.buildFeaturesPerStep(List.copyOf(chunkGenerator.biomeSource.possibleBiomes()), biome -> chunkGenerator.generationSettingsGetter.apply(biome).features(), true));
@@ -70,6 +70,40 @@ public class WowamodModBiomes {
 								WowamodModBlocks.DARKGRASSBLOCKNIZ.get().defaultBlockState(), WowamodModBlocks.DARKGRASSBLOCKNIZ.get().defaultBlockState()));
 						surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("wowamod", "darkbiome")), WowamodModBlocks.DARKGRASS.get().defaultBlockState(),
 								WowamodModBlocks.DARKGRASSBLOCKNIZ.get().defaultBlockState(), WowamodModBlocks.DARKGRASSBLOCKNIZ.get().defaultBlockState()));
+						NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(), noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
+								noiseGeneratorSettings.noiseRouter(), SurfaceRules.sequence(surfaceRules.toArray(SurfaceRules.RuleSource[]::new)), noiseGeneratorSettings.spawnTarget(), noiseGeneratorSettings.seaLevel(),
+								noiseGeneratorSettings.disableMobGeneration(), noiseGeneratorSettings.aquifersEnabled(), noiseGeneratorSettings.oreVeinsEnabled(), noiseGeneratorSettings.useLegacyRandomSource());
+						noiseGenerator.settings = new Holder.Direct<>(moddedNoiseGeneratorSettings);
+					}
+				}
+			}
+			if (dimensionType == dimensionTypeRegistry.getOrThrow(BuiltinDimensionTypes.NETHER)) {
+				ChunkGenerator chunkGenerator = levelStem.generator();
+				// Inject biomes to biome source
+				if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
+					List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters().values());
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5414f, 1.75f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(0.1f, 0.6522f), Climate.Parameter.span(-1f, 1f),
+							Climate.Parameter.point(0.0f), Climate.Parameter.span(-1.0126f, 1.0017f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("wowamod", "darkbiome")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5414f, 1.75f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(0.1f, 0.6522f), Climate.Parameter.span(-1f, 1f),
+							Climate.Parameter.point(1.0f), Climate.Parameter.span(-1.0126f, 1.0017f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("wowamod", "darkbiome")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(-1.0518f, 0.4551f), Climate.Parameter.span(0f, 0.0001f),
+							Climate.Parameter.point(0.0f), Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("wowamod", "w_world_biome_one")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(-1.0518f, 0.4551f), Climate.Parameter.span(0f, 0.0001f),
+							Climate.Parameter.point(1.0f), Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("wowamod", "w_world_biome_one")))));
+					chunkGenerator.biomeSource = MultiNoiseBiomeSource.createFromList(new Climate.ParameterList<>(parameters));
+					chunkGenerator.featuresPerStep = Suppliers
+							.memoize(() -> FeatureSorter.buildFeaturesPerStep(List.copyOf(chunkGenerator.biomeSource.possibleBiomes()), biome -> chunkGenerator.generationSettingsGetter.apply(biome).features(), true));
+				}
+				// Inject surface rules
+				if (chunkGenerator instanceof NoiseBasedChunkGenerator noiseGenerator) {
+					NoiseGeneratorSettings noiseGeneratorSettings = noiseGenerator.settings.value();
+					SurfaceRules.RuleSource currentRuleSource = noiseGeneratorSettings.surfaceRule();
+					if (currentRuleSource instanceof SurfaceRules.SequenceRuleSource sequenceRuleSource) {
+						List<SurfaceRules.RuleSource> surfaceRules = new ArrayList<>(sequenceRuleSource.sequence());
+						surfaceRules.add(2, anySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("wowamod", "darkbiome")), WowamodModBlocks.DARKGRASS.get().defaultBlockState(),
+								WowamodModBlocks.DARKGRASSBLOCKNIZ.get().defaultBlockState(), WowamodModBlocks.DARKGRASSBLOCKNIZ.get().defaultBlockState()));
+						surfaceRules.add(2, anySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("wowamod", "w_world_biome_one")), WowamodModBlocks.POGRANICHNIK.get().defaultBlockState(),
+								WowamodModBlocks.POGRANICHNIK.get().defaultBlockState(), WowamodModBlocks.POGRANICHNIK.get().defaultBlockState()));
 						NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(), noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
 								noiseGeneratorSettings.noiseRouter(), SurfaceRules.sequence(surfaceRules.toArray(SurfaceRules.RuleSource[]::new)), noiseGeneratorSettings.spawnTarget(), noiseGeneratorSettings.seaLevel(),
 								noiseGeneratorSettings.disableMobGeneration(), noiseGeneratorSettings.aquifersEnabled(), noiseGeneratorSettings.oreVeinsEnabled(), noiseGeneratorSettings.useLegacyRandomSource());

@@ -9,6 +9,7 @@ import net.wowamod.client.gui.PortConstructoraScreen;
 import net.wowamod.client.gui.GuidebookstartScreen;
 import net.wowamod.client.gui.GuidebookScreen;
 import net.wowamod.client.gui.ExtractorintefaceScreen;
+import net.wowamod.client.gui.ECIScreen;
 import net.wowamod.client.gui.ConstructorinterfaceScreen;
 
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -29,6 +30,7 @@ public class WowamodModScreens {
 			MenuScreens.register(WowamodModMenus.EXTRACTORINTEFACE.get(), ExtractorintefaceScreen::new);
 			MenuScreens.register(WowamodModMenus.GUIDEBOOK.get(), GuidebookScreen::new);
 			MenuScreens.register(WowamodModMenus.GUIDEBOOKSTART.get(), GuidebookstartScreen::new);
+			MenuScreens.register(WowamodModMenus.ECI.get(), ECIScreen::new);
 		});
 	}
 }
