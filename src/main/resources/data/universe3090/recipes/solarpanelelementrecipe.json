@@ -3,7 +3,8 @@
   "category": "misc",
   "pattern": [
     "aaa",
-    "bcb"
+    "bcb",
+    "ddd"
   ],
   "key": {
     "a": {
@@ -14,6 +15,9 @@
     },
     "c": {
       "item": "minecraft:copper_ingot"
+    },
+    "d": {
+      "item": "universe3090:etheriumdark"
     }
   },
   "result": {

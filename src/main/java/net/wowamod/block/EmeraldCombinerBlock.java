@@ -17,8 +17,8 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.Mirror;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.EntityBlock;
-import net.minecraft.world.level.block.DirectionalBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
@@ -47,7 +47,7 @@ import java.util.Collections;
 import io.netty.buffer.Unpooled;
 
 public class EmeraldCombinerBlock extends Block implements EntityBlock {
-	public static final DirectionProperty FACING = DirectionalBlock.FACING;
+	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public EmeraldCombinerBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.ANVIL).strength(20f, 50f).requiresCorrectToolForDrops());
@@ -71,7 +71,7 @@ public class EmeraldCombinerBlock extends Block implements EntityBlock {
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		return this.defaultBlockState().setValue(FACING, context.getNearestLookingDirection().getOpposite());
+		return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {

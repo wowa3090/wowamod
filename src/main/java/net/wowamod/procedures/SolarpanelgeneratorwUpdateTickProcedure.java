@@ -25,14 +25,14 @@ public class SolarpanelgeneratorwUpdateTickProcedure {
 				}
 			}.canReceiveEnergy(world, BlockPos.containing(x, y - 1, z))) {
 				energy = new Object() {
-					public int extractEnergySimulate(LevelAccessor level, BlockPos pos, int _amount) {
+					public int receiveEnergySimulate(LevelAccessor level, BlockPos pos, int _amount) {
 						AtomicInteger _retval = new AtomicInteger(0);
 						BlockEntity _ent = level.getBlockEntity(pos);
 						if (_ent != null)
-							_ent.getCapability(ForgeCapabilities.ENERGY, Direction.UP).ifPresent(capability -> _retval.set(capability.extractEnergy(_amount, true)));
+							_ent.getCapability(ForgeCapabilities.ENERGY, Direction.UP).ifPresent(capability -> _retval.set(capability.receiveEnergy(_amount, true)));
 						return _retval.get();
 					}
-				}.extractEnergySimulate(world, BlockPos.containing(x, y, z), 3);
+				}.receiveEnergySimulate(world, BlockPos.containing(x, y - 1, z), (int) 2.5);
 				{
 					BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y - 1, z));
 					int _amount = (int) energy;
@@ -41,14 +41,14 @@ public class SolarpanelgeneratorwUpdateTickProcedure {
 				}
 			} else {
 				energy = new Object() {
-					public int extractEnergySimulate(LevelAccessor level, BlockPos pos, int _amount) {
+					public int receiveEnergySimulate(LevelAccessor level, BlockPos pos, int _amount) {
 						AtomicInteger _retval = new AtomicInteger(0);
 						BlockEntity _ent = level.getBlockEntity(pos);
 						if (_ent != null)
-							_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.extractEnergy(_amount, true)));
+							_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.receiveEnergy(_amount, true)));
 						return _retval.get();
 					}
-				}.extractEnergySimulate(world, BlockPos.containing(x, y, z), 3);
+				}.receiveEnergySimulate(world, BlockPos.containing(x, y, z), (int) 2.5);
 				{
 					BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 					int _amount = (int) energy;
@@ -67,14 +67,14 @@ public class SolarpanelgeneratorwUpdateTickProcedure {
 				}
 			}.canReceiveEnergy(world, BlockPos.containing(x, y - 1, z))) {
 				energy = new Object() {
-					public int extractEnergySimulate(LevelAccessor level, BlockPos pos, int _amount) {
+					public int receiveEnergySimulate(LevelAccessor level, BlockPos pos, int _amount) {
 						AtomicInteger _retval = new AtomicInteger(0);
 						BlockEntity _ent = level.getBlockEntity(pos);
 						if (_ent != null)
-							_ent.getCapability(ForgeCapabilities.ENERGY, Direction.UP).ifPresent(capability -> _retval.set(capability.extractEnergy(_amount, true)));
+							_ent.getCapability(ForgeCapabilities.ENERGY, Direction.UP).ifPresent(capability -> _retval.set(capability.receiveEnergy(_amount, true)));
 						return _retval.get();
 					}
-				}.extractEnergySimulate(world, BlockPos.containing(x, y, z), 3);
+				}.receiveEnergySimulate(world, BlockPos.containing(x, y - 1, z), (int) 2.5);
 				{
 					BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y - 1, z));
 					int _amount = (int) energy;
@@ -83,14 +83,14 @@ public class SolarpanelgeneratorwUpdateTickProcedure {
 				}
 			} else {
 				energy = new Object() {
-					public int extractEnergySimulate(LevelAccessor level, BlockPos pos, int _amount) {
+					public int receiveEnergySimulate(LevelAccessor level, BlockPos pos, int _amount) {
 						AtomicInteger _retval = new AtomicInteger(0);
 						BlockEntity _ent = level.getBlockEntity(pos);
 						if (_ent != null)
-							_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.extractEnergy(_amount, true)));
+							_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.receiveEnergy(_amount, true)));
 						return _retval.get();
 					}
-				}.extractEnergySimulate(world, BlockPos.containing(x, y, z), 3);
+				}.receiveEnergySimulate(world, BlockPos.containing(x, y, z), (int) 2.5);
 				{
 					BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 					int _amount = (int) energy;

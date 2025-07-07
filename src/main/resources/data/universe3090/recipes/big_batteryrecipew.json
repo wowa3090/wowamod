@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bbb",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:dark_iron_machine_casing"
+    },
+    "b": {
+      "item": "universe3090:energyelement"
+    },
+    "c": {
+      "item": "universe3090:wiresprovoda"
+    }
+  },
+  "result": {
+    "item": "universe3090:big_batteryw",
+    "count": 1
+  }
+}

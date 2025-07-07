@@ -1,9 +1,0 @@
-{
-  "parent": "block/cube_bottom_top",
-  "textures": {
-    "bottom": "universe3090:block/bigbattery",
-    "top": "universe3090:block/solarpaneltop",
-    "side": "universe3090:block/emeraldcombinerwesteastetc"
-  },
-  "render_type": "solid"
-}

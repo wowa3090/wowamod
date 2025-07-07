@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Ekranchik"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Ekranchik"
+        "value": "CUSTOM:DarkIronMachineCasing"
       },
       {
-        "value": "CUSTOM:Ekranchik"
+        "value": ""
       },
       {
-        "value": "Items.REDSTONE"
+        "value": "CUSTOM:Energyelement"
       },
       {
-        "value": "Items.COPPER_INGOT"
+        "value": "CUSTOM:Energyelement"
       },
       {
-        "value": "Items.REDSTONE"
+        "value": "CUSTOM:Energyelement"
       },
       {
-        "value": "CUSTOM:Etheriumdark"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Etheriumdark"
+        "value": "CUSTOM:Wiresprovoda"
       },
       {
-        "value": "CUSTOM:Etheriumdark"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Solarpanelelement"
+      "value": "CUSTOM:BigBatteryw"
     },
-    "name": "solarpanelelementrecipe",
+    "name": "big_batteryrecipew",
     "namespace": "mod"
   }
 }

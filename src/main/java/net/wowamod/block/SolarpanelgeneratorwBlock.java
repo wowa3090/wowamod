@@ -5,13 +5,12 @@ import net.wowamod.procedures.SolarpanelgeneratorwUpdateTickProcedure;
 import net.wowamod.block.entity.SolarpanelgeneratorwBlockEntity;
 
 import net.minecraft.world.level.storage.loot.LootParams;
-import net.minecraft.world.level.block.state.properties.SlabType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.EntityBlock;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.TooltipFlag;
@@ -29,14 +28,19 @@ import net.minecraft.core.BlockPos;
 import java.util.List;
 import java.util.Collections;
 
-public class SolarpanelgeneratorwBlock extends SlabBlock implements EntityBlock {
+public class SolarpanelgeneratorwBlock extends Block implements EntityBlock {
 	public SolarpanelgeneratorwBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(10.5f, 15f).requiresCorrectToolForDrops().dynamicShape());
+		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(10.5f, 15f).requiresCorrectToolForDrops());
 	}
 
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
+	}
+
+	@Override
+	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
+		return true;
 	}
 
 	@Override
@@ -56,13 +60,13 @@ public class SolarpanelgeneratorwBlock extends SlabBlock implements EntityBlock 
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this, state.getValue(TYPE) == SlabType.DOUBLE ? 2 : 1));
+		return Collections.singletonList(new ItemStack(this, 1));
 	}
 
 	@Override
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
-		world.scheduleTick(pos, this, 3);
+		world.scheduleTick(pos, this, 1);
 	}
 
 	@Override
@@ -72,7 +76,7 @@ public class SolarpanelgeneratorwBlock extends SlabBlock implements EntityBlock 
 		int y = pos.getY();
 		int z = pos.getZ();
 		SolarpanelgeneratorwUpdateTickProcedure.execute(world, x, y, z);
-		world.scheduleTick(pos, this, 3);
+		world.scheduleTick(pos, this, 1);
 	}
 
 	@Override

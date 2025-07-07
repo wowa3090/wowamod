@@ -75,7 +75,7 @@ public class ECIScreen extends AbstractContainerScreen<ECIMenu> {
 				EciprocProcedure.execute(world, x, y, z), 9, 9, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				CraftprogressProcedure.execute(world, x, y, z), 79, 39, -12829636, false);
+				CraftprogressProcedure.execute(world, x, y, z), 82, 39, -12829636, false);
 	}
 
 	@Override

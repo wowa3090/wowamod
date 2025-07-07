@@ -1,9 +1,13 @@
 {
-  "parent": "block/slab",
+  "parent": "block/cube",
   "textures": {
-    "bottom": "universe3090:block/bigbattery",
-    "top": "universe3090:block/solarpaneltop",
-    "side": "universe3090:block/emeraldcombinerwesteastetc"
+    "down": "universe3090:block/bigbattery",
+    "up": "universe3090:block/solarpaneltop",
+    "north": "universe3090:block/emeraldcombinerwesteastetc",
+    "east": "universe3090:block/emeraldcombinerwesteastetc",
+    "south": "universe3090:block/emeraldcombinerwesteastetc",
+    "west": "universe3090:block/emeraldcombinerwesteastetc",
+    "particle": "universe3090:block/bigbattery"
   },
   "render_type": "solid"
 }
