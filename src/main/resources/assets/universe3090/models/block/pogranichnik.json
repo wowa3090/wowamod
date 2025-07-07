@@ -1,0 +1,8 @@
+{
+  "parent": "block/leaves",
+  "textures": {
+    "all": "universe3090:block/pogranichnik",
+    "particle": "universe3090:block/pogranichnik"
+  },
+  "render_type": "translucent"
+}

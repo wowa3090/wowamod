@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    " b ",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:izolationw"
+    },
+    "b": {
+      "item": "universe3090:copperplate"
+    }
+  },
+  "result": {
+    "item": "universe3090:wiresprovoda",
+    "count": 1
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "bdb",
+    "ebf"
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:batareyka"
+    },
+    "b": {
+      "item": "universe3090:darkironplastine"
+    },
+    "c": {
+      "item": "universe3090:wiresprovoda"
+    },
+    "d": {
+      "item": "universe3090:multitoolcomponentnottrue"
+    },
+    "e": {
+      "item": "universe3090:rotor"
+    },
+    "f": {
+      "item": "universe3090:redstonecommandblock"
+    }
+  },
+  "result": {
+    "item": "universe3090:multitoolcomponent",
+    "count": 1
+  }
+}

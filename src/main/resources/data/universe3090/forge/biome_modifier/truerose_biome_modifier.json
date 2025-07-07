@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "universe3090:my_place_biome",
+  "features": "universe3090:truerose",
+  "step": "vegetal_decoration"
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcd",
+    " e "
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:solarpanelelement"
+    },
+    "b": {
+      "item": "universe3090:batareyka"
+    },
+    "c": {
+      "item": "universe3090:aluminiumdiamondbase"
+    },
+    "d": {
+      "item": "universe3090:wiresprovoda"
+    },
+    "e": {
+      "item": "universe3090:dark_iron_machine_casing"
+    }
+  },
+  "result": {
+    "item": "universe3090:solarpanelgeneratorw",
+    "count": 1
+  }
+}

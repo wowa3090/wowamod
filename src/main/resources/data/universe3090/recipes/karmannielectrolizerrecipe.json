@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "def",
+    "ghg"
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:batareyka"
+    },
+    "b": {
+      "item": "minecraft:water_bucket"
+    },
+    "c": {
+      "item": "universe3090:wiresprovoda"
+    },
+    "d": {
+      "item": "minecraft:copper_ingot"
+    },
+    "e": {
+      "item": "universe3090:posudina"
+    },
+    "f": {
+      "item": "minecraft:iron_ingot"
+    },
+    "g": {
+      "item": "universe3090:blackironingot"
+    },
+    "h": {
+      "item": "minecraft:lever"
+    }
+  },
+  "result": {
+    "item": "universe3090:karmannielectrolizer",
+    "count": 1
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "parent": "block/tinted_cross",
-  "textures": {
-    "cross": "wowamod:block/poppy",
-    "particle": "wowamod:block/poppy"
-  },
-  "render_type": "cutout"
-}

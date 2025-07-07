@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    "bdb"
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:etheriumdark"
+    },
+    "b": {
+      "item": "universe3090:ironplastinewowa"
+    },
+    "c": {
+      "item": "minecraft:redstone"
+    },
+    "d": {
+      "item": "minecraft:coal"
+    }
+  },
+  "result": {
+    "item": "universe3090:batareyka",
+    "count": 1
+  }
+}

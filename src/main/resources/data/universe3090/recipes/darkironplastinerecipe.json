@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "universe3090:molotwowa"
+    },
+    {
+      "item": "universe3090:blackironingot"
+    }
+  ],
+  "result": {
+    "item": "universe3090:darkironplastine",
+    "count": 1
+  }
+}

@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "wowamod:darkbiome",
-  "features": "wowamod:dark_biome_ore",
-  "step": "underground_ores"
-}

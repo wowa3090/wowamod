@@ -1,7 +1,7 @@
 package net.wowamod.procedures;
 
-import net.wowamod.init.WowamodModItems;
-import net.wowamod.init.WowamodModBlocks;
+import net.wowamod.init.Universe3090ModItems;
+import net.wowamod.init.Universe3090ModBlocks;
 
 import net.minecraftforge.items.IItemHandlerModifiable;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
@@ -31,7 +31,7 @@ public class ConstructorcreatewowaswordProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y + 1, z), 10)).getItem() == WowamodModItems.SHADOWBLADE.get() && (new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y + 1, z), 10)).getItem() == Universe3090ModItems.SHADOWBLADE.get() && (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -39,7 +39,7 @@ public class ConstructorcreatewowaswordProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y + 1, z), 6)).getItem() == WowamodModItems.RAINBOWEMERALD.get() && (new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y + 1, z), 6)).getItem() == Universe3090ModItems.RAINBOWEMERALD.get() && (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -47,7 +47,7 @@ public class ConstructorcreatewowaswordProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y + 1, z), 14)).getItem() == WowamodModItems.RAINBOWEMERALD.get() && (new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y + 1, z), 14)).getItem() == Universe3090ModItems.RAINBOWEMERALD.get() && (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -111,7 +111,7 @@ public class ConstructorcreatewowaswordProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y + 1, z), 1)).getItem() == WowamodModItems.MIMICTKANB.get() && (new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y + 1, z), 1)).getItem() == Universe3090ModItems.MIMICTKANB.get() && (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -119,7 +119,7 @@ public class ConstructorcreatewowaswordProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y + 1, z), 3)).getItem() == WowamodModItems.MIMICTKANB.get() && (new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y + 1, z), 3)).getItem() == Universe3090ModItems.MIMICTKANB.get() && (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -127,7 +127,7 @@ public class ConstructorcreatewowaswordProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y + 1, z), 19)).getItem() == WowamodModItems.MIMICTKANB.get() && (new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y + 1, z), 19)).getItem() == Universe3090ModItems.MIMICTKANB.get() && (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -135,7 +135,7 @@ public class ConstructorcreatewowaswordProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y + 1, z), 17)).getItem() == WowamodModItems.MIMICTKANB.get() && (new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y + 1, z), 17)).getItem() == Universe3090ModItems.MIMICTKANB.get() && (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -143,7 +143,7 @@ public class ConstructorcreatewowaswordProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y + 1, z), 4)).getItem() == WowamodModItems.MIMICTKANB.get() && (new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y + 1, z), 4)).getItem() == Universe3090ModItems.MIMICTKANB.get() && (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -151,7 +151,7 @@ public class ConstructorcreatewowaswordProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y + 1, z), 8)).getItem() == WowamodModItems.MIMICTKANB.get() && (new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y + 1, z), 8)).getItem() == Universe3090ModItems.MIMICTKANB.get() && (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -159,7 +159,7 @@ public class ConstructorcreatewowaswordProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y + 1, z), 12)).getItem() == WowamodModItems.MIMICTKANB.get() && (new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y + 1, z), 12)).getItem() == Universe3090ModItems.MIMICTKANB.get() && (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -183,9 +183,9 @@ public class ConstructorcreatewowaswordProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y + 1, z), 9)).getItem() == WowamodModItems.SOULCORE.get()) {
-			if ((world.getBlockState(BlockPos.containing(x + 1, y + 1, z + 1))).getBlock() == WowamodModBlocks.PORTCONSTRUCTOR.get()
-					|| (world.getBlockState(BlockPos.containing(x + 1, y + 1, z - 1))).getBlock() == WowamodModBlocks.PORTCONSTRUCTOR.get()) {
+		}.getItemStack(world, BlockPos.containing(x, y + 1, z), 9)).getItem() == Universe3090ModItems.SOULCORE.get()) {
+			if ((world.getBlockState(BlockPos.containing(x + 1, y + 1, z + 1))).getBlock() == Universe3090ModBlocks.PORTCONSTRUCTOR.get()
+					|| (world.getBlockState(BlockPos.containing(x + 1, y + 1, z - 1))).getBlock() == Universe3090ModBlocks.PORTCONSTRUCTOR.get()) {
 				if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -194,7 +194,7 @@ public class ConstructorcreatewowaswordProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, BlockPos.containing(x + 1, y + 1, z + 1), 0)).getItem() == WowamodModItems.WOWASWORDOSNOVA.get() || (new Object() {
+				}.getItemStack(world, BlockPos.containing(x + 1, y + 1, z + 1), 0)).getItem() == Universe3090ModItems.WOWASWORDOSNOVA.get() || (new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 						BlockEntity _ent = world.getBlockEntity(pos);
@@ -202,7 +202,7 @@ public class ConstructorcreatewowaswordProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, BlockPos.containing(x + 1, y + 1, z - 1), 0)).getItem() == WowamodModItems.WOWASWORDOSNOVA.get()) {
+				}.getItemStack(world, BlockPos.containing(x + 1, y + 1, z - 1), 0)).getItem() == Universe3090ModItems.WOWASWORDOSNOVA.get()) {
 					for (int index0 = 0; index0 < 25; index0++) {
 						if (world instanceof ServerLevel _level) {
 							LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
@@ -497,7 +497,7 @@ public class ConstructorcreatewowaswordProcedure {
 						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y + 1, z));
 						if (_ent != null) {
 							final int _slotid = 20;
-							final ItemStack _setstack = new ItemStack(WowamodModItems.WOWASWORD.get());
+							final ItemStack _setstack = new ItemStack(Universe3090ModItems.WOWASWORD.get());
 							_setstack.setCount(1);
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								if (capability instanceof IItemHandlerModifiable)

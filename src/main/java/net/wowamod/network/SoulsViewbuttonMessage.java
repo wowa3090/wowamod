@@ -2,7 +2,7 @@
 package net.wowamod.network;
 
 import net.wowamod.procedures.SoulsViewbuttonPriNazhatiiKlavishiProcedure;
-import net.wowamod.WowamodMod;
+import net.wowamod.Universe3090Mod;
 
 import net.minecraftforge.network.NetworkEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -58,6 +58,6 @@ public class SoulsViewbuttonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		WowamodMod.addNetworkMessage(SoulsViewbuttonMessage.class, SoulsViewbuttonMessage::buffer, SoulsViewbuttonMessage::new, SoulsViewbuttonMessage::handler);
+		Universe3090Mod.addNetworkMessage(SoulsViewbuttonMessage.class, SoulsViewbuttonMessage::buffer, SoulsViewbuttonMessage::new, SoulsViewbuttonMessage::handler);
 	}
 }

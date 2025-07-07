@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "d e",
+    "fgh"
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:redemerald"
+    },
+    "b": {
+      "item": "minecraft:emerald"
+    },
+    "c": {
+      "item": "universe3090:whiteemerald"
+    },
+    "d": {
+      "item": "universe3090:greenemerald"
+    },
+    "e": {
+      "item": "universe3090:yellowemerald"
+    },
+    "f": {
+      "item": "universe3090:blueemerald"
+    },
+    "g": {
+      "item": "universe3090:lightblueemerald"
+    },
+    "h": {
+      "item": "universe3090:purpleemerald"
+    }
+  },
+  "result": {
+    "item": "universe3090:rainbowemerald",
+    "count": 1
+  }
+}

@@ -1,8 +1,8 @@
 
 package net.wowamod.world.inventory;
 
-import net.wowamod.init.WowamodModMenus;
-import net.wowamod.init.WowamodModItems;
+import net.wowamod.init.Universe3090ModMenus;
+import net.wowamod.init.Universe3090ModItems;
 
 import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
@@ -40,7 +40,7 @@ public class ExtractorintefaceMenu extends AbstractContainerMenu implements Supp
 	private BlockEntity boundBlockEntity = null;
 
 	public ExtractorintefaceMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(WowamodModMenus.EXTRACTORINTEFACE.get(), id);
+		super(Universe3090ModMenus.EXTRACTORINTEFACE.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(3);
@@ -83,7 +83,7 @@ public class ExtractorintefaceMenu extends AbstractContainerMenu implements Supp
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return WowamodModItems.LIGHTBLUESOUL.get() == stack.getItem();
+				return Universe3090ModItems.LIGHTBLUESOUL.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 116, 34) {
@@ -99,7 +99,7 @@ public class ExtractorintefaceMenu extends AbstractContainerMenu implements Supp
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return WowamodModItems.KOLBA.get() == stack.getItem();
+				return Universe3090ModItems.KOLBA.get() == stack.getItem();
 			}
 		}));
 		for (int si = 0; si < 3; ++si)

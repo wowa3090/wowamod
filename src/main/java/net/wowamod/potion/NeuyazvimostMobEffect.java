@@ -15,7 +15,7 @@ public class NeuyazvimostMobEffect extends MobEffect {
 
 	@Override
 	public String getDescriptionId() {
-		return "effect.wowamod.neuyazvimost";
+		return "effect.universe3090.neuyazvimost";
 	}
 
 	@Override

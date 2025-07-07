@@ -1,6 +1,6 @@
 package net.wowamod.procedures;
 
-import net.wowamod.init.WowamodModItems;
+import net.wowamod.init.Universe3090ModItems;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -28,7 +28,7 @@ public class GreensoulgivingProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z) {
 		if (Math.random() <= 0.2) {
 			if (world instanceof ServerLevel _level) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(WowamodModItems.GREENSOULPIECE.get()));
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(Universe3090ModItems.GREENSOULPIECE.get()));
 				entityToSpawn.setPickUpDelay(1);
 				_level.addFreshEntity(entityToSpawn);
 			}

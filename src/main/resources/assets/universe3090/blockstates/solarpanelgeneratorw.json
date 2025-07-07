@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "universe3090:block/solarpanelgeneratorw"
+    },
+    "type=top": {
+      "model": "universe3090:block/solarpanelgeneratorw_top"
+    },
+    "type=double": {
+      "model": "universe3090:block/solarpanelgeneratorw_full"
+    }
+  }
+}

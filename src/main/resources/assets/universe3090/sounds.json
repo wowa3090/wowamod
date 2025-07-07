@@ -1,0 +1,54 @@
+{
+  "fadingworld-2faza": {
+    "subtitle": "subtitles.fadingworld-2faza",
+    "sounds": [
+      {
+        "name": "universe3090:fadingworld",
+        "stream": true
+      }
+    ]
+  },
+  "faza2perexod": {
+    "subtitle": "subtitles.faza2perexod",
+    "sounds": [
+      {
+        "name": "universe3090:moie_vidieo1",
+        "stream": false
+      }
+    ]
+  },
+  "happyandsad": {
+    "subtitle": "subtitles.happyandsad",
+    "sounds": [
+      {
+        "name": "universe3090:happyandsad",
+        "stream": true
+      }
+    ]
+  },
+  "disassembly_required": {
+    "subtitle": "subtitles.disassembly_required",
+    "sounds": [
+      {
+        "name": "universe3090:disblyreq",
+        "stream": true
+      }
+    ]
+  },
+  "nightmare.trojansound": {
+    "sounds": [
+      {
+        "name": "universe3090:223297__glitchedtones__glitch-element-04",
+        "stream": false
+      }
+    ]
+  },
+  "ambientmyplacezone": {
+    "sounds": [
+      {
+        "name": "universe3090:y2mate.mx-the_end_original-1080p_1",
+        "stream": false
+      }
+    ]
+  }
+}

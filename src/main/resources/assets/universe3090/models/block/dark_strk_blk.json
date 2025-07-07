@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "universe3090:block/darktreeblock",
+    "particle": "universe3090:block/darktreeblock"
+  },
+  "render_type": "solid"
+}

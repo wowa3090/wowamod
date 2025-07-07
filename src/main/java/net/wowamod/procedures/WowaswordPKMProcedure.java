@@ -1,8 +1,8 @@
 package net.wowamod.procedures;
 
-import net.wowamod.network.WowamodModVariables;
-import net.wowamod.init.WowamodModMobEffects;
-import net.wowamod.init.WowamodModItems;
+import net.wowamod.network.Universe3090ModVariables;
+import net.wowamod.init.Universe3090ModMobEffects;
+import net.wowamod.init.Universe3090ModItems;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.LevelAccessor;
@@ -25,7 +25,7 @@ public class WowaswordPKMProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(WowamodModItems.RAINBOWEMERALD.get())) : false) {
+		if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Universe3090ModItems.RAINBOWEMERALD.get())) : false) {
 			{
 				Entity _shootFrom = entity;
 				Level projectileLevel = _shootFrom.level();
@@ -57,13 +57,13 @@ public class WowaswordPKMProcedure {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 120, 1, false, false));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(WowamodModMobEffects.NEUYAZVIMOST.get(), 100, 0, false, false));
-			if ((entity.getCapability(WowamodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new WowamodModVariables.PlayerVariables())).wowaswordupgrade > 99) {
+				_entity.addEffect(new MobEffectInstance(Universe3090ModMobEffects.NEUYAZVIMOST.get(), 100, 0, false, false));
+			if ((entity.getCapability(Universe3090ModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Universe3090ModVariables.PlayerVariables())).wowaswordupgrade > 99) {
 				if (entity instanceof Player _player)
-					_player.getCooldowns().addCooldown(WowamodModItems.WOWASWORD.get(), 100);
+					_player.getCooldowns().addCooldown(Universe3090ModItems.WOWASWORD.get(), 100);
 			} else {
 				if (entity instanceof Player _player)
-					_player.getCooldowns().addCooldown(WowamodModItems.WOWASWORD.get(), 200);
+					_player.getCooldowns().addCooldown(Universe3090ModItems.WOWASWORD.get(), 200);
 			}
 		} else {
 			{
@@ -96,13 +96,13 @@ public class WowaswordPKMProcedure {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 80, 4, false, false));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(WowamodModMobEffects.NEUYAZVIMOST.get(), 20, 0, false, false));
-			if ((entity.getCapability(WowamodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new WowamodModVariables.PlayerVariables())).wowaswordupgrade >= 100) {
+				_entity.addEffect(new MobEffectInstance(Universe3090ModMobEffects.NEUYAZVIMOST.get(), 20, 0, false, false));
+			if ((entity.getCapability(Universe3090ModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Universe3090ModVariables.PlayerVariables())).wowaswordupgrade >= 100) {
 				if (entity instanceof Player _player)
-					_player.getCooldowns().addCooldown(WowamodModItems.WOWASWORD.get(), 200);
+					_player.getCooldowns().addCooldown(Universe3090ModItems.WOWASWORD.get(), 200);
 			} else {
 				if (entity instanceof Player _player)
-					_player.getCooldowns().addCooldown(WowamodModItems.WOWASWORD.get(), 400);
+					_player.getCooldowns().addCooldown(Universe3090ModItems.WOWASWORD.get(), 400);
 			}
 		}
 	}

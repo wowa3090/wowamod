@@ -1,0 +1,8 @@
+{
+  "parent": "block/tinted_cross",
+  "textures": {
+    "cross": "universe3090:block/poppy",
+    "particle": "universe3090:block/poppy"
+  },
+  "render_type": "cutout"
+}

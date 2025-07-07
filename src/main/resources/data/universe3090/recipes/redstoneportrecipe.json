@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:ironplastinewowa"
+    },
+    "b": {
+      "item": "universe3090:magicironingot"
+    },
+    "c": {
+      "item": "minecraft:redstone_block"
+    }
+  },
+  "result": {
+    "item": "universe3090:redstoneport",
+    "count": 1
+  }
+}

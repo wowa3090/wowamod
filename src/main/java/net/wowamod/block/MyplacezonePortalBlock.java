@@ -5,7 +5,7 @@ import org.checkerframework.checker.units.qual.s;
 
 import net.wowamod.world.teleporter.MyplacezoneTeleporter;
 import net.wowamod.world.teleporter.MyplacezonePortalShape;
-import net.wowamod.init.WowamodModParticleTypes;
+import net.wowamod.init.Universe3090ModParticleTypes;
 
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -74,10 +74,10 @@ public class MyplacezonePortalBlock extends NetherPortalBlock {
 				pz = pos.getZ() + 0.5 + 0.25 * j;
 				vz = random.nextFloat() * 2 * j;
 			}
-			world.addParticle((SimpleParticleType) (WowamodModParticleTypes.TRAILOFROSE_2.get()), px, py, pz, vx, vy, vz);
+			world.addParticle((SimpleParticleType) (Universe3090ModParticleTypes.TRAILOFROSE_2.get()), px, py, pz, vx, vy, vz);
 		}
 		if (random.nextInt(110) == 0)
-			world.playSound(null, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(("wowamod:happyandsad"))), SoundSource.BLOCKS, 0.5f, random.nextFloat() * 0.4f + 0.8f);
+			world.playSound(null, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(("universe3090:happyandsad"))), SoundSource.BLOCKS, 0.5f, random.nextFloat() * 0.4f + 0.8f);
 	}
 
 	@Override
@@ -85,9 +85,9 @@ public class MyplacezonePortalBlock extends NetherPortalBlock {
 		if (entity.canChangeDimensions() && !entity.level().isClientSide() && true) {
 			if (entity.isOnPortalCooldown()) {
 				entity.setPortalCooldown();
-			} else if (entity.level().dimension() != ResourceKey.create(Registries.DIMENSION, new ResourceLocation("wowamod:myplacezone"))) {
+			} else if (entity.level().dimension() != ResourceKey.create(Registries.DIMENSION, new ResourceLocation("universe3090:myplacezone"))) {
 				entity.setPortalCooldown();
-				teleportToDimension(entity, pos, ResourceKey.create(Registries.DIMENSION, new ResourceLocation("wowamod:myplacezone")));
+				teleportToDimension(entity, pos, ResourceKey.create(Registries.DIMENSION, new ResourceLocation("universe3090:myplacezone")));
 			} else {
 				entity.setPortalCooldown();
 				teleportToDimension(entity, pos, Level.OVERWORLD);

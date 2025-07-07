@@ -1,7 +1,7 @@
 
 package net.wowamod.world.inventory;
 
-import net.wowamod.init.WowamodModMenus;
+import net.wowamod.init.Universe3090ModMenus;
 
 import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
@@ -39,7 +39,7 @@ public class ConstructorinterfaceMenu extends AbstractContainerMenu implements S
 	private BlockEntity boundBlockEntity = null;
 
 	public ConstructorinterfaceMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(WowamodModMenus.CONSTRUCTORINTERFACE.get(), id);
+		super(Universe3090ModMenus.CONSTRUCTORINTERFACE.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(21);

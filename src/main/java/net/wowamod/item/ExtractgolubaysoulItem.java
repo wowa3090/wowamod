@@ -1,7 +1,7 @@
 
 package net.wowamod.item;
 
-import net.wowamod.init.WowamodModFluids;
+import net.wowamod.init.Universe3090ModFluids;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.TooltipFlag;
@@ -16,7 +16,7 @@ import java.util.List;
 
 public class ExtractgolubaysoulItem extends BucketItem {
 	public ExtractgolubaysoulItem() {
-		super(WowamodModFluids.EXTRACTGOLUBAYSOUL, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.UNCOMMON));
+		super(Universe3090ModFluids.EXTRACTGOLUBAYSOUL, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.UNCOMMON));
 	}
 
 	@Override

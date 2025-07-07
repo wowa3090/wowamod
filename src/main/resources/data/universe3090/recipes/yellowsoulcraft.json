@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "universe3090:yellowsoulpiece"
+    },
+    {
+      "item": "universe3090:yellowsoulpiece"
+    },
+    {
+      "item": "universe3090:yellowsoulpiece"
+    },
+    {
+      "item": "universe3090:yellowsoulpiece"
+    },
+    {
+      "item": "universe3090:yellowsoulpiece"
+    },
+    {
+      "item": "universe3090:yellowsoulpiece"
+    },
+    {
+      "item": "universe3090:yellowsoulpiece"
+    },
+    {
+      "item": "universe3090:yellowsoulpiece"
+    },
+    {
+      "item": "universe3090:yellowsoulpiece"
+    }
+  ],
+  "result": {
+    "item": "universe3090:yellowsoul",
+    "count": 1
+  }
+}

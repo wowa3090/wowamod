@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "universe3090:block/corruptedsoulsblock",
+    "up": "universe3090:block/corruptedsoulsblock",
+    "north": "universe3090:block/corruptedsoulsblock",
+    "east": "universe3090:block/corruptedsoulsblock",
+    "south": "universe3090:block/corruptedsoulsblock",
+    "west": "universe3090:block/corruptedsoulsblock",
+    "particle": "universe3090:block/corruptedsoulsblock"
+  },
+  "render_type": "solid"
+}

@@ -1,7 +1,7 @@
 
 package net.wowamod.world.teleporter;
 
-import net.wowamod.init.WowamodModBlocks;
+import net.wowamod.init.Universe3090ModBlocks;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
@@ -32,7 +32,7 @@ public class MyplacezonePortalShape {
 	private static final int MIN_HEIGHT = 3;
 	public static final int MAX_HEIGHT = 21;
 	private static final BlockBehaviour.StatePredicate FRAME = (p_77720_, p_77721_, p_77722_) -> {
-		return p_77720_.getBlock() == WowamodModBlocks.CORRUPTED_SOULS_BLOCK.get();
+		return p_77720_.getBlock() == Universe3090ModBlocks.CORRUPTED_SOULS_BLOCK.get();
 	};
 	private static final float SAFE_TRAVEL_MAX_ENTITY_XY = 4.0F;
 	private static final double SAFE_TRAVEL_MAX_VERTICAL_DELTA = 1.0D;
@@ -143,7 +143,7 @@ public class MyplacezonePortalShape {
 				if (!isEmpty(blockstate)) {
 					return i;
 				}
-				if (blockstate.getBlock() == WowamodModBlocks.MYPLACEZONE_PORTAL.get()) {
+				if (blockstate.getBlock() == Universe3090ModBlocks.MYPLACEZONE_PORTAL.get()) {
 					++this.numPortalBlocks;
 				}
 			}
@@ -152,7 +152,7 @@ public class MyplacezonePortalShape {
 	}
 
 	private static boolean isEmpty(BlockState p_77718_) {
-		return p_77718_.isAir() || p_77718_.getBlock() == WowamodModBlocks.MYPLACEZONE_PORTAL.get();
+		return p_77718_.isAir() || p_77718_.getBlock() == Universe3090ModBlocks.MYPLACEZONE_PORTAL.get();
 	}
 
 	public boolean isValid() {
@@ -160,7 +160,7 @@ public class MyplacezonePortalShape {
 	}
 
 	public void createPortalBlocks() {
-		BlockState blockstate = WowamodModBlocks.MYPLACEZONE_PORTAL.get().defaultBlockState().setValue(NetherPortalBlock.AXIS, this.axis);
+		BlockState blockstate = Universe3090ModBlocks.MYPLACEZONE_PORTAL.get().defaultBlockState().setValue(NetherPortalBlock.AXIS, this.axis);
 		BlockPos.betweenClosed(this.bottomLeft, this.bottomLeft.relative(Direction.UP, this.height - 1).relative(this.rightDir, this.width - 1)).forEach((p_77725_) -> {
 			this.level.setBlock(p_77725_, blockstate, 18);
 			if (this.level instanceof ServerLevel)

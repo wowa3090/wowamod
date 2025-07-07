@@ -29,7 +29,7 @@ public class MyplacezoneDimension {
 					return true;
 				}
 			};
-			event.register(new ResourceLocation("wowamod:myplacezone"), customEffect);
+			event.register(new ResourceLocation("universe3090:myplacezone"), customEffect);
 		}
 	}
 }

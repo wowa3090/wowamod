@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "universe3090:greensoulpiece"
+    },
+    {
+      "item": "universe3090:greensoulpiece"
+    },
+    {
+      "item": "universe3090:greensoulpiece"
+    },
+    {
+      "item": "universe3090:greensoulpiece"
+    },
+    {
+      "item": "universe3090:greensoulpiece"
+    },
+    {
+      "item": "universe3090:greensoulpiece"
+    },
+    {
+      "item": "universe3090:greensoulpiece"
+    },
+    {
+      "item": "universe3090:greensoulpiece"
+    },
+    {
+      "item": "universe3090:greensoulpiece"
+    }
+  ],
+  "result": {
+    "item": "universe3090:greensoul",
+    "count": 1
+  }
+}

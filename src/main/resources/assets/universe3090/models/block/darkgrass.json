@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "universe3090:block/bottomlayer_darkgrass",
+    "up": "universe3090:block/toplayer_darkgrass",
+    "north": "universe3090:block/frontlayer_darkgrass",
+    "east": "universe3090:block/frontlayer_darkgrass",
+    "south": "universe3090:block/frontlayer_darkgrass",
+    "west": "universe3090:block/frontlayer_darkgrass",
+    "particle": "universe3090:block/bottomlayer_darkgrass"
+  },
+  "render_type": "solid"
+}

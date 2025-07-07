@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcd",
+    " e "
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:energyelement"
+    },
+    "b": {
+      "item": "universe3090:dark_iron_machine_casing"
+    },
+    "c": {
+      "item": "universe3090:rotor"
+    },
+    "d": {
+      "item": "universe3090:ekranchik"
+    },
+    "e": {
+      "item": "universe3090:klava"
+    }
+  },
+  "result": {
+    "item": "universe3090:emerald_combiner",
+    "count": 1
+  }
+}

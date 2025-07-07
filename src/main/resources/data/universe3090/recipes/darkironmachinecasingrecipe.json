@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "b b",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:blackironingot"
+    },
+    "b": {
+      "item": "universe3090:darkironplastine"
+    }
+  },
+  "result": {
+    "item": "universe3090:dark_iron_machine_casing",
+    "count": 1
+  }
+}

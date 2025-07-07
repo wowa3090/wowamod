@@ -1,6 +1,6 @@
 package net.wowamod.procedures;
 
-import net.wowamod.init.WowamodModMobEffects;
+import net.wowamod.init.Universe3090ModMobEffects;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
@@ -28,7 +28,7 @@ public class NeuyazvimostPASSIVEffiektProcedure {
 			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(0, 0, 0), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 					"execute as " + entity.getStringUUID() + " run particleset light_ring");
 		}
-		if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(WowamodModMobEffects.NEUYAZVIMOST.get()) ? _livEnt.getEffect(WowamodModMobEffects.NEUYAZVIMOST.get()).getDuration() : 0) <= 2) {
+		if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(Universe3090ModMobEffects.NEUYAZVIMOST.get()) ? _livEnt.getEffect(Universe3090ModMobEffects.NEUYAZVIMOST.get()).getDuration() : 0) <= 2) {
 			if (entity instanceof Player _player) {
 				_player.getAbilities().invulnerable = false;
 				_player.onUpdateAbilities();

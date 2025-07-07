@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bbb",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:batareyka"
+    },
+    "b": {
+      "item": "universe3090:wiresprovoda"
+    }
+  },
+  "result": {
+    "item": "universe3090:energyelement",
+    "count": 1
+  }
+}

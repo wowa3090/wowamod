@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "universe3090:bluesoulpiece"
+    },
+    {
+      "item": "universe3090:bluesoulpiece"
+    },
+    {
+      "item": "universe3090:bluesoulpiece"
+    },
+    {
+      "item": "universe3090:bluesoulpiece"
+    },
+    {
+      "item": "universe3090:bluesoulpiece"
+    },
+    {
+      "item": "universe3090:bluesoulpiece"
+    },
+    {
+      "item": "universe3090:bluesoulpiece"
+    },
+    {
+      "item": "universe3090:bluesoulpiece"
+    },
+    {
+      "item": "universe3090:bluesoulpiece"
+    }
+  ],
+  "result": {
+    "item": "universe3090:bluesoul",
+    "count": 1
+  }
+}

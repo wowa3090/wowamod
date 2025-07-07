@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "universe3090:block/bricks",
+    "up": "universe3090:block/bricks",
+    "north": "universe3090:block/bricks",
+    "east": "universe3090:block/bricks",
+    "south": "universe3090:block/bricks",
+    "west": "universe3090:block/bricks",
+    "particle": "universe3090:block/bricks"
+  },
+  "render_type": "solid"
+}

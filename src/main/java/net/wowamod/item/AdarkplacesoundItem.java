@@ -16,7 +16,7 @@ import java.util.List;
 
 public class AdarkplacesoundItem extends RecordItem {
 	public AdarkplacesoundItem() {
-		super(15, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("wowamod:happyandsad")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 2400);
+		super(15, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("universe3090:happyandsad")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 2400);
 	}
 
 	@Override

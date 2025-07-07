@@ -1,0 +1,7 @@
+{
+  "parent": "universe3090:custom/m.t.w",
+  "textures": {
+    "0": "universe3090:block/texture_mtw",
+    "particle": "universe3090:item/instrument"
+  }
+}

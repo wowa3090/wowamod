@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "wowamod:block/darktreeblock",
-    "particle": "wowamod:block/darktreeblock"
-  },
-  "render_type": "solid"
-}

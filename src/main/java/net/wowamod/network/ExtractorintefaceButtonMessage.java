@@ -3,7 +3,7 @@ package net.wowamod.network;
 
 import net.wowamod.world.inventory.ExtractorintefaceMenu;
 import net.wowamod.procedures.Animationextractor2Procedure;
-import net.wowamod.WowamodMod;
+import net.wowamod.Universe3090Mod;
 
 import net.minecraftforge.network.NetworkEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -70,6 +70,6 @@ public class ExtractorintefaceButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		WowamodMod.addNetworkMessage(ExtractorintefaceButtonMessage.class, ExtractorintefaceButtonMessage::buffer, ExtractorintefaceButtonMessage::new, ExtractorintefaceButtonMessage::handler);
+		Universe3090Mod.addNetworkMessage(ExtractorintefaceButtonMessage.class, ExtractorintefaceButtonMessage::buffer, ExtractorintefaceButtonMessage::new, ExtractorintefaceButtonMessage::handler);
 	}
 }

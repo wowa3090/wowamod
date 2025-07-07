@@ -44,7 +44,7 @@ public class NightmarerisingOverlay {
 		RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (NightmarerisingUsloviiePokazaNalozhieniiaProcedure.execute(entity)) {
-			event.getGuiGraphics().blit(new ResourceLocation("wowamod:textures/screens/moshed_2017-5-28_0.50.30.png"), 0, 0, 0, 0, w, h, w, h);
+			event.getGuiGraphics().blit(new ResourceLocation("universe3090:textures/screens/moshed_2017-5-28_0.50.30.png"), 0, 0, 0, 0, w, h, w, h);
 		}
 		RenderSystem.depthMask(true);
 		RenderSystem.defaultBlendFunc();

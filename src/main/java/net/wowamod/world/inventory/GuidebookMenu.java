@@ -1,7 +1,7 @@
 
 package net.wowamod.world.inventory;
 
-import net.wowamod.init.WowamodModMenus;
+import net.wowamod.init.Universe3090ModMenus;
 
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
@@ -36,7 +36,7 @@ public class GuidebookMenu extends AbstractContainerMenu implements Supplier<Map
 	private BlockEntity boundBlockEntity = null;
 
 	public GuidebookMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(WowamodModMenus.GUIDEBOOK.get(), id);
+		super(Universe3090ModMenus.GUIDEBOOK.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(0);

@@ -20,7 +20,7 @@ public class ExtractgolubaysoulFluidType extends FluidType {
 	@Override
 	public void initializeClient(Consumer<IClientFluidTypeExtensions> consumer) {
 		consumer.accept(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = new ResourceLocation("wowamod:block/lightblueextractwater"), FLOWING_TEXTURE = new ResourceLocation("wowamod:block/lightblueextractwater2");
+			private static final ResourceLocation STILL_TEXTURE = new ResourceLocation("universe3090:block/lightblueextractwater"), FLOWING_TEXTURE = new ResourceLocation("universe3090:block/lightblueextractwater2");
 
 			@Override
 			public ResourceLocation getStillTexture() {

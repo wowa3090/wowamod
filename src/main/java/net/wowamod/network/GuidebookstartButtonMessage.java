@@ -3,7 +3,7 @@ package net.wowamod.network;
 
 import net.wowamod.world.inventory.GuidebookstartMenu;
 import net.wowamod.procedures.BackguideProcedure;
-import net.wowamod.WowamodMod;
+import net.wowamod.Universe3090Mod;
 
 import net.minecraftforge.network.NetworkEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -70,6 +70,6 @@ public class GuidebookstartButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		WowamodMod.addNetworkMessage(GuidebookstartButtonMessage.class, GuidebookstartButtonMessage::buffer, GuidebookstartButtonMessage::new, GuidebookstartButtonMessage::handler);
+		Universe3090Mod.addNetworkMessage(GuidebookstartButtonMessage.class, GuidebookstartButtonMessage::buffer, GuidebookstartButtonMessage::new, GuidebookstartButtonMessage::handler);
 	}
 }

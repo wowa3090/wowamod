@@ -3,7 +3,7 @@ package net.wowamod.client.gui;
 import net.wowamod.world.inventory.ExtractorintefaceMenu;
 import net.wowamod.procedures.AnimationextractorProcedure;
 import net.wowamod.network.ExtractorintefaceButtonMessage;
-import net.wowamod.WowamodMod;
+import net.wowamod.Universe3090Mod;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
@@ -36,7 +36,7 @@ public class ExtractorintefaceScreen extends AbstractContainerScreen<Extractorin
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("wowamod:textures/screens/extractorinteface.png");
+	private static final ResourceLocation texture = new ResourceLocation("universe3090:textures/screens/extractorinteface.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -52,11 +52,11 @@ public class ExtractorintefaceScreen extends AbstractContainerScreen<Extractorin
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("wowamod:textures/screens/kolba.png"), this.leftPos + 100, this.topPos + 62, 0, 0, 8, 8, 8, 8);
+		guiGraphics.blit(new ResourceLocation("universe3090:textures/screens/kolba.png"), this.leftPos + 100, this.topPos + 62, 0, 0, 8, 8, 8, 8);
 
-		guiGraphics.blit(new ResourceLocation("wowamod:textures/screens/kolba2.png"), this.leftPos + 137, this.topPos + 37, 0, 0, 8, 8, 8, 8);
+		guiGraphics.blit(new ResourceLocation("universe3090:textures/screens/kolba2.png"), this.leftPos + 137, this.topPos + 37, 0, 0, 8, 8, 8, 8);
 
-		guiGraphics.blit(new ResourceLocation("wowamod:textures/screens/soul_patience.png"), this.leftPos + 47, this.topPos + 24, 0, 0, 8, 8, 8, 8);
+		guiGraphics.blit(new ResourceLocation("universe3090:textures/screens/soul_patience.png"), this.leftPos + 47, this.topPos + 24, 0, 0, 8, 8, 8, 8);
 
 		RenderSystem.disableBlend();
 	}
@@ -77,9 +77,9 @@ public class ExtractorintefaceScreen extends AbstractContainerScreen<Extractorin
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.wowamod.extractorinteface.label_centrifuge"), 49, 12, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.wowamod.extractorinteface.label_empty"), 64, 38, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.wowamod.extractorinteface.label_empty1"), 85, 45, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.universe3090.extractorinteface.label_centrifuge"), 49, 12, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.universe3090.extractorinteface.label_empty"), 64, 38, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.universe3090.extractorinteface.label_empty1"), 85, 45, -12829636, false);
 		guiGraphics.drawString(this.font,
 
 				AnimationextractorProcedure.execute(entity), 108, 53, -12829636, false);
@@ -93,9 +93,9 @@ public class ExtractorintefaceScreen extends AbstractContainerScreen<Extractorin
 	@Override
 	public void init() {
 		super.init();
-		button_start = Button.builder(Component.translatable("gui.wowamod.extractorinteface.button_start"), e -> {
+		button_start = Button.builder(Component.translatable("gui.universe3090.extractorinteface.button_start"), e -> {
 			if (true) {
-				WowamodMod.PACKET_HANDLER.sendToServer(new ExtractorintefaceButtonMessage(0, x, y, z));
+				Universe3090Mod.PACKET_HANDLER.sendToServer(new ExtractorintefaceButtonMessage(0, x, y, z));
 				ExtractorintefaceButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}).bounds(this.leftPos + 62, this.topPos + -22, 51, 20).build();

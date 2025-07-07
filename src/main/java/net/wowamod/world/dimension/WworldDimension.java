@@ -29,7 +29,7 @@ public class WworldDimension {
 					return false;
 				}
 			};
-			event.register(new ResourceLocation("wowamod:wworld"), customEffect);
+			event.register(new ResourceLocation("universe3090:wworld"), customEffect);
 		}
 	}
 }

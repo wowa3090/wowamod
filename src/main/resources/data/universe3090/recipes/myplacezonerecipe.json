@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:poppy"
+    },
+    "b": {
+      "item": "minecraft:rose_bush"
+    },
+    "c": {
+      "item": "universe3090:alphaelement"
+    }
+  },
+  "result": {
+    "item": "universe3090:myplacezone",
+    "count": 1
+  }
+}

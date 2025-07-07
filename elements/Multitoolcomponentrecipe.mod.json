@@ -24,7 +24,7 @@
         "value": "CUSTOM:Darkironplastine"
       },
       {
-        "value": "CUSTOM:Redstonecommandblock"
+        "value": "CUSTOM:Multitoolcomponentnottrue"
       },
       {
         "value": "CUSTOM:Darkironplastine"
@@ -36,7 +36,7 @@
         "value": "CUSTOM:Darkironplastine"
       },
       {
-        "value": "CUSTOM:AluminiumIngot"
+        "value": "CUSTOM:Redstonecommandblock"
       }
     ],
     "recipeReturnStack": {

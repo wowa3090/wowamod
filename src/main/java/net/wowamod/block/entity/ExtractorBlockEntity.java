@@ -1,8 +1,8 @@
 package net.wowamod.block.entity;
 
 import net.wowamod.world.inventory.ExtractorintefaceMenu;
-import net.wowamod.init.WowamodModFluids;
-import net.wowamod.init.WowamodModBlockEntities;
+import net.wowamod.init.Universe3090ModFluids;
+import net.wowamod.init.Universe3090ModBlockEntities;
 
 import net.minecraftforge.items.wrapper.SidedInvWrapper;
 import net.minecraftforge.items.IItemHandler;
@@ -40,7 +40,7 @@ public class ExtractorBlockEntity extends RandomizableContainerBlockEntity imple
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public ExtractorBlockEntity(BlockPos position, BlockState state) {
-		super(WowamodModBlockEntities.EXTRACTOR.get(), position, state);
+		super(Universe3090ModBlockEntities.EXTRACTOR.get(), position, state);
 	}
 
 	@Override
@@ -160,7 +160,7 @@ public class ExtractorBlockEntity extends RandomizableContainerBlockEntity imple
 		}
 	};
 	private final FluidTank fluidTank = new FluidTank(8000, fs -> {
-		if (fs.getFluid() == WowamodModFluids.EXTRACTGOLUBAYSOUL.get())
+		if (fs.getFluid() == Universe3090ModFluids.EXTRACTGOLUBAYSOUL.get())
 			return true;
 		if (fs.getFluid() == Fluids.WATER)
 			return true;

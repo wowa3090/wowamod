@@ -1,6 +1,6 @@
 package net.wowamod.procedures;
 
-import net.wowamod.network.WowamodModVariables;
+import net.wowamod.network.Universe3090ModVariables;
 
 import net.minecraft.world.entity.Entity;
 import net.minecraft.commands.CommandSourceStack;
@@ -13,8 +13,8 @@ public class SoulsgetprocedureProcedure {
 		if (entity == null)
 			return;
 		{
-			double _setval = (entity.getCapability(WowamodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new WowamodModVariables.PlayerVariables())).wowaswordupgrade + DoubleArgumentType.getDouble(arguments, "souls");
-			entity.getCapability(WowamodModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+			double _setval = (entity.getCapability(Universe3090ModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Universe3090ModVariables.PlayerVariables())).wowaswordupgrade + DoubleArgumentType.getDouble(arguments, "souls");
+			entity.getCapability(Universe3090ModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.wowaswordupgrade = _setval;
 				capability.syncPlayerVariables(entity);
 			});

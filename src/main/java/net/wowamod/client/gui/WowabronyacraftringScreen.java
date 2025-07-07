@@ -2,7 +2,7 @@ package net.wowamod.client.gui;
 
 import net.wowamod.world.inventory.WowabronyacraftringMenu;
 import net.wowamod.network.WowabronyacraftringButtonMessage;
-import net.wowamod.WowamodMod;
+import net.wowamod.Universe3090Mod;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
@@ -35,7 +35,7 @@ public class WowabronyacraftringScreen extends AbstractContainerScreen<Wowabrony
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("wowamod:textures/screens/wowabronyacraftring.png");
+	private static final ResourceLocation texture = new ResourceLocation("universe3090:textures/screens/wowabronyacraftring.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -69,8 +69,8 @@ public class WowabronyacraftringScreen extends AbstractContainerScreen<Wowabrony
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.wowamod.wowabronyacraftring.label_crafting"), 16, 4, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.wowamod.wowabronyacraftring.label_empty"), 125, 44, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.universe3090.wowabronyacraftring.label_crafting"), 16, 4, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.universe3090.wowabronyacraftring.label_empty"), 125, 44, -12829636, false);
 	}
 
 	@Override
@@ -81,9 +81,9 @@ public class WowabronyacraftringScreen extends AbstractContainerScreen<Wowabrony
 	@Override
 	public void init() {
 		super.init();
-		button_empty = Button.builder(Component.translatable("gui.wowamod.wowabronyacraftring.button_empty"), e -> {
+		button_empty = Button.builder(Component.translatable("gui.universe3090.wowabronyacraftring.button_empty"), e -> {
 			if (true) {
-				WowamodMod.PACKET_HANDLER.sendToServer(new WowabronyacraftringButtonMessage(0, x, y, z));
+				Universe3090Mod.PACKET_HANDLER.sendToServer(new WowabronyacraftringButtonMessage(0, x, y, z));
 				WowabronyacraftringButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}).bounds(this.leftPos + 182, this.topPos + 39, 39, 20).build();

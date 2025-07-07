@@ -1,6 +1,6 @@
 package net.wowamod.procedures;
 
-import net.wowamod.init.WowamodModItems;
+import net.wowamod.init.Universe3090ModItems;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -37,7 +37,7 @@ public class BluesoulgivingProcedure {
 			return;
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.getMobType() == MobType.WATER && damagesource.is(DamageTypes.PLAYER_ATTACK) && Math.random() <= 0.5) {
 			if (world instanceof ServerLevel _level) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(WowamodModItems.BLUESOULPIECE.get()));
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(Universe3090ModItems.BLUESOULPIECE.get()));
 				entityToSpawn.setPickUpDelay(1);
 				_level.addFreshEntity(entityToSpawn);
 			}

@@ -3,16 +3,16 @@ loaderVersion="[47,)"
 license="Universe3090 License"
 
 [[mods]]
-modId="wowamod"
-version="1.4.0"
-displayName="wowamod"
+modId="universe3090"
+version="1.4.1"
+displayName="Universe3090-stories"
 displayURL="https://nosite.com"
 logoFile="logo.png"
 credits="test version"
 authors="wowa3090"
 description="This Mod will add to your minecraft world items from Universe3090 And.. a lot of content"
 
-[[dependencies.wowamod]]
+[[dependencies.universe3090]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.20.1]"
@@ -21,7 +21,7 @@ description="This Mod will add to your minecraft world items from Universe3090 A
 
 
 
-[[dependencies.wowamod]]
+[[dependencies.universe3090]]
     modId="particlepresets"
     mandatory=false
     versionRange="[0,)"

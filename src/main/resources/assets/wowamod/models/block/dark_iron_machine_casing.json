@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "wowamod:block/darkironmachinecasing",
-    "particle": "wowamod:block/darkironmachinecasing"
-  },
-  "render_type": "solid"
-}

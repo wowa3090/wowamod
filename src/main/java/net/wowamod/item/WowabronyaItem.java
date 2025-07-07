@@ -114,7 +114,7 @@ public abstract class WowabronyaItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "wowamod:textures/entities/headtexture.png";
+			return "universe3090:textures/entities/headtexture.png";
 		}
 
 		@Override
@@ -161,7 +161,7 @@ public abstract class WowabronyaItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "wowamod:textures/entities/chestplatetexture.png";
+			return "universe3090:textures/entities/chestplatetexture.png";
 		}
 
 		@Override
@@ -209,7 +209,7 @@ public abstract class WowabronyaItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "wowamod:textures/entities/botinkiiponojitexture.png";
+			return "universe3090:textures/entities/botinkiiponojitexture.png";
 		}
 
 		@Override
@@ -257,7 +257,7 @@ public abstract class WowabronyaItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "wowamod:textures/entities/botinkiiponojitexture.png";
+			return "universe3090:textures/entities/botinkiiponojitexture.png";
 		}
 
 		@Override

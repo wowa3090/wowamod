@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "def",
+    "abc"
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:darkironplastine"
+    },
+    "b": {
+      "item": "universe3090:alphaelement"
+    },
+    "c": {
+      "item": "universe3090:blackironingot"
+    },
+    "d": {
+      "item": "universe3090:multitoolcomponent"
+    },
+    "e": {
+      "item": "universe3090:aluminiumdiamondbase"
+    },
+    "f": {
+      "item": "universe3090:redemerald"
+    }
+  },
+  "result": {
+    "item": "universe3090:instrumentprosto",
+    "count": 1
+  }
+}

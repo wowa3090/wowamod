@@ -1,7 +1,7 @@
 package net.wowamod.procedures;
 
-import net.wowamod.network.WowamodModVariables;
-import net.wowamod.init.WowamodModItems;
+import net.wowamod.network.Universe3090ModVariables;
+import net.wowamod.init.Universe3090ModItems;
 
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -21,8 +21,8 @@ public class TeleportPriNazhatiiKlavishiProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == WowamodModItems.WOWASWORD.get()
-				&& !(entity instanceof Player _plrCldCheck2 && _plrCldCheck2.getCooldowns().isOnCooldown(WowamodModItems.WOWASWORD.get()))) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Universe3090ModItems.WOWASWORD.get()
+				&& !(entity instanceof Player _plrCldCheck2 && _plrCldCheck2.getCooldowns().isOnCooldown(Universe3090ModItems.WOWASWORD.get()))) {
 			{
 				Entity _ent = entity;
 				_ent.teleportTo((entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(8)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getX() + 0.5),
@@ -42,12 +42,12 @@ public class TeleportPriNazhatiiKlavishiProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")), SoundSource.NEUTRAL, 2, 2, false);
 				}
 			}
-			if ((entity.getCapability(WowamodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new WowamodModVariables.PlayerVariables())).wowaswordupgrade >= 50) {
+			if ((entity.getCapability(Universe3090ModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Universe3090ModVariables.PlayerVariables())).wowaswordupgrade >= 50) {
 				if (entity instanceof Player _player)
-					_player.getCooldowns().addCooldown(WowamodModItems.WOWASWORD.get(), 5);
+					_player.getCooldowns().addCooldown(Universe3090ModItems.WOWASWORD.get(), 5);
 			} else {
 				if (entity instanceof Player _player)
-					_player.getCooldowns().addCooldown(WowamodModItems.WOWASWORD.get(), 10);
+					_player.getCooldowns().addCooldown(Universe3090ModItems.WOWASWORD.get(), 10);
 			}
 		}
 	}

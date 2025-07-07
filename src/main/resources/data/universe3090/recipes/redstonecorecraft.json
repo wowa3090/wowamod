@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aea"
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:ironplastinewowa"
+    },
+    "b": {
+      "item": "minecraft:comparator"
+    },
+    "c": {
+      "item": "minecraft:repeater"
+    },
+    "d": {
+      "item": "minecraft:redstone_block"
+    },
+    "e": {
+      "item": "minecraft:lever"
+    }
+  },
+  "result": {
+    "item": "universe3090:redstonecommandblock",
+    "count": 1
+  }
+}

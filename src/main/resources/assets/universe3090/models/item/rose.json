@@ -1,0 +1,7 @@
+{
+  "parent": "universe3090:custom/rose_my_place",
+  "textures": {
+    "0": "universe3090:block/texture_rose",
+    "particle": "universe3090:item/poppy"
+  }
+}

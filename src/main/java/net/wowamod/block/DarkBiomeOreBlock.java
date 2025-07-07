@@ -1,7 +1,7 @@
 
 package net.wowamod.block;
 
-import net.wowamod.init.WowamodModItems;
+import net.wowamod.init.Universe3090ModItems;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
@@ -60,6 +60,6 @@ public class DarkBiomeOreBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(WowamodModItems.ETHERIUMDARK.get()));
+		return Collections.singletonList(new ItemStack(Universe3090ModItems.ETHERIUMDARK.get()));
 	}
 }

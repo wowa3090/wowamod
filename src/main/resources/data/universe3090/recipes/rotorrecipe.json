@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:derjatili"
+    },
+    "b": {
+      "item": "universe3090:ironplastinewowa"
+    }
+  },
+  "result": {
+    "item": "universe3090:rotor",
+    "count": 1
+  }
+}

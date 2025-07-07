@@ -4,10 +4,10 @@
   "definition": {
     "renderType": 1,
     "texture": "instrument",
-    "customModelName": "instrument:default",
+    "customModelName": "m.t.w:default",
     "customProperties": {},
     "states": [],
-    "name": "\"Инструмент\"",
+    "name": "М.Т.В",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Wowamodvkladka"

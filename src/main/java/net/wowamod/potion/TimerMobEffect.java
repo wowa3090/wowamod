@@ -16,7 +16,7 @@ public class TimerMobEffect extends MobEffect {
 
 	@Override
 	public String getDescriptionId() {
-		return "effect.wowamod.timer";
+		return "effect.universe3090.timer";
 	}
 
 	@Override

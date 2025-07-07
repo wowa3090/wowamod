@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "universe3090:block/darkironmachinecasing",
+    "up": "universe3090:block/emeraldcombinertop",
+    "north": "universe3090:block/emeraldcombinerplayer",
+    "east": "universe3090:block/emeraldcombinerwesteastetc",
+    "south": "universe3090:block/emeraldcombinerwesteastetc",
+    "west": "universe3090:block/emeraldcombinerwesteastetc",
+    "particle": "universe3090:block/darkironmachinecasing"
+  },
+  "render_type": "solid"
+}

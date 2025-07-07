@@ -1,6 +1,6 @@
 package net.wowamod.procedures;
 
-import net.wowamod.network.WowamodModVariables;
+import net.wowamod.network.Universe3090ModVariables;
 
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
@@ -14,7 +14,7 @@ public class WowabronyachestplateProcedure {
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 60, 0, false, false));
-		if ((entity.getCapability(WowamodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new WowamodModVariables.PlayerVariables())).wowaswordupgrade >= 499) {
+		if ((entity.getCapability(Universe3090ModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Universe3090ModVariables.PlayerVariables())).wowaswordupgrade >= 499) {
 			if (entity instanceof Player _player) {
 				_player.getAbilities().mayfly = true;
 				_player.onUpdateAbilities();

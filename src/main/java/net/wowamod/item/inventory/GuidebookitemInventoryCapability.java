@@ -1,7 +1,7 @@
 
 package net.wowamod.item.inventory;
 
-import net.wowamod.init.WowamodModItems;
+import net.wowamod.init.Universe3090ModItems;
 import net.wowamod.client.gui.GuidebookScreen;
 
 import net.minecraftforge.items.ItemStackHandler;
@@ -28,7 +28,7 @@ public class GuidebookitemInventoryCapability implements ICapabilitySerializable
 	@SubscribeEvent
 	@OnlyIn(Dist.CLIENT)
 	public static void onItemDropped(ItemTossEvent event) {
-		if (event.getEntity().getItem().getItem() == WowamodModItems.GUIDEBOOKITEM.get()) {
+		if (event.getEntity().getItem().getItem() == Universe3090ModItems.GUIDEBOOKITEM.get()) {
 			if (Minecraft.getInstance().screen instanceof GuidebookScreen) {
 				Minecraft.getInstance().player.closeContainer();
 			}
@@ -61,7 +61,7 @@ public class GuidebookitemInventoryCapability implements ICapabilitySerializable
 
 			@Override
 			public boolean isItemValid(int slot, @Nonnull ItemStack stack) {
-				return stack.getItem() != WowamodModItems.GUIDEBOOKITEM.get();
+				return stack.getItem() != Universe3090ModItems.GUIDEBOOKITEM.get();
 			}
 
 			@Override

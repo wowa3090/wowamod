@@ -41,7 +41,7 @@ public class ShadowbladeItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of();
 			}
-		}, 3, -2.2f, new Item.Properties().fireResistant());
+		}, 3, -2.25f, new Item.Properties().fireResistant());
 	}
 
 	@Override

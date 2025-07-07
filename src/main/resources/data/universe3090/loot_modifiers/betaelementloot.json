@@ -1,0 +1,10 @@
+{
+  "type": "universe3090:universe3090_loot_modifier",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/desert_pyramid"
+    }
+  ],
+  "lootTable": "universe3090:blocks/alphaelementloot"
+}

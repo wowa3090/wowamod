@@ -1,7 +1,0 @@
-{
-  "parent": "wowamod:custom/instrument",
-  "textures": {
-    "0": "wowamod:block/instrument_texture",
-    "particle": "wowamod:item/instrument"
-  }
-}

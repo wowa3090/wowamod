@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "def",
+    "ghi"
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:orangesoul"
+    },
+    "b": {
+      "item": "universe3090:redsoul"
+    },
+    "c": {
+      "item": "minecraft:redstone"
+    },
+    "d": {
+      "item": "universe3090:yellowsoul"
+    },
+    "e": {
+      "item": "universe3090:soulsvazivatel"
+    },
+    "f": {
+      "item": "universe3090:purplesoul"
+    },
+    "g": {
+      "item": "universe3090:greensoul"
+    },
+    "h": {
+      "item": "universe3090:bluesoul"
+    },
+    "i": {
+      "item": "universe3090:lightbluesoul"
+    }
+  },
+  "result": {
+    "item": "universe3090:soulcore",
+    "count": 1
+  }
+}

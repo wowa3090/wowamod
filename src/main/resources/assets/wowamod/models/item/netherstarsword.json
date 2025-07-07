@@ -1,6 +1,0 @@
-{
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "wowamod:item/diamonde_sworde"
-  }
-}

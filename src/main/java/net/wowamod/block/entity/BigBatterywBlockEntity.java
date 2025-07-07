@@ -1,6 +1,6 @@
 package net.wowamod.block.entity;
 
-import net.wowamod.init.WowamodModBlockEntities;
+import net.wowamod.init.Universe3090ModBlockEntities;
 
 import net.minecraftforge.items.wrapper.SidedInvWrapper;
 import net.minecraftforge.items.IItemHandler;
@@ -34,7 +34,7 @@ public class BigBatterywBlockEntity extends RandomizableContainerBlockEntity imp
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public BigBatterywBlockEntity(BlockPos position, BlockState state) {
-		super(WowamodModBlockEntities.BIG_BATTERYW.get(), position, state);
+		super(Universe3090ModBlockEntities.BIG_BATTERYW.get(), position, state);
 	}
 
 	@Override

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "universe3090:block/crafterbronitop",
+    "up": "universe3090:block/redstonecommandblocktop",
+    "north": "universe3090:block/redstonecommandblock",
+    "east": "universe3090:block/redstonecommandblock",
+    "south": "universe3090:block/redstonecommandblock",
+    "west": "universe3090:block/redstonecommandblock",
+    "particle": "universe3090:block/crafterbronitop"
+  },
+  "render_type": "solid"
+}

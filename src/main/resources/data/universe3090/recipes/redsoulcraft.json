@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "universe3090:redsoulpiece"
+    },
+    {
+      "item": "universe3090:redsoulpiece"
+    },
+    {
+      "item": "universe3090:redsoulpiece"
+    },
+    {
+      "item": "universe3090:redsoulpiece"
+    },
+    {
+      "item": "universe3090:redsoulpiece"
+    },
+    {
+      "item": "universe3090:redsoulpiece"
+    },
+    {
+      "item": "universe3090:redsoulpiece"
+    },
+    {
+      "item": "universe3090:redsoulpiece"
+    },
+    {
+      "item": "universe3090:redsoulpiece"
+    }
+  ],
+  "result": {
+    "item": "universe3090:redsoul",
+    "count": 1
+  }
+}

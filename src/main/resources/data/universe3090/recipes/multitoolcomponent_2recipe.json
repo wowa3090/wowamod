@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "afa"
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:darkironplastine"
+    },
+    "b": {
+      "item": "universe3090:rainbowemerald"
+    },
+    "c": {
+      "item": "minecraft:diamond_shovel"
+    },
+    "d": {
+      "item": "minecraft:diamond_pickaxe"
+    },
+    "e": {
+      "item": "minecraft:diamond_axe"
+    },
+    "f": {
+      "item": "universe3090:molotwowa"
+    }
+  },
+  "result": {
+    "item": "universe3090:multitoolcomponentnottrue",
+    "count": 1
+  }
+}

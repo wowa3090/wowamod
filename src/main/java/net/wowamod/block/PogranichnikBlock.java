@@ -3,7 +3,7 @@ package net.wowamod.block;
 
 import org.checkerframework.checker.units.qual.s;
 
-import net.wowamod.init.WowamodModBlocks;
+import net.wowamod.init.Universe3090ModBlocks;
 
 import net.minecraftforge.client.event.RegisterColorHandlersEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -67,13 +67,13 @@ public class PogranichnikBlock extends Block {
 	public static void blockColorLoad(RegisterColorHandlersEvent.Block event) {
 		event.getBlockColors().register((bs, world, pos, index) -> {
 			return world != null && pos != null ? Minecraft.getInstance().level.getBiome(pos).value().getSkyColor() : 8562943;
-		}, WowamodModBlocks.POGRANICHNIK.get());
+		}, Universe3090ModBlocks.POGRANICHNIK.get());
 	}
 
 	@OnlyIn(Dist.CLIENT)
 	public static void itemColorLoad(RegisterColorHandlersEvent.Item event) {
 		event.getItemColors().register((stack, index) -> {
 			return 8562943;
-		}, WowamodModBlocks.POGRANICHNIK.get());
+		}, Universe3090ModBlocks.POGRANICHNIK.get());
 	}
 }

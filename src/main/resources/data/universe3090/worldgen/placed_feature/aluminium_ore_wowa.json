@@ -1,0 +1,27 @@
+{
+  "feature": "universe3090:aluminium_ore_wowa",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 13
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": -10
+        },
+        "max_inclusive": {
+          "absolute": 82
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

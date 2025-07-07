@@ -1,8 +1,8 @@
 
 package net.wowamod.entity;
 
-import net.wowamod.init.WowamodModItems;
-import net.wowamod.init.WowamodModEntities;
+import net.wowamod.init.Universe3090ModItems;
+import net.wowamod.init.Universe3090ModEntities;
 
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
@@ -41,7 +41,7 @@ import net.minecraft.core.BlockPos;
 
 public class MimicEntity extends Monster {
 	public MimicEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(WowamodModEntities.MIMIC.get(), world);
+		this(Universe3090ModEntities.MIMIC.get(), world);
 	}
 
 	public MimicEntity(EntityType<MimicEntity> type, Level world) {
@@ -87,7 +87,7 @@ public class MimicEntity extends Monster {
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
 		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(WowamodModItems.MIMICKOJA.get()));
+		this.spawnAtLocation(new ItemStack(Universe3090ModItems.MIMICKOJA.get()));
 	}
 
 	@Override
@@ -111,7 +111,7 @@ public class MimicEntity extends Monster {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(WowamodModEntities.MIMIC.get(), SpawnPlacements.Type.NO_RESTRICTIONS, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Mob::checkMobSpawnRules);
+		SpawnPlacements.register(Universe3090ModEntities.MIMIC.get(), SpawnPlacements.Type.NO_RESTRICTIONS, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Mob::checkMobSpawnRules);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

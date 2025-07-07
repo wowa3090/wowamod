@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "eee"
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:derjatili"
+    },
+    "b": {
+      "item": "universe3090:rainbowemerald"
+    },
+    "c": {
+      "item": "minecraft:iron_block"
+    },
+    "d": {
+      "item": "universe3090:soulcore"
+    },
+    "e": {
+      "item": "universe3090:copperplate"
+    }
+  },
+  "result": {
+    "item": "universe3090:crafterbroni",
+    "count": 1
+  }
+}

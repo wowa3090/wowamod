@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "universe3090:orangesoulpiece"
+    },
+    {
+      "item": "universe3090:orangesoulpiece"
+    },
+    {
+      "item": "universe3090:orangesoulpiece"
+    },
+    {
+      "item": "universe3090:orangesoulpiece"
+    },
+    {
+      "item": "universe3090:orangesoulpiece"
+    },
+    {
+      "item": "universe3090:orangesoulpiece"
+    },
+    {
+      "item": "universe3090:orangesoulpiece"
+    },
+    {
+      "item": "universe3090:orangesoulpiece"
+    },
+    {
+      "item": "universe3090:orangesoulpiece"
+    }
+  ],
+  "result": {
+    "item": "universe3090:orangesoul",
+    "count": 1
+  }
+}

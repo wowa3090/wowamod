@@ -1,0 +1,50 @@
+{
+  "has_precipitation": true,
+  "temperature": 0.3,
+  "downfall": 0.8,
+  "effects": {
+    "ambient_sound": "universe3090:ambientmyplacezone",
+    "foliage_color": -12734208,
+    "grass_color": -10879232,
+    "sky_color": -7895161,
+    "fog_color": -7895161,
+    "water_color": -65536,
+    "water_fog_color": -65536
+  },
+  "spawners": {
+    "monster": [],
+    "creature": [],
+    "ambient": [],
+    "axolotls": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [],
+    [],
+    [
+      "minecraft:forest_rock"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "universe3090:my_place_biome_tree",
+      "minecraft:forest_flowers",
+      "minecraft:patch_tall_grass",
+      "minecraft:patch_grass_taiga_2",
+      "minecraft:brown_mushroom_taiga",
+      "minecraft:red_mushroom_taiga",
+      "minecraft:patch_grass_forest",
+      "minecraft:patch_dead_bush_2"
+    ],
+    []
+  ]
+}

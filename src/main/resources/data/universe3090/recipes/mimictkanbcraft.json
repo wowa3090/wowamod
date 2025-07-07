@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "ded",
+    "cba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "universe3090:rainbowemerald"
+    },
+    "c": {
+      "item": "minecraft:redstone"
+    },
+    "d": {
+      "item": "universe3090:extractredsoul"
+    },
+    "e": {
+      "item": "universe3090:mimickoja"
+    }
+  },
+  "result": {
+    "item": "universe3090:mimictkanb",
+    "count": 1
+  }
+}

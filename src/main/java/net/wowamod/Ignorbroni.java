@@ -6,7 +6,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.wowamod.init.WowamodModItems;
+import net.wowamod.init.Universe3090ModItems;
 import net.wowamod.item.WowabronyaItem;
 
 @Mod.EventBusSubscriber(modid = "wowamod", bus = Mod.EventBusSubscriber.Bus.FORGE)
@@ -37,8 +37,8 @@ public class Ignorbroni {
     private static boolean hasWowASword(Player player) {
         ItemStack mainHand = player.getMainHandItem();
         return !mainHand.isEmpty() 
-            && WowamodModItems.WOWASWORD.isPresent() 
-            && mainHand.getItem() == WowamodModItems.WOWASWORD.get();
+            && Universe3090ModItems.WOWASWORD.isPresent() 
+            && mainHand.getItem() == Universe3090ModItems.WOWASWORD.get();
     }
 
     private static boolean hasFullWowABronyaSet(Player player) {

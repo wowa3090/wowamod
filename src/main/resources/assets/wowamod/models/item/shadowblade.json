@@ -1,8 +1,0 @@
-{
-  "parent": "wowamod:custom/shadow_blade",
-  "textures": {
-    "0": "wowamod:block/texture_blade",
-    "1": "wowamod:block/texture_blade",
-    "particle": "wowamod:item/wowasword"
-  }
-}

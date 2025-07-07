@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "ded",
+    "fga"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:copper_ingot"
+    },
+    "b": {
+      "item": "universe3090:lightblueemerald"
+    },
+    "c": {
+      "item": "universe3090:blackironingot"
+    },
+    "d": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "e": {
+      "item": "minecraft:iron_ingot"
+    },
+    "f": {
+      "item": "universe3090:aluminium_ingot"
+    },
+    "g": {
+      "item": "universe3090:extractlbsoul"
+    }
+  },
+  "result": {
+    "item": "universe3090:magicironingot",
+    "count": 1
+  }
+}

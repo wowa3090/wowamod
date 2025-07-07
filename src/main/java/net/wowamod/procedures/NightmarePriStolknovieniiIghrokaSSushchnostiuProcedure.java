@@ -1,6 +1,6 @@
 package net.wowamod.procedures;
 
-import net.wowamod.init.WowamodModMobEffects;
+import net.wowamod.init.Universe3090ModMobEffects;
 
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -25,23 +25,23 @@ public class NightmarePriStolknovieniiIghrokaSSushchnostiuProcedure {
 				return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 			}
 		}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(WowamodModMobEffects.NIGHTMAREISH.get(), 21, 1, false, false));
+			_entity.addEffect(new MobEffectInstance(Universe3090ModMobEffects.NIGHTMAREISH.get(), 21, 1, false, false));
 		if (!(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 40, 40, 40), e -> true).stream().sorted(new Object() {
 			Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 				return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 			}
-		}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof LivingEntity _livEnt3 && _livEnt3.hasEffect(WowamodModMobEffects.TIMER.get()))) {
+		}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof LivingEntity _livEnt3 && _livEnt3.hasEffect(Universe3090ModMobEffects.TIMER.get()))) {
 			if (((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 40, 40, 40), e -> true).stream().sorted(new Object() {
 				Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 				}
 			}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(WowamodModMobEffects.TIMER.get(), 20, 1, false, false));
+				_entity.addEffect(new MobEffectInstance(Universe3090ModMobEffects.TIMER.get(), 20, 1, false, false));
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("wowamod:nightmare.trojansound")), SoundSource.NEUTRAL, 1, 1);
+					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("universe3090:nightmare.trojansound")), SoundSource.NEUTRAL, 1, 1);
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("wowamod:nightmare.trojansound")), SoundSource.NEUTRAL, 1, 1, false);
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("universe3090:nightmare.trojansound")), SoundSource.NEUTRAL, 1, 1, false);
 				}
 			}
 		}

@@ -11,7 +11,7 @@ public class NightmareishMobEffect extends MobEffect {
 
 	@Override
 	public String getDescriptionId() {
-		return "effect.wowamod.nightmareish";
+		return "effect.universe3090.nightmareish";
 	}
 
 	@Override

@@ -31,7 +31,7 @@ public class PortConstructoraScreen extends AbstractContainerScreen<PortConstruc
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("wowamod:textures/screens/port_constructora.png");
+	private static final ResourceLocation texture = new ResourceLocation("universe3090:textures/screens/port_constructora.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -65,7 +65,7 @@ public class PortConstructoraScreen extends AbstractContainerScreen<PortConstruc
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.wowamod.port_constructora.label_port"), 73, 20, -6710887, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.universe3090.port_constructora.label_port"), 73, 20, -6710887, false);
 	}
 
 	@Override

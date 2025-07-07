@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:prismarine_shard"
+    },
+    {
+      "item": "minecraft:obsidian"
+    },
+    {
+      "item": "minecraft:glass_pane"
+    },
+    {
+      "item": "universe3090:etheriumdark"
+    },
+    {
+      "item": "universe3090:ironmass_1"
+    }
+  ],
+  "result": {
+    "item": "universe3090:osnovaaaaglass",
+    "count": 1
+  }
+}

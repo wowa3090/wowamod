@@ -1,0 +1,11 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "universe3090:block/bottomlayer_darkgrass",
+    "top": "universe3090:block/bottomlayer_darkgrass",
+    "side": "universe3090:block/bottomlayer_darkgrass",
+    "overlay": "universe3090:block/bottomlayer_darkgrass",
+    "particle": "universe3090:block/bottomlayer_darkgrass"
+  },
+  "render_type": "cutout_mipped"
+}

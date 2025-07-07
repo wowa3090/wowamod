@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "universe3090:block/constructorsblocks",
+    "up": "universe3090:block/constructorsblocks",
+    "north": "universe3090:block/redstoneconstructorport",
+    "east": "universe3090:block/constructorsblocks",
+    "south": "universe3090:block/constructorsblocks",
+    "west": "universe3090:block/constructorsblocks",
+    "particle": "universe3090:block/constructorsblocks"
+  },
+  "render_type": "solid"
+}

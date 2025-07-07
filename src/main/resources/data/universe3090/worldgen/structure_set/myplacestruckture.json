@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "universe3090:myplacestruckture",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 21,
+    "separation": 16,
+    "salt": 358514308
+  }
+}

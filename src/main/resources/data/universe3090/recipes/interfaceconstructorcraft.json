@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "ada"
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:magicironingot"
+    },
+    "b": {
+      "item": "universe3090:ekranchik"
+    },
+    "c": {
+      "item": "universe3090:crafterbroni"
+    },
+    "d": {
+      "item": "universe3090:klava"
+    }
+  },
+  "result": {
+    "item": "universe3090:interfaceconstructor",
+    "count": 1
+  }
+}

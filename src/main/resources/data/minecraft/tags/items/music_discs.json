@@ -1,8 +1,7 @@
 {
   "replace": false,
   "values": [
-    "wowamod:fadingworldbeta_2fazasound",
-    "wowamod:adarkplacesound",
-    "wowamod:dissasebmlyrequired"
+    "universe3090:adarkplacesound",
+    "universe3090:dissasebmlyrequired"
   ]
 }

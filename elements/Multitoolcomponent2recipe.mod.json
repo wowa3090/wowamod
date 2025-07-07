@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Darkironplastine"
+      },
+      {
+        "value": "CUSTOM:Rainbowemerald"
+      },
+      {
+        "value": "CUSTOM:Darkironplastine"
+      },
+      {
+        "value": "Items.DIAMOND_SHOVEL"
+      },
+      {
+        "value": "Items.DIAMOND_PICKAXE"
+      },
+      {
+        "value": "Items.DIAMOND_AXE"
+      },
+      {
+        "value": "CUSTOM:Darkironplastine"
+      },
+      {
+        "value": "CUSTOM:Molotwowa"
+      },
+      {
+        "value": "CUSTOM:Darkironplastine"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Multitoolcomponentnottrue"
+    },
+    "name": "multitoolcomponent_2recipe",
+    "namespace": "mod"
+  }
+}

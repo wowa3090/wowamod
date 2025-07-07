@@ -1,8 +1,0 @@
-{
-  "parent": "block/leaves",
-  "textures": {
-    "all": "wowamod:block/pogranichnik",
-    "particle": "wowamod:block/pogranichnik"
-  },
-  "render_type": "translucent"
-}

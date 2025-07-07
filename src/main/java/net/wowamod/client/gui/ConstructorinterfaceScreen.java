@@ -31,7 +31,7 @@ public class ConstructorinterfaceScreen extends AbstractContainerScreen<Construc
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("wowamod:textures/screens/constructorinterface.png");
+	private static final ResourceLocation texture = new ResourceLocation("universe3090:textures/screens/constructorinterface.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -65,7 +65,7 @@ public class ConstructorinterfaceScreen extends AbstractContainerScreen<Construc
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.wowamod.constructorinterface.label_constructor"), 59, -20, -6710887, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.universe3090.constructorinterface.label_constructor"), 59, -20, -6710887, false);
 	}
 
 	@Override

@@ -1,0 +1,8 @@
+{
+  "parent": "universe3090:custom/mol2",
+  "textures": {
+    "0": "universe3090:block/mol",
+    "missing": "universe3090:block/mol",
+    "particle": "universe3090:item/mol"
+  }
+}

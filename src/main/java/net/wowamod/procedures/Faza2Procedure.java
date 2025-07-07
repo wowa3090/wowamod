@@ -1,7 +1,7 @@
 package net.wowamod.procedures;
 
-import net.wowamod.init.WowamodModMobEffects;
-import net.wowamod.init.WowamodModItems;
+import net.wowamod.init.Universe3090ModMobEffects;
+import net.wowamod.init.Universe3090ModItems;
 
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.common.Mod;
@@ -42,13 +42,13 @@ public class Faza2Procedure {
 		if (entity == null)
 			return;
 		if (((entity.getDisplayName().getString()).equals("wowa3090") || (entity.getDisplayName().getString()).equals("Dev"))
-				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == WowamodModItems.WOWABRONYA_BOOTS.get()
-				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == WowamodModItems.WOWABRONYA_LEGGINGS.get()
-				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == WowamodModItems.WOWABRONYA_CHESTPLATE.get()
-				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == WowamodModItems.WOWABRONYA_HELMET.get()) {
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) <= 7 && !(entity instanceof Player _plrCldCheck11 && _plrCldCheck11.getCooldowns().isOnCooldown(WowamodModItems.WOWABRONYA_HELMET.get()))) {
+				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == Universe3090ModItems.WOWABRONYA_BOOTS.get()
+				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == Universe3090ModItems.WOWABRONYA_LEGGINGS.get()
+				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == Universe3090ModItems.WOWABRONYA_CHESTPLATE.get()
+				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == Universe3090ModItems.WOWABRONYA_HELMET.get()) {
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) <= 7 && !(entity instanceof Player _plrCldCheck11 && _plrCldCheck11.getCooldowns().isOnCooldown(Universe3090ModItems.WOWABRONYA_HELMET.get()))) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(WowamodModMobEffects.NEUYAZVIMOST.get(), 600, 0, false, false));
+					_entity.addEffect(new MobEffectInstance(Universe3090ModMobEffects.NEUYAZVIMOST.get(), 600, 0, false, false));
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, 4, false, false));
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
@@ -69,21 +69,21 @@ public class Faza2Procedure {
 					_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2400, 0));
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("wowamod:faza2perexod")), SoundSource.NEUTRAL, 2, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("universe3090:faza2perexod")), SoundSource.NEUTRAL, 2, 1);
 					} else {
-						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("wowamod:faza2perexod")), SoundSource.NEUTRAL, 2, 1, false);
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("universe3090:faza2perexod")), SoundSource.NEUTRAL, 2, 1, false);
 					}
 				}
 				if (entity instanceof Player _player)
-					_player.getCooldowns().addCooldown(WowamodModItems.WOWABRONYA_HELMET.get(), 4800);
+					_player.getCooldowns().addCooldown(Universe3090ModItems.WOWABRONYA_HELMET.get(), 4800);
 				if (entity instanceof Player _player)
-					_player.getCooldowns().addCooldown(WowamodModItems.WOWABRONYA_CHESTPLATE.get(), 4800);
+					_player.getCooldowns().addCooldown(Universe3090ModItems.WOWABRONYA_CHESTPLATE.get(), 4800);
 				if (entity instanceof Player _player)
-					_player.getCooldowns().addCooldown(WowamodModItems.WOWABRONYA_LEGGINGS.get(), 4800);
+					_player.getCooldowns().addCooldown(Universe3090ModItems.WOWABRONYA_LEGGINGS.get(), 4800);
 				if (entity instanceof Player _player)
-					_player.getCooldowns().addCooldown(WowamodModItems.WOWABRONYA_BOOTS.get(), 4800);
+					_player.getCooldowns().addCooldown(Universe3090ModItems.WOWABRONYA_BOOTS.get(), 4800);
 				if (world.isClientSide())
-					Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(WowamodModItems.RAINBOWEMERALD.get()));
+					Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(Universe3090ModItems.RAINBOWEMERALD.get()));
 			}
 		}
 	}

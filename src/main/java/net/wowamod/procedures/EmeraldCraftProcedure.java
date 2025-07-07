@@ -1,6 +1,6 @@
 package net.wowamod.procedures;
 
-import net.wowamod.init.WowamodModItems;
+import net.wowamod.init.Universe3090ModItems;
 
 import net.minecraftforge.items.IItemHandlerModifiable;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
@@ -92,7 +92,7 @@ public class EmeraldCraftProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == WowamodModItems.RED_EMERALD_PIECE.get() && new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Universe3090ModItems.RED_EMERALD_PIECE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -100,7 +100,7 @@ public class EmeraldCraftProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, BlockPos.containing(x, y, z), 1) >= 4 && energyforcraft >= 1000) {
+		}.getAmount(world, BlockPos.containing(x, y, z), 1) >= 4 && energyforcraft >= 5500) {
 			if (new Object() {
 				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 					AtomicInteger _retval = new AtomicInteger(0);
@@ -117,7 +117,7 @@ public class EmeraldCraftProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == WowamodModItems.REDEMERALD.get() && new Object() {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == Universe3090ModItems.REDEMERALD.get() && new Object() {
 				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 					AtomicInteger _retval = new AtomicInteger(0);
 					BlockEntity _ent = world.getBlockEntity(pos);
@@ -181,7 +181,7 @@ public class EmeraldCraftProcedure {
 						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
-							final ItemStack _setstack = new ItemStack(WowamodModItems.REDEMERALD.get());
+							final ItemStack _setstack = new ItemStack(Universe3090ModItems.REDEMERALD.get());
 							_setstack.setCount((int) (new Object() {
 								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 									AtomicInteger _retval = new AtomicInteger(0);
@@ -217,7 +217,7 @@ public class EmeraldCraftProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == WowamodModItems.BLUE_EMERALD_PIECE.get() && new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Universe3090ModItems.BLUE_EMERALD_PIECE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -225,7 +225,7 @@ public class EmeraldCraftProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, BlockPos.containing(x, y, z), 1) >= 4 && energyforcraft >= 1000) {
+		}.getAmount(world, BlockPos.containing(x, y, z), 1) >= 4 && energyforcraft >= 5500) {
 			if (new Object() {
 				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 					AtomicInteger _retval = new AtomicInteger(0);
@@ -242,7 +242,7 @@ public class EmeraldCraftProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == WowamodModItems.BLUEEMERALD.get() && new Object() {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == Universe3090ModItems.BLUEEMERALD.get() && new Object() {
 				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 					AtomicInteger _retval = new AtomicInteger(0);
 					BlockEntity _ent = world.getBlockEntity(pos);
@@ -306,7 +306,7 @@ public class EmeraldCraftProcedure {
 						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
-							final ItemStack _setstack = new ItemStack(WowamodModItems.BLUEEMERALD.get());
+							final ItemStack _setstack = new ItemStack(Universe3090ModItems.BLUEEMERALD.get());
 							_setstack.setCount((int) (new Object() {
 								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 									AtomicInteger _retval = new AtomicInteger(0);
@@ -342,7 +342,7 @@ public class EmeraldCraftProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == WowamodModItems.WHITE_EMERALD_PIECE.get() && new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Universe3090ModItems.WHITE_EMERALD_PIECE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -350,7 +350,7 @@ public class EmeraldCraftProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, BlockPos.containing(x, y, z), 1) >= 4 && energyforcraft >= 1000) {
+		}.getAmount(world, BlockPos.containing(x, y, z), 1) >= 4 && energyforcraft >= 5500) {
 			if (new Object() {
 				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 					AtomicInteger _retval = new AtomicInteger(0);
@@ -367,7 +367,7 @@ public class EmeraldCraftProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == WowamodModItems.WHITEEMERALD.get() && new Object() {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == Universe3090ModItems.WHITEEMERALD.get() && new Object() {
 				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 					AtomicInteger _retval = new AtomicInteger(0);
 					BlockEntity _ent = world.getBlockEntity(pos);
@@ -431,7 +431,7 @@ public class EmeraldCraftProcedure {
 						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
-							final ItemStack _setstack = new ItemStack(WowamodModItems.WHITEEMERALD.get());
+							final ItemStack _setstack = new ItemStack(Universe3090ModItems.WHITEEMERALD.get());
 							_setstack.setCount((int) (new Object() {
 								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 									AtomicInteger _retval = new AtomicInteger(0);
@@ -467,7 +467,7 @@ public class EmeraldCraftProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == WowamodModItems.YELLOW_EMERALD_PIECE.get() && new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Universe3090ModItems.YELLOW_EMERALD_PIECE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -475,7 +475,7 @@ public class EmeraldCraftProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, BlockPos.containing(x, y, z), 1) >= 4 && energyforcraft >= 1000) {
+		}.getAmount(world, BlockPos.containing(x, y, z), 1) >= 4 && energyforcraft >= 5500) {
 			if (new Object() {
 				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 					AtomicInteger _retval = new AtomicInteger(0);
@@ -492,7 +492,7 @@ public class EmeraldCraftProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == WowamodModItems.YELLOWEMERALD.get() && new Object() {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == Universe3090ModItems.YELLOWEMERALD.get() && new Object() {
 				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 					AtomicInteger _retval = new AtomicInteger(0);
 					BlockEntity _ent = world.getBlockEntity(pos);
@@ -556,7 +556,7 @@ public class EmeraldCraftProcedure {
 						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
-							final ItemStack _setstack = new ItemStack(WowamodModItems.YELLOWEMERALD.get());
+							final ItemStack _setstack = new ItemStack(Universe3090ModItems.YELLOWEMERALD.get());
 							_setstack.setCount((int) (new Object() {
 								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 									AtomicInteger _retval = new AtomicInteger(0);
@@ -592,7 +592,7 @@ public class EmeraldCraftProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == WowamodModItems.LIGHT_BLUE_EMERALD_PIECE.get() && new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Universe3090ModItems.LIGHT_BLUE_EMERALD_PIECE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -600,7 +600,7 @@ public class EmeraldCraftProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, BlockPos.containing(x, y, z), 1) >= 4 && energyforcraft >= 1000) {
+		}.getAmount(world, BlockPos.containing(x, y, z), 1) >= 4 && energyforcraft >= 5500) {
 			if (new Object() {
 				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 					AtomicInteger _retval = new AtomicInteger(0);
@@ -617,7 +617,7 @@ public class EmeraldCraftProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == WowamodModItems.LIGHTBLUEEMERALD.get() && new Object() {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == Universe3090ModItems.LIGHTBLUEEMERALD.get() && new Object() {
 				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 					AtomicInteger _retval = new AtomicInteger(0);
 					BlockEntity _ent = world.getBlockEntity(pos);
@@ -681,7 +681,7 @@ public class EmeraldCraftProcedure {
 						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
-							final ItemStack _setstack = new ItemStack(WowamodModItems.LIGHTBLUEEMERALD.get());
+							final ItemStack _setstack = new ItemStack(Universe3090ModItems.LIGHTBLUEEMERALD.get());
 							_setstack.setCount((int) (new Object() {
 								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 									AtomicInteger _retval = new AtomicInteger(0);
@@ -717,7 +717,7 @@ public class EmeraldCraftProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == WowamodModItems.PURPLE_EMERALD_PIECE.get() && new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Universe3090ModItems.PURPLE_EMERALD_PIECE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -725,7 +725,7 @@ public class EmeraldCraftProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, BlockPos.containing(x, y, z), 1) >= 4 && energyforcraft >= 1000) {
+		}.getAmount(world, BlockPos.containing(x, y, z), 1) >= 4 && energyforcraft >= 5500) {
 			if (new Object() {
 				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 					AtomicInteger _retval = new AtomicInteger(0);
@@ -742,7 +742,7 @@ public class EmeraldCraftProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == WowamodModItems.PURPLEEMERALD.get() && new Object() {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == Universe3090ModItems.PURPLEEMERALD.get() && new Object() {
 				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 					AtomicInteger _retval = new AtomicInteger(0);
 					BlockEntity _ent = world.getBlockEntity(pos);
@@ -806,7 +806,7 @@ public class EmeraldCraftProcedure {
 						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
-							final ItemStack _setstack = new ItemStack(WowamodModItems.PURPLEEMERALD.get());
+							final ItemStack _setstack = new ItemStack(Universe3090ModItems.PURPLEEMERALD.get());
 							_setstack.setCount((int) (new Object() {
 								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 									AtomicInteger _retval = new AtomicInteger(0);
@@ -842,7 +842,7 @@ public class EmeraldCraftProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == WowamodModItems.GREEN_EMERALD_PIECE.get() && new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Universe3090ModItems.GREEN_EMERALD_PIECE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -850,7 +850,7 @@ public class EmeraldCraftProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, BlockPos.containing(x, y, z), 1) >= 4 && energyforcraft >= 1000) {
+		}.getAmount(world, BlockPos.containing(x, y, z), 1) >= 4 && energyforcraft >= 5500) {
 			if (new Object() {
 				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 					AtomicInteger _retval = new AtomicInteger(0);
@@ -867,7 +867,7 @@ public class EmeraldCraftProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == WowamodModItems.GREENEMERALD.get() && new Object() {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == Universe3090ModItems.GREENEMERALD.get() && new Object() {
 				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 					AtomicInteger _retval = new AtomicInteger(0);
 					BlockEntity _ent = world.getBlockEntity(pos);
@@ -931,7 +931,7 @@ public class EmeraldCraftProcedure {
 						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
-							final ItemStack _setstack = new ItemStack(WowamodModItems.GREENEMERALD.get());
+							final ItemStack _setstack = new ItemStack(Universe3090ModItems.GREENEMERALD.get());
 							_setstack.setCount((int) (new Object() {
 								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 									AtomicInteger _retval = new AtomicInteger(0);

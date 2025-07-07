@@ -2,7 +2,7 @@
 package net.wowamod.network;
 
 import net.wowamod.procedures.TeleporttoWWorldPriNazhatiiKlavishiProcedure;
-import net.wowamod.WowamodMod;
+import net.wowamod.Universe3090Mod;
 
 import net.minecraftforge.network.NetworkEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -58,6 +58,6 @@ public class TeleporttoWWorldMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		WowamodMod.addNetworkMessage(TeleporttoWWorldMessage.class, TeleporttoWWorldMessage::buffer, TeleporttoWWorldMessage::new, TeleporttoWWorldMessage::handler);
+		Universe3090Mod.addNetworkMessage(TeleporttoWWorldMessage.class, TeleporttoWWorldMessage::buffer, TeleporttoWWorldMessage::new, TeleporttoWWorldMessage::handler);
 	}
 }

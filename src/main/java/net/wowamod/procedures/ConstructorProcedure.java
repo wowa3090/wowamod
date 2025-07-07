@@ -1,7 +1,7 @@
 package net.wowamod.procedures;
 
 import net.wowamod.world.inventory.ConstructorinterfaceMenu;
-import net.wowamod.init.WowamodModBlocks;
+import net.wowamod.init.Universe3090ModBlocks;
 
 import net.minecraftforge.network.NetworkHooks;
 
@@ -22,15 +22,18 @@ public class ConstructorProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((world.getBlockState(BlockPos.containing(x + 1, y, z))).getBlock() == WowamodModBlocks.REDSTONECOMMANDBLOCK.get() || (world.getBlockState(BlockPos.containing(x - 1, y, z))).getBlock() == WowamodModBlocks.REDSTONECOMMANDBLOCK.get()
-				|| (world.getBlockState(BlockPos.containing(x, y, z + 1))).getBlock() == WowamodModBlocks.REDSTONECOMMANDBLOCK.get()
-				|| (world.getBlockState(BlockPos.containing(x, y, z - 1))).getBlock() == WowamodModBlocks.REDSTONECOMMANDBLOCK.get()) {
-			if ((world.getBlockState(BlockPos.containing(x + 1, y + 1, z))).getBlock() == WowamodModBlocks.MAGICIRONBLOCK.get() || (world.getBlockState(BlockPos.containing(x - 1, y + 1, z))).getBlock() == WowamodModBlocks.MAGICIRONBLOCK.get()
-					|| (world.getBlockState(BlockPos.containing(x, y + 1, z + 1))).getBlock() == WowamodModBlocks.MAGICIRONBLOCK.get()
-					|| (world.getBlockState(BlockPos.containing(x, y + 1, z - 1))).getBlock() == WowamodModBlocks.MAGICIRONBLOCK.get()) {
-				if ((world.getBlockState(BlockPos.containing(x + 1, y + -1, z))).getBlock() == WowamodModBlocks.MAGICIRONBLOCK.get() || (world.getBlockState(BlockPos.containing(x - 1, y + -1, z))).getBlock() == WowamodModBlocks.MAGICIRONBLOCK.get()
-						|| (world.getBlockState(BlockPos.containing(x, y + -1, z + 1))).getBlock() == WowamodModBlocks.MAGICIRONBLOCK.get()
-						|| (world.getBlockState(BlockPos.containing(x, y + -1, z - 1))).getBlock() == WowamodModBlocks.MAGICIRONBLOCK.get()) {
+		if ((world.getBlockState(BlockPos.containing(x + 1, y, z))).getBlock() == Universe3090ModBlocks.REDSTONECOMMANDBLOCK.get()
+				|| (world.getBlockState(BlockPos.containing(x - 1, y, z))).getBlock() == Universe3090ModBlocks.REDSTONECOMMANDBLOCK.get()
+				|| (world.getBlockState(BlockPos.containing(x, y, z + 1))).getBlock() == Universe3090ModBlocks.REDSTONECOMMANDBLOCK.get()
+				|| (world.getBlockState(BlockPos.containing(x, y, z - 1))).getBlock() == Universe3090ModBlocks.REDSTONECOMMANDBLOCK.get()) {
+			if ((world.getBlockState(BlockPos.containing(x + 1, y + 1, z))).getBlock() == Universe3090ModBlocks.MAGICIRONBLOCK.get()
+					|| (world.getBlockState(BlockPos.containing(x - 1, y + 1, z))).getBlock() == Universe3090ModBlocks.MAGICIRONBLOCK.get()
+					|| (world.getBlockState(BlockPos.containing(x, y + 1, z + 1))).getBlock() == Universe3090ModBlocks.MAGICIRONBLOCK.get()
+					|| (world.getBlockState(BlockPos.containing(x, y + 1, z - 1))).getBlock() == Universe3090ModBlocks.MAGICIRONBLOCK.get()) {
+				if ((world.getBlockState(BlockPos.containing(x + 1, y + -1, z))).getBlock() == Universe3090ModBlocks.MAGICIRONBLOCK.get()
+						|| (world.getBlockState(BlockPos.containing(x - 1, y + -1, z))).getBlock() == Universe3090ModBlocks.MAGICIRONBLOCK.get()
+						|| (world.getBlockState(BlockPos.containing(x, y + -1, z + 1))).getBlock() == Universe3090ModBlocks.MAGICIRONBLOCK.get()
+						|| (world.getBlockState(BlockPos.containing(x, y + -1, z - 1))).getBlock() == Universe3090ModBlocks.MAGICIRONBLOCK.get()) {
 					if (entity instanceof ServerPlayer _ent) {
 						BlockPos _bpos = BlockPos.containing(x, y, z);
 						NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {

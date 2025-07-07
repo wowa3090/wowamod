@@ -22,6 +22,6 @@ public class MimicRenderer extends MobRenderer<MimicEntity, Modelmimic<MimicEnti
 
 	@Override
 	public ResourceLocation getTextureLocation(MimicEntity entity) {
-		return new ResourceLocation("wowamod:textures/entities/texturemimic.png");
+		return new ResourceLocation("universe3090:textures/entities/texturemimic.png");
 	}
 }

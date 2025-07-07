@@ -2,8 +2,8 @@
 package net.wowamod.entity;
 
 import net.wowamod.procedures.NightmarePriStolknovieniiIghrokaSSushchnostiuProcedure;
-import net.wowamod.init.WowamodModItems;
-import net.wowamod.init.WowamodModEntities;
+import net.wowamod.init.Universe3090ModItems;
+import net.wowamod.init.Universe3090ModEntities;
 
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
@@ -42,7 +42,7 @@ public class NightmareEntity extends Monster {
 	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.RED, ServerBossEvent.BossBarOverlay.NOTCHED_20);
 
 	public NightmareEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(WowamodModEntities.NIGHTMARE.get(), world);
+		this(Universe3090ModEntities.NIGHTMARE.get(), world);
 	}
 
 	public NightmareEntity(EntityType<NightmareEntity> type, Level world) {
@@ -86,7 +86,7 @@ public class NightmareEntity extends Monster {
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
 		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(WowamodModItems.ADARKPLACESOUND.get()));
+		this.spawnAtLocation(new ItemStack(Universe3090ModItems.ADARKPLACESOUND.get()));
 	}
 
 	@Override

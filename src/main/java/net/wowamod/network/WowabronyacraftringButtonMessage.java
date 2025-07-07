@@ -3,7 +3,7 @@ package net.wowamod.network;
 
 import net.wowamod.world.inventory.WowabronyacraftringMenu;
 import net.wowamod.procedures.CraftingwowabronyaProcedure;
-import net.wowamod.WowamodMod;
+import net.wowamod.Universe3090Mod;
 
 import net.minecraftforge.network.NetworkEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -70,6 +70,6 @@ public class WowabronyacraftringButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		WowamodMod.addNetworkMessage(WowabronyacraftringButtonMessage.class, WowabronyacraftringButtonMessage::buffer, WowabronyacraftringButtonMessage::new, WowabronyacraftringButtonMessage::handler);
+		Universe3090Mod.addNetworkMessage(WowabronyacraftringButtonMessage.class, WowabronyacraftringButtonMessage::buffer, WowabronyacraftringButtonMessage::new, WowabronyacraftringButtonMessage::handler);
 	}
 }

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "universe3090:block/block_of_iron_texture_je3_be3",
+    "up": "universe3090:block/block_of_iron_texture_je3_be3",
+    "north": "universe3090:block/constructorinterface",
+    "east": "universe3090:block/block_of_iron_texture_je3_be3",
+    "south": "universe3090:block/block_of_iron_texture_je3_be3",
+    "west": "universe3090:block/block_of_iron_texture_je3_be3",
+    "particle": "universe3090:block/block_of_iron_texture_je3_be3"
+  },
+  "render_type": "solid"
+}

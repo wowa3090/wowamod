@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "universe3090:block/crafterbroni",
+    "up": "universe3090:block/crafterbronitop",
+    "north": "universe3090:block/crafterbroni",
+    "east": "universe3090:block/crafterbroni",
+    "south": "universe3090:block/crafterbroni",
+    "west": "universe3090:block/crafterbroni",
+    "particle": "universe3090:block/crafterbroni"
+  },
+  "render_type": "solid"
+}

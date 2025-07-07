@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcd",
+    " e "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:red_tulip"
+    },
+    "b": {
+      "item": "universe3090:blacksoul_myplace"
+    },
+    "c": {
+      "item": "universe3090:truerose"
+    },
+    "d": {
+      "item": "universe3090:whitesoul_myplace"
+    },
+    "e": {
+      "item": "minecraft:poppy"
+    }
+  },
+  "result": {
+    "item": "universe3090:rose",
+    "count": 1
+  }
+}

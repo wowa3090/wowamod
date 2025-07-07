@@ -2,7 +2,7 @@ package net.wowamod.client.gui;
 
 import net.wowamod.world.inventory.GuidebookMenu;
 import net.wowamod.network.GuidebookButtonMessage;
-import net.wowamod.WowamodMod;
+import net.wowamod.Universe3090Mod;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
@@ -71,12 +71,12 @@ public class GuidebookScreen extends AbstractContainerScreen<GuidebookMenu> {
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.wowamod.guidebook.label_dushi"), -93, -21, -1, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.wowamod.guidebook.label_izumrudy"), -93, 3, -1, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.wowamod.guidebook.label_nachalo"), -93, 26, -1, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.wowamod.guidebook.label_ekstraktor"), -94, 48, -1, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.wowamod.guidebook.label_krafty"), -94, 70, -1, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.wowamod.guidebook.label_multiblok"), -69, 101, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.universe3090.guidebook.label_dushi"), -93, -21, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.universe3090.guidebook.label_izumrudy"), -93, 3, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.universe3090.guidebook.label_nachalo"), -93, 26, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.universe3090.guidebook.label_ekstraktor"), -94, 48, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.universe3090.guidebook.label_krafty"), -94, 70, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.universe3090.guidebook.label_multiblok"), -69, 101, -1, false);
 	}
 
 	@Override
@@ -87,31 +87,31 @@ public class GuidebookScreen extends AbstractContainerScreen<GuidebookMenu> {
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_soul = new ImageButton(this.leftPos + -111, this.topPos + -24, 16, 16, 0, 0, 16, new ResourceLocation("wowamod:textures/screens/atlas/imagebutton_soul.png"), 16, 32, e -> {
+		imagebutton_soul = new ImageButton(this.leftPos + -111, this.topPos + -24, 16, 16, 0, 0, 16, new ResourceLocation("universe3090:textures/screens/atlas/imagebutton_soul.png"), 16, 32, e -> {
 		});
 		guistate.put("button:imagebutton_soul", imagebutton_soul);
 		this.addRenderableWidget(imagebutton_soul);
-		imagebutton_blueemerald = new ImageButton(this.leftPos + -111, this.topPos + -1, 16, 16, 0, 0, 16, new ResourceLocation("wowamod:textures/screens/atlas/imagebutton_blueemerald.png"), 16, 32, e -> {
+		imagebutton_blueemerald = new ImageButton(this.leftPos + -111, this.topPos + -1, 16, 16, 0, 0, 16, new ResourceLocation("universe3090:textures/screens/atlas/imagebutton_blueemerald.png"), 16, 32, e -> {
 		});
 		guistate.put("button:imagebutton_blueemerald", imagebutton_blueemerald);
 		this.addRenderableWidget(imagebutton_blueemerald);
-		imagebutton_netherite_sword = new ImageButton(this.leftPos + -111, this.topPos + 22, 16, 16, 0, 0, 16, new ResourceLocation("wowamod:textures/screens/atlas/imagebutton_netherite_sword.png"), 16, 32, e -> {
+		imagebutton_netherite_sword = new ImageButton(this.leftPos + -111, this.topPos + 22, 16, 16, 0, 0, 16, new ResourceLocation("universe3090:textures/screens/atlas/imagebutton_netherite_sword.png"), 16, 32, e -> {
 			if (true) {
-				WowamodMod.PACKET_HANDLER.sendToServer(new GuidebookButtonMessage(2, x, y, z));
+				Universe3090Mod.PACKET_HANDLER.sendToServer(new GuidebookButtonMessage(2, x, y, z));
 				GuidebookButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
 		});
 		guistate.put("button:imagebutton_netherite_sword", imagebutton_netherite_sword);
 		this.addRenderableWidget(imagebutton_netherite_sword);
-		imagebutton_kolba = new ImageButton(this.leftPos + -112, this.topPos + 44, 16, 16, 0, 0, 16, new ResourceLocation("wowamod:textures/screens/atlas/imagebutton_kolba.png"), 16, 32, e -> {
+		imagebutton_kolba = new ImageButton(this.leftPos + -112, this.topPos + 44, 16, 16, 0, 0, 16, new ResourceLocation("universe3090:textures/screens/atlas/imagebutton_kolba.png"), 16, 32, e -> {
 		});
 		guistate.put("button:imagebutton_kolba", imagebutton_kolba);
 		this.addRenderableWidget(imagebutton_kolba);
-		imagebutton_magicironingot3 = new ImageButton(this.leftPos + -111, this.topPos + 65, 16, 16, 0, 0, 16, new ResourceLocation("wowamod:textures/screens/atlas/imagebutton_magicironingot3.png"), 16, 32, e -> {
+		imagebutton_magicironingot3 = new ImageButton(this.leftPos + -111, this.topPos + 65, 16, 16, 0, 0, 16, new ResourceLocation("universe3090:textures/screens/atlas/imagebutton_magicironingot3.png"), 16, 32, e -> {
 		});
 		guistate.put("button:imagebutton_magicironingot3", imagebutton_magicironingot3);
 		this.addRenderableWidget(imagebutton_magicironingot3);
-		imagebutton_guidebook_image = new ImageButton(this.leftPos + -110, this.topPos + 91, 32, 32, 0, 0, 32, new ResourceLocation("wowamod:textures/screens/atlas/imagebutton_guidebook_image.png"), 32, 64, e -> {
+		imagebutton_guidebook_image = new ImageButton(this.leftPos + -110, this.topPos + 91, 32, 32, 0, 0, 32, new ResourceLocation("universe3090:textures/screens/atlas/imagebutton_guidebook_image.png"), 32, 64, e -> {
 		});
 		guistate.put("button:imagebutton_guidebook_image", imagebutton_guidebook_image);
 		this.addRenderableWidget(imagebutton_guidebook_image);

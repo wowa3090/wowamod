@@ -1,7 +1,7 @@
 package net.wowamod.block.entity;
 
 import net.wowamod.world.inventory.ConstructorinterfaceMenu;
-import net.wowamod.init.WowamodModBlockEntities;
+import net.wowamod.init.Universe3090ModBlockEntities;
 
 import net.minecraftforge.items.wrapper.SidedInvWrapper;
 import net.minecraftforge.items.IItemHandler;
@@ -35,7 +35,7 @@ public class InterfaceconstructorBlockEntity extends RandomizableContainerBlockE
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public InterfaceconstructorBlockEntity(BlockPos position, BlockState state) {
-		super(WowamodModBlockEntities.INTERFACECONSTRUCTOR.get(), position, state);
+		super(Universe3090ModBlockEntities.INTERFACECONSTRUCTOR.get(), position, state);
 	}
 
 	@Override

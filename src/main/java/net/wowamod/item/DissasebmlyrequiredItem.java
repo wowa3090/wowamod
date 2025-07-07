@@ -16,7 +16,7 @@ import java.util.List;
 
 public class DissasebmlyrequiredItem extends RecordItem {
 	public DissasebmlyrequiredItem() {
-		super(15, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("wowamod:disassembly_required")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 2400);
+		super(15, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("universe3090:disassembly_required")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 2400);
 	}
 
 	@Override

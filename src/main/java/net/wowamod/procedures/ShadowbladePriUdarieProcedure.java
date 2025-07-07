@@ -1,6 +1,6 @@
 package net.wowamod.procedures;
 
-import net.wowamod.network.WowamodModVariables;
+import net.wowamod.network.Universe3090ModVariables;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
@@ -19,11 +19,11 @@ public class ShadowbladePriUdarieProcedure {
 	public static void execute(LevelAccessor world, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("wowamod:soulsworddamage")))),
-				(float) ((sourceentity.getCapability(WowamodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new WowamodModVariables.PlayerVariables())).wowaswordupgrade / 12));
+		entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("universe3090:soulsworddamage")))),
+				(float) ((sourceentity.getCapability(Universe3090ModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Universe3090ModVariables.PlayerVariables())).wowaswordupgrade / 12));
 		if (world instanceof ServerLevel _level) {
 			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(0, 0, 0), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-					"execute as " + entity.getStringUUID() + " at " + entity.getStringUUID() + " anchored feet run particle " + "SOUL".replaceAll("(?i)CUSTOM:", "wowamod:").toLowerCase() + " ~ ~3 ~ 0 0 0 0.00001 10");
+					"execute as " + entity.getStringUUID() + " at " + entity.getStringUUID() + " anchored feet run particle " + "SOUL".replaceAll("(?i)CUSTOM:", "universe3090:").toLowerCase() + " ~ ~3 ~ 0 0 0 0.00001 10");
 		}
 	}
 }

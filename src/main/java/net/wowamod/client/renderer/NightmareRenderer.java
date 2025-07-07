@@ -22,6 +22,6 @@ public class NightmareRenderer extends MobRenderer<NightmareEntity, Modelnightma
 
 	@Override
 	public ResourceLocation getTextureLocation(NightmareEntity entity) {
-		return new ResourceLocation("wowamod:textures/entities/texture_nightmare.png");
+		return new ResourceLocation("universe3090:textures/entities/texture_nightmare.png");
 	}
 }

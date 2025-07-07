@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "universe3090:block/bigbattery",
+    "up": "universe3090:block/emeraldcombinertop",
+    "north": "universe3090:block/bigbattery",
+    "east": "universe3090:block/bigbattery",
+    "south": "universe3090:block/bigbattery",
+    "west": "universe3090:block/bigbattery",
+    "particle": "universe3090:block/bigbattery"
+  },
+  "render_type": "solid"
+}

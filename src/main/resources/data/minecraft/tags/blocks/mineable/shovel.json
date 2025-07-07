@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "wowamod:darkgrass",
-    "wowamod:darkgrassblockniz",
-    "wowamod:corrupted_souls_block"
+    "universe3090:darkgrass",
+    "universe3090:darkgrassblockniz",
+    "universe3090:corrupted_souls_block"
   ]
 }

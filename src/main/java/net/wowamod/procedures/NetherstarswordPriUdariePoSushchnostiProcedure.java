@@ -1,6 +1,6 @@
 package net.wowamod.procedures;
 
-import net.wowamod.init.WowamodModMobEffects;
+import net.wowamod.init.Universe3090ModMobEffects;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
@@ -16,7 +16,7 @@ public class NetherstarswordPriUdariePoSushchnostiProcedure {
 			if (sourceentity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(), (int) (120 * 20));
 			if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(WowamodModMobEffects.BLAGOSLOVLENIESTAREF.get(), 150, 0));
+				_entity.addEffect(new MobEffectInstance(Universe3090ModMobEffects.BLAGOSLOVLENIESTAREF.get(), 150, 0));
 		}
 	}
 }

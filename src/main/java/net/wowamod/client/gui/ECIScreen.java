@@ -33,7 +33,7 @@ public class ECIScreen extends AbstractContainerScreen<ECIMenu> {
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("wowamod:textures/screens/eci.png");
+	private static final ResourceLocation texture = new ResourceLocation("universe3090:textures/screens/eci.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -49,7 +49,7 @@ public class ECIScreen extends AbstractContainerScreen<ECIMenu> {
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("wowamod:textures/screens/emeraldcombinerhud.png"), this.leftPos + 137, this.topPos + 5, 0, 0, 32, 16, 32, 16);
+		guiGraphics.blit(new ResourceLocation("universe3090:textures/screens/emeraldcombinerhud.png"), this.leftPos + 137, this.topPos + 5, 0, 0, 32, 16, 32, 16);
 
 		RenderSystem.disableBlend();
 	}

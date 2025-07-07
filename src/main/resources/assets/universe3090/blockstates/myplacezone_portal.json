@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "universe3090:block/myplacezone_portal_ew"
+    },
+    "axis=x": {
+      "model": "universe3090:block/myplacezone_portal_ns"
+    }
+  }
+}

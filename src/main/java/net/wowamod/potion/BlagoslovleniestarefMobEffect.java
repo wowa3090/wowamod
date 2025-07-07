@@ -14,7 +14,7 @@ public class BlagoslovleniestarefMobEffect extends MobEffect {
 
 	@Override
 	public String getDescriptionId() {
-		return "effect.wowamod.blagoslovleniestaref";
+		return "effect.universe3090.blagoslovleniestaref";
 	}
 
 	@Override

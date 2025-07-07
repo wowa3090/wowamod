@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "universe3090:block/professiablockverh",
+    "up": "universe3090:block/professiablockverh",
+    "north": "universe3090:block/professiablock",
+    "east": "universe3090:block/professiablock",
+    "south": "universe3090:block/professiablock",
+    "west": "universe3090:block/professiablock",
+    "particle": "universe3090:block/professiablockverh"
+  },
+  "render_type": "cutout_mipped"
+}
