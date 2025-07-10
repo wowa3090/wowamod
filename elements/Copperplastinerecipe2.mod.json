@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Ekranchik"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Ekranchik"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Ekranchik"
+        "value": ""
       },
       {
-        "value": "Items.REDSTONE"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Copperplate"
+        "value": "CUSTOM:Coppermass1"
       },
       {
-        "value": "Items.REDSTONE"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Etheriumdark"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Etheriumdark"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Etheriumdark"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Solarpanelelement"
+      "value": "CUSTOM:Copperplate"
     },
-    "name": "solarpanelelementrecipe",
+    "name": "copperplastinerecipe_2",
     "namespace": "mod"
   }
 }

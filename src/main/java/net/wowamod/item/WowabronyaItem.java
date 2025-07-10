@@ -5,6 +5,7 @@ import net.wowamod.procedures.WowabronyatapkiProcedure;
 import net.wowamod.procedures.WowabronyashtaniProcedure;
 import net.wowamod.procedures.WowabronyachestplateProcedure;
 import net.wowamod.procedures.WowabronyaShliemanightvisionProcedure;
+import net.wowamod.init.Universe3090ModItems;
 import net.wowamod.client.model.Modelwbronyaleg;
 import net.wowamod.client.model.Modelwbronyahead;
 import net.wowamod.client.model.Modelwbronyabotinki;
@@ -64,7 +65,7 @@ public abstract class WowabronyaItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of();
+				return Ingredient.of(new ItemStack(Universe3090ModItems.MIMICTKANB.get()));
 			}
 
 			@Override

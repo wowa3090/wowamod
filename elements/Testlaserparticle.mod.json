@@ -1,0 +1,21 @@
+{
+  "_fv": 57,
+  "_type": "particle",
+  "definition": {
+    "texture": "lasertestparticle.png",
+    "animate": true,
+    "frameDuration": 1,
+    "width": 0.1,
+    "height": 0.1,
+    "scale": 1.0,
+    "speedFactor": 1.1,
+    "gravity": 0.0,
+    "maxAge": 9,
+    "maxAgeDiff": 1,
+    "angularVelocity": 0.0,
+    "angularAcceleration": 0.0,
+    "canCollide": true,
+    "alwaysShow": true,
+    "renderType": "LIT"
+  }
+}

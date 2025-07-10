@@ -32,7 +32,7 @@ public class RedsoulgivingProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, DamageSource damagesource) {
 		if (damagesource == null)
 			return;
-		if (damagesource.is(DamageTypes.PLAYER_ATTACK) && Math.random() <= 0.3) {
+		if (damagesource.is(DamageTypes.PLAYER_ATTACK) && Math.random() <= 0.21) {
 			if (world instanceof ServerLevel _level) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(Universe3090ModItems.REDSOULPIECE.get()));
 				entityToSpawn.setPickUpDelay(1);

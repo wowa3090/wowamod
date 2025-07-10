@@ -37,7 +37,7 @@ public class WowaswordPriUdarieProcedure {
 						(float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 3));
 			}
 			if (world instanceof ServerLevel _level) {
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y + 2), z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y + 1.333), z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 						"execute positioned ~ ~ ~ run particlecircle small_ritual_circle 0.1");
 			}
 		}

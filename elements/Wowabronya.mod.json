@@ -93,6 +93,10 @@
     "equipSound": {
       "value": "block.amethyst_block.place"
     },
-    "repairItems": []
+    "repairItems": [
+      {
+        "value": "CUSTOM:Mimictkanb"
+      }
+    ]
   }
 }

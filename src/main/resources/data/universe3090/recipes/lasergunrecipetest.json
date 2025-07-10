@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "afa"
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:blackironingot"
+    },
+    "b": {
+      "item": "universe3090:ekranchik"
+    },
+    "c": {
+      "item": "universe3090:wiresprovoda"
+    },
+    "d": {
+      "item": "universe3090:rainbowemerald"
+    },
+    "e": {
+      "item": "universe3090:aaa_glass"
+    },
+    "f": {
+      "item": "universe3090:etheriumdark"
+    }
+  },
+  "result": {
+    "item": "universe3090:laserguntest",
+    "count": 1
+  }
+}

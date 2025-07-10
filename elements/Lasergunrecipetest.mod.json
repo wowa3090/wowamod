@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Ekranchik"
+        "value": "CUSTOM:Blackironingot"
       },
       {
         "value": "CUSTOM:Ekranchik"
       },
       {
-        "value": "CUSTOM:Ekranchik"
+        "value": "CUSTOM:Blackironingot"
       },
       {
-        "value": "Items.REDSTONE"
+        "value": "CUSTOM:Wiresprovoda"
       },
       {
-        "value": "CUSTOM:Copperplate"
+        "value": "CUSTOM:Rainbowemerald"
       },
       {
-        "value": "Items.REDSTONE"
+        "value": "CUSTOM:AaaGlass"
       },
       {
-        "value": "CUSTOM:Etheriumdark"
-      },
-      {
-        "value": "CUSTOM:Etheriumdark"
+        "value": "CUSTOM:Blackironingot"
       },
       {
         "value": "CUSTOM:Etheriumdark"
+      },
+      {
+        "value": "CUSTOM:Blackironingot"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Solarpanelelement"
+      "value": "CUSTOM:Laserguntest"
     },
-    "name": "solarpanelelementrecipe",
+    "name": "lasergunrecipetest",
     "namespace": "mod"
   }
 }

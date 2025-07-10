@@ -1,5 +1,6 @@
 package net.wowamod.procedures;
 
+import net.wowamod.network.Universe3090ModVariables;
 import net.wowamod.init.Universe3090ModItems;
 
 import net.minecraft.world.item.ItemStack;
@@ -12,42 +13,48 @@ public class WowaswordbronyaProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Universe3090ModItems.WOWASWORD.get())) : false) && (entity.getDisplayName().getString()).equals("Dev")
-				|| (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Universe3090ModItems.WOWASWORD.get())) : false) && (entity.getDisplayName().getString()).equals("wowa3090")) {
-			{
-				Entity _entity = entity;
-				if (_entity instanceof Player _player) {
-					_player.getInventory().armor.set(0, new ItemStack(Universe3090ModItems.WOWABRONYA_BOOTS.get()));
-					_player.getInventory().setChanged();
-				} else if (_entity instanceof LivingEntity _living) {
-					_living.setItemSlot(EquipmentSlot.FEET, new ItemStack(Universe3090ModItems.WOWABRONYA_BOOTS.get()));
+		if ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Universe3090ModItems.WOWASWORD.get())) : false)
+				&& ((entity.getDisplayName().getString()).equals("Dev") || (entity.getDisplayName().getString()).equals("wowa3090"))
+				&& (entity.getCapability(Universe3090ModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Universe3090ModVariables.PlayerVariables())).wowaswordupgrade == 3333) {
+			if (!(entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Universe3090ModItems.WOWABRONYA_HELMET.get())) : false)
+					&& !(entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Universe3090ModItems.WOWABRONYA_CHESTPLATE.get())) : false)
+					&& !(entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Universe3090ModItems.WOWABRONYA_LEGGINGS.get())) : false)
+					&& !(entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Universe3090ModItems.WOWABRONYA_BOOTS.get())) : false)) {
+				{
+					Entity _entity = entity;
+					if (_entity instanceof Player _player) {
+						_player.getInventory().armor.set(0, new ItemStack(Universe3090ModItems.WOWABRONYA_BOOTS.get()));
+						_player.getInventory().setChanged();
+					} else if (_entity instanceof LivingEntity _living) {
+						_living.setItemSlot(EquipmentSlot.FEET, new ItemStack(Universe3090ModItems.WOWABRONYA_BOOTS.get()));
+					}
 				}
-			}
-			{
-				Entity _entity = entity;
-				if (_entity instanceof Player _player) {
-					_player.getInventory().armor.set(1, new ItemStack(Universe3090ModItems.WOWABRONYA_LEGGINGS.get()));
-					_player.getInventory().setChanged();
-				} else if (_entity instanceof LivingEntity _living) {
-					_living.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Universe3090ModItems.WOWABRONYA_LEGGINGS.get()));
+				{
+					Entity _entity = entity;
+					if (_entity instanceof Player _player) {
+						_player.getInventory().armor.set(1, new ItemStack(Universe3090ModItems.WOWABRONYA_LEGGINGS.get()));
+						_player.getInventory().setChanged();
+					} else if (_entity instanceof LivingEntity _living) {
+						_living.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Universe3090ModItems.WOWABRONYA_LEGGINGS.get()));
+					}
 				}
-			}
-			{
-				Entity _entity = entity;
-				if (_entity instanceof Player _player) {
-					_player.getInventory().armor.set(2, new ItemStack(Universe3090ModItems.WOWABRONYA_CHESTPLATE.get()));
-					_player.getInventory().setChanged();
-				} else if (_entity instanceof LivingEntity _living) {
-					_living.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Universe3090ModItems.WOWABRONYA_CHESTPLATE.get()));
+				{
+					Entity _entity = entity;
+					if (_entity instanceof Player _player) {
+						_player.getInventory().armor.set(2, new ItemStack(Universe3090ModItems.WOWABRONYA_CHESTPLATE.get()));
+						_player.getInventory().setChanged();
+					} else if (_entity instanceof LivingEntity _living) {
+						_living.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Universe3090ModItems.WOWABRONYA_CHESTPLATE.get()));
+					}
 				}
-			}
-			{
-				Entity _entity = entity;
-				if (_entity instanceof Player _player) {
-					_player.getInventory().armor.set(3, new ItemStack(Universe3090ModItems.WOWABRONYA_HELMET.get()));
-					_player.getInventory().setChanged();
-				} else if (_entity instanceof LivingEntity _living) {
-					_living.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Universe3090ModItems.WOWABRONYA_HELMET.get()));
+				{
+					Entity _entity = entity;
+					if (_entity instanceof Player _player) {
+						_player.getInventory().armor.set(3, new ItemStack(Universe3090ModItems.WOWABRONYA_HELMET.get()));
+						_player.getInventory().setChanged();
+					} else if (_entity instanceof LivingEntity _living) {
+						_living.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Universe3090ModItems.WOWABRONYA_HELMET.get()));
+					}
 				}
 			}
 		}

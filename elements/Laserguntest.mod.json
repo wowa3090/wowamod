@@ -2,12 +2,12 @@
   "_fv": 57,
   "_type": "item",
   "definition": {
-    "renderType": 0,
-    "texture": "help",
-    "customModelName": "Normal",
+    "renderType": 1,
+    "texture": "netherite_sword",
+    "customModelName": "m.t.w:default",
     "customProperties": {},
     "states": [],
-    "name": "Guidebookitem",
+    "name": "Laserguntest",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Wowamodvkladka"
@@ -21,21 +21,19 @@
       "value": ""
     },
     "destroyAnyBlock": false,
-    "immuneToFire": false,
+    "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": [
-        "W.I.P"
-      ]
+      "fixedValue": []
     },
     "glowCondition": {
       "fixedValue": false
     },
-    "guiBoundTo": "Guidebook",
-    "inventorySize": 0,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
     "inventoryStackSize": 64,
     "enableRanged": false,
     "shootConstantly": false,

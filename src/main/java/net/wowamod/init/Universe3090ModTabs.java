@@ -123,6 +123,7 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.MULTITOOLCOMPONENTNOTTRUE.get());
 				tabData.accept(Universe3090ModBlocks.SOLARPANELGENERATORW.get().asItem());
 				tabData.accept(Universe3090ModItems.SOLARPANELELEMENT.get());
+				tabData.accept(Universe3090ModItems.LASERGUNTEST.get());
 			})
 
 					.build());

@@ -48,6 +48,7 @@ import net.wowamod.item.LightbluesoulpieceItem;
 import net.wowamod.item.LightbluesoulItem;
 import net.wowamod.item.LightblueemeraldItem;
 import net.wowamod.item.LightBlueEmeraldPieceItem;
+import net.wowamod.item.LaserguntestItem;
 import net.wowamod.item.KolbaItem;
 import net.wowamod.item.KlavaItem;
 import net.wowamod.item.KarmannielectrolizerItem;
@@ -203,6 +204,7 @@ public class Universe3090ModItems {
 	public static final RegistryObject<Item> TRUEROSE = block(Universe3090ModBlocks.TRUEROSE);
 	public static final RegistryObject<Item> SOLARPANELGENERATORW = block(Universe3090ModBlocks.SOLARPANELGENERATORW);
 	public static final RegistryObject<Item> SOLARPANELELEMENT = REGISTRY.register("solarpanelelement", () -> new SolarpanelelementItem());
+	public static final RegistryObject<Item> LASERGUNTEST = REGISTRY.register("laserguntest", () -> new LaserguntestItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
