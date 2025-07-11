@@ -16,6 +16,7 @@ import net.wowamod.block.InterfaceconstructorBlock;
 import net.wowamod.block.ExtractorBlock;
 import net.wowamod.block.ExtractgolubaysoulBlock;
 import net.wowamod.block.EmeraldCombinerBlock;
+import net.wowamod.block.DarkplantwowaBlock;
 import net.wowamod.block.DarkgrassblocknizBlock;
 import net.wowamod.block.DarkgrassBlock;
 import net.wowamod.block.DarkStrkBLKBlock;
@@ -64,6 +65,7 @@ public class Universe3090ModBlocks {
 	public static final RegistryObject<Block> MYPLACEZONE_PORTAL = REGISTRY.register("myplacezone_portal", () -> new MyplacezonePortalBlock());
 	public static final RegistryObject<Block> TRUEROSE = REGISTRY.register("truerose", () -> new TrueroseBlock());
 	public static final RegistryObject<Block> SOLARPANELGENERATORW = REGISTRY.register("solarpanelgeneratorw", () -> new SolarpanelgeneratorwBlock());
+	public static final RegistryObject<Block> DARKPLANTWOWA = REGISTRY.register("darkplantwowa", () -> new DarkplantwowaBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

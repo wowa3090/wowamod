@@ -1,0 +1,7 @@
+{
+  "parent": "universe3090:custom/stbh",
+  "textures": {
+    "0": "universe3090:block/stbh_texture2",
+    "particle": "universe3090:item/netherite_sword"
+  }
+}

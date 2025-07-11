@@ -91,11 +91,6 @@ public class MimicEntity extends Monster {
 	}
 
 	@Override
-	public SoundEvent getAmbientSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("universe3090:nightmare.trojansound"));
-	}
-
-	@Override
 	public void playStepSound(BlockPos pos, BlockState blockIn) {
 		this.playSound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sand.place")), 0.15f, 1);
 	}

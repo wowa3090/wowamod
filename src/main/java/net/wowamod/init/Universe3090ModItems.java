@@ -21,6 +21,7 @@ import net.wowamod.item.SoulsvazivatelItem;
 import net.wowamod.item.SoulcoreItem;
 import net.wowamod.item.SolarpanelelementItem;
 import net.wowamod.item.ShadowbladeItem;
+import net.wowamod.item.STBHswordItem;
 import net.wowamod.item.RotorItem;
 import net.wowamod.item.RoseItem;
 import net.wowamod.item.RedsoulpieceItem;
@@ -72,6 +73,7 @@ import net.wowamod.item.DerjatiliItem;
 import net.wowamod.item.DarkironplastineItem;
 import net.wowamod.item.CopperplateItem;
 import net.wowamod.item.Coppermass1Item;
+import net.wowamod.item.ClearetheriumlightItem;
 import net.wowamod.item.BluesoulpieceItem;
 import net.wowamod.item.BluesoulItem;
 import net.wowamod.item.BlueemeraldItem;
@@ -205,6 +207,9 @@ public class Universe3090ModItems {
 	public static final RegistryObject<Item> SOLARPANELGENERATORW = block(Universe3090ModBlocks.SOLARPANELGENERATORW);
 	public static final RegistryObject<Item> SOLARPANELELEMENT = REGISTRY.register("solarpanelelement", () -> new SolarpanelelementItem());
 	public static final RegistryObject<Item> LASERGUNTEST = REGISTRY.register("laserguntest", () -> new LaserguntestItem());
+	public static final RegistryObject<Item> CLEARETHERIUMLIGHT = REGISTRY.register("clearetheriumlight", () -> new ClearetheriumlightItem());
+	public static final RegistryObject<Item> STB_HSWORD = REGISTRY.register("stb_hsword", () -> new STBHswordItem());
+	public static final RegistryObject<Item> DARKPLANTWOWA = block(Universe3090ModBlocks.DARKPLANTWOWA);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

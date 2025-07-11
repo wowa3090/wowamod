@@ -124,6 +124,9 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModBlocks.SOLARPANELGENERATORW.get().asItem());
 				tabData.accept(Universe3090ModItems.SOLARPANELELEMENT.get());
 				tabData.accept(Universe3090ModItems.LASERGUNTEST.get());
+				tabData.accept(Universe3090ModItems.CLEARETHERIUMLIGHT.get());
+				tabData.accept(Universe3090ModItems.STB_HSWORD.get());
+				tabData.accept(Universe3090ModBlocks.DARKPLANTWOWA.get().asItem());
 			})
 
 					.build());

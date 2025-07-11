@@ -103,7 +103,7 @@
       "value": "CUSTOM:Mimickoja"
     },
     "livingSound": {
-      "value": "CUSTOM:nightmare.trojansound"
+      "value": ""
     },
     "hurtSound": {
       "value": "entity.warden.hurt"

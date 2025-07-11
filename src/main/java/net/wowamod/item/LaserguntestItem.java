@@ -41,14 +41,14 @@ import java.util.Optional;
 public class LaserguntestItem extends Item {
     
     // Настройки лазера
-    private static final float DAMAGE = 15.0F;
+    private static final float DAMAGE = 17.0F;
     private static final double RANGE = 170.0D;
-    private static final float PARTICLE_DENSITY = 0.137F;
+    private static final float PARTICLE_DENSITY = 0.13F;
     private static final Vector3f LASER_COLOR = new Vector3f(0.95F, 0.05F, 0.05F);
     private static final Vector3f CORE_COLOR = new Vector3f(1.0F, 0.8F, 0.8F);
     private static final int USE_DURATION = 72000;
-    private static final double BEAM_OFFSET = 1.41;
-    private static final float CUSTOM_PARTICLE_CHANCE = 0.2975F; // Шанс появления кастомных частиц
+    private static final double BEAM_OFFSET = 1.4;
+    private static final float CUSTOM_PARTICLE_CHANCE = 0.3F; // Шанс появления кастомных частиц
     
     // Эффекты для целей
     private static final int FIRE_DURATION = 60; // 3 секунды (60 тиков)
