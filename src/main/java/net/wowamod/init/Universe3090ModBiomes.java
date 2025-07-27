@@ -50,11 +50,11 @@ public class Universe3090ModBiomes {
 				// Inject biomes to biome source
 				if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
 					List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters().values());
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5414f, 1.75f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(0.1f, 0.6522f), Climate.Parameter.span(-1f, 1f),
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5346f, 1.75f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(0.1f, 0.6522f), Climate.Parameter.span(-1f, 1f),
 							Climate.Parameter.point(0.0f), Climate.Parameter.span(-1.0126f, 1.0017f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("universe3090", "darkbiome")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5414f, 1.75f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(0.1f, 0.6522f), Climate.Parameter.span(-1f, 1f),
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5346f, 1.75f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(0.1f, 0.6522f), Climate.Parameter.span(-1f, 1f),
 							Climate.Parameter.point(1.0f), Climate.Parameter.span(-1.0126f, 1.0017f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("universe3090", "darkbiome")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5414f, 1.75f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(0.1f, 0.6522f), Climate.Parameter.span(-1f, 1f),
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5346f, 1.75f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(0.1f, 0.6522f), Climate.Parameter.span(-1f, 1f),
 							Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-1.0126f, 1.0017f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("universe3090", "darkbiome")))));
 					chunkGenerator.biomeSource = MultiNoiseBiomeSource.createFromList(new Climate.ParameterList<>(parameters));
 					chunkGenerator.featuresPerStep = Suppliers
@@ -82,9 +82,9 @@ public class Universe3090ModBiomes {
 				// Inject biomes to biome source
 				if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
 					List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters().values());
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5414f, 1.75f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(0.1f, 0.6522f), Climate.Parameter.span(-1f, 1f),
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5346f, 1.75f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(0.1f, 0.6522f), Climate.Parameter.span(-1f, 1f),
 							Climate.Parameter.point(0.0f), Climate.Parameter.span(-1.0126f, 1.0017f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("universe3090", "darkbiome")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5414f, 1.75f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(0.1f, 0.6522f), Climate.Parameter.span(-1f, 1f),
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5346f, 1.75f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(0.1f, 0.6522f), Climate.Parameter.span(-1f, 1f),
 							Climate.Parameter.point(1.0f), Climate.Parameter.span(-1.0126f, 1.0017f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("universe3090", "darkbiome")))));
 					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(-1.0518f, 0.4551f), Climate.Parameter.span(0f, 0.0001f),
 							Climate.Parameter.point(0.0f), Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("universe3090", "w_world_biome_one")))));

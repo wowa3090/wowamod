@@ -1,9 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": [
-    "universe3090:darkbiome",
-    "universe3090:w_world_biome_one"
-  ],
-  "features": "universe3090:darkplantwowa",
-  "step": "vegetal_decoration"
-}

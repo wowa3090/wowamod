@@ -5,6 +5,7 @@
 package net.wowamod.init;
 
 import net.wowamod.potion.TimerMobEffect;
+import net.wowamod.potion.SuperFormMobEffect;
 import net.wowamod.potion.NightmareishMobEffect;
 import net.wowamod.potion.NeuyazvimostMobEffect;
 import net.wowamod.potion.BlagoslovleniestarefMobEffect;
@@ -22,4 +23,5 @@ public class Universe3090ModMobEffects {
 	public static final RegistryObject<MobEffect> NIGHTMAREISH = REGISTRY.register("nightmareish", () -> new NightmareishMobEffect());
 	public static final RegistryObject<MobEffect> BLAGOSLOVLENIESTAREF = REGISTRY.register("blagoslovleniestaref", () -> new BlagoslovleniestarefMobEffect());
 	public static final RegistryObject<MobEffect> TIMER = REGISTRY.register("timer", () -> new TimerMobEffect());
+	public static final RegistryObject<MobEffect> SUPER_FORM = REGISTRY.register("super_form", () -> new SuperFormMobEffect());
 }

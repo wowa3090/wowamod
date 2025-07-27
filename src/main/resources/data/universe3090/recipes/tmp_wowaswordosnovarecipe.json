@@ -2,19 +2,25 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "aba",
-    "bcb",
-    "aba"
+    "abc",
+    "bdb",
+    "cbe"
   ],
   "key": {
     "a": {
-      "item": "universe3090:magicironingot"
+      "item": "universe3090:blackironingot"
     },
     "b": {
       "item": "universe3090:extractredsoul"
     },
     "c": {
+      "item": "universe3090:magicironingot"
+    },
+    "d": {
       "item": "universe3090:rainbowemerald"
+    },
+    "e": {
+      "item": "universe3090:aluminium_ingot"
     }
   },
   "result": {

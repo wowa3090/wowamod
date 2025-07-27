@@ -8,17 +8,12 @@ import net.wowamod.Universe3090Mod;
 
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class Universe3090ModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Universe3090Mod.MODID);
 	public static final RegistryObject<CreativeModeTab> WOWAMODVKLADKA = REGISTRY.register("wowamodvkladka",
@@ -126,7 +121,11 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.LASERGUNTEST.get());
 				tabData.accept(Universe3090ModItems.CLEARETHERIUMLIGHT.get());
 				tabData.accept(Universe3090ModItems.STB_HSWORD.get());
-				tabData.accept(Universe3090ModBlocks.DARKPLANTWOWA.get().asItem());
+				tabData.accept(Universe3090ModItems.MIMIC_SPAWN_EGG.get());
+				tabData.accept(Universe3090ModItems.RING.get());
+				tabData.accept(Universe3090ModBlocks.TESTPLANT.get().asItem());
+				tabData.accept(Universe3090ModItems.GOLD_PLASTINE.get());
+				tabData.accept(Universe3090ModBlocks.CABLE_N.get().asItem());
 			})
 
 					.build());
@@ -140,12 +139,4 @@ public class Universe3090ModTabs {
 			})
 
 					.build());
-
-	@SubscribeEvent
-	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-
-		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
-			tabData.accept(Universe3090ModItems.MIMIC_SPAWN_EGG.get());
-		}
-	}
 }

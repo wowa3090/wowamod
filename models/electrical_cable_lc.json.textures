@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "texture": "toplayer_darkgrass"
+      },
+      "name": "default"
+    }
+  }
+}

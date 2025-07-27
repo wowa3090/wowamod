@@ -272,7 +272,7 @@
       "type": "item",
       "sortid": 18,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "greensoul",
       "metadata": {
         "files": [
@@ -1095,22 +1095,6 @@
       }
     },
     {
-      "name": "Mimic",
-      "type": "livingentity",
-      "sortid": 96,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mimic",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/universe3090/forge/biome_modifier/mimic_biome_modifier.json",
-          "src/main/java/net/wowamod/entity/MimicEntity.java",
-          "src/main/java/net/wowamod/client/renderer/MimicRenderer.java",
-          "src/main/resources/assets/universe3090/models/item/mimic_spawn_egg.json"
-        ]
-      }
-    },
-    {
       "name": "Mimickoja",
       "type": "item",
       "sortid": 33,
@@ -1663,12 +1647,9 @@
       "type": "procedure",
       "sortid": 158,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "shadowswordpassive",
       "metadata": {
-        "files": [
-          "src/main/java/net/wowamod/procedures/ShadowswordpassiveProcedure.java"
-        ],
         "dependencies": [
           {
             "name": "entity",
@@ -4409,7 +4390,7 @@
       "type": "tool",
       "sortid": 265,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "stb_hsword",
       "metadata": {
         "files": [
@@ -4450,25 +4431,6 @@
             "name": "world",
             "type": "world"
           }
-        ]
-      }
-    },
-    {
-      "name": "Darkplantwowa",
-      "type": "plant",
-      "sortid": 267,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "darkplantwowa",
-      "metadata": {
-        "files": [
-          "src/main/java/net/wowamod/block/DarkplantwowaBlock.java",
-          "src/main/resources/assets/universe3090/models/item/darkplantwowa.json",
-          "src/main/resources/data/universe3090/worldgen/configured_feature/darkplantwowa.json",
-          "src/main/resources/data/universe3090/forge/biome_modifier/darkplantwowa_biome_modifier.json",
-          "src/main/resources/assets/universe3090/models/block/darkplantwowa.json",
-          "src/main/resources/assets/universe3090/blockstates/darkplantwowa.json",
-          "src/main/resources/data/universe3090/worldgen/placed_feature/darkplantwowa.json"
         ]
       }
     },
@@ -4517,6 +4479,1253 @@
           "src/main/java/net/wowamod/world/inventory/SolarpanelmenuMenu.java"
         ]
       }
+    },
+    {
+      "name": "STBHAbilities",
+      "type": "code",
+      "sortid": 270,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "stbh_abilities",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/STBHAbilities.java"
+        ]
+      }
+    },
+    {
+      "name": "STBHLaserOnSwingProcedure",
+      "type": "code",
+      "sortid": 271,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "stbh_laser_on_swing_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/STBHLaserOnSwingProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "RedsoulItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 272,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redsoul_item_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/RedsoulItemInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BluesoulItemininventory",
+      "type": "procedure",
+      "sortid": 273,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bluesoul_itemininventory",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/BluesoulItemininventoryProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GreensoulRightclicked",
+      "type": "procedure",
+      "sortid": 274,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "greensoul_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/GreensoulRightclickedProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "Mimic",
+      "type": "animatedentity",
+      "sortid": 275,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mimic",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/forge/biome_modifier/mimic_biome_modifier.json",
+          "src/main/java/net/wowamod/entity/MimicEntity.java",
+          "src/main/java/net/wowamod/client/renderer/MimicRenderer.java",
+          "src/main/java/net/wowamod/entity/model/MimicModel.java",
+          "src/main/resources/assets/universe3090/models/item/mimic_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "PlayerInDarkBiome",
+      "type": "procedure",
+      "sortid": 276,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_in_dark_biome",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/PlayerInDarkBiomeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OrangeSoulItemininventorytick",
+      "type": "procedure",
+      "sortid": 277,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orange_soul_itemininventorytick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/OrangeSoulItemininventorytickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LightBlueSoulItemInventoryTick",
+      "type": "procedure",
+      "sortid": 278,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_blue_soul_item_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/LightBlueSoulItemInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PurpleSoulInventoryTick",
+      "type": "procedure",
+      "sortid": 279,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_soul_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/PurpleSoulInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ring",
+      "type": "item",
+      "sortid": 280,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ring",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/universe3090/models/item/ring.json",
+          "src/main/java/net/wowamod/item/RingItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Testplant",
+      "type": "plant",
+      "sortid": 281,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testplant",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/universe3090/blockstates/testplant.json",
+          "src/main/java/net/wowamod/block/TestplantBlock.java",
+          "src/main/resources/data/universe3090/worldgen/configured_feature/testplant.json",
+          "src/main/resources/assets/universe3090/models/block/testplant.json",
+          "src/main/resources/data/universe3090/worldgen/placed_feature/testplant.json",
+          "src/main/resources/data/universe3090/forge/biome_modifier/testplant_biome_modifier.json",
+          "src/main/resources/assets/universe3090/models/item/testplant.json"
+        ]
+      }
+    },
+    {
+      "name": "SuperForm",
+      "type": "potioneffect",
+      "sortid": 282,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_form",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/potion/SuperFormMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "SuperFormOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 283,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_form_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/SuperFormOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GoldPlastine",
+      "type": "item",
+      "sortid": 284,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_plastine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/universe3090/models/item/gold_plastine.json",
+          "src/main/java/net/wowamod/item/GoldPlastineItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Goldplaterecipe",
+      "type": "recipe",
+      "sortid": 285,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goldplaterecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/goldplaterecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "CableUpdateTick",
+      "type": "procedure",
+      "sortid": 286,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/CableUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cables"
+    },
+    {
+      "name": "CableN",
+      "type": "block",
+      "sortid": 287,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_n",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/universe3090/blockstates/cable_n.json",
+          "src/main/resources/assets/universe3090/models/item/cable_n.json",
+          "src/main/java/net/wowamod/block/entity/CableNBlockEntity.java",
+          "src/main/java/net/wowamod/block/CableNBlock.java",
+          "src/main/resources/assets/universe3090/models/block/cable_n.json"
+        ]
+      },
+      "path": "~/Cables"
+    },
+    {
+      "name": "CableE",
+      "type": "block",
+      "sortid": 288,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_e",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/block/CableEBlock.java",
+          "src/main/resources/assets/universe3090/models/item/cable_e.json",
+          "src/main/resources/assets/universe3090/models/block/cable_e.json",
+          "src/main/resources/assets/universe3090/blockstates/cable_e.json",
+          "src/main/java/net/wowamod/block/entity/CableEBlockEntity.java"
+        ]
+      },
+      "path": "~/Cables"
+    },
+    {
+      "name": "CableI",
+      "type": "block",
+      "sortid": 289,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_i",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/universe3090/models/item/cable_i.json",
+          "src/main/java/net/wowamod/block/CableIBlock.java",
+          "src/main/resources/assets/universe3090/models/block/cable_i.json",
+          "src/main/java/net/wowamod/block/entity/CableIBlockEntity.java",
+          "src/main/resources/assets/universe3090/blockstates/cable_i.json"
+        ]
+      },
+      "path": "~/Cables"
+    },
+    {
+      "name": "CableF",
+      "type": "block",
+      "sortid": 290,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_f",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/universe3090/models/item/cable_f.json",
+          "src/main/resources/assets/universe3090/blockstates/cable_f.json",
+          "src/main/java/net/wowamod/block/CableFBlock.java",
+          "src/main/java/net/wowamod/block/entity/CableFBlockEntity.java",
+          "src/main/resources/assets/universe3090/models/block/cable_f.json"
+        ]
+      },
+      "path": "~/Cables"
+    },
+    {
+      "name": "CableL",
+      "type": "block",
+      "sortid": 291,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_l",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/universe3090/models/block/cable_l.json",
+          "src/main/java/net/wowamod/block/CableLBlock.java",
+          "src/main/java/net/wowamod/block/entity/CableLBlockEntity.java",
+          "src/main/resources/assets/universe3090/models/item/cable_l.json",
+          "src/main/resources/assets/universe3090/blockstates/cable_l.json"
+        ]
+      },
+      "path": "~/Cables"
+    },
+    {
+      "name": "CableLC",
+      "type": "block",
+      "sortid": 292,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_lc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/block/entity/CableLCBlockEntity.java",
+          "src/main/resources/assets/universe3090/blockstates/cable_lc.json",
+          "src/main/java/net/wowamod/block/CableLCBlock.java",
+          "src/main/resources/assets/universe3090/models/block/cable_lc.json",
+          "src/main/resources/assets/universe3090/models/item/cable_lc.json"
+        ]
+      },
+      "path": "~/Cables"
+    },
+    {
+      "name": "CableLCC",
+      "type": "block",
+      "sortid": 293,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_lcc",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/universe3090/models/item/cable_lcc.json",
+          "src/main/java/net/wowamod/block/entity/CableLCCBlockEntity.java",
+          "src/main/resources/assets/universe3090/blockstates/cable_lcc.json",
+          "src/main/resources/assets/universe3090/models/block/cable_lcc.json",
+          "src/main/java/net/wowamod/block/CableLCCBlock.java"
+        ]
+      },
+      "path": "~/Cables"
+    },
+    {
+      "name": "CableLT",
+      "type": "block",
+      "sortid": 294,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_lt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/block/CableLTBlock.java",
+          "src/main/resources/assets/universe3090/models/block/cable_lt.json",
+          "src/main/java/net/wowamod/block/entity/CableLTBlockEntity.java",
+          "src/main/resources/assets/universe3090/models/item/cable_lt.json",
+          "src/main/resources/assets/universe3090/blockstates/cable_lt.json"
+        ]
+      },
+      "path": "~/Cables"
+    },
+    {
+      "name": "CableLTC",
+      "type": "block",
+      "sortid": 295,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_ltc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/block/entity/CableLTCBlockEntity.java",
+          "src/main/java/net/wowamod/block/CableLTCBlock.java",
+          "src/main/resources/assets/universe3090/models/item/cable_ltc.json",
+          "src/main/resources/assets/universe3090/blockstates/cable_ltc.json",
+          "src/main/resources/assets/universe3090/models/block/cable_ltc.json"
+        ]
+      },
+      "path": "~/Cables"
+    },
+    {
+      "name": "CableT",
+      "type": "block",
+      "sortid": 296,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_t",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/universe3090/blockstates/cable_t.json",
+          "src/main/resources/assets/universe3090/models/block/cable_t.json",
+          "src/main/java/net/wowamod/block/CableTBlock.java",
+          "src/main/java/net/wowamod/block/entity/CableTBlockEntity.java",
+          "src/main/resources/assets/universe3090/models/item/cable_t.json"
+        ]
+      },
+      "path": "~/Cables"
+    },
+    {
+      "name": "CableTC",
+      "type": "block",
+      "sortid": 297,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_tc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/block/CableTCBlock.java",
+          "src/main/resources/assets/universe3090/models/block/cable_tc.json",
+          "src/main/resources/assets/universe3090/models/item/cable_tc.json",
+          "src/main/resources/assets/universe3090/blockstates/cable_tc.json",
+          "src/main/java/net/wowamod/block/entity/CableTCBlockEntity.java"
+        ]
+      },
+      "path": "~/Cables"
+    },
+    {
+      "name": "CableTX",
+      "type": "block",
+      "sortid": 298,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_tx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/block/CableTXBlock.java",
+          "src/main/java/net/wowamod/block/entity/CableTXBlockEntity.java",
+          "src/main/resources/assets/universe3090/blockstates/cable_tx.json",
+          "src/main/resources/assets/universe3090/models/item/cable_tx.json",
+          "src/main/resources/assets/universe3090/models/block/cable_tx.json"
+        ]
+      },
+      "path": "~/Cables"
+    },
+    {
+      "name": "CableTVC",
+      "type": "block",
+      "sortid": 299,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_txc",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/universe3090/blockstates/cable_txc.json",
+          "src/main/resources/assets/universe3090/models/item/cable_txc.json",
+          "src/main/java/net/wowamod/block/entity/CableTVCBlockEntity.java",
+          "src/main/java/net/wowamod/block/CableTVCBlock.java",
+          "src/main/resources/assets/universe3090/models/block/cable_txc.json"
+        ]
+      },
+      "path": "~/Cables"
+    },
+    {
+      "name": "CableTXCC",
+      "type": "block",
+      "sortid": 300,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_txcc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/block/CableTXCCBlock.java",
+          "src/main/resources/assets/universe3090/blockstates/cable_txcc.json",
+          "src/main/resources/assets/universe3090/models/block/cable_txcc.json",
+          "src/main/resources/assets/universe3090/models/item/cable_txcc.json",
+          "src/main/java/net/wowamod/block/entity/CableTXCCBlockEntity.java"
+        ]
+      },
+      "path": "~/Cables"
+    },
+    {
+      "name": "CableX",
+      "type": "block",
+      "sortid": 301,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_x",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/block/CableXBlock.java",
+          "src/main/resources/assets/universe3090/blockstates/cable_x.json",
+          "src/main/resources/assets/universe3090/models/block/cable_x.json",
+          "src/main/resources/assets/universe3090/models/item/cable_x.json",
+          "src/main/java/net/wowamod/block/entity/CableXBlockEntity.java"
+        ]
+      },
+      "path": "~/Cables"
+    },
+    {
+      "name": "CableXC",
+      "type": "block",
+      "sortid": 302,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_xc",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/universe3090/blockstates/cable_xc.json",
+          "src/main/java/net/wowamod/block/entity/CableXCBlockEntity.java",
+          "src/main/resources/assets/universe3090/models/block/cable_xc.json",
+          "src/main/resources/assets/universe3090/models/item/cable_xc.json",
+          "src/main/java/net/wowamod/block/CableXCBlock.java"
+        ]
+      },
+      "path": "~/Cables"
+    },
+    {
+      "name": "CableS",
+      "type": "block",
+      "sortid": 303,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_s",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/universe3090/models/item/cable_s.json",
+          "src/main/java/net/wowamod/block/entity/CableSBlockEntity.java",
+          "src/main/resources/assets/universe3090/blockstates/cable_s.json",
+          "src/main/java/net/wowamod/block/CableSBlock.java",
+          "src/main/resources/assets/universe3090/models/block/cable_s.json"
+        ]
+      },
+      "path": "~/Cables"
+    },
+    {
+      "name": "CableUpdateTickEnergy",
+      "type": "procedure",
+      "sortid": 304,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_update_tick_energy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/CableUpdateTickEnergyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cables/Energy"
+    },
+    {
+      "name": "CableUpdateTickModels",
+      "type": "procedure",
+      "sortid": 305,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_update_tick_models",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/CableUpdateTickModelsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cables/Models"
+    },
+    {
+      "name": "CableUpdateTickModelsN",
+      "type": "procedure",
+      "sortid": 306,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_update_tick_models_n",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/CableUpdateTickModelsNProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cables/Models/Script"
+    },
+    {
+      "name": "CableUpdateTickModelsE",
+      "type": "procedure",
+      "sortid": 307,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_update_tick_models_e",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/CableUpdateTickModelsEProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cables/Models/Script"
+    },
+    {
+      "name": "CableUpdateTickModelsI",
+      "type": "procedure",
+      "sortid": 308,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_update_tick_models_i",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/CableUpdateTickModelsIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cables/Models/Script"
+    },
+    {
+      "name": "CableUpdateTickModelsL",
+      "type": "procedure",
+      "sortid": 309,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_update_tick_models_l",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/CableUpdateTickModelsLProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cables/Models/Script"
+    },
+    {
+      "name": "CableUpdateTickModelsLC",
+      "type": "procedure",
+      "sortid": 310,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_update_tick_models_lc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/CableUpdateTickModelsLCProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cables/Models/Script"
+    },
+    {
+      "name": "CableUpdateTickModelsLCC",
+      "type": "procedure",
+      "sortid": 311,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_update_tick_models_lcc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/CableUpdateTickModelsLCCProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cables/Models/Script"
+    },
+    {
+      "name": "CableUpdateTickModelsLT",
+      "type": "procedure",
+      "sortid": 312,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_update_tick_models_lt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/CableUpdateTickModelsLTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cables/Models/Script"
+    },
+    {
+      "name": "CableUpdateTickModelsLTC",
+      "type": "procedure",
+      "sortid": 313,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_update_tick_models_ltc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/CableUpdateTickModelsLTCProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cables/Models/Script"
+    },
+    {
+      "name": "CableUpdateTickModelsT",
+      "type": "procedure",
+      "sortid": 314,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_update_tick_models_t",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/CableUpdateTickModelsTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cables/Models/Script"
+    },
+    {
+      "name": "CableUpdateTickModelsTX",
+      "type": "procedure",
+      "sortid": 315,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_update_tick_models_tx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/CableUpdateTickModelsTXProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cables/Models/Script"
+    },
+    {
+      "name": "CableUpdateTickModelsTXC",
+      "type": "procedure",
+      "sortid": 316,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_update_tick_models_txc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/CableUpdateTickModelsTXCProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cables/Models/Script"
+    },
+    {
+      "name": "CableUpdateTickModelsTXCC",
+      "type": "procedure",
+      "sortid": 317,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_update_tick_models_txcc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/CableUpdateTickModelsTXCCProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cables/Models/Script"
+    },
+    {
+      "name": "CableUpdateTickModelsX",
+      "type": "procedure",
+      "sortid": 318,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_update_tick_models_x",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/CableUpdateTickModelsXProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cables/Models/Script"
+    },
+    {
+      "name": "CableUpdateTickModelsXC",
+      "type": "procedure",
+      "sortid": 319,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_update_tick_models_xc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/CableUpdateTickModelsXCProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cables/Models/Script"
+    },
+    {
+      "name": "CableUpdateTickModelsF",
+      "type": "procedure",
+      "sortid": 320,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_update_tick_models_f",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/CableUpdateTickModelsFProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cables/Models/Script"
+    },
+    {
+      "name": "CableUpdateTickModelsS",
+      "type": "procedure",
+      "sortid": 321,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_update_tick_models_s",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/CableUpdateTickModelsSProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cables/Models/Script"
+    },
+    {
+      "name": "CableUpdateTickModelsTC",
+      "type": "procedure",
+      "sortid": 322,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_update_tick_models_tc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/CableUpdateTickModelsTCProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cables/Models/Script"
+    },
+    {
+      "name": "BlockTagCablesFCopper",
+      "type": "tag",
+      "sortid": 323,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_tag_cables_f_copper",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/tags/blocks/cables/f/copper.json"
+        ]
+      },
+      "path": "~/Cables"
     }
   ],
   "variable_elements": [
@@ -4639,8 +5848,8 @@
   ],
   "language_map": {
     "ru_ru": {
+      "block.universe3090.cable_x": "Cable",
       "item.wowamod.ironplastinewowa": "Железная пластина",
-      "block.universe3090.darkplantwowa": "Отростки тьмы",
       "gui.universe3090.guidebook.label_nachalo": "Начало",
       "item.wowamodfabric.lightbluesoul": "Голубая душа",
       "item.wowamodfabric.fadingworldbeta_2fazasound": "Fadingworldbeta2fazasound",
@@ -4679,6 +5888,7 @@
       "block.wowamod.pogranichnik": "Пограничная ткань пространства времени",
       "key.wowamod.teleport": "Обычный телепорт",
       "item.wowamod.redsoul": "Красная Душа",
+      "block.universe3090.cable_xc": "Cable",
       "item.wowamodfabric.greensoul": "Зелёная душа",
       "item.wowamod.wowabronya_boots": "Ботинки ",
       "effect.wowamod.nightmareish": "NIGHTMARISH ENDINGE",
@@ -4687,18 +5897,26 @@
       "item.wowamod.zagatovkablackiron": "Заготовка для ч.ж",
       "item.wowamod.rose": "Rose",
       "item.universe3090.myplacezone": "MyPlaceZone",
+      "block.universe3090.cable_e": "Cable",
+      "block.universe3090.cable_i": "Cable",
       "gui.wowamodfabric.extractorinteface.label_animation": "animation",
       "item.universe3090.multitoolcomponentnottrue": "Мультитул-пред-компонент",
       "item.wowamod.adarkplacesound.desc": "A Dark Place - Happy and Sad",
       "block.universe3090.dark_iron_machine_casing": "Dark Iron Machine Casing",
+      "block.universe3090.cable_f": "Cable",
+      "block.universe3090.cable_l": "Cable",
       "effect.wowamodfabric.neuyazvimost": "Неуязвимость!",
       "effect.universe3090.neuyazvimost": "Неуязвимость!",
       "gui.universe3090.port_constructora.label_port": "Основа",
+      "block.universe3090.cable_n": "Cable",
       "gui.wowamod.guidebook.label_dushi": "Души",
+      "block.universe3090.cable_t": "Cable",
+      "block.universe3090.cable_s": "Cable",
       "gui.wowamodfabric.port_constructora.label_port": "TEST form",
       "item.wowamod.greensoulpiece": "Частичка Зелёной души",
       "fluid.wowamodfabric.extractgolubaysoul": "Extractgolubaysoul",
       "entity.minecraft.villager.universe3090.emeraldshopper": "Изумрудный добытчик",
+      "block.universe3090.cable_lcc": "Cable",
       "item.wowamodfabric.wowabronya_leggings": "Поножи ",
       "item.wowamod.purpleemerald": "Пёрпл Изумруд",
       "gui.wowamodfabric.wowabronyacraftring.label_empty": "\u003e",
@@ -4713,6 +5931,7 @@
       "item.wowamod.copperplate": "Медная пластина",
       "item.universe3090.energyelement": "Энерго-элемент",
       "block.wowamod.magicironblock": "Сталемагический блок",
+      "effect.universe3090.super_form": "Super",
       "item.wowamodfabric.yellowsoul": "Жёлтая душа",
       "gui.universe3090.guidebook.label_izumrudy": "Изумруды",
       "item.universe3090.extractlbsoul": "Экстракт голубой души",
@@ -4728,7 +5947,9 @@
       "item.universe3090.aaa_glass": "Усиленное стекло",
       "item.wowamod.soulsvazivatel": "Связыватель Душ",
       "item.wowamodfabric.bluesoul": "Синяя душа",
+      "block.universe3090.cable_tx": "Cable",
       "key.universe3090.souls_viewbutton": "Просмотр душ",
+      "block.universe3090.cable_tc": "Cable",
       "block.wowamod.corrupted_souls_block": "Corrupted Souls Block",
       "item.wowamodfabric.mimic_spawn_egg": "Мимик Спавн",
       "item.universe3090.whitesoul_myplace": "Белая душа из игры MY PLACE",
@@ -4751,6 +5972,7 @@
       "item.wowamodfabric.dissasebmlyrequired": "Dissasebmly Required",
       "item.wowamod.coppermass_1": "Медная масса",
       "item.universe3090.aluminium_plate": "Алюминиевая пластина",
+      "item.universe3090.gold_plastine": "Gold Plastine",
       "subtitles.ambientmyplacezone": "",
       "item.universe3090.purplesoul": "Фиолетовая душа",
       "item.wowamod.dissasebmlyrequired.desc": "Dissasebmly Required",
@@ -4770,6 +5992,7 @@
       "item.universe3090.wowabronya_chestplate": "Нагрудник вовы3090",
       "block.universe3090.crafterbroni": "Необычный Механизм",
       "gui.universe3090.guidebookstart.label_dlia_nachala_vam_ponadobitsia_nait": "Для начала вам понадобиться найти множество ресурсов в виде :",
+      "block.universe3090.testplant": "Testplant",
       "block.wowamod.redstoneport": "Редстоун порт конструктора",
       "item.wowamodfabric.blueemerald": "Синий изумруд",
       "gui.universe3090.wowabronyacraftring.label_empty": "\u003e",
@@ -4805,6 +6028,7 @@
       "gui.universe3090.constructorinterface.label_constructor": "Конструктор",
       "item.universe3090.blue_emerald_piece": "Blue Emerald Piece",
       "block.wowamodfabric.blockforprofessia": "Профессиональный блок",
+      "block.universe3090.cable_lt": "Cable",
       "block.wowamod.darkgrass": "Dark Grass",
       "item.wowamodfabric.redsoulpiece": "Частичка Красной души",
       "subtitles.faza2perexod": "HAHAHAHAHAHAH",
@@ -4816,6 +6040,7 @@
       "item.wowamod.wiresprovoda": "Провода",
       "item.universe3090.yellow_emerald_piece": "Осколок жёлтого изумруда",
       "item.wowamod.white_emerald_piece": "Осколок белого изумруда",
+      "block.universe3090.cable_lc": "Cable",
       "death.attack.soulsworddamage.item": "%1$s Уничтожен %2$s используя %3$s",
       "gui.wowamod.wowabronyacraftring.label_empty": "\u003e",
       "item.wowamod.mimictkanb": "Мимикрирующая Ткань",
@@ -4843,6 +6068,7 @@
       "effect.wowamodfabric.nightmareish": "NIGHTMARISH ENDINGE",
       "item.wowamod.lightbluesoul": "Голубая душа",
       "item.wowamodfabric.fadingworldbeta_2fazasound.desc": "beta sound for 2 phase",
+      "block.universe3090.cable_txcc": "Cable",
       "block.wowamod.crafterbroni": "Необычный Механизм",
       "item.universe3090.redemerald": "Красный Изумруд",
       "subtitles.fadingworld-2faza": "\u003d)",
@@ -4886,6 +6112,7 @@
       "item.universe3090.wowasword": "Клинок вовы3090",
       "item.universe3090.purplesoulpiece": "Частичка Фиолетовой души",
       "item.universe3090.green_emerald_piece": "Green Emerald Piece",
+      "item.universe3090.ring": "Ring",
       "item.universe3090.guidebookitem": "Guidebookitem",
       "block.wowamodfabric.redstonecommandblock": "Р.К.Б",
       "item.wowamodfabric.soulsvazivatel": "Связыватель Душ",
@@ -4912,6 +6139,7 @@
       "item.universe3090.wowaswordosnova": "Основа для меча",
       "gui.wowamod.guidebookstart.label_zhielatielno_zapastis_miediu_i_zhiel": "Желательно запастись медью и железом",
       "item.wowamod.etheriumdark": "Тёмный Эфир",
+      "block.universe3090.cable_ltc": "Cable",
       "death.attack.soulsworddamage.player": "%1$s пытался убежать от %2$s, но потерпел крах",
       "item.universe3090.orangesoulpiece": "Частичка Оранжевой души",
       "item.universe3090.wiresprovoda": "Провода",
@@ -4952,6 +6180,7 @@
       "item.wowamod.posudina": "Емкость",
       "key.wowamod.teleportto_w_world": "Телепорт в карманный мир",
       "item.wowamodfabric.extractlbsoul": "Экстракт голубой души",
+      "block.universe3090.cable_txc": "Cable",
       "effect.universe3090.blagoslovleniestaref": "Благословление звезды",
       "item.wowamod.klavaж": "Клавиатура",
       "item_group.wowamod.wowamodvkladka": "Universe3090",
@@ -5017,7 +6246,10 @@
       "item.wowamod.netherstarsword": "Звёздный меч",
       "item.universe3090.posudina": "Емкость",
       "block.universe3090.dark_strk_blk": "Блок Отростка Тьмы",
+      "tooltip.wowamod.stbhsword.ability3": "testability",
       "item.wowamod.extractredsoul": "Экстракт красной души",
+      "tooltip.wowamod.stbhsword.ability1": "testability",
+      "tooltip.wowamod.stbhsword.ability2": "testability",
       "item.wowamodfabric.dissasebmlyrequired.desc": "Dissasebmly Required",
       "block.wowamod.dark_strk_blk": "Блок Отростка Тьмы",
       "block.wowamodfabric.interfaceconstructor": "Интерфейс",
@@ -5035,14 +6267,14 @@
       "item.wowamod.purplesoulpiece": "Частичка Фиолетовой души"
     },
     "en_us": {
+      "block.universe3090.cable_x": "Cable",
       "item.wowamod.ironplastinewowa": "iron plastine",
-      "block.universe3090.darkplantwowa": "Darkplantwowa",
       "gui.universe3090.guidebook.label_nachalo": "Начало",
       "item.wowamodfabric.lightbluesoul": "Голубая душа",
       "item.wowamodfabric.fadingworldbeta_2fazasound": "Fadingworldbeta2fazasound",
       "item.wowamod.redsoulpiece": "Частичка Красной души",
-      "item.wowamod.rainbowemerald": "Комбинированный Изумруд",
       "item.universe3090.instrumentprosto": "М.Т.В",
+      "item.wowamod.rainbowemerald": "Комбинированный Изумруд",
       "item.wowamodfabric.redsoul": "Красная Душа",
       "item.universe3090.derjatili": "Держатель для необычного механизма",
       "gui.wowamod.guidebookstart.label_nachalo": "Начало",
@@ -5057,8 +6289,8 @@
       "item.universe3090.wowabronya_boots": "Ботинки 3090",
       "block.wowamod.blockforprofessiafix": "Профессиональный блок",
       "block.wowamodfabric.extractor": "Extractor",
-      "block.wowamodfabric.magicironblock": "Сталемагический блок",
       "item_group.wowamodfabric.wowamodvkladka": "wowa3090mod",
+      "block.wowamodfabric.magicironblock": "Сталемагический блок",
       "item.universe3090.bluesoulpiece": "Частичка Синий души",
       "block.universe3090.extractgolubaysoul": "Extractgolubaysoul",
       "item.wowamod.blue_emerald_piece": "Blue Emerald Piece",
@@ -5075,26 +6307,35 @@
       "block.wowamod.pogranichnik": "Пограничная ткань пространства времени",
       "key.wowamod.teleport": "Teleport",
       "item.wowamod.redsoul": "Красная Душа",
+      "block.universe3090.cable_xc": "Cable",
       "item.wowamodfabric.greensoul": "Зелёная душа",
       "item.wowamod.wowabronya_boots": "Ботинки 3090",
       "effect.wowamod.nightmareish": "NIGHTMARISH ENDINGE",
       "item.universe3090.greenemerald": "Зелёный Изумруд",
-      "item.wowamod.zagatovkablackiron": "Заготовка для ч.ж",
       "gui.wowamod.guidebook.label_izumrudy": "Изумруды",
+      "item.wowamod.zagatovkablackiron": "Заготовка для ч.ж",
       "item.wowamod.rose": "Rose",
       "item.universe3090.myplacezone": "MyPlaceZone",
+      "block.universe3090.cable_e": "Cable",
+      "block.universe3090.cable_i": "Cable",
       "gui.wowamodfabric.extractorinteface.label_animation": "animation",
       "item.universe3090.multitoolcomponentnottrue": "Multitoolcomponentnottrue",
       "item.wowamod.adarkplacesound.desc": "A Dark Place - Happy and Sad",
       "block.universe3090.dark_iron_machine_casing": "Dark Iron Machine Casing",
+      "block.universe3090.cable_f": "Cable",
+      "block.universe3090.cable_l": "Cable",
       "effect.wowamodfabric.neuyazvimost": "Неуязвимость!",
       "effect.universe3090.neuyazvimost": "Неуязвимость!",
       "gui.universe3090.port_constructora.label_port": "Основа",
+      "block.universe3090.cable_n": "Cable",
       "gui.wowamod.guidebook.label_dushi": "Души",
+      "block.universe3090.cable_t": "Cable",
+      "block.universe3090.cable_s": "Cable",
       "gui.wowamodfabric.port_constructora.label_port": "Основа",
       "item.wowamod.greensoulpiece": "Частичка Зелёной души",
       "fluid.wowamodfabric.extractgolubaysoul": "Extractgolubaysoul",
       "entity.minecraft.villager.universe3090.emeraldshopper": "Emeraldshopper",
+      "block.universe3090.cable_lcc": "Cable",
       "item.wowamodfabric.wowabronya_leggings": "Поножи 3090",
       "item.wowamod.purpleemerald": "Пёрпл Изумруд",
       "gui.wowamodfabric.wowabronyacraftring.label_empty": "\u003e",
@@ -5107,12 +6348,13 @@
       "item.wowamod.greensoul": "Зелёная душа",
       "item.universe3090.adarkplacesound.desc": "A Dark Place - Happy and Sad",
       "item.wowamod.copperplate": "Медная пластина",
-      "block.wowamod.magicironblock": "Сталемагический блок",
       "item.universe3090.energyelement": "Energyelement",
+      "block.wowamod.magicironblock": "Сталемагический блок",
+      "effect.universe3090.super_form": "Super",
       "item.wowamodfabric.yellowsoul": "Жёлтая душа",
       "gui.universe3090.guidebook.label_izumrudy": "Изумруды",
-      "item.wowamodfabric.ekranchik": "Экран",
       "item.universe3090.extractlbsoul": "Экстракт голубой души",
+      "item.wowamodfabric.ekranchik": "Экран",
       "item.wowamod.aluminium_ingot": "Aluminium Ingot",
       "item.wowamod.myplacezone": "MyPlaceZone",
       "item.wowamod.derjatili": "Держатель для необычного механизма",
@@ -5124,15 +6366,17 @@
       "item.universe3090.aaa_glass": "Усиленное стекло",
       "item.wowamod.soulsvazivatel": "Связыватель Душ",
       "item.wowamodfabric.bluesoul": "Синяя душа",
+      "block.universe3090.cable_tx": "Cable",
       "key.universe3090.souls_viewbutton": "Souls View",
+      "block.universe3090.cable_tc": "Cable",
       "block.wowamod.corrupted_souls_block": "Corrupted Souls Block",
       "item.wowamodfabric.mimic_spawn_egg": "Мимик Spawn Egg",
       "item.universe3090.whitesoul_myplace": "Белая душа из игры MY PLACE",
       "gui.wowamodfabric.wowabronyacraftring.label_crafting": "Создание предметов",
       "fluid.universe3090.extractgolubaysoul": "Extractgolubaysoul",
       "item.wowamod.wowabronya_helmet": "Шлем 3090",
-      "item.wowamod.yellowsoulpiece": "Частичка Жёлтой души",
       "gui.wowamod.constructorinterface.label_constructor": "Constructor",
+      "item.wowamod.yellowsoulpiece": "Частичка Жёлтой души",
       "block.universe3090.darkgrass": "Dark Grass",
       "gui.universe3090.guidebookstart.label_nachalo": "Начало",
       "gui.wowamod.port_constructora.label_port": "Основа",
@@ -5147,6 +6391,7 @@
       "item.wowamodfabric.dissasebmlyrequired": "Dissasebmly Required",
       "item.wowamod.coppermass_1": "Медная масса",
       "item.universe3090.aluminium_plate": "Aluminium Plate",
+      "item.universe3090.gold_plastine": "Gold Plastine",
       "subtitles.ambientmyplacezone": "",
       "item.universe3090.purplesoul": "Фиолетовая душа",
       "item.wowamod.dissasebmlyrequired.desc": "Dissasebmly Required",
@@ -5154,8 +6399,8 @@
       "item.wowamod.wowabronya_leggings": "Поножи 3090",
       "effect.wowamod.blagoslovleniestaref": "Благословление звезды",
       "entity.wowamodfabric.mimic": "Мимик",
-      "subtitles.nightmare.trojansound": "",
       "block.universe3090.black_walls_myplace": "Black Walls Myplace",
+      "subtitles.nightmare.trojansound": "",
       "item.wowamod.lightblueemerald": "Голубой Изумруд",
       "block.universe3090.magicironblock": "Сталемагический блок",
       "item.universe3090.ekranchik": "Экран",
@@ -5166,6 +6411,7 @@
       "item.universe3090.wowabronya_chestplate": "Нагрудник 3090",
       "block.universe3090.crafterbroni": "Необычный Механизм",
       "gui.universe3090.guidebookstart.label_dlia_nachala_vam_ponadobitsia_nait": "Для начала вам понадобиться найти множество ресурсов в виде :",
+      "block.universe3090.testplant": "Testplant",
       "block.wowamod.redstoneport": "Редстоун порт конструктора",
       "item.wowamodfabric.blueemerald": "Синий изумруд",
       "gui.universe3090.wowabronyacraftring.label_empty": "\u003e",
@@ -5201,21 +6447,23 @@
       "gui.universe3090.constructorinterface.label_constructor": "Constructor",
       "item.universe3090.blue_emerald_piece": "Blue Emerald Piece",
       "block.wowamodfabric.blockforprofessia": "Профессиональный блок",
+      "block.universe3090.cable_lt": "Cable",
       "block.wowamod.darkgrass": "Dark Grass",
       "item.wowamodfabric.redsoulpiece": "Частичка Красной души",
       "subtitles.faza2perexod": "HAHAHAHAHAHAH",
       "biome.universe3090.my_place_biome": "My Place Biome",
-      "item.wowamod.blueemerald": "Синий изумруд",
       "block.wowamod.aluminium_ore_wowa": "Бокситы",
+      "item.wowamod.blueemerald": "Синий изумруд",
       "gui.wowamodfabric.constructorinterface.button_create_test": "create (test)",
       "item.wowamod.ekranchik": "Экран",
       "item.wowamod.wiresprovoda": "Провода",
       "item.universe3090.yellow_emerald_piece": "Yellow Emerald Piece",
       "item.wowamod.white_emerald_piece": "White Emerald Piece",
+      "block.universe3090.cable_lc": "Cable",
       "death.attack.soulsworddamage.item": "%1$s Уничтожен %2$s используя %3$s",
       "gui.wowamod.wowabronyacraftring.label_empty": "\u003e",
-      "item.wowamodfabric.wowasword": "МЕЧ 3090",
       "item.wowamod.mimictkanb": "Мимикрирующая Ткань",
+      "item.wowamodfabric.wowasword": "МЕЧ 3090",
       "item.universe3090.kolba": "Пустая колба",
       "block.universe3090.darkgrassblockniz": "Dark Grass",
       "item.wowamodfabric.wowaswordosnova": "Основа для меча",
@@ -5239,6 +6487,7 @@
       "effect.wowamodfabric.nightmareish": "NIGHTMARISH ENDINGE",
       "item.wowamod.lightbluesoul": "Голубая душа",
       "item.wowamodfabric.fadingworldbeta_2fazasound.desc": "beta sound for 2 phase",
+      "block.universe3090.cable_txcc": "Cable",
       "block.wowamod.crafterbroni": "Необычный Механизм",
       "item.universe3090.redemerald": "Красный Изумруд",
       "item.wowamod.klava": "Клавиатура",
@@ -5282,6 +6531,7 @@
       "item.universe3090.wowasword": "МЕЧ 3090",
       "item.universe3090.purplesoulpiece": "Частичка Фиолетовой души",
       "item.universe3090.green_emerald_piece": "Green Emerald Piece",
+      "item.universe3090.ring": "Ring",
       "item.universe3090.guidebookitem": "Guidebookitem",
       "block.wowamodfabric.redstonecommandblock": "Р.К.Б",
       "item.wowamodfabric.soulsvazivatel": "Связыватель Душ",
@@ -5308,6 +6558,7 @@
       "item.universe3090.wowaswordosnova": "Основа для меча",
       "gui.wowamod.guidebookstart.label_zhielatielno_zapastis_miediu_i_zhiel": "Желательно запастись медью и железом",
       "item.wowamod.etheriumdark": "Тёмный Эфир",
+      "block.universe3090.cable_ltc": "Cable",
       "death.attack.soulsworddamage.player": "%1$s пытался убежать от %2$s, но потерпел крах",
       "item.universe3090.orangesoulpiece": "Частичка Оранжевой души",
       "item.universe3090.wiresprovoda": "Провода",
@@ -5348,6 +6599,7 @@
       "item.wowamod.posudina": "Емкость",
       "key.wowamod.teleportto_w_world": "Teleport to W World",
       "item.wowamodfabric.extractlbsoul": "Экстракт голубой души",
+      "block.universe3090.cable_txc": "Cable",
       "effect.universe3090.blagoslovleniestaref": "Благословление звезды",
       "item_group.wowamod.wowamodvkladka": "wowa3090mod",
       "block.wowamod.emerald_combiner": "Emerald Combiner",
@@ -5412,7 +6664,10 @@
       "item.wowamod.netherstarsword": "Звёздный меч",
       "item.universe3090.posudina": "Емкость",
       "block.universe3090.dark_strk_blk": "Блок Отростка Тьмы",
+      "tooltip.wowamod.stbhsword.ability3": "",
       "item.wowamod.extractredsoul": "Экстракт красной души",
+      "tooltip.wowamod.stbhsword.ability1": "",
+      "tooltip.wowamod.stbhsword.ability2": "",
       "item.wowamodfabric.dissasebmlyrequired.desc": "Dissasebmly Required",
       "block.wowamod.dark_strk_blk": "Блок Отростка Тьмы",
       "block.wowamodfabric.interfaceconstructor": "Интерфейс конструктора",
@@ -5432,7 +6687,26 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Cables",
+        "children": [
+          {
+            "name": "Energy",
+            "children": []
+          },
+          {
+            "name": "Models",
+            "children": [
+              {
+                "name": "Script",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "universe3090",
@@ -5449,6 +6723,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [
+      "geckolib",
       "particlepresets"
     ],
     "currentGenerator": "forge-1.20.1",

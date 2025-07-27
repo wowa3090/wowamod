@@ -1,0 +1,67 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:CableN"
+      },
+      {
+        "value": "CUSTOM:CableE"
+      },
+      {
+        "value": "CUSTOM:CableI"
+      },
+      {
+        "value": "CUSTOM:CableF"
+      },
+      {
+        "value": "CUSTOM:CableL"
+      },
+      {
+        "value": "CUSTOM:CableLC"
+      },
+      {
+        "value": "CUSTOM:CableLCC"
+      },
+      {
+        "value": "CUSTOM:CableLT"
+      },
+      {
+        "value": "CUSTOM:CableLTC"
+      },
+      {
+        "value": "CUSTOM:CableT"
+      },
+      {
+        "value": "CUSTOM:CableTC"
+      },
+      {
+        "value": "CUSTOM:CableTX"
+      },
+      {
+        "value": "CUSTOM:CableTVC"
+      },
+      {
+        "value": "CUSTOM:CableTXCC"
+      },
+      {
+        "value": "CUSTOM:CableX"
+      },
+      {
+        "value": "CUSTOM:CableXC"
+      },
+      {
+        "value": "CUSTOM:CableS"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "cables/f/copper",
+    "namespace": "mod"
+  }
+}

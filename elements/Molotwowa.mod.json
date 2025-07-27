@@ -4,7 +4,7 @@
   "definition": {
     "renderType": 1,
     "texture": "mol",
-    "customModelName": "mol2:default",
+    "customModelName": "model_1:default",
     "customProperties": {},
     "states": [],
     "name": "Молот",
@@ -16,7 +16,7 @@
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
-    "damageCount": 300,
+    "damageCount": 349,
     "recipeRemainder": {
       "value": ""
     },
@@ -27,9 +27,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": [
-        "Молоток сделанный пампом"
-      ]
+      "fixedValue": []
     },
     "glowCondition": {
       "fixedValue": false

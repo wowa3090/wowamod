@@ -6,11 +6,7 @@ import net.wowamod.init.Universe3090ModItems;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.projectile.Projectile;
-import net.minecraft.world.entity.projectile.LargeFireball;
-import net.minecraft.world.entity.projectile.AbstractHurtingProjectile;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.LightningBolt;
@@ -26,36 +22,17 @@ public class WowaswordPKMProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Universe3090ModItems.RAINBOWEMERALD.get())) : false) {
-			{
-				Entity _shootFrom = entity;
-				Level projectileLevel = _shootFrom.level();
-				if (!projectileLevel.isClientSide()) {
-					Projectile _entityToSpawn = new Object() {
-						public Projectile getFireball(Level level, Entity shooter, double ax, double ay, double az) {
-							AbstractHurtingProjectile entityToSpawn = new LargeFireball(EntityType.FIREBALL, level);
-							entityToSpawn.setOwner(shooter);
-							entityToSpawn.xPower = ax;
-							entityToSpawn.yPower = ay;
-							entityToSpawn.zPower = az;
-							return entityToSpawn;
-						}
-					}.getFireball(projectileLevel, entity, 1, 1, 1);
-					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
-					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 1, 0);
-					projectileLevel.addFreshEntity(_entityToSpawn);
-				}
-			}
 			if (world instanceof ServerLevel _level) {
 				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
 				entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));;
 				_level.addFreshEntity(entityToSpawn);
 			}
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 180, 5, false, false));
+				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 5, false, false));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 5, false, false));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 120, 1, false, false));
+				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 160, 1, false, false));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(Universe3090ModMobEffects.NEUYAZVIMOST.get(), 100, 0, false, false));
 			if ((entity.getCapability(Universe3090ModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Universe3090ModVariables.PlayerVariables())).wowaswordupgrade > 99) {
@@ -66,25 +43,6 @@ public class WowaswordPKMProcedure {
 					_player.getCooldowns().addCooldown(Universe3090ModItems.WOWASWORD.get(), 200);
 			}
 		} else {
-			{
-				Entity _shootFrom = entity;
-				Level projectileLevel = _shootFrom.level();
-				if (!projectileLevel.isClientSide()) {
-					Projectile _entityToSpawn = new Object() {
-						public Projectile getFireball(Level level, Entity shooter, double ax, double ay, double az) {
-							AbstractHurtingProjectile entityToSpawn = new LargeFireball(EntityType.FIREBALL, level);
-							entityToSpawn.setOwner(shooter);
-							entityToSpawn.xPower = ax;
-							entityToSpawn.yPower = ay;
-							entityToSpawn.zPower = az;
-							return entityToSpawn;
-						}
-					}.getFireball(projectileLevel, entity, 1, 1, 1);
-					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
-					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 1, 0);
-					projectileLevel.addFreshEntity(_entityToSpawn);
-				}
-			}
 			if (world instanceof ServerLevel _level) {
 				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
 				entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));

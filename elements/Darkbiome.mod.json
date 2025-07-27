@@ -17,7 +17,7 @@
       "falpha": 0.0
     },
     "grassColor": {
-      "value": -13565952,
+      "value": -13092808,
       "falpha": 0.0
     },
     "foliageColor": {
@@ -49,14 +49,14 @@
     "particleToSpawn": {
       "value": "SMOKE_LARGE"
     },
-    "particlesProbability": 0.15,
+    "particlesProbability": 0.16,
     "rainingPossibility": 0.0,
     "temperature": 1.0,
     "spawnBiome": true,
     "spawnInCaves": true,
     "spawnBiomeNether": true,
     "genTemperature": {
-      "min": -0.5414,
+      "min": -0.5346,
       "max": 1.75
     },
     "genHumidity": {
@@ -75,7 +75,7 @@
       "min": -1.0126,
       "max": 1.0017
     },
-    "treesPerChunk": 2,
+    "treesPerChunk": 1,
     "vanillaTreeType": "Big trees",
     "treeType": 1,
     "minHeight": 12,
@@ -94,9 +94,8 @@
     "defaultFeatures": [
       "Caves",
       "Ores",
-      "ForestGrass",
       "InfestedStone",
-      "DeadBushes"
+      "ForestGrass"
     ],
     "spawnStronghold": false,
     "spawnMineshaft": false,
@@ -124,7 +123,7 @@
           "value": "CUSTOM:Mimic"
         },
         "minGroup": 1,
-        "maxGroup": 2,
+        "maxGroup": 3,
         "weight": 1,
         "spawnType": "monster"
       }

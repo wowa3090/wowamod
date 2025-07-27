@@ -26,9 +26,9 @@ public class Universe3090ModEntities {
 	public static final RegistryObject<EntityType<NightmareEntity>> NIGHTMARE = register("nightmare", EntityType.Builder.<NightmareEntity>of(NightmareEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(256)
 			.setUpdateInterval(3).setCustomClientFactory(NightmareEntity::new).fireImmune().sized(0.7f, 1.9f));
 	public static final RegistryObject<EntityType<MimicEntity>> MIMIC = register("mimic",
-			EntityType.Builder.<MimicEntity>of(MimicEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MimicEntity::new)
+			EntityType.Builder.<MimicEntity>of(MimicEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MimicEntity::new)
 
-					.sized(0.6f, 2f));
+					.sized(1.5f, 1.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

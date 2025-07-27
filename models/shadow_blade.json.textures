@@ -2,8 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "texture_blade",
-        "1": "texture_blade"
+        "0": "textureshadowbladenew"
       },
       "name": "default"
     }

@@ -1,29 +1,20 @@
 {
   "_fv": 57,
-  "_type": "livingentity",
+  "_type": "animatedentity",
   "definition": {
     "mobName": "Мимик",
     "mobLabel": "",
-    "mobModelName": "Modelmimic",
-    "mobModelTexture": "texturemimic.png",
-    "transparentModelCondition": {
-      "fixedValue": false
-    },
-    "isShakingCondition": {
-      "fixedValue": false
-    },
-    "solidBoundingBox": {
-      "fixedValue": false
-    },
+    "mobModelTexture": "texture_new_mimic.png",
+    "mobModelGlowTexture": "",
     "visualScale": {
-      "fixedValue": 1.3
+      "fixedValue": 1.7
     },
     "boundingBoxScale": {
-      "fixedValue": 1.1
+      "fixedValue": 1.0999999999999999
     },
-    "modelLayers": [],
-    "modelWidth": 0.6,
-    "modelHeight": 2.0,
+    "entityDataEntries": [],
+    "modelWidth": 1.5,
+    "modelHeight": 1.5,
     "modelShadowSize": 0.7999999999999999,
     "mountedYOffset": 0.4,
     "hasSpawnEgg": true,
@@ -36,7 +27,7 @@
       "falpha": 0.0
     },
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Wowamodvkladka"
     },
     "isBoss": false,
     "bossBarColor": "PINK",
@@ -65,23 +56,18 @@
     "attackKnockback": 0.1,
     "knockbackResistance": 0.4,
     "movementSpeed": 0.30000000000000004,
-    "stepHeight": 0.6,
     "armorBaseValue": 0.30000000000000004,
     "trackingRange": 64,
     "followRange": 30,
     "health": 40,
     "xpAmount": 0,
     "waterMob": false,
-    "breatheUnderwater": {
-      "fixedValue": false
-    },
-    "pushedByFluids": {
-      "fixedValue": true
-    },
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "deathTime": 20,
+    "lerp": 4,
     "disableCollisions": false,
     "ridable": false,
     "canControlForward": false,
@@ -114,12 +100,35 @@
     "stepSound": {
       "value": "block.sand.place"
     },
-    "entityDataEntries": [],
     "hasAI": true,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1.15</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"doors_break\"><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field><next><block type=\"break_blocks\"><field name=\"speed\">1</field><field name=\"y_max\">3</field><field name=\"condition\">null,null</field><value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\">Blocks.CHEST</field></block></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "model": "mimic.geo.json",
+    "groupName": "",
+    "animation1": "animation.mimic.idle",
+    "animation2": "animation.mimic.walk",
+    "animation3": "",
+    "animation4": "animation.mimic.attack",
+    "animation5": "",
+    "animation6": "",
+    "animation7": "",
+    "animation8": "",
+    "animation9": "",
+    "animation10": "",
+    "enable2": true,
+    "enable3": false,
+    "enable4": true,
+    "enable5": false,
+    "enable6": false,
+    "enable7": false,
+    "enable8": false,
+    "enable9": false,
+    "enable10": false,
     "breedable": false,
     "tameable": false,
+    "disableDeathRotation": false,
+    "headMovement": false,
+    "eyeHeight": false,
     "breedTriggerItems": [],
     "ranged": false,
     "rangedAttackItem": {
@@ -128,12 +137,13 @@
     "rangedItemType": "Default item",
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
+    "height": 0.0,
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 22,
-    "mobSpawningType": "ambient",
-    "minNumberOfMobsPerGroup": 2,
-    "maxNumberOfMobsPerGroup": 4,
+    "spawningProbability": 25,
+    "mobSpawningType": "monster",
+    "minNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 2,
     "restrictionBiomes": [],
     "spawnInDungeons": false
   }

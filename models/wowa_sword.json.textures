@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "texture_wowasword"
+        "0": "texturewowasword"
       },
       "name": "default"
     }

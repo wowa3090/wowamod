@@ -1,6 +1,8 @@
 
 package net.wowamod.block;
 
+import net.minecraftforge.common.IPlantable;
+
 import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -10,6 +12,7 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import java.util.List;
@@ -17,7 +20,7 @@ import java.util.Collections;
 
 public class DarkgrassBlock extends Block {
 	public DarkgrassBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(2.5f, 25f).speedFactor(0.9f));
+		super(BlockBehaviour.Properties.of().sound(SoundType.STEM).strength(2.6f, 25f).speedFactor(0.9f));
 	}
 
 	@Override
@@ -28,6 +31,11 @@ public class DarkgrassBlock extends Block {
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 15;
+	}
+
+	@Override
+	public boolean canSustainPlant(BlockState state, BlockGetter world, BlockPos pos, Direction direction, IPlantable plantable) {
+		return true;
 	}
 
 	@Override

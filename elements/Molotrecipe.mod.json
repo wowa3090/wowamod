@@ -12,22 +12,22 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.STONE#0"
+        "value": "CUSTOM:AluminiumIngot"
       },
       {
         "value": "CUSTOM:Blackironingot"
       },
       {
-        "value": "Blocks.STONE#0"
+        "value": "CUSTOM:AluminiumIngot"
       },
       {
-        "value": "Blocks.STONE#0"
+        "value": "CUSTOM:AluminiumIngot"
       },
       {
         "value": "Blocks.LOG"
       },
       {
-        "value": "Blocks.STONE#0"
+        "value": "CUSTOM:AluminiumIngot"
       },
       {
         "value": ""

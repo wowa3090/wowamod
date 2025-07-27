@@ -1,0 +1,155 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.mimic.walk": {
+			"animation_length": 1,
+			"bones": {
+				"низ": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.2083": {
+							"vector": [-10, 0, 0]
+						},
+						"0.4167": {
+							"vector": [22.5, 0, 0]
+						},
+						"0.6667": {
+							"vector": [0, 0, 0],
+							"easing": "easeInSine"
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.2083": {
+							"vector": [0, 3, 0],
+							"easing": "easeInQuad"
+						},
+						"0.4167": {
+							"vector": [0, -0.25, 0.5],
+							"easing": "easeInQuad"
+						},
+						"0.6667": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"верх": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.2083": {
+							"vector": [-20, 0, 0]
+						},
+						"0.4167": {
+							"vector": [30, 0, 0],
+							"easing": "linear"
+						},
+						"0.6667": {
+							"vector": [0, 0, 0]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.2083": {
+							"vector": [0, 3, 0.25],
+							"easing": "easeInCubic"
+						},
+						"0.4167": {
+							"vector": [0, 1.25, -1.5]
+						},
+						"0.6667": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"animation.mimic.idle": {
+			"animation_length": 0.5,
+			"bones": {
+				"верх": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.25": {
+							"vector": [-22.5, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, 0, 0],
+							"easing": "easeInQuad"
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.25": {
+							"vector": [0, 2, 0]
+						},
+						"0.5": {
+							"vector": [0, 0, 0],
+							"easing": "easeInCubic"
+						}
+					}
+				}
+			}
+		},
+		"animation.mimic.attack": {
+			"animation_length": 0.7083,
+			"bones": {
+				"низ": {
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.1667": {
+							"vector": [0, 1, -4]
+						},
+						"0.3333": {
+							"vector": [0, 0, -2]
+						},
+						"0.4167": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"верх": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.1667": {
+							"vector": [-22.5, 0, 0]
+						},
+						"0.3333": {
+							"vector": [0, 0, 0]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.1667": {
+							"vector": [0, 2, -3]
+						},
+						"0.3333": {
+							"vector": [0, 0, -2]
+						},
+						"0.4167": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

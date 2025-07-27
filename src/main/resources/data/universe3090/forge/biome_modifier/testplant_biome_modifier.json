@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "universe3090:darkbiome",
+  "features": "universe3090:testplant",
+  "step": "vegetal_decoration"
+}

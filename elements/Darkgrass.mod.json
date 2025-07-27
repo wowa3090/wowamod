@@ -37,7 +37,7 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 2.5,
+    "hardness": 2.5999999999999996,
     "resistance": 25.0,
     "hasGravity": false,
     "isWaterloggable": false,
@@ -52,7 +52,7 @@
     "useLootTableForDrops": false,
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
-    "plantsGrowOn": false,
+    "plantsGrowOn": true,
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
@@ -81,7 +81,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "HYPHAE"
     },
     "breakSound": {
       "value": ""

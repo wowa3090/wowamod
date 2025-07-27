@@ -29,6 +29,9 @@
     "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "LaserBeam"
+    },
     "onEntityHitWith": {
       "name": "STBHswordLivingEntityIsHitWithTool"
     }

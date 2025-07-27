@@ -1,7 +1,7 @@
 {
   "parent": "universe3090:custom/wowa_sword",
   "textures": {
-    "0": "universe3090:block/texture_wowasword",
+    "0": "universe3090:block/texturewowasword",
     "particle": "universe3090:item/wowaswordanimation"
   }
 }

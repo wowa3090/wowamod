@@ -1,8 +1,7 @@
 {
   "parent": "universe3090:custom/shadow_blade",
   "textures": {
-    "0": "universe3090:block/texture_blade",
-    "1": "universe3090:block/texture_blade",
-    "particle": "universe3090:item/wowasword"
+    "0": "universe3090:block/textureshadowbladenew",
+    "particle": "universe3090:item/shadowblade"
   }
 }

@@ -7,10 +7,10 @@
       "options": {
         "type": "large_smoke"
       },
-      "probability": 0.0015
+      "probability": 0.0016
     },
     "foliage_color": -15269888,
-    "grass_color": -13565952,
+    "grass_color": -13092808,
     "sky_color": -16777216,
     "fog_color": -16777216,
     "water_color": -12123646,
@@ -22,7 +22,7 @@
         "type": "universe3090:mimic",
         "weight": 1,
         "minCount": 1,
-        "maxCount": 2
+        "maxCount": 3
       }
     ],
     "creature": [],
@@ -47,8 +47,7 @@
     [],
     [
       "universe3090:darkbiome_tree",
-      "minecraft:patch_grass_forest",
-      "minecraft:patch_dead_bush_2"
+      "minecraft:patch_grass_forest"
     ],
     []
   ]
