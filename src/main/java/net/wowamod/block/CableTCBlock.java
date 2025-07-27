@@ -71,12 +71,12 @@ public class CableTCBlock extends Block implements EntityBlock {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
-			default -> box(5, 5, 0, 11, 11, 16);
-			case NORTH -> box(5, 5, 0, 11, 11, 16);
-			case EAST -> box(0, 5, 5, 16, 11, 11);
-			case WEST -> box(0, 5, 5, 16, 11, 11);
-			case UP -> box(5, 0, 5, 11, 16, 11);
-			case DOWN -> box(5, 0, 5, 11, 16, 11);
+			default -> Shapes.or(box(5, 0, 5, 11, 16, 11), box(5, 5, 11, 11, 11, 16));
+			case NORTH -> Shapes.or(box(5, 0, 5, 11, 16, 11), box(5, 5, 0, 11, 11, 5));
+			case EAST -> Shapes.or(box(5, 0, 5, 11, 16, 11), box(11, 5, 5, 16, 11, 11));
+			case WEST -> Shapes.or(box(5, 0, 5, 11, 16, 11), box(0, 5, 5, 5, 11, 11));
+			case UP -> Shapes.or(box(5, 5, 0, 11, 11, 16), box(5, 11, 5, 11, 16, 11));
+			case DOWN -> Shapes.or(box(5, 5, 0, 11, 11, 16), box(5, 0, 5, 11, 5, 11));
 		};
 	}
 

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "dae"
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:ring"
+    },
+    "b": {
+      "item": "universe3090:rainbowemerald"
+    },
+    "c": {
+      "item": "universe3090:etheriumdark"
+    },
+    "d": {
+      "item": "universe3090:purplesoul"
+    },
+    "e": {
+      "item": "universe3090:yellowsoul"
+    }
+  },
+  "result": {
+    "item": "universe3090:clearetheriumlight",
+    "count": 1
+  }
+}

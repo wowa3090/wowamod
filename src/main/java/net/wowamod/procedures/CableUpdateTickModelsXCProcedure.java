@@ -30,7 +30,7 @@ public class CableUpdateTickModelsXCProcedure {
 		String nbtDownTagName = "";
 		if (!world.isClientSide()) {
 			blockSelector = Universe3090ModBlocks.CABLE_XC.get().defaultBlockState();
-			tagPath = "fe_system:cables/f/copper";
+			tagPath = "universe3090:cables/f/copper";
 			nbtNorthTagName = "cablesFCopperNorth";
 			nbtEastTagName = "cablesFCopperEast";
 			nbtSouthTagName = "cablesFCopperSouth";

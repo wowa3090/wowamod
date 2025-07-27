@@ -145,6 +145,7 @@ public class Universe3090ModVariables {
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "universe3090_mapvars";
 		public double solo = 0;
+		public double forgeFlow = 0;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -154,11 +155,13 @@ public class Universe3090ModVariables {
 
 		public void read(CompoundTag nbt) {
 			solo = nbt.getDouble("solo");
+			forgeFlow = nbt.getDouble("forgeFlow");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putDouble("solo", solo);
+			nbt.putDouble("forgeFlow", forgeFlow);
 			return nbt;
 		}
 

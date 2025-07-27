@@ -119,6 +119,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onBlockAdded": {
+      "name": "EmeraldCombinerBlockAdded"
+    },
+    "onNeighbourBlockChanges": {
+      "name": "EmeraldCombinerBlockAdded"
+    },
     "onTickUpdate": {
       "name": "EmeraldCraft"
     },

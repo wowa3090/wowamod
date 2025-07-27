@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Ring"
+      },
+      {
+        "value": "CUSTOM:Rainbowemerald"
+      },
+      {
+        "value": "CUSTOM:Ring"
+      },
+      {
+        "value": "CUSTOM:Ring"
+      },
+      {
+        "value": "CUSTOM:Etheriumdark"
+      },
+      {
+        "value": "CUSTOM:Ring"
+      },
+      {
+        "value": "CUSTOM:Purplesoul"
+      },
+      {
+        "value": "CUSTOM:Ring"
+      },
+      {
+        "value": "CUSTOM:Yellowsoul"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Clearetheriumlight"
+    },
+    "name": "clear_light_etherium_recipe",
+    "namespace": "mod"
+  }
+}

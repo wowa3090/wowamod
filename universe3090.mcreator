@@ -5726,6 +5726,100 @@
         ]
       },
       "path": "~/Cables"
+    },
+    {
+      "name": "SolarpanelgeneratorwBlockAdded",
+      "type": "procedure",
+      "sortid": 324,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solarpanelgeneratorw_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/SolarpanelgeneratorwBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ForgeFlowTimer",
+      "type": "procedure",
+      "sortid": 325,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forge_flow_timer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/ForgeFlowTimerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EmeraldCombinerBlockAdded",
+      "type": "procedure",
+      "sortid": 326,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_combiner_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/EmeraldCombinerBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ClearLightEtheriumRecipe",
+      "type": "recipe",
+      "sortid": 327,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clear_light_etherium_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/clear_light_etherium_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -5793,6 +5887,12 @@
       "name": "eci2",
       "type": "number",
       "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "forgeFlow",
+      "type": "number",
+      "scope": "map",
       "value": "0"
     }
   ],

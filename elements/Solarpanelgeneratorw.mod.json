@@ -119,6 +119,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onBlockAdded": {
+      "name": "SolarpanelgeneratorwBlockAdded"
+    },
+    "onNeighbourBlockChanges": {
+      "name": "SolarpanelgeneratorwBlockAdded"
+    },
     "onTickUpdate": {
       "name": "SolarpanelgeneratorwUpdateTick"
     },

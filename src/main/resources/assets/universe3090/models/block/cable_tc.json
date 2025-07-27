@@ -1,5 +1,5 @@
 {
-  "parent": "universe3090:custom/electrical_cable_i",
+  "parent": "universe3090:custom/electrical_cable_tc",
   "textures": {
     "all": "universe3090:block/electrical_cable",
     "particle": "universe3090:block/electrical_cable",

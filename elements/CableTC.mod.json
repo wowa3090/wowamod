@@ -9,7 +9,7 @@
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "electrical_cable_i:default",
+    "customModelName": "electrical_cable_tc:default",
     "rotationMode": 2,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -25,11 +25,20 @@
     "boundingBoxes": [
       {
         "mx": 5.0,
+        "my": 0.0,
+        "mz": 5.0,
+        "Mx": 11.0,
+        "My": 16.0,
+        "Mz": 11.0,
+        "subtract": false
+      },
+      {
+        "mx": 5.0,
         "my": 5.0,
         "mz": 0.0,
         "Mx": 11.0,
         "My": 11.0,
-        "Mz": 16.0,
+        "Mz": 5.0,
         "subtract": false
       }
     ],
