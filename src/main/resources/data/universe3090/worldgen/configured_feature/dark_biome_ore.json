@@ -1,7 +1,7 @@
 {
   "type": "minecraft:ore",
   "config": {
-    "size": 10,
+    "size": 12,
     "discard_chance_on_air_exposure": 0,
     "targets": [
       {
@@ -17,6 +17,42 @@
         "target": {
           "predicate_type": "tag_match",
           "tag": "minecraft:whatasvazka"
+        },
+        "state": {
+          "Name": "universe3090:dark_biome_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "universe3090:darkgrassblockniz"
+          }
+        },
+        "state": {
+          "Name": "universe3090:dark_biome_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:stone"
+          }
+        },
+        "state": {
+          "Name": "universe3090:dark_biome_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:deepslate",
+            "Properties": {
+              "axis": "y"
+            }
+          }
         },
         "state": {
           "Name": "universe3090:dark_biome_ore"

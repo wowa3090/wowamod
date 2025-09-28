@@ -70,7 +70,7 @@ public class Universe3090ModTrades {
 			event.getTrades().get(3).add(new BasicItemListing(new ItemStack(Items.EMERALD, 16),
 
 					new ItemStack(Universe3090ModItems.WHITEEMERALD.get()), 10, 5, 0.05f));
-			event.getTrades().get(4).add(new BasicItemListing(new ItemStack(Items.EMERALD, 20),
+			event.getTrades().get(4).add(new BasicItemListing(new ItemStack(Items.EMERALD, 25),
 
 					new ItemStack(Universe3090ModItems.RAINBOWEMERALD.get()), 10, 5, 0.05f));
 			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Universe3090ModItems.RAINBOWEMERALD.get()),

@@ -1,9 +1,8 @@
 package net.wowamod.client.gui;
 
 import net.wowamod.world.inventory.ExtractorintefaceMenu;
-import net.wowamod.procedures.AnimationextractorProcedure;
-import net.wowamod.network.ExtractorintefaceButtonMessage;
-import net.wowamod.Universe3090Mod;
+import net.wowamod.procedures.EciprocProcedure;
+import net.wowamod.procedures.CraftprogressProcedure;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
@@ -11,7 +10,6 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import java.util.HashMap;
@@ -23,7 +21,6 @@ public class ExtractorintefaceScreen extends AbstractContainerScreen<Extractorin
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	Button button_start;
 
 	public ExtractorintefaceScreen(ExtractorintefaceMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -77,12 +74,13 @@ public class ExtractorintefaceScreen extends AbstractContainerScreen<Extractorin
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.universe3090.extractorinteface.label_centrifuge"), 49, 12, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.universe3090.extractorinteface.label_empty"), 64, 38, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.universe3090.extractorinteface.label_empty1"), 85, 45, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.universe3090.extractorinteface.label_centrifuge"), 62, 10, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				AnimationextractorProcedure.execute(entity), 108, 53, -12829636, false);
+				CraftprogressProcedure.execute(world, x, y, z), 81, 38, -12829636, false);
+		guiGraphics.drawString(this.font,
+
+				EciprocProcedure.execute(world, x, y, z), -81, 4, -3289651, false);
 	}
 
 	@Override
@@ -93,13 +91,5 @@ public class ExtractorintefaceScreen extends AbstractContainerScreen<Extractorin
 	@Override
 	public void init() {
 		super.init();
-		button_start = Button.builder(Component.translatable("gui.universe3090.extractorinteface.button_start"), e -> {
-			if (true) {
-				Universe3090Mod.PACKET_HANDLER.sendToServer(new ExtractorintefaceButtonMessage(0, x, y, z));
-				ExtractorintefaceButtonMessage.handleButtonAction(entity, 0, x, y, z);
-			}
-		}).bounds(this.leftPos + 62, this.topPos + -22, 51, 20).build();
-		guistate.put("button:button_start", button_start);
-		this.addRenderableWidget(button_start);
 	}
 }

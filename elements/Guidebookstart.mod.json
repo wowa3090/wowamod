@@ -108,14 +108,14 @@
         "data": {
           "name": "label_zhielatielno_zapastis_miediu_i_zhiel",
           "text": {
-            "fixedValue": "Желательно запастись медью и железом"
+            "fixedValue": "Желательно запастись медью и железом и алюминием"
           },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "x": 120,
-          "y": 107
+          "x": 90,
+          "y": 108
         }
       },
       {

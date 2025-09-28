@@ -50,12 +50,10 @@ public class Universe3090ModBiomes {
 				// Inject biomes to biome source
 				if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
 					List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters().values());
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5346f, 1.75f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(0.1f, 0.6522f), Climate.Parameter.span(-1f, 1f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(-1.0126f, 1.0017f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("universe3090", "darkbiome")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5346f, 1.75f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(0.1f, 0.6522f), Climate.Parameter.span(-1f, 1f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(-1.0126f, 1.0017f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("universe3090", "darkbiome")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5346f, 1.75f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(0.1f, 0.6522f), Climate.Parameter.span(-1f, 1f),
-							Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-1.0126f, 1.0017f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("universe3090", "darkbiome")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.2111f, 0.9949f), Climate.Parameter.span(-0.4772f, 0.4983f), Climate.Parameter.span(0.1003f, 0.6336f), Climate.Parameter.span(-0.9412f, 0.9842f),
+							Climate.Parameter.point(0.0f), Climate.Parameter.span(-0.91f, 0.9411f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("universe3090", "darkbiome")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.2111f, 0.9949f), Climate.Parameter.span(-0.4772f, 0.4983f), Climate.Parameter.span(0.1003f, 0.6336f), Climate.Parameter.span(-0.9412f, 0.9842f),
+							Climate.Parameter.point(1.0f), Climate.Parameter.span(-0.91f, 0.9411f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("universe3090", "darkbiome")))));
 					chunkGenerator.biomeSource = MultiNoiseBiomeSource.createFromList(new Climate.ParameterList<>(parameters));
 					chunkGenerator.featuresPerStep = Suppliers
 							.memoize(() -> FeatureSorter.buildFeaturesPerStep(List.copyOf(chunkGenerator.biomeSource.possibleBiomes()), biome -> chunkGenerator.generationSettingsGetter.apply(biome).features(), true));
@@ -66,44 +64,8 @@ public class Universe3090ModBiomes {
 					SurfaceRules.RuleSource currentRuleSource = noiseGeneratorSettings.surfaceRule();
 					if (currentRuleSource instanceof SurfaceRules.SequenceRuleSource sequenceRuleSource) {
 						List<SurfaceRules.RuleSource> surfaceRules = new ArrayList<>(sequenceRuleSource.sequence());
-						surfaceRules.add(1, anySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("universe3090", "darkbiome")), Universe3090ModBlocks.DARKGRASS.get().defaultBlockState(),
-								Universe3090ModBlocks.DARKGRASSBLOCKNIZ.get().defaultBlockState(), Universe3090ModBlocks.DARKGRASSBLOCKNIZ.get().defaultBlockState()));
 						surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("universe3090", "darkbiome")), Universe3090ModBlocks.DARKGRASS.get().defaultBlockState(),
 								Universe3090ModBlocks.DARKGRASSBLOCKNIZ.get().defaultBlockState(), Universe3090ModBlocks.DARKGRASSBLOCKNIZ.get().defaultBlockState()));
-						NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(), noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
-								noiseGeneratorSettings.noiseRouter(), SurfaceRules.sequence(surfaceRules.toArray(SurfaceRules.RuleSource[]::new)), noiseGeneratorSettings.spawnTarget(), noiseGeneratorSettings.seaLevel(),
-								noiseGeneratorSettings.disableMobGeneration(), noiseGeneratorSettings.aquifersEnabled(), noiseGeneratorSettings.oreVeinsEnabled(), noiseGeneratorSettings.useLegacyRandomSource());
-						noiseGenerator.settings = new Holder.Direct<>(moddedNoiseGeneratorSettings);
-					}
-				}
-			}
-			if (dimensionType == dimensionTypeRegistry.getOrThrow(BuiltinDimensionTypes.NETHER)) {
-				ChunkGenerator chunkGenerator = levelStem.generator();
-				// Inject biomes to biome source
-				if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
-					List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters().values());
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5346f, 1.75f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(0.1f, 0.6522f), Climate.Parameter.span(-1f, 1f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(-1.0126f, 1.0017f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("universe3090", "darkbiome")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5346f, 1.75f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(0.1f, 0.6522f), Climate.Parameter.span(-1f, 1f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(-1.0126f, 1.0017f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("universe3090", "darkbiome")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(-1.0518f, 0.4551f), Climate.Parameter.span(0f, 0.0001f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("universe3090", "w_world_biome_one")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(-1.0518f, 0.4551f), Climate.Parameter.span(0f, 0.0001f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("universe3090", "w_world_biome_one")))));
-					chunkGenerator.biomeSource = MultiNoiseBiomeSource.createFromList(new Climate.ParameterList<>(parameters));
-					chunkGenerator.featuresPerStep = Suppliers
-							.memoize(() -> FeatureSorter.buildFeaturesPerStep(List.copyOf(chunkGenerator.biomeSource.possibleBiomes()), biome -> chunkGenerator.generationSettingsGetter.apply(biome).features(), true));
-				}
-				// Inject surface rules
-				if (chunkGenerator instanceof NoiseBasedChunkGenerator noiseGenerator) {
-					NoiseGeneratorSettings noiseGeneratorSettings = noiseGenerator.settings.value();
-					SurfaceRules.RuleSource currentRuleSource = noiseGeneratorSettings.surfaceRule();
-					if (currentRuleSource instanceof SurfaceRules.SequenceRuleSource sequenceRuleSource) {
-						List<SurfaceRules.RuleSource> surfaceRules = new ArrayList<>(sequenceRuleSource.sequence());
-						surfaceRules.add(2, anySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("universe3090", "darkbiome")), Universe3090ModBlocks.DARKGRASS.get().defaultBlockState(),
-								Universe3090ModBlocks.DARKGRASSBLOCKNIZ.get().defaultBlockState(), Universe3090ModBlocks.DARKGRASSBLOCKNIZ.get().defaultBlockState()));
-						surfaceRules.add(2, anySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("universe3090", "w_world_biome_one")), Universe3090ModBlocks.POGRANICHNIK.get().defaultBlockState(),
-								Universe3090ModBlocks.POGRANICHNIK.get().defaultBlockState(), Universe3090ModBlocks.POGRANICHNIK.get().defaultBlockState()));
 						NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(), noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
 								noiseGeneratorSettings.noiseRouter(), SurfaceRules.sequence(surfaceRules.toArray(SurfaceRules.RuleSource[]::new)), noiseGeneratorSettings.spawnTarget(), noiseGeneratorSettings.seaLevel(),
 								noiseGeneratorSettings.disableMobGeneration(), noiseGeneratorSettings.aquifersEnabled(), noiseGeneratorSettings.oreVeinsEnabled(), noiseGeneratorSettings.useLegacyRandomSource());
@@ -121,13 +83,5 @@ public class Universe3090ModBiomes {
 								SurfaceRules.ifTrue(SurfaceRules.stoneDepthCheck(0, false, 0, CaveSurface.FLOOR),
 										SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.waterBlockCheck(-1, 0), SurfaceRules.state(groundBlock)), SurfaceRules.state(underwaterBlock))),
 								SurfaceRules.ifTrue(SurfaceRules.stoneDepthCheck(0, true, 0, CaveSurface.FLOOR), SurfaceRules.state(undergroundBlock)))));
-	}
-
-	private static SurfaceRules.RuleSource anySurfaceRule(ResourceKey<Biome> biomeKey, BlockState groundBlock, BlockState undergroundBlock, BlockState underwaterBlock) {
-		return SurfaceRules.ifTrue(SurfaceRules.isBiome(biomeKey),
-				SurfaceRules.sequence(
-						SurfaceRules.ifTrue(SurfaceRules.stoneDepthCheck(0, false, 0, CaveSurface.FLOOR),
-								SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.waterBlockCheck(-1, 0), SurfaceRules.state(groundBlock)), SurfaceRules.state(underwaterBlock))),
-						SurfaceRules.ifTrue(SurfaceRules.stoneDepthCheck(0, true, 0, CaveSurface.FLOOR), SurfaceRules.state(undergroundBlock))));
 	}
 }

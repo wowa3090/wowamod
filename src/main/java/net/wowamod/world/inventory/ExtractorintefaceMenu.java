@@ -80,22 +80,17 @@ public class ExtractorintefaceMenu extends AbstractContainerMenu implements Supp
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 44, 35) {
 			private final int slot = 0;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return Universe3090ModItems.LIGHTBLUESOUL.get() == stack.getItem();
-			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 116, 34) {
-			private final int slot = 1;
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 116, 34) {
+			private final int slot = 2;
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 80, 58) {
-			private final int slot = 2;
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 80, 58) {
+			private final int slot = 1;
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {

@@ -131,12 +131,21 @@
       },
       {
         "value": "TAG:minecraft:whatasvazka"
+      },
+      {
+        "value": "CUSTOM:Darkgrassblockniz"
+      },
+      {
+        "value": "Blocks.STONE#0"
+      },
+      {
+        "value": "Blocks.DEEPSLATE"
       }
     ],
     "generationShape": "TRIANGLE",
-    "frequencyPerChunks": 7,
-    "frequencyOnChunk": 10,
+    "frequencyPerChunks": 8,
+    "frequencyOnChunk": 12,
     "minGenerateHeight": -60,
-    "maxGenerateHeight": 69
+    "maxGenerateHeight": 68
   }
 }

@@ -104,6 +104,10 @@ public class GuidebookScreen extends AbstractContainerScreen<GuidebookMenu> {
 		guistate.put("button:imagebutton_netherite_sword", imagebutton_netherite_sword);
 		this.addRenderableWidget(imagebutton_netherite_sword);
 		imagebutton_kolba = new ImageButton(this.leftPos + -112, this.topPos + 44, 16, 16, 0, 0, 16, new ResourceLocation("universe3090:textures/screens/atlas/imagebutton_kolba.png"), 16, 32, e -> {
+			if (true) {
+				Universe3090Mod.PACKET_HANDLER.sendToServer(new GuidebookButtonMessage(3, x, y, z));
+				GuidebookButtonMessage.handleButtonAction(entity, 3, x, y, z);
+			}
 		});
 		guistate.put("button:imagebutton_kolba", imagebutton_kolba);
 		this.addRenderableWidget(imagebutton_kolba);

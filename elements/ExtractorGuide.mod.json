@@ -1,0 +1,115 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "extractorinteface.png",
+          "use1Xscale": false,
+          "x": 126,
+          "y": 36
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "soul_patience.png",
+          "use1Xscale": false,
+          "x": 170,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "kolba.png",
+          "use1Xscale": false,
+          "x": 206,
+          "y": 93
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "kolba2.png",
+          "use1Xscale": false,
+          "x": 242,
+          "y": 69
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": ">"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 212,
+          "y": 74
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "soul.png",
+          "use1Xscale": false,
+          "x": 151,
+          "y": 70
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "redsoulkolba11.png",
+          "use1Xscale": false,
+          "x": 260,
+          "y": 69
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_nazad",
+          "text": "Назад",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Backguide"
+          },
+          "width": 51,
+          "height": 20,
+          "x": 190,
+          "y": 20
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "extractorimage.png",
+          "use1Xscale": false,
+          "x": 151,
+          "y": 35
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

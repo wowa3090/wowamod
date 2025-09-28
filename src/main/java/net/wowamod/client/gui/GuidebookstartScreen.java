@@ -76,7 +76,7 @@ public class GuidebookstartScreen extends AbstractContainerScreen<Guidebookstart
 		guiGraphics.drawString(this.font, Component.translatable("gui.universe3090.guidebookstart.label_dush"), 80, 22, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.universe3090.guidebookstart.label_izumrudov"), 80, 40, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.universe3090.guidebookstart.label_kozhi_mimika"), 59, 58, -1, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.universe3090.guidebookstart.label_zhielatielno_zapastis_miediu_i_zhiel"), -6, 70, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.universe3090.guidebookstart.label_zhielatielno_zapastis_miediu_i_zhiel"), -36, 71, -1, false);
 	}
 
 	@Override

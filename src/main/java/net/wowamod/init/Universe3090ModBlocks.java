@@ -77,13 +77,13 @@ public class Universe3090ModBlocks {
 	public static final RegistryObject<Block> REDSTONEPORT = REGISTRY.register("redstoneport", () -> new RedstoneportBlock());
 	public static final RegistryObject<Block> EXTRACTOR = REGISTRY.register("extractor", () -> new ExtractorBlock());
 	public static final RegistryObject<Block> DARK_IRON_MACHINE_CASING = REGISTRY.register("dark_iron_machine_casing", () -> new DarkIronMachineCasingBlock());
+	public static final RegistryObject<Block> SOLARPANELGENERATORW = REGISTRY.register("solarpanelgeneratorw", () -> new SolarpanelgeneratorwBlock());
+	public static final RegistryObject<Block> TESTPLANT = REGISTRY.register("testplant", () -> new TestplantBlock());
+	public static final RegistryObject<Block> CABLE_N = REGISTRY.register("cable_n", () -> new CableNBlock());
 	public static final RegistryObject<Block> CORRUPTED_SOULS_BLOCK = REGISTRY.register("corrupted_souls_block", () -> new CorruptedSoulsBlockBlock());
 	public static final RegistryObject<Block> BLACK_WALLS_MYPLACE = REGISTRY.register("black_walls_myplace", () -> new BlackWallsMyplaceBlock());
 	public static final RegistryObject<Block> MYPLACEZONE_PORTAL = REGISTRY.register("myplacezone_portal", () -> new MyplacezonePortalBlock());
 	public static final RegistryObject<Block> TRUEROSE = REGISTRY.register("truerose", () -> new TrueroseBlock());
-	public static final RegistryObject<Block> SOLARPANELGENERATORW = REGISTRY.register("solarpanelgeneratorw", () -> new SolarpanelgeneratorwBlock());
-	public static final RegistryObject<Block> TESTPLANT = REGISTRY.register("testplant", () -> new TestplantBlock());
-	public static final RegistryObject<Block> CABLE_N = REGISTRY.register("cable_n", () -> new CableNBlock());
 	public static final RegistryObject<Block> CABLE_E = REGISTRY.register("cable_e", () -> new CableEBlock());
 	public static final RegistryObject<Block> CABLE_I = REGISTRY.register("cable_i", () -> new CableIBlock());
 	public static final RegistryObject<Block> CABLE_F = REGISTRY.register("cable_f", () -> new CableFBlock());

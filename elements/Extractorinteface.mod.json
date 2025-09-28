@@ -14,7 +14,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Lightbluesoul"
+            "value": ""
           },
           "disablePlacement": {
             "fixedValue": false
@@ -31,7 +31,7 @@
       {
         "type": "outputslot",
         "data": {
-          "id": 1,
+          "id": 2,
           "disablePickup": {
             "fixedValue": false
           },
@@ -41,33 +41,18 @@
         }
       },
       {
-        "type": "button",
-        "data": {
-          "name": "button_start",
-          "text": "start",
-          "isUndecorated": false,
-          "onClick": {
-            "name": "Animationextractor2"
-          },
-          "width": 51,
-          "height": 20,
-          "x": 188,
-          "y": 15
-        }
-      },
-      {
         "type": "label",
         "data": {
           "name": "label_centrifuge",
           "text": {
-            "fixedValue": "Beta Centrifuge"
+            "fixedValue": "Centrifuge"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 175,
-          "y": 49
+          "x": 188,
+          "y": 47
         }
       },
       {
@@ -79,43 +64,13 @@
           "disablePlacement": {
             "fixedValue": false
           },
-          "id": 2,
+          "id": 1,
           "disablePickup": {
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
           "x": 205,
           "y": 94
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_empty",
-          "text": {
-            "fixedValue": "---------"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 190,
-          "y": 75
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_empty1",
-          "text": {
-            "fixedValue": "|"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 211,
-          "y": 82
         }
       },
       {
@@ -151,14 +106,30 @@
           "name": "label_animation",
           "text": {
             "fixedValue": "animation",
-            "name": "Animationextractor"
+            "name": "Craftprogress"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 234,
-          "y": 90
+          "x": 207,
+          "y": 75
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_eciproc",
+          "text": {
+            "fixedValue": "",
+            "name": "Eciproc"
+          },
+          "color": {
+            "value": -3289651,
+            "falpha": 0.0
+          },
+          "x": 45,
+          "y": 41
         }
       }
     ],

@@ -2,15 +2,15 @@
   "_fv": 57,
   "_type": "block",
   "definition": {
-    "texture": "constructorsblocks",
-    "textureTop": "portconstructor",
-    "textureLeft": "constructorsblocks",
-    "textureFront": "testtexturecentrifuge",
-    "textureRight": "constructorsblocks",
-    "textureBack": "constructorsblocks",
+    "texture": "emeraldcombinerwesteastetc",
+    "textureTop": "emeraldcombinertop",
+    "textureLeft": "emeraldcombinerwesteastetc",
+    "textureFront": "extractor_animation_finale",
+    "textureRight": "emeraldcombinerwesteastetc",
+    "textureBack": "emeraldcombinerwesteastetc",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 2,
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -58,7 +58,7 @@
     "material": {
       "value": "IRON"
     },
-    "tickRate": 0,
+    "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -105,7 +105,7 @@
     "hasInventory": true,
     "guiBoundTo": "Extractorinteface",
     "openGUIOnRightClick": true,
-    "inventorySize": 9,
+    "inventorySize": 3,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
@@ -116,7 +116,7 @@
     "energyCapacity": 80000,
     "energyMaxReceive": 256,
     "energyMaxExtract": 256,
-    "isFluidTank": true,
+    "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [
       {
@@ -126,6 +126,9 @@
         "value": "WATER"
       }
     ],
+    "onTickUpdate": {
+      "name": "ExtractorUpdateTick"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

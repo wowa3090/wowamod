@@ -30,7 +30,7 @@ public class SolarpanelgeneratorwUpdateTickProcedure {
 		}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == Universe3090ModItems.RAINBOWEMERALD.get()) {
 			multiplayer = 3;
 		} else {
-			multiplayer = 1;
+			multiplayer = 1.5;
 		}
 		if (world instanceof Level _lvl2 && _lvl2.isDay() && world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z))) {
 			if (new Object() {

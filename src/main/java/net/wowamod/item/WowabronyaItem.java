@@ -50,7 +50,7 @@ public abstract class WowabronyaItem extends ArmorItem {
 
 			@Override
 			public int getDefenseForType(ArmorItem.Type type) {
-				return new int[]{8, 12, 14, 8}[type.getSlot().getIndex()];
+				return new int[]{1, 4, 5, 2}[type.getSlot().getIndex()];
 			}
 
 			@Override

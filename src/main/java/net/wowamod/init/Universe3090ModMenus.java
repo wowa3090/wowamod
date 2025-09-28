@@ -10,6 +10,7 @@ import net.wowamod.world.inventory.PortConstructoraMenu;
 import net.wowamod.world.inventory.GuidebookstartMenu;
 import net.wowamod.world.inventory.GuidebookMenu;
 import net.wowamod.world.inventory.ExtractorintefaceMenu;
+import net.wowamod.world.inventory.ExtractorGuideMenu;
 import net.wowamod.world.inventory.ECIMenu;
 import net.wowamod.world.inventory.ConstructorinterfaceMenu;
 import net.wowamod.Universe3090Mod;
@@ -31,4 +32,5 @@ public class Universe3090ModMenus {
 	public static final RegistryObject<MenuType<GuidebookstartMenu>> GUIDEBOOKSTART = REGISTRY.register("guidebookstart", () -> IForgeMenuType.create(GuidebookstartMenu::new));
 	public static final RegistryObject<MenuType<ECIMenu>> ECI = REGISTRY.register("eci", () -> IForgeMenuType.create(ECIMenu::new));
 	public static final RegistryObject<MenuType<SolarpanelmenuMenu>> SOLARPANELMENU = REGISTRY.register("solarpanelmenu", () -> IForgeMenuType.create(SolarpanelmenuMenu::new));
+	public static final RegistryObject<MenuType<ExtractorGuideMenu>> EXTRACTOR_GUIDE = REGISTRY.register("extractor_guide", () -> IForgeMenuType.create(ExtractorGuideMenu::new));
 }

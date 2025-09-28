@@ -1,18 +1,15 @@
 package net.wowamod.block.entity;
 
 import net.wowamod.world.inventory.ExtractorintefaceMenu;
-import net.wowamod.init.Universe3090ModFluids;
 import net.wowamod.init.Universe3090ModBlockEntities;
 
 import net.minecraftforge.items.wrapper.SidedInvWrapper;
 import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.fluids.capability.templates.FluidTank;
 import net.minecraftforge.energy.EnergyStorage;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.capabilities.Capability;
 
-import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
 import net.minecraft.world.item.ItemStack;
@@ -36,7 +33,7 @@ import java.util.stream.IntStream;
 import io.netty.buffer.Unpooled;
 
 public class ExtractorBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
+	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(3, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public ExtractorBlockEntity(BlockPos position, BlockState state) {
@@ -51,8 +48,6 @@ public class ExtractorBlockEntity extends RandomizableContainerBlockEntity imple
 		ContainerHelper.loadAllItems(compound, this.stacks);
 		if (compound.get("energyStorage") instanceof IntTag intTag)
 			energyStorage.deserializeNBT(intTag);
-		if (compound.get("fluidTank") instanceof CompoundTag compoundTag)
-			fluidTank.readFromNBT(compoundTag);
 	}
 
 	@Override
@@ -62,7 +57,6 @@ public class ExtractorBlockEntity extends RandomizableContainerBlockEntity imple
 			ContainerHelper.saveAllItems(compound, this.stacks);
 		}
 		compound.put("energyStorage", energyStorage.serializeNBT());
-		compound.put("fluidTank", fluidTank.writeToNBT(new CompoundTag()));
 	}
 
 	@Override
@@ -159,20 +153,6 @@ public class ExtractorBlockEntity extends RandomizableContainerBlockEntity imple
 			return retval;
 		}
 	};
-	private final FluidTank fluidTank = new FluidTank(8000, fs -> {
-		if (fs.getFluid() == Universe3090ModFluids.EXTRACTGOLUBAYSOUL.get())
-			return true;
-		if (fs.getFluid() == Fluids.WATER)
-			return true;
-		return false;
-	}) {
-		@Override
-		protected void onContentsChanged() {
-			super.onContentsChanged();
-			setChanged();
-			level.sendBlockUpdated(worldPosition, level.getBlockState(worldPosition), level.getBlockState(worldPosition), 2);
-		}
-	};
 
 	@Override
 	public <T> LazyOptional<T> getCapability(Capability<T> capability, @Nullable Direction facing) {
@@ -180,8 +160,6 @@ public class ExtractorBlockEntity extends RandomizableContainerBlockEntity imple
 			return handlers[facing.ordinal()].cast();
 		if (!this.remove && capability == ForgeCapabilities.ENERGY)
 			return LazyOptional.of(() -> energyStorage).cast();
-		if (!this.remove && capability == ForgeCapabilities.FLUID_HANDLER)
-			return LazyOptional.of(() -> fluidTank).cast();
 		return super.getCapability(capability, facing);
 	}
 

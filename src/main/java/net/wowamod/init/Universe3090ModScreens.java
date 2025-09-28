@@ -10,6 +10,7 @@ import net.wowamod.client.gui.PortConstructoraScreen;
 import net.wowamod.client.gui.GuidebookstartScreen;
 import net.wowamod.client.gui.GuidebookScreen;
 import net.wowamod.client.gui.ExtractorintefaceScreen;
+import net.wowamod.client.gui.ExtractorGuideScreen;
 import net.wowamod.client.gui.ECIScreen;
 import net.wowamod.client.gui.ConstructorinterfaceScreen;
 
@@ -33,6 +34,7 @@ public class Universe3090ModScreens {
 			MenuScreens.register(Universe3090ModMenus.GUIDEBOOKSTART.get(), GuidebookstartScreen::new);
 			MenuScreens.register(Universe3090ModMenus.ECI.get(), ECIScreen::new);
 			MenuScreens.register(Universe3090ModMenus.SOLARPANELMENU.get(), SolarpanelmenuScreen::new);
+			MenuScreens.register(Universe3090ModMenus.EXTRACTOR_GUIDE.get(), ExtractorGuideScreen::new);
 		});
 	}
 }

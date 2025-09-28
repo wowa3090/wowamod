@@ -53,27 +53,27 @@
     "rainingPossibility": 0.0,
     "temperature": 1.0,
     "spawnBiome": true,
-    "spawnInCaves": true,
-    "spawnBiomeNether": true,
+    "spawnInCaves": false,
+    "spawnBiomeNether": false,
     "genTemperature": {
-      "min": -0.5346,
-      "max": 1.75
+      "min": -0.2111,
+      "max": 0.9949
     },
     "genHumidity": {
-      "min": -0.5,
-      "max": 0.5
+      "min": -0.4772,
+      "max": 0.4983
     },
     "genContinentalness": {
-      "min": 0.1,
-      "max": 0.6522
+      "min": 0.1003,
+      "max": 0.6336
     },
     "genErosion": {
-      "min": -1.0,
-      "max": 1.0
+      "min": -0.9412,
+      "max": 0.9842
     },
     "genWeirdness": {
-      "min": -1.0126,
-      "max": 1.0017
+      "min": -0.91,
+      "max": 0.9411
     },
     "treesPerChunk": 1,
     "vanillaTreeType": "Big trees",
@@ -123,7 +123,7 @@
           "value": "CUSTOM:Mimic"
         },
         "minGroup": 1,
-        "maxGroup": 3,
+        "maxGroup": 2,
         "weight": 1,
         "spawnType": "monster"
       }

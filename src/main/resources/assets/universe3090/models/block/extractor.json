@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "universe3090:block/constructorsblocks",
-    "up": "universe3090:block/portconstructor",
-    "north": "universe3090:block/testtexturecentrifuge",
-    "east": "universe3090:block/constructorsblocks",
-    "south": "universe3090:block/constructorsblocks",
-    "west": "universe3090:block/constructorsblocks",
-    "particle": "universe3090:block/constructorsblocks"
+    "down": "universe3090:block/emeraldcombinerwesteastetc",
+    "up": "universe3090:block/emeraldcombinertop",
+    "north": "universe3090:block/extractor_animation_finale",
+    "east": "universe3090:block/emeraldcombinerwesteastetc",
+    "south": "universe3090:block/emeraldcombinerwesteastetc",
+    "west": "universe3090:block/emeraldcombinerwesteastetc",
+    "particle": "universe3090:block/emeraldcombinerwesteastetc"
   },
   "render_type": "solid"
 }

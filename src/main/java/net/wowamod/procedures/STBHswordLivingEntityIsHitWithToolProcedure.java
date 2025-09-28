@@ -31,7 +31,7 @@ public class STBHswordLivingEntityIsHitWithToolProcedure {
 			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("universe3090:soulsworddamage")))),
 					(float) Mth.nextDouble(RandomSource.create(), 33, 99));
 			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("universe3090:soulsworddamage")))),
-					(float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 1.33));
+					(float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 1.5));
 			if (world instanceof Level _level && !_level.isClientSide())
 				_level.explode(entity, new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("universe3090:soulsworddamage")))), null, x, y, z,
 						5, true, Level.ExplosionInteraction.MOB);

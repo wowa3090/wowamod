@@ -3,6 +3,7 @@ package net.wowamod.network;
 
 import net.wowamod.world.inventory.GuidebookMenu;
 import net.wowamod.procedures.StartguidebookProcedure;
+import net.wowamod.procedures.GuidebookextractorProcedure;
 import net.wowamod.Universe3090Mod;
 
 import net.minecraftforge.network.NetworkEvent;
@@ -65,6 +66,10 @@ public class GuidebookButtonMessage {
 		if (buttonID == 2) {
 
 			StartguidebookProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 3) {
+
+			GuidebookextractorProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

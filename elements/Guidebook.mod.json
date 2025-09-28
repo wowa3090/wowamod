@@ -94,6 +94,9 @@
           "name": "imagebutton_kolba",
           "image": "kolba.png",
           "hoveredImage": "",
+          "onClick": {
+            "name": "Guidebookextractor"
+          },
           "x": 14,
           "y": 81
         }
