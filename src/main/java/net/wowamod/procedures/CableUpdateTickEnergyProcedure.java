@@ -3,7 +3,6 @@ package net.wowamod.procedures;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.energy.IEnergyStorage;
 
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
@@ -14,14 +13,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CableUpdateTickEnergyProcedure {
-    // Define the maximum amount of energy that can be transferred per tick
-    private static final int MAX_TRANSFER_RATE = 1000; // Adjust as needed
-    // Define energy loss percentage (0.0 = no loss, 0.1 = 10% loss, etc.)
-    private static final double ENERGY_LOSS_FACTOR = 0.05; // 5% loss per hop
+    // Увеличенная скорость передачи энергии
+    private static final int MAX_TRANSFER_RATE = 25000; // Увеличено с 1000 до 5000
+    // Энергетические потери (0.0 = без потерь)
+    private static final double ENERGY_LOSS_FACTOR = 0.00; // Уменьшено с 0.05 до 0.02
 
     public static void execute(LevelAccessor world, double x, double y, double z) {
         if (world.isClientSide()) {
-            return; // Don't run on client side
+            return; // Не запускать на клиентской стороне
         }
 
         BlockPos currentPos = BlockPos.containing(x, y, z);
@@ -31,82 +30,91 @@ public class CableUpdateTickEnergyProcedure {
             return;
         }
 
-        // Get the energy capability of the current cable block
+        // Получаем энергетическую способность текущего кабеля
         IEnergyStorage currentEnergyStorage = currentBlockEntity.getCapability(ForgeCapabilities.ENERGY, null).orElse(null);
         if (currentEnergyStorage == null || !currentEnergyStorage.canExtract()) {
-            return; // Can't extract energy from this block
+            return; // Не можем извлекать энергию из этого блока
         }
 
-        // Find all valid adjacent blocks that can receive energy
+        // Проверяем, есть ли энергия для передачи
+        int availableEnergy = currentEnergyStorage.getEnergyStored();
+        if (availableEnergy <= 0) {
+            return; // Нет энергии для передачи
+        }
+
+        // Находим все допустимые соседние блоки, которые могут принимать энергию
         List<EnergyTransferTarget> targets = new ArrayList<>();
+        
+        // Проверяем все 6 направлений
         for (Direction direction : Direction.values()) {
             BlockPos neighborPos = currentPos.relative(direction);
             BlockEntity neighborEntity = world.getBlockEntity(neighborPos);
             
             if (neighborEntity != null) {
+                // Проверяем, может ли соседний блок принимать энергию с противоположного направления
                 IEnergyStorage neighborEnergyStorage = neighborEntity.getCapability(ForgeCapabilities.ENERGY, direction.getOpposite()).orElse(null);
                 
-                if (neighborEnergyStorage != null && neighborEnergyStorage.canReceive() && 
+                if (neighborEnergyStorage != null && 
+                    neighborEnergyStorage.canReceive() && 
                     neighborEnergyStorage.getEnergyStored() < neighborEnergyStorage.getMaxEnergyStored()) {
+                    
+                    // Добавляем в список только если блок может принять энергию
                     targets.add(new EnergyTransferTarget(neighborPos, neighborEntity, neighborEnergyStorage, direction.getOpposite()));
                 }
             }
         }
 
-        // If there are no valid targets, nothing to do
+        // Если нет подходящих целей, выходим
         if (targets.isEmpty()) {
             return;
         }
 
-        // Calculate how much energy we can extract from the current block
-        int availableEnergy = currentEnergyStorage.getEnergyStored();
-        if (availableEnergy <= 0) {
-            return; // No energy to transfer
-        }
-
-        // Distribute energy equally among all valid targets
-        int energyPerTarget = availableEnergy / targets.size();
-        if (energyPerTarget <= 0) {
-            return; // Not enough energy to distribute
-        }
+        // Рассчитываем, сколько энергии можем передать
+        int totalPossibleTransfer = Math.min(availableEnergy, MAX_TRANSFER_RATE);
+        int energyPerTarget = totalPossibleTransfer / Math.max(1, targets.size());
 
         int totalTransferred = 0;
         
-        // Transfer energy to each target
+        // Передаём энергию каждой цели
         for (EnergyTransferTarget target : targets) {
             if (currentEnergyStorage.getEnergyStored() <= 0) {
-                break; // No more energy to transfer
+                break; // Нет энергии для передачи
             }
 
-            // Calculate transfer amount considering the loss factor
-            int extractAmount = Math.min(energyPerTarget, MAX_TRANSFER_RATE);
-            int energyToTransfer = (int) (extractAmount * (1.0 - ENERGY_LOSS_FACTOR));
+            // Определяем, сколько энергии будем передавать
+            int amountToExtract = Math.min(energyPerTarget, MAX_TRANSFER_RATE);
+            int energyAfterLoss = (int) (amountToExtract * (5.0 - ENERGY_LOSS_FACTOR));
+
+            // Проверяем, сколько энергии может принять целевой блок
+            int maxReceive = target.energyStorage.receiveEnergy(energyAfterLoss, true);
             
-            // Simulate receiving energy to see how much can actually be accepted
-            int simulatedReceived = target.energyStorage.receiveEnergy(energyToTransfer, true);
-            
-            // Extract energy from the current block
-            int extracted = currentEnergyStorage.extractEnergy(extractAmount, false);
-            
-            // Actually transfer the energy to the target
-            if (extracted > 0 && simulatedReceived > 0) {
-                int actualReceived = target.energyStorage.receiveEnergy(Math.min(extracted, simulatedReceived), false);
-                totalTransferred += actualReceived;
+            if (maxReceive > 0) {
+                // Извлекаем энергию из текущего блока
+                int extracted = currentEnergyStorage.extractEnergy(amountToExtract, false);
                 
-                // Update the neighbor block entity if needed
-                if (world instanceof Level level) {
-                    level.sendBlockUpdated(target.pos, world.getBlockState(target.pos), world.getBlockState(target.pos), 3);
+                if (extracted > 0) {
+                    // Передаём энергию в целевой блок
+                    int received = target.energyStorage.receiveEnergy(Math.min(extracted, maxReceive), false);
+                    
+                    if (received > 0) {
+                        totalTransferred += received;
+                        
+                        // Обновляем целевой блок
+                        if (world instanceof Level level) {
+                            level.sendBlockUpdated(target.pos, world.getBlockState(target.pos), world.getBlockState(target.pos), 3);
+                        }
+                    }
                 }
             }
         }
 
-        // Update the current block entity if energy was transferred
+        // Обновляем текущий блок, если энергия была передана
         if (totalTransferred > 0 && world instanceof Level level) {
             level.sendBlockUpdated(currentPos, world.getBlockState(currentPos), world.getBlockState(currentPos), 3);
         }
     }
 
-    // Helper class to store information about energy transfer targets
+    // Вспомогательный класс для хранения информации о целях передачи энергии
     private static class EnergyTransferTarget {
         public final BlockPos pos;
         public final BlockEntity blockEntity;

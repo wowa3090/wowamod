@@ -113,9 +113,9 @@
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": true,
     "energyInitial": 0,
-    "energyCapacity": 80000,
+    "energyCapacity": 100000,
     "energyMaxReceive": 256,
-    "energyMaxExtract": 256,
+    "energyMaxExtract": 0,
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [
@@ -126,6 +126,12 @@
         "value": "WATER"
       }
     ],
+    "onBlockAdded": {
+      "name": "EmeraldCombinerBlockAdded"
+    },
+    "onNeighbourBlockChanges": {
+      "name": "EmeraldCombinerBlockAdded"
+    },
     "onTickUpdate": {
       "name": "ExtractorUpdateTick"
     },

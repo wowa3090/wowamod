@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:izolationw"
+    },
+    "b": {
+      "item": "universe3090:aluminium_plate"
+    }
+  },
+  "result": {
+    "item": "universe3090:cable_n",
+    "count": 4
+  }
+}

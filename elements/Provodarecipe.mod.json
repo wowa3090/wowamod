@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Izolationw"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Izolationw"
+      },
+      {
+        "value": "CUSTOM:AluminiumPlate"
+      },
+      {
+        "value": "CUSTOM:Izolationw"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Izolationw"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CableN"
+    },
+    "name": "provodarecipe",
+    "namespace": "mod"
+  }
+}
