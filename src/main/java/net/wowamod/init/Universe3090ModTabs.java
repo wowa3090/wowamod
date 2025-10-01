@@ -136,6 +136,7 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModBlocks.BLACK_WALLS_MYPLACE.get().asItem());
 				tabData.accept(Universe3090ModItems.MYPLACEZONE.get());
 				tabData.accept(Universe3090ModBlocks.TRUEROSE.get().asItem());
+				tabData.accept(Universe3090ModItems.DARK_HEAD_SPAWN_EGG.get());
 			})
 
 					.build());

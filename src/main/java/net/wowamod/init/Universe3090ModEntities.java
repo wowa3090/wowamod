@@ -6,6 +6,7 @@ package net.wowamod.init;
 
 import net.wowamod.entity.NightmareEntity;
 import net.wowamod.entity.MimicEntity;
+import net.wowamod.entity.DarkHeadEntity;
 import net.wowamod.Universe3090Mod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -29,6 +30,10 @@ public class Universe3090ModEntities {
 			EntityType.Builder.<MimicEntity>of(MimicEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MimicEntity::new)
 
 					.sized(1.5f, 1.5f));
+	public static final RegistryObject<EntityType<DarkHeadEntity>> DARK_HEAD = register("dark_head",
+			EntityType.Builder.<DarkHeadEntity>of(DarkHeadEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DarkHeadEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -39,6 +44,7 @@ public class Universe3090ModEntities {
 		event.enqueueWork(() -> {
 			NightmareEntity.init();
 			MimicEntity.init();
+			DarkHeadEntity.init();
 		});
 	}
 
@@ -46,5 +52,6 @@ public class Universe3090ModEntities {
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(NIGHTMARE.get(), NightmareEntity.createAttributes().build());
 		event.put(MIMIC.get(), MimicEntity.createAttributes().build());
+		event.put(DARK_HEAD.get(), DarkHeadEntity.createAttributes().build());
 	}
 }

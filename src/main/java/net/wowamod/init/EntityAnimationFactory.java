@@ -1,6 +1,7 @@
 package net.wowamod.init;
 
 import net.wowamod.entity.MimicEntity;
+import net.wowamod.entity.DarkHeadEntity;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -12,6 +13,13 @@ public class EntityAnimationFactory {
 	public static void onEntityTick(LivingEvent.LivingTickEvent event) {
 		if (event != null && event.getEntity() != null) {
 			if (event.getEntity() instanceof MimicEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof DarkHeadEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

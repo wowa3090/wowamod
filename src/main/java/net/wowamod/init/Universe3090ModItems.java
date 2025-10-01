@@ -231,6 +231,7 @@ public class Universe3090ModItems {
 	public static final RegistryObject<Item> CABLE_X = block(Universe3090ModBlocks.CABLE_X);
 	public static final RegistryObject<Item> CABLE_XC = block(Universe3090ModBlocks.CABLE_XC);
 	public static final RegistryObject<Item> CABLE_S = block(Universe3090ModBlocks.CABLE_S);
+	public static final RegistryObject<Item> DARK_HEAD_SPAWN_EGG = REGISTRY.register("dark_head_spawn_egg", () -> new ForgeSpawnEggItem(Universe3090ModEntities.DARK_HEAD, -16777216, -16777216, new Item.Properties()));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

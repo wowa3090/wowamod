@@ -71,7 +71,7 @@ public class CableUpdateTickEnergyProcedure {
 
         // Рассчитываем, сколько энергии можем передать
         int totalPossibleTransfer = Math.min(availableEnergy, MAX_TRANSFER_RATE);
-        int energyPerTarget = totalPossibleTransfer / Math.max(1, targets.size());
+        int energyPerTarget = totalPossibleTransfer / Math.max(2, targets.size());
 
         int totalTransferred = 0;
         
@@ -83,7 +83,7 @@ public class CableUpdateTickEnergyProcedure {
 
             // Определяем, сколько энергии будем передавать
             int amountToExtract = Math.min(energyPerTarget, MAX_TRANSFER_RATE);
-            int energyAfterLoss = (int) (amountToExtract * (5.0 - ENERGY_LOSS_FACTOR));
+            int energyAfterLoss = (int) (amountToExtract * (2.0 - ENERGY_LOSS_FACTOR));
 
             // Проверяем, сколько энергии может принять целевой блок
             int maxReceive = target.energyStorage.receiveEnergy(energyAfterLoss, true);
