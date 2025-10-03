@@ -5914,7 +5914,7 @@
       "type": "tool",
       "sortid": 330,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "reddiamondmultitoolplusw",
       "metadata": {
         "files": [
@@ -5934,6 +5934,20 @@
         "files": [
           "src/main/resources/data/universe3090/recipes/reddiamondmultitoolpluisrecipe.json"
         ]
+      }
+    },
+    {
+      "name": "Rdmtpprocedure",
+      "type": "procedure",
+      "sortid": 332,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "rdmtpprocedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/RdmtpprocedureProcedure.java"
+        ],
+        "dependencies": []
       }
     }
   ],

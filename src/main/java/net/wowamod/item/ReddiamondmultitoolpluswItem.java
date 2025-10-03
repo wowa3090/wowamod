@@ -1,6 +1,7 @@
 
 package net.wowamod.item;
 
+import net.wowamod.procedures.RdmtpprocedureProcedure;
 import net.wowamod.init.Universe3090ModItems;
 
 import net.minecraftforge.common.ToolActions;
@@ -32,11 +33,11 @@ public class ReddiamondmultitoolpluswItem extends TieredItem {
 	public ReddiamondmultitoolpluswItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 2999;
+				return 4999;
 			}
 
 			public float getSpeed() {
-				return 10f;
+				return 10.5f;
 			}
 
 			public float getAttackDamageBonus() {
@@ -48,7 +49,7 @@ public class ReddiamondmultitoolpluswItem extends TieredItem {
 			}
 
 			public int getEnchantmentValue() {
-				return 24;
+				return 25;
 			}
 
 			public Ingredient getRepairIngredient() {
@@ -96,8 +97,11 @@ public class ReddiamondmultitoolpluswItem extends TieredItem {
 
 	@Override
 	public boolean mineBlock(ItemStack itemstack, Level world, BlockState blockstate, BlockPos pos, LivingEntity entity) {
-		itemstack.hurtAndBreak(1, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
-		return true;
+	    itemstack.hurtAndBreak(1, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
+	    // --- Изменённая строка ---
+	    RdmtpprocedureProcedure.execute(entity, world, pos.getX(), pos.getY(), pos.getZ(), itemstack);
+	    // --- Конец изменений ---
+	    return true;
 	}
 
 	@Override
