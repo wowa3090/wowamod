@@ -36,7 +36,7 @@ public class DiamondMultiToolwItem extends TieredItem {
 			}
 
 			public float getSpeed() {
-				return 9.5f;
+				return 12f;
 			}
 
 			public float getAttackDamageBonus() {
@@ -79,7 +79,7 @@ public class DiamondMultiToolwItem extends TieredItem {
 
 	@Override
 	public float getDestroySpeed(ItemStack itemstack, BlockState blockstate) {
-		return 9.5f;
+		return 12f;
 	}
 
 	@Override
