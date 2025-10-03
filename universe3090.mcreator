@@ -5949,6 +5949,33 @@
         ],
         "dependencies": []
       }
+    },
+    {
+      "name": "Reddiamondlapis",
+      "type": "item",
+      "sortid": 333,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reddiamondlapis",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/ReddiamondlapisItem.java",
+          "src/main/resources/assets/universe3090/models/item/reddiamondlapis.json"
+        ]
+      }
+    },
+    {
+      "name": "Reddiamondlapisrecipe",
+      "type": "recipe",
+      "sortid": 334,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reddiamondlapisrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/reddiamondlapisrecipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -6485,6 +6512,7 @@
       "item.wowamod.extractredsoul": "Экстракт красной души",
       "tooltip.wowamod.stbhsword.ability1": "testability",
       "tooltip.wowamod.stbhsword.ability2": "testability",
+      "item.universe3090.reddiamondlapis": "Reddiamondlapis",
       "item.wowamodfabric.dissasebmlyrequired.desc": "Dissasebmly Required",
       "block.wowamod.dark_strk_blk": "Блок Отростка Тьмы",
       "block.wowamodfabric.interfaceconstructor": "Интерфейс",
@@ -6910,6 +6938,7 @@
       "item.wowamod.extractredsoul": "Экстракт красной души",
       "tooltip.wowamod.stbhsword.ability1": "",
       "tooltip.wowamod.stbhsword.ability2": "",
+      "item.universe3090.reddiamondlapis": "Reddiamondlapis",
       "item.wowamodfabric.dissasebmlyrequired.desc": "Dissasebmly Required",
       "block.wowamod.dark_strk_blk": "Блок Отростка Тьмы",
       "block.wowamodfabric.interfaceconstructor": "Интерфейс конструктора",

@@ -29,6 +29,7 @@ import net.wowamod.item.RedsoulpieceItem;
 import net.wowamod.item.RedsoulItem;
 import net.wowamod.item.RedemeraldItem;
 import net.wowamod.item.ReddiamondmultitoolpluswItem;
+import net.wowamod.item.ReddiamondlapisItem;
 import net.wowamod.item.RedEmeraldPieceItem;
 import net.wowamod.item.RainbowemeraldItem;
 import net.wowamod.item.PurplesoulpieceItem;
@@ -238,6 +239,7 @@ public class Universe3090ModItems {
 	public static final RegistryObject<Item> DIAMOND_MULTI_TOOLW = REGISTRY.register("diamond_multi_toolw", () -> new DiamondMultiToolwItem());
 	public static final RegistryObject<Item> DIAMONDLAPIS = REGISTRY.register("diamondlapis", () -> new DiamondlapisItem());
 	public static final RegistryObject<Item> REDDIAMONDMULTITOOLPLUSW = REGISTRY.register("reddiamondmultitoolplusw", () -> new ReddiamondmultitoolpluswItem());
+	public static final RegistryObject<Item> REDDIAMONDLAPIS = REGISTRY.register("reddiamondlapis", () -> new ReddiamondlapisItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

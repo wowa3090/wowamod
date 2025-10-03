@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "universe3090:diamondlapis"
+  },
+  "base": {
+    "item": "minecraft:redstone_block"
+  },
+  "addition": {
+    "item": "universe3090:redemerald"
+  },
+  "result": {
+    "item": "universe3090:reddiamondlapis"
+  }
+}

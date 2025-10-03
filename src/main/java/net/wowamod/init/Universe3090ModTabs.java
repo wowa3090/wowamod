@@ -129,6 +129,7 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.DIAMOND_MULTI_TOOLW.get());
 				tabData.accept(Universe3090ModItems.DIAMONDLAPIS.get());
 				tabData.accept(Universe3090ModItems.REDDIAMONDMULTITOOLPLUSW.get());
+				tabData.accept(Universe3090ModItems.REDDIAMONDLAPIS.get());
 			})
 
 					.build());
