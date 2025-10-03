@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Redemerald"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Etheriumdark"
+      },
+      {
+        "value": "CUSTOM:DiamondMultiToolw"
+      },
+      {
+        "value": "CUSTOM:Etheriumdark"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Blackironingot"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Reddiamondmultitoolplusw"
+    },
+    "name": "reddiamondmultitoolpluisrecipe",
+    "namespace": "mod"
+  }
+}

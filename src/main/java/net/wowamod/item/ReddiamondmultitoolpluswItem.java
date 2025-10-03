@@ -28,15 +28,15 @@ import java.util.List;
 import com.google.common.collect.Multimap;
 import com.google.common.collect.ImmutableMultimap;
 
-public class DiamondMultiToolwItem extends TieredItem {
-	public DiamondMultiToolwItem() {
+public class ReddiamondmultitoolpluswItem extends TieredItem {
+	public ReddiamondmultitoolpluswItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 2560;
+				return 2999;
 			}
 
 			public float getSpeed() {
-				return 9.5f;
+				return 10f;
 			}
 
 			public float getAttackDamageBonus() {
@@ -44,22 +44,22 @@ public class DiamondMultiToolwItem extends TieredItem {
 			}
 
 			public int getLevel() {
-				return 3;
+				return 4;
 			}
 
 			public int getEnchantmentValue() {
-				return 22;
+				return 24;
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(Universe3090ModItems.DIAMONDLAPIS.get()));
+				return Ingredient.of(new ItemStack(Universe3090ModItems.REDEMERALD.get()));
 			}
 		}, new Item.Properties());
 	}
 
 	@Override
 	public boolean isCorrectToolForDrops(BlockState blockstate) {
-		int tier = 3;
+		int tier = 4;
 		if (tier < 3 && blockstate.is(BlockTags.NEEDS_DIAMOND_TOOL)) {
 			return false;
 		} else if (tier < 2 && blockstate.is(BlockTags.NEEDS_IRON_TOOL)) {
@@ -79,7 +79,7 @@ public class DiamondMultiToolwItem extends TieredItem {
 
 	@Override
 	public float getDestroySpeed(ItemStack itemstack, BlockState blockstate) {
-		return 9.5f;
+		return 10f;
 	}
 
 	@Override
@@ -88,7 +88,7 @@ public class DiamondMultiToolwItem extends TieredItem {
 			ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
 			builder.putAll(super.getDefaultAttributeModifiers(equipmentSlot));
 			builder.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Tool modifier", 3f, AttributeModifier.Operation.ADDITION));
-			builder.put(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Tool modifier", -2.8, AttributeModifier.Operation.ADDITION));
+			builder.put(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Tool modifier", -2.6, AttributeModifier.Operation.ADDITION));
 			return builder.build();
 		}
 		return super.getDefaultAttributeModifiers(equipmentSlot);

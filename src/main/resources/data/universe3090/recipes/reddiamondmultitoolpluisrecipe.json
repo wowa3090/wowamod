@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:redemerald"
+    },
+    "b": {
+      "item": "universe3090:etheriumdark"
+    },
+    "c": {
+      "item": "universe3090:diamond_multi_toolw"
+    },
+    "d": {
+      "item": "universe3090:blackironingot"
+    }
+  },
+  "result": {
+    "item": "universe3090:reddiamondmultitoolplusw",
+    "count": 1
+  }
+}

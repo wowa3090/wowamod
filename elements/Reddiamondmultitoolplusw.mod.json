@@ -5,29 +5,29 @@
     "toolType": "MultiTool",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "diamondmultitool",
+    "texture": "diamondmultitoolplus",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
-    "name": "Diamond MultiTool",
+    "name": "Diamond MultiTool Plus",
     "specialInformation": {
       "fixedValue": []
     },
     "creativeTab": {
       "value": "CUSTOM:Wowamodvkladka"
     },
-    "harvestLevel": 3,
-    "efficiency": 9.5,
-    "attackSpeed": 1.2,
-    "enchantability": 22,
+    "harvestLevel": 4,
+    "efficiency": 10.0,
+    "attackSpeed": 1.4000000000000001,
+    "enchantability": 24,
     "damageVsEntity": 5.0,
-    "usageCount": 2560,
+    "usageCount": 2999,
     "blocksAffected": [],
     "glowCondition": {
       "fixedValue": false
     },
     "repairItems": [
       {
-        "value": "CUSTOM:Diamondlapis"
+        "value": "CUSTOM:Redemerald"
       }
     ],
     "immuneToFire": false,

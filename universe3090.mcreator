@@ -5908,6 +5908,33 @@
           "src/main/resources/data/universe3090/recipes/diamondmultitoolwrecipe.json"
         ]
       }
+    },
+    {
+      "name": "Reddiamondmultitoolplusw",
+      "type": "tool",
+      "sortid": 330,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reddiamondmultitoolplusw",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/universe3090/models/item/reddiamondmultitoolplusw.json",
+          "src/main/java/net/wowamod/item/ReddiamondmultitoolpluswItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Reddiamondmultitoolpluisrecipe",
+      "type": "recipe",
+      "sortid": 331,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reddiamondmultitoolpluisrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/reddiamondmultitoolpluisrecipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -6081,6 +6108,7 @@
       "item.wowamodfabric.greensoul": "Зелёная душа",
       "item.wowamod.wowabronya_boots": "Ботинки ",
       "effect.wowamod.nightmareish": "NIGHTMARISH ENDINGE",
+      "item.universe3090.reddiamondmultitoolplusw": "Diamond MultiTool",
       "item.universe3090.greenemerald": "Зелёный Изумруд",
       "item.wowamod.zagatovkablackiron": "Заготовка для ч.ж",
       "gui.wowamod.guidebook.label_izumrudy": "Изумруды",
@@ -6506,6 +6534,7 @@
       "item.wowamodfabric.greensoul": "Зелёная душа",
       "item.wowamod.wowabronya_boots": "Ботинки 3090",
       "effect.wowamod.nightmareish": "NIGHTMARISH ENDINGE",
+      "item.universe3090.reddiamondmultitoolplusw": "Diamond MultiTool Plus",
       "item.universe3090.greenemerald": "Зелёный Изумруд",
       "gui.wowamod.guidebook.label_izumrudy": "Изумруды",
       "item.wowamod.zagatovkablackiron": "Заготовка для ч.ж",
