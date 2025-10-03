@@ -3,8 +3,8 @@
   "category": "misc",
   "pattern": [
     "aba",
-    "cde",
-    "afa"
+    " c ",
+    "ada"
   ],
   "key": {
     "a": {
@@ -14,15 +14,9 @@
       "item": "universe3090:rainbowemerald"
     },
     "c": {
-      "item": "minecraft:diamond_shovel"
+      "item": "universe3090:diamond_multi_toolw"
     },
     "d": {
-      "item": "minecraft:diamond_pickaxe"
-    },
-    "e": {
-      "item": "minecraft:diamond_axe"
-    },
-    "f": {
       "item": "universe3090:molotwowa"
     }
   },
