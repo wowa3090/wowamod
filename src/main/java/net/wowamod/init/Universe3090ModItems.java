@@ -71,6 +71,8 @@ import net.wowamod.item.EtheriumdarkItem;
 import net.wowamod.item.EnergyelementItem;
 import net.wowamod.item.EkranchikItem;
 import net.wowamod.item.DissasebmlyrequiredItem;
+import net.wowamod.item.DiamondlapisItem;
+import net.wowamod.item.DiamondMultiToolwItem;
 import net.wowamod.item.DerjatiliItem;
 import net.wowamod.item.DarkironplastineItem;
 import net.wowamod.item.CopperplateItem;
@@ -232,6 +234,8 @@ public class Universe3090ModItems {
 	public static final RegistryObject<Item> CABLE_XC = block(Universe3090ModBlocks.CABLE_XC);
 	public static final RegistryObject<Item> CABLE_S = block(Universe3090ModBlocks.CABLE_S);
 	public static final RegistryObject<Item> DARK_HEAD_SPAWN_EGG = REGISTRY.register("dark_head_spawn_egg", () -> new ForgeSpawnEggItem(Universe3090ModEntities.DARK_HEAD, -16777216, -16777216, new Item.Properties()));
+	public static final RegistryObject<Item> DIAMOND_MULTI_TOOLW = REGISTRY.register("diamond_multi_toolw", () -> new DiamondMultiToolwItem());
+	public static final RegistryObject<Item> DIAMONDLAPIS = REGISTRY.register("diamondlapis", () -> new DiamondlapisItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

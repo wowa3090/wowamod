@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    " c ",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:diamondlapis"
+    },
+    "b": {
+      "item": "universe3090:aluminiumdiamondbase"
+    },
+    "c": {
+      "item": "universe3090:superpalka"
+    }
+  },
+  "result": {
+    "item": "universe3090:diamond_multi_toolw",
+    "count": 1
+  }
+}

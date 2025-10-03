@@ -126,6 +126,8 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.GOLD_PLASTINE.get());
 				tabData.accept(Universe3090ModBlocks.TESTPLANT.get().asItem());
 				tabData.accept(Universe3090ModBlocks.CABLE_N.get().asItem());
+				tabData.accept(Universe3090ModItems.DIAMOND_MULTI_TOOLW.get());
+				tabData.accept(Universe3090ModItems.DIAMONDLAPIS.get());
 			})
 
 					.build());

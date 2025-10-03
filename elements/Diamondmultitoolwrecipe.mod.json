@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Diamondlapis"
+      },
+      {
+        "value": "CUSTOM:Aluminiumdiamondbase"
+      },
+      {
+        "value": "CUSTOM:Diamondlapis"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Superpalka"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Superpalka"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DiamondMultiToolw"
+    },
+    "name": "diamondmultitoolwrecipe",
+    "namespace": "mod"
+  }
+}

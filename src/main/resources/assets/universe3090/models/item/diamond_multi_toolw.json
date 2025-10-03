@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "universe3090:item/diamondmultitool"
+  }
+}
