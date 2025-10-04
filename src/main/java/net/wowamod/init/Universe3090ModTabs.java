@@ -130,6 +130,11 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.DIAMONDLAPIS.get());
 				tabData.accept(Universe3090ModItems.REDDIAMONDMULTITOOLPLUSW.get());
 				tabData.accept(Universe3090ModItems.REDDIAMONDLAPIS.get());
+				tabData.accept(Universe3090ModItems.DIAMOND_LAPIS_ARMOR_ARMOR_HELMET.get());
+				tabData.accept(Universe3090ModItems.DIAMOND_LAPIS_ARMOR_ARMOR_CHESTPLATE.get());
+				tabData.accept(Universe3090ModItems.DIAMOND_LAPIS_ARMOR_ARMOR_LEGGINGS.get());
+				tabData.accept(Universe3090ModItems.DIAMOND_LAPIS_ARMOR_ARMOR_BOOTS.get());
+				tabData.accept(Universe3090ModItems.DIAMOND_LAPIS_BRONYA_CPRE.get());
 			})
 
 					.build());

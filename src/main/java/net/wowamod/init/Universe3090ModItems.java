@@ -74,7 +74,9 @@ import net.wowamod.item.EnergyelementItem;
 import net.wowamod.item.EkranchikItem;
 import net.wowamod.item.DissasebmlyrequiredItem;
 import net.wowamod.item.DiamondlapisItem;
+import net.wowamod.item.Diamond_lapis_armorArmorItem;
 import net.wowamod.item.DiamondMultiToolwItem;
+import net.wowamod.item.DiamondLapisBronyaCpreItem;
 import net.wowamod.item.DerjatiliItem;
 import net.wowamod.item.DarkironplastineItem;
 import net.wowamod.item.CopperplateItem;
@@ -240,6 +242,11 @@ public class Universe3090ModItems {
 	public static final RegistryObject<Item> DIAMONDLAPIS = REGISTRY.register("diamondlapis", () -> new DiamondlapisItem());
 	public static final RegistryObject<Item> REDDIAMONDMULTITOOLPLUSW = REGISTRY.register("reddiamondmultitoolplusw", () -> new ReddiamondmultitoolpluswItem());
 	public static final RegistryObject<Item> REDDIAMONDLAPIS = REGISTRY.register("reddiamondlapis", () -> new ReddiamondlapisItem());
+	public static final RegistryObject<Item> DIAMOND_LAPIS_ARMOR_ARMOR_HELMET = REGISTRY.register("diamond_lapis_armor_armor_helmet", () -> new Diamond_lapis_armorArmorItem.Helmet());
+	public static final RegistryObject<Item> DIAMOND_LAPIS_ARMOR_ARMOR_CHESTPLATE = REGISTRY.register("diamond_lapis_armor_armor_chestplate", () -> new Diamond_lapis_armorArmorItem.Chestplate());
+	public static final RegistryObject<Item> DIAMOND_LAPIS_ARMOR_ARMOR_LEGGINGS = REGISTRY.register("diamond_lapis_armor_armor_leggings", () -> new Diamond_lapis_armorArmorItem.Leggings());
+	public static final RegistryObject<Item> DIAMOND_LAPIS_ARMOR_ARMOR_BOOTS = REGISTRY.register("diamond_lapis_armor_armor_boots", () -> new Diamond_lapis_armorArmorItem.Boots());
+	public static final RegistryObject<Item> DIAMOND_LAPIS_BRONYA_CPRE = REGISTRY.register("diamond_lapis_bronya_cpre", () -> new DiamondLapisBronyaCpreItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

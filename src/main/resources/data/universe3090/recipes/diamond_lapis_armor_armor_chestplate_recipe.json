@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a a",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:diamondlapis"
+    },
+    "b": {
+      "item": "universe3090:diamond_lapis_bronya_cpre"
+    }
+  },
+  "result": {
+    "item": "universe3090:diamond_lapis_armor_armor_chestplate",
+    "count": 1
+  }
+}

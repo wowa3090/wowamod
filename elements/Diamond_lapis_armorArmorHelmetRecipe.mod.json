@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "EQUIPMENT",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Diamondlapis"
+      },
+      {
+        "value": "CUSTOM:Diamondlapis"
+      },
+      {
+        "value": "CUSTOM:Diamondlapis"
+      },
+      {
+        "value": "CUSTOM:Diamondlapis"
+      },
+      {
+        "value": "CUSTOM:DiamondLapisBronyaCpre"
+      },
+      {
+        "value": "CUSTOM:Diamondlapis"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Diamond_lapis_armorArmor.helmet"
+    },
+    "name": "diamond_lapis_armor_armor_helmet_recipe",
+    "namespace": "mod"
+  }
+}

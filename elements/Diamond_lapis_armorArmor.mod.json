@@ -1,0 +1,90 @@
+{
+  "_fv": 57,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "diamond_lapis_armor_head",
+    "enableBody": true,
+    "textureBody": "diamond_lapis_armor_body",
+    "enableLeggings": true,
+    "textureLeggings": "diamond_lapis_armor_leggings",
+    "enableBoots": true,
+    "textureBoots": "diamond_lapis_armor_boots",
+    "creativeTab": {
+      "value": "CUSTOM:Wowamodvkladka"
+    },
+    "armorTextureFile": "diamond_lapis_armor",
+    "helmetName": "Diamond lapis Helmet",
+    "bodyName": "Diamond lapis Chestplate",
+    "leggingsName": "Diamond lapis Leggings",
+    "bootsName": "Diamond lapis Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": []
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 36,
+    "damageValueHelmet": 6,
+    "damageValueBody": 10,
+    "damageValueLeggings": 9,
+    "damageValueBoots": 6,
+    "enchantability": 18,
+    "toughness": 2.5,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "block.iron_trapdoor.open"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Diamondlapis"
+      }
+    ]
+  }
+}

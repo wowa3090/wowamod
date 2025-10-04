@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "universe3090:diamondlapis"
+  },
+  "base": {
+    "item": "universe3090:aluminiumdiamondbase"
+  },
+  "addition": {
+    "item": "universe3090:etheriumdark"
+  },
+  "result": {
+    "item": "universe3090:diamond_lapis_bronya_cpre"
+  }
+}

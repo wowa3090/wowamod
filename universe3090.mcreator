@@ -5976,6 +5976,130 @@
           "src/main/resources/data/universe3090/recipes/reddiamondlapisrecipe.json"
         ]
       }
+    },
+    {
+      "name": "Diamond_lapis_armorArmor",
+      "type": "armor",
+      "sortid": 335,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_lapis_armor_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/universe3090/models/item/diamond_lapis_armor_armor_chestplate.json",
+          "src/main/resources/assets/universe3090/models/item/diamond_lapis_armor_armor_boots.json",
+          "src/main/resources/assets/universe3090/models/item/diamond_lapis_armor_armor_leggings.json",
+          "src/main/resources/assets/universe3090/models/item/diamond_lapis_armor_armor_helmet.json",
+          "src/main/java/net/wowamod/item/Diamond_lapis_armorArmorItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Diamond_lapis_armorArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 336,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_lapis_armor_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/diamond_lapis_armor_armor_helmet_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Diamond_lapis_armorArmorChestplateRecipe",
+      "type": "recipe",
+      "sortid": 337,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_lapis_armor_armor_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/diamond_lapis_armor_armor_chestplate_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Diamond_lapis_armorArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 338,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_lapis_armor_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/diamond_lapis_armor_armor_leggings_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Diamond_lapis_armorArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 339,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_lapis_armor_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/diamond_lapis_armor_armor_boots_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "DiamondLapisBronyaCpre",
+      "type": "item",
+      "sortid": 340,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_lapis_bronya_cpre",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/DiamondLapisBronyaCpreItem.java",
+          "src/main/resources/assets/universe3090/models/item/diamond_lapis_bronya_cpre.json"
+        ]
+      }
+    },
+    {
+      "name": "Dlbcore",
+      "type": "recipe",
+      "sortid": 341,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dlbcore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/dlbcore.json"
+        ]
+      }
+    },
+    {
+      "name": "Armorbuff",
+      "type": "procedure",
+      "sortid": 342,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "armorbuff",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/ArmorbuffProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "ArmorSpeedEventHandler",
+      "type": "procedure",
+      "sortid": 343,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "armor_speed_event_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/ArmorSpeedEventHandlerProcedure.java"
+        ],
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [
@@ -6110,8 +6234,8 @@
       "item.wowamodfabric.lightbluesoul": "Голубая душа",
       "item.wowamodfabric.fadingworldbeta_2fazasound": "Fadingworldbeta2fazasound",
       "item.wowamod.redsoulpiece": "Частичка Красной души",
-      "item.universe3090.instrumentprosto": "М.Т.В",
       "item.wowamod.rainbowemerald": "Обьеденённый Изумруд",
+      "item.universe3090.instrumentprosto": "М.Т.В",
       "item.wowamodfabric.redsoul": "Красная Душа",
       "item.universe3090.derjatili": "Держатель для необычного механизма",
       "gui.wowamod.guidebookstart.label_nachalo": "Начало",
@@ -6126,16 +6250,16 @@
       "item.universe3090.wowabronya_boots": "Ботинки вовы3090",
       "block.wowamod.blockforprofessiafix": "Профессиональный блок",
       "block.wowamodfabric.extractor": "Extractor",
-      "item_group.wowamodfabric.wowamodvkladka": "Universe3090",
       "block.wowamodfabric.magicironblock": "Сталемагический блок",
+      "item_group.wowamodfabric.wowamodvkladka": "Universe3090",
       "item.universe3090.bluesoulpiece": "Частичка Синий души",
       "block.universe3090.extractgolubaysoul": "Экстракт голубой души",
       "item.wowamod.blue_emerald_piece": "Осколок Синего Изумруда",
       "item.wowamod.yellow_emerald_piece": "Осколок жёлтого изумруда",
       "gui.wowamod.wowabronyacraftring.label_crafting": "Создание предметов",
-      "item.universe3090.diamond_multi_toolw": "Diamond MultiTool",
-      "gui.wowamodfabric.souls.label_souls": "Души",
+      "item.universe3090.diamond_multi_toolw": "Алмазно-ляписовый мультитул",
       "item.wowamodfabric.orangesoul": "Оранжевая душа",
+      "gui.wowamodfabric.souls.label_souls": "Души",
       "item.wowamod.aaa_glass": "Усиленное стекло",
       "block.universe3090.interfaceconstructor": "Интерфейс конструктора",
       "item.wowamodfabric.bluesoulpiece": "Частичка Синей души",
@@ -6149,10 +6273,10 @@
       "item.wowamodfabric.greensoul": "Зелёная душа",
       "item.wowamod.wowabronya_boots": "Ботинки ",
       "effect.wowamod.nightmareish": "NIGHTMARISH ENDINGE",
-      "item.universe3090.reddiamondmultitoolplusw": "Алмазный мультитул",
+      "item.universe3090.reddiamondmultitoolplusw": "К.И.А.Л мультитул",
       "item.universe3090.greenemerald": "Зелёный Изумруд",
-      "gui.wowamod.guidebook.label_izumrudy": "Изумруды",
       "item.wowamod.zagatovkablackiron": "Заготовка для ч.ж",
+      "gui.wowamod.guidebook.label_izumrudy": "Изумруды",
       "item.wowamod.rose": "Rose",
       "item.universe3090.myplacezone": "My Place Zone",
       "block.universe3090.cable_e": "Cable",
@@ -6167,8 +6291,8 @@
       "effect.universe3090.neuyazvimost": "Неуязвимость!",
       "gui.universe3090.port_constructora.label_port": "Основа",
       "block.universe3090.cable_n": "Cable",
-      "block.universe3090.cable_t": "Cable",
       "gui.wowamod.guidebook.label_dushi": "Души",
+      "block.universe3090.cable_t": "Cable",
       "block.universe3090.cable_s": "Cable",
       "gui.wowamodfabric.port_constructora.label_port": "TEST form",
       "item.wowamod.greensoulpiece": "Частичка Зелёной души",
@@ -6187,13 +6311,13 @@
       "item.wowamod.greensoul": "Зелёная душа",
       "item.universe3090.adarkplacesound.desc": "A Dark Place - Happy and Sad",
       "item.wowamod.copperplate": "Медная пластина",
-      "item.universe3090.energyelement": "Энерго-элемент",
       "block.wowamod.magicironblock": "Сталемагический блок",
+      "item.universe3090.energyelement": "Энерго-элемент",
       "effect.universe3090.super_form": "Super",
       "item.wowamodfabric.yellowsoul": "Жёлтая душа",
       "gui.universe3090.guidebook.label_izumrudy": "Изумруды",
-      "item.universe3090.extractlbsoul": "Экстракт голубой души",
       "item.wowamodfabric.ekranchik": "Экран",
+      "item.universe3090.extractlbsoul": "Экстракт голубой души",
       "item.wowamod.aluminium_ingot": "Алюминиевый слиток",
       "item.wowamod.myplacezone": "MyPlaceZone",
       "item.wowamod.derjatili": "Держатель для необычного механизма",
@@ -6208,15 +6332,16 @@
       "block.universe3090.cable_tx": "Cable",
       "key.universe3090.souls_viewbutton": "Просмотр душ",
       "block.universe3090.cable_tc": "Cable",
-      "item.wowamodfabric.mimic_spawn_egg": "Мимик Спавн",
       "block.wowamod.corrupted_souls_block": "Corrupted Souls Block",
+      "item.wowamodfabric.mimic_spawn_egg": "Мимик Спавн",
       "item.universe3090.whitesoul_myplace": "Белая душа из игры MY PLACE",
       "gui.wowamodfabric.wowabronyacraftring.label_crafting": "Создание предметов",
       "fluid.universe3090.extractgolubaysoul": "Экстракт голубой души",
       "item.wowamod.wowabronya_helmet": "Шлем",
-      "gui.wowamod.constructorinterface.label_constructor": "Constructor",
       "item.wowamod.yellowsoulpiece": "Частичка Жёлтой души",
+      "gui.wowamod.constructorinterface.label_constructor": "Constructor",
       "block.universe3090.darkgrass": "Dark Grass",
+      "item.universe3090.diamond_lapis_armor_armor_leggings": "Diamond_lapis_armor Leggings",
       "gui.universe3090.guidebookstart.label_nachalo": "Начало",
       "gui.wowamod.port_constructora.label_port": "Основа",
       "item.universe3090.wowabronya_helmet": "Шлем вовы3090",
@@ -6238,8 +6363,8 @@
       "item.wowamod.wowabronya_leggings": "Поножи",
       "effect.wowamod.blagoslovleniestaref": "Благословление звезды",
       "entity.wowamodfabric.mimic": "Мимик",
-      "block.universe3090.black_walls_myplace": "Black Walls Myplace",
       "subtitles.nightmare.trojansound": "",
+      "block.universe3090.black_walls_myplace": "Black Walls Myplace",
       "item.wowamod.lightblueemerald": "Голубой Изумруд",
       "block.universe3090.magicironblock": "Сталемагический блок",
       "item.universe3090.ekranchik": "Экран",
@@ -6314,6 +6439,7 @@
       "item.universe3090.greensoul": "Зелёная душа",
       "item.universe3090.extractgolubaysoul_bucket": "Экстракт голубой души в ведре",
       "item.universe3090.klava": "Клавиатура",
+      "item.universe3090.diamond_lapis_bronya_cpre": "Diamond Lapis Bronya Core",
       "block.universe3090.extractor": "Экстрактор",
       "key.universe3090.teleport": "Телепорт",
       "item.universe3090.mimic_spawn_egg": "Мимик",
@@ -6403,6 +6529,7 @@
       "item.universe3090.orangesoulpiece": "Частичка Оранжевой души",
       "item.universe3090.wiresprovoda": "Провода",
       "item.universe3090.yellowsoul": "Жёлтая душа",
+      "item.universe3090.diamond_lapis_armor_armor_helmet": "Diamond_lapis_armor Helmet",
       "item.universe3090.orangesoul": "Оранжевая душа",
       "gui.wowamod.guidebook.label_krafty": "Крафты",
       "item.wowamod.wowasword": "Клинок Вовы",
@@ -6458,6 +6585,7 @@
       "item.wowamodfabric.whiteemerald": "Белый Изумруд",
       "item.wowamodfabric.rainbowemerald": "Радужный Изумруд",
       "effect.universe3090.nightmareish": "NIGHTMARISH ENDINGE",
+      "item.universe3090.diamond_lapis_armor_armor_chestplate": "Diamond_lapis_armor Chestplate",
       "gui.wowamodfabric.extractorinteface.label_empty1": "|",
       "block.universe3090.big_batteryw": "Большая батарея",
       "gui.universe3090.guidebook.label_ekstraktor": "Экстрактор",
@@ -6528,7 +6656,8 @@
       "item.universe3090.rainbowemerald": "Комбинированный Изумруд",
       "item.universe3090.lightbluesoulpiece": "Частичка Голубой души",
       "item.wowamod.purplesoulpiece": "Частичка Фиолетовой души",
-      "gui.universe3090.extractor_guide.button_nazad": "Назад"
+      "gui.universe3090.extractor_guide.button_nazad": "Назад",
+      "item.universe3090.diamond_lapis_armor_armor_boots": "Diamond_lapis_armor Boots"
     },
     "en_us": {
       "block.universe3090.cable_x": "Cable",
@@ -6537,8 +6666,8 @@
       "item.wowamodfabric.lightbluesoul": "Голубая душа",
       "item.wowamodfabric.fadingworldbeta_2fazasound": "Fadingworldbeta2fazasound",
       "item.wowamod.redsoulpiece": "Частичка Красной души",
-      "item.universe3090.instrumentprosto": "М.Т.В",
       "item.wowamod.rainbowemerald": "Комбинированный Изумруд",
+      "item.universe3090.instrumentprosto": "М.Т.В",
       "item.wowamodfabric.redsoul": "Красная Душа",
       "item.universe3090.derjatili": "Держатель для необычного механизма",
       "gui.wowamod.guidebookstart.label_nachalo": "Начало",
@@ -6553,16 +6682,16 @@
       "item.universe3090.wowabronya_boots": "Ботинки 3090",
       "block.wowamod.blockforprofessiafix": "Профессиональный блок",
       "block.wowamodfabric.extractor": "Extractor",
-      "item_group.wowamodfabric.wowamodvkladka": "wowa3090mod",
       "block.wowamodfabric.magicironblock": "Сталемагический блок",
+      "item_group.wowamodfabric.wowamodvkladka": "wowa3090mod",
       "item.universe3090.bluesoulpiece": "Частичка Синий души",
       "block.universe3090.extractgolubaysoul": "Extractgolubaysoul",
       "item.wowamod.blue_emerald_piece": "Blue Emerald Piece",
       "item.wowamod.yellow_emerald_piece": "Yellow Emerald Piece",
       "gui.wowamod.wowabronyacraftring.label_crafting": "Создание предметов",
       "item.universe3090.diamond_multi_toolw": "Diamond MultiTool",
-      "item.wowamodfabric.orangesoul": "Оранжевая душа",
       "gui.wowamodfabric.souls.label_souls": "souls",
+      "item.wowamodfabric.orangesoul": "Оранжевая душа",
       "item.wowamod.aaa_glass": "Усиленное стекло",
       "block.universe3090.interfaceconstructor": "Интерфейс конструктора",
       "item.wowamodfabric.bluesoulpiece": "Частичка Синий души",
@@ -6578,8 +6707,8 @@
       "effect.wowamod.nightmareish": "NIGHTMARISH ENDINGE",
       "item.universe3090.reddiamondmultitoolplusw": "Diamond MultiTool Plus",
       "item.universe3090.greenemerald": "Зелёный Изумруд",
-      "gui.wowamod.guidebook.label_izumrudy": "Изумруды",
       "item.wowamod.zagatovkablackiron": "Заготовка для ч.ж",
+      "gui.wowamod.guidebook.label_izumrudy": "Изумруды",
       "item.wowamod.rose": "Rose",
       "item.universe3090.myplacezone": "MyPlaceZone",
       "block.universe3090.cable_e": "Cable",
@@ -6594,8 +6723,8 @@
       "effect.universe3090.neuyazvimost": "Неуязвимость!",
       "gui.universe3090.port_constructora.label_port": "Основа",
       "block.universe3090.cable_n": "Cable",
-      "gui.wowamod.guidebook.label_dushi": "Души",
       "block.universe3090.cable_t": "Cable",
+      "gui.wowamod.guidebook.label_dushi": "Души",
       "block.universe3090.cable_s": "Cable",
       "gui.wowamodfabric.port_constructora.label_port": "Основа",
       "item.wowamod.greensoulpiece": "Частичка Зелёной души",
@@ -6614,13 +6743,13 @@
       "item.wowamod.greensoul": "Зелёная душа",
       "item.universe3090.adarkplacesound.desc": "A Dark Place - Happy and Sad",
       "item.wowamod.copperplate": "Медная пластина",
-      "item.universe3090.energyelement": "Energyelement",
       "block.wowamod.magicironblock": "Сталемагический блок",
+      "item.universe3090.energyelement": "Energyelement",
       "effect.universe3090.super_form": "Super",
       "item.wowamodfabric.yellowsoul": "Жёлтая душа",
       "gui.universe3090.guidebook.label_izumrudy": "Изумруды",
-      "item.universe3090.extractlbsoul": "Экстракт голубой души",
       "item.wowamodfabric.ekranchik": "Экран",
+      "item.universe3090.extractlbsoul": "Экстракт голубой души",
       "item.wowamod.aluminium_ingot": "Aluminium Ingot",
       "item.wowamod.myplacezone": "MyPlaceZone",
       "item.wowamod.derjatili": "Держатель для необычного механизма",
@@ -6635,15 +6764,16 @@
       "block.universe3090.cable_tx": "Cable",
       "key.universe3090.souls_viewbutton": "Souls View",
       "block.universe3090.cable_tc": "Cable",
-      "block.wowamod.corrupted_souls_block": "Corrupted Souls Block",
       "item.wowamodfabric.mimic_spawn_egg": "Мимик Spawn Egg",
+      "block.wowamod.corrupted_souls_block": "Corrupted Souls Block",
       "item.universe3090.whitesoul_myplace": "Белая душа из игры MY PLACE",
       "gui.wowamodfabric.wowabronyacraftring.label_crafting": "Создание предметов",
       "fluid.universe3090.extractgolubaysoul": "Extractgolubaysoul",
       "item.wowamod.wowabronya_helmet": "Шлем 3090",
-      "gui.wowamod.constructorinterface.label_constructor": "Constructor",
       "item.wowamod.yellowsoulpiece": "Частичка Жёлтой души",
+      "gui.wowamod.constructorinterface.label_constructor": "Constructor",
       "block.universe3090.darkgrass": "Dark Grass",
+      "item.universe3090.diamond_lapis_armor_armor_leggings": "Diamond lapis Leggings",
       "gui.universe3090.guidebookstart.label_nachalo": "Начало",
       "gui.wowamod.port_constructora.label_port": "Основа",
       "item.universe3090.wowabronya_helmet": "Шлем 3090",
@@ -6665,8 +6795,8 @@
       "item.wowamod.wowabronya_leggings": "Поножи 3090",
       "effect.wowamod.blagoslovleniestaref": "Благословление звезды",
       "entity.wowamodfabric.mimic": "Мимик",
-      "block.universe3090.black_walls_myplace": "Black Walls Myplace",
       "subtitles.nightmare.trojansound": "",
+      "block.universe3090.black_walls_myplace": "Black Walls Myplace",
       "item.wowamod.lightblueemerald": "Голубой Изумруд",
       "block.universe3090.magicironblock": "Сталемагический блок",
       "item.universe3090.ekranchik": "Экран",
@@ -6741,6 +6871,7 @@
       "item.universe3090.greensoul": "Зелёная душа",
       "item.universe3090.extractgolubaysoul_bucket": "Extractgolubaysoul Bucket",
       "item.universe3090.klava": "Клавиатура",
+      "item.universe3090.diamond_lapis_bronya_cpre": "Diamond Lapis Bronya Core",
       "block.universe3090.extractor": "Extractor",
       "key.universe3090.teleport": "Teleport",
       "item.universe3090.mimic_spawn_egg": "Мимик Spawn Egg",
@@ -6830,6 +6961,7 @@
       "item.universe3090.orangesoulpiece": "Частичка Оранжевой души",
       "item.universe3090.wiresprovoda": "Провода",
       "item.universe3090.yellowsoul": "Жёлтая душа",
+      "item.universe3090.diamond_lapis_armor_armor_helmet": "Diamond lapis Helmet",
       "item.universe3090.orangesoul": "Оранжевая душа",
       "gui.wowamod.guidebook.label_krafty": "Крафты",
       "item.wowamod.wowasword": "МЕЧ 3090",
@@ -6884,6 +7016,7 @@
       "item.wowamodfabric.whiteemerald": "Белый Изумруд",
       "item.wowamodfabric.rainbowemerald": "Радужный?Изумруд",
       "effect.universe3090.nightmareish": "NIGHTMARISH ENDINGE",
+      "item.universe3090.diamond_lapis_armor_armor_chestplate": "Diamond lapis Chestplate",
       "gui.wowamodfabric.extractorinteface.label_empty1": "|",
       "block.universe3090.big_batteryw": "Big Battery",
       "gui.universe3090.guidebook.label_ekstraktor": "Экстрактор",
@@ -6954,7 +7087,8 @@
       "item.universe3090.rainbowemerald": "Комбинированный Изумруд",
       "item.universe3090.lightbluesoulpiece": "Частичка Голубой души",
       "item.wowamod.purplesoulpiece": "Частичка Фиолетовой души",
-      "gui.universe3090.extractor_guide.button_nazad": "Назад"
+      "gui.universe3090.extractor_guide.button_nazad": "Назад",
+      "item.universe3090.diamond_lapis_armor_armor_boots": "Diamond lapis Boots"
     }
   },
   "foldersRoot": {
@@ -6983,7 +7117,7 @@
   "workspaceSettings": {
     "modid": "universe3090",
     "modName": "Universe3090-stories",
-    "version": "1.5.2",
+    "version": "1.5.3",
     "description": "This Mod will add to your minecraft world items from Universe3090 And.. a lot of content",
     "author": "wowa3090",
     "websiteURL": "https://nosite.com",
