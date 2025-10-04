@@ -1,0 +1,6 @@
+{
+  "parent": "universe3090:displaysettings/m.t.w_animated_-_displayset",
+  "textures": {
+    "layer0": "universe3090:item/texture_mtw"
+  }
+}

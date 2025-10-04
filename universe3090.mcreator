@@ -6127,6 +6127,22 @@
           "src/main/resources/data/universe3090/recipes/diamondlapisswordrecipe.json"
         ]
       }
+    },
+    {
+      "name": "MTWtestanim",
+      "type": "animateditem",
+      "sortid": 346,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mt_wtestanim",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/renderer/MTWtestanimItemRenderer.java",
+          "src/main/java/net/wowamod/item/model/MTWtestanimItemModel.java",
+          "src/main/resources/assets/universe3090/models/item/mt_wtestanim.json",
+          "src/main/java/net/wowamod/item/MTWtestanimItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -6288,6 +6304,7 @@
       "gui.wowamodfabric.souls.label_souls": "Души",
       "item.wowamodfabric.orangesoul": "Оранжевая душа",
       "item.wowamod.aaa_glass": "Усиленное стекло",
+      "item.universe3090.mt_wtestanim": "MT Wtestanim",
       "block.universe3090.interfaceconstructor": "Интерфейс конструктора",
       "item.wowamodfabric.bluesoulpiece": "Частичка Синей души",
       "item.universe3090.karmannielectrolizer": "Карманный электролизер",
@@ -6721,6 +6738,7 @@
       "gui.wowamodfabric.souls.label_souls": "souls",
       "item.wowamodfabric.orangesoul": "Оранжевая душа",
       "item.wowamod.aaa_glass": "Усиленное стекло",
+      "item.universe3090.mt_wtestanim": "MT Wtestanim",
       "block.universe3090.interfaceconstructor": "Интерфейс конструктора",
       "item.wowamodfabric.bluesoulpiece": "Частичка Синий души",
       "item.universe3090.karmannielectrolizer": "Карманный электролизер",

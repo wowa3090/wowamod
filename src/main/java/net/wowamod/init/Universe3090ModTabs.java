@@ -136,6 +136,7 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.DIAMOND_LAPIS_ARMOR_ARMOR_BOOTS.get());
 				tabData.accept(Universe3090ModItems.DIAMOND_LAPIS_BRONYA_CPRE.get());
 				tabData.accept(Universe3090ModItems.DIAMONDLAPISTOOLSWORD.get());
+				tabData.accept(Universe3090ModItems.MT_WTESTANIM.get());
 			})
 
 					.build());

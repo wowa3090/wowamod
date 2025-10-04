@@ -48,6 +48,7 @@ import net.wowamod.item.MolotwowaItem;
 import net.wowamod.item.MimictkanbItem;
 import net.wowamod.item.MimickojaItem;
 import net.wowamod.item.MagicironingotItem;
+import net.wowamod.item.MTWtestanimItem;
 import net.wowamod.item.LightbluesoulpieceItem;
 import net.wowamod.item.LightbluesoulItem;
 import net.wowamod.item.LightblueemeraldItem;
@@ -249,6 +250,7 @@ public class Universe3090ModItems {
 	public static final RegistryObject<Item> DIAMOND_LAPIS_ARMOR_ARMOR_BOOTS = REGISTRY.register("diamond_lapis_armor_armor_boots", () -> new Diamond_lapis_armorArmorItem.Boots());
 	public static final RegistryObject<Item> DIAMOND_LAPIS_BRONYA_CPRE = REGISTRY.register("diamond_lapis_bronya_cpre", () -> new DiamondLapisBronyaCpreItem());
 	public static final RegistryObject<Item> DIAMONDLAPISTOOLSWORD = REGISTRY.register("diamondlapistoolsword", () -> new DiamondlapistoolswordItem());
+	public static final RegistryObject<Item> MT_WTESTANIM = REGISTRY.register("mt_wtestanim", () -> new MTWtestanimItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
