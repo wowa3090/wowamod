@@ -73,6 +73,7 @@ import net.wowamod.item.EtheriumdarkItem;
 import net.wowamod.item.EnergyelementItem;
 import net.wowamod.item.EkranchikItem;
 import net.wowamod.item.DissasebmlyrequiredItem;
+import net.wowamod.item.DiamondlapistoolswordItem;
 import net.wowamod.item.DiamondlapisItem;
 import net.wowamod.item.Diamond_lapis_armorArmorItem;
 import net.wowamod.item.DiamondMultiToolwItem;
@@ -247,6 +248,7 @@ public class Universe3090ModItems {
 	public static final RegistryObject<Item> DIAMOND_LAPIS_ARMOR_ARMOR_LEGGINGS = REGISTRY.register("diamond_lapis_armor_armor_leggings", () -> new Diamond_lapis_armorArmorItem.Leggings());
 	public static final RegistryObject<Item> DIAMOND_LAPIS_ARMOR_ARMOR_BOOTS = REGISTRY.register("diamond_lapis_armor_armor_boots", () -> new Diamond_lapis_armorArmorItem.Boots());
 	public static final RegistryObject<Item> DIAMOND_LAPIS_BRONYA_CPRE = REGISTRY.register("diamond_lapis_bronya_cpre", () -> new DiamondLapisBronyaCpreItem());
+	public static final RegistryObject<Item> DIAMONDLAPISTOOLSWORD = REGISTRY.register("diamondlapistoolsword", () -> new DiamondlapistoolswordItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

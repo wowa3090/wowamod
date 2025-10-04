@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    " b ",
+    "cd "
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:diamondlapis"
+    },
+    "b": {
+      "item": "universe3090:diamond_lapis_bronya_cpre"
+    },
+    "c": {
+      "item": "universe3090:superpalka"
+    },
+    "d": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "universe3090:diamondlapistoolsword",
+    "count": 1
+  }
+}
