@@ -2,8 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "pattern": [
-    "aaa",
     "aba",
+    "aca",
     "a a"
   ],
   "key": {
@@ -11,6 +11,9 @@
       "item": "universe3090:diamondlapis"
     },
     "b": {
+      "item": "minecraft:diamond_leggings"
+    },
+    "c": {
       "item": "universe3090:diamond_lapis_bronya_cpre"
     }
   },

@@ -4,7 +4,7 @@
   "pattern": [
     "a a",
     "aba",
-    "aaa"
+    "aca"
   ],
   "key": {
     "a": {
@@ -12,6 +12,9 @@
     },
     "b": {
       "item": "universe3090:diamond_lapis_bronya_cpre"
+    },
+    "c": {
+      "item": "minecraft:diamond_chestplate"
     }
   },
   "result": {

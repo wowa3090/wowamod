@@ -26,17 +26,17 @@ public abstract class Diamond_lapis_armorArmorItem extends ArmorItem {
 		super(new ArmorMaterial() {
 			@Override
 			public int getDurabilityForType(ArmorItem.Type type) {
-				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 36;
+				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 37;
 			}
 
 			@Override
 			public int getDefenseForType(ArmorItem.Type type) {
-				return new int[]{6, 9, 10, 6}[type.getSlot().getIndex()];
+				return new int[]{6, 10, 11, 7}[type.getSlot().getIndex()];
 			}
 
 			@Override
 			public int getEnchantmentValue() {
-				return 18;
+				return 24;
 			}
 
 			@Override

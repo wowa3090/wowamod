@@ -81,13 +81,13 @@ public class ArmorbuffProcedure {
                 // LOGGER.debug("Found Diamond_lapis_armorArmorItem in slot: {}", slot.getName());
                 switch (slot) {
                     case HEAD: // Шлем
-                        bonus += 0.03; // 1%
+                        bonus += 0.04; // 1%
                         break;
                     case CHEST: // Нагрудник
                         bonus += 0.06; // 2%
                         break;
                     case LEGS: // Поножи
-                        bonus += 0.03; // 1%
+                        bonus += 0.05; // 1%
                         break;
                     case FEET: // Ботинки
                         bonus += 0.03; // 1%

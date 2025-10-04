@@ -12,13 +12,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:Etheriumdark"
       },
       {
         "value": "CUSTOM:Reddiamondlapis"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Etheriumdark"
       },
       {
         "value": "CUSTOM:Etheriumdark"
@@ -30,13 +30,13 @@
         "value": "CUSTOM:Etheriumdark"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Etheriumdark"
       },
       {
         "value": "CUSTOM:Blackironingot"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Etheriumdark"
       }
     ],
     "recipeReturnStack": {

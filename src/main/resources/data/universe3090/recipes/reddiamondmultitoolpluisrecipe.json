@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " a ",
-    "bcb",
-    " d "
+    "aba",
+    "aca",
+    "ada"
   ],
   "key": {
     "a": {
-      "item": "universe3090:reddiamondlapis"
+      "item": "universe3090:etheriumdark"
     },
     "b": {
-      "item": "universe3090:etheriumdark"
+      "item": "universe3090:reddiamondlapis"
     },
     "c": {
       "item": "universe3090:diamond_multi_toolw"

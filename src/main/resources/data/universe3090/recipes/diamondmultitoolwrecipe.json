@@ -3,8 +3,8 @@
   "category": "misc",
   "pattern": [
     "aba",
-    " c ",
-    " c "
+    "cde",
+    " d "
   ],
   "key": {
     "a": {
@@ -14,7 +14,13 @@
       "item": "universe3090:aluminiumdiamondbase"
     },
     "c": {
+      "item": "minecraft:diamond_shovel"
+    },
+    "d": {
       "item": "universe3090:superpalka"
+    },
+    "e": {
+      "item": "minecraft:diamond_axe"
     }
   },
   "result": {

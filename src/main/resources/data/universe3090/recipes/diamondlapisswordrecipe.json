@@ -2,21 +2,24 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "  a",
-    " b ",
-    "cd "
+    " ab",
+    " c ",
+    "de "
   ],
   "key": {
     "a": {
-      "item": "universe3090:diamondlapis"
+      "item": "minecraft:diamond_sword"
     },
     "b": {
-      "item": "universe3090:diamond_lapis_bronya_cpre"
+      "item": "universe3090:diamondlapis"
     },
     "c": {
-      "item": "universe3090:superpalka"
+      "item": "universe3090:diamond_lapis_bronya_cpre"
     },
     "d": {
+      "item": "universe3090:superpalka"
+    },
+    "e": {
       "item": "minecraft:string"
     }
   },
