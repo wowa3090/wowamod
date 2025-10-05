@@ -51,6 +51,13 @@ public class RdmtpprocedureProcedure {
                         continue; // Переходим к следующему блоку.
                     }
 
+                    // --- ИСПРАВЛЕНИЕ: Проверка на ломаемость блока ---
+                    // destroySpeed <= 0 означает, что блок не может быть разрушен (например, Бедрок).
+                    if (neighborState.getDestroySpeed(serverLevel, currentPos) <= 0.0F) {
+                         continue; // Переходим к следующему блоку, если текущий неломаем.
+                    }
+                    // --- КОНЕЦ ИСПРАВЛЕНИЯ ---
+
                     // Получаем BlockEntity (например, сундук), если он есть.
                     BlockEntity blockEntity = serverLevel.getBlockEntity(currentPos);
 
