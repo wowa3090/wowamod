@@ -6143,6 +6143,47 @@
           "src/main/java/net/wowamod/item/MTWtestanimItem.java"
         ]
       }
+    },
+    {
+      "name": "Screensoul",
+      "type": "overlay",
+      "sortid": 347,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "screensoul",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/client/screens/ScreensoulOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "SoulSystemW",
+      "type": "procedure",
+      "sortid": 348,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "soul_system_w",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/SoulSystemWProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "SoulSystemWGUI",
+      "type": "procedure",
+      "sortid": 349,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "soul_system_wgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/SoulSystemWGUIProcedure.java"
+        ],
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [
