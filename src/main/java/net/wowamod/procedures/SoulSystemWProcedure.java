@@ -40,6 +40,9 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
 
+// Импортируем NetworksyncSoulSystem для вызова syncSoulDataToClient
+import net.wowamod.NetworksyncSoulSystem;
+
 // Main class containing the soul system logic and capability
 @Mod.EventBusSubscriber
 public class SoulSystemWProcedure {
@@ -71,6 +74,8 @@ public class SoulSystemWProcedure {
         CompoundTag serializeNBT(); // Add this to interface
         void deserializeNBT(CompoundTag nbt); // Add this to interface
         Set<UUID> getInteractedPlayers(); // Add this to interface
+        // Добавляем метод для принудительной синхронизации текущей души
+        void setCurrentSoul(SoulType soul);
     }
 
     // Default implementation of the capability
@@ -196,6 +201,8 @@ public class SoulSystemWProcedure {
                 this.currentSoul = determinedSoul;
                 this.soulDetermined = true;
                 System.out.println("Player's soul has been determined: " + determinedSoul.name()); // Debug
+                // Вызываем синхронизацию при определении души
+                // Требуется игрок для вызова onSoulDataChanged
             } else {
                 System.out.println("No soul type reached the threshold yet."); // Debug
             }
@@ -229,6 +236,12 @@ public class SoulSystemWProcedure {
         @Override
         public void setSoulDetermined(boolean determined) {
             this.soulDetermined = determined;
+        }
+
+        @Override
+        public void setCurrentSoul(SoulType soul) {
+            // Принудительно устанавливаем текущую душу, игнорируя заморозку (например, при синхронизации)
+            this.currentSoul = soul;
         }
 
         // NBT serialization for saving/loading
@@ -410,6 +423,13 @@ public class SoulSystemWProcedure {
         }
     }
 
+    // Метод для вызова синхронизации данных души с сервера на клиент
+    public static void onSoulDataChanged(Player player) {
+        if (player instanceof ServerPlayer serverPlayer) {
+            NetworksyncSoulSystem.syncSoulDataToClient(serverPlayer);
+        }
+    }
+
     // Event handlers to update soul values based on actions
     @SubscribeEvent
     public static void onLivingHurt(LivingHurtEvent event) {
@@ -418,6 +438,8 @@ public class SoulSystemWProcedure {
                 // Increase PATIENCE when player takes damage
                 cap.increaseSoulValue(SoulType.PATIENCE, 1); // Adjust amount as needed
                 System.out.println("Player " + player.getName().getString() + " gained Patience. Current value: " + cap.getSoulValue(SoulType.PATIENCE));
+                // Вызываем синхронизацию
+                onSoulDataChanged(player);
             });
         }
         // Increase DETERMINATION when player deals damage (if the source is a player)
@@ -426,6 +448,8 @@ public class SoulSystemWProcedure {
                 // Increase DETERMINATION slightly for dealing damage
                 cap.increaseSoulValue(SoulType.DETERMINATION, 1); // Adjust amount as needed
                 System.out.println("Player " + player.getName().getString() + " gained Determination from dealing damage. Current value: " + cap.getSoulValue(SoulType.DETERMINATION));
+                // Вызываем синхронизацию
+                onSoulDataChanged(player);
             });
         }
     }
@@ -439,6 +463,8 @@ public class SoulSystemWProcedure {
 	        getCapability(killerPlayer).ifPresent(cap -> {
 	            cap.increaseSoulValue(SoulType.DETERMINATION, 5); // Significant boost for killing a player
 	            System.out.println("Player " + killerPlayer.getName().getString() + " gained Determination from killing a player. Current value: " + cap.getSoulValue(SoulType.DETERMINATION));
+	            // Вызываем синхронизацию
+	            onSoulDataChanged(killerPlayer);
 	        });
 	    } else if (target instanceof Mob mob) {
 	        DamageSource source = event.getSource();
@@ -453,10 +479,14 @@ public class SoulSystemWProcedure {
 	                if (mob.getType().getCategory() == MobCategory.MONSTER) { // Use == for enum comparison
 	                    cap.increaseSoulValue(SoulType.DETERMINATION, 2); // Adjust amount
 	                    System.out.println("Player " + player.getName().getString() + " gained Determination from killing a hostile mob. Current value: " + cap.getSoulValue(SoulType.DETERMINATION));
+	                    // Вызываем синхронизацию
+	                    onSoulDataChanged(player);
 	                }
 	                // Increase JUSTICE for killing hostile mobs (or specific types?)
 	                cap.increaseSoulValue(SoulType.JUSTICE, 1); // Adjust amount
 	                System.out.println("Player " + player.getName().getString() + " gained Justice from killing a mob. Current value: " + cap.getSoulValue(SoulType.JUSTICE));
+	                // Вызываем синхронизацию
+	                onSoulDataChanged(player);
 	            });
 	        } else if (directEntity instanceof Player player) { // Используем сокращенную запись только внутри блока if
 	             // Теперь player - это final или effectively final в этой области видимости
@@ -465,10 +495,14 @@ public class SoulSystemWProcedure {
 	                 if (mob.getType().getCategory() == MobCategory.MONSTER) { // Use == for enum comparison
 	                     cap.increaseSoulValue(SoulType.DETERMINATION, 2); // Adjust amount
 	                     System.out.println("Player " + player.getName().getString() + " gained Determination from killing a hostile mob. Current value: " + cap.getSoulValue(SoulType.DETERMINATION));
+	                     // Вызываем синхронизацию
+	                     onSoulDataChanged(player);
 	                 }
 	                 // Increase JUSTICE for killing hostile mobs (or specific types?)
 	                 cap.increaseSoulValue(SoulType.JUSTICE, 1); // Adjust amount
 	                 System.out.println("Player " + player.getName().getString() + " gained Justice from killing a mob. Current value: " + cap.getSoulValue(SoulType.JUSTICE));
+	                 // Вызываем синхронизацию
+	                 onSoulDataChanged(player);
 	             });
 	        }
 	        // Если ни sourceEntity, ни directEntity не являются игроком, ничего не делаем.
@@ -490,6 +524,8 @@ public class SoulSystemWProcedure {
                  getCapability(player).ifPresent(cap -> {
                      cap.increaseSoulValue(SoulType.KINDNESS, 2); // Adjust amount
                      System.out.println("Player " + player.getName().getString() + " gained Kindness from harvesting crops. Current value: " + cap.getSoulValue(SoulType.KINDNESS));
+                     // Вызываем синхронизацию
+                     onSoulDataChanged(player);
                  });
             }
         }
@@ -510,6 +546,8 @@ public class SoulSystemWProcedure {
                  getCapability(player).ifPresent(cap -> {
                      cap.increaseSoulValue(SoulType.KINDNESS, 3); // Adjust amount
                      System.out.println("Player " + player.getName().getString() + " gained Kindness from healing an animal. Current value: " + cap.getSoulValue(SoulType.KINDNESS));
+                     // Вызываем синхронизацию
+                     onSoulDataChanged(player);
                  });
                  // Optionally, you could still allow the healing action by not cancelling the event,
                  // or cancel it if you want the soul system action to replace it.
@@ -527,6 +565,8 @@ public class SoulSystemWProcedure {
                 // Increase Perseverance based on the repair cost or a fixed amount
                 cap.increaseSoulValue(SoulType.PERSEVERANCE, 1); // Adjust amount, maybe use event.getCost() for scaling
                 System.out.println("Player " + player.getName().getString() + " gained Perseverance from repairing an item. Current value: " + cap.getSoulValue(SoulType.PERSEVERANCE));
+                // Вызываем синхронизацию
+                onSoulDataChanged(player);
             });
         }
     }
@@ -547,8 +587,16 @@ public class SoulSystemWProcedure {
                 // A simpler proxy: any interaction with another player could count towards integrity.
                 // Or, track if an item was dropped by player A and picked up by player B.
                 // For this example, we'll just mark the interaction.
-                getCapability(player).ifPresent(cap -> cap.markPlayerInteraction(targetPlayer.getUUID()));
-                getCapability(targetPlayer).ifPresent(cap -> cap.markPlayerInteraction(player.getUUID()));
+                getCapability(player).ifPresent(cap -> {
+                    cap.markPlayerInteraction(targetPlayer.getUUID());
+                    // Вызываем синхронизацию
+                    onSoulDataChanged(player);
+                });
+                getCapability(targetPlayer).ifPresent(cap -> {
+                    cap.markPlayerInteraction(player.getUUID());
+                    // Вызываем синхронизацию
+                    onSoulDataChanged(targetPlayer);
+                });
             }
         }
     }
@@ -561,6 +609,8 @@ public class SoulSystemWProcedure {
             // Optionally send a message to the player
             // serverPlayer.sendSystemMessage(Component.literal("Your soul has been reset."));
             System.out.println("Soul reset for player: " + player.getName().getString());
+            // Вызываем синхронизацию после сброса
+            onSoulDataChanged(player);
         }
     }
 
@@ -571,6 +621,8 @@ public class SoulSystemWProcedure {
             if (!cap.isSoulDetermined()) {
                 // If not determined, allow setting values to influence future determination
                 cap.setSoulValue(newSoul, SoulCapability.SOUL_DETERMINATION_THRESHOLD); // Force this type to win next check
+                // Вызываем синхронизацию при изменении значения
+                onSoulDataChanged(player);
             } else {
                 // If already determined, maybe just a visual/temporary change or a reset is needed
                 System.out.println("Soul already determined for player " + player.getName().getString() + ". Cannot change directly.");
