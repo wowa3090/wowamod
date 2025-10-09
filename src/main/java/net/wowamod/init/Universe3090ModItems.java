@@ -72,6 +72,7 @@ import net.wowamod.item.ExtractlbsoulItem;
 import net.wowamod.item.ExtractgolubaysoulItem;
 import net.wowamod.item.EtheriumdarkItem;
 import net.wowamod.item.EnergyelementItem;
+import net.wowamod.item.ElissaarmorItem;
 import net.wowamod.item.EkranchikItem;
 import net.wowamod.item.DissasebmlyrequiredItem;
 import net.wowamod.item.DiamondlapistoolswordItem;
@@ -107,6 +108,7 @@ import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.ArmorItem;
 
 public class Universe3090ModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, Universe3090Mod.MODID);
@@ -251,6 +253,10 @@ public class Universe3090ModItems {
 	public static final RegistryObject<Item> DIAMOND_LAPIS_BRONYA_CPRE = REGISTRY.register("diamond_lapis_bronya_cpre", () -> new DiamondLapisBronyaCpreItem());
 	public static final RegistryObject<Item> DIAMONDLAPISTOOLSWORD = REGISTRY.register("diamondlapistoolsword", () -> new DiamondlapistoolswordItem());
 	public static final RegistryObject<Item> MT_WTESTANIM = REGISTRY.register("mt_wtestanim", () -> new MTWtestanimItem());
+	public static final RegistryObject<ElissaarmorItem> ELISSAARMOR_HELMET = REGISTRY.register("elissaarmor_helmet", () -> new ElissaarmorItem(ArmorItem.Type.HELMET, new Item.Properties()));
+	public static final RegistryObject<ElissaarmorItem> ELISSAARMOR_CHESTPLATE = REGISTRY.register("elissaarmor_chestplate", () -> new ElissaarmorItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+	public static final RegistryObject<ElissaarmorItem> ELISSAARMOR_LEGGINGS = REGISTRY.register("elissaarmor_leggings", () -> new ElissaarmorItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
+	public static final RegistryObject<ElissaarmorItem> ELISSAARMOR_BOOTS = REGISTRY.register("elissaarmor_boots", () -> new ElissaarmorItem(ArmorItem.Type.BOOTS, new Item.Properties()));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

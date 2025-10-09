@@ -4,7 +4,7 @@
   "pattern": [
     "abc",
     "bdb",
-    "cbe"
+    "ebf"
   ],
   "key": {
     "a": {
@@ -20,6 +20,9 @@
       "item": "universe3090:rainbowemerald"
     },
     "e": {
+      "item": "universe3090:reddiamondlapis"
+    },
+    "f": {
       "item": "universe3090:aluminium_ingot"
     }
   },

@@ -68,7 +68,7 @@ public class MTWtestanimItem extends Item implements GeoItem {
 	private PlayState idlePredicate(AnimationState event) {
 		if (this.transformType != null ? true : false) {
 			if (this.animationprocedure.equals("empty")) {
-				event.getController().setAnimation(RawAnimation.begin().thenLoop("animation.M.T.W_animated.idle"));
+				event.getController().setAnimation(RawAnimation.begin().thenLoop("animation.M.T.W_animated.active"));
 				return PlayState.CONTINUE;
 			}
 		}

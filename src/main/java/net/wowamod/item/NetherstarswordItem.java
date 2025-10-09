@@ -30,7 +30,7 @@ public class NetherstarswordItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 8.5f;
+				return 10.5f;
 			}
 
 			public int getLevel() {
@@ -44,7 +44,7 @@ public class NetherstarswordItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of();
 			}
-		}, 3, -2.34f, new Item.Properties());
+		}, 3, -2.25f, new Item.Properties());
 	}
 
 	@Override

@@ -14,7 +14,7 @@ import java.util.List;
 
 public class CableUpdateTickEnergyProcedure {
     // Увеличенная скорость передачи энергии
-    private static final int MAX_TRANSFER_RATE = 25000; // Увеличено с 1000 до 5000
+    private static final int MAX_TRANSFER_RATE = 50000; // Увеличено с 1000 до 5000
     // Энергетические потери (0.0 = без потерь)
     private static final double ENERGY_LOSS_FACTOR = 0.00; // Уменьшено с 0.05 до 0.02
 
@@ -71,7 +71,7 @@ public class CableUpdateTickEnergyProcedure {
 
         // Рассчитываем, сколько энергии можем передать
         int totalPossibleTransfer = Math.min(availableEnergy, MAX_TRANSFER_RATE);
-        int energyPerTarget = totalPossibleTransfer / Math.max(2, targets.size());
+        int energyPerTarget = totalPossibleTransfer / Math.max(16, targets.size());
 
         int totalTransferred = 0;
         
@@ -83,7 +83,7 @@ public class CableUpdateTickEnergyProcedure {
 
             // Определяем, сколько энергии будем передавать
             int amountToExtract = Math.min(energyPerTarget, MAX_TRANSFER_RATE);
-            int energyAfterLoss = (int) (amountToExtract * (2.0 - ENERGY_LOSS_FACTOR));
+            int energyAfterLoss = (int) (amountToExtract * (4.0 - ENERGY_LOSS_FACTOR));
 
             // Проверяем, сколько энергии может принять целевой блок
             int maxReceive = target.energyStorage.receiveEnergy(energyAfterLoss, true);

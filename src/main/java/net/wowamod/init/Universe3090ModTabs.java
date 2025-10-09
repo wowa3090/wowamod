@@ -137,6 +137,10 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.DIAMOND_LAPIS_BRONYA_CPRE.get());
 				tabData.accept(Universe3090ModItems.DIAMONDLAPISTOOLSWORD.get());
 				tabData.accept(Universe3090ModItems.MT_WTESTANIM.get());
+				tabData.accept(Universe3090ModItems.ELISSAARMOR_HELMET.get());
+				tabData.accept(Universe3090ModItems.ELISSAARMOR_CHESTPLATE.get());
+				tabData.accept(Universe3090ModItems.ELISSAARMOR_LEGGINGS.get());
+				tabData.accept(Universe3090ModItems.ELISSAARMOR_BOOTS.get());
 			})
 
 					.build());

@@ -4,8 +4,8 @@
   "definition": {
     "renderType": 0,
     "texture": "texture_mtw",
-    "name": "MT Wtestanim",
-    "idle": "animation.M.T.W_animated.idle",
+    "name": "M_T_W",
+    "idle": "animation.M.T.W_animated.active",
     "rarity": "EPIC",
     "displaySettings": "m.t.w_animated_-_displayset.json",
     "leftArm": "",

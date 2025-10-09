@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "universe3090:item/diamonde_sworde"
+    "layer0": "universe3090:item/starsword_2"
   }
 }

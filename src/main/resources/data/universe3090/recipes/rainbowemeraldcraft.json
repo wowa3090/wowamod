@@ -3,8 +3,8 @@
   "category": "misc",
   "pattern": [
     "abc",
-    "d e",
-    "fgh"
+    "def",
+    "ghi"
   ],
   "key": {
     "a": {
@@ -20,15 +20,18 @@
       "item": "universe3090:greenemerald"
     },
     "e": {
-      "item": "universe3090:yellowemerald"
+      "item": "universe3090:diamond_lapis_bronya_cpre"
     },
     "f": {
-      "item": "universe3090:blueemerald"
+      "item": "universe3090:yellowemerald"
     },
     "g": {
-      "item": "universe3090:lightblueemerald"
+      "item": "universe3090:blueemerald"
     },
     "h": {
+      "item": "universe3090:lightblueemerald"
+    },
+    "i": {
       "item": "universe3090:purpleemerald"
     }
   },
