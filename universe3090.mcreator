@@ -6255,6 +6255,20 @@
           "src/main/java/net/wowamod/item/ElissaarmorItem.java"
         ]
       }
+    },
+    {
+      "name": "OffPlayerModel",
+      "type": "procedure",
+      "sortid": 356,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "off_player_model",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/OffPlayerModelProcedure.java"
+        ],
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [
