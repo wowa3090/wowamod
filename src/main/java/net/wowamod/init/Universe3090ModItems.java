@@ -72,6 +72,7 @@ import net.wowamod.item.ExtractgolubaysoulItem;
 import net.wowamod.item.EtheriumdarkItem;
 import net.wowamod.item.EnergyelementItem;
 import net.wowamod.item.ElissaarmorItem;
+import net.wowamod.item.ElissClawsItem;
 import net.wowamod.item.EkranchikItem;
 import net.wowamod.item.DissasebmlyrequiredItem;
 import net.wowamod.item.DiamondlapistoolswordItem;
@@ -255,6 +256,7 @@ public class Universe3090ModItems {
 	public static final RegistryObject<ElissaarmorItem> ELISSAARMOR_CHESTPLATE = REGISTRY.register("elissaarmor_chestplate", () -> new ElissaarmorItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
 	public static final RegistryObject<ElissaarmorItem> ELISSAARMOR_LEGGINGS = REGISTRY.register("elissaarmor_leggings", () -> new ElissaarmorItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
 	public static final RegistryObject<ElissaarmorItem> ELISSAARMOR_BOOTS = REGISTRY.register("elissaarmor_boots", () -> new ElissaarmorItem(ArmorItem.Type.BOOTS, new Item.Properties()));
+	public static final RegistryObject<Item> ELISS_CLAWS = REGISTRY.register("eliss_claws", () -> new ElissClawsItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

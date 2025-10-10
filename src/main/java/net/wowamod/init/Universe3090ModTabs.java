@@ -140,6 +140,7 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.ELISSAARMOR_CHESTPLATE.get());
 				tabData.accept(Universe3090ModItems.ELISSAARMOR_LEGGINGS.get());
 				tabData.accept(Universe3090ModItems.ELISSAARMOR_BOOTS.get());
+				tabData.accept(Universe3090ModItems.ELISS_CLAWS.get());
 			})
 
 					.build());

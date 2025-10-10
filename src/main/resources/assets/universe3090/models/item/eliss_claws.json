@@ -1,0 +1,7 @@
+{
+  "parent": "universe3090:custom/elissclaws_-_javaitem",
+  "textures": {
+    "0": "universe3090:block/texture_java_claws",
+    "particle": "universe3090:item/elcli"
+  }
+}

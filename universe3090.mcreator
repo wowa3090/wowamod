@@ -6215,6 +6215,33 @@
           "src/main/java/net/wowamod/PlayerModelHiderEvents.java"
         ]
       }
+    },
+    {
+      "name": "ElissClaws",
+      "type": "tool",
+      "sortid": 357,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eliss_claws",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/universe3090/models/item/eliss_claws.json",
+          "src/main/java/net/wowamod/item/ElissClawsItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ElissClawsDoubleArms",
+      "type": "code",
+      "sortid": 358,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "eliss_claws_double_arms",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/ElissClawsDoubleArms.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -6466,6 +6493,7 @@
       "item.wowamodfabric.redemerald": "Красный Изумруд",
       "entity.wowamodfabric.nightmare": "Nightmare.trojan",
       "item.wowamod.whitesoul_myplace": "Белая душа из игры MY PLACE",
+      "item.universe3090.eliss_claws": "Eliss Claws",
       "block.universe3090.blockforprofessiafix": "Профессиональный блок",
       "gui.universe3090.guidebookstart.label_izumrudov": "Изумрудов",
       "item.wowamodfabric.dissasebmlyrequired": "Dissasebmly Required",
@@ -6903,6 +6931,7 @@
       "item.wowamodfabric.redemerald": "Красный Изумруд",
       "entity.wowamodfabric.nightmare": "Nightmare.trojan",
       "item.wowamod.whitesoul_myplace": "Белая душа из игры MY PLACE",
+      "item.universe3090.eliss_claws": "Eliss Claws",
       "block.universe3090.blockforprofessiafix": "Профессиональный блок",
       "gui.universe3090.guidebookstart.label_izumrudov": "Изумрудов",
       "item.wowamodfabric.dissasebmlyrequired": "Dissasebmly Required",
