@@ -53,7 +53,6 @@ import net.wowamod.item.LightbluesoulpieceItem;
 import net.wowamod.item.LightbluesoulItem;
 import net.wowamod.item.LightblueemeraldItem;
 import net.wowamod.item.LightBlueEmeraldPieceItem;
-import net.wowamod.item.LaserguntestItem;
 import net.wowamod.item.KolbaItem;
 import net.wowamod.item.KlavaItem;
 import net.wowamod.item.KarmannielectrolizerItem;
@@ -213,7 +212,6 @@ public class Universe3090ModItems {
 	public static final RegistryObject<Item> ENERGYELEMENT = REGISTRY.register("energyelement", () -> new EnergyelementItem());
 	public static final RegistryObject<Item> MULTITOOLCOMPONENTNOTTRUE = REGISTRY.register("multitoolcomponentnottrue", () -> new MultitoolcomponentnottrueItem());
 	public static final RegistryObject<Item> SOLARPANELELEMENT = REGISTRY.register("solarpanelelement", () -> new SolarpanelelementItem());
-	public static final RegistryObject<Item> LASERGUNTEST = REGISTRY.register("laserguntest", () -> new LaserguntestItem());
 	public static final RegistryObject<Item> CLEARETHERIUMLIGHT = REGISTRY.register("clearetheriumlight", () -> new ClearetheriumlightItem());
 	public static final RegistryObject<Item> MIMIC_SPAWN_EGG = REGISTRY.register("mimic_spawn_egg", () -> new ForgeSpawnEggItem(Universe3090ModEntities.MIMIC, -10013184, -5131855, new Item.Properties()));
 	public static final RegistryObject<Item> RING = REGISTRY.register("ring", () -> new RingItem());

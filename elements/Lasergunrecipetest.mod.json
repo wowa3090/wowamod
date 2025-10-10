@@ -40,7 +40,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Laserguntest"
+      "value": "CUSTOM:MTWtestanim"
     },
     "name": "lasergunrecipetest",
     "namespace": "mod"

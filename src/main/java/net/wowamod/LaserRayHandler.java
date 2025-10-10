@@ -49,7 +49,7 @@ public class LaserRayHandler {
     private static int damageCooldown = 0;
     private static final double LASER_RANGE = 64.0;
     private static final float LASER_WIDTH = 0.1F;
-    public static final float MAX_DAMAGE_AMOUNT = 10.0F;
+    public static final float MAX_DAMAGE_AMOUNT = 15.0F;
 
     @SubscribeEvent
     public static void onMouseInput(InputEvent.MouseButton.Pre event) {

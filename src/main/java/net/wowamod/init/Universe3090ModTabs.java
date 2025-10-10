@@ -119,7 +119,6 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.ENERGYELEMENT.get());
 				tabData.accept(Universe3090ModItems.MULTITOOLCOMPONENTNOTTRUE.get());
 				tabData.accept(Universe3090ModItems.SOLARPANELELEMENT.get());
-				tabData.accept(Universe3090ModItems.LASERGUNTEST.get());
 				tabData.accept(Universe3090ModItems.CLEARETHERIUMLIGHT.get());
 				tabData.accept(Universe3090ModItems.MIMIC_SPAWN_EGG.get());
 				tabData.accept(Universe3090ModItems.RING.get());
