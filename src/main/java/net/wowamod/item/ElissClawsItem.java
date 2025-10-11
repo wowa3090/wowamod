@@ -24,7 +24,7 @@ public class ElissClawsItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 10f;
+				return 11f;
 			}
 
 			public int getLevel() {
