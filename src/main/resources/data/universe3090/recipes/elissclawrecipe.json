@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    " bc",
+    "bc "
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:derjatili"
+    },
+    "b": {
+      "item": "universe3090:diamondlapis"
+    },
+    "c": {
+      "item": "universe3090:ultrastrongcoating"
+    }
+  },
+  "result": {
+    "item": "universe3090:elissclaw",
+    "count": 1
+  }
+}

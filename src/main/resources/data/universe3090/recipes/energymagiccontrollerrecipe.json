@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aca"
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:wiresprovoda"
+    },
+    "b": {
+      "item": "universe3090:soulcore"
+    },
+    "c": {
+      "item": "universe3090:darkironplastine"
+    },
+    "d": {
+      "item": "universe3090:redstonecommandblock"
+    }
+  },
+  "result": {
+    "item": "universe3090:energymagiccontroller",
+    "count": 1
+  }
+}

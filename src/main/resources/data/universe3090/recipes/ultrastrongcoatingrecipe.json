@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "dbd",
+    "abc"
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:diamondlapis"
+    },
+    "b": {
+      "item": "universe3090:darkironplastine"
+    },
+    "c": {
+      "item": "universe3090:aluminium_plate"
+    },
+    "d": {
+      "item": "universe3090:blue_emerald_piece"
+    }
+  },
+  "result": {
+    "item": "universe3090:ultrastrongcoating",
+    "count": 1
+  }
+}

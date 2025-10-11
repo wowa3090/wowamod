@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "ded",
+    "fgh"
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:lightbluesoul"
+    },
+    "b": {
+      "item": "universe3090:energymagiccontroller"
+    },
+    "c": {
+      "item": "universe3090:greensoul"
+    },
+    "d": {
+      "item": "universe3090:energypipesusc"
+    },
+    "e": {
+      "item": "universe3090:diamond_lapis_bronya_cpre"
+    },
+    "f": {
+      "item": "universe3090:bluesoul"
+    },
+    "g": {
+      "item": "universe3090:rainbowemerald"
+    },
+    "h": {
+      "item": "universe3090:redsoul"
+    }
+  },
+  "result": {
+    "item": "universe3090:energymagiccontroller",
+    "count": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ab",
+    "aba",
+    "ba "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:glass"
+    },
+    "b": {
+      "item": "universe3090:kolba"
+    }
+  },
+  "result": {
+    "item": "universe3090:pipes",
+    "count": 1
+  }
+}

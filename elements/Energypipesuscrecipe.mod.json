@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Wiresprovoda"
+      },
+      {
+        "value": "CUSTOM:Lightblueemerald"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Extractlbsoul"
+      },
+      {
+        "value": "CUSTOM:Pipes"
+      },
+      {
+        "value": "CUSTOM:Extractlbsoul"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Ultrastrongcoating"
+      },
+      {
+        "value": "CUSTOM:Ultrastrongcoating"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Energypipesusc"
+    },
+    "name": "energypipesuscrecipe",
+    "namespace": "mod"
+  }
+}

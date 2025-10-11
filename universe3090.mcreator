@@ -6242,6 +6242,209 @@
           "src/main/java/net/wowamod/ElissClawsDoubleArms.java"
         ]
       }
+    },
+    {
+      "name": "Elissclaw",
+      "type": "item",
+      "sortid": 359,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elissclaw",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/universe3090/models/item/elissclaw.json",
+          "src/main/java/net/wowamod/item/ElissclawItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Elissclawsrecipe",
+      "type": "recipe",
+      "sortid": 360,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elissclawsrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/elissclawsrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Ultrastrongcoating",
+      "type": "item",
+      "sortid": 361,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ultrastrongcoating",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/UltrastrongcoatingItem.java",
+          "src/main/resources/assets/universe3090/models/item/ultrastrongcoating.json"
+        ]
+      }
+    },
+    {
+      "name": "Energypipesusc",
+      "type": "item",
+      "sortid": 362,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energypipesusc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/EnergypipesuscItem.java",
+          "src/main/resources/assets/universe3090/models/item/energypipesusc.json"
+        ]
+      }
+    },
+    {
+      "name": "Pipes",
+      "type": "item",
+      "sortid": 363,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pipes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/PipesItem.java",
+          "src/main/resources/assets/universe3090/models/item/pipes.json"
+        ]
+      }
+    },
+    {
+      "name": "Ultrastrongcoatingrecipe",
+      "type": "recipe",
+      "sortid": 364,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ultrastrongcoatingrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/ultrastrongcoatingrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Energypipesuscrecipe",
+      "type": "recipe",
+      "sortid": 365,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energypipesuscrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/energypipesuscrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Diamondlapisblock",
+      "type": "block",
+      "sortid": 366,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamondlapisblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/universe3090/models/item/diamondlapisblock.json",
+          "src/main/resources/assets/universe3090/blockstates/diamondlapisblock.json",
+          "src/main/java/net/wowamod/block/DiamondlapisblockBlock.java",
+          "src/main/resources/assets/universe3090/models/block/diamondlapisblock.json"
+        ]
+      }
+    },
+    {
+      "name": "Diamondlapisblockrecipe",
+      "type": "recipe",
+      "sortid": 367,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamondlapisblockrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/diamondlapisblockrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Pipesrecipe",
+      "type": "recipe",
+      "sortid": 368,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pipesrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/pipesrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Elissclawrecipe",
+      "type": "recipe",
+      "sortid": 369,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elissclawrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/elissclawrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Diamondlapisblockrecipe2",
+      "type": "recipe",
+      "sortid": 370,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamondlapisblockrecipe_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/diamondlapisblockrecipe_2.json"
+        ]
+      }
+    },
+    {
+      "name": "Energymagiccontroller",
+      "type": "item",
+      "sortid": 371,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energymagiccontroller",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/universe3090/models/item/energymagiccontroller.json",
+          "src/main/java/net/wowamod/item/EnergymagiccontrollerItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Energymagiccontrollerrecipe",
+      "type": "recipe",
+      "sortid": 372,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energymagiccontrollerrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/energymagiccontrollerrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Energymagiccorerecipe",
+      "type": "recipe",
+      "sortid": 373,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energymagiccorerecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/energymagiccorerecipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -6463,6 +6666,7 @@
       "item.wowamodfabric.ekranchik": "Экран",
       "item.wowamod.aluminium_ingot": "Алюминиевый слиток",
       "item.wowamod.myplacezone": "MyPlaceZone",
+      "item.universe3090.energymagiccontroller": "Energy magic controller",
       "item.wowamod.derjatili": "Держатель для необычного механизма",
       "item.universe3090.lightblueemerald": "Голубой Изумруд",
       "item.wowamod.osnovaaaaglass": "Незакалённое Усиленное стекло",
@@ -6520,6 +6724,7 @@
       "block.universe3090.crafterbroni": "Необычный Механизм",
       "gui.universe3090.guidebookstart.label_dlia_nachala_vam_ponadobitsia_nait": "Для начала вам понадобиться найти множество ресурсов в виде :",
       "block.universe3090.testplant": "Заражённая тьмой трава",
+      "item.universe3090.ultrastrongcoating": "Ultrastrongcoating",
       "block.wowamod.redstoneport": "Редстоун порт конструктора",
       "item.wowamodfabric.blueemerald": "Синий изумруд",
       "gui.universe3090.wowabronyacraftring.label_empty": "\u003e",
@@ -6538,6 +6743,7 @@
       "item.wowamod.multitoolcomponentnottrue": "Multitoolcomponentnottrue",
       "item.universe3090.bluesoul": "Синяя душа",
       "entity.minecraft.villager.wowamod.emeraldshopper": "Изумрудный добытчик",
+      "item.universe3090.elissclaw": "Claw",
       "item.wowamod.purplesoul": "Фиолетовая душа",
       "block.universe3090.corrupted_souls_block": "Corrupted Souls Block",
       "item.universe3090.elissaarmor_chestplate": "Elissa Chestplate",
@@ -6691,6 +6897,7 @@
       "block.wowamod.darkgrassblockniz": "Dark Grass",
       "item.wowamod.aluminium_plate": "Алюминиевая пластина",
       "block.wowamod.extractor": "Extractor",
+      "item.universe3090.pipes": "Pipes",
       "item.universe3090.alphaelement": "Элемент Альфа",
       "gui.universe3090.guidebook.label_krafty": "Крафты",
       "subtitles.happyandsad": "a dark place",
@@ -6730,6 +6937,7 @@
       "item.wowamod.light_blue_emerald_piece": "Осколок Голубого Изумруда",
       "item.universe3090.dark_head_spawn_egg": "Dark Head Spawn Egg",
       "item.wowamod.purple_emerald_piece": "Осколок перпл изумруда",
+      "item.universe3090.energypipesusc": "Energy pipes",
       "item.wowamodfabric.whiteemerald": "Белый Изумруд",
       "item.wowamodfabric.rainbowemerald": "Радужный Изумруд",
       "effect.universe3090.nightmareish": "NIGHTMARISH ENDINGE",
@@ -6798,6 +7006,7 @@
       "item.universe3090.ironplastinewowa": "Железная пластина",
       "item.universe3090.coppermass_1": "Медная масса",
       "item.wowamod.aluminiumdiamondbase": "Aluminiumdiamondbase",
+      "block.universe3090.diamondlapisblock": "Diamondlapis block",
       "item.universe3090.redsoul": "Красная Душа",
       "gui.wowamod.guidebookstart.label_izumrudov": "Изумрудов",
       "item.wowamod.energyelement": "Energyelement",
@@ -6901,6 +7110,7 @@
       "item.universe3090.extractlbsoul": "Экстракт голубой души",
       "item.wowamod.aluminium_ingot": "Aluminium Ingot",
       "item.wowamod.myplacezone": "MyPlaceZone",
+      "item.universe3090.energymagiccontroller": "Energy magic controller",
       "item.wowamod.derjatili": "Держатель для необычного механизма",
       "item.universe3090.lightblueemerald": "Голубой Изумруд",
       "item.wowamod.osnovaaaaglass": "Незакалённое Усиленное стекло",
@@ -6958,6 +7168,7 @@
       "block.universe3090.crafterbroni": "Необычный Механизм",
       "gui.universe3090.guidebookstart.label_dlia_nachala_vam_ponadobitsia_nait": "Для начала вам понадобиться найти множество ресурсов в виде :",
       "block.universe3090.testplant": "Testplant",
+      "item.universe3090.ultrastrongcoating": "Ultrastrongcoating",
       "block.wowamod.redstoneport": "Редстоун порт конструктора",
       "item.wowamodfabric.blueemerald": "Синий изумруд",
       "gui.universe3090.wowabronyacraftring.label_empty": "\u003e",
@@ -6976,6 +7187,7 @@
       "item.wowamod.multitoolcomponentnottrue": "Multitoolcomponentnottrue",
       "item.universe3090.bluesoul": "Синяя душа",
       "entity.minecraft.villager.wowamod.emeraldshopper": "Emeraldshopper",
+      "item.universe3090.elissclaw": "Claw",
       "item.wowamod.purplesoul": "Фиолетовая душа",
       "block.universe3090.corrupted_souls_block": "Corrupted Souls Block",
       "item.universe3090.elissaarmor_chestplate": "Elissa Chestplate",
@@ -7129,6 +7341,7 @@
       "block.wowamod.darkgrassblockniz": "Dark Grass",
       "item.wowamod.aluminium_plate": "Aluminium Plate",
       "block.wowamod.extractor": "Extractor",
+      "item.universe3090.pipes": "Pipes",
       "item.universe3090.alphaelement": "Alpha element",
       "gui.universe3090.guidebook.label_krafty": "Крафты",
       "subtitles.happyandsad": "a dark place",
@@ -7167,6 +7380,7 @@
       "item.wowamod.light_blue_emerald_piece": "Light Blue Emerald Piece",
       "item.universe3090.dark_head_spawn_egg": "Dark Head Spawn Egg",
       "item.wowamod.purple_emerald_piece": "Purple Emerald Piece",
+      "item.universe3090.energypipesusc": "Energy pipes",
       "item.wowamodfabric.whiteemerald": "Белый Изумруд",
       "item.wowamodfabric.rainbowemerald": "Радужный?Изумруд",
       "effect.universe3090.nightmareish": "NIGHTMARISH ENDINGE",
@@ -7235,6 +7449,7 @@
       "item.universe3090.ironplastinewowa": "iron plastine",
       "item.universe3090.coppermass_1": "Медная масса",
       "item.wowamod.aluminiumdiamondbase": "Aluminiumdiamondbase",
+      "block.universe3090.diamondlapisblock": "Diamondlapis block",
       "item.universe3090.redsoul": "Красная Душа",
       "gui.wowamod.guidebookstart.label_izumrudov": "Изумрудов",
       "item.wowamod.energyelement": "Energyelement",

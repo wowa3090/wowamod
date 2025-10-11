@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "universe3090:diamondlapisblock"
+    }
+  ],
+  "result": {
+    "item": "universe3090:diamondlapis",
+    "count": 9
+  }
+}

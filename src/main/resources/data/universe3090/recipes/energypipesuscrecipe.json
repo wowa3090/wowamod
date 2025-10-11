@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab ",
+    "cdc",
+    " ee"
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:wiresprovoda"
+    },
+    "b": {
+      "item": "universe3090:lightblueemerald"
+    },
+    "c": {
+      "item": "universe3090:extractlbsoul"
+    },
+    "d": {
+      "item": "universe3090:pipes"
+    },
+    "e": {
+      "item": "universe3090:ultrastrongcoating"
+    }
+  },
+  "result": {
+    "item": "universe3090:energypipesusc",
+    "count": 1
+  }
+}

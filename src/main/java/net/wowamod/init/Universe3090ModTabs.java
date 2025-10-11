@@ -141,6 +141,12 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.ELISSAARMOR_LEGGINGS.get());
 				tabData.accept(Universe3090ModItems.ELISSAARMOR_BOOTS.get());
 				tabData.accept(Universe3090ModItems.ELISS_CLAWS.get());
+				tabData.accept(Universe3090ModItems.ELISSCLAW.get());
+				tabData.accept(Universe3090ModItems.ULTRASTRONGCOATING.get());
+				tabData.accept(Universe3090ModItems.ENERGYPIPESUSC.get());
+				tabData.accept(Universe3090ModItems.PIPES.get());
+				tabData.accept(Universe3090ModBlocks.DIAMONDLAPISBLOCK.get().asItem());
+				tabData.accept(Universe3090ModItems.ENERGYMAGICCONTROLLER.get());
 			})
 
 					.build());

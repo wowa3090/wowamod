@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "universe3090:block/diamondlapisblock",
+    "particle": "universe3090:block/diamondlapisblock"
+  },
+  "render_type": "solid"
+}
