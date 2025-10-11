@@ -6445,6 +6445,46 @@
           "src/main/resources/data/universe3090/recipes/energymagiccorerecipe.json"
         ]
       }
+    },
+    {
+      "name": "Electromagiccore",
+      "type": "item",
+      "sortid": 374,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electromagiccore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/universe3090/models/item/electromagiccore.json",
+          "src/main/java/net/wowamod/item/ElectromagiccoreItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ElissClawsSuperAbility",
+      "type": "code",
+      "sortid": 375,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "eliss_claws_super_ability",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/ElissClawsSuperAbility.java"
+        ]
+      }
+    },
+    {
+      "name": "NetworkSuperAbility",
+      "type": "code",
+      "sortid": 376,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "network_super_ability",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/NetworkSuperAbility.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -6949,6 +6989,7 @@
       "item.wowamodfabric.purplesoul": "Фиолетовая душа",
       "block.wowamod.black_walls_myplace": "Black Walls Myplace",
       "item.wowamodfabric.shadowblade": "Теневой клинок",
+      "item.universe3090.electromagiccore": "Energy electro magic core",
       "item.universe3090.copperplate": "Медная пластина",
       "biome.universe3090.darkbiome": "Dark",
       "item.wowamodfabric.mimickoja": "\"Кожа\" мимика",
@@ -7392,6 +7433,7 @@
       "item.wowamodfabric.purplesoul": "Фиолетовая душа",
       "block.wowamod.black_walls_myplace": "Black Walls Myplace",
       "item.wowamodfabric.shadowblade": "Теневой клинок",
+      "item.universe3090.electromagiccore": "Energy electro magic core",
       "item.universe3090.copperplate": "Медная пластина",
       "biome.universe3090.darkbiome": "Dark",
       "item.wowamodfabric.mimickoja": "\"Кожа\" мимика",

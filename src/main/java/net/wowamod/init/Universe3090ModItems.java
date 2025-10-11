@@ -78,6 +78,7 @@ import net.wowamod.item.EnergyelementItem;
 import net.wowamod.item.ElissclawItem;
 import net.wowamod.item.ElissaarmorItem;
 import net.wowamod.item.ElissClawsItem;
+import net.wowamod.item.ElectromagiccoreItem;
 import net.wowamod.item.EkranchikItem;
 import net.wowamod.item.DissasebmlyrequiredItem;
 import net.wowamod.item.DiamondlapistoolswordItem;
@@ -268,6 +269,7 @@ public class Universe3090ModItems {
 	public static final RegistryObject<Item> PIPES = REGISTRY.register("pipes", () -> new PipesItem());
 	public static final RegistryObject<Item> DIAMONDLAPISBLOCK = block(Universe3090ModBlocks.DIAMONDLAPISBLOCK);
 	public static final RegistryObject<Item> ENERGYMAGICCONTROLLER = REGISTRY.register("energymagiccontroller", () -> new EnergymagiccontrollerItem());
+	public static final RegistryObject<Item> ELECTROMAGICCORE = REGISTRY.register("electromagiccore", () -> new ElectromagiccoreItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

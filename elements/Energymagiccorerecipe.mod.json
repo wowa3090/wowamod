@@ -40,7 +40,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Energymagiccontroller"
+      "value": "CUSTOM:Electromagiccore"
     },
     "name": "energymagiccorerecipe",
     "namespace": "mod"

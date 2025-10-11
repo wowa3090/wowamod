@@ -147,6 +147,7 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.PIPES.get());
 				tabData.accept(Universe3090ModBlocks.DIAMONDLAPISBLOCK.get().asItem());
 				tabData.accept(Universe3090ModItems.ENERGYMAGICCONTROLLER.get());
+				tabData.accept(Universe3090ModItems.ELECTROMAGICCORE.get());
 			})
 
 					.build());
