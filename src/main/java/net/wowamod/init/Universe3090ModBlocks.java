@@ -18,6 +18,7 @@ import net.wowamod.block.ExtractorBlock;
 import net.wowamod.block.ExtractgolubaysoulBlock;
 import net.wowamod.block.EmeraldCombinerBlock;
 import net.wowamod.block.DiamondlapisblockBlock;
+import net.wowamod.block.DarkironblockBlock;
 import net.wowamod.block.DarkgrassblocknizBlock;
 import net.wowamod.block.DarkgrassBlock;
 import net.wowamod.block.DarkStrkBLKBlock;
@@ -102,6 +103,7 @@ public class Universe3090ModBlocks {
 	public static final RegistryObject<Block> CABLE_XC = REGISTRY.register("cable_xc", () -> new CableXCBlock());
 	public static final RegistryObject<Block> CABLE_S = REGISTRY.register("cable_s", () -> new CableSBlock());
 	public static final RegistryObject<Block> DIAMONDLAPISBLOCK = REGISTRY.register("diamondlapisblock", () -> new DiamondlapisblockBlock());
+	public static final RegistryObject<Block> DARKIRONBLOCK = REGISTRY.register("darkironblock", () -> new DarkironblockBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

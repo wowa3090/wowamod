@@ -149,6 +149,7 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.ENERGYMAGICCONTROLLER.get());
 				tabData.accept(Universe3090ModItems.ELECTROMAGICCORE.get());
 				tabData.accept(Universe3090ModItems.FIRSTBRONYACOMPONENT.get());
+				tabData.accept(Universe3090ModBlocks.DARKIRONBLOCK.get().asItem());
 			})
 
 					.build());

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:blackironingot"
+    }
+  },
+  "result": {
+    "item": "universe3090:darkironblock",
+    "count": 1
+  }
+}

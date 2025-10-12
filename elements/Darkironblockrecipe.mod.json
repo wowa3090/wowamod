@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Etheriumdark"
+        "value": "CUSTOM:Blackironingot"
       },
       {
-        "value": "CUSTOM:Reddiamondlapis"
+        "value": "CUSTOM:Blackironingot"
       },
       {
-        "value": "CUSTOM:Etheriumdark"
+        "value": "CUSTOM:Blackironingot"
       },
       {
-        "value": "CUSTOM:Etheriumdark"
+        "value": "CUSTOM:Blackironingot"
       },
       {
-        "value": "CUSTOM:DiamondMultiToolw"
+        "value": "CUSTOM:Blackironingot"
       },
       {
-        "value": "CUSTOM:Etheriumdark"
+        "value": "CUSTOM:Blackironingot"
       },
       {
-        "value": "CUSTOM:Etheriumdark"
+        "value": "CUSTOM:Blackironingot"
       },
       {
-        "value": "CUSTOM:Darkironblock"
+        "value": "CUSTOM:Blackironingot"
       },
       {
-        "value": "CUSTOM:Etheriumdark"
+        "value": "CUSTOM:Blackironingot"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Reddiamondmultitoolplusw"
+      "value": "CUSTOM:Darkironblock"
     },
-    "name": "reddiamondmultitoolpluisrecipe",
+    "name": "darkironblockrecipe",
     "namespace": "mod"
   }
 }

@@ -6525,6 +6525,48 @@
           "src/main/resources/data/universe3090/recipes/firstbronyacomponentrecipe.json"
         ]
       }
+    },
+    {
+      "name": "Darkironblock",
+      "type": "block",
+      "sortid": 380,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkironblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/universe3090/models/block/darkironblock.json",
+          "src/main/resources/assets/universe3090/models/item/darkironblock.json",
+          "src/main/resources/assets/universe3090/blockstates/darkironblock.json",
+          "src/main/java/net/wowamod/block/DarkironblockBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Darkironblockrecipe",
+      "type": "recipe",
+      "sortid": 381,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkironblockrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/darkironblockrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Darkironblockrecipe2",
+      "type": "recipe",
+      "sortid": 382,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkironblockrecipe_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/darkironblockrecipe_2.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -6818,6 +6860,7 @@
       "item.wowamod.lightbluesoulpiece": "Частичка Голубой души",
       "item.wowamod.extractlbsoul": "Экстракт голубой души",
       "item.universe3090.mimictkanb": "Мимикрирующая Ткань",
+      "block.universe3090.darkironblock": "Dark iron block",
       "gui.universe3090.guidebookstart.label_dush": "Душ",
       "entity.universe3090.dark_head": "Dark Head",
       "block.wowamodfabric.portconstructor": "Порт конструктора",
@@ -7264,6 +7307,7 @@
       "item.wowamod.lightbluesoulpiece": "Частичка Голубой души",
       "item.wowamod.extractlbsoul": "Экстракт голубой души",
       "item.universe3090.mimictkanb": "Мимикрирующая Ткань",
+      "block.universe3090.darkironblock": "Dark iron block",
       "gui.universe3090.guidebookstart.label_dush": "Душ",
       "entity.universe3090.dark_head": "Dark Head",
       "block.wowamodfabric.portconstructor": "Порт конструктора",

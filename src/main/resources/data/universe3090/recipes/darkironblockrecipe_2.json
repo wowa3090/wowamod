@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "universe3090:darkironblock"
+    }
+  ],
+  "result": {
+    "item": "universe3090:blackironingot",
+    "count": 9
+  }
+}
