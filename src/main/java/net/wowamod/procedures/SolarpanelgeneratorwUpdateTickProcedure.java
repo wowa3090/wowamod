@@ -32,7 +32,20 @@ public class SolarpanelgeneratorwUpdateTickProcedure {
 		} else {
 			multiplayer = 1.5;
 		}
-		if (world instanceof Level _lvl2 && _lvl2.isDay() && world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z))) {
+		if ((new Object() {
+			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+				BlockEntity _ent = world.getBlockEntity(pos);
+				if (_ent != null)
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+				return _retval.get();
+			}
+		}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == Universe3090ModItems.CLEARETHERIUMLIGHT.get()) {
+			multiplayer = 5;
+		} else {
+			multiplayer = 1.5;
+		}
+		if (world instanceof Level _lvl4 && _lvl4.isDay() && world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z))) {
 			if (new Object() {
 				public boolean canReceiveEnergy(LevelAccessor level, BlockPos pos) {
 					AtomicBoolean _retval = new AtomicBoolean(false);
@@ -74,7 +87,7 @@ public class SolarpanelgeneratorwUpdateTickProcedure {
 						_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.receiveEnergy(_amount, false));
 				}
 			}
-		} else if (!(world instanceof Level _lvl9 && _lvl9.isDay()) && world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z))) {
+		} else if (!(world instanceof Level _lvl11 && _lvl11.isDay()) && world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z))) {
 			if (new Object() {
 				public boolean canReceiveEnergy(LevelAccessor level, BlockPos pos) {
 					AtomicBoolean _retval = new AtomicBoolean(false);
