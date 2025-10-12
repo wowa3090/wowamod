@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab ",
+    "abc",
+    "ab "
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:etheriumdark"
+    },
+    "b": {
+      "item": "universe3090:ultrastrongcoating"
+    },
+    "c": {
+      "item": "universe3090:extractlbsoul"
+    }
+  },
+  "result": {
+    "item": "universe3090:firstbronyacomponent",
+    "count": 1
+  }
+}

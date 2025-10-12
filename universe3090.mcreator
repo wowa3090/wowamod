@@ -6512,6 +6512,19 @@
           "src/main/resources/assets/universe3090/models/item/firstbronyacomponent.json"
         ]
       }
+    },
+    {
+      "name": "Firstbronyacomponentrecipe",
+      "type": "recipe",
+      "sortid": 379,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "firstbronyacomponentrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/firstbronyacomponentrecipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
