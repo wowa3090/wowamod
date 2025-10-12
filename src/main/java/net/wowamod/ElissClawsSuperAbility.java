@@ -64,7 +64,7 @@ public class ElissClawsSuperAbility {
 
         if (isElissClaws(player.getItemInHand(event.getHand()))) {
             // Новая увеличенная дистанция работы способности
-            double range = 32.0;
+            double range = 48.0;
 
             // Ищем сущность, на которую смотрит игрок
             Vec3 eyePosition = player.getEyePosition();

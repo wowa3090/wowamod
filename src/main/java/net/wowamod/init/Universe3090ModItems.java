@@ -68,6 +68,7 @@ import net.wowamod.item.GreensoulItem;
 import net.wowamod.item.GreenemeraldItem;
 import net.wowamod.item.GreenEmeraldPieceItem;
 import net.wowamod.item.GoldPlastineItem;
+import net.wowamod.item.FirstbronyacomponentItem;
 import net.wowamod.item.ExtractredsoulItem;
 import net.wowamod.item.ExtractlbsoulItem;
 import net.wowamod.item.ExtractgolubaysoulItem;
@@ -270,6 +271,7 @@ public class Universe3090ModItems {
 	public static final RegistryObject<Item> DIAMONDLAPISBLOCK = block(Universe3090ModBlocks.DIAMONDLAPISBLOCK);
 	public static final RegistryObject<Item> ENERGYMAGICCONTROLLER = REGISTRY.register("energymagiccontroller", () -> new EnergymagiccontrollerItem());
 	public static final RegistryObject<Item> ELECTROMAGICCORE = REGISTRY.register("electromagiccore", () -> new ElectromagiccoreItem());
+	public static final RegistryObject<Item> FIRSTBRONYACOMPONENT = REGISTRY.register("firstbronyacomponent", () -> new FirstbronyacomponentItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
