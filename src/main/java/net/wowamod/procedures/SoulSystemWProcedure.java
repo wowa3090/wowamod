@@ -25,6 +25,7 @@ import net.minecraftforge.common.capabilities.ICapabilityProvider;
 import net.minecraftforge.common.capabilities.ICapabilitySerializable;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.event.AttachCapabilitiesEvent;
+import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.EntityJoinLevelEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
@@ -76,6 +77,9 @@ public class SoulSystemWProcedure {
         Set<UUID> getInteractedPlayers(); // Add this to interface
         // Добавляем метод для принудительной синхронизации текущей души
         void setCurrentSoul(SoulType soul);
+        // Метод для отложенной синхронизации
+        void setDirty(boolean dirty);
+        boolean isDirty();
     }
 
     // Default implementation of the capability
@@ -91,9 +95,10 @@ public class SoulSystemWProcedure {
         private SoulType currentSoul = SoulType.NONE;
         private final Set<UUID> interactedPlayers = new HashSet<>();
         private boolean playerInCave = false;
+        private boolean dirty = false; // Флаг для отложенной синхронизации
 
         private static final int SOUL_DETERMINATION_THRESHOLD = 100; // Adjust as needed
-        private static final int CAVE_CHECK_INTERVAL = 100; // Ticks between cave checks
+        private static final int CAVE_CHECK_INTERVAL = 400; // Увеличенный интервал (20 секунд)
         private int caveCheckTimer = 0;
 
         @Override
@@ -108,6 +113,7 @@ public class SoulSystemWProcedure {
                 case INTEGRITY -> integrity += amount;
                 case PERSEVERANCE -> perseverance += amount;
             }
+            this.dirty = true; // Устанавливаем флаг при изменении
             // Check if any value has crossed the threshold after increment
             if (!soulDetermined && (determination >= SOUL_DETERMINATION_THRESHOLD || bravery >= SOUL_DETERMINATION_THRESHOLD ||
                     justice >= SOUL_DETERMINATION_THRESHOLD || kindness >= SOUL_DETERMINATION_THRESHOLD ||
@@ -129,6 +135,7 @@ public class SoulSystemWProcedure {
                 case INTEGRITY -> integrity = Math.max(0, integrity - amount);
                 case PERSEVERANCE -> perseverance = Math.max(0, perseverance - amount);
             }
+            this.dirty = true; // Устанавливаем флаг при изменении
         }
 
         @Override
@@ -157,6 +164,7 @@ public class SoulSystemWProcedure {
                 case INTEGRITY -> integrity = Math.max(0, value);
                 case PERSEVERANCE -> perseverance = Math.max(0, value);
             }
+            this.dirty = true; // Устанавливаем флаг при изменении
         }
 
         @Override
@@ -200,6 +208,7 @@ public class SoulSystemWProcedure {
             if (highestValue >= SOUL_DETERMINATION_THRESHOLD) {
                 this.currentSoul = determinedSoul;
                 this.soulDetermined = true;
+                this.dirty = true; // Устанавливаем флаг при изменении
                 System.out.println("Player's soul has been determined: " + determinedSoul.name()); // Debug
                 // Вызываем синхронизацию при определении души
                 // Требуется игрок для вызова onSoulDataChanged
@@ -231,17 +240,20 @@ public class SoulSystemWProcedure {
             currentSoul = SoulType.NONE;
             interactedPlayers.clear();
             playerInCave = false;
+            this.dirty = true; // Устанавливаем флаг при изменении
         }
 
         @Override
         public void setSoulDetermined(boolean determined) {
             this.soulDetermined = determined;
+            this.dirty = true; // Устанавливаем флаг при изменении
         }
 
         @Override
         public void setCurrentSoul(SoulType soul) {
             // Принудительно устанавливаем текущую душу, игнорируя заморозку (например, при синхронизации)
             this.currentSoul = soul;
+            this.dirty = true; // Устанавливаем флаг при изменении
         }
 
         // NBT serialization for saving/loading
@@ -258,6 +270,7 @@ public class SoulSystemWProcedure {
             tag.putBoolean("SoulDetermined", soulDetermined);
             tag.putString("CurrentSoul", currentSoul.name());
             tag.putBoolean("PlayerInCave", playerInCave);
+            tag.putBoolean("Dirty", dirty); // Сериализуем флаг
 
             // Serialize the set of interacted players
             net.minecraft.nbt.ListTag uuidList = new net.minecraft.nbt.ListTag();
@@ -287,6 +300,7 @@ public class SoulSystemWProcedure {
                 this.currentSoul = SoulType.NONE; // Default if invalid name
             }
             playerInCave = tag.getBoolean("PlayerInCave");
+            this.dirty = tag.getBoolean("Dirty"); // Десериализуем флаг
 
             // Deserialize the set of interacted players
             interactedPlayers.clear();
@@ -319,7 +333,10 @@ public class SoulSystemWProcedure {
 
         @Override
         public void setPlayerInCave(boolean inCave) {
-            this.playerInCave = inCave;
+            if (this.playerInCave != inCave) { // Устанавливаем флаг только при изменении
+                 this.playerInCave = inCave;
+                 this.dirty = true;
+            }
         }
 
         @Override
@@ -330,6 +347,17 @@ public class SoulSystemWProcedure {
         @Override
         public Set<UUID> getInteractedPlayers() {
             return interactedPlayers;
+        }
+
+        // Метод для отложенной синхронизации
+        @Override
+        public void setDirty(boolean dirty) {
+            this.dirty = dirty;
+        }
+
+        @Override
+        public boolean isDirty() {
+            return this.dirty;
         }
 
         // Method to potentially increase Bravery if player is in a cave
@@ -351,7 +379,10 @@ public class SoulSystemWProcedure {
                 int effectiveBlockLight = level.getBrightness(LightLayer.BLOCK, playerPos);
                 int maxLight = Math.max(effectiveSkyLight, effectiveBlockLight);
 
-                boolean isUnderground = stateAbove.isSolid() || maxLight < 7; // Rough check for underground/cave
+                // Проверяем, действительно ли игрок находится "в пещере"
+                // Блок над головой должен быть непрозрачным ИЛИ общий свет должен быть низким
+                // Используем немного более строгую проверку
+                boolean isUnderground = (stateAbove.isSolid() && stateAbove.getLightBlock(level, checkPos) == 15) || maxLight < 7; // Уточнённая проверка
 
                 if (isUnderground && !playerInCave) {
                     setPlayerInCave(true);
@@ -414,20 +445,43 @@ public class SoulSystemWProcedure {
     }
 
     // Event handler to tick the cave check for players
+    // ЗАМЕНЕНО: используем PlayerTickEvent
+    // @SubscribeEvent
+    // public static void onEntityTick(EntityJoinLevelEvent event) {
+    //     if (event.getEntity() instanceof Player player) {
+    //         getCapability(player).ifPresent(cap -> {
+    //             ((SoulCapability) cap).tickCaveCheck(player);
+    //         });
+    //     }
+    // }
+
+    // Обработчик тика игрока на сервере для проверки пещеры и отложенной синхронизации
     @SubscribeEvent
-    public static void onEntityTick(EntityJoinLevelEvent event) {
-        if (event.getEntity() instanceof Player player) {
-            getCapability(player).ifPresent(cap -> {
-                ((SoulCapability) cap).tickCaveCheck(player);
-            });
+    public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
+        // Обрабатываем только на сервере и только в фазе END тика (после всех других обновлений)
+        if (event.phase == TickEvent.Phase.END && event.side.isServer()) {
+            Player player = event.player;
+            if (player instanceof ServerPlayer serverPlayer) {
+                getCapability(player).ifPresent(cap -> {
+                    // Выполняем проверку пещеры
+                    ((SoulCapability) cap).tickCaveCheck(player);
+                    // Проверяем флаг dirty и синхронизируем, если нужно
+                    if (cap.isDirty()) {
+                        cap.setDirty(false); // Сбрасываем флаг
+                        onSoulDataChanged(serverPlayer); // Отправляем пакет
+                        System.out.println("Syncing soul data for player: " + player.getName().getString() + " (Dirty flag was true)");
+                    }
+                });
+            }
         }
     }
 
+
     // Метод для вызова синхронизации данных души с сервера на клиент
-    public static void onSoulDataChanged(Player player) {
-        if (player instanceof ServerPlayer serverPlayer) {
-            NetworksyncSoulSystem.syncSoulDataToClient(serverPlayer);
-        }
+    // Теперь вызывается только из onPlayerTick при установленном флаге dirty или при определении души
+    public static void onSoulDataChanged(ServerPlayer player) {
+        // Убрана проверка instanceof, так как метод теперь принимает ServerPlayer
+        NetworksyncSoulSystem.syncSoulDataToClient(player);
     }
 
     // Event handlers to update soul values based on actions
@@ -438,8 +492,7 @@ public class SoulSystemWProcedure {
                 // Increase PATIENCE when player takes damage
                 cap.increaseSoulValue(SoulType.PATIENCE, 1); // Adjust amount as needed
                 System.out.println("Player " + player.getName().getString() + " gained Patience. Current value: " + cap.getSoulValue(SoulType.PATIENCE));
-                // Вызываем синхронизацию
-                onSoulDataChanged(player);
+                // onSoulDataChanged вызывается в onPlayerTick при установленном флаге dirty
             });
         }
         // Increase DETERMINATION when player deals damage (if the source is a player)
@@ -448,8 +501,7 @@ public class SoulSystemWProcedure {
                 // Increase DETERMINATION slightly for dealing damage
                 cap.increaseSoulValue(SoulType.DETERMINATION, 1); // Adjust amount as needed
                 System.out.println("Player " + player.getName().getString() + " gained Determination from dealing damage. Current value: " + cap.getSoulValue(SoulType.DETERMINATION));
-                // Вызываем синхронизацию
-                onSoulDataChanged(player);
+                // onSoulDataChanged вызывается в onPlayerTick при установленном флаге dirty
             });
         }
     }
@@ -463,8 +515,7 @@ public class SoulSystemWProcedure {
 	        getCapability(killerPlayer).ifPresent(cap -> {
 	            cap.increaseSoulValue(SoulType.DETERMINATION, 5); // Significant boost for killing a player
 	            System.out.println("Player " + killerPlayer.getName().getString() + " gained Determination from killing a player. Current value: " + cap.getSoulValue(SoulType.DETERMINATION));
-	            // Вызываем синхронизацию
-	            onSoulDataChanged(killerPlayer);
+	            // onSoulDataChanged вызывается в onPlayerTick при установленном флаге dirty
 	        });
 	    } else if (target instanceof Mob mob) {
 	        DamageSource source = event.getSource();
@@ -479,14 +530,12 @@ public class SoulSystemWProcedure {
 	                if (mob.getType().getCategory() == MobCategory.MONSTER) { // Use == for enum comparison
 	                    cap.increaseSoulValue(SoulType.DETERMINATION, 2); // Adjust amount
 	                    System.out.println("Player " + player.getName().getString() + " gained Determination from killing a hostile mob. Current value: " + cap.getSoulValue(SoulType.DETERMINATION));
-	                    // Вызываем синхронизацию
-	                    onSoulDataChanged(player);
+	                    // onSoulDataChanged вызывается в onPlayerTick при установленном флаге dirty
 	                }
 	                // Increase JUSTICE for killing hostile mobs (or specific types?)
 	                cap.increaseSoulValue(SoulType.JUSTICE, 1); // Adjust amount
 	                System.out.println("Player " + player.getName().getString() + " gained Justice from killing a mob. Current value: " + cap.getSoulValue(SoulType.JUSTICE));
-	                // Вызываем синхронизацию
-	                onSoulDataChanged(player);
+	                // onSoulDataChanged вызывается в onPlayerTick при установленном флаге dirty
 	            });
 	        } else if (directEntity instanceof Player player) { // Используем сокращенную запись только внутри блока if
 	             // Теперь player - это final или effectively final в этой области видимости
@@ -495,14 +544,12 @@ public class SoulSystemWProcedure {
 	                 if (mob.getType().getCategory() == MobCategory.MONSTER) { // Use == for enum comparison
 	                     cap.increaseSoulValue(SoulType.DETERMINATION, 2); // Adjust amount
 	                     System.out.println("Player " + player.getName().getString() + " gained Determination from killing a hostile mob. Current value: " + cap.getSoulValue(SoulType.DETERMINATION));
-	                     // Вызываем синхронизацию
-	                     onSoulDataChanged(player);
+	                     // onSoulDataChanged вызывается в onPlayerTick при установленном флаге dirty
 	                 }
 	                 // Increase JUSTICE for killing hostile mobs (or specific types?)
 	                 cap.increaseSoulValue(SoulType.JUSTICE, 1); // Adjust amount
 	                 System.out.println("Player " + player.getName().getString() + " gained Justice from killing a mob. Current value: " + cap.getSoulValue(SoulType.JUSTICE));
-	                 // Вызываем синхронизацию
-	                 onSoulDataChanged(player);
+	                 // onSoulDataChanged вызывается в onPlayerTick при установленном флаге dirty
 	             });
 	        }
 	        // Если ни sourceEntity, ни directEntity не являются игроком, ничего не делаем.
@@ -524,8 +571,7 @@ public class SoulSystemWProcedure {
                  getCapability(player).ifPresent(cap -> {
                      cap.increaseSoulValue(SoulType.KINDNESS, 2); // Adjust amount
                      System.out.println("Player " + player.getName().getString() + " gained Kindness from harvesting crops. Current value: " + cap.getSoulValue(SoulType.KINDNESS));
-                     // Вызываем синхронизацию
-                     onSoulDataChanged(player);
+                     // onSoulDataChanged вызывается в onPlayerTick при установленном флаге dirty
                  });
             }
         }
@@ -546,8 +592,7 @@ public class SoulSystemWProcedure {
                  getCapability(player).ifPresent(cap -> {
                      cap.increaseSoulValue(SoulType.KINDNESS, 3); // Adjust amount
                      System.out.println("Player " + player.getName().getString() + " gained Kindness from healing an animal. Current value: " + cap.getSoulValue(SoulType.KINDNESS));
-                     // Вызываем синхронизацию
-                     onSoulDataChanged(player);
+                     // onSoulDataChanged вызывается в onPlayerTick при установленном флаге dirty
                  });
                  // Optionally, you could still allow the healing action by not cancelling the event,
                  // or cancel it if you want the soul system action to replace it.
@@ -565,8 +610,7 @@ public class SoulSystemWProcedure {
                 // Increase Perseverance based on the repair cost or a fixed amount
                 cap.increaseSoulValue(SoulType.PERSEVERANCE, 1); // Adjust amount, maybe use event.getCost() for scaling
                 System.out.println("Player " + player.getName().getString() + " gained Perseverance from repairing an item. Current value: " + cap.getSoulValue(SoulType.PERSEVERANCE));
-                // Вызываем синхронизацию
-                onSoulDataChanged(player);
+                // onSoulDataChanged вызывается в onPlayerTick при установленном флаге dirty
             });
         }
     }
@@ -589,13 +633,11 @@ public class SoulSystemWProcedure {
                 // For this example, we'll just mark the interaction.
                 getCapability(player).ifPresent(cap -> {
                     cap.markPlayerInteraction(targetPlayer.getUUID());
-                    // Вызываем синхронизацию
-                    onSoulDataChanged(player);
+                    // onSoulDataChanged вызывается в onPlayerTick при установленном флаге dirty
                 });
                 getCapability(targetPlayer).ifPresent(cap -> {
                     cap.markPlayerInteraction(player.getUUID());
-                    // Вызываем синхронизацию
-                    onSoulDataChanged(targetPlayer);
+                    // onSoulDataChanged вызывается в onPlayerTick при установленном флаге dirty
                 });
             }
         }
@@ -609,8 +651,7 @@ public class SoulSystemWProcedure {
             // Optionally send a message to the player
             // serverPlayer.sendSystemMessage(Component.literal("Your soul has been reset."));
             System.out.println("Soul reset for player: " + player.getName().getString());
-            // Вызываем синхронизацию после сброса
-            onSoulDataChanged(player);
+            // onSoulDataChanged вызывается в onPlayerTick при установленном флаге dirty
         }
     }
 
@@ -621,8 +662,7 @@ public class SoulSystemWProcedure {
             if (!cap.isSoulDetermined()) {
                 // If not determined, allow setting values to influence future determination
                 cap.setSoulValue(newSoul, SoulCapability.SOUL_DETERMINATION_THRESHOLD); // Force this type to win next check
-                // Вызываем синхронизацию при изменении значения
-                onSoulDataChanged(player);
+                // onSoulDataChanged вызывается в onPlayerTick при установленном флаге dirty
             } else {
                 // If already determined, maybe just a visual/temporary change or a reset is needed
                 System.out.println("Soul already determined for player " + player.getName().getString() + ". Cannot change directly.");

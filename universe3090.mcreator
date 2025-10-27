@@ -6567,6 +6567,87 @@
           "src/main/resources/data/universe3090/recipes/darkironblockrecipe_2.json"
         ]
       }
+    },
+    {
+      "name": "Mtwmodeorbital",
+      "type": "animateditem",
+      "sortid": 384,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "mtwmodeorbital",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/model/MtwmodeorbitalItemModel.java",
+          "src/main/java/net/wowamod/item/MtwmodeorbitalItem.java",
+          "src/main/java/net/wowamod/item/renderer/MtwmodeorbitalItemRenderer.java",
+          "src/main/resources/assets/universe3090/models/item/mtwmodeorbital.json"
+        ]
+      }
+    },
+    {
+      "name": "AreaRendererMTW",
+      "type": "code",
+      "sortid": 385,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "area_renderer_mtw",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/AreaRendererMTW.java"
+        ]
+      }
+    },
+    {
+      "name": "OrbitalBeamEntity",
+      "type": "code",
+      "sortid": 386,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "orbital_beam_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/OrbitalBeamEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "OrbitalBeamRenderer",
+      "type": "code",
+      "sortid": 387,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "orbital_beam_renderer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/OrbitalBeamRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "ClientSetupOrbital",
+      "type": "code",
+      "sortid": 388,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "client_setup_orbital",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/ClientSetupOrbital.java"
+        ]
+      }
+    },
+    {
+      "name": "ModEntityBeamOrbital",
+      "type": "code",
+      "sortid": 389,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "mod_entity_beam_orbital",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/ModEntityBeamOrbital.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -6805,6 +6886,7 @@
       "item.wowamodfabric.mimic_spawn_egg": "Мимик Спавн",
       "block.wowamod.corrupted_souls_block": "Corrupted Souls Block",
       "item.universe3090.whitesoul_myplace": "Белая душа из игры MY PLACE",
+      "item.universe3090.mtwmodeorbital": "M_T_W",
       "gui.wowamodfabric.wowabronyacraftring.label_crafting": "Создание предметов",
       "fluid.universe3090.extractgolubaysoul": "Экстракт голубой души",
       "item.wowamod.wowabronya_helmet": "Шлем",
@@ -7252,6 +7334,7 @@
       "item.wowamodfabric.mimic_spawn_egg": "Мимик Spawn Egg",
       "block.wowamod.corrupted_souls_block": "Corrupted Souls Block",
       "item.universe3090.whitesoul_myplace": "Белая душа из игры MY PLACE",
+      "item.universe3090.mtwmodeorbital": "M_T_W",
       "gui.wowamodfabric.wowabronyacraftring.label_crafting": "Создание предметов",
       "fluid.universe3090.extractgolubaysoul": "Extractgolubaysoul",
       "item.wowamod.wowabronya_helmet": "Шлем 3090",
@@ -7614,11 +7697,11 @@
   "workspaceSettings": {
     "modid": "universe3090",
     "modName": "Universe3090-stories",
-    "version": "1.6.0",
+    "version": "1.6.1",
     "description": "This Mod will add to your minecraft world items from Universe3090 And.. a lot of content",
     "author": "wowa3090",
     "websiteURL": "https://nosite.com",
-    "license": "Universe3090 License",
+    "license": "Custom license",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "modPicture": "schlemwowi",

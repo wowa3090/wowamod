@@ -46,6 +46,7 @@ import net.wowamod.item.NetherstarswordItem;
 import net.wowamod.item.MyplacezoneItem;
 import net.wowamod.item.MultitoolcomponentnottrueItem;
 import net.wowamod.item.MultitoolcomponentItem;
+import net.wowamod.item.MtwmodeorbitalItem;
 import net.wowamod.item.MolotwowaItem;
 import net.wowamod.item.MimictkanbItem;
 import net.wowamod.item.MimickojaItem;
@@ -273,6 +274,7 @@ public class Universe3090ModItems {
 	public static final RegistryObject<Item> ELECTROMAGICCORE = REGISTRY.register("electromagiccore", () -> new ElectromagiccoreItem());
 	public static final RegistryObject<Item> FIRSTBRONYACOMPONENT = REGISTRY.register("firstbronyacomponent", () -> new FirstbronyacomponentItem());
 	public static final RegistryObject<Item> DARKIRONBLOCK = block(Universe3090ModBlocks.DARKIRONBLOCK);
+	public static final RegistryObject<Item> MTWMODEORBITAL = REGISTRY.register("mtwmodeorbital", () -> new MtwmodeorbitalItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

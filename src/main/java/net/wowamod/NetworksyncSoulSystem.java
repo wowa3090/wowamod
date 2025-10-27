@@ -47,7 +47,8 @@ public class NetworksyncSoulSystem {
             this.integrity = cap.getSoulValue(SoulType.INTEGRITY);
             this.perseverance = cap.getSoulValue(SoulType.PERSEVERANCE);
             this.soulDetermined = cap.isSoulDetermined();
-            this.currentSoulName = cap.getCurrentSoul().name();
+            // Используем name() только если currentSoul не null
+            this.currentSoulName = cap.getCurrentSoul() != null ? cap.getCurrentSoul().name() : "NONE"; // Или какое-то дефолтное значение
         }
 
         public SoulDataSyncMessage(FriendlyByteBuf buffer) {
@@ -59,7 +60,8 @@ public class NetworksyncSoulSystem {
             this.integrity = buffer.readInt();
             this.perseverance = buffer.readInt();
             this.soulDetermined = buffer.readBoolean();
-            this.currentSoulName = buffer.readUtf();
+            // readUtf() может вернуть null, если строка была записана как null (но обычно не должна)
+            this.currentSoulName = buffer.readUtf(); 
         }
 
         public static void buffer(SoulDataSyncMessage message, FriendlyByteBuf buffer) {
@@ -71,7 +73,7 @@ public class NetworksyncSoulSystem {
             buffer.writeInt(message.integrity);
             buffer.writeInt(message.perseverance);
             buffer.writeBoolean(message.soulDetermined);
-            buffer.writeUtf(message.currentSoulName);
+            buffer.writeUtf(message.currentSoulName != null ? message.currentSoulName : "NONE"); // Записываем "NONE", если null
         }
 
         public static void handler(SoulDataSyncMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
@@ -81,7 +83,7 @@ public class NetworksyncSoulSystem {
                     // Обновляем Capability на клиенте
                     // Получаем игрока из Minecraft.getInstance() на клиенте
                     Player player = net.minecraft.client.Minecraft.getInstance().player;
-                    if (player != null) {
+                    if (player != null) { // Проверка, что игрок не null после перехода в GUI поток
                         SoulSystemWProcedure.getCapability(player).ifPresent(cap -> {
                             // Устанавливаем флаг
                             cap.setSoulDetermined(message.soulDetermined);
@@ -94,12 +96,22 @@ public class NetworksyncSoulSystem {
                             cap.setSoulValue(SoulType.INTEGRITY, message.integrity);
                             cap.setSoulValue(SoulType.PERSEVERANCE, message.perseverance);
                             // Устанавливаем текущую душу
-                            try {
-                                cap.setCurrentSoul(SoulType.valueOf(message.currentSoulName));
-                            } catch (IllegalArgumentException e) {
+                            // Проверка на null перед вызовом valueOf
+                            if (message.currentSoulName != null) {
+                                try {
+                                    cap.setCurrentSoul(SoulType.valueOf(message.currentSoulName));
+                                } catch (IllegalArgumentException e) {
+                                    System.err.println("Invalid SoulType name received: " + message.currentSoulName + ". Setting to NONE.");
+                                    cap.setCurrentSoul(SoulType.NONE);
+                                }
+                            } else {
+                                System.err.println("Received null SoulType name. Setting to NONE.");
                                 cap.setCurrentSoul(SoulType.NONE);
                             }
                         });
+                    } else {
+                        // Логируем, если игрок почему-то null в GUI потоке
+                        System.err.println("Player is null when trying to handle SoulDataSyncMessage on client.");
                     }
                 });
                 context.setPacketHandled(true);
@@ -124,6 +136,11 @@ public class NetworksyncSoulSystem {
 
     // --- Метод для отправки пакета с сервера клиенту ---
     public static void syncSoulDataToClient(ServerPlayer player) {
+        // Проверка на null
+        if (player == null) {
+            System.err.println("Attempted to sync soul data to a null player.");
+            return;
+        }
         SoulSystemWProcedure.getCapability(player).ifPresent(cap -> {
             SoulDataSyncMessage message = new SoulDataSyncMessage(cap);
             Universe3090Mod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> player), message);
@@ -136,7 +153,8 @@ public class NetworksyncSoulSystem {
 
     @SubscribeEvent
     public static void init(FMLCommonSetupEvent event) {
-        new NetworksyncSoulSystem();
+        // Удалена строка new NetworksyncSoulSystem();
+        // Класс статический, создание экземпляра не нужно.
     }
 
     @Mod.EventBusSubscriber

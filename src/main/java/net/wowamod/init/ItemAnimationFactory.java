@@ -2,6 +2,7 @@ package net.wowamod.init;
 
 import software.bernie.geckolib.animatable.GeoItem;
 
+import net.wowamod.item.MtwmodeorbitalItem;
 import net.wowamod.item.MTWtestanimItem;
 
 import net.minecraftforge.fml.common.Mod;
@@ -49,6 +50,24 @@ public class ItemAnimationFactory {
 					event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
 					if (event.player.level().isClientSide()) {
 						((MTWtestanimItem) event.player.getOffhandItem().getItem()).animationprocedure = animation;
+					}
+				}
+			}
+			if (mainhandItem.getItem() instanceof MtwmodeorbitalItem animatable) {
+				animation = mainhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getMainHandItem().getOrCreateTag().putString("geckoAnim", "");
+					if (event.player.level().isClientSide()) {
+						((MtwmodeorbitalItem) event.player.getMainHandItem().getItem()).animationprocedure = animation;
+					}
+				}
+			}
+			if (offhandItem.getItem() instanceof MtwmodeorbitalItem animatable) {
+				animation = offhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
+					if (event.player.level().isClientSide()) {
+						((MtwmodeorbitalItem) event.player.getOffhandItem().getItem()).animationprocedure = animation;
 					}
 				}
 			}

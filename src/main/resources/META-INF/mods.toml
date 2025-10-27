@@ -1,10 +1,10 @@
 modLoader="javafml"
 loaderVersion="[47,)"
-license="Universe3090 License"
+license="Custom license"
 
 [[mods]]
 modId="universe3090"
-version="1.6.0"
+version="1.6.1"
 displayName="Universe3090-stories"
 displayURL="https://nosite.com"
 logoFile="logo.png"
