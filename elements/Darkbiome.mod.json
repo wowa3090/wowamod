@@ -64,12 +64,12 @@
       "max": 0.4983
     },
     "genContinentalness": {
-      "min": 0.1003,
-      "max": 0.6336
+      "min": 0.11030000000000001,
+      "max": 0.6303
     },
     "genErosion": {
       "min": -0.9412,
-      "max": 0.9842
+      "max": 0.9785
     },
     "genWeirdness": {
       "min": -0.91,

@@ -63,7 +63,7 @@ public class SolarpanelgeneratorwUpdateTickProcedure {
 							_ent.getCapability(ForgeCapabilities.ENERGY, Direction.UP).ifPresent(capability -> _retval.set(capability.receiveEnergy(_amount, true)));
 						return _retval.get();
 					}
-				}.receiveEnergySimulate(world, BlockPos.containing(x, y - 1, z), (int) (2.5 * multiplayer));
+				}.receiveEnergySimulate(world, BlockPos.containing(x, y - 1, z), (int) (6.5 * multiplayer));
 				{
 					BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y - 1, z));
 					int _amount = (int) energy;
@@ -79,7 +79,7 @@ public class SolarpanelgeneratorwUpdateTickProcedure {
 							_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.receiveEnergy(_amount, true)));
 						return _retval.get();
 					}
-				}.receiveEnergySimulate(world, BlockPos.containing(x, y, z), (int) (2.5 * multiplayer));
+				}.receiveEnergySimulate(world, BlockPos.containing(x, y, z), (int) (6.5 * multiplayer));
 				{
 					BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 					int _amount = (int) energy;
@@ -105,7 +105,7 @@ public class SolarpanelgeneratorwUpdateTickProcedure {
 							_ent.getCapability(ForgeCapabilities.ENERGY, Direction.UP).ifPresent(capability -> _retval.set(capability.receiveEnergy(_amount, true)));
 						return _retval.get();
 					}
-				}.receiveEnergySimulate(world, BlockPos.containing(x, y - 1, z), (int) (2 * multiplayer));
+				}.receiveEnergySimulate(world, BlockPos.containing(x, y - 1, z), (int) (4 * multiplayer));
 				{
 					BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y - 1, z));
 					int _amount = (int) energy;
@@ -121,7 +121,7 @@ public class SolarpanelgeneratorwUpdateTickProcedure {
 							_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.receiveEnergy(_amount, true)));
 						return _retval.get();
 					}
-				}.receiveEnergySimulate(world, BlockPos.containing(x, y, z), (int) (2 * multiplayer));
+				}.receiveEnergySimulate(world, BlockPos.containing(x, y, z), (int) (4 * multiplayer));
 				{
 					BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 					int _amount = (int) energy;

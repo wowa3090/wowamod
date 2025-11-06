@@ -4,15 +4,16 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.EntityRenderersEvent;
-import net.wowamod.entity.ModEntityBeamOrbital; // <-- Добавить этот импорт
+// import net.wowamod.LaserRayMTW; // Удалено
+import net.wowamod.entity.ModEntityBeamOrbital; // ИСПРАВЛЕНО: Указываем на правильный класс
 
-// ВАЖНО: Переключаем на Forge-Bus, чтобы избежать NPE
-@Mod.EventBusSubscriber(modid = "universe3090", value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.FORGE) // ИСПРАВЛЕНО
+// ИСПРАВЛЕНО: Возвращаем правильную шину Bus.MOD и MODID
+@Mod.EventBusSubscriber(modid = "universe3090", value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ClientSetupOrbital {
   @SubscribeEvent
-  // Используем RegisterRenderers, чтобы привязать рендерер к EntityType
   public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
-    // ВАЖНО: ORBITAL_BEAM берем из ModEntityBeamOrbital, если нет класса ModEntities
-    event.registerEntityRenderer(ModEntityBeamOrbital.ORBITAL_BEAM.get(), OrbitalBeamRenderer::new); // ИСПРАВЛЕНО (предполагая, что ModEntities - это ModEntityBeamOrbital)
+    // ИСПРАВЛЕНО: Указываем на правильный класс
+    event.registerEntityRenderer(ModEntityBeamOrbital.ORBITAL_BEAM.get(), OrbitalBeamRenderer::new);
   }
 }
+

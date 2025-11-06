@@ -6648,6 +6648,32 @@
           "src/main/java/net/wowamod/ModEntityBeamOrbital.java"
         ]
       }
+    },
+    {
+      "name": "RegisterOrbitalBeamEntity",
+      "type": "code",
+      "sortid": 390,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "register_orbital_beam_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/RegisterOrbitalBeamEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "OrbitalBeamDamageController",
+      "type": "code",
+      "sortid": 391,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "orbital_beam_damage_controller",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/OrbitalBeamDamageController.java"
+        ]
+      }
     }
   ],
   "variable_elements": [

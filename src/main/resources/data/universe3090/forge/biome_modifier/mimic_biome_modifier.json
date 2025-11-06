@@ -1,11 +1,15 @@
 {
   "type": "forge:add_spawns",
-  "biomes": {
-    "type": "forge:any"
-  },
+  "biomes": [
+    "universe3090:darkbiome",
+    "savanna",
+    "mushroom_fields",
+    "dark_forest",
+    "savanna_plateau"
+  ],
   "spawners": {
     "type": "universe3090:mimic",
-    "weight": 25,
+    "weight": 20,
     "minCount": 1,
     "maxCount": 2
   }
