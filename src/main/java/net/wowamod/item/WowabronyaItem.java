@@ -44,9 +44,9 @@ public abstract class WowabronyaItem extends ArmorItem {
 	public WowabronyaItem(ArmorItem.Type type, Item.Properties properties) {
 		super(new ArmorMaterial() {
 			@Override
-			public int getDurabilityForType(ArmorItem.Type type) {
-				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 666;
-			}
+            public int getDurabilityForType(ArmorItem.Type type) {
+                return -1; // Возвращает -1, чтобы сделать предмет неломаемым
+            }
 
 			@Override
 			public int getDefenseForType(ArmorItem.Type type) {

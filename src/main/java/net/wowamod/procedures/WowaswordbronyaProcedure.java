@@ -13,9 +13,8 @@ public class WowaswordbronyaProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Universe3090ModItems.WOWASWORD.get())) : false)
-				&& ((entity.getDisplayName().getString()).equals("Dev") || (entity.getDisplayName().getString()).equals("wowa3090"))
-				&& (entity.getCapability(Universe3090ModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Universe3090ModVariables.PlayerVariables())).wowaswordupgrade == 3333) {
+		if (((entity.getDisplayName().getString()).equals("Dev") || (entity.getDisplayName().getString()).equals("wowa3090"))
+				&& (entity.getCapability(Universe3090ModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new Universe3090ModVariables.PlayerVariables())).wowaswordupgrade >= 9999) {
 			if (!(entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Universe3090ModItems.WOWABRONYA_HELMET.get())) : false)
 					&& !(entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Universe3090ModItems.WOWABRONYA_CHESTPLATE.get())) : false)
 					&& !(entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Universe3090ModItems.WOWABRONYA_LEGGINGS.get())) : false)

@@ -32,12 +32,16 @@ public class PlayerModelHiderEvents {
         ItemStack boots = player.getItemBySlot(EquipmentSlot.FEET);
 
         // 1. Обработка головы (основной слой + шляпа)
-        boolean shouldHideHead = helmet.getItem() == Universe3090ModItems.ELISSAARMOR_HELMET.get();
+        // ИСПРАВЛЕНО: Добавлен вызов .get() и правильное сравнение для WOWABRONYA шлема
+        boolean shouldHideHead = helmet.getItem() == Universe3090ModItems.ELISSAARMOR_HELMET.get() || 
+                                 helmet.getItem() == Universe3090ModItems.WOWABRONYA_HELMET.get();
         model.head.visible = !shouldHideHead;
         model.hat.visible = !shouldHideHead;
 
         // 2. Обработка тела и рук (основной слой + куртка/рукава)
-        boolean shouldHideBodyAndArms = chestplate.getItem() == Universe3090ModItems.ELISSAARMOR_CHESTPLATE.get();
+        // ИСПРАВЛЕНО: Добавлен вызов .get() и правильное сравнение для WOWABRONYA нагрудника
+        boolean shouldHideBodyAndArms = chestplate.getItem() == Universe3090ModItems.ELISSAARMOR_CHESTPLATE.get() || 
+                                        chestplate.getItem() == Universe3090ModItems.WOWABRONYA_CHESTPLATE.get();
         model.body.visible = !shouldHideBodyAndArms;
         model.rightArm.visible = !shouldHideBodyAndArms;
         model.leftArm.visible = !shouldHideBodyAndArms;
@@ -48,8 +52,11 @@ public class PlayerModelHiderEvents {
 
 
         // 3. Обработка ног (основной слой + штаны)
+        // ИСПРАВЛЕНО: Добавлены вызовы .get() и правильные сравнения для WOWABRONYA понож и ботинок
         boolean shouldHideLegs = leggings.getItem() == Universe3090ModItems.ELISSAARMOR_LEGGINGS.get() ||
-                                 boots.getItem() == Universe3090ModItems.ELISSAARMOR_BOOTS.get();
+                                 boots.getItem() == Universe3090ModItems.ELISSAARMOR_BOOTS.get() ||
+                                 leggings.getItem() == Universe3090ModItems.WOWABRONYA_LEGGINGS.get() ||
+                                 boots.getItem() == Universe3090ModItems.WOWABRONYA_BOOTS.get();
         model.rightLeg.visible = !shouldHideLegs;
         model.leftLeg.visible = !shouldHideLegs;
         // ИСПРАВЛЕНО: Добавляем скрытие внешнего слоя (штанин)
@@ -57,4 +64,3 @@ public class PlayerModelHiderEvents {
         model.leftPants.visible = !shouldHideLegs;
     }
 }
-

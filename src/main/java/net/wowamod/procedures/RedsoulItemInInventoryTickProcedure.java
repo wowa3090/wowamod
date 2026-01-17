@@ -15,9 +15,9 @@ public class RedsoulItemInInventoryTickProcedure {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 60, 0, false, false));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 5, 0, false, false));
+				_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 2, 0, false, false));
 			if (entity instanceof Player _player)
-				_player.getCooldowns().addCooldown(itemstack.getItem(), 60);
+				_player.getCooldowns().addCooldown(itemstack.getItem(), 65);
 		}
 	}
 }

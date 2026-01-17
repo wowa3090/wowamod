@@ -9,10 +9,10 @@ import net.minecraftforge.fml.common.Mod;
 import net.wowamod.init.Universe3090ModItems;
 import net.wowamod.item.WowabronyaItem;
 
-@Mod.EventBusSubscriber(modid = "wowamod", bus = Mod.EventBusSubscriber.Bus.FORGE)
+@Mod.EventBusSubscriber(modid = "universe3090", bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class Ignorbroni {
     
-    private static final float ARMOR_IGNORE_MULTIPLIER = 0.75f; // Игнорирование 75% брони
+    private static final float ARMOR_IGNORE_MULTIPLIER = 0.75f; // Игнорирование 80% брони
     
     @SubscribeEvent
     public static void onLivingHurt(LivingHurtEvent event) {

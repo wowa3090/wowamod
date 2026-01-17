@@ -3,19 +3,28 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 3,
+    "recipeRetstackSize": 1,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
-    "recipeShapeless": false,
+    "recipeShapeless": true,
     "recipeSlots": [
       {
         "value": ""
       },
       {
-        "value": "Blocks.GLASS_PANE"
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Ironmass1"
+      },
+      {
+        "value": "CUSTOM:Ironmass1"
       },
       {
         "value": ""
@@ -24,25 +33,16 @@
         "value": ""
       },
       {
-        "value": "Blocks.GLASS"
-      },
-      {
         "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.GLASS"
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Kolba"
+      "value": "CUSTOM:Zagatovkablackiron"
     },
-    "name": "kolbacraft",
+    "name": "zagatovkarecipe_2",
     "namespace": "mod"
   }
 }

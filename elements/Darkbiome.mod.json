@@ -60,12 +60,12 @@
       "max": 0.9949
     },
     "genHumidity": {
-      "min": -0.4772,
+      "min": -0.466,
       "max": 0.4983
     },
     "genContinentalness": {
-      "min": 0.11030000000000001,
-      "max": 0.6303
+      "min": 0.1657,
+      "max": 0.6271
     },
     "genErosion": {
       "min": -0.9412,
