@@ -10,8 +10,8 @@ import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache
 import software.bernie.geckolib.animatable.GeoItem;
 
 import net.wowamod.item.renderer.MtwmodeorbitalItemRenderer;
-import net.wowamod.entity.OrbitalBeamEntity; // Импорт вашей сущности
-import net.wowamod.entity.ModEntityBeamOrbital;
+import net.wowamod.OrbitalBeamEntity; // Импорт вашей сущности
+import net.wowamod.ModEntityBeamOrbital;
 
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 

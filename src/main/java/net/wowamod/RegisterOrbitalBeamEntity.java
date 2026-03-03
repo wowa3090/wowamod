@@ -3,7 +3,7 @@ package net.wowamod.init;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.wowamod.entity.ModEntityBeamOrbital;
+import net.wowamod.ModEntityBeamOrbital;
 
 @Mod.EventBusSubscriber(modid = "universe3090", bus = Mod.EventBusSubscriber.Bus.MOD)
 public class RegisterOrbitalBeamEntity {

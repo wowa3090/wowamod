@@ -6691,6 +6691,110 @@
           "src/main/resources/data/universe3090/recipes/zagatovkarecipe_2.json"
         ]
       }
+    },
+    {
+      "name": "AbilityConfig",
+      "type": "code",
+      "sortid": 393,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ability_config",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/AbilityConfig.java"
+        ]
+      }
+    },
+    {
+      "name": "EnergyBallEntity",
+      "type": "code",
+      "sortid": 394,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "energy_ball_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/EnergyBallEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "EnergyCapability",
+      "type": "code",
+      "sortid": 395,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "energy_capability",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/EnergyCapability.java"
+        ]
+      }
+    },
+    {
+      "name": "EnergyInputHandler",
+      "type": "code",
+      "sortid": 396,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "energy_input_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/EnergyInputHandler.java"
+        ]
+      }
+    },
+    {
+      "name": "EnergyBallSposobkaProcedure",
+      "type": "code",
+      "sortid": 397,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "energy_ball_sposobka_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/EnergyBallSposobkaProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "EnergyBallRenderer",
+      "type": "code",
+      "sortid": 398,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "energy_ball_renderer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/EnergyBallRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "KeyInitEnergy",
+      "type": "code",
+      "sortid": 399,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "key_init_energy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/KeyInitEnergy.java"
+        ]
+      }
+    },
+    {
+      "name": "ModRegisterEnergySp",
+      "type": "code",
+      "sortid": 400,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "mod_register_energy_sp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/ModRegisterEnergySp.java"
+        ]
+      }
     }
   ],
   "variable_elements": [

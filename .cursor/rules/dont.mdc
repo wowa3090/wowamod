@@ -1,0 +1,6 @@
+---
+alwaysApply: true
+---
+
+- do not touch the main mod class
+- make the mod code independent of the main class

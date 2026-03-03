@@ -1,4 +1,4 @@
-package net.wowamod.entity;
+package net.wowamod;
 
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
@@ -10,7 +10,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.Mth;
 import net.minecraft.world.phys.Vec3;
-import net.wowamod.entity.ModEntityBeamOrbital;
+import net.wowamod.ModEntityBeamOrbital;
 import net.wowamod.OrbitalBeamDamageController; // наш контроллер урона
 import net.wowamod.OrbitalBeamDamageController.DamageProfile;
 import net.wowamod.OrbitalBeamDamageController.FalloffType;

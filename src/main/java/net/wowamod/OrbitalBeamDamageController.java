@@ -10,7 +10,10 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.AABB;
+import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.ClipContext;
 
 import java.util.function.Predicate;
 
@@ -110,6 +113,8 @@ public final class OrbitalBeamDamageController {
             double dist = targetPos.distanceTo(center);
             if (dist > effectiveRadius) continue;
 
+            if (profile.requireLineOfSight && !hasLineOfSight(level, target, center)) continue;
+
             float factor = damageFalloffFactor((float) dist, effectiveRadius, profile);
             float damage = Math.max(0f, profile.baseDamage * factor);
 
@@ -173,6 +178,14 @@ public final class OrbitalBeamDamageController {
         dir = dir.normalize();
         target.push(dir.x * strength, 0.15f * strength, dir.z * strength);
         target.hasImpulse = true;
+    }
+
+    private static boolean hasLineOfSight(Level level, LivingEntity target, Vec3 point) {
+        Vec3 eye = target.getEyePosition();
+        ClipContext ctx = new ClipContext(eye, point, ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, target);
+        BlockHitResult hit = level.clip(ctx);
+        if (hit.getType() == HitResult.Type.MISS) return true;
+        return hit.getLocation().distanceToSqr(point) < 0.01;
     }
 
     public static int lightningStrike(Level level, Entity source, Vec3 center, float radius, DamageProfile profile) {
