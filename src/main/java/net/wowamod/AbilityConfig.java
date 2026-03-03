@@ -7,8 +7,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class AbilityConfig {
-    // Namespace мода
-    public static final String MOD_ID = "wowamod";
+    // ИСПРАВЛЕНО: Теперь ID совпадает с реальным ID предметов в игре
+    public static final String MOD_ID = "universe3090";
 
     // Изумруды Хаоса
     public static final String EMERALD_GREEN = MOD_ID + ":greenemerald";
@@ -49,9 +49,8 @@ public class AbilityConfig {
     public static boolean hasWowaArmor(Player player) {
         // Проверка: надет ли хотя бы один предмет брони Wowabronya
         for (ItemStack slot : player.getArmorSlots()) {
-            if (slot.isEmpty()) continue; // Пропускаем пустые слоты брони
+            if (slot.isEmpty()) continue;
             
-            // В Forge 1.20.1 ID получаем через ForgeRegistries
             ResourceLocation key = ForgeRegistries.ITEMS.getKey(slot.getItem());
             if (key != null) {
                 String registryName = key.toString();
@@ -77,5 +76,17 @@ public class AbilityConfig {
         if (hasEmerald(player, EMERALD_WHITE)) flags |= 32;
         if (hasEmerald(player, EMERALD_RED)) flags |= 64;
         return flags;
+    }
+
+    public static int[] getEmeraldColor(int flags) {
+        if ((flags & 64) != 0) return new int[]{255, 20, 20, 200};   // Красный
+        if ((flags & 32) != 0) return new int[]{255, 255, 255, 255}; // Белый (Яркий)
+        if ((flags & 16) != 0) return new int[]{180, 0, 255, 200};   // Фиолетовый
+        if ((flags & 8) != 0)  return new int[]{0, 0, 255, 200};     // Синий
+        if ((flags & 4) != 0)  return new int[]{0, 255, 255, 200};   // Голубой
+        if ((flags & 2) != 0)  return new int[]{255, 255, 0, 200};   // Жёлтый
+        if ((flags & 1) != 0)  return new int[]{50, 255, 50, 200};   // Зелёный
+        
+        return new int[]{139, 20, 20, 200}; // Дефолтный (если изумрудов нет)
     }
 }

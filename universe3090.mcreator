@@ -9,8 +9,8 @@
       "registry_name": "wowasword",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/item/WowaswordItem.java",
-          "src/main/resources/assets/universe3090/models/item/wowasword.json"
+          "src/main/resources/assets/universe3090/models/item/wowasword.json",
+          "src/main/java/net/wowamod/item/WowaswordItem.java"
         ]
       }
     },
@@ -97,8 +97,8 @@
       "registry_name": "soulcore",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/item/SoulcoreItem.java",
-          "src/main/resources/assets/universe3090/models/item/soulcore.json"
+          "src/main/resources/assets/universe3090/models/item/soulcore.json",
+          "src/main/java/net/wowamod/item/SoulcoreItem.java"
         ]
       }
     },
@@ -111,8 +111,8 @@
       "registry_name": "redemerald",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/item/RedemeraldItem.java",
-          "src/main/resources/assets/universe3090/models/item/redemerald.json"
+          "src/main/resources/assets/universe3090/models/item/redemerald.json",
+          "src/main/java/net/wowamod/item/RedemeraldItem.java"
         ]
       }
     },
@@ -125,8 +125,8 @@
       "registry_name": "greenemerald",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/greenemerald.json",
-          "src/main/java/net/wowamod/item/GreenemeraldItem.java"
+          "src/main/java/net/wowamod/item/GreenemeraldItem.java",
+          "src/main/resources/assets/universe3090/models/item/greenemerald.json"
         ]
       }
     },
@@ -153,8 +153,8 @@
       "registry_name": "lightblueemerald",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/lightblueemerald.json",
-          "src/main/java/net/wowamod/item/LightblueemeraldItem.java"
+          "src/main/java/net/wowamod/item/LightblueemeraldItem.java",
+          "src/main/resources/assets/universe3090/models/item/lightblueemerald.json"
         ]
       }
     },
@@ -181,8 +181,8 @@
       "registry_name": "whiteemerald",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/item/WhiteemeraldItem.java",
-          "src/main/resources/assets/universe3090/models/item/whiteemerald.json"
+          "src/main/resources/assets/universe3090/models/item/whiteemerald.json",
+          "src/main/java/net/wowamod/item/WhiteemeraldItem.java"
         ]
       }
     },
@@ -195,8 +195,8 @@
       "registry_name": "yellowemerald",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/item/YellowemeraldItem.java",
-          "src/main/resources/assets/universe3090/models/item/yellowemerald.json"
+          "src/main/resources/assets/universe3090/models/item/yellowemerald.json",
+          "src/main/java/net/wowamod/item/YellowemeraldItem.java"
         ]
       }
     },
@@ -248,8 +248,8 @@
       "registry_name": "orangesoul",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/orangesoul.json",
-          "src/main/java/net/wowamod/item/OrangesoulItem.java"
+          "src/main/java/net/wowamod/item/OrangesoulItem.java",
+          "src/main/resources/assets/universe3090/models/item/orangesoul.json"
         ]
       }
     },
@@ -290,8 +290,8 @@
       "registry_name": "bluesoul",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/item/BluesoulItem.java",
-          "src/main/resources/assets/universe3090/models/item/bluesoul.json"
+          "src/main/resources/assets/universe3090/models/item/bluesoul.json",
+          "src/main/java/net/wowamod/item/BluesoulItem.java"
         ]
       }
     },
@@ -318,8 +318,8 @@
       "registry_name": "purplesoul",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/purplesoul.json",
-          "src/main/java/net/wowamod/item/PurplesoulItem.java"
+          "src/main/java/net/wowamod/item/PurplesoulItem.java",
+          "src/main/resources/assets/universe3090/models/item/purplesoul.json"
         ]
       }
     },
@@ -332,8 +332,8 @@
       "registry_name": "redsoulpiece",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/redsoulpiece.json",
-          "src/main/java/net/wowamod/item/RedsoulpieceItem.java"
+          "src/main/java/net/wowamod/item/RedsoulpieceItem.java",
+          "src/main/resources/assets/universe3090/models/item/redsoulpiece.json"
         ]
       }
     },
@@ -360,8 +360,8 @@
       "registry_name": "yellowsoulpiece",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/item/YellowsoulpieceItem.java",
-          "src/main/resources/assets/universe3090/models/item/yellowsoulpiece.json"
+          "src/main/resources/assets/universe3090/models/item/yellowsoulpiece.json",
+          "src/main/java/net/wowamod/item/YellowsoulpieceItem.java"
         ]
       }
     },
@@ -388,8 +388,8 @@
       "registry_name": "bluesoulpiece",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/item/BluesoulpieceItem.java",
-          "src/main/resources/assets/universe3090/models/item/bluesoulpiece.json"
+          "src/main/resources/assets/universe3090/models/item/bluesoulpiece.json",
+          "src/main/java/net/wowamod/item/BluesoulpieceItem.java"
         ]
       }
     },
@@ -1002,9 +1002,9 @@
       "registry_name": "wowabronyacraftring",
       "metadata": {
         "files": [
+          "src/main/java/net/wowamod/client/gui/WowabronyacraftringScreen.java",
           "src/main/java/net/wowamod/world/inventory/WowabronyacraftringMenu.java",
-          "src/main/java/net/wowamod/network/WowabronyacraftringButtonMessage.java",
-          "src/main/java/net/wowamod/client/gui/WowabronyacraftringScreen.java"
+          "src/main/java/net/wowamod/network/WowabronyacraftringButtonMessage.java"
         ]
       }
     },
@@ -1017,11 +1017,11 @@
       "registry_name": "crafterbroni",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/crafterbroni.json",
+          "src/main/java/net/wowamod/block/CrafterbroniBlock.java",
           "src/main/resources/assets/universe3090/blockstates/crafterbroni.json",
-          "src/main/resources/assets/universe3090/models/block/crafterbroni.json",
           "src/main/java/net/wowamod/block/entity/CrafterbroniBlockEntity.java",
-          "src/main/java/net/wowamod/block/CrafterbroniBlock.java"
+          "src/main/resources/assets/universe3090/models/block/crafterbroni.json",
+          "src/main/resources/assets/universe3090/models/item/crafterbroni.json"
         ]
       }
     },
@@ -1047,8 +1047,8 @@
       "registry_name": "derjatili",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/item/DerjatiliItem.java",
-          "src/main/resources/assets/universe3090/models/item/derjatili.json"
+          "src/main/resources/assets/universe3090/models/item/derjatili.json",
+          "src/main/java/net/wowamod/item/DerjatiliItem.java"
         ]
       }
     },
@@ -1330,8 +1330,8 @@
       "registry_name": "dissasebmlyrequired",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/dissasebmlyrequired.json",
-          "src/main/java/net/wowamod/item/DissasebmlyrequiredItem.java"
+          "src/main/java/net/wowamod/item/DissasebmlyrequiredItem.java",
+          "src/main/resources/assets/universe3090/models/item/dissasebmlyrequired.json"
         ]
       }
     },
@@ -1383,9 +1383,9 @@
       "registry_name": "nightmare",
       "metadata": {
         "files": [
+          "src/main/java/net/wowamod/client/renderer/NightmareRenderer.java",
           "src/main/java/net/wowamod/entity/NightmareEntity.java",
-          "src/main/resources/assets/universe3090/models/item/nightmare_spawn_egg.json",
-          "src/main/java/net/wowamod/client/renderer/NightmareRenderer.java"
+          "src/main/resources/assets/universe3090/models/item/nightmare_spawn_egg.json"
         ]
       }
     },
@@ -1773,10 +1773,10 @@
       "registry_name": "redstonecommandblock",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/blockstates/redstonecommandblock.json",
+          "src/main/resources/assets/universe3090/models/item/redstonecommandblock.json",
           "src/main/resources/assets/universe3090/models/block/redstonecommandblock.json",
-          "src/main/java/net/wowamod/block/RedstonecommandblockBlock.java",
-          "src/main/resources/assets/universe3090/models/item/redstonecommandblock.json"
+          "src/main/resources/assets/universe3090/blockstates/redstonecommandblock.json",
+          "src/main/java/net/wowamod/block/RedstonecommandblockBlock.java"
         ]
       }
     },
@@ -1789,10 +1789,10 @@
       "registry_name": "magicironblock",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/block/MagicironblockBlock.java",
           "src/main/resources/assets/universe3090/models/item/magicironblock.json",
           "src/main/resources/assets/universe3090/models/block/magicironblock.json",
-          "src/main/resources/assets/universe3090/blockstates/magicironblock.json"
+          "src/main/resources/assets/universe3090/blockstates/magicironblock.json",
+          "src/main/java/net/wowamod/block/MagicironblockBlock.java"
         ]
       }
     },
@@ -1805,11 +1805,11 @@
       "registry_name": "portconstructor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/block/portconstructor.json",
-          "src/main/java/net/wowamod/block/entity/PortconstructorBlockEntity.java",
-          "src/main/resources/assets/universe3090/blockstates/portconstructor.json",
           "src/main/resources/assets/universe3090/models/item/portconstructor.json",
-          "src/main/java/net/wowamod/block/PortconstructorBlock.java"
+          "src/main/resources/assets/universe3090/models/block/portconstructor.json",
+          "src/main/java/net/wowamod/block/PortconstructorBlock.java",
+          "src/main/resources/assets/universe3090/blockstates/portconstructor.json",
+          "src/main/java/net/wowamod/block/entity/PortconstructorBlockEntity.java"
         ]
       }
     },
@@ -1824,8 +1824,8 @@
         "files": [
           "src/main/java/net/wowamod/block/entity/InterfaceconstructorBlockEntity.java",
           "src/main/java/net/wowamod/block/InterfaceconstructorBlock.java",
-          "src/main/resources/assets/universe3090/blockstates/interfaceconstructor.json",
           "src/main/resources/assets/universe3090/models/item/interfaceconstructor.json",
+          "src/main/resources/assets/universe3090/blockstates/interfaceconstructor.json",
           "src/main/resources/assets/universe3090/models/block/interfaceconstructor.json"
         ]
       }
@@ -1887,8 +1887,8 @@
       "registry_name": "constructorinterface",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/client/gui/ConstructorinterfaceScreen.java",
-          "src/main/java/net/wowamod/world/inventory/ConstructorinterfaceMenu.java"
+          "src/main/java/net/wowamod/world/inventory/ConstructorinterfaceMenu.java",
+          "src/main/java/net/wowamod/client/gui/ConstructorinterfaceScreen.java"
         ]
       }
     },
@@ -1951,9 +1951,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/wowamod/block/RedstoneportBlock.java",
+          "src/main/resources/assets/universe3090/blockstates/redstoneport.json",
           "src/main/resources/assets/universe3090/models/block/redstoneport.json",
-          "src/main/resources/assets/universe3090/models/item/redstoneport.json",
-          "src/main/resources/assets/universe3090/blockstates/redstoneport.json"
+          "src/main/resources/assets/universe3090/models/item/redstoneport.json"
         ]
       }
     },
@@ -2150,11 +2150,11 @@
       "registry_name": "extractor",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/block/ExtractorBlock.java",
-          "src/main/resources/assets/universe3090/models/item/extractor.json",
           "src/main/java/net/wowamod/block/entity/ExtractorBlockEntity.java",
+          "src/main/java/net/wowamod/block/ExtractorBlock.java",
           "src/main/resources/assets/universe3090/models/block/extractor.json",
-          "src/main/resources/assets/universe3090/blockstates/extractor.json"
+          "src/main/resources/assets/universe3090/blockstates/extractor.json",
+          "src/main/resources/assets/universe3090/models/item/extractor.json"
         ]
       }
     },
@@ -2167,13 +2167,13 @@
       "registry_name": "extractgolubaysoul",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/extractgolubaysoul_bucket.json",
+          "src/main/java/net/wowamod/fluid/ExtractgolubaysoulFluid.java",
           "src/main/resources/assets/universe3090/blockstates/extractgolubaysoul.json",
           "src/main/resources/assets/universe3090/models/block/extractgolubaysoul.json",
-          "src/main/java/net/wowamod/fluid/ExtractgolubaysoulFluid.java",
+          "src/main/java/net/wowamod/fluid/types/ExtractgolubaysoulFluidType.java",
           "src/main/java/net/wowamod/block/ExtractgolubaysoulBlock.java",
           "src/main/java/net/wowamod/item/ExtractgolubaysoulItem.java",
-          "src/main/java/net/wowamod/fluid/types/ExtractgolubaysoulFluidType.java"
+          "src/main/resources/assets/universe3090/models/item/extractgolubaysoul_bucket.json"
         ]
       }
     },
@@ -2226,8 +2226,8 @@
       "registry_name": "klava",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/item/KlavaItem.java",
-          "src/main/resources/assets/universe3090/models/item/klava.json"
+          "src/main/resources/assets/universe3090/models/item/klava.json",
+          "src/main/java/net/wowamod/item/KlavaItem.java"
         ]
       }
     },
@@ -2359,9 +2359,9 @@
       "registry_name": "guidebook",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/network/GuidebookButtonMessage.java",
           "src/main/java/net/wowamod/client/gui/GuidebookScreen.java",
-          "src/main/java/net/wowamod/world/inventory/GuidebookMenu.java"
+          "src/main/java/net/wowamod/world/inventory/GuidebookMenu.java",
+          "src/main/java/net/wowamod/network/GuidebookButtonMessage.java"
         ]
       }
     },
@@ -2375,8 +2375,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/universe3090/models/item/guidebookitem.json",
-          "src/main/java/net/wowamod/item/GuidebookitemItem.java",
-          "src/main/java/net/wowamod/item/inventory/GuidebookitemInventoryCapability.java"
+          "src/main/java/net/wowamod/item/inventory/GuidebookitemInventoryCapability.java",
+          "src/main/java/net/wowamod/item/GuidebookitemItem.java"
         ]
       }
     },
@@ -2389,8 +2389,8 @@
       "registry_name": "guidebookstart",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/world/inventory/GuidebookstartMenu.java",
           "src/main/java/net/wowamod/network/GuidebookstartButtonMessage.java",
+          "src/main/java/net/wowamod/world/inventory/GuidebookstartMenu.java",
           "src/main/java/net/wowamod/client/gui/GuidebookstartScreen.java"
         ]
       }
@@ -2542,8 +2542,8 @@
       "registry_name": "rose",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/item/RoseItem.java",
-          "src/main/resources/assets/universe3090/models/item/rose.json"
+          "src/main/resources/assets/universe3090/models/item/rose.json",
+          "src/main/java/net/wowamod/item/RoseItem.java"
         ]
       }
     },
@@ -2583,8 +2583,8 @@
       "registry_name": "trailofrose_2",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/client/particle/Trailofrose2Particle.java",
-          "src/main/resources/assets/universe3090/particles/trailofrose_2.json"
+          "src/main/resources/assets/universe3090/particles/trailofrose_2.json",
+          "src/main/java/net/wowamod/client/particle/Trailofrose2Particle.java"
         ]
       }
     },
@@ -2597,9 +2597,9 @@
       "registry_name": "corrupted_souls_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/blockstates/corrupted_souls_block.json",
-          "src/main/resources/assets/universe3090/models/item/corrupted_souls_block.json",
           "src/main/resources/assets/universe3090/models/block/corrupted_souls_block.json",
+          "src/main/resources/assets/universe3090/models/item/corrupted_souls_block.json",
+          "src/main/resources/assets/universe3090/blockstates/corrupted_souls_block.json",
           "src/main/java/net/wowamod/block/CorruptedSoulsBlockBlock.java"
         ]
       }
@@ -2613,9 +2613,9 @@
       "registry_name": "black_walls_myplace",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/block/black_walls_myplace.json",
           "src/main/java/net/wowamod/block/BlackWallsMyplaceBlock.java",
           "src/main/resources/assets/universe3090/blockstates/black_walls_myplace.json",
+          "src/main/resources/assets/universe3090/models/block/black_walls_myplace.json",
           "src/main/resources/assets/universe3090/models/item/black_walls_myplace.json"
         ]
       }
@@ -2640,17 +2640,17 @@
       "registry_name": "myplacezone",
       "metadata": {
         "files": [
-          "src/main/resources/data/universe3090/dimension_type/myplacezone.json",
-          "src/main/resources/data/universe3090/dimension/myplacezone.json",
+          "src/main/resources/assets/universe3090/blockstates/myplacezone_portal.json",
+          "src/main/java/net/wowamod/world/teleporter/MyplacezonePortalShape.java",
+          "src/main/java/net/wowamod/world/teleporter/MyplacezoneTeleporter.java",
           "src/main/resources/assets/universe3090/models/block/myplacezone_portal_ns.json",
+          "src/main/resources/assets/universe3090/models/item/myplacezone.json",
+          "src/main/resources/data/universe3090/dimension/myplacezone.json",
           "src/main/java/net/wowamod/world/dimension/MyplacezoneDimension.java",
           "src/main/resources/assets/universe3090/models/block/myplacezone_portal_ew.json",
           "src/main/java/net/wowamod/block/MyplacezonePortalBlock.java",
           "src/main/java/net/wowamod/item/MyplacezoneItem.java",
-          "src/main/java/net/wowamod/world/teleporter/MyplacezoneTeleporter.java",
-          "src/main/resources/assets/universe3090/models/item/myplacezone.json",
-          "src/main/java/net/wowamod/world/teleporter/MyplacezonePortalShape.java",
-          "src/main/resources/assets/universe3090/blockstates/myplacezone_portal.json"
+          "src/main/resources/data/universe3090/dimension_type/myplacezone.json"
         ]
       }
     },
@@ -2663,9 +2663,9 @@
       "registry_name": "my_place_biome",
       "metadata": {
         "files": [
-          "src/main/resources/data/universe3090/worldgen/placed_feature/my_place_biome_tree.json",
           "src/main/resources/data/universe3090/worldgen/biome/my_place_biome.json",
-          "src/main/resources/data/universe3090/worldgen/configured_feature/my_place_biome_tree.json"
+          "src/main/resources/data/universe3090/worldgen/configured_feature/my_place_biome_tree.json",
+          "src/main/resources/data/universe3090/worldgen/placed_feature/my_place_biome_tree.json"
         ]
       }
     },
@@ -2678,13 +2678,13 @@
       "registry_name": "truerose",
       "metadata": {
         "files": [
-          "src/main/resources/data/universe3090/worldgen/placed_feature/truerose.json",
-          "src/main/java/net/wowamod/block/TrueroseBlock.java",
+          "src/main/resources/assets/universe3090/blockstates/truerose.json",
+          "src/main/resources/assets/universe3090/models/item/truerose.json",
           "src/main/resources/assets/universe3090/models/block/truerose.json",
           "src/main/resources/data/universe3090/forge/biome_modifier/truerose_biome_modifier.json",
-          "src/main/resources/data/universe3090/worldgen/configured_feature/truerose.json",
-          "src/main/resources/assets/universe3090/blockstates/truerose.json",
-          "src/main/resources/assets/universe3090/models/item/truerose.json"
+          "src/main/java/net/wowamod/block/TrueroseBlock.java",
+          "src/main/resources/data/universe3090/worldgen/placed_feature/truerose.json",
+          "src/main/resources/data/universe3090/worldgen/configured_feature/truerose.json"
         ]
       }
     },
@@ -2723,8 +2723,8 @@
       "registry_name": "myplacestruckture",
       "metadata": {
         "files": [
-          "src/main/resources/data/universe3090/worldgen/template_pool/myplacestruckture.json",
           "src/main/resources/data/universe3090/worldgen/structure/myplacestruckture.json",
+          "src/main/resources/data/universe3090/worldgen/template_pool/myplacestruckture.json",
           "src/main/resources/data/universe3090/worldgen/structure_set/myplacestruckture.json"
         ]
       }
@@ -2803,8 +2803,8 @@
       "registry_name": "aaa_glass",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/item/AaaGlassItem.java",
-          "src/main/resources/assets/universe3090/models/item/aaa_glass.json"
+          "src/main/resources/assets/universe3090/models/item/aaa_glass.json",
+          "src/main/java/net/wowamod/item/AaaGlassItem.java"
         ]
       }
     },
@@ -2817,8 +2817,8 @@
       "registry_name": "ironmass_1",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/ironmass_1.json",
-          "src/main/java/net/wowamod/item/Ironmass1Item.java"
+          "src/main/java/net/wowamod/item/Ironmass1Item.java",
+          "src/main/resources/assets/universe3090/models/item/ironmass_1.json"
         ]
       }
     },
@@ -2885,8 +2885,8 @@
       "registry_name": "blackironingot",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/blackironingot.json",
-          "src/main/java/net/wowamod/item/BlackironingotItem.java"
+          "src/main/java/net/wowamod/item/BlackironingotItem.java",
+          "src/main/resources/assets/universe3090/models/item/blackironingot.json"
         ]
       }
     },
@@ -2940,8 +2940,8 @@
       "registry_name": "instrumentprosto",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/instrumentprosto.json",
-          "src/main/java/net/wowamod/item/InstrumentprostoItem.java"
+          "src/main/java/net/wowamod/item/InstrumentprostoItem.java",
+          "src/main/resources/assets/universe3090/models/item/instrumentprosto.json"
         ]
       }
     },
@@ -3072,9 +3072,9 @@
       "registry_name": "darkbiome",
       "metadata": {
         "files": [
-          "src/main/resources/data/universe3090/worldgen/configured_feature/darkbiome_tree.json",
+          "src/main/resources/data/universe3090/worldgen/biome/darkbiome.json",
           "src/main/resources/data/universe3090/worldgen/placed_feature/darkbiome_tree.json",
-          "src/main/resources/data/universe3090/worldgen/biome/darkbiome.json"
+          "src/main/resources/data/universe3090/worldgen/configured_feature/darkbiome_tree.json"
         ]
       }
     },
@@ -3088,9 +3088,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/wowamod/block/DarkgrassBlock.java",
+          "src/main/resources/assets/universe3090/blockstates/darkgrass.json",
           "src/main/resources/assets/universe3090/models/item/darkgrass.json",
-          "src/main/resources/assets/universe3090/models/block/darkgrass.json",
-          "src/main/resources/assets/universe3090/blockstates/darkgrass.json"
+          "src/main/resources/assets/universe3090/models/block/darkgrass.json"
         ]
       }
     },
@@ -3104,9 +3104,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/universe3090/models/item/darkgrassblockniz.json",
-          "src/main/java/net/wowamod/block/DarkgrassblocknizBlock.java",
+          "src/main/resources/assets/universe3090/blockstates/darkgrassblockniz.json",
           "src/main/resources/assets/universe3090/models/block/darkgrassblockniz.json",
-          "src/main/resources/assets/universe3090/blockstates/darkgrassblockniz.json"
+          "src/main/java/net/wowamod/block/DarkgrassblocknizBlock.java"
         ]
       }
     },
@@ -3119,13 +3119,13 @@
       "registry_name": "dark_biome_ore",
       "metadata": {
         "files": [
-          "src/main/resources/data/universe3090/forge/biome_modifier/dark_biome_ore_biome_modifier.json",
-          "src/main/java/net/wowamod/block/DarkBiomeOreBlock.java",
+          "src/main/resources/assets/universe3090/models/block/dark_biome_ore.json",
           "src/main/resources/data/universe3090/worldgen/placed_feature/dark_biome_ore.json",
-          "src/main/resources/assets/universe3090/models/item/dark_biome_ore.json",
           "src/main/resources/assets/universe3090/blockstates/dark_biome_ore.json",
+          "src/main/resources/data/universe3090/forge/biome_modifier/dark_biome_ore_biome_modifier.json",
           "src/main/resources/data/universe3090/worldgen/configured_feature/dark_biome_ore.json",
-          "src/main/resources/assets/universe3090/models/block/dark_biome_ore.json"
+          "src/main/resources/assets/universe3090/models/item/dark_biome_ore.json",
+          "src/main/java/net/wowamod/block/DarkBiomeOreBlock.java"
         ]
       }
     },
@@ -3191,8 +3191,8 @@
       "registry_name": "blockforprofessiafix",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/blockforprofessiafix.json",
           "src/main/resources/assets/universe3090/models/block/blockforprofessiafix.json",
+          "src/main/resources/assets/universe3090/models/item/blockforprofessiafix.json",
           "src/main/resources/assets/universe3090/blockstates/blockforprofessiafix.json",
           "src/main/java/net/wowamod/block/BlockforprofessiafixBlock.java"
         ]
@@ -3220,13 +3220,13 @@
       "registry_name": "aluminium_ore_wowa",
       "metadata": {
         "files": [
+          "src/main/resources/data/universe3090/worldgen/configured_feature/aluminium_ore_wowa.json",
           "src/main/resources/assets/universe3090/models/item/aluminium_ore_wowa.json",
-          "src/main/java/net/wowamod/block/AluminiumBlock.java",
-          "src/main/resources/data/universe3090/forge/biome_modifier/aluminium_ore_wowa_biome_modifier.json",
           "src/main/resources/assets/universe3090/blockstates/aluminium_ore_wowa.json",
           "src/main/resources/data/universe3090/worldgen/placed_feature/aluminium_ore_wowa.json",
-          "src/main/resources/assets/universe3090/models/block/aluminium_ore_wowa.json",
-          "src/main/resources/data/universe3090/worldgen/configured_feature/aluminium_ore_wowa.json"
+          "src/main/resources/data/universe3090/forge/biome_modifier/aluminium_ore_wowa_biome_modifier.json",
+          "src/main/java/net/wowamod/block/AluminiumBlock.java",
+          "src/main/resources/assets/universe3090/models/block/aluminium_ore_wowa.json"
         ]
       }
     },
@@ -3293,8 +3293,8 @@
       "registry_name": "posudina",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/posudina.json",
-          "src/main/java/net/wowamod/item/PosudinaItem.java"
+          "src/main/java/net/wowamod/item/PosudinaItem.java",
+          "src/main/resources/assets/universe3090/models/item/posudina.json"
         ]
       }
     },
@@ -3320,8 +3320,8 @@
       "registry_name": "karmannielectrolizer",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/item/KarmannielectrolizerItem.java",
-          "src/main/resources/assets/universe3090/models/item/karmannielectrolizer.json"
+          "src/main/resources/assets/universe3090/models/item/karmannielectrolizer.json",
+          "src/main/java/net/wowamod/item/KarmannielectrolizerItem.java"
         ]
       }
     },
@@ -3374,8 +3374,8 @@
       "registry_name": "izolationw",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/izolationw.json",
-          "src/main/java/net/wowamod/item/IzolationwItem.java"
+          "src/main/java/net/wowamod/item/IzolationwItem.java",
+          "src/main/resources/assets/universe3090/models/item/izolationw.json"
         ]
       }
     },
@@ -3441,8 +3441,8 @@
       "registry_name": "multitoolcomponent",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/multitoolcomponent.json",
-          "src/main/java/net/wowamod/item/MultitoolcomponentItem.java"
+          "src/main/java/net/wowamod/item/MultitoolcomponentItem.java",
+          "src/main/resources/assets/universe3090/models/item/multitoolcomponent.json"
         ]
       }
     },
@@ -3455,10 +3455,10 @@
       "registry_name": "pogranichnik",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/pogranichnik.json",
           "src/main/java/net/wowamod/block/PogranichnikBlock.java",
-          "src/main/resources/assets/universe3090/models/block/pogranichnik.json",
-          "src/main/resources/assets/universe3090/blockstates/pogranichnik.json"
+          "src/main/resources/assets/universe3090/models/item/pogranichnik.json",
+          "src/main/resources/assets/universe3090/blockstates/pogranichnik.json",
+          "src/main/resources/assets/universe3090/models/block/pogranichnik.json"
         ]
       }
     },
@@ -3547,10 +3547,10 @@
       "registry_name": "dark_strk_blk",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/dark_strk_blk.json",
           "src/main/resources/assets/universe3090/blockstates/dark_strk_blk.json",
-          "src/main/resources/assets/universe3090/models/block/dark_strk_blk.json",
-          "src/main/java/net/wowamod/block/DarkStrkBLKBlock.java"
+          "src/main/resources/assets/universe3090/models/item/dark_strk_blk.json",
+          "src/main/java/net/wowamod/block/DarkStrkBLKBlock.java",
+          "src/main/resources/assets/universe3090/models/block/dark_strk_blk.json"
         ]
       }
     },
@@ -3577,8 +3577,8 @@
       "registry_name": "blue_emerald_piece",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/blue_emerald_piece.json",
-          "src/main/java/net/wowamod/item/BlueEmeraldPieceItem.java"
+          "src/main/java/net/wowamod/item/BlueEmeraldPieceItem.java",
+          "src/main/resources/assets/universe3090/models/item/blue_emerald_piece.json"
         ]
       }
     },
@@ -3591,8 +3591,8 @@
       "registry_name": "white_emerald_piece",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/white_emerald_piece.json",
-          "src/main/java/net/wowamod/item/WhiteEmeraldPieceItem.java"
+          "src/main/java/net/wowamod/item/WhiteEmeraldPieceItem.java",
+          "src/main/resources/assets/universe3090/models/item/white_emerald_piece.json"
         ]
       }
     },
@@ -3619,8 +3619,8 @@
       "registry_name": "light_blue_emerald_piece",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/item/LightBlueEmeraldPieceItem.java",
-          "src/main/resources/assets/universe3090/models/item/light_blue_emerald_piece.json"
+          "src/main/resources/assets/universe3090/models/item/light_blue_emerald_piece.json",
+          "src/main/java/net/wowamod/item/LightBlueEmeraldPieceItem.java"
         ]
       }
     },
@@ -3647,8 +3647,8 @@
       "registry_name": "green_emerald_piece",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/green_emerald_piece.json",
-          "src/main/java/net/wowamod/item/GreenEmeraldPieceItem.java"
+          "src/main/java/net/wowamod/item/GreenEmeraldPieceItem.java",
+          "src/main/resources/assets/universe3090/models/item/green_emerald_piece.json"
         ]
       }
     },
@@ -3702,11 +3702,11 @@
       "registry_name": "emerald_combiner",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/emerald_combiner.json",
-          "src/main/java/net/wowamod/block/EmeraldCombinerBlock.java",
-          "src/main/resources/assets/universe3090/blockstates/emerald_combiner.json",
+          "src/main/java/net/wowamod/block/entity/EmeraldCombinerBlockEntity.java",
           "src/main/resources/assets/universe3090/models/block/emerald_combiner.json",
-          "src/main/java/net/wowamod/block/entity/EmeraldCombinerBlockEntity.java"
+          "src/main/resources/assets/universe3090/models/item/emerald_combiner.json",
+          "src/main/resources/assets/universe3090/blockstates/emerald_combiner.json",
+          "src/main/java/net/wowamod/block/EmeraldCombinerBlock.java"
         ]
       }
     },
@@ -3719,8 +3719,8 @@
       "registry_name": "eci",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/world/inventory/ECIMenu.java",
-          "src/main/java/net/wowamod/client/gui/ECIScreen.java"
+          "src/main/java/net/wowamod/client/gui/ECIScreen.java",
+          "src/main/java/net/wowamod/world/inventory/ECIMenu.java"
         ]
       }
     },
@@ -3765,11 +3765,11 @@
       "registry_name": "big_batteryw",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/blockstates/big_batteryw.json",
           "src/main/java/net/wowamod/block/entity/BigBatterywBlockEntity.java",
-          "src/main/java/net/wowamod/block/BigBatterywBlock.java",
           "src/main/resources/assets/universe3090/models/item/big_batteryw.json",
-          "src/main/resources/assets/universe3090/models/block/big_batteryw.json"
+          "src/main/resources/assets/universe3090/models/block/big_batteryw.json",
+          "src/main/java/net/wowamod/block/BigBatterywBlock.java",
+          "src/main/resources/assets/universe3090/blockstates/big_batteryw.json"
         ]
       }
     },
@@ -3911,9 +3911,9 @@
       "registry_name": "dark_iron_machine_casing",
       "metadata": {
         "files": [
+          "src/main/java/net/wowamod/block/DarkIronMachineCasingBlock.java",
           "src/main/resources/assets/universe3090/models/block/dark_iron_machine_casing.json",
           "src/main/resources/assets/universe3090/models/item/dark_iron_machine_casing.json",
-          "src/main/java/net/wowamod/block/DarkIronMachineCasingBlock.java",
           "src/main/resources/assets/universe3090/blockstates/dark_iron_machine_casing.json"
         ]
       }
@@ -3927,8 +3927,8 @@
       "registry_name": "darkironplastine",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/item/DarkironplastineItem.java",
-          "src/main/resources/assets/universe3090/models/item/darkironplastine.json"
+          "src/main/resources/assets/universe3090/models/item/darkironplastine.json",
+          "src/main/java/net/wowamod/item/DarkironplastineItem.java"
         ]
       }
     },
@@ -3993,8 +3993,8 @@
       "registry_name": "aluminiumdiamondbase",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/aluminiumdiamondbase.json",
-          "src/main/java/net/wowamod/item/AluminiumdiamondbaseItem.java"
+          "src/main/java/net/wowamod/item/AluminiumdiamondbaseItem.java",
+          "src/main/resources/assets/universe3090/models/item/aluminiumdiamondbase.json"
         ]
       }
     },
@@ -4020,8 +4020,8 @@
       "registry_name": "energyelement",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/energyelement.json",
-          "src/main/java/net/wowamod/item/EnergyelementItem.java"
+          "src/main/java/net/wowamod/item/EnergyelementItem.java",
+          "src/main/resources/assets/universe3090/models/item/energyelement.json"
         ]
       }
     },
@@ -4101,10 +4101,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/universe3090/models/block/solarpanelgeneratorw.json",
-          "src/main/java/net/wowamod/block/entity/SolarpanelgeneratorwBlockEntity.java",
-          "src/main/resources/assets/universe3090/blockstates/solarpanelgeneratorw.json",
+          "src/main/java/net/wowamod/block/SolarpanelgeneratorwBlock.java",
           "src/main/resources/assets/universe3090/models/item/solarpanelgeneratorw.json",
-          "src/main/java/net/wowamod/block/SolarpanelgeneratorwBlock.java"
+          "src/main/resources/assets/universe3090/blockstates/solarpanelgeneratorw.json",
+          "src/main/java/net/wowamod/block/entity/SolarpanelgeneratorwBlockEntity.java"
         ]
       }
     },
@@ -4214,8 +4214,8 @@
       "registry_name": "testlaserparticle",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/client/particle/TestlaserparticleParticle.java",
-          "src/main/resources/assets/universe3090/particles/testlaserparticle.json"
+          "src/main/resources/assets/universe3090/particles/testlaserparticle.json",
+          "src/main/java/net/wowamod/client/particle/TestlaserparticleParticle.java"
         ]
       }
     },
@@ -4260,8 +4260,8 @@
       "registry_name": "clearetheriumlight",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/item/ClearetheriumlightItem.java",
-          "src/main/resources/assets/universe3090/models/item/clearetheriumlight.json"
+          "src/main/resources/assets/universe3090/models/item/clearetheriumlight.json",
+          "src/main/java/net/wowamod/item/ClearetheriumlightItem.java"
         ]
       }
     },
@@ -4455,11 +4455,11 @@
       "registry_name": "mimic",
       "metadata": {
         "files": [
-          "src/main/resources/data/universe3090/forge/biome_modifier/mimic_biome_modifier.json",
-          "src/main/java/net/wowamod/entity/MimicEntity.java",
           "src/main/java/net/wowamod/client/renderer/MimicRenderer.java",
+          "src/main/resources/assets/universe3090/models/item/mimic_spawn_egg.json",
+          "src/main/java/net/wowamod/entity/MimicEntity.java",
           "src/main/java/net/wowamod/entity/model/MimicModel.java",
-          "src/main/resources/assets/universe3090/models/item/mimic_spawn_egg.json"
+          "src/main/resources/data/universe3090/forge/biome_modifier/mimic_biome_modifier.json"
         ]
       }
     },
@@ -4578,12 +4578,12 @@
       "registry_name": "testplant",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/blockstates/testplant.json",
-          "src/main/java/net/wowamod/block/TestplantBlock.java",
           "src/main/resources/data/universe3090/worldgen/configured_feature/testplant.json",
-          "src/main/resources/assets/universe3090/models/block/testplant.json",
+          "src/main/java/net/wowamod/block/TestplantBlock.java",
           "src/main/resources/data/universe3090/worldgen/placed_feature/testplant.json",
+          "src/main/resources/assets/universe3090/models/block/testplant.json",
           "src/main/resources/data/universe3090/forge/biome_modifier/testplant_biome_modifier.json",
+          "src/main/resources/assets/universe3090/blockstates/testplant.json",
           "src/main/resources/assets/universe3090/models/item/testplant.json"
         ]
       }
@@ -4688,10 +4688,10 @@
       "registry_name": "cable_n",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/blockstates/cable_n.json",
-          "src/main/resources/assets/universe3090/models/item/cable_n.json",
           "src/main/java/net/wowamod/block/entity/CableNBlockEntity.java",
+          "src/main/resources/assets/universe3090/models/item/cable_n.json",
           "src/main/java/net/wowamod/block/CableNBlock.java",
+          "src/main/resources/assets/universe3090/blockstates/cable_n.json",
           "src/main/resources/assets/universe3090/models/block/cable_n.json"
         ]
       },
@@ -4706,11 +4706,11 @@
       "registry_name": "cable_e",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/block/CableEBlock.java",
+          "src/main/java/net/wowamod/block/entity/CableEBlockEntity.java",
           "src/main/resources/assets/universe3090/models/item/cable_e.json",
-          "src/main/resources/assets/universe3090/models/block/cable_e.json",
           "src/main/resources/assets/universe3090/blockstates/cable_e.json",
-          "src/main/java/net/wowamod/block/entity/CableEBlockEntity.java"
+          "src/main/resources/assets/universe3090/models/block/cable_e.json",
+          "src/main/java/net/wowamod/block/CableEBlock.java"
         ]
       },
       "path": "~/Cables"
@@ -4724,11 +4724,11 @@
       "registry_name": "cable_i",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/cable_i.json",
           "src/main/java/net/wowamod/block/CableIBlock.java",
-          "src/main/resources/assets/universe3090/models/block/cable_i.json",
+          "src/main/resources/assets/universe3090/models/item/cable_i.json",
           "src/main/java/net/wowamod/block/entity/CableIBlockEntity.java",
-          "src/main/resources/assets/universe3090/blockstates/cable_i.json"
+          "src/main/resources/assets/universe3090/blockstates/cable_i.json",
+          "src/main/resources/assets/universe3090/models/block/cable_i.json"
         ]
       },
       "path": "~/Cables"
@@ -4742,8 +4742,8 @@
       "registry_name": "cable_f",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/cable_f.json",
           "src/main/resources/assets/universe3090/blockstates/cable_f.json",
+          "src/main/resources/assets/universe3090/models/item/cable_f.json",
           "src/main/java/net/wowamod/block/CableFBlock.java",
           "src/main/java/net/wowamod/block/entity/CableFBlockEntity.java",
           "src/main/resources/assets/universe3090/models/block/cable_f.json"
@@ -4760,11 +4760,11 @@
       "registry_name": "cable_l",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/block/cable_l.json",
           "src/main/java/net/wowamod/block/CableLBlock.java",
-          "src/main/java/net/wowamod/block/entity/CableLBlockEntity.java",
           "src/main/resources/assets/universe3090/models/item/cable_l.json",
-          "src/main/resources/assets/universe3090/blockstates/cable_l.json"
+          "src/main/resources/assets/universe3090/blockstates/cable_l.json",
+          "src/main/resources/assets/universe3090/models/block/cable_l.json",
+          "src/main/java/net/wowamod/block/entity/CableLBlockEntity.java"
         ]
       },
       "path": "~/Cables"
@@ -4779,10 +4779,10 @@
       "metadata": {
         "files": [
           "src/main/java/net/wowamod/block/entity/CableLCBlockEntity.java",
-          "src/main/resources/assets/universe3090/blockstates/cable_lc.json",
+          "src/main/resources/assets/universe3090/models/item/cable_lc.json",
           "src/main/java/net/wowamod/block/CableLCBlock.java",
-          "src/main/resources/assets/universe3090/models/block/cable_lc.json",
-          "src/main/resources/assets/universe3090/models/item/cable_lc.json"
+          "src/main/resources/assets/universe3090/blockstates/cable_lc.json",
+          "src/main/resources/assets/universe3090/models/block/cable_lc.json"
         ]
       },
       "path": "~/Cables"
@@ -4796,10 +4796,10 @@
       "registry_name": "cable_lcc",
       "metadata": {
         "files": [
+          "src/main/resources/assets/universe3090/models/block/cable_lcc.json",
           "src/main/resources/assets/universe3090/models/item/cable_lcc.json",
           "src/main/java/net/wowamod/block/entity/CableLCCBlockEntity.java",
           "src/main/resources/assets/universe3090/blockstates/cable_lcc.json",
-          "src/main/resources/assets/universe3090/models/block/cable_lcc.json",
           "src/main/java/net/wowamod/block/CableLCCBlock.java"
         ]
       },
@@ -4814,11 +4814,11 @@
       "registry_name": "cable_lt",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/block/CableLTBlock.java",
-          "src/main/resources/assets/universe3090/models/block/cable_lt.json",
-          "src/main/java/net/wowamod/block/entity/CableLTBlockEntity.java",
+          "src/main/resources/assets/universe3090/blockstates/cable_lt.json",
           "src/main/resources/assets/universe3090/models/item/cable_lt.json",
-          "src/main/resources/assets/universe3090/blockstates/cable_lt.json"
+          "src/main/java/net/wowamod/block/entity/CableLTBlockEntity.java",
+          "src/main/java/net/wowamod/block/CableLTBlock.java",
+          "src/main/resources/assets/universe3090/models/block/cable_lt.json"
         ]
       },
       "path": "~/Cables"
@@ -4832,11 +4832,11 @@
       "registry_name": "cable_ltc",
       "metadata": {
         "files": [
+          "src/main/resources/assets/universe3090/models/item/cable_ltc.json",
           "src/main/java/net/wowamod/block/entity/CableLTCBlockEntity.java",
           "src/main/java/net/wowamod/block/CableLTCBlock.java",
-          "src/main/resources/assets/universe3090/models/item/cable_ltc.json",
-          "src/main/resources/assets/universe3090/blockstates/cable_ltc.json",
-          "src/main/resources/assets/universe3090/models/block/cable_ltc.json"
+          "src/main/resources/assets/universe3090/models/block/cable_ltc.json",
+          "src/main/resources/assets/universe3090/blockstates/cable_ltc.json"
         ]
       },
       "path": "~/Cables"
@@ -4850,11 +4850,11 @@
       "registry_name": "cable_t",
       "metadata": {
         "files": [
+          "src/main/resources/assets/universe3090/models/item/cable_t.json",
+          "src/main/java/net/wowamod/block/entity/CableTBlockEntity.java",
           "src/main/resources/assets/universe3090/blockstates/cable_t.json",
           "src/main/resources/assets/universe3090/models/block/cable_t.json",
-          "src/main/java/net/wowamod/block/CableTBlock.java",
-          "src/main/java/net/wowamod/block/entity/CableTBlockEntity.java",
-          "src/main/resources/assets/universe3090/models/item/cable_t.json"
+          "src/main/java/net/wowamod/block/CableTBlock.java"
         ]
       },
       "path": "~/Cables"
@@ -4868,11 +4868,11 @@
       "registry_name": "cable_tc",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/block/CableTCBlock.java",
-          "src/main/resources/assets/universe3090/models/block/cable_tc.json",
-          "src/main/resources/assets/universe3090/models/item/cable_tc.json",
           "src/main/resources/assets/universe3090/blockstates/cable_tc.json",
-          "src/main/java/net/wowamod/block/entity/CableTCBlockEntity.java"
+          "src/main/java/net/wowamod/block/CableTCBlock.java",
+          "src/main/java/net/wowamod/block/entity/CableTCBlockEntity.java",
+          "src/main/resources/assets/universe3090/models/item/cable_tc.json",
+          "src/main/resources/assets/universe3090/models/block/cable_tc.json"
         ]
       },
       "path": "~/Cables"
@@ -4886,11 +4886,11 @@
       "registry_name": "cable_tx",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/block/CableTXBlock.java",
-          "src/main/java/net/wowamod/block/entity/CableTXBlockEntity.java",
           "src/main/resources/assets/universe3090/blockstates/cable_tx.json",
-          "src/main/resources/assets/universe3090/models/item/cable_tx.json",
-          "src/main/resources/assets/universe3090/models/block/cable_tx.json"
+          "src/main/java/net/wowamod/block/entity/CableTXBlockEntity.java",
+          "src/main/resources/assets/universe3090/models/block/cable_tx.json",
+          "src/main/java/net/wowamod/block/CableTXBlock.java",
+          "src/main/resources/assets/universe3090/models/item/cable_tx.json"
         ]
       },
       "path": "~/Cables"
@@ -4904,11 +4904,11 @@
       "registry_name": "cable_txc",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/blockstates/cable_txc.json",
-          "src/main/resources/assets/universe3090/models/item/cable_txc.json",
+          "src/main/resources/assets/universe3090/models/block/cable_txc.json",
           "src/main/java/net/wowamod/block/entity/CableTVCBlockEntity.java",
-          "src/main/java/net/wowamod/block/CableTVCBlock.java",
-          "src/main/resources/assets/universe3090/models/block/cable_txc.json"
+          "src/main/resources/assets/universe3090/models/item/cable_txc.json",
+          "src/main/resources/assets/universe3090/blockstates/cable_txc.json",
+          "src/main/java/net/wowamod/block/CableTVCBlock.java"
         ]
       },
       "path": "~/Cables"
@@ -4922,11 +4922,11 @@
       "registry_name": "cable_txcc",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/block/CableTXCCBlock.java",
+          "src/main/java/net/wowamod/block/entity/CableTXCCBlockEntity.java",
+          "src/main/resources/assets/universe3090/models/item/cable_txcc.json",
           "src/main/resources/assets/universe3090/blockstates/cable_txcc.json",
           "src/main/resources/assets/universe3090/models/block/cable_txcc.json",
-          "src/main/resources/assets/universe3090/models/item/cable_txcc.json",
-          "src/main/java/net/wowamod/block/entity/CableTXCCBlockEntity.java"
+          "src/main/java/net/wowamod/block/CableTXCCBlock.java"
         ]
       },
       "path": "~/Cables"
@@ -4940,11 +4940,11 @@
       "registry_name": "cable_x",
       "metadata": {
         "files": [
+          "src/main/java/net/wowamod/block/entity/CableXBlockEntity.java",
           "src/main/java/net/wowamod/block/CableXBlock.java",
           "src/main/resources/assets/universe3090/blockstates/cable_x.json",
           "src/main/resources/assets/universe3090/models/block/cable_x.json",
-          "src/main/resources/assets/universe3090/models/item/cable_x.json",
-          "src/main/java/net/wowamod/block/entity/CableXBlockEntity.java"
+          "src/main/resources/assets/universe3090/models/item/cable_x.json"
         ]
       },
       "path": "~/Cables"
@@ -4958,11 +4958,11 @@
       "registry_name": "cable_xc",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/blockstates/cable_xc.json",
-          "src/main/java/net/wowamod/block/entity/CableXCBlockEntity.java",
-          "src/main/resources/assets/universe3090/models/block/cable_xc.json",
           "src/main/resources/assets/universe3090/models/item/cable_xc.json",
-          "src/main/java/net/wowamod/block/CableXCBlock.java"
+          "src/main/resources/assets/universe3090/models/block/cable_xc.json",
+          "src/main/java/net/wowamod/block/entity/CableXCBlockEntity.java",
+          "src/main/java/net/wowamod/block/CableXCBlock.java",
+          "src/main/resources/assets/universe3090/blockstates/cable_xc.json"
         ]
       },
       "path": "~/Cables"
@@ -4976,11 +4976,11 @@
       "registry_name": "cable_s",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/cable_s.json",
           "src/main/java/net/wowamod/block/entity/CableSBlockEntity.java",
-          "src/main/resources/assets/universe3090/blockstates/cable_s.json",
+          "src/main/resources/assets/universe3090/models/block/cable_s.json",
           "src/main/java/net/wowamod/block/CableSBlock.java",
-          "src/main/resources/assets/universe3090/models/block/cable_s.json"
+          "src/main/resources/assets/universe3090/blockstates/cable_s.json",
+          "src/main/resources/assets/universe3090/models/item/cable_s.json"
         ]
       },
       "path": "~/Cables"
@@ -5736,8 +5736,8 @@
       "registry_name": "extractor_guide",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/network/ExtractorGuideButtonMessage.java",
           "src/main/java/net/wowamod/world/inventory/ExtractorGuideMenu.java",
+          "src/main/java/net/wowamod/network/ExtractorGuideButtonMessage.java",
           "src/main/java/net/wowamod/client/gui/ExtractorGuideScreen.java"
         ]
       }
@@ -5800,9 +5800,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/wowamod/client/renderer/DarkHeadRenderer.java",
-          "src/main/resources/assets/universe3090/models/item/dark_head_spawn_egg.json",
           "src/main/java/net/wowamod/entity/DarkHeadEntity.java",
-          "src/main/java/net/wowamod/entity/model/DarkHeadModel.java"
+          "src/main/java/net/wowamod/entity/model/DarkHeadModel.java",
+          "src/main/resources/assets/universe3090/models/item/dark_head_spawn_egg.json"
         ]
       }
     },
@@ -5815,8 +5815,8 @@
       "registry_name": "diamond_multi_toolw",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/diamond_multi_toolw.json",
-          "src/main/java/net/wowamod/item/DiamondMultiToolwItem.java"
+          "src/main/java/net/wowamod/item/DiamondMultiToolwItem.java",
+          "src/main/resources/assets/universe3090/models/item/diamond_multi_toolw.json"
         ]
       }
     },
@@ -5829,8 +5829,8 @@
       "registry_name": "diamondlapis",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/diamondlapis.json",
-          "src/main/java/net/wowamod/item/DiamondlapisItem.java"
+          "src/main/java/net/wowamod/item/DiamondlapisItem.java",
+          "src/main/resources/assets/universe3090/models/item/diamondlapis.json"
         ]
       }
     },
@@ -5937,11 +5937,11 @@
       "registry_name": "diamond_lapis_armor_armor",
       "metadata": {
         "files": [
+          "src/main/resources/assets/universe3090/models/item/diamond_lapis_armor_armor_helmet.json",
+          "src/main/java/net/wowamod/item/Diamond_lapis_armorArmorItem.java",
           "src/main/resources/assets/universe3090/models/item/diamond_lapis_armor_armor_chestplate.json",
           "src/main/resources/assets/universe3090/models/item/diamond_lapis_armor_armor_boots.json",
-          "src/main/resources/assets/universe3090/models/item/diamond_lapis_armor_armor_leggings.json",
-          "src/main/resources/assets/universe3090/models/item/diamond_lapis_armor_armor_helmet.json",
-          "src/main/java/net/wowamod/item/Diamond_lapis_armorArmorItem.java"
+          "src/main/resources/assets/universe3090/models/item/diamond_lapis_armor_armor_leggings.json"
         ]
       }
     },
@@ -6061,8 +6061,8 @@
       "registry_name": "diamondlapistoolsword",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/diamondlapistoolsword.json",
-          "src/main/java/net/wowamod/item/DiamondlapistoolswordItem.java"
+          "src/main/java/net/wowamod/item/DiamondlapistoolswordItem.java",
+          "src/main/resources/assets/universe3090/models/item/diamondlapistoolsword.json"
         ]
       }
     },
@@ -6088,8 +6088,8 @@
       "registry_name": "mt_wtestanim",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/item/renderer/MTWtestanimItemRenderer.java",
           "src/main/java/net/wowamod/item/model/MTWtestanimItemModel.java",
+          "src/main/java/net/wowamod/item/renderer/MTWtestanimItemRenderer.java",
           "src/main/resources/assets/universe3090/models/item/mt_wtestanim.json",
           "src/main/java/net/wowamod/item/MTWtestanimItem.java"
         ]
@@ -6197,13 +6197,13 @@
       "registry_name": "elissaarmor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/elissaarmor_chestplate.json",
-          "src/main/resources/assets/universe3090/models/item/elissaarmor_boots.json",
           "src/main/java/net/wowamod/client/renderer/ElissaarmorArmorRenderer.java",
-          "src/main/resources/assets/universe3090/models/item/elissaarmor_leggings.json",
-          "src/main/java/net/wowamod/item/model/ElissaarmorModel.java",
           "src/main/resources/assets/universe3090/models/item/elissaarmor_helmet.json",
-          "src/main/java/net/wowamod/item/ElissaarmorItem.java"
+          "src/main/resources/assets/universe3090/models/item/elissaarmor_leggings.json",
+          "src/main/resources/assets/universe3090/models/item/elissaarmor_chestplate.json",
+          "src/main/java/net/wowamod/item/ElissaarmorItem.java",
+          "src/main/java/net/wowamod/item/model/ElissaarmorModel.java",
+          "src/main/resources/assets/universe3090/models/item/elissaarmor_boots.json"
         ]
       }
     },
@@ -6229,8 +6229,8 @@
       "registry_name": "eliss_claws",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/eliss_claws.json",
-          "src/main/java/net/wowamod/item/ElissClawsItem.java"
+          "src/main/java/net/wowamod/item/ElissClawsItem.java",
+          "src/main/resources/assets/universe3090/models/item/eliss_claws.json"
         ]
       }
     },
@@ -6256,8 +6256,8 @@
       "registry_name": "elissclaw",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/elissclaw.json",
-          "src/main/java/net/wowamod/item/ElissclawItem.java"
+          "src/main/java/net/wowamod/item/ElissclawItem.java",
+          "src/main/resources/assets/universe3090/models/item/elissclaw.json"
         ]
       }
     },
@@ -6283,8 +6283,8 @@
       "registry_name": "ultrastrongcoating",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/item/UltrastrongcoatingItem.java",
-          "src/main/resources/assets/universe3090/models/item/ultrastrongcoating.json"
+          "src/main/resources/assets/universe3090/models/item/ultrastrongcoating.json",
+          "src/main/java/net/wowamod/item/UltrastrongcoatingItem.java"
         ]
       }
     },
@@ -6297,8 +6297,8 @@
       "registry_name": "energypipesusc",
       "metadata": {
         "files": [
-          "src/main/java/net/wowamod/item/EnergypipesuscItem.java",
-          "src/main/resources/assets/universe3090/models/item/energypipesusc.json"
+          "src/main/resources/assets/universe3090/models/item/energypipesusc.json",
+          "src/main/java/net/wowamod/item/EnergypipesuscItem.java"
         ]
       }
     },
@@ -6351,10 +6351,10 @@
       "registry_name": "diamondlapisblock",
       "metadata": {
         "files": [
+          "src/main/resources/assets/universe3090/models/block/diamondlapisblock.json",
           "src/main/resources/assets/universe3090/models/item/diamondlapisblock.json",
-          "src/main/resources/assets/universe3090/blockstates/diamondlapisblock.json",
           "src/main/java/net/wowamod/block/DiamondlapisblockBlock.java",
-          "src/main/resources/assets/universe3090/models/block/diamondlapisblock.json"
+          "src/main/resources/assets/universe3090/blockstates/diamondlapisblock.json"
         ]
       }
     },
@@ -6419,8 +6419,8 @@
       "registry_name": "energymagiccontroller",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/energymagiccontroller.json",
-          "src/main/java/net/wowamod/item/EnergymagiccontrollerItem.java"
+          "src/main/java/net/wowamod/item/EnergymagiccontrollerItem.java",
+          "src/main/resources/assets/universe3090/models/item/energymagiccontroller.json"
         ]
       }
     },
@@ -6459,8 +6459,8 @@
       "registry_name": "electromagiccore",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/item/electromagiccore.json",
-          "src/main/java/net/wowamod/item/ElectromagiccoreItem.java"
+          "src/main/java/net/wowamod/item/ElectromagiccoreItem.java",
+          "src/main/resources/assets/universe3090/models/item/electromagiccore.json"
         ]
       }
     },
@@ -6539,9 +6539,9 @@
       "registry_name": "darkironblock",
       "metadata": {
         "files": [
-          "src/main/resources/assets/universe3090/models/block/darkironblock.json",
-          "src/main/resources/assets/universe3090/models/item/darkironblock.json",
           "src/main/resources/assets/universe3090/blockstates/darkironblock.json",
+          "src/main/resources/assets/universe3090/models/item/darkironblock.json",
+          "src/main/resources/assets/universe3090/models/block/darkironblock.json",
           "src/main/java/net/wowamod/block/DarkironblockBlock.java"
         ]
       }
@@ -6709,7 +6709,7 @@
       "name": "EnergyBallEntity",
       "type": "code",
       "sortid": 394,
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "energy_ball_entity",
       "metadata": {
@@ -6793,6 +6793,71 @@
       "metadata": {
         "files": [
           "src/main/java/net/wowamod/ModRegisterEnergySp.java"
+        ]
+      }
+    },
+    {
+      "name": "EnergyActionPacket",
+      "type": "code",
+      "sortid": 401,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "energy_action_packet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/EnergyActionPacket.java"
+        ]
+      }
+    },
+    {
+      "name": "ModMessages",
+      "type": "code",
+      "sortid": 402,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "mod_messages",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/ModMessages.java"
+        ]
+      }
+    },
+    {
+      "name": "KeyBindings",
+      "type": "code",
+      "sortid": 403,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "key_bindings",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/KeyBindings.java"
+        ]
+      }
+    },
+    {
+      "name": "CapabilityAttacher",
+      "type": "code",
+      "sortid": 404,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "capability_attacher",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/CapabilityAttacher.java"
+        ]
+      }
+    },
+    {
+      "name": "EnergyChargeRenderer",
+      "type": "code",
+      "sortid": 405,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "energy_charge_renderer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/EnergyChargeRenderer.java"
         ]
       }
     }
@@ -6919,6 +6984,14 @@
       ],
       "category": "ambient",
       "subtitle": ""
+    },
+    {
+      "name": "energy_explosion",
+      "files": [
+        "magic-energy-shoots-special-effects_online-video-cutter.com"
+      ],
+      "category": "master",
+      "subtitle": "energy_explosion"
     }
   ],
   "language_map": {
@@ -7107,6 +7180,7 @@
       "item.wowamod.whiteemerald": "Белый Изумруд",
       "item.universe3090.izolationw": "Часть изоляции",
       "item.wowamodfabric.adarkplacesound.desc": "A Dark Place - Happy and Sad",
+      "subtitles.energy_explosion": "energy_explosion",
       "block.universe3090.pogranichnik": "Пограничная ткань пространства времени",
       "item.wowamodfabric.adarkplacesound": "Happy and Sad",
       "item.wowamod.soulcore": "Ядро Душ",
@@ -7555,6 +7629,7 @@
       "item.wowamod.whiteemerald": "Белый Изумруд",
       "item.universe3090.izolationw": "Часть изоляции",
       "item.wowamodfabric.adarkplacesound.desc": "A Dark Place - Happy and Sad",
+      "subtitles.energy_explosion": "energy_explosion",
       "block.universe3090.pogranichnik": "Пограничная ткань пространства времени",
       "item.wowamodfabric.adarkplacesound": "Happy and Sad",
       "item.wowamod.soulcore": "ЯдроДуш",

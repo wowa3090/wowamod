@@ -21,4 +21,5 @@ public class Universe3090ModSounds {
 	public static final RegistryObject<SoundEvent> DISASSEMBLY_REQUIRED = REGISTRY.register("disassembly_required", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("universe3090", "disassembly_required")));
 	public static final RegistryObject<SoundEvent> NIGHTMARE_TROJANSOUND = REGISTRY.register("nightmare.trojansound", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("universe3090", "nightmare.trojansound")));
 	public static final RegistryObject<SoundEvent> AMBIENTMYPLACEZONE = REGISTRY.register("ambientmyplacezone", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("universe3090", "ambientmyplacezone")));
+	public static final RegistryObject<SoundEvent> ENERGY_EXPLOSION = REGISTRY.register("energy_explosion", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("universe3090", "energy_explosion")));
 }

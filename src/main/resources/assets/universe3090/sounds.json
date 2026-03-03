@@ -50,5 +50,14 @@
         "stream": false
       }
     ]
+  },
+  "energy_explosion": {
+    "subtitle": "subtitles.energy_explosion",
+    "sounds": [
+      {
+        "name": "universe3090:magic-energy-shoots-special-effects_online-video-cutter.com",
+        "stream": false
+      }
+    ]
   }
 }
