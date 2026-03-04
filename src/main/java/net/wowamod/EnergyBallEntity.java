@@ -1,5 +1,6 @@
 package net.wowamod.entity;
 
+import net.wowamod.init.Universe3090ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -8,6 +9,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.AgeableMob;
+import net.minecraft.world.entity.Entity; // <--- ДОБАВЛЕН ВАЖНЫЙ ИМПОРТ
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.entity.LivingEntity;
@@ -27,7 +29,8 @@ public class EnergyBallEntity extends ThrowableProjectile {
     private static final EntityDataAccessor<Integer> SYNCED_FLAGS = SynchedEntityData.defineId(EnergyBallEntity.class, EntityDataSerializers.INT);
 
     private LivingEntity target;
-    private float damageMultiplier = 1.1f;
+    // Множитель по умолчанию > 0, чтобы урон точно проходил
+    private float damageMultiplier = 1.1f; 
 
     public EnergyBallEntity(EntityType<? extends EnergyBallEntity> type, Level level) {
         super(type, level);
@@ -98,83 +101,101 @@ public class EnergyBallEntity extends ThrowableProjectile {
     private void explode() {
         Level level = this.level();
         LivingEntity owner = (LivingEntity) this.getOwner();
-        if (owner == null) return;
+        
+        // Если владелец пропал, владельцем считаем сам шар, чтобы урон наносился в любом случае
+        // Теперь это работает, т.к. класс Entity импортирован
+        Entity actualOwner = owner != null ? owner : this;
 
         int flags = getEmeraldFlags();
-        double radius = 3.0; // Базовый радиус
-        float baseDamagePct = 0.25f; // 20% от текущего ХП
+        double radius = 3.0; 
+        float baseDamagePct = 0.25f; 
 
-        // КРАСНЫЙ: Радиус 165% (3.0 * 2.65 = ~8 блоков), Урон больше
-        if ((flags & 64) != 0) {
+        if ((flags & 64) != 0) { // КРАСНЫЙ
             radius *= 2.65;
-            baseDamagePct = 0.38f; // 35% от ХП
-        }
-        // ЖЕЛТЫЙ: Радиус 150%
-        else if ((flags & 2) != 0) {
+            baseDamagePct = 0.38f; 
+        } else if ((flags & 2) != 0) { // ЖЕЛТЫЙ
             radius *= 1.5;
         }
 
-        // БЕЛЫЙ: Hyper Flash (Огромный радиус, чистый урон)
-        if ((flags & 32) != 0) {
+        if ((flags & 32) != 0) { // БЕЛЫЙ
             radius = 10.0;
-            // Удар молнией в центр взрыва
-            LightningBolt bolt = EntityType.LIGHTNING_BOLT.create(level);
-            if (bolt != null) {
-                bolt.moveTo(this.position());
-                bolt.setVisualOnly(true);
-                level.addFreshEntity(bolt);
-            }
-        }
-
-        List<LivingEntity> entities = level.getEntitiesOfClass(LivingEntity.class, this.getBoundingBox().inflate(radius));
-
-        for (LivingEntity entity : entities) {
-            if (entity == owner || entity.getTeam() == owner.getTeam()) continue;
-
-            // Расчет урона: % от ТЕКУЩЕГО здоровья
-            float damage = entity.getHealth() * baseDamagePct * damageMultiplier;
-            if (damage < 2.0f) damage = 10.0f; // Минимум 1 сердце
-
-            // ЗЕЛЕНЫЙ: Хилл вместо урона
-            if ((flags & 1) != 0) {
-                // Выращиваем животных
-                if (entity instanceof AgeableMob ageable && ageable.isBaby()) {
-                    ageable.ageUp(AgeableMob.getSpeedUpSecondsWhenFeeding(0), true); // Мгновенный рост
-                    level.levelEvent(2005, entity.blockPosition(), 0); // Зеленые частицы
+            if (!level.isClientSide) {
+                LightningBolt bolt = EntityType.LIGHTNING_BOLT.create(level);
+                if (bolt != null) {
+                    bolt.moveTo(this.position());
+                    bolt.setVisualOnly(true);
+                    level.addFreshEntity(bolt);
                 }
-                // Лечим
-                entity.heal(damage * 1.5f);
-                continue; // Не наносим урон
-            }
-
-            // Нанесение урона (Игнор брони)
-            entity.invulnerableTime = 0; 
-            entity.hurt(level.damageSources().magic(), damage);
-
-            // ФИОЛЕТОВЫЙ: Chaos Control (Левитация + Стоп)
-            if ((flags & 16) != 0) {
-                entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 40, 2));
-                entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 60, 10)); // Полная остановка
-            }
-            
-            // БЕЛЫЙ: Дополнительный чистый урон + Поджигание
-            if ((flags & 32) != 0) {
-                entity.hurt(level.damageSources().generic(), 15.0f); // +5 сердец чистого урона
-                entity.setRemainingFireTicks(100);
             }
         }
 
+        // 1. Звук (Кастомный)
         level.playSound(null, this.getX(), this.getY(), this.getZ(), 
                 Universe3090ModSounds.ENERGY_EXPLOSION.get(), 
-                net.minecraft.sounds.SoundSource.PLAYERS, 1.0f, 1.0f);
-        
-        // Визуальный взрыв (не ломает блоки)
-        level.explode(null, this.getX(), this.getY(), this.getZ(), (float) (radius * 0.5), Level.ExplosionInteraction.NONE);
-        
-        // Доп. эффекты для белого (вспышка)
-        if ((flags & 32) != 0 && level instanceof ServerLevel serverLevel) {
-            serverLevel.sendParticles(net.minecraft.core.particles.ParticleTypes.EXPLOSION_EMITTER, 
-                getX(), getY(), getZ(), 5, 2, 2, 2, 0);
+                net.minecraft.sounds.SoundSource.PLAYERS, 3.0f, 0.9F + level.random.nextFloat() * 0.2F);
+
+        if (level instanceof ServerLevel serverLevel) {
+            // 2. Визуализация взрыва (без звука)
+            serverLevel.sendParticles(net.minecraft.core.particles.ParticleTypes.EXPLOSION, 
+                getX(), getY(), getZ(), (int)(radius * 3), radius/4, radius/4, radius/4, 0.05);
+            
+            if ((flags & 32) != 0) {
+                serverLevel.sendParticles(net.minecraft.core.particles.ParticleTypes.EXPLOSION_EMITTER, 
+                    getX(), getY(), getZ(), 5, 1, 1, 1, 0);
+            }
+
+            // 3. Поиск сущностей через создание новой коробки (более надежно)
+            net.minecraft.world.phys.AABB area = new net.minecraft.world.phys.AABB(
+                this.getX() - radius, this.getY() - radius, this.getZ() - radius,
+                this.getX() + radius, this.getY() + radius, this.getZ() + radius
+            );
+            
+            List<LivingEntity> entities = level.getEntitiesOfClass(LivingEntity.class, area);
+            
+            // Отладочное сообщение в консоль (потом можно удалить)
+            // System.out.println("EnergyBall: Взрыв задел " + entities.size() + " сущностей в радиусе " + radius);
+
+            for (LivingEntity entity : entities) {
+                if (entity == owner) continue; // Игрок не бьет сам себя
+
+                // Расчет отталкивания
+                Vec3 vec = entity.position().subtract(this.position());
+                double dist = vec.length();
+                if (dist < radius) {
+                    double force = (1.0 - (dist / radius)) * 1.2;
+                    entity.setDeltaMovement(entity.getDeltaMovement().add(vec.normalize().scale(force)));
+                    entity.hurtMarked = true; // Важно для обновления позиции у клиента
+                }
+
+                // Расчет урона
+                float damage = entity.getHealth() * baseDamagePct * damageMultiplier;
+                if (damage < 2.0f) damage = 10.0f; // Твой минимальный урон (5 сердец)
+
+                // Эффекты изумрудов
+                if ((flags & 1) != 0) { // ЗЕЛЕНЫЙ
+                    if (entity instanceof AgeableMob ageable && ageable.isBaby()) {
+                        ageable.setAge(0); 
+                        serverLevel.sendParticles(net.minecraft.core.particles.ParticleTypes.HAPPY_VILLAGER, 
+                            entity.getX(), entity.getY() + 1, entity.getZ(), 10, 0.3, 0.3, 0.3, 0.1);
+                    }
+                    entity.heal(damage * 1.5f);
+                } else {
+                    // ГАРАНТИРОВАННОЕ НАНЕСЕНИЕ УРОНА
+                    entity.invulnerableTime = 0; 
+                    // Используем indirectMagic, чтобы засчитать убийство игроку
+                    entity.hurt(level.damageSources().indirectMagic(this, actualOwner), damage);
+
+                    if ((flags & 16) != 0) { // ФИОЛЕТОВЫЙ
+                        entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 40, 2));
+                        entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 60, 10));
+                    }
+                    
+                    if ((flags & 32) != 0) { // БЕЛЫЙ
+                        entity.hurt(level.damageSources().generic(), 15.0f);
+                        entity.setRemainingFireTicks(100);
+                    }
+                }
+            }
         }
     }
 }

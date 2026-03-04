@@ -6709,7 +6709,7 @@
       "name": "EnergyBallEntity",
       "type": "code",
       "sortid": 394,
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "energy_ball_entity",
       "metadata": {
