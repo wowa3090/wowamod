@@ -1,0 +1,24 @@
+{
+  "_fv": 57,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "!!ACCESS VIOLATION!!",
+    "rarity": "RARE",
+    "texture": "access_violation",
+    "description": "A Dark Place 2 [ FADING PLACE ] Theme - ACCESS VIOLATION (XerStudios)",
+    "creativeTab": {
+      "value": "CUSTOM:Myplacevkladka"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": true
+    },
+    "music": {
+      "value": "CUSTOM:access_violation"
+    },
+    "lengthInTicks": 3060,
+    "analogOutput": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_fv": 57,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Beyond the Bright",
+    "rarity": "UNCOMMON",
+    "texture": "beyondthebright_disc",
+    "description": "A Dark Place 2 [ FADING PLACE ] Theme - Beyond the Bright (XerStudios)",
+    "creativeTab": {
+      "value": "CUSTOM:Myplacevkladka"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:beyond_the_bright"
+    },
+    "lengthInTicks": 3060,
+    "analogOutput": 0
+  }
+}

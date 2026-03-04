@@ -162,6 +162,10 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.MYPLACEZONE.get());
 				tabData.accept(Universe3090ModBlocks.TRUEROSE.get().asItem());
 				tabData.accept(Universe3090ModItems.DARK_HEAD_SPAWN_EGG.get());
+				tabData.accept(Universe3090ModItems.BEYONDTHE_BRIGHT.get());
+				tabData.accept(Universe3090ModItems.REALITY_MACHINE.get());
+				tabData.accept(Universe3090ModItems.ACCESSVIOLATION.get());
+				tabData.accept(Universe3090ModItems.THE_WELCOME_CENTER.get());
 			})
 
 					.build());

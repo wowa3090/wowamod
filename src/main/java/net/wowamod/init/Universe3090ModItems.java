@@ -17,6 +17,7 @@ import net.wowamod.item.WhitesoulMYPLACEItem;
 import net.wowamod.item.WhiteemeraldItem;
 import net.wowamod.item.WhiteEmeraldPieceItem;
 import net.wowamod.item.UltrastrongcoatingItem;
+import net.wowamod.item.TheWelcomeCenterItem;
 import net.wowamod.item.SuperpalkaItem;
 import net.wowamod.item.SoulsvazivatelItem;
 import net.wowamod.item.SoulcoreItem;
@@ -32,6 +33,7 @@ import net.wowamod.item.RedemeraldItem;
 import net.wowamod.item.ReddiamondmultitoolpluswItem;
 import net.wowamod.item.ReddiamondlapisItem;
 import net.wowamod.item.RedEmeraldPieceItem;
+import net.wowamod.item.RealityMachineItem;
 import net.wowamod.item.RainbowemeraldItem;
 import net.wowamod.item.PurplesoulpieceItem;
 import net.wowamod.item.PurplesoulItem;
@@ -99,12 +101,14 @@ import net.wowamod.item.BlueemeraldItem;
 import net.wowamod.item.BlueEmeraldPieceItem;
 import net.wowamod.item.BlacksoulMYPLACEItem;
 import net.wowamod.item.BlackironingotItem;
+import net.wowamod.item.BeyondtheBrightItem;
 import net.wowamod.item.BatareykaItem;
 import net.wowamod.item.AluminiumdiamondbaseItem;
 import net.wowamod.item.AluminiumPlateItem;
 import net.wowamod.item.AluminiumIngotItem;
 import net.wowamod.item.AlphaelementItem;
 import net.wowamod.item.AdarkplacesoundItem;
+import net.wowamod.item.AccessviolationItem;
 import net.wowamod.item.AaaGlassItem;
 import net.wowamod.Universe3090Mod;
 
@@ -275,6 +279,10 @@ public class Universe3090ModItems {
 	public static final RegistryObject<Item> FIRSTBRONYACOMPONENT = REGISTRY.register("firstbronyacomponent", () -> new FirstbronyacomponentItem());
 	public static final RegistryObject<Item> DARKIRONBLOCK = block(Universe3090ModBlocks.DARKIRONBLOCK);
 	public static final RegistryObject<Item> MTWMODEORBITAL = REGISTRY.register("mtwmodeorbital", () -> new MtwmodeorbitalItem());
+	public static final RegistryObject<Item> BEYONDTHE_BRIGHT = REGISTRY.register("beyondthe_bright", () -> new BeyondtheBrightItem());
+	public static final RegistryObject<Item> REALITY_MACHINE = REGISTRY.register("reality_machine", () -> new RealityMachineItem());
+	public static final RegistryObject<Item> ACCESSVIOLATION = REGISTRY.register("accessviolation", () -> new AccessviolationItem());
+	public static final RegistryObject<Item> THE_WELCOME_CENTER = REGISTRY.register("the_welcome_center", () -> new TheWelcomeCenterItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

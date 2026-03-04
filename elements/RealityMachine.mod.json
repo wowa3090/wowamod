@@ -1,0 +1,24 @@
+{
+  "_fv": 57,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Reality Machine",
+    "rarity": "RARE",
+    "texture": "my_place_alpha_update_reality_machine_disc",
+    "description": "My Place Alpha Update - Reality Machine (XerStudios)",
+    "creativeTab": {
+      "value": "CUSTOM:Myplacevkladka"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": true
+    },
+    "music": {
+      "value": "CUSTOM:reality_machine"
+    },
+    "lengthInTicks": 4460,
+    "analogOutput": 0
+  }
+}

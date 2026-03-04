@@ -1,0 +1,24 @@
+{
+  "_fv": 57,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "The Welcome Center",
+    "rarity": "UNCOMMON",
+    "texture": "beyondthebright_disc",
+    "description": "A Dark Place 2 [ FADING PLACE ] Theme - The Welcome Center (XerStudios)",
+    "creativeTab": {
+      "value": "CUSTOM:Myplacevkladka"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:the_welcome_center_full_ver"
+    },
+    "lengthInTicks": 3060,
+    "analogOutput": 0
+  }
+}

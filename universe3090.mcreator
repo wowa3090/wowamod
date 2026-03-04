@@ -6860,6 +6860,62 @@
           "src/main/java/net/wowamod/EnergyChargeRenderer.java"
         ]
       }
+    },
+    {
+      "name": "BeyondtheBright",
+      "type": "musicdisc",
+      "sortid": 406,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beyondthe_bright",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/BeyondtheBrightItem.java",
+          "src/main/resources/assets/universe3090/models/item/beyondthe_bright.json"
+        ]
+      }
+    },
+    {
+      "name": "RealityMachine",
+      "type": "musicdisc",
+      "sortid": 407,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reality_machine",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/RealityMachineItem.java",
+          "src/main/resources/assets/universe3090/models/item/reality_machine.json"
+        ]
+      }
+    },
+    {
+      "name": "Accessviolation",
+      "type": "musicdisc",
+      "sortid": 408,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accessviolation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/AccessviolationItem.java",
+          "src/main/resources/assets/universe3090/models/item/accessviolation.json"
+        ]
+      }
+    },
+    {
+      "name": "TheWelcomeCenter",
+      "type": "musicdisc",
+      "sortid": 409,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_welcome_center",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/TheWelcomeCenterItem.java",
+          "src/main/resources/assets/universe3090/models/item/the_welcome_center.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -6992,6 +7048,38 @@
       ],
       "category": "master",
       "subtitle": "energy_explosion"
+    },
+    {
+      "name": "access_violation",
+      "files": [
+        "a_dark_place_2_-_access_violation_converted"
+      ],
+      "category": "record",
+      "subtitle": "!!ACCESS_VIOLATION!!"
+    },
+    {
+      "name": "beyond_the_bright",
+      "files": [
+        "a_dark_place_2_-_beyond_the_bright_converted"
+      ],
+      "category": "record",
+      "subtitle": "Beyond the Bright [DARK PLACE 2]"
+    },
+    {
+      "name": "the_welcome_center_full_ver",
+      "files": [
+        "a_dark_place_2_-_the_welcome_center_full_version_converted"
+      ],
+      "category": "record",
+      "subtitle": "The Welcome Center - Dark Place 2"
+    },
+    {
+      "name": "reality_machine",
+      "files": [
+        "my_place_alpha_update_-_reality_machine_converted"
+      ],
+      "category": "record",
+      "subtitle": "My Place Alpha Update - RealityMachine"
     }
   ],
   "language_map": {
@@ -7033,6 +7121,7 @@
       "block.universe3090.interfaceconstructor": "Интерфейс конструктора",
       "item.wowamodfabric.bluesoulpiece": "Частичка Синей души",
       "item.universe3090.karmannielectrolizer": "Карманный электролизер",
+      "subtitles.access_violation": "!!ACCESS_VIOLATION!!",
       "item.wowamodfabric.wowabronya_chestplate": "Нагрудник ",
       "item.wowamodfabric.superpalka": "Жезл",
       "block.wowamod.pogranichnik": "Пограничная ткань пространства времени",
@@ -7071,6 +7160,7 @@
       "item.wowamodfabric.wowabronya_leggings": "Поножи ",
       "item.wowamod.purpleemerald": "Пёрпл Изумруд",
       "gui.wowamodfabric.wowabronyacraftring.label_empty": "\u003e",
+      "subtitles.the_welcome_center_full_ver": "The Welcome Center - Dark Place 2",
       "item.wowamod.karmannielectrolizer": "Карманный электролизер",
       "entity.universe3090.mimic": "Мимик",
       "entity.minecraft.villager.wowamodfabric.emeraldshopper": "Изумрудный скупщик",
@@ -7090,6 +7180,7 @@
       "item.wowamod.aluminium_ingot": "Алюминиевый слиток",
       "item.wowamod.myplacezone": "MyPlaceZone",
       "item.universe3090.energymagiccontroller": "Энерго-магический контроллер",
+      "item.universe3090.the_welcome_center": "The Welcome Center",
       "item.wowamod.derjatili": "Держатель для необычного механизма",
       "item.universe3090.lightblueemerald": "Голубой Изумруд",
       "item.wowamod.osnovaaaaglass": "Незакалённое Усиленное стекло",
@@ -7110,6 +7201,7 @@
       "gui.wowamodfabric.wowabronyacraftring.label_crafting": "Создание предметов",
       "fluid.universe3090.extractgolubaysoul": "Экстракт голубой души",
       "item.wowamod.wowabronya_helmet": "Шлем",
+      "item.universe3090.accessviolation": "!!ACCESS VIOLATION!!",
       "gui.wowamod.constructorinterface.label_constructor": "Constructor",
       "item.wowamod.yellowsoulpiece": "Частичка Жёлтой души",
       "item.universe3090.diamond_lapis_armor_armor_leggings": "Поножи из алмазного ляписа",
@@ -7119,6 +7211,7 @@
       "item.universe3090.wowabronya_helmet": "Шлем вовы3090",
       "item.wowamodfabric.wowabronya_helmet": "Шлем ",
       "item.universe3090.purple_emerald_piece": "Осколок пёрпл изумруда",
+      "item.universe3090.reality_machine": "Reality Machine",
       "item.wowamodfabric.redemerald": "Красный Изумруд",
       "entity.wowamodfabric.nightmare": "Nightmare.trojan",
       "item.wowamod.whitesoul_myplace": "Белая душа из игры MY PLACE",
@@ -7162,6 +7255,7 @@
       "item.wowamod.lightbluesoulpiece": "Частичка Голубой души",
       "item.wowamod.extractlbsoul": "Экстракт голубой души",
       "item.universe3090.mimictkanb": "Мимикрирующая Ткань",
+      "item.universe3090.beyondthe_bright": "Beyond the Bright",
       "block.universe3090.darkironblock": "Блок темного железа",
       "gui.universe3090.guidebookstart.label_dush": "Душ",
       "entity.universe3090.dark_head": "Dark Head",
@@ -7177,6 +7271,7 @@
       "block.wowamodfabric.crafterbroni": "Необычный Механизм",
       "item.universe3090.netherstarsword": "Звёздный меч",
       "item.universe3090.red_emerald_piece": "Осколок красного изумруда",
+      "item.universe3090.the_welcome_center.desc": "A Dark Place 2 [ FADING PLACE ] Theme - The Welcome Center (XerStudios)",
       "item.wowamod.whiteemerald": "Белый Изумруд",
       "item.universe3090.izolationw": "Часть изоляции",
       "item.wowamodfabric.adarkplacesound.desc": "A Dark Place - Happy and Sad",
@@ -7320,6 +7415,7 @@
       "block.wowamod.redstonecommandblock": "Р.К.Б",
       "item.wowamod.mimic_spawn_egg": "Мимик Spawn Egg",
       "entity.wowamod.mimic": "Мимик",
+      "item.universe3090.accessviolation.desc": "A Dark Place 2 [ FADING PLACE ] Theme - ACCESS VIOLATION (XerStudios)",
       "item.wowamod.dissasebmlyrequired": "Dissasebmly Required",
       "block.wowamod.darkgrassblockniz": "Dark Grass",
       "item.wowamod.aluminium_plate": "Алюминиевая пластина",
@@ -7350,6 +7446,7 @@
       "item.wowamod.posudina": "Емкость",
       "key.wowamod.teleportto_w_world": "Телепорт в карманный мир",
       "item.wowamodfabric.extractlbsoul": "Экстракт голубой души",
+      "subtitles.reality_machine": "My Place Alpha Update - RealityMachine",
       "block.universe3090.cable_txc": "Cable",
       "effect.universe3090.blagoslovleniestaref": "Благословление звезды",
       "item.wowamod.klavaж": "Клавиатура",
@@ -7375,6 +7472,7 @@
       "item.wowamod.molotwowa": "Молот",
       "item.wowamodfabric.purplesoul": "Фиолетовая душа",
       "block.wowamod.black_walls_myplace": "Black Walls Myplace",
+      "item.universe3090.reality_machine.desc": "My Place Alpha Update - Reality Machine (XerStudios)",
       "item.wowamodfabric.shadowblade": "Теневой клинок",
       "item.universe3090.electromagiccore": "Энергетическо-магическое ядро",
       "item.universe3090.copperplate": "Медная пластина",
@@ -7438,9 +7536,11 @@
       "item.universe3090.redsoul": "Красная Душа",
       "gui.wowamod.guidebookstart.label_izumrudov": "Изумрудов",
       "item.wowamod.energyelement": "Energyelement",
+      "item.universe3090.beyondthe_bright.desc": "A Dark Place 2 [ FADING PLACE ] Theme - Beyond the Bright",
       "item.universe3090.rainbowemerald": "Комбинированный Изумруд",
       "item.universe3090.lightbluesoulpiece": "Частичка Голубой души",
       "item.wowamod.purplesoulpiece": "Частичка Фиолетовой души",
+      "subtitles.beyond_the_bright": "Beyond the Bright [DARK PLACE 2]",
       "gui.universe3090.extractor_guide.button_nazad": "Назад",
       "item.universe3090.diamond_lapis_armor_armor_boots": "Ботинки из алмазного ляписа"
     },
@@ -7451,8 +7551,8 @@
       "item.wowamodfabric.lightbluesoul": "Голубая душа",
       "item.wowamodfabric.fadingworldbeta_2fazasound": "Fadingworldbeta2fazasound",
       "item.wowamod.redsoulpiece": "Частичка Красной души",
-      "item.wowamod.rainbowemerald": "Комбинированный Изумруд",
       "item.universe3090.instrumentprosto": "М.Т.В",
+      "item.wowamod.rainbowemerald": "Комбинированный Изумруд",
       "item.wowamodfabric.redsoul": "Красная Душа",
       "item.universe3090.derjatili": "Держатель для необычного механизма",
       "gui.wowamod.guidebookstart.label_nachalo": "Начало",
@@ -7467,22 +7567,23 @@
       "item.universe3090.wowabronya_boots": "Ботинки 3090",
       "block.wowamod.blockforprofessiafix": "Профессиональный блок",
       "block.wowamodfabric.extractor": "Extractor",
-      "block.wowamodfabric.magicironblock": "Сталемагический блок",
       "item_group.wowamodfabric.wowamodvkladka": "wowa3090mod",
+      "block.wowamodfabric.magicironblock": "Сталемагический блок",
       "item.universe3090.bluesoulpiece": "Частичка Синий души",
       "block.universe3090.extractgolubaysoul": "Extractgolubaysoul",
       "item.wowamod.blue_emerald_piece": "Blue Emerald Piece",
       "item.wowamod.yellow_emerald_piece": "Yellow Emerald Piece",
       "gui.wowamod.wowabronyacraftring.label_crafting": "Создание предметов",
       "item.universe3090.diamond_multi_toolw": "Diamond MultiTool",
-      "gui.wowamodfabric.souls.label_souls": "souls",
       "item.wowamodfabric.orangesoul": "Оранжевая душа",
+      "gui.wowamodfabric.souls.label_souls": "souls",
       "item.wowamod.aaa_glass": "Усиленное стекло",
       "item.universe3090.mt_wtestanim": "M_T_W",
       "block.universe3090.interfaceconstructor": "Интерфейс конструктора",
       "item.wowamodfabric.bluesoulpiece": "Частичка Синий души",
       "item.universe3090.karmannielectrolizer": "Карманный электролизер",
       "item.wowamodfabric.wowabronya_chestplate": "Нагрудник 3090",
+      "subtitles.access_violation": "!!ACCESS_VIOLATION!!",
       "item.wowamodfabric.superpalka": "Жезл",
       "block.wowamod.pogranichnik": "Пограничная ткань пространства времени",
       "key.wowamod.teleport": "Teleport",
@@ -7493,8 +7594,8 @@
       "effect.wowamod.nightmareish": "NIGHTMARISH ENDINGE",
       "item.universe3090.reddiamondmultitoolplusw": "Diamond MultiTool Plus",
       "item.universe3090.greenemerald": "Зелёный Изумруд",
-      "item.wowamod.zagatovkablackiron": "Заготовка для ч.ж",
       "gui.wowamod.guidebook.label_izumrudy": "Изумруды",
+      "item.wowamod.zagatovkablackiron": "Заготовка для ч.ж",
       "item.wowamod.rose": "Rose",
       "item.universe3090.myplacezone": "MyPlaceZone",
       "block.universe3090.cable_e": "Cable",
@@ -7506,11 +7607,11 @@
       "block.universe3090.cable_f": "Cable",
       "block.universe3090.cable_l": "Cable",
       "effect.wowamodfabric.neuyazvimost": "Неуязвимость!",
-      "effect.universe3090.neuyazvimost": "Неуязвимость!",
       "gui.universe3090.port_constructora.label_port": "Основа",
+      "effect.universe3090.neuyazvimost": "Неуязвимость!",
       "block.universe3090.cable_n": "Cable",
-      "block.universe3090.cable_t": "Cable",
       "gui.wowamod.guidebook.label_dushi": "Души",
+      "block.universe3090.cable_t": "Cable",
       "block.universe3090.cable_s": "Cable",
       "gui.wowamodfabric.port_constructora.label_port": "Основа",
       "item.wowamod.greensoulpiece": "Частичка Зелёной души",
@@ -7520,6 +7621,7 @@
       "item.wowamodfabric.wowabronya_leggings": "Поножи 3090",
       "item.wowamod.purpleemerald": "Пёрпл Изумруд",
       "gui.wowamodfabric.wowabronyacraftring.label_empty": "\u003e",
+      "subtitles.the_welcome_center_full_ver": "The Welcome Center - Dark Place 2",
       "item.wowamod.karmannielectrolizer": "Карманный электролизер",
       "entity.universe3090.mimic": "Мимик",
       "entity.minecraft.villager.wowamodfabric.emeraldshopper": "Emeraldshopper",
@@ -7529,17 +7631,18 @@
       "item.wowamod.greensoul": "Зелёная душа",
       "item.universe3090.adarkplacesound.desc": "A Dark Place - Happy and Sad",
       "item.wowamod.copperplate": "Медная пластина",
-      "block.wowamod.magicironblock": "Сталемагический блок",
       "item.universe3090.energyelement": "Energyelement",
+      "block.wowamod.magicironblock": "Сталемагический блок",
       "effect.universe3090.super_form": "Super",
       "item.wowamodfabric.yellowsoul": "Жёлтая душа",
       "gui.universe3090.guidebook.label_izumrudy": "Изумруды",
-      "item.wowamodfabric.ekranchik": "Экран",
       "item.universe3090.extractlbsoul": "Экстракт голубой души",
+      "item.wowamodfabric.ekranchik": "Экран",
       "item.wowamod.aluminium_ingot": "Aluminium Ingot",
       "item.wowamod.myplacezone": "MyPlaceZone",
       "item.universe3090.energymagiccontroller": "Energy magic controller",
       "item.wowamod.derjatili": "Держатель для необычного механизма",
+      "item.universe3090.the_welcome_center": "The Welcome Center",
       "item.universe3090.lightblueemerald": "Голубой Изумруд",
       "item.wowamod.osnovaaaaglass": "Незакалённое Усиленное стекло",
       "item.universe3090.stb_hsword": "Sword Of The Blessed Hero",
@@ -7552,22 +7655,24 @@
       "key.universe3090.souls_viewbutton": "Souls View",
       "block.universe3090.cable_tc": "Cable",
       "item.universe3090.firstbronyacomponent": "First bronya component",
-      "item.wowamodfabric.mimic_spawn_egg": "Мимик Spawn Egg",
       "block.wowamod.corrupted_souls_block": "Corrupted Souls Block",
+      "item.wowamodfabric.mimic_spawn_egg": "Мимик Spawn Egg",
       "item.universe3090.whitesoul_myplace": "Белая душа из игры MY PLACE",
       "item.universe3090.mtwmodeorbital": "M_T_W",
       "gui.wowamodfabric.wowabronyacraftring.label_crafting": "Создание предметов",
       "fluid.universe3090.extractgolubaysoul": "Extractgolubaysoul",
       "item.wowamod.wowabronya_helmet": "Шлем 3090",
-      "item.wowamod.yellowsoulpiece": "Частичка Жёлтой души",
+      "item.universe3090.accessviolation": "!!ACCESS VIOLATION!!",
       "gui.wowamod.constructorinterface.label_constructor": "Constructor",
-      "block.universe3090.darkgrass": "Dark Grass",
+      "item.wowamod.yellowsoulpiece": "Частичка Жёлтой души",
       "item.universe3090.diamond_lapis_armor_armor_leggings": "Diamond lapis Leggings",
+      "block.universe3090.darkgrass": "Dark Grass",
       "gui.universe3090.guidebookstart.label_nachalo": "Начало",
       "gui.wowamod.port_constructora.label_port": "Основа",
       "item.universe3090.wowabronya_helmet": "Шлем 3090",
       "item.wowamodfabric.wowabronya_helmet": "Шлем 3090",
       "item.universe3090.purple_emerald_piece": "Purple Emerald Piece",
+      "item.universe3090.reality_machine": "Reality Machine",
       "item.wowamodfabric.redemerald": "Красный Изумруд",
       "entity.wowamodfabric.nightmare": "Nightmare.trojan",
       "item.wowamod.whitesoul_myplace": "Белая душа из игры MY PLACE",
@@ -7585,8 +7690,8 @@
       "item.wowamod.wowabronya_leggings": "Поножи 3090",
       "effect.wowamod.blagoslovleniestaref": "Благословление звезды",
       "entity.wowamodfabric.mimic": "Мимик",
-      "subtitles.nightmare.trojansound": "",
       "block.universe3090.black_walls_myplace": "Black Walls Myplace",
+      "subtitles.nightmare.trojansound": "",
       "item.wowamod.lightblueemerald": "Голубой Изумруд",
       "block.universe3090.magicironblock": "Сталемагический блок",
       "item.universe3090.ekranchik": "Экран",
@@ -7597,8 +7702,8 @@
       "item.universe3090.wowabronya_chestplate": "Нагрудник 3090",
       "block.universe3090.crafterbroni": "Необычный Механизм",
       "gui.universe3090.guidebookstart.label_dlia_nachala_vam_ponadobitsia_nait": "Для начала вам понадобиться найти множество ресурсов в виде :",
-      "block.universe3090.testplant": "Testplant",
       "item.universe3090.ultrastrongcoating": "Ultrastrongcoating",
+      "block.universe3090.testplant": "Testplant",
       "block.wowamod.redstoneport": "Редстоун порт конструктора",
       "item.wowamodfabric.blueemerald": "Синий изумруд",
       "gui.universe3090.wowabronyacraftring.label_empty": "\u003e",
@@ -7611,6 +7716,7 @@
       "item.wowamod.lightbluesoulpiece": "Частичка Голубой души",
       "item.wowamod.extractlbsoul": "Экстракт голубой души",
       "item.universe3090.mimictkanb": "Мимикрирующая Ткань",
+      "item.universe3090.beyondthe_bright": "Beyond the Bright",
       "block.universe3090.darkironblock": "Dark iron block",
       "gui.universe3090.guidebookstart.label_dush": "Душ",
       "entity.universe3090.dark_head": "Dark Head",
@@ -7626,6 +7732,7 @@
       "block.wowamodfabric.crafterbroni": "Необычный Механизм",
       "item.universe3090.netherstarsword": "Звёздный меч",
       "item.universe3090.red_emerald_piece": "Red Emerald Piece",
+      "item.universe3090.the_welcome_center.desc": "A Dark Place 2 [ FADING PLACE ] Theme - The Welcome Center (XerStudios)",
       "item.wowamod.whiteemerald": "Белый Изумруд",
       "item.universe3090.izolationw": "Часть изоляции",
       "item.wowamodfabric.adarkplacesound.desc": "A Dark Place - Happy and Sad",
@@ -7769,6 +7876,7 @@
       "block.wowamod.redstonecommandblock": "Р.К.Б",
       "item.wowamod.mimic_spawn_egg": "Мимик Spawn Egg",
       "entity.wowamod.mimic": "Мимик",
+      "item.universe3090.accessviolation.desc": "A Dark Place 2 [ FADING PLACE ] Theme - ACCESS VIOLATION (XerStudios)",
       "item.wowamod.dissasebmlyrequired": "Dissasebmly Required",
       "block.wowamod.darkgrassblockniz": "Dark Grass",
       "item.wowamod.aluminium_plate": "Aluminium Plate",
@@ -7799,6 +7907,7 @@
       "item.wowamod.posudina": "Емкость",
       "key.wowamod.teleportto_w_world": "Teleport to W World",
       "item.wowamodfabric.extractlbsoul": "Экстракт голубой души",
+      "subtitles.reality_machine": "My Place Alpha Update - RealityMachine",
       "block.universe3090.cable_txc": "Cable",
       "effect.universe3090.blagoslovleniestaref": "Благословление звезды",
       "item_group.wowamod.wowamodvkladka": "wowa3090mod",
@@ -7823,6 +7932,7 @@
       "item.wowamod.molotwowa": "Молот",
       "item.wowamodfabric.purplesoul": "Фиолетовая душа",
       "block.wowamod.black_walls_myplace": "Black Walls Myplace",
+      "item.universe3090.reality_machine.desc": "My Place Alpha Update - Reality Machine (XerStudios)",
       "item.wowamodfabric.shadowblade": "Теневой клинок",
       "item.universe3090.electromagiccore": "Energy electro magic core",
       "item.universe3090.copperplate": "Медная пластина",
@@ -7886,9 +7996,11 @@
       "item.universe3090.redsoul": "Красная Душа",
       "gui.wowamod.guidebookstart.label_izumrudov": "Изумрудов",
       "item.wowamod.energyelement": "Energyelement",
+      "item.universe3090.beyondthe_bright.desc": "A Dark Place 2 [ FADING PLACE ] Theme - Beyond the Bright (XerStudios)",
       "item.universe3090.rainbowemerald": "Комбинированный Изумруд",
       "item.universe3090.lightbluesoulpiece": "Частичка Голубой души",
       "item.wowamod.purplesoulpiece": "Частичка Фиолетовой души",
+      "subtitles.beyond_the_bright": "Beyond the Bright [DARK PLACE 2]",
       "gui.universe3090.extractor_guide.button_nazad": "Назад",
       "item.universe3090.diamond_lapis_armor_armor_boots": "Diamond lapis Boots"
     }

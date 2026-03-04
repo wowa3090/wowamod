@@ -59,5 +59,41 @@
         "stream": false
       }
     ]
+  },
+  "access_violation": {
+    "subtitle": "subtitles.access_violation",
+    "sounds": [
+      {
+        "name": "universe3090:a_dark_place_2_-_access_violation_converted",
+        "stream": true
+      }
+    ]
+  },
+  "beyond_the_bright": {
+    "subtitle": "subtitles.beyond_the_bright",
+    "sounds": [
+      {
+        "name": "universe3090:a_dark_place_2_-_beyond_the_bright_converted",
+        "stream": true
+      }
+    ]
+  },
+  "the_welcome_center_full_ver": {
+    "subtitle": "subtitles.the_welcome_center_full_ver",
+    "sounds": [
+      {
+        "name": "universe3090:a_dark_place_2_-_the_welcome_center_full_version_converted",
+        "stream": true
+      }
+    ]
+  },
+  "reality_machine": {
+    "subtitle": "subtitles.reality_machine",
+    "sounds": [
+      {
+        "name": "universe3090:my_place_alpha_update_-_reality_machine_converted",
+        "stream": true
+      }
+    ]
   }
 }
