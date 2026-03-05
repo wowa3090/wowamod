@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "universe3090:block/extractor_animation3",
+    "up": "universe3090:block/extractor_animation_finale",
+    "north": "universe3090:block/smelterfront",
+    "east": "universe3090:block/emeraldcombinerwesteastetc",
+    "south": "universe3090:block/emeraldcombinertop",
+    "west": "universe3090:block/emeraldcombinerwesteastetc",
+    "particle": "universe3090:block/extractor_animation3"
+  },
+  "render_type": "solid"
+}

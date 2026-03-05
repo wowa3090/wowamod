@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "universe3090:block/redcore",
+    "particle": "universe3090:block/redcore"
+  },
+  "render_type": "solid"
+}

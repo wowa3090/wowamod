@@ -16,7 +16,7 @@ import java.util.List;
 
 public class TheWelcomeCenterItem extends RecordItem {
 	public TheWelcomeCenterItem() {
-		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("universe3090:the_welcome_center_full_ver")), new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON), 3060);
+		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("universe3090:the_welcome_center_full_ver")), new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON), 6600);
 	}
 
 	@Override

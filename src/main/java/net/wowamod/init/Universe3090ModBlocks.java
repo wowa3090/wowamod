@@ -7,8 +7,11 @@ package net.wowamod.init;
 import net.wowamod.block.TrueroseBlock;
 import net.wowamod.block.TestplantBlock;
 import net.wowamod.block.SolarpanelgeneratorwBlock;
+import net.wowamod.block.SmelterblockBlock;
 import net.wowamod.block.RedstoneportBlock;
 import net.wowamod.block.RedstonecommandblockBlock;
+import net.wowamod.block.RedemptycoreBlock;
+import net.wowamod.block.RedcoreBlock;
 import net.wowamod.block.PortconstructorBlock;
 import net.wowamod.block.PogranichnikBlock;
 import net.wowamod.block.MyplacezonePortalBlock;
@@ -46,6 +49,7 @@ import net.wowamod.block.CableEBlock;
 import net.wowamod.block.BlockforprofessiafixBlock;
 import net.wowamod.block.BlackWallsMyplaceBlock;
 import net.wowamod.block.BigBatterywBlock;
+import net.wowamod.block.BerilliumBlock;
 import net.wowamod.block.AluminiumBlock;
 import net.wowamod.Universe3090Mod;
 
@@ -104,6 +108,10 @@ public class Universe3090ModBlocks {
 	public static final RegistryObject<Block> CABLE_S = REGISTRY.register("cable_s", () -> new CableSBlock());
 	public static final RegistryObject<Block> DIAMONDLAPISBLOCK = REGISTRY.register("diamondlapisblock", () -> new DiamondlapisblockBlock());
 	public static final RegistryObject<Block> DARKIRONBLOCK = REGISTRY.register("darkironblock", () -> new DarkironblockBlock());
+	public static final RegistryObject<Block> REDEMPTYCORE = REGISTRY.register("redemptycore", () -> new RedemptycoreBlock());
+	public static final RegistryObject<Block> REDCORE = REGISTRY.register("redcore", () -> new RedcoreBlock());
+	public static final RegistryObject<Block> BERILLIUM = REGISTRY.register("berillium", () -> new BerilliumBlock());
+	public static final RegistryObject<Block> SMELTERBLOCK = REGISTRY.register("smelterblock", () -> new SmelterblockBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

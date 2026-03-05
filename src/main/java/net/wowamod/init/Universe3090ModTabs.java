@@ -151,6 +151,19 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.FIRSTBRONYACOMPONENT.get());
 				tabData.accept(Universe3090ModBlocks.DARKIRONBLOCK.get().asItem());
 				tabData.accept(Universe3090ModItems.MTWMODEORBITAL.get());
+				tabData.accept(Universe3090ModItems.RED_BRONYA_CORE.get());
+				tabData.accept(Universe3090ModItems.RED_PLASTINE.get());
+				tabData.accept(Universe3090ModBlocks.REDEMPTYCORE.get().asItem());
+				tabData.accept(Universe3090ModBlocks.REDCORE.get().asItem());
+				tabData.accept(Universe3090ModBlocks.BERILLIUM.get().asItem());
+				tabData.accept(Universe3090ModItems.BERILLIUM_CRYSTAL.get());
+				tabData.accept(Universe3090ModItems.EXTRACTORANGESOUL.get());
+				tabData.accept(Universe3090ModItems.EXTRACT_GREEN_SOUL.get());
+				tabData.accept(Universe3090ModItems.EXTRACT_PURPLE_SOUL.get());
+				tabData.accept(Universe3090ModItems.EXTRACT_YELLOW_SOUL.get());
+				tabData.accept(Universe3090ModItems.EXTRACTBLUESOUL.get());
+				tabData.accept(Universe3090ModItems.COMBINED_ALLOY.get());
+				tabData.accept(Universe3090ModBlocks.SMELTERBLOCK.get().asItem());
 			})
 
 					.build());

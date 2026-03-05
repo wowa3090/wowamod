@@ -5,6 +5,7 @@
 package net.wowamod.init;
 
 import net.wowamod.block.entity.SolarpanelgeneratorwBlockEntity;
+import net.wowamod.block.entity.SmelterblockBlockEntity;
 import net.wowamod.block.entity.PortconstructorBlockEntity;
 import net.wowamod.block.entity.InterfaceconstructorBlockEntity;
 import net.wowamod.block.entity.ExtractorBlockEntity;
@@ -63,6 +64,7 @@ public class Universe3090ModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> CABLE_X = register("cable_x", Universe3090ModBlocks.CABLE_X, CableXBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> CABLE_XC = register("cable_xc", Universe3090ModBlocks.CABLE_XC, CableXCBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> CABLE_S = register("cable_s", Universe3090ModBlocks.CABLE_S, CableSBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> SMELTERBLOCK = register("smelterblock", Universe3090ModBlocks.SMELTERBLOCK, SmelterblockBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

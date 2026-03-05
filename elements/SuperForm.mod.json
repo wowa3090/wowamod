@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Super",
-    "icon": "supereffect.png",
+    "icon": "super_form.png",
     "color": {
       "value": -393472,
       "falpha": 0.0

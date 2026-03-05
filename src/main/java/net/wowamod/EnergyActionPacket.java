@@ -5,15 +5,14 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.projectile.ProjectileUtil;
 import net.minecraft.world.phys.AABB;
-import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.Vec3;
-import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.network.NetworkEvent;
 import net.wowamod.core.AbilityConfig;
 import net.wowamod.capability.EnergyCapability;
 import net.wowamod.entity.EnergyBallEntity;
+import java.util.List;
+import java.util.Optional;
 import java.util.function.Supplier;
 
 public class EnergyActionPacket {
@@ -63,30 +62,54 @@ public class EnergyActionPacket {
     private void fireBall(ServerPlayer player, EnergyCapability cap) {
         int flags = cap.getEmeraldFlags();
 
-        // 1. Поиск цели
+        // --- ЛОГИКА АВТОНАВЕДЕНИЯ С ДОПУСКОМ 1.5 БЛОКА ---
         LivingEntity target = null;
         Vec3 start = player.getEyePosition();
         Vec3 look = player.getLookAngle();
-        double range = 64.0;
+        double range = 256.0;
         Vec3 end = start.add(look.scale(range));
-        AABB searchBox = player.getBoundingBox().expandTowards(look.scale(range)).inflate(1.0);
         
-        EntityHitResult hitResult = ProjectileUtil.getEntityHitResult(
-                player, start, end, searchBox, 
-                (e) -> e instanceof LivingEntity && !e.isSpectator(), range * range
-        );
+        // 1. Создаем широкую зону поиска вокруг луча взгляда
+        // inflate(2.0) дает запас, чтобы найти сущностей рядом с лучом
+        AABB searchBox = player.getBoundingBox().expandTowards(look.scale(range)).inflate(2.0);
+        
+        // 2. Получаем всех живых существ в этой зоне
+        List<Entity> candidates = player.level().getEntities(player, searchBox, 
+            e -> e instanceof LivingEntity && !e.isSpectator() && e.isPickable());
 
-        if (hitResult != null && hitResult.getEntity() instanceof LivingEntity livingTarget) {
-            target = livingTarget;
+        double closestDist = range * range; // Дистанция до ближайшей цели
+        
+        // 3. Перебираем кандидатов
+        for (Entity candidate : candidates) {
+            // ВАЖНО: Увеличиваем хитбокс цели на 1.5 блока во все стороны
+            // Это позволяет целиться "рядом", а не точно в модельку
+            AABB expandedBox = candidate.getBoundingBox().inflate(1.5);
+            
+            // Проверяем, пересекает ли луч взгляда этот УВЕЛИЧЕННЫЙ хитбокс
+            Optional<Vec3> hit = expandedBox.clip(start, end);
+            
+            if (hit.isPresent()) {
+                double dist = start.distanceToSqr(hit.get());
+                if (dist < closestDist) {
+                    closestDist = dist;
+                    target = (LivingEntity) candidate;
+                }
+            }
         }
+        
+        // Если нашли цель - выводим в консоль (для отладки)
+        //if (target != null) {
+        //    System.out.println("SERVER DEBUG: Автонаведение захватило: " + target.getName().getString());
+        //}
+        // -----------------------------------------------------
 
         // ГОЛУБОЙ: Шар летит быстрее (скорость 3.0 вместо 1.5)
         float speed = (flags & 4) != 0 ? 3.0f : 1.5f;
 
-        // 2. Создание и выстрел основного шара
-        EnergyBallEntity mainBall = createAndShoot(player, target, flags, speed, 1.0f, 0.0f);
+        // Создание и выстрел основного шара
+        createAndShoot(player, target, flags, speed, 1.0f, 0.0f);
 
-        // 3. СИНИЙ: Клоны (3-5 штук), урон 90%
+        // СИНИЙ: Клоны (3-5 штук), урон 90%
         if ((flags & 8) != 0) {
             int count = 3 + player.getRandom().nextInt(3); // 3, 4 или 5
             for (int i = 0; i < count; i++) {
@@ -119,6 +142,6 @@ public class EnergyActionPacket {
         ball.shoot(aim.x, aim.y, aim.z, speed, 0.0f);
         player.level().addFreshEntity(ball);
         
-        return ball; // Возвращаем сущность, если она понадобится (например, для дебага)
+        return ball;
     }
 }

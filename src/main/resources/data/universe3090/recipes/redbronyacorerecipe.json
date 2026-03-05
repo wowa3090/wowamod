@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:end_crystal"
+    }
+  },
+  "result": {
+    "item": "universe3090:red_bronya_core",
+    "count": 1
+  }
+}

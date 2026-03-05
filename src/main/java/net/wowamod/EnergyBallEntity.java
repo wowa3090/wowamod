@@ -30,7 +30,7 @@ public class EnergyBallEntity extends ThrowableProjectile {
 
     private LivingEntity target;
     // Множитель по умолчанию > 0, чтобы урон точно проходил
-    private float damageMultiplier = 1.1f; 
+    private float damageMultiplier = 1.15f; 
 
     public EnergyBallEntity(EntityType<? extends EnergyBallEntity> type, Level level) {
         super(type, level);
@@ -132,7 +132,7 @@ public class EnergyBallEntity extends ThrowableProjectile {
         // 1. Звук (Кастомный)
         level.playSound(null, this.getX(), this.getY(), this.getZ(), 
                 Universe3090ModSounds.ENERGY_EXPLOSION.get(), 
-                net.minecraft.sounds.SoundSource.PLAYERS, 3.0f, 0.9F + level.random.nextFloat() * 0.2F);
+                net.minecraft.sounds.SoundSource.PLAYERS, 3.0f, 0.8F + level.random.nextFloat() * 0.35F);
 
         if (level instanceof ServerLevel serverLevel) {
             // 2. Визуализация взрыва (без звука)

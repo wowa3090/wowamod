@@ -18,7 +18,7 @@ import java.util.List;
 
 public class AccessviolationItem extends RecordItem {
 	public AccessviolationItem() {
-		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("universe3090:access_violation")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 3060);
+		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("universe3090:access_violation")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 4020);
 	}
 
 	@Override
