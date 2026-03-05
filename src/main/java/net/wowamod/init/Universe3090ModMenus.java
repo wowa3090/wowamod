@@ -13,7 +13,6 @@ import net.wowamod.world.inventory.ExtractorintefaceMenu;
 import net.wowamod.world.inventory.ExtractorGuideMenu;
 import net.wowamod.world.inventory.ECIMenu;
 import net.wowamod.world.inventory.ConstructorinterfaceMenu;
-import net.wowamod.world.inventory.AbobaMenu;
 import net.wowamod.Universe3090Mod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -34,5 +33,4 @@ public class Universe3090ModMenus {
 	public static final RegistryObject<MenuType<ECIMenu>> ECI = REGISTRY.register("eci", () -> IForgeMenuType.create(ECIMenu::new));
 	public static final RegistryObject<MenuType<SolarpanelmenuMenu>> SOLARPANELMENU = REGISTRY.register("solarpanelmenu", () -> IForgeMenuType.create(SolarpanelmenuMenu::new));
 	public static final RegistryObject<MenuType<ExtractorGuideMenu>> EXTRACTOR_GUIDE = REGISTRY.register("extractor_guide", () -> IForgeMenuType.create(ExtractorGuideMenu::new));
-	public static final RegistryObject<MenuType<AbobaMenu>> ABOBA = REGISTRY.register("aboba", () -> IForgeMenuType.create(AbobaMenu::new));
 }

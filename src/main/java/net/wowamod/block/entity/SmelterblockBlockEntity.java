@@ -1,169 +1,189 @@
 package net.wowamod.block.entity;
 
-import net.wowamod.init.Universe3090ModBlockEntities;
-
-import net.minecraftforge.items.wrapper.SidedInvWrapper;
-import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.energy.EnergyStorage;
-import net.minecraftforge.common.util.LazyOptional;
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
-import net.minecraftforge.common.capabilities.Capability;
-
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.inventory.ChestMenu;
-import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.WorldlyContainer;
-import net.minecraft.world.ContainerHelper;
-import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
-import net.minecraft.network.chat.Component;
-import net.minecraft.nbt.IntTag;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.core.NonNullList;
-import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.MenuProvider;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.inventory.ContainerData;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.common.capabilities.Capability;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
+import net.minecraftforge.common.util.LazyOptional;
+import net.minecraftforge.energy.EnergyStorage;
+import net.minecraftforge.items.ItemStackHandler;
+import net.wowamod.block.SmelterblockBlock;
+import net.wowamod.init.Universe3090ModBlockEntities;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
-import javax.annotation.Nullable;
+// Импорты наших новых файлов
+import net.wowamod.SmelterMenu;
+import net.wowamod.SmelterCrafts;
 
-import java.util.stream.IntStream;
+public class SmelterblockBlockEntity extends BlockEntity implements MenuProvider {
 
-public class SmelterblockBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
-	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
+    public final ItemStackHandler itemHandler = new ItemStackHandler(5) {
+        @Override
+        protected void onContentsChanged(int slot) { setChanged(); }
+        @Override
+        public boolean isItemValid(int slot, @NotNull ItemStack stack) {
+            return slot != 4; // В слот выхода (4) класть предметы нельзя
+        }
+    };
 
-	public SmelterblockBlockEntity(BlockPos position, BlockState state) {
-		super(Universe3090ModBlockEntities.SMELTERBLOCK.get(), position, state);
-	}
+    public final EnergyStorage energyStorage = new EnergyStorage(400000, 1000, 0, 0) {
+        @Override
+        public int receiveEnergy(int maxReceive, boolean simulate) {
+            int received = super.receiveEnergy(maxReceive, simulate);
+            if (received > 0 && !simulate) {
+                setChanged();
+            }
+            return received;
+        }
+    };
 
-	@Override
-	public void load(CompoundTag compound) {
-		super.load(compound);
-		if (!this.tryLoadLootTable(compound))
-			this.stacks = NonNullList.withSize(this.getContainerSize(), ItemStack.EMPTY);
-		ContainerHelper.loadAllItems(compound, this.stacks);
-		if (compound.get("energyStorage") instanceof IntTag intTag)
-			energyStorage.deserializeNBT(intTag);
-	}
+    // ВАЖНОЕ ИСПРАВЛЕНИЕ: Инициализируем сразу, а не в onLoad(). 
+    // Теперь MCreator провода увидят энергию в ту же миллисекунду, как будут поставлены!
+    private final LazyOptional<ItemStackHandler> lazyItemHandler = LazyOptional.of(() -> itemHandler);
+    private final LazyOptional<EnergyStorage> lazyEnergyHandler = LazyOptional.of(() -> energyStorage);
 
-	@Override
-	public void saveAdditional(CompoundTag compound) {
-		super.saveAdditional(compound);
-		if (!this.trySaveLootTable(compound)) {
-			ContainerHelper.saveAllItems(compound, this.stacks);
-		}
-		compound.put("energyStorage", energyStorage.serializeNBT());
-	}
+    public int progress = 0;
+    public int maxProgress = 0;
 
-	@Override
-	public ClientboundBlockEntityDataPacket getUpdatePacket() {
-		return ClientboundBlockEntityDataPacket.create(this);
-	}
+    protected final ContainerData data;
 
-	@Override
-	public CompoundTag getUpdateTag() {
-		return this.saveWithFullMetadata();
-	}
+    public SmelterblockBlockEntity(BlockPos pos, BlockState state) {
+        super(Universe3090ModBlockEntities.SMELTERBLOCK.get(), pos, state);
+        this.data = new ContainerData() {
+            @Override
+            public int get(int index) {
+                return switch (index) {
+                    case 0 -> SmelterblockBlockEntity.this.progress;
+                    case 1 -> SmelterblockBlockEntity.this.maxProgress;
+                    case 2 -> SmelterblockBlockEntity.this.energyStorage.getEnergyStored() & 0xFFFF;
+                    case 3 -> (SmelterblockBlockEntity.this.energyStorage.getEnergyStored() >> 16) & 0xFFFF;
+                    default -> 0;
+                };
+            }
+            @Override
+            public void set(int index, int value) {
+                switch (index) {
+                    case 0 -> SmelterblockBlockEntity.this.progress = value;
+                    case 1 -> SmelterblockBlockEntity.this.maxProgress = value;
+                }
+            }
+            @Override
+            public int getCount() { return 4; }
+        };
+    }
 
-	@Override
-	public int getContainerSize() {
-		return stacks.size();
-	}
+    public void tick(Level level, BlockPos pos, BlockState state) {
+        if (level.isClientSide) return;
 
-	@Override
-	public boolean isEmpty() {
-		for (ItemStack itemstack : this.stacks)
-			if (!itemstack.isEmpty())
-				return false;
-		return true;
-	}
+        SmelterCrafts.SmelterRecipe recipe = SmelterCrafts.getRecipe(
+                itemHandler.getStackInSlot(0), itemHandler.getStackInSlot(1),
+                itemHandler.getStackInSlot(2), itemHandler.getStackInSlot(3));
 
-	@Override
-	public Component getDefaultName() {
-		return Component.literal("smelterblock");
-	}
+        if (recipe != null && hasEnoughSpace(recipe.output) && energyStorage.getEnergyStored() >= recipe.energyCost) {
+            maxProgress = recipe.processTime;
+            energyStorage.extractEnergy(recipe.energyCost, false);
+            progress++;
+            if (progress >= maxProgress) {
+                craftItem(recipe);
+                progress = 0;
+            }
+            setChanged(level, pos, state);
+        } else {
+            if (progress != 0 || maxProgress != 0) {
+                progress = 0;
+                maxProgress = 0;
+                setChanged(level, pos, state);
+            }
+        }
+    }
 
-	@Override
-	public int getMaxStackSize() {
-		return 64;
-	}
+    private boolean hasEnoughSpace(ItemStack output) {
+        ItemStack currentOutput = itemHandler.getStackInSlot(4);
+        return currentOutput.isEmpty() || (currentOutput.is(output.getItem()) && currentOutput.getCount() + output.getCount() <= currentOutput.getMaxStackSize());
+    }
 
-	@Override
-	public AbstractContainerMenu createMenu(int id, Inventory inventory) {
-		return ChestMenu.threeRows(id, inventory);
-	}
+    private void craftItem(SmelterCrafts.SmelterRecipe recipe) {
+        // Тратим по 1 предмету из слотов 0, 1, 2, 3 (X, Y, Z и Катализатор)
+        for (int i = 0; i < 4; i++) {
+            itemHandler.extractItem(i, 1, false);
+        }
 
-	@Override
-	public Component getDisplayName() {
-		return Component.literal("Smelterblock");
-	}
+        // Создаем или добавляем предмет в слот 4 (в обход проверки isItemValid)
+        ItemStack currentOutput = itemHandler.getStackInSlot(4);
+        if (currentOutput.isEmpty()) {
+            itemHandler.setStackInSlot(4, recipe.output.copy());
+        } else {
+            // Если там уже лежит такой же предмет, просто увеличиваем его количество
+            currentOutput.grow(recipe.output.getCount());
+            itemHandler.setStackInSlot(4, currentOutput);
+        }
+    }
 
-	@Override
-	protected NonNullList<ItemStack> getItems() {
-		return this.stacks;
-	}
+    @Override
+    public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @Nullable Direction side) {
+        if (cap == ForgeCapabilities.ITEM_HANDLER) {
+            return lazyItemHandler.cast();
+        }
+        if (cap == ForgeCapabilities.ENERGY) {
+            // ИСПРАВЛЕНИЕ: провода MCreator часто проверяют наличие энергии с side == null
+            if (side == null) return lazyEnergyHandler.cast();
+            
+            // Проверка на то, что провод подключен сзади:
+            if (this.getBlockState().hasProperty(SmelterblockBlock.FACING)) {
+                Direction back = this.getBlockState().getValue(SmelterblockBlock.FACING).getOpposite();
+                if (side == back) {
+                    return lazyEnergyHandler.cast();
+                }
+            }
+            
+            // 💡 ВНИМАНИЕ: Если всё равно не подключается, раскомментируй строку ниже! 
+            // Это разрешит принимать энергию с ЛЮБОЙ стороны (полезно для теста проводов):
+            // return lazyEnergyHandler.cast();
+        }
+        return super.getCapability(cap, side);
+    }
 
-	@Override
-	protected void setItems(NonNullList<ItemStack> stacks) {
-		this.stacks = stacks;
-	}
+    @Override
+    public void invalidateCaps() {
+        super.invalidateCaps();
+        lazyItemHandler.invalidate();
+        lazyEnergyHandler.invalidate();
+    }
 
-	@Override
-	public boolean canPlaceItem(int index, ItemStack stack) {
-		return true;
-	}
+    @Override
+    protected void saveAdditional(CompoundTag nbt) {
+        nbt.put("inventory", itemHandler.serializeNBT());
+        nbt.put("energy", energyStorage.serializeNBT());
+        nbt.putInt("progress", progress);
+        super.saveAdditional(nbt);
+    }
 
-	@Override
-	public int[] getSlotsForFace(Direction side) {
-		return IntStream.range(0, this.getContainerSize()).toArray();
-	}
+    @Override
+    public void load(CompoundTag nbt) {
+        super.load(nbt);
+        itemHandler.deserializeNBT(nbt.getCompound("inventory"));
+        energyStorage.deserializeNBT(nbt.get("energy"));
+        progress = nbt.getInt("progress");
+    }
 
-	@Override
-	public boolean canPlaceItemThroughFace(int index, ItemStack stack, @Nullable Direction direction) {
-		return this.canPlaceItem(index, stack);
-	}
+    @Override
+    public Component getDisplayName() { return Component.literal("Smelter"); }
 
-	@Override
-	public boolean canTakeItemThroughFace(int index, ItemStack stack, Direction direction) {
-		return true;
-	}
-
-	private final EnergyStorage energyStorage = new EnergyStorage(400000, 200, 200, 0) {
-		@Override
-		public int receiveEnergy(int maxReceive, boolean simulate) {
-			int retval = super.receiveEnergy(maxReceive, simulate);
-			if (!simulate) {
-				setChanged();
-				level.sendBlockUpdated(worldPosition, level.getBlockState(worldPosition), level.getBlockState(worldPosition), 2);
-			}
-			return retval;
-		}
-
-		@Override
-		public int extractEnergy(int maxExtract, boolean simulate) {
-			int retval = super.extractEnergy(maxExtract, simulate);
-			if (!simulate) {
-				setChanged();
-				level.sendBlockUpdated(worldPosition, level.getBlockState(worldPosition), level.getBlockState(worldPosition), 2);
-			}
-			return retval;
-		}
-	};
-
-	@Override
-	public <T> LazyOptional<T> getCapability(Capability<T> capability, @Nullable Direction facing) {
-		if (!this.remove && facing != null && capability == ForgeCapabilities.ITEM_HANDLER)
-			return handlers[facing.ordinal()].cast();
-		if (!this.remove && capability == ForgeCapabilities.ENERGY)
-			return LazyOptional.of(() -> energyStorage).cast();
-		return super.getCapability(capability, facing);
-	}
-
-	@Override
-	public void setRemoved() {
-		super.setRemoved();
-		for (LazyOptional<? extends IItemHandler> handler : handlers)
-			handler.invalidate();
-	}
+    @Nullable
+    @Override
+    public AbstractContainerMenu createMenu(int id, Inventory playerInv, Player player) {
+        return new SmelterMenu(id, playerInv, this, this.data);
+    }
 }

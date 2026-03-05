@@ -13,7 +13,6 @@ import net.wowamod.client.gui.ExtractorintefaceScreen;
 import net.wowamod.client.gui.ExtractorGuideScreen;
 import net.wowamod.client.gui.ECIScreen;
 import net.wowamod.client.gui.ConstructorinterfaceScreen;
-import net.wowamod.client.gui.AbobaScreen;
 
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -36,7 +35,6 @@ public class Universe3090ModScreens {
 			MenuScreens.register(Universe3090ModMenus.ECI.get(), ECIScreen::new);
 			MenuScreens.register(Universe3090ModMenus.SOLARPANELMENU.get(), SolarpanelmenuScreen::new);
 			MenuScreens.register(Universe3090ModMenus.EXTRACTOR_GUIDE.get(), ExtractorGuideScreen::new);
-			MenuScreens.register(Universe3090ModMenus.ABOBA.get(), AbobaScreen::new);
 		});
 	}
 }
