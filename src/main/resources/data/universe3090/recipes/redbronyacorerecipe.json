@@ -2,11 +2,22 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "a"
+    "aba",
+    "cdc",
+    "aba"
   ],
   "key": {
     "a": {
-      "item": "minecraft:end_crystal"
+      "item": "universe3090:red_plastine"
+    },
+    "b": {
+      "item": "universe3090:mimictkanb"
+    },
+    "c": {
+      "item": "universe3090:combined_alloy"
+    },
+    "d": {
+      "item": "universe3090:redcore"
     }
   },
   "result": {

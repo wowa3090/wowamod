@@ -51,6 +51,7 @@ public class SmelterScreen extends AbstractContainerScreen<SmelterMenu> {
         }
 
         // 3. Рендер 10 декоративных иконок сверху (горизонтальный ряд)
+        /*
         for (int i = 0; i < 10; i++) {
             // Рисуем маленькую иконку 8x8 (координаты на текстуре: 176, 16)
             int iconX = x + 40 + (i * 10);

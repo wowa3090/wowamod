@@ -12,7 +12,7 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.REPEATER"
+        "value": "Blocks.REDSTONE_TORCH"
       },
       {
         "value": "Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE"
@@ -21,22 +21,22 @@
         "value": "Items.REDSTONE"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:MirrorComponentberillium"
       },
       {
-        "value": "CUSTOM:Redemerald"
+        "value": "CUSTOM:Extractredsoul"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:MirrorComponentberillium"
       },
       {
-        "value": "Blocks.REDSTONE_BLOCK"
+        "value": "Items.REDSTONE"
       },
       {
         "value": "Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE"
       },
       {
-        "value": "Items.REDSTONE"
+        "value": "Blocks.REDSTONE_TORCH"
       }
     ],
     "recipeReturnStack": {

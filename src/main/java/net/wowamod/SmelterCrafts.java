@@ -4,15 +4,18 @@ import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.extensions.IForgeMenuType;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegisterEvent;
+
+// Импорт твоих предметов
+import net.wowamod.init.Universe3090ModItems;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,13 +45,24 @@ public class SmelterCrafts {
 
     public static final List<SmelterRecipe> RECIPES = new ArrayList<>();
 
-    // АВТОМАТИЧЕСКАЯ ЗАГРУЗКА РЕЦЕПТА ПРИ СТАРТЕ ИГРЫ
-    static {
-        // Рецепт: Железо + Золото + Медь + Редстоун = 1 Алмаз
-        // Тратит 2000 FE (по 10 FE за тик) и плавится 200 тиков (10 секунд)
-        addRecipe(Ingredient.of(Items.IRON_INGOT), Ingredient.of(Items.GOLD_INGOT), 
-                  Ingredient.of(Items.COPPER_INGOT), Ingredient.of(Items.REDSTONE), 
-                  new ItemStack(Items.DIAMOND), 2000, 200);
+    // БЕЗОПАСНАЯ ЗАГРУЗКА РЕЦЕПТОВ (ПОСЛЕ ТОГО, КАК ПРЕДМЕТЫ ПОЯВИЛИСЬ В ИГРЕ)
+    @SubscribeEvent
+    public static void onCommonSetup(FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            // Твой кастомный рецепт:
+            // Aluminium + Dark Iron + Copper Plate + Ring = Combined Alloy
+            addRecipe(
+                Ingredient.of(Universe3090ModItems.ALUMINIUM_PLATE.get()), 
+                Ingredient.of(Universe3090ModItems.DARKIRONPLASTINE.get()), 
+                Ingredient.of(Universe3090ModItems.COPPERPLATE.get()), 
+                Ingredient.of(Universe3090ModItems.RING.get()), 
+                new ItemStack(Universe3090ModItems.COMBINED_ALLOY.get(), 1), // Здесь можно указать количество получаемых сплавов (например 1)
+                20000, 
+                300
+            );
+            
+            // Если захочешь добавить еще рецепты, просто копируй функцию addRecipe сюда
+        });
     }
 
     public static void addRecipe(Ingredient x, Ingredient y, Ingredient z, Ingredient catalyst, ItemStack output, int energyCost, int processTime) {

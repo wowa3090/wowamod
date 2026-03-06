@@ -4,11 +4,11 @@
   "pattern": [
     "abc",
     "ded",
-    "fbc"
+    "cba"
   ],
   "key": {
     "a": {
-      "item": "minecraft:repeater"
+      "item": "minecraft:redstone_torch"
     },
     "b": {
       "item": "minecraft:heavy_weighted_pressure_plate"
@@ -17,13 +17,10 @@
       "item": "minecraft:redstone"
     },
     "d": {
-      "item": "minecraft:iron_ingot"
+      "item": "universe3090:mirror_componentberillium"
     },
     "e": {
-      "item": "universe3090:redemerald"
-    },
-    "f": {
-      "item": "minecraft:redstone_block"
+      "item": "universe3090:extractredsoul"
     }
   },
   "result": {

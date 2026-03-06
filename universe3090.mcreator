@@ -7172,6 +7172,20 @@
           "src/main/java/net/wowamod/SmelterScreen.java"
         ]
       }
+    },
+    {
+      "name": "MirrorComponentberillium",
+      "type": "item",
+      "sortid": 428,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mirror_componentberillium",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/MirrorComponentberilliumItem.java",
+          "src/main/resources/assets/universe3090/models/item/mirror_componentberillium.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -7352,6 +7366,7 @@
       "item.universe3090.derjatili": "Держатель для необычного механизма",
       "item.universe3090.whiteemerald": "Белый Изумруд",
       "block.universe3090.cable_txcc": "Cable",
+      "item.universe3090.mirror_componentberillium": "Mirror Component berillium",
       "item.universe3090.soulsvazivatel": "Связыватель душ",
       "gui.universe3090.guidebookstart.button_nazad": "Назад",
       "item.universe3090.wowabronya_boots": "Ботинки вовы3090",
@@ -7589,6 +7604,7 @@
       "item.universe3090.derjatili": "Держатель для необычного механизма",
       "item.universe3090.whiteemerald": "Белый Изумруд",
       "block.universe3090.cable_txcc": "Cable",
+      "item.universe3090.mirror_componentberillium": "Mirror Component berillium",
       "item.universe3090.soulsvazivatel": "Связыватель Душ",
       "gui.universe3090.guidebookstart.button_nazad": "Назад",
       "item.universe3090.wowabronya_boots": "Ботинки 3090",

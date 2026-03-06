@@ -52,6 +52,7 @@ import net.wowamod.item.MultitoolcomponentnottrueItem;
 import net.wowamod.item.MultitoolcomponentItem;
 import net.wowamod.item.MtwmodeorbitalItem;
 import net.wowamod.item.MolotwowaItem;
+import net.wowamod.item.MirrorComponentberilliumItem;
 import net.wowamod.item.MimictkanbItem;
 import net.wowamod.item.MimickojaItem;
 import net.wowamod.item.MagicironingotItem;
@@ -305,6 +306,7 @@ public class Universe3090ModItems {
 	public static final RegistryObject<Item> EXTRACTBLUESOUL = REGISTRY.register("extractbluesoul", () -> new ExtractbluesoulItem());
 	public static final RegistryObject<Item> COMBINED_ALLOY = REGISTRY.register("combined_alloy", () -> new CombinedAlloyItem());
 	public static final RegistryObject<Item> SMELTERBLOCK = block(Universe3090ModBlocks.SMELTERBLOCK);
+	public static final RegistryObject<Item> MIRROR_COMPONENTBERILLIUM = REGISTRY.register("mirror_componentberillium", () -> new MirrorComponentberilliumItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

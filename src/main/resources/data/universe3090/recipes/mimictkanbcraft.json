@@ -4,7 +4,7 @@
   "pattern": [
     "abc",
     "ded",
-    "cba"
+    "cbf"
   ],
   "key": {
     "a": {
@@ -21,6 +21,9 @@
     },
     "e": {
       "item": "universe3090:mimickoja"
+    },
+    "f": {
+      "item": "universe3090:berillium_crystal"
     }
   },
   "result": {
