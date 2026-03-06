@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "universe3090:combined_alloy"
+  },
+  "base": {
+    "item": "universe3090:reddiamondlapis"
+  },
+  "addition": {
+    "item": "universe3090:molotwowa"
+  },
+  "result": {
+    "item": "universe3090:red_plastine"
+  }
+}

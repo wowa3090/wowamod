@@ -104,6 +104,7 @@ import net.wowamod.item.CopperplateItem;
 import net.wowamod.item.Coppermass1Item;
 import net.wowamod.item.CombinedAlloyItem;
 import net.wowamod.item.ClearetheriumlightItem;
+import net.wowamod.item.CharasknifeItem;
 import net.wowamod.item.BluesoulpieceItem;
 import net.wowamod.item.BluesoulItem;
 import net.wowamod.item.BlueemeraldItem;
@@ -307,6 +308,7 @@ public class Universe3090ModItems {
 	public static final RegistryObject<Item> COMBINED_ALLOY = REGISTRY.register("combined_alloy", () -> new CombinedAlloyItem());
 	public static final RegistryObject<Item> SMELTERBLOCK = block(Universe3090ModBlocks.SMELTERBLOCK);
 	public static final RegistryObject<Item> MIRROR_COMPONENTBERILLIUM = REGISTRY.register("mirror_componentberillium", () -> new MirrorComponentberilliumItem());
+	public static final RegistryObject<Item> CHARASKNIFE = REGISTRY.register("charasknife", () -> new CharasknifeItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

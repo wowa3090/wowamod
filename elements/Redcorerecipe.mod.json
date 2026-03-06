@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Ring"
+        "value": ""
       },
       {
         "value": "CUSTOM:Rainbowemerald"
       },
       {
-        "value": "CUSTOM:Ring"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Ring"
+        "value": "CUSTOM:MirrorComponentberillium"
       },
       {
-        "value": "CUSTOM:Etheriumdark"
+        "value": "CUSTOM:Redemptycore"
       },
       {
-        "value": "CUSTOM:Ring"
+        "value": "CUSTOM:MirrorComponentberillium"
       },
       {
-        "value": "CUSTOM:Purplesoul"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Ring"
+        "value": "Blocks.REDSTONE_BLOCK"
       },
       {
-        "value": "CUSTOM:Greensoul"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Clearetheriumlight"
+      "value": "CUSTOM:Redcore"
     },
-    "name": "clear_light_etherium_recipe",
+    "name": "redcorerecipe",
     "namespace": "mod"
   }
 }

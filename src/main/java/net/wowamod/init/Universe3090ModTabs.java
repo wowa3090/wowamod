@@ -165,6 +165,7 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.COMBINED_ALLOY.get());
 				tabData.accept(Universe3090ModBlocks.SMELTERBLOCK.get().asItem());
 				tabData.accept(Universe3090ModItems.MIRROR_COMPONENTBERILLIUM.get());
+				tabData.accept(Universe3090ModItems.CHARASKNIFE.get());
 			})
 
 					.build());

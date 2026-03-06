@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:red_plastine"
+    },
+    "b": {
+      "item": "universe3090:mirror_componentberillium"
+    },
+    "c": {
+      "item": "universe3090:energypipesusc"
+    },
+    "d": {
+      "item": "universe3090:darkironblock"
+    }
+  },
+  "result": {
+    "item": "universe3090:redemptycore",
+    "count": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:rainbowemerald"
+    },
+    "b": {
+      "item": "universe3090:mirror_componentberillium"
+    },
+    "c": {
+      "item": "universe3090:redemptycore"
+    },
+    "d": {
+      "item": "minecraft:redstone_block"
+    }
+  },
+  "result": {
+    "item": "universe3090:redcore",
+    "count": 1
+  }
+}
