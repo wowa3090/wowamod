@@ -53,7 +53,7 @@
     "requiresCorrectTool": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canRedstoneConnect": false,
+    "canRedstoneConnect": true,
     "lightOpacity": 15,
     "material": {
       "value": "ROCK"
@@ -61,7 +61,7 @@
     "tickRate": 0,
     "tickRandomly": false,
     "isReplaceable": false,
-    "canProvidePower": false,
+    "canProvidePower": true,
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
@@ -98,7 +98,7 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 0,
+    "luminance": 2,
     "unbreakable": false,
     "breakHarvestLevel": 2,
     "isBonemealable": false,
