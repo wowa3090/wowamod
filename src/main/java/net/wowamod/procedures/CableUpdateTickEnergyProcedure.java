@@ -1,11 +1,11 @@
 package net.wowamod.procedures;
 
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
+import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.energy.IEnergyStorage;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
@@ -13,119 +13,118 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CableUpdateTickEnergyProcedure {
-    // Увеличенная скорость передачи энергии
-    private static final int MAX_TRANSFER_RATE = 50000; // Увеличено с 1000 до 5000
-    // Энергетические потери (0.0 = без потерь)
-    private static final double ENERGY_LOSS_FACTOR = 0.00; // Уменьшено с 0.05 до 0.02
+    private static final int MAX_TRANSFER_RATE = 50000;
+    // Потери энергии: 0.0 = без потерь, 0.05 = потеря 5%
+    private static final double ENERGY_LOSS_FACTOR = 0.00;
 
     public static void execute(LevelAccessor world, double x, double y, double z) {
-        if (world.isClientSide()) {
-            return; // Не запускать на клиентской стороне
-        }
+        if (world.isClientSide()) return;
 
         BlockPos currentPos = BlockPos.containing(x, y, z);
         BlockEntity currentBlockEntity = world.getBlockEntity(currentPos);
 
-        if (currentBlockEntity == null) {
-            return;
-        }
+        if (currentBlockEntity == null) return;
 
-        // Получаем энергетическую способность текущего кабеля
-        IEnergyStorage currentEnergyStorage = currentBlockEntity.getCapability(ForgeCapabilities.ENERGY, null).orElse(null);
-        if (currentEnergyStorage == null || !currentEnergyStorage.canExtract()) {
-            return; // Не можем извлекать энергию из этого блока
-        }
+        IEnergyStorage currentEnergy = currentBlockEntity.getCapability(ForgeCapabilities.ENERGY, null).orElse(null);
+        if (currentEnergy == null || !currentEnergy.canExtract()) return;
 
-        // Проверяем, есть ли энергия для передачи
-        int availableEnergy = currentEnergyStorage.getEnergyStored();
-        if (availableEnergy <= 0) {
-            return; // Нет энергии для передачи
-        }
+        // Сколько кабель реально может отдать прямо сейчас
+        int maxAvailableToExtract = currentEnergy.extractEnergy(MAX_TRANSFER_RATE, true);
+        if (maxAvailableToExtract <= 0) return;
 
-        // Находим все допустимые соседние блоки, которые могут принимать энергию
+        // Расчет процента заполненности текущего кабеля (как уровень воды)
+        double currentMax = currentEnergy.getMaxEnergyStored();
+        double currentFillRatio = currentMax > 0 ? (double) currentEnergy.getEnergyStored() / currentMax : 1.0;
+
         List<EnergyTransferTarget> targets = new ArrayList<>();
-        
-        // Проверяем все 6 направлений
+
+        // Собираем всех соседей
         for (Direction direction : Direction.values()) {
             BlockPos neighborPos = currentPos.relative(direction);
             BlockEntity neighborEntity = world.getBlockEntity(neighborPos);
-            
+
             if (neighborEntity != null) {
-                // Проверяем, может ли соседний блок принимать энергию с противоположного направления
-                IEnergyStorage neighborEnergyStorage = neighborEntity.getCapability(ForgeCapabilities.ENERGY, direction.getOpposite()).orElse(null);
-                
-                if (neighborEnergyStorage != null && 
-                    neighborEnergyStorage.canReceive() && 
-                    neighborEnergyStorage.getEnergyStored() < neighborEnergyStorage.getMaxEnergyStored()) {
-                    
-                    // Добавляем в список только если блок может принять энергию
-                    targets.add(new EnergyTransferTarget(neighborPos, neighborEntity, neighborEnergyStorage, direction.getOpposite()));
-                }
-            }
-        }
+                LazyOptional<IEnergyStorage> neighborCap = neighborEntity.getCapability(ForgeCapabilities.ENERGY, direction.getOpposite());
 
-        // Если нет подходящих целей, выходим
-        if (targets.isEmpty()) {
-            return;
-        }
+                neighborCap.ifPresent(neighborEnergy -> {
+                    if (neighborEnergy.canReceive()) {
+                        double neighborMax = neighborEnergy.getMaxEnergyStored();
+                        // Защита от деления на ноль у сломанных модов
+                        double neighborFillRatio = neighborMax > 0 ? (double) neighborEnergy.getEnergyStored() / neighborMax : 1.0;
 
-        // Рассчитываем, сколько энергии можем передать
-        int totalPossibleTransfer = Math.min(availableEnergy, MAX_TRANSFER_RATE);
-        int energyPerTarget = totalPossibleTransfer / Math.max(16, targets.size());
-
-        int totalTransferred = 0;
-        
-        // Передаём энергию каждой цели
-        for (EnergyTransferTarget target : targets) {
-            if (currentEnergyStorage.getEnergyStored() <= 0) {
-                break; // Нет энергии для передачи
-            }
-
-            // Определяем, сколько энергии будем передавать
-            int amountToExtract = Math.min(energyPerTarget, MAX_TRANSFER_RATE);
-            int energyAfterLoss = (int) (amountToExtract * (4.0 - ENERGY_LOSS_FACTOR));
-
-            // Проверяем, сколько энергии может принять целевой блок
-            int maxReceive = target.energyStorage.receiveEnergy(energyAfterLoss, true);
-            
-            if (maxReceive > 0) {
-                // Извлекаем энергию из текущего блока
-                int extracted = currentEnergyStorage.extractEnergy(amountToExtract, false);
-                
-                if (extracted > 0) {
-                    // Передаём энергию в целевой блок
-                    int received = target.energyStorage.receiveEnergy(Math.min(extracted, maxReceive), false);
-                    
-                    if (received > 0) {
-                        totalTransferred += received;
-                        
-                        // Обновляем целевой блок
-                        if (world instanceof Level level) {
-                            level.sendBlockUpdated(target.pos, world.getBlockState(target.pos), world.getBlockState(target.pos), 3);
+                        // Главное правило сообщающихся сосудов: энергия течет от более полного к менее полному!
+                        if (neighborFillRatio < currentFillRatio) {
+                            targets.add(new EnergyTransferTarget(neighborEntity, neighborEnergy, neighborFillRatio));
                         }
                     }
-                }
+                });
             }
         }
 
-        // Обновляем текущий блок, если энергия была передана
-        if (totalTransferred > 0 && world instanceof Level level) {
-            level.sendBlockUpdated(currentPos, world.getBlockState(currentPos), world.getBlockState(currentPos), 3);
+        if (targets.isEmpty()) return;
+
+        // Сортируем цели по возрастанию "сытости". Сначала питаем самые пустые механизмы!
+        targets.sort((t1, t2) -> Double.compare(t1.fillRatio, t2.fillRatio));
+
+        // Безопасный лимит потерь (не дает поставить 100% и сломать деление)
+        double safeLossFactor = Math.min(0.99, Math.max(0.0, ENERGY_LOSS_FACTOR));
+        
+        int availableToTransfer = maxAvailableToExtract;
+        int remainingTargets = targets.size();
+        boolean transferredAny = false;
+
+        // Динамическое распределение энергии
+        for (EnergyTransferTarget target : targets) {
+            if (availableToTransfer <= 0) break;
+
+            // Выделяем долю для текущей цели
+            int amountToSimulate = availableToTransfer / remainingTargets;
+            if (amountToSimulate == 0) amountToSimulate = availableToTransfer;
+
+            // 1. Сколько можем извлечь из кабеля для этой цели?
+            int simExtracted = currentEnergy.extractEnergy(amountToSimulate, true);
+            
+            // 2. Учитываем потери в пути
+            int afterLoss = (int) (simExtracted * (1.0 - safeLossFactor));
+            
+            // 3. Сколько механизм может принять из этого объема?
+            int simReceived = target.energyStorage.receiveEnergy(afterLoss, true);
+
+            if (simReceived > 0) {
+                // 4. Математика: сколько нужно РЕАЛЬНО списать с кабеля, чтобы механизм получил simReceived.
+                // Используем Math.ceil, чтобы не дюпать энергию при округлении вниз!
+                int actualToExtractFromCable = (int) Math.ceil(simReceived / (1.0 - safeLossFactor));
+                
+                // Защита от перерасхода
+                actualToExtractFromCable = Math.min(actualToExtractFromCable, availableToTransfer);
+
+                // 5. ФИЗИЧЕСКИЙ ПЕРЕВОД
+                int actualExtracted = currentEnergy.extractEnergy(actualToExtractFromCable, false);
+                int actualReceived = target.energyStorage.receiveEnergy((int)(actualExtracted * (1.0 - safeLossFactor)), false);
+
+                if (actualReceived > 0) {
+                    availableToTransfer -= actualExtracted; // Уменьшаем доступную энергию для следующих целей
+                    transferredAny = true;
+                    target.blockEntity.setChanged(); // Тихо сохраняем механизм
+                }
+            }
+            remainingTargets--; // Уменьшаем счетчик оставшихся целей
+        }
+
+        if (transferredAny) {
+            currentBlockEntity.setChanged(); // Тихо сохраняем кабель
         }
     }
 
-    // Вспомогательный класс для хранения информации о целях передачи энергии
     private static class EnergyTransferTarget {
-        public final BlockPos pos;
         public final BlockEntity blockEntity;
         public final IEnergyStorage energyStorage;
-        public final Direction side;
+        public final double fillRatio;
 
-        public EnergyTransferTarget(BlockPos pos, BlockEntity blockEntity, IEnergyStorage energyStorage, Direction side) {
-            this.pos = pos;
+        public EnergyTransferTarget(BlockEntity blockEntity, IEnergyStorage energyStorage, double fillRatio) {
             this.blockEntity = blockEntity;
             this.energyStorage = energyStorage;
-            this.side = side;
+            this.fillRatio = fillRatio;
         }
     }
 }

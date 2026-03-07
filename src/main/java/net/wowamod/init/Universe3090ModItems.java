@@ -13,6 +13,7 @@ import net.wowamod.item.WowaswordosnovaItem;
 import net.wowamod.item.WowaswordItem;
 import net.wowamod.item.WowabronyaItem;
 import net.wowamod.item.WiresprovodaItem;
+import net.wowamod.item.WillItem;
 import net.wowamod.item.WhitesoulMYPLACEItem;
 import net.wowamod.item.WhiteemeraldItem;
 import net.wowamod.item.WhiteEmeraldPieceItem;
@@ -21,6 +22,7 @@ import net.wowamod.item.TheWelcomeCenterItem;
 import net.wowamod.item.SuperpalkaItem;
 import net.wowamod.item.SoulsvazivatelItem;
 import net.wowamod.item.SoulcoreItem;
+import net.wowamod.item.SoulcombineItem;
 import net.wowamod.item.SolarpanelelementItem;
 import net.wowamod.item.ShantyoggItem;
 import net.wowamod.item.ShadowbladeItem;
@@ -63,6 +65,7 @@ import net.wowamod.item.LightbluesoulpieceItem;
 import net.wowamod.item.LightbluesoulItem;
 import net.wowamod.item.LightblueemeraldItem;
 import net.wowamod.item.LightBlueEmeraldPieceItem;
+import net.wowamod.item.LifekolbaItem;
 import net.wowamod.item.KolbaItem;
 import net.wowamod.item.KlavaItem;
 import net.wowamod.item.KarmannielectrolizerItem;
@@ -315,6 +318,9 @@ public class Universe3090ModItems {
 	public static final RegistryObject<Item> REDSTONE_9X = block(Universe3090ModBlocks.REDSTONE_9X);
 	public static final RegistryObject<Item> SHANTYOGG = REGISTRY.register("shantyogg", () -> new ShantyoggItem());
 	public static final RegistryObject<Item> SEALEDVESSELDISC = REGISTRY.register("sealedvesseldisc", () -> new SealedvesseldiscItem());
+	public static final RegistryObject<Item> SOULCOMBINE = REGISTRY.register("soulcombine", () -> new SoulcombineItem());
+	public static final RegistryObject<Item> WILL = REGISTRY.register("will", () -> new WillItem());
+	public static final RegistryObject<Item> LIFEKOLBA = REGISTRY.register("lifekolba", () -> new LifekolbaItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

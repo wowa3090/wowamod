@@ -23,7 +23,6 @@ import net.wowamod.init.Universe3090ModBlockEntities;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-// Импорты наших новых файлов
 import net.wowamod.SmelterMenu;
 import net.wowamod.SmelterCrafts;
 
@@ -38,7 +37,8 @@ public class SmelterblockBlockEntity extends BlockEntity implements MenuProvider
         }
     };
 
-    public final EnergyStorage energyStorage = new EnergyStorage(400000, 1000, 0, 0) {
+    // ИСПРАВЛЕНО: maxExtract теперь 10000, чтобы позволить внутреннему коду тратить энергию
+    public final EnergyStorage energyStorage = new EnergyStorage(400000, 1000, 10000, 0) {
         @Override
         public int receiveEnergy(int maxReceive, boolean simulate) {
             int received = super.receiveEnergy(maxReceive, simulate);
@@ -47,10 +47,18 @@ public class SmelterblockBlockEntity extends BlockEntity implements MenuProvider
             }
             return received;
         }
+
+        // ИСПРАВЛЕНО: Добавлено сохранение NBT при трате энергии
+        @Override
+        public int extractEnergy(int maxExtract, boolean simulate) {
+            int extracted = super.extractEnergy(maxExtract, simulate);
+            if (extracted > 0 && !simulate) {
+                setChanged();
+            }
+            return extracted;
+        }
     };
 
-    // ВАЖНОЕ ИСПРАВЛЕНИЕ: Инициализируем сразу, а не в onLoad(). 
-    // Теперь MCreator провода увидят энергию в ту же миллисекунду, как будут поставлены!
     private final LazyOptional<ItemStackHandler> lazyItemHandler = LazyOptional.of(() -> itemHandler);
     private final LazyOptional<EnergyStorage> lazyEnergyHandler = LazyOptional.of(() -> energyStorage);
 
@@ -91,16 +99,28 @@ public class SmelterblockBlockEntity extends BlockEntity implements MenuProvider
                 itemHandler.getStackInSlot(0), itemHandler.getStackInSlot(1),
                 itemHandler.getStackInSlot(2), itemHandler.getStackInSlot(3));
 
-        if (recipe != null && hasEnoughSpace(recipe.output) && energyStorage.getEnergyStored() >= recipe.energyCost) {
+        if (recipe != null && hasEnoughSpace(recipe.output)) {
             maxProgress = recipe.processTime;
-            energyStorage.extractEnergy(recipe.energyCost, false);
-            progress++;
-            if (progress >= maxProgress) {
-                craftItem(recipe);
-                progress = 0;
+            
+            // ИСПРАВЛЕНО: Вычисляем, сколько энергии нужно потратить ровно за 1 тик.
+            // Math.ceil округляет в большую сторону (чтобы крафт не оказался бесплатным, если стоимость мала)
+            int energyPerTick = (int) Math.ceil((double) recipe.energyCost / recipe.processTime);
+
+            // Проверяем, есть ли энергия хотя бы на этот тик
+            if (energyStorage.getEnergyStored() >= energyPerTick) {
+                energyStorage.extractEnergy(energyPerTick, false); // Тратим энергию по кусочкам
+                progress++;
+                
+                if (progress >= maxProgress) {
+                    craftItem(recipe);
+                    progress = 0;
+                }
+                setChanged(level, pos, state);
             }
-            setChanged(level, pos, state);
+            // Если рецепт валиден, но энергии нет, мы просто ничего не делаем. 
+            // Прогресс замирает на месте ("Пауза" механизма).
         } else {
+            // Сбрасываем прогресс ТОЛЬКО если убрали нужные предметы или переполнен выходной слот
             if (progress != 0 || maxProgress != 0) {
                 progress = 0;
                 maxProgress = 0;
@@ -115,17 +135,14 @@ public class SmelterblockBlockEntity extends BlockEntity implements MenuProvider
     }
 
     private void craftItem(SmelterCrafts.SmelterRecipe recipe) {
-        // Тратим по 1 предмету из слотов 0, 1, 2, 3 (X, Y, Z и Катализатор)
         for (int i = 0; i < 4; i++) {
             itemHandler.extractItem(i, 1, false);
         }
 
-        // Создаем или добавляем предмет в слот 4 (в обход проверки isItemValid)
         ItemStack currentOutput = itemHandler.getStackInSlot(4);
         if (currentOutput.isEmpty()) {
             itemHandler.setStackInSlot(4, recipe.output.copy());
         } else {
-            // Если там уже лежит такой же предмет, просто увеличиваем его количество
             currentOutput.grow(recipe.output.getCount());
             itemHandler.setStackInSlot(4, currentOutput);
         }
@@ -137,20 +154,13 @@ public class SmelterblockBlockEntity extends BlockEntity implements MenuProvider
             return lazyItemHandler.cast();
         }
         if (cap == ForgeCapabilities.ENERGY) {
-            // ИСПРАВЛЕНИЕ: провода MCreator часто проверяют наличие энергии с side == null
             if (side == null) return lazyEnergyHandler.cast();
-            
-            // Проверка на то, что провод подключен сзади:
             if (this.getBlockState().hasProperty(SmelterblockBlock.FACING)) {
                 Direction back = this.getBlockState().getValue(SmelterblockBlock.FACING).getOpposite();
                 if (side == back) {
                     return lazyEnergyHandler.cast();
                 }
             }
-            
-            // 💡 ВНИМАНИЕ: Если всё равно не подключается, раскомментируй строку ниже! 
-            // Это разрешит принимать энергию с ЛЮБОЙ стороны (полезно для теста проводов):
-            // return lazyEnergyHandler.cast();
         }
         return super.getCapability(cap, side);
     }

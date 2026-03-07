@@ -811,5 +811,97 @@ public class CraftingwowabronyaProcedure {
 				_player.containerMenu.broadcastChanges();
 			}
 		}
+		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == Universe3090ModItems.WILL.get()
+				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)
+						.getItem() == Universe3090ModItems.MIRROR_COMPONENTBERILLIUM.get()
+				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == Universe3090ModItems.WILL.get()
+				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY).getItem() == Universe3090ModItems.KOLBA.get()
+				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(4)).getItem() : ItemStack.EMPTY)
+						.getItem() == Universe3090ModItems.EXTRACT_PURPLE_SOUL.get()
+				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(5)).getItem() : ItemStack.EMPTY).getItem() == Universe3090ModItems.EXTRACTBLUESOUL
+						.get()
+				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(6)).getItem() : ItemStack.EMPTY).getItem() == Universe3090ModItems.EXTRACTREDSOUL
+						.get()
+				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(7)).getItem() : ItemStack.EMPTY)
+						.getItem() == Universe3090ModItems.CLEARETHERIUMLIGHT.get()
+				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(8)).getItem() : ItemStack.EMPTY).getItem() == Universe3090ModItems.EXTRACTLBSOUL
+						.get()
+				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(9)).getItem() : ItemStack.EMPTY)
+						.getItem() == Universe3090ModItems.EXTRACTORANGESOUL.get()
+				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(10)).getItem() : ItemStack.EMPTY)
+						.getItem() == Universe3090ModItems.EXTRACT_YELLOW_SOUL.get()
+				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(11)).getItem() : ItemStack.EMPTY)
+						.getItem() == Universe3090ModItems.EXTRACT_GREEN_SOUL.get()
+				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(12)).getItem() : ItemStack.EMPTY).getItem() == Universe3090ModItems.WILL.get()
+				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(13)).getItem() : ItemStack.EMPTY)
+						.getItem() == Universe3090ModItems.MIRROR_COMPONENTBERILLIUM.get()
+				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(14)).getItem() : ItemStack.EMPTY).getItem() == Universe3090ModItems.WILL.get()) {
+			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+				ItemStack _setstack = new ItemStack(Universe3090ModItems.SOULCOMBINE.get());
+				_setstack.setCount(1);
+				((Slot) _slots.get(15)).set(_setstack);
+				_player.containerMenu.broadcastChanges();
+			}
+			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+				((Slot) _slots.get(0)).set(ItemStack.EMPTY);
+				_player.containerMenu.broadcastChanges();
+			}
+			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+				((Slot) _slots.get(1)).set(ItemStack.EMPTY);
+				_player.containerMenu.broadcastChanges();
+			}
+			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+				((Slot) _slots.get(2)).set(ItemStack.EMPTY);
+				_player.containerMenu.broadcastChanges();
+			}
+			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+				((Slot) _slots.get(3)).set(ItemStack.EMPTY);
+				_player.containerMenu.broadcastChanges();
+			}
+			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+				((Slot) _slots.get(4)).set(ItemStack.EMPTY);
+				_player.containerMenu.broadcastChanges();
+			}
+			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+				((Slot) _slots.get(5)).set(ItemStack.EMPTY);
+				_player.containerMenu.broadcastChanges();
+			}
+			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+				((Slot) _slots.get(6)).set(ItemStack.EMPTY);
+				_player.containerMenu.broadcastChanges();
+			}
+			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+				((Slot) _slots.get(7)).set(ItemStack.EMPTY);
+				_player.containerMenu.broadcastChanges();
+			}
+			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+				((Slot) _slots.get(8)).set(ItemStack.EMPTY);
+				_player.containerMenu.broadcastChanges();
+			}
+			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+				((Slot) _slots.get(9)).set(ItemStack.EMPTY);
+				_player.containerMenu.broadcastChanges();
+			}
+			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+				((Slot) _slots.get(10)).set(ItemStack.EMPTY);
+				_player.containerMenu.broadcastChanges();
+			}
+			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+				((Slot) _slots.get(11)).set(ItemStack.EMPTY);
+				_player.containerMenu.broadcastChanges();
+			}
+			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+				((Slot) _slots.get(12)).set(ItemStack.EMPTY);
+				_player.containerMenu.broadcastChanges();
+			}
+			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+				((Slot) _slots.get(13)).set(ItemStack.EMPTY);
+				_player.containerMenu.broadcastChanges();
+			}
+			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+				((Slot) _slots.get(14)).set(ItemStack.EMPTY);
+				_player.containerMenu.broadcastChanges();
+			}
+		}
 	}
 }

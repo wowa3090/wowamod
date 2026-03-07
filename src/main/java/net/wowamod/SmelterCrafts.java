@@ -57,7 +57,7 @@ public class SmelterCrafts {
                 Ingredient.of(Universe3090ModItems.COPPERPLATE.get()), 
                 Ingredient.of(Universe3090ModItems.RING.get()), 
                 new ItemStack(Universe3090ModItems.COMBINED_ALLOY.get(), 1), // Здесь можно указать количество получаемых сплавов (например 1)
-                20000, 
+                15000, 
                 300
             );
             

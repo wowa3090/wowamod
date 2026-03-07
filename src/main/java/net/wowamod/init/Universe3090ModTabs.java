@@ -168,6 +168,9 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.CHARASKNIFE.get());
 				tabData.accept(Universe3090ModBlocks.BERILLIUMDEEPSLATE.get().asItem());
 				tabData.accept(Universe3090ModBlocks.REDSTONE_9X.get().asItem());
+				tabData.accept(Universe3090ModItems.SOULCOMBINE.get());
+				tabData.accept(Universe3090ModItems.WILL.get());
+				tabData.accept(Universe3090ModItems.LIFEKOLBA.get());
 			})
 
 					.build());

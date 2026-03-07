@@ -7368,6 +7368,102 @@
           "src/main/resources/data/universe3090/loot_tables/gameplay/discss.json"
         ]
       }
+    },
+    {
+      "name": "Soulcombine",
+      "type": "item",
+      "sortid": 442,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulcombine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/universe3090/models/item/soulcombine.json",
+          "src/main/java/net/wowamod/item/SoulcombineItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Will",
+      "type": "item",
+      "sortid": 443,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "will",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/WillItem.java",
+          "src/main/resources/assets/universe3090/models/item/will.json"
+        ]
+      }
+    },
+    {
+      "name": "Lifekolba",
+      "type": "item",
+      "sortid": 444,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lifekolba",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/LifekolbaItem.java",
+          "src/main/resources/assets/universe3090/models/item/lifekolba.json"
+        ]
+      }
+    },
+    {
+      "name": "CharasknifeRightclicked",
+      "type": "procedure",
+      "sortid": 445,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charasknife_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/CharasknifeRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SoulcombineItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 446,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "soulcombine_item_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/procedures/SoulcombineItemInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -7563,9 +7659,11 @@
       "item.universe3090.instrumentprosto": "М.Т.В",
       "item.universe3090.derjatili": "Держатель для необычного механизма",
       "item.universe3090.whiteemerald": "Белый Изумруд",
+      "item.universe3090.soulcombine": "Soul combine",
       "block.universe3090.cable_txcc": "Cable",
       "item.universe3090.mirror_componentberillium": "Mirror Component berillium",
       "item.universe3090.soulsvazivatel": "Связыватель душ",
+      "item.universe3090.will": "Will",
       "gui.universe3090.guidebookstart.button_nazad": "Назад",
       "item.universe3090.wowabronya_boots": "Ботинки вовы3090",
       "item.universe3090.redemerald": "Красный Изумруд",
@@ -7777,6 +7875,7 @@
       "death.attack.soulsworddamage.item": "%1$s Уничтожен %2$s используя %3$s",
       "item.universe3090.shantyogg": "Shanty ogg",
       "item.universe3090.kolba": "Пустая колба",
+      "item.universe3090.lifekolba": "Life kolba",
       "block.universe3090.darkgrassblockniz": "Dark Grass",
       "item.universe3090.osnovaaaaglass": "Незакалённое Усиленное стекло",
       "item.universe3090.ironplastinewowa": "Железная пластина",
@@ -7811,9 +7910,11 @@
       "item.universe3090.instrumentprosto": "М.Т.В",
       "item.universe3090.derjatili": "Держатель для необычного механизма",
       "item.universe3090.whiteemerald": "Белый Изумруд",
+      "item.universe3090.soulcombine": "Soul combine",
       "block.universe3090.cable_txcc": "Cable",
       "item.universe3090.mirror_componentberillium": "Mirror Component berillium",
       "item.universe3090.soulsvazivatel": "Связыватель Душ",
+      "item.universe3090.will": "Will",
       "gui.universe3090.guidebookstart.button_nazad": "Назад",
       "item.universe3090.wowabronya_boots": "Ботинки 3090",
       "item.universe3090.redemerald": "Красный Изумруд",
@@ -8025,6 +8126,7 @@
       "death.attack.soulsworddamage.item": "%1$s Уничтожен %2$s используя %3$s",
       "item.universe3090.shantyogg": "Shanty ogg",
       "item.universe3090.kolba": "Пустая колба",
+      "item.universe3090.lifekolba": "Life kolba",
       "block.universe3090.darkgrassblockniz": "Dark Grass",
       "item.universe3090.osnovaaaaglass": "Незакалённое Усиленное стекло",
       "item.universe3090.ironplastinewowa": "iron plastine",
