@@ -29,4 +29,5 @@ public class Universe3090ModSounds {
 	public static final RegistryObject<SoundEvent> SHANTY_OGG = REGISTRY.register("shanty.ogg", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("universe3090", "shanty.ogg")));
 	public static final RegistryObject<SoundEvent> HOLLOW_KNIGHT_OST_SEALED_VESSEL = REGISTRY.register("hollow-knight-ost-sealed-vessel",
 			() -> SoundEvent.createVariableRangeEvent(new ResourceLocation("universe3090", "hollow-knight-ost-sealed-vessel")));
+	public static final RegistryObject<SoundEvent> WOWA_WORLD_THEME = REGISTRY.register("wowa_world_theme", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("universe3090", "wowa_world_theme")));
 }

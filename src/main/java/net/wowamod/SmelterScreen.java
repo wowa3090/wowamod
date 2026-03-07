@@ -75,7 +75,7 @@ public class SmelterScreen extends AbstractContainerScreen<SmelterMenu> {
         
         // ПОКАЗЫВАЕМ ЭНЕРГИЮ ТЕКСТОМ (Красным цветом, правее)
         int energy = this.menu.getEnergy();
-        graphics.drawString(this.font, "FE: " + energy, 120, 12, 0x000000, false);
+        graphics.drawString(this.font, "V: " + energy, 120, 12, 0x000000, false);
         
         // ПОКАЗЫВАЕМ ПРОЦЕНТЫ КРАФТА (Зеленым цветом, над стрелкой)
         int maxProgress = this.menu.data.get(1);

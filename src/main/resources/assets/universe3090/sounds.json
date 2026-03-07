@@ -113,5 +113,14 @@
         "stream": true
       }
     ]
+  },
+  "wowa_world_theme": {
+    "subtitle": "subtitles.wowa_world_theme",
+    "sounds": [
+      {
+        "name": "universe3090:celestial_plains_converted",
+        "stream": false
+      }
+    ]
   }
 }

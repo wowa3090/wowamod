@@ -33,7 +33,7 @@
       "falpha": 0.0
     },
     "ambientSound": {
-      "value": ""
+      "value": "CUSTOM:wowa_world_theme"
     },
     "additionsSound": {
       "value": ""

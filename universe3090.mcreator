@@ -6752,6 +6752,14 @@
       ],
       "category": "music",
       "subtitle": "SealedVessel - Hollow Knight OST"
+    },
+    {
+      "name": "wowa_world_theme",
+      "files": [
+        "celestial_plains_converted"
+      ],
+      "category": "master",
+      "subtitle": "wowa_world_theme.mp3"
     }
   ],
   "language_map": {
@@ -6943,6 +6951,7 @@
       "item.universe3090.red_emerald_piece": "Осколок красного изумруда",
       "item.universe3090.the_welcome_center.desc": "A Dark Place 2 [ FADING PLACE ] Theme - The Welcome Center (XerStudios)",
       "item.universe3090.izolationw": "Часть изоляции",
+      "subtitles.wowa_world_theme": "wowa_world_theme.mp3",
       "item.universe3090.shadowblade": "Теневой клинок",
       "item.universe3090.dissasebmlyrequired.desc": "Dissasebmly Required",
       "block.universe3090.aluminium_ore_wowa": "Бокситы",
@@ -7182,6 +7191,7 @@
       "item.universe3090.red_emerald_piece": "Red Emerald Piece",
       "item.universe3090.the_welcome_center.desc": "A Dark Place 2 [ FADING PLACE ] Theme - The Welcome Center (XerStudios)",
       "item.universe3090.izolationw": "Часть изоляции",
+      "subtitles.wowa_world_theme": "wowa_world_theme.mp3",
       "item.universe3090.shadowblade": "Теневой клинок",
       "item.universe3090.dissasebmlyrequired.desc": "Dissasebmly Required",
       "block.universe3090.aluminium_ore_wowa": "Бокситы",
