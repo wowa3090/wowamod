@@ -13,11 +13,11 @@ import org.lwjgl.glfw.GLFW;
 public class KeyBindings {
     // Создаем нашу кнопку. По умолчанию - V, но игрок сможет ее изменить.
     public static final KeyMapping ENERGY_KEY = new KeyMapping(
-            "key.wowamod.energy_balls", // Имя в настройках (можно добавить в en_us.json)
+            "key.universe3090.energy_balls", // Имя в настройках (можно добавить в en_us.json)
             KeyConflictContext.IN_GAME,
             InputConstants.Type.KEYSYM,
             GLFW.GLFW_KEY_V,
-            "category.wowamod" // Категория
+            "key.categories.wowamod" // Категория
     );
 
     @SubscribeEvent
