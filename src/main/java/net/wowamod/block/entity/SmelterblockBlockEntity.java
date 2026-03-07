@@ -154,13 +154,9 @@ public class SmelterblockBlockEntity extends BlockEntity implements MenuProvider
             return lazyItemHandler.cast();
         }
         if (cap == ForgeCapabilities.ENERGY) {
-            if (side == null) return lazyEnergyHandler.cast();
-            if (this.getBlockState().hasProperty(SmelterblockBlock.FACING)) {
-                Direction back = this.getBlockState().getValue(SmelterblockBlock.FACING).getOpposite();
-                if (side == back) {
-                    return lazyEnergyHandler.cast();
-                }
-            }
+            // УБИРАЕМ ПРОВЕРКУ СТОРОНЫ! 
+            // Теперь механизм принимает энергию сверху, снизу, сбоку и сзади.
+            return lazyEnergyHandler.cast(); 
         }
         return super.getCapability(cap, side);
     }

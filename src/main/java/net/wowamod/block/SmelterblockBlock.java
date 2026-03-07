@@ -1,10 +1,8 @@
 package net.wowamod.block;
 
 import net.wowamod.block.entity.SmelterblockBlockEntity;
-
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.network.NetworkHooks;
-
 import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -17,7 +15,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.EntityBlock;
-import net.minecraft.world.level.block.DirectionalBlock;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
@@ -41,12 +39,44 @@ import java.util.List;
 import java.util.Collections;
 
 public class SmelterblockBlock extends Block implements EntityBlock {
-    public static final DirectionProperty FACING = DirectionalBlock.FACING;
+    // Используем HorizontalDirectionalBlock.FACING вместо DirectionalBlock.FACING
+    // Это автоматически ограничивает доступные направления только горизонтальными (N, S, E, W)
+    public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
     public SmelterblockBlock() {
-        super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(2f, 10f).requiresCorrectToolForDrops());
+        super(BlockBehaviour.Properties.of()
+            .sound(SoundType.METAL)
+            .strength(2f, 10f)
+            .requiresCorrectToolForDrops());
+        
+        // По умолчанию смотрим на север
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
     }
+
+    @Override
+    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+        builder.add(FACING);
+    }
+
+    @Override
+    public BlockState getStateForPlacement(BlockPlaceContext context) {
+        // context.getHorizontalDirection() возвращает направление, куда смотрит игрок (только по X/Z)
+        // getOpposite() заставляет блок смотреть "лицом" к игроку при установке
+        return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
+    }
+
+    // Вращение и зеркальное отображение теперь тоже будут работать только в горизонтальной плоскости
+    @Override
+    public BlockState rotate(BlockState state, Rotation rot) {
+        return state.setValue(FACING, rot.rotate(state.getValue(FACING)));
+    }
+
+    @Override
+    public BlockState mirror(BlockState state, Mirror mirrorIn) {
+        return state.rotate(mirrorIn.getRotation(state.getValue(FACING)));
+    }
+
+    // --- ОСТАЛЬНЫЕ МЕТОДЫ БЕЗ ИЗМЕНЕНИЙ ---
 
     @Override
     public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
@@ -59,24 +89,6 @@ public class SmelterblockBlock extends Block implements EntityBlock {
     }
 
     @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(FACING);
-    }
-
-    @Override
-    public BlockState getStateForPlacement(BlockPlaceContext context) {
-        return this.defaultBlockState().setValue(FACING, context.getNearestLookingDirection().getOpposite());
-    }
-
-    public BlockState rotate(BlockState state, Rotation rot) {
-        return state.setValue(FACING, rot.rotate(state.getValue(FACING)));
-    }
-
-    public BlockState mirror(BlockState state, Mirror mirrorIn) {
-        return state.rotate(mirrorIn.getRotation(state.getValue(FACING)));
-    }
-
-    @Override
     public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
         if (player.getInventory().getSelected().getItem() instanceof PickaxeItem tieredItem)
             return tieredItem.getTier().getLevel() >= 2;
@@ -86,8 +98,7 @@ public class SmelterblockBlock extends Block implements EntityBlock {
     @Override
     public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
         List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-        if (!dropsOriginal.isEmpty())
-            return dropsOriginal;
+        if (!dropsOriginal.isEmpty()) return dropsOriginal;
         return Collections.singletonList(new ItemStack(this, 1));
     }
 
@@ -101,8 +112,6 @@ public class SmelterblockBlock extends Block implements EntityBlock {
     public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
         return new SmelterblockBlockEntity(pos, state);
     }
-
-    // --- НОВЫЕ И ИСПРАВЛЕННЫЕ МЕТОДЫ НИЖЕ ---
 
     @Nullable
     @Override
@@ -131,7 +140,6 @@ public class SmelterblockBlock extends Block implements EntityBlock {
         if (state.getBlock() != newState.getBlock()) {
             BlockEntity blockEntity = world.getBlockEntity(pos);
             if (blockEntity instanceof SmelterblockBlockEntity be) {
-                // Извлекаем предметы из нового ItemStackHandler и дропаем их
                 be.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(handler -> {
                     for (int i = 0; i < handler.getSlots(); i++) {
                         Containers.dropItemStack(world, pos.getX(), pos.getY(), pos.getZ(), handler.getStackInSlot(i));
@@ -150,6 +158,6 @@ public class SmelterblockBlock extends Block implements EntityBlock {
 
     @Override
     public int getAnalogOutputSignal(BlockState blockState, Level world, BlockPos pos) {
-        return 0; // Возвращаем 0, так как мы больше не наследуем Container
+        return 0;
     }
 }

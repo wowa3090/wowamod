@@ -1,27 +1,31 @@
 {
-  "variants": {
-    "facing=north": {
-      "model": "universe3090:block/cable_n"
+  "multipart":[
+    {
+      "apply": { "model": "universe3090:block/cable_n" }
     },
-    "facing=east": {
-      "model": "universe3090:block/cable_n",
-      "y": 90
+    {
+      "when": { "north": "true" },
+      "apply": { "model": "universe3090:block/cable_e" }
     },
-    "facing=south": {
-      "model": "universe3090:block/cable_n",
-      "y": 180
+    {
+      "when": { "east": "true" },
+      "apply": { "model": "universe3090:block/cable_e", "y": 90 }
     },
-    "facing=west": {
-      "model": "universe3090:block/cable_n",
-      "y": 270
+    {
+      "when": { "south": "true" },
+      "apply": { "model": "universe3090:block/cable_e", "y": 180 }
     },
-    "facing=up": {
-      "model": "universe3090:block/cable_n",
-      "x": 270
+    {
+      "when": { "west": "true" },
+      "apply": { "model": "universe3090:block/cable_e", "y": 270 }
     },
-    "facing=down": {
-      "model": "universe3090:block/cable_n",
-      "x": 90
+    {
+      "when": { "up": "true" },
+      "apply": { "model": "universe3090:block/cable_e", "x": 270 }
+    },
+    {
+      "when": { "down": "true" },
+      "apply": { "model": "universe3090:block/cable_e", "x": 90 }
     }
-  }
+  ]
 }

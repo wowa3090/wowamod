@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "texture": "electrical_cable"
+        "cable": "electrical_cable"
       },
       "name": "default"
     }

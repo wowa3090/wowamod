@@ -1,7 +1,6 @@
 
 package net.wowamod.block;
 
-import net.wowamod.procedures.CableUpdateTickProcedure;
 import net.wowamod.init.Universe3090ModBlocks;
 import net.wowamod.block.entity.CableEBlockEntity;
 
@@ -31,8 +30,6 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.Containers;
-import net.minecraft.util.RandomSource;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
@@ -109,22 +106,6 @@ public class CableEBlock extends Block implements EntityBlock {
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(Universe3090ModBlocks.CABLE_N.get()));
-	}
-
-	@Override
-	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
-		super.onPlace(blockstate, world, pos, oldState, moving);
-		world.scheduleTick(pos, this, 1);
-	}
-
-	@Override
-	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
-		super.tick(blockstate, world, pos, random);
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-		CableUpdateTickProcedure.execute(world, x, y, z);
-		world.scheduleTick(pos, this, 1);
 	}
 
 	@Override
