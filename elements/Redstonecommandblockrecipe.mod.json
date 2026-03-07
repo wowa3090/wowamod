@@ -24,7 +24,7 @@
         "value": "Items.REPEATER"
       },
       {
-        "value": "Blocks.REDSTONE_BLOCK"
+        "value": "CUSTOM:Redstone9x"
       },
       {
         "value": "Items.COMPARATOR"

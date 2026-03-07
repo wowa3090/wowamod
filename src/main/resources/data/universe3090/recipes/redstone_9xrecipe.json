@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:redstone_block"
+    },
+    "b": {
+      "item": "universe3090:molotwowa"
+    }
+  },
+  "result": {
+    "item": "universe3090:redstone_9x",
+    "count": 1
+  }
+}

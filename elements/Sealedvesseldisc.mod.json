@@ -1,0 +1,24 @@
+{
+  "_fv": 57,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Sealed vessel [Hollow Knight OST] disc",
+    "rarity": "UNCOMMON",
+    "texture": "sealed_vessel",
+    "description": "Sealed vessel [Hollow Knight OST] disc",
+    "creativeTab": {
+      "value": "CUSTOM:Musicdiscs"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:hollow-knight-ost-sealed-vessel"
+    },
+    "lengthInTicks": 6900,
+    "analogOutput": 0
+  }
+}

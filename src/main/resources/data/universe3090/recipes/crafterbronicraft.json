@@ -4,7 +4,7 @@
   "pattern": [
     "aba",
     "cdc",
-    "eee"
+    "efe"
   ],
   "key": {
     "a": {
@@ -21,6 +21,9 @@
     },
     "e": {
       "item": "universe3090:copperplate"
+    },
+    "f": {
+      "item": "universe3090:redstone_9x"
     }
   },
   "result": {

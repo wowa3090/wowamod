@@ -9,7 +9,7 @@
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
-    "recipeShapeless": true,
+    "recipeShapeless": false,
     "recipeSlots": [
       {
         "value": ""
@@ -33,7 +33,7 @@
         "value": ""
       },
       {
-        "value": ""
+        "value": "CUSTOM:MirrorComponentberillium"
       },
       {
         "value": ""

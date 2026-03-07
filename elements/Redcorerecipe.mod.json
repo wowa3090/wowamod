@@ -12,13 +12,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:Redstone9x"
       },
       {
         "value": "CUSTOM:Rainbowemerald"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Redstone9x"
       },
       {
         "value": "CUSTOM:MirrorComponentberillium"
@@ -30,13 +30,13 @@
         "value": "CUSTOM:MirrorComponentberillium"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Redstone9x"
       },
       {
         "value": "Blocks.REDSTONE_BLOCK"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Redstone9x"
       }
     ],
     "recipeReturnStack": {

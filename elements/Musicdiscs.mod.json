@@ -1,0 +1,11 @@
+{
+  "_fv": 57,
+  "_type": "tab",
+  "definition": {
+    "name": "Music discs",
+    "icon": {
+      "value": "CUSTOM:Shantyogg"
+    },
+    "showSearch": false
+  }
+}

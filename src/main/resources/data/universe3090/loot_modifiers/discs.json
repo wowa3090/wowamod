@@ -1,0 +1,10 @@
+{
+  "type": "universe3090:universe3090_loot_modifier",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "gameplay/fishing/treasure"
+    }
+  ],
+  "lootTable": "universe3090:gameplay/discss"
+}

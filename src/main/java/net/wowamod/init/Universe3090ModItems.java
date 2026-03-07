@@ -22,7 +22,9 @@ import net.wowamod.item.SuperpalkaItem;
 import net.wowamod.item.SoulsvazivatelItem;
 import net.wowamod.item.SoulcoreItem;
 import net.wowamod.item.SolarpanelelementItem;
+import net.wowamod.item.ShantyoggItem;
 import net.wowamod.item.ShadowbladeItem;
+import net.wowamod.item.SealedvesseldiscItem;
 import net.wowamod.item.STBHswordItem;
 import net.wowamod.item.RotorItem;
 import net.wowamod.item.RoseItem;
@@ -309,6 +311,10 @@ public class Universe3090ModItems {
 	public static final RegistryObject<Item> SMELTERBLOCK = block(Universe3090ModBlocks.SMELTERBLOCK);
 	public static final RegistryObject<Item> MIRROR_COMPONENTBERILLIUM = REGISTRY.register("mirror_componentberillium", () -> new MirrorComponentberilliumItem());
 	public static final RegistryObject<Item> CHARASKNIFE = REGISTRY.register("charasknife", () -> new CharasknifeItem());
+	public static final RegistryObject<Item> BERILLIUMDEEPSLATE = block(Universe3090ModBlocks.BERILLIUMDEEPSLATE);
+	public static final RegistryObject<Item> REDSTONE_9X = block(Universe3090ModBlocks.REDSTONE_9X);
+	public static final RegistryObject<Item> SHANTYOGG = REGISTRY.register("shantyogg", () -> new ShantyoggItem());
+	public static final RegistryObject<Item> SEALEDVESSELDISC = REGISTRY.register("sealedvesseldisc", () -> new SealedvesseldiscItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

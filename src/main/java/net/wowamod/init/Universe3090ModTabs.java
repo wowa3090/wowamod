@@ -166,6 +166,8 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModBlocks.SMELTERBLOCK.get().asItem());
 				tabData.accept(Universe3090ModItems.MIRROR_COMPONENTBERILLIUM.get());
 				tabData.accept(Universe3090ModItems.CHARASKNIFE.get());
+				tabData.accept(Universe3090ModBlocks.BERILLIUMDEEPSLATE.get().asItem());
+				tabData.accept(Universe3090ModBlocks.REDSTONE_9X.get().asItem());
 			})
 
 					.build());
@@ -181,6 +183,13 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.REALITY_MACHINE.get());
 				tabData.accept(Universe3090ModItems.ACCESSVIOLATION.get());
 				tabData.accept(Universe3090ModItems.THE_WELCOME_CENTER.get());
+			})
+
+					.build());
+	public static final RegistryObject<CreativeModeTab> MUSICDISCS = REGISTRY.register("musicdiscs",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.universe3090.musicdiscs")).icon(() -> new ItemStack(Universe3090ModItems.SHANTYOGG.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(Universe3090ModItems.SHANTYOGG.get());
+				tabData.accept(Universe3090ModItems.SEALEDVESSELDISC.get());
 			})
 
 					.build());

@@ -10,6 +10,7 @@ import net.wowamod.block.SolarpanelgeneratorwBlock;
 import net.wowamod.block.SmelterblockBlock;
 import net.wowamod.block.RedstoneportBlock;
 import net.wowamod.block.RedstonecommandblockBlock;
+import net.wowamod.block.Redstone9xBlock;
 import net.wowamod.block.RedemptycoreBlock;
 import net.wowamod.block.RedcoreBlock;
 import net.wowamod.block.PortconstructorBlock;
@@ -49,6 +50,7 @@ import net.wowamod.block.CableEBlock;
 import net.wowamod.block.BlockforprofessiafixBlock;
 import net.wowamod.block.BlackWallsMyplaceBlock;
 import net.wowamod.block.BigBatterywBlock;
+import net.wowamod.block.BerilliumdeepslateBlock;
 import net.wowamod.block.BerilliumBlock;
 import net.wowamod.block.AluminiumBlock;
 import net.wowamod.Universe3090Mod;
@@ -112,6 +114,8 @@ public class Universe3090ModBlocks {
 	public static final RegistryObject<Block> REDCORE = REGISTRY.register("redcore", () -> new RedcoreBlock());
 	public static final RegistryObject<Block> BERILLIUM = REGISTRY.register("berillium", () -> new BerilliumBlock());
 	public static final RegistryObject<Block> SMELTERBLOCK = REGISTRY.register("smelterblock", () -> new SmelterblockBlock());
+	public static final RegistryObject<Block> BERILLIUMDEEPSLATE = REGISTRY.register("berilliumdeepslate", () -> new BerilliumdeepslateBlock());
+	public static final RegistryObject<Block> REDSTONE_9X = REGISTRY.register("redstone_9x", () -> new Redstone9xBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

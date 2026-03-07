@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "universe3090:block/redstone_compressed",
+    "particle": "universe3090:block/redstone_compressed"
+  },
+  "render_type": "solid"
+}

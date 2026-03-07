@@ -2,21 +2,24 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " a ",
-    "bcb",
-    " d "
+    "aba",
+    "cdc",
+    "aea"
   ],
   "key": {
     "a": {
-      "item": "universe3090:rainbowemerald"
+      "item": "universe3090:redstone_9x"
     },
     "b": {
-      "item": "universe3090:mirror_componentberillium"
+      "item": "universe3090:rainbowemerald"
     },
     "c": {
-      "item": "universe3090:redemptycore"
+      "item": "universe3090:mirror_componentberillium"
     },
     "d": {
+      "item": "universe3090:redemptycore"
+    },
+    "e": {
       "item": "minecraft:redstone_block"
     }
   },

@@ -95,5 +95,23 @@
         "stream": true
       }
     ]
+  },
+  "shanty.ogg": {
+    "subtitle": "subtitles.shanty.ogg",
+    "sounds": [
+      {
+        "name": "universe3090:vz9x5xy5qwdy7r1yyfeozfxq3t3nkpm",
+        "stream": true
+      }
+    ]
+  },
+  "hollow-knight-ost-sealed-vessel": {
+    "subtitle": "subtitles.hollow-knight-ost-sealed-vessel",
+    "sounds": [
+      {
+        "name": "universe3090:ytdown.com_youtube_hollow-knight-ost-sealed-vessel_media_ze0rk-m0w2a_006_144p",
+        "stream": true
+      }
+    ]
   }
 }

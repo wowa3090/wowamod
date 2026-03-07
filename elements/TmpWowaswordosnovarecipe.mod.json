@@ -12,7 +12,7 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Blackironingot"
+        "value": "CUSTOM:Darkironplastine"
       },
       {
         "value": "CUSTOM:Extractredsoul"
@@ -30,13 +30,13 @@
         "value": "CUSTOM:Extractredsoul"
       },
       {
-        "value": "CUSTOM:Reddiamondlapis"
+        "value": "CUSTOM:RedPlastine"
       },
       {
         "value": "CUSTOM:Extractredsoul"
       },
       {
-        "value": "CUSTOM:AluminiumIngot"
+        "value": "CUSTOM:AluminiumPlate"
       }
     ],
     "recipeReturnStack": {

@@ -26,4 +26,7 @@ public class Universe3090ModSounds {
 	public static final RegistryObject<SoundEvent> BEYOND_THE_BRIGHT = REGISTRY.register("beyond_the_bright", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("universe3090", "beyond_the_bright")));
 	public static final RegistryObject<SoundEvent> THE_WELCOME_CENTER_FULL_VER = REGISTRY.register("the_welcome_center_full_ver", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("universe3090", "the_welcome_center_full_ver")));
 	public static final RegistryObject<SoundEvent> REALITY_MACHINE = REGISTRY.register("reality_machine", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("universe3090", "reality_machine")));
+	public static final RegistryObject<SoundEvent> SHANTY_OGG = REGISTRY.register("shanty.ogg", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("universe3090", "shanty.ogg")));
+	public static final RegistryObject<SoundEvent> HOLLOW_KNIGHT_OST_SEALED_VESSEL = REGISTRY.register("hollow-knight-ost-sealed-vessel",
+			() -> SoundEvent.createVariableRangeEvent(new ResourceLocation("universe3090", "hollow-knight-ost-sealed-vessel")));
 }

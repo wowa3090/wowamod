@@ -1,0 +1,24 @@
+{
+  "_fv": 57,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Shanty ogg",
+    "rarity": "UNCOMMON",
+    "texture": "shanty_ogg",
+    "description": "Shanty ogg",
+    "creativeTab": {
+      "value": "CUSTOM:Musicdiscs"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:shanty.ogg"
+    },
+    "lengthInTicks": 3060,
+    "analogOutput": 0
+  }
+}

@@ -3,7 +3,7 @@
   "category": "misc",
   "pattern": [
     "aba",
-    "cdc",
+    "cde",
     "aba"
   ],
   "key": {
@@ -14,10 +14,13 @@
       "item": "minecraft:cobblestone"
     },
     "c": {
-      "item": "minecraft:redstone"
+      "item": "minecraft:repeater"
     },
     "d": {
       "item": "minecraft:heavy_weighted_pressure_plate"
+    },
+    "e": {
+      "item": "minecraft:redstone"
     }
   },
   "result": {
