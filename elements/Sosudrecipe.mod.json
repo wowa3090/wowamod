@@ -9,40 +9,40 @@
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
-    "recipeShapeless": true,
+    "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Yellowsoulpiece"
+        "value": "TAG:minecraft:soulspiceces"
       },
       {
-        "value": "CUSTOM:ExtractYellowSoul"
+        "value": "TAG:minecraft:soulspiceces"
       },
       {
-        "value": "CUSTOM:Yellowsoulpiece"
+        "value": "TAG:minecraft:soulspiceces"
       },
       {
-        "value": "CUSTOM:ExtractYellowSoul"
+        "value": "TAG:minecraft:soulspiceces"
       },
       {
-        "value": "CUSTOM:Sosud"
+        "value": "CUSTOM:Will"
       },
       {
-        "value": "CUSTOM:ExtractYellowSoul"
+        "value": "TAG:minecraft:soulspiceces"
       },
       {
-        "value": "CUSTOM:Yellowsoulpiece"
+        "value": "TAG:minecraft:soulspiceces"
       },
       {
-        "value": "CUSTOM:ExtractYellowSoul"
+        "value": "TAG:minecraft:soulspiceces"
       },
       {
-        "value": "CUSTOM:Yellowsoulpiece"
+        "value": "TAG:minecraft:soulspiceces"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Yellowsoul"
+      "value": "CUSTOM:Sosud"
     },
-    "name": "yellowsoulcraft",
+    "name": "sosudrecipe",
     "namespace": "mod"
   }
 }

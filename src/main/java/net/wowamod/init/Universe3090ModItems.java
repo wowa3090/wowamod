@@ -23,6 +23,7 @@ import net.wowamod.item.SuperpalkaItem;
 import net.wowamod.item.SoulsvazivatelItem;
 import net.wowamod.item.SoulcoreItem;
 import net.wowamod.item.SoulcombineItem;
+import net.wowamod.item.SosudItem;
 import net.wowamod.item.SolarpanelelementItem;
 import net.wowamod.item.ShantyoggItem;
 import net.wowamod.item.ShadowbladeItem;
@@ -306,6 +307,7 @@ public class Universe3090ModItems {
 	public static final RegistryObject<Item> SOULCOMBINE = REGISTRY.register("soulcombine", () -> new SoulcombineItem());
 	public static final RegistryObject<Item> WILL = REGISTRY.register("will", () -> new WillItem());
 	public static final RegistryObject<Item> LIFEKOLBA = REGISTRY.register("lifekolba", () -> new LifekolbaItem());
+	public static final RegistryObject<Item> SOSUD = REGISTRY.register("sosud", () -> new SosudItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

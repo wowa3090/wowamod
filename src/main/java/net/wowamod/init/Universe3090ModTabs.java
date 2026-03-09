@@ -171,6 +171,7 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.SOULCOMBINE.get());
 				tabData.accept(Universe3090ModItems.WILL.get());
 				tabData.accept(Universe3090ModItems.LIFEKOLBA.get());
+				tabData.accept(Universe3090ModItems.SOSUD.get());
 			})
 
 					.build());

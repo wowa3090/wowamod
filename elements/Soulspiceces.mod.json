@@ -1,0 +1,37 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Redsoulpiece"
+      },
+      {
+        "value": "CUSTOM:Orangesoulpiece"
+      },
+      {
+        "value": "CUSTOM:Yellowsoulpiece"
+      },
+      {
+        "value": "CUSTOM:Greensoulpiece"
+      },
+      {
+        "value": "CUSTOM:Bluesoulpiece"
+      },
+      {
+        "value": "CUSTOM:Lightbluesoulpiece"
+      },
+      {
+        "value": "CUSTOM:Purplesoulpiece"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "soulspiceces",
+    "namespace": "minecraft"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "minecraft:soulspiceces"
+    },
+    "b": {
+      "item": "universe3090:will"
+    }
+  },
+  "result": {
+    "item": "universe3090:sosud",
+    "count": 1
+  }
+}

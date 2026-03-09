@@ -6572,6 +6572,59 @@
           }
         ]
       }
+    },
+    {
+      "name": "Charaskniferecipe",
+      "type": "recipe",
+      "sortid": 447,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charaskniferecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/charaskniferecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Sosud",
+      "type": "item",
+      "sortid": 448,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sosud",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/SosudItem.java",
+          "src/main/resources/assets/universe3090/models/item/sosud.json"
+        ]
+      }
+    },
+    {
+      "name": "Soulspiceces",
+      "type": "tag",
+      "sortid": 449,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulspiceces",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/soulspiceces.json"
+        ]
+      }
+    },
+    {
+      "name": "Sosudrecipe",
+      "type": "recipe",
+      "sortid": 450,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sosudrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/sosudrecipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -6878,6 +6931,7 @@
       "gui.universe3090.guidebookstart.label_nachalo": "Начало",
       "item.universe3090.accessviolation.desc": "A Dark Place 2 [ FADING PLACE ] Theme - ACCESS VIOLATION (XerStudios)",
       "item.universe3090.wowabronya_helmet": "Шлем вовы3090",
+      "item.universe3090.sosud": "Sosud",
       "item.universe3090.purple_emerald_piece": "Осколок пёрпл изумруда",
       "item.universe3090.reality_machine": "Reality Machine",
       "item.universe3090.eliss_claws": "Когти Элисс",
@@ -7118,6 +7172,7 @@
       "gui.universe3090.guidebookstart.label_nachalo": "Начало",
       "item.universe3090.accessviolation.desc": "A Dark Place 2 [ FADING PLACE ] Theme - ACCESS VIOLATION (XerStudios)",
       "item.universe3090.wowabronya_helmet": "Шлем 3090",
+      "item.universe3090.sosud": "Sosud",
       "item.universe3090.purple_emerald_piece": "Purple Emerald Piece",
       "item.universe3090.reality_machine": "Reality Machine",
       "item.universe3090.eliss_claws": "Eliss Claws",

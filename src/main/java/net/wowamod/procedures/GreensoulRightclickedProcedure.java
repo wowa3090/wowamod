@@ -2,7 +2,10 @@ package net.wowamod.procedures;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
+import net.minecraft.world.phys.EntityHitResult;
+import net.minecraft.world.entity.projectile.ProjectileUtil;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
@@ -12,150 +15,108 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 
-import java.util.List;
-import java.util.Comparator;
-
 public class GreensoulRightclickedProcedure {
-    public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
-        if (entity == null) return;
+    // Убрали X, Y, Z из аргументов, так как мы берем координаты прямо из сущностей
+    public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
+        if (entity == null || !(world instanceof ServerLevel serverLevel)) return;
 
         // Параметры системы
-        final double HEAL_AMOUNT = 4.0;
-        final double RADIUS = 5.0; // Радиус поиска цели
-        final double MAX_ANGLE = 0.2; // Максимальный угол от направления взгляда (в радианах)
+        final float HEAL_AMOUNT = 12.0F;
+        final double RADIUS = 16.0; // Радиус поиска цели (16 блоков)
 
         LivingEntity target = null;
-        boolean healed = false; // Флаг успешного лечения
+        boolean healed = false;
 
-        if (entity instanceof Player) {
-            Player player = (Player) entity;
-            Vec3 lookVec = player.getLookAngle(); // Направление взгляда
-            Vec3 startPos = player.getEyePosition(1.0F); // Позиция глаз игрока
-            Vec3 endPos = startPos.add(lookVec.scale(RADIUS)); // Конечная точка луча взгляда
+        if (entity instanceof Player player) {
+            Vec3 startPos = player.getEyePosition(1.0F);
+            Vec3 lookVec = player.getViewVector(1.0F);
+            Vec3 endPos = startPos.add(lookVec.x * RADIUS, lookVec.y * RADIUS, lookVec.z * RADIUS);
 
-            // Определяем область поиска
-            AABB searchArea = new AABB(
-                Math.min(startPos.x, endPos.x) - RADIUS,
-                Math.min(startPos.y, endPos.y) - RADIUS,
-                Math.min(startPos.z, endPos.z) - RADIUS,
-                Math.max(startPos.x, endPos.x) + RADIUS,
-                Math.max(startPos.y, endPos.y) + RADIUS,
-                Math.max(startPos.z, endPos.z) + RADIUS
+            // Создаем коробку поиска вокруг луча взгляда
+            AABB searchArea = player.getBoundingBox().expandTowards(lookVec.scale(RADIUS)).inflate(1.0D);
+
+            // Ванильный и самый оптимизированный способ найти сущность на линии взгляда
+            EntityHitResult hitResult = ProjectileUtil.getEntityHitResult(
+                player, startPos, endPos, searchArea,
+                e -> e instanceof LivingEntity && e != player, RADIUS * RADIUS
             );
 
-            // Получаем список сущностей в области
-            List<Entity> entities = world.getEntitiesOfClass(Entity.class, searchArea);
-            // Фильтруем: оставляем только LivingEntity, исключаем самого игрока
-            entities.removeIf(e -> !(e instanceof LivingEntity) || e == player);
-            // Сортируем по расстоянию до игрока
-            entities.sort(Comparator.comparingDouble(e -> e.distanceToSqr(player)));
-
-            // Проверяем каждую сущность в отсортированном списке
-            for (Entity e : entities) {
-                // Вектор от игрока до сущности
-                Vec3 toEntity = e.position().subtract(startPos).normalize();
-                // Вычисляем угол между направлением взгляда и вектором к сущности
-                double angle = Math.acos(lookVec.dot(toEntity));
-
-                // Если угол меньше порога, это наша цель
-                if (angle <= MAX_ANGLE) {
-                    target = (LivingEntity) e;
-                    break; // Нашли ближайшую подходящую цель
-                }
+            if (hitResult != null && hitResult.getEntity() instanceof LivingEntity foundEntity) {
+                target = foundEntity;
             }
         }
 
         // Если по направлению взгляда цель не найдена, лечим самого игрока
-        if (target == null && entity instanceof LivingEntity) {
-            target = (LivingEntity) entity;
+        if (target == null && entity instanceof LivingEntity livingEntity) {
+            target = livingEntity;
         }
 
-        // Лечение цели, если её здоровье не максимальное
+        // Лечение цели
         if (target != null && target.getHealth() < target.getMaxHealth()) {
-            // Рассчитываем новое здоровье
-            float health = target.getHealth();
-            float newHealth = Math.min(health + (float) HEAL_AMOUNT, target.getMaxHealth());
+            float newHealth = Math.min(target.getHealth() + HEAL_AMOUNT, target.getMaxHealth());
             target.setHealth(newHealth);
-            healed = true; // Устанавливаем флаг успешного лечения
+            healed = true;
 
-            // Воспроизводим звук лечения
-            world.playSound(null, BlockPos.containing(x, y, z),
-                SoundEvents.EXPERIENCE_ORB_PICKUP, // Можно заменить на другой звук лечения
+            // Звук (играется от позиции цели)
+            world.playSound(null, BlockPos.containing(target.position()),
+                SoundEvents.EXPERIENCE_ORB_PICKUP,
                 SoundSource.PLAYERS,
-                1.0F, // Громкость
-                1.2F  // Высота тона
+                1.0F, 1.2F
             );
 
-            // Генерируем частицы 'HEART' над целью
-            for (int i = 0; i < 12; i++) {
-                world.addParticle(ParticleTypes.HEART,
-                    target.getX() + (world.getRandom().nextDouble() - 0.5) * 0.5, // Случайное смещение X
-                    target.getY() + 1.8 + (world.getRandom().nextDouble() - 0.5) * 0.3, // Случайное смещение Y над головой
-                    target.getZ() + (world.getRandom().nextDouble() - 0.5) * 0.5, // Случайное смещение Z
-                    0, 0.15, 0); // Скорость (маленькие прыжки)
-            }
+            // ==========================================
+            // ВИЗУАЛЬНЫЕ ЭФФЕКТЫ (ОПТИМИЗИРОВАННЫЕ)
+            // ==========================================
+            
+            // 1. Сердечки над головой (один пакет вместо цикла)
+            serverLevel.sendParticles(ParticleTypes.HEART,
+                target.getX(), target.getY() + target.getBbHeight() + 0.3, target.getZ(),
+                7, // Количество частиц
+                0.3, 0.2, 0.3, // Разброс X, Y, Z
+                0.05 // Скорость
+            );
 
-            // Дополнительные эффекты, если лечение НЕ для самого игрока
-            if (healed && !target.equals(entity)) {
-                Vec3 start = entity.getEyePosition(1.0F); // Начало луча (глаза игрока)
-                Vec3 end = target.position().add(0, target.getBbHeight() / 2, 0); // Конец луча (центр цели)
-                Vec3 direction = end.subtract(start); // Вектор направления луча
+            // 2. Вспышка искр вокруг цели (один пакет вместо цикла на 50 итераций)
+            serverLevel.sendParticles(ParticleTypes.ELECTRIC_SPARK,
+                target.getX(), target.getY() + (target.getBbHeight() / 2), target.getZ(),
+                30, // Количество
+                target.getBbWidth() / 2, target.getBbHeight() / 2, target.getBbWidth() / 2, // Разброс по хитбоксу
+                0.1 // Скорость разлета
+            );
 
-                // Создание частиц луча 'ELECTRIC_SPARK' от игрока к цели
-                int particles = 30;
-                for (int i = 0; i < particles; i++) {
-                    double progress = (double) i / particles; // Прогресс вдоль луча (0.0 - 1.0)
-                    Vec3 pos = start.add(direction.scale(progress)); // Позиция частицы на луче
+            // Дополнительные эффекты, если лечим кого-то другого на расстоянии
+            if (!target.equals(entity)) {
+                
+                // 3. Аура счастливого жителя (один пакет вместо самописного круга)
+                serverLevel.sendParticles(ParticleTypes.HAPPY_VILLAGER,
+                    target.getX(), target.getY() + target.getBbHeight() / 2, target.getZ(),
+                    15, 0.5, 0.5, 0.5, 0.0
+                );
 
-                    world.addParticle(ParticleTypes.ELECTRIC_SPARK,
-                        pos.x, pos.y, pos.z, // Координаты
-                        0, 0.05, 0); // Маленькая вертикальная скорость
-                }
+                // 4. Луч от игрока к цели
+                Vec3 start = entity.getEyePosition(1.0F).subtract(0, 0.2, 0); // Чуть ниже глаз
+                Vec3 end = target.position().add(0, target.getBbHeight() / 2, 0);
+                Vec3 direction = end.subtract(start);
+                
+                int particles = 15; // Уменьшено до 15 для сохранения FPS без потери визуала
+                for (int i = 0; i <= particles; i++) {
+                    double progress = (double) i / particles;
+                    Vec3 pos = start.add(direction.scale(progress));
 
-                // Аура частиц 'HAPPY_VILLAGER' вокруг цели
-                for (int i = 0; i < 15; i++) {
-                    double angle = i * Math.PI * 2 / 15; // Угол для круга
-                    double radius = 0.7; // Радиус ауры
-
-                    world.addParticle(ParticleTypes.HAPPY_VILLAGER,
-                        target.getX() + Math.cos(angle) * radius, // X по кругу
-                        target.getY() + 1.0, // Y на уровне глаз цели
-                        target.getZ() + Math.sin(angle) * radius, // Z по кругу
-                        0, 0.1, 0); // Скорость
-                }
-            }
-
-            // Применяем визуальный эффект сверкания к цели (независимо от того, сам игрок или нет)
-            if (healed) {
-                // Интенсивная вспышка частиц 'ELECTRIC_SPARK' из позиции цели
-                for (int i = 0; i < 50; i++) { // Большое количество частиц для вспышки
-                    double offsetX = (world.getRandom().nextDouble() - 0.5) * target.getBbWidth(); // Смещение в пределах хитбокса X
-                    double offsetY = world.getRandom().nextDouble() * target.getBbHeight(); // Смещение в пределах хитбокса Y
-                    double offsetZ = (world.getRandom().nextDouble() - 0.5) * target.getBbWidth(); // Смещение в пределах хитбокса Z
-
-                    world.addParticle(ParticleTypes.ELECTRIC_SPARK,
-                        target.getX() + offsetX, // X центра + смещение
-                        target.getY() + offsetY, // Y центра + смещение
-                        target.getZ() + offsetZ, // Z центра + смещение
-                        (world.getRandom().nextDouble() - 0.5) * 0.2, // Маленькая случайная скорость X
-                        (world.getRandom().nextDouble() - 0.5) * 0.2, // Маленькая случайная скорость Y
-                        (world.getRandom().nextDouble() - 0.5) * 0.2  // Маленькая случайная скорость Z
+                    // Отправляем по 1 частице вдоль линии
+                    serverLevel.sendParticles(ParticleTypes.ELECTRIC_SPARK,
+                        pos.x, pos.y, pos.z,
+                        1, 0, 0, 0, 0
                     );
                 }
             }
 
-
-            // Уменьшаем прочность предмета, если игрок не в творческом режиме
-            if (entity instanceof Player) {
-                Player player = (Player) entity;
-                if (!player.isCreative()) {
-                    itemstack.hurtAndBreak(1, player,
-                        p -> p.broadcastBreakEvent(p.getUsedItemHand()) // Уведомление об износе
-                    );
-                }
+            // Уменьшаем прочность предмета
+            if (entity instanceof Player player && !player.isCreative()) {
+                itemstack.hurtAndBreak(1, player,
+                    p -> p.broadcastBreakEvent(p.getUsedItemHand())
+                );
             }
         }
-        // Если лечение не произошло (здоровье цели уже максимальное), можно добавить другую реакцию
-        // например, другой звук или сообщение игроку.
     }
 }

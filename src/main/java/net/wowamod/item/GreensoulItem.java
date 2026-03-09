@@ -26,29 +26,29 @@ public class GreensoulItem extends Item {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-        InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-        ItemStack itemstack = ar.getObject();
+        ItemStack itemstack = entity.getItemInHand(hand);
         
-        // Вызов только на серверной стороне
+        // Вызов логики на серверной стороне
         if (!world.isClientSide()) {
             GreensoulRightclickedProcedure.execute(
                 world, 
-                entity.getX(), 
-                entity.getY(), 
-                entity.getZ(), 
                 entity, 
                 itemstack
             );
         }
         
-        // Анимация использования даже если здоровье полное
+        // Добавляем перезарядку (20 тиков = 1 секунда), чтобы не спамили и не лагали эффектами
+        entity.getCooldowns().addCooldown(this, 20);
+        
+        // Анимация использования
         entity.swing(hand, true);
         
-        return ar;
+        // Правильное возвращение результата
+        return InteractionResultHolder.sidedSuccess(itemstack, world.isClientSide());
     }
     
     @Override
     public int getUseDuration(ItemStack itemstack) {
-        return 20; // Время анимации использования
+        return 20;
     }
 }
