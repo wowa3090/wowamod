@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "texture_rose",
+        "1": "texture_jar"
+      },
+      "name": "default"
+    }
+  }
+}

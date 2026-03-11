@@ -20,6 +20,7 @@ import net.wowamod.init.Universe3090ModVillagerProfessions;
 import net.wowamod.init.Universe3090ModTabs;
 import net.wowamod.init.Universe3090ModSounds;
 import net.wowamod.init.Universe3090ModParticleTypes;
+import net.wowamod.init.Universe3090ModPaintings;
 import net.wowamod.init.Universe3090ModMobEffects;
 import net.wowamod.init.Universe3090ModMenus;
 import net.wowamod.init.Universe3090ModItems;
@@ -69,6 +70,7 @@ public class Universe3090Mod {
 
 		Universe3090ModMobEffects.REGISTRY.register(bus);
 
+		Universe3090ModPaintings.REGISTRY.register(bus);
 		Universe3090ModParticleTypes.REGISTRY.register(bus);
 		Universe3090ModVillagerProfessions.PROFESSIONS.register(bus);
 		Universe3090ModMenus.REGISTRY.register(bus);

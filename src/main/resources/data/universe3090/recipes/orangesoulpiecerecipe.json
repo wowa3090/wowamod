@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "universe3090:charasknife"
+    },
+    {
+      "item": "universe3090:orangesoul"
+    }
+  ],
+  "result": {
+    "item": "universe3090:orangesoulpiece",
+    "count": 9
+  }
+}

@@ -111,7 +111,7 @@
     "spawnIgloo": false,
     "spawnOceanMonument": false,
     "spawnShipwreck": false,
-    "spawnShipwreckBeached": true,
+    "spawnShipwreckBeached": false,
     "spawnBuriedTreasure": false,
     "oceanRuinType": "NONE",
     "spawnNetherBridge": false,

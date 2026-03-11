@@ -10,7 +10,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.Mirror;
-import net.minecraft.world.level.block.DirectionalBlock;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -24,7 +24,7 @@ import java.util.List;
 import java.util.Collections;
 
 public class CorruptedSoulsBlockBlock extends Block {
-	public static final DirectionProperty FACING = DirectionalBlock.FACING;
+	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public CorruptedSoulsBlockBlock() {
 		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.SNARE).sound(SoundType.SAND).strength(-1, 3600000).speedFactor(0.9f));
@@ -48,7 +48,7 @@ public class CorruptedSoulsBlockBlock extends Block {
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		return this.defaultBlockState().setValue(FACING, context.getNearestLookingDirection().getOpposite());
+		return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {

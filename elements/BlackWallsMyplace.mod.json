@@ -10,7 +10,7 @@
     "textureBack": "bricks",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 2,
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -37,14 +37,14 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 1000.0,
+    "hardness": 10.0,
     "resistance": 1000.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:Myplacevkladka"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },
@@ -100,7 +100,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 3,
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",

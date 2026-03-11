@@ -172,6 +172,7 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.WILL.get());
 				tabData.accept(Universe3090ModItems.LIFEKOLBA.get());
 				tabData.accept(Universe3090ModItems.SOSUD.get());
+				tabData.accept(Universe3090ModBlocks.ROSE_IN_JAR.get().asItem());
 			})
 
 					.build());
@@ -187,6 +188,9 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.REALITY_MACHINE.get());
 				tabData.accept(Universe3090ModItems.ACCESSVIOLATION.get());
 				tabData.accept(Universe3090ModItems.THE_WELCOME_CENTER.get());
+				tabData.accept(Universe3090ModBlocks.DARK_PLACE_BLOCK.get().asItem());
+				tabData.accept(Universe3090ModBlocks.BLACKWALLSMYPLACESLAB.get().asItem());
+				tabData.accept(Universe3090ModItems.LEPESTKI_ROSY.get());
 			})
 
 					.build());

@@ -1,0 +1,23 @@
+{
+  "_fv": 57,
+  "_type": "structure",
+  "definition": {
+    "structure": "roseinjar",
+    "projection": "rigid",
+    "ignoredBlocks": [
+      {
+        "value": "Blocks.STRUCTURE_BLOCK"
+      }
+    ],
+    "spacing": 18,
+    "separation": 9,
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:MyPlaceBiome"
+      }
+    ],
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "terrainAdaptation": "beard_thin",
+    "generationStep": "SURFACE_STRUCTURES"
+  }
+}

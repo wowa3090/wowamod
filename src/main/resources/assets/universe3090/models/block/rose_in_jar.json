@@ -1,0 +1,10 @@
+{
+  "parent": "universe3090:custom/jar",
+  "textures": {
+    "all": "universe3090:block/texture_jar",
+    "particle": "universe3090:block/texture_jar",
+    "0": "universe3090:block/texture_rose",
+    "1": "universe3090:block/texture_jar"
+  },
+  "render_type": "translucent"
+}

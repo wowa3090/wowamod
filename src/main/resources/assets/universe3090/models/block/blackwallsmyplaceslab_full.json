@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "universe3090:block/bricks",
+    "top": "universe3090:block/bricks",
+    "side": "universe3090:block/bricks"
+  },
+  "render_type": "solid"
+}

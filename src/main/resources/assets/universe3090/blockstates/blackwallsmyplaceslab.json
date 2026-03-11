@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "universe3090:block/blackwallsmyplaceslab"
+    },
+    "type=top": {
+      "model": "universe3090:block/blackwallsmyplaceslab_top"
+    },
+    "type=double": {
+      "model": "universe3090:block/blackwallsmyplaceslab_full"
+    }
+  }
+}

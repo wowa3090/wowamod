@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "universe3090:truerose"
+    },
+    {
+      "item": "universe3090:charasknife"
+    }
+  ],
+  "result": {
+    "item": "universe3090:lepestki_rosy",
+    "count": 5
+  }
+}
