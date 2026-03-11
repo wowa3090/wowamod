@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "universe3090:tree_of_life_x",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 7,
+    "separation": 5,
+    "salt": 1206575855
+  }
+}

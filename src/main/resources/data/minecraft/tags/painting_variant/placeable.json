@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
-    "universe3090:rose_my_place_1"
+    "universe3090:rose_my_place_1",
+    "universe3090:light_heart_painting",
+    "universe3090:p_cpainting",
+    "universe3090:pc_dev_painting",
+    "universe3090:pc_dev_painting_2",
+    "universe3090:pc_dev_painting_3"
   ]
 }
