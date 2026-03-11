@@ -27,7 +27,6 @@ import net.wowamod.block.DarkironblockBlock;
 import net.wowamod.block.DarkgrassblocknizBlock;
 import net.wowamod.block.DarkgrassBlock;
 import net.wowamod.block.DarkStrkBLKBlock;
-import net.wowamod.block.DarkPlaceBlockBlock;
 import net.wowamod.block.DarkIronMachineCasingBlock;
 import net.wowamod.block.DarkBiomeOreBlock;
 import net.wowamod.block.CrafterbroniBlock;
@@ -90,7 +89,6 @@ public class Universe3090ModBlocks {
 	public static final RegistryObject<Block> BERILLIUMDEEPSLATE = REGISTRY.register("berilliumdeepslate", () -> new BerilliumdeepslateBlock());
 	public static final RegistryObject<Block> REDSTONE_9X = REGISTRY.register("redstone_9x", () -> new Redstone9xBlock());
 	public static final RegistryObject<Block> ROSE_IN_JAR = REGISTRY.register("rose_in_jar", () -> new RoseInJarBlock());
-	public static final RegistryObject<Block> DARK_PLACE_BLOCK = REGISTRY.register("dark_place_block", () -> new DarkPlaceBlockBlock());
 	public static final RegistryObject<Block> BLACKWALLSMYPLACESLAB = REGISTRY.register("blackwallsmyplaceslab", () -> new BlackwallsmyplaceslabBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)

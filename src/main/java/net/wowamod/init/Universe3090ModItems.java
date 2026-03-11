@@ -310,7 +310,6 @@ public class Universe3090ModItems {
 	public static final RegistryObject<Item> LIFEKOLBA = REGISTRY.register("lifekolba", () -> new LifekolbaItem());
 	public static final RegistryObject<Item> SOSUD = REGISTRY.register("sosud", () -> new SosudItem());
 	public static final RegistryObject<Item> ROSE_IN_JAR = block(Universe3090ModBlocks.ROSE_IN_JAR);
-	public static final RegistryObject<Item> DARK_PLACE_BLOCK = block(Universe3090ModBlocks.DARK_PLACE_BLOCK);
 	public static final RegistryObject<Item> BLACKWALLSMYPLACESLAB = block(Universe3090ModBlocks.BLACKWALLSMYPLACESLAB);
 	public static final RegistryObject<Item> LEPESTKI_ROSY = REGISTRY.register("lepestki_rosy", () -> new LepestkiRosyItem());
 
