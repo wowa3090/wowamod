@@ -30,7 +30,7 @@ public class CharasknifeItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 3f;
+				return 2f;
 			}
 
 			public int getLevel() {
