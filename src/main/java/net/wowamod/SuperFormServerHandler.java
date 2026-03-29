@@ -96,7 +96,6 @@ public class SuperFormServerHandler {
     public static void toggleSuperForm(ServerPlayer player) {
         MobEffect superFormEffect = BuiltInRegistries.MOB_EFFECT.get(SUPER_FORM_EFFECT_ID);
         if (superFormEffect == null) {
-            player.sendSystemMessage(net.minecraft.network.chat.Component.literal("§cЭффект Super Form не найден в игре!"));
             return;
         }
 
@@ -106,7 +105,6 @@ public class SuperFormServerHandler {
             if (canActivate(player)) {
                 activateSuperForm(player);
             } else {
-                player.sendSystemMessage(net.minecraft.network.chat.Component.literal("§cНедостаточно ресурсов (Нужно 50 Колец и все 7 Изумрудов Хаоса)"));
             }
         }
     }
@@ -132,12 +130,11 @@ public class SuperFormServerHandler {
         previousFlightState.put(player.getUUID(), player.getAbilities().mayfly);
 
         player.addEffect(new MobEffectInstance(superFormEffect, 600, 0, false, false, true));
-        // ДОБАВЛЕНО: Ванильное свечение (чтобы видеть сквозь стены). false параметры скрывают партиклы зелья.
+        // Ванильное свечение для видимости сквозь стены
         player.addEffect(new MobEffectInstance(MobEffects.GLOWING, 600, 0, false, false, false));
         
         applySuperFormAttributes(player);
         
-        player.sendSystemMessage(net.minecraft.network.chat.Component.literal("§6§lСУПЕРФОРМА АКТИВИРОВАНА!"));
         player.level().playSound(null, player.blockPosition(), SoundEvents.BEACON_ACTIVATE, SoundSource.PLAYERS, 1.0f, 1.0f);
     }
 
@@ -153,7 +150,7 @@ public class SuperFormServerHandler {
                 if (player.tickCount % 20 == 0) {
                     consumeItem(player, ringItem, 1);
                     player.addEffect(new MobEffectInstance(superFormEffect, 30, 0, false, false, true)); 
-                    player.addEffect(new MobEffectInstance(MobEffects.GLOWING, 30, 0, false, false, false)); // Поддерживаем свечение
+                    player.addEffect(new MobEffectInstance(MobEffects.GLOWING, 30, 0, false, false, false));
                 }
                 
                 applySuperFormAttributes(player);
@@ -176,7 +173,7 @@ public class SuperFormServerHandler {
         if (superFormEffect != null) {
             player.removeEffect(superFormEffect);
         }
-        player.removeEffect(MobEffects.GLOWING); // Убираем свечение сквозь стены
+        player.removeEffect(MobEffects.GLOWING);
 
         removeSuperFormAttributes(player);
 
@@ -195,7 +192,6 @@ public class SuperFormServerHandler {
         previousFlightState.remove(player.getUUID());
 
         if (sendMessage) {
-            player.sendSystemMessage(net.minecraft.network.chat.Component.literal("§cСУПЕРФОРМА ДЕАКТИВИРОВАНА (Кольца закончились)"));
             player.level().playSound(null, player.blockPosition(), SoundEvents.BEACON_DEACTIVATE, SoundSource.PLAYERS, 1.0f, 1.0f);
         }
     }
@@ -239,6 +235,14 @@ public class SuperFormServerHandler {
         List<LivingEntity> entities = level.getEntitiesOfClass(LivingEntity.class, aabb, e -> e != player && !e.isAlliedTo(player));
         
         for (LivingEntity entity : entities) {
+            
+            // --- ЗАЩИТА ОТ ДУРАКА: СУЩНОСТИ ---
+            // Наносим урон ТОЛЬКО если цель является врагом (монстром) или другим игроком (PvP)
+            // Все животные (волки, коты, лошади), жители, големы и т.д. будут проигнорированы.
+            if (!(entity instanceof net.minecraft.world.entity.monster.Enemy) && !(entity instanceof Player)) {
+                continue; 
+            }
+
             if (player.distanceTo(entity) < range) {
                 entity.hurt(player.damageSources().playerAttack(player), 5.0f);
                 double dx = entity.getX() - player.getX();
@@ -250,8 +254,6 @@ public class SuperFormServerHandler {
         // 2. Уничтожение блоков в радиусе вокруг игрока
         BlockPos center = player.blockPosition();
         
-        // Цикл ломает всё в радиусе 1 блока (от -1 до 1 по X и Z)
-        // И по высоте от блока под ногами (-1) до блока над головой (2)
         for (int dx = -1; dx <= 1; dx++) {
             for (int dy = -1; dy <= 2; dy++) {
                 for (int dz = -1; dz <= 1; dz++) {
@@ -265,14 +267,14 @@ public class SuperFormServerHandler {
         if (!level.isClientSide()) {
             BlockState state = level.getBlockState(pos);
             
-            // Получаем прочность блока
-            // 0.0 - листва/трава, 1.5 - камень, 2.0 - дерево, 3.0 - руды, 5.0 - железный блок, 50.0 - обсидиан
+            // --- ЗАЩИТА ОТ ДУРАКА: БЛОКИ ---
+            // Если у блока есть BlockEntity (это сундук, воронка, печка, спавнер и т.д.) - пропускаем
+            if (state.hasBlockEntity()) {
+                return;
+            }
+
             float hardness = state.getDestroySpeed(level, pos);
-            
-            // Если прочность в пределах от 0 до 5.0 (будет ломать почти всё, кроме обсидиана и бедрока)
             if (!state.is(Blocks.BEDROCK) && !state.is(BlockTags.WITHER_IMMUNE) && hardness >= 0 && hardness <= 5.0f) {
-                
-                // true = выпадает дроп, и автоматически играет ванильный звук ломания блока 
                 level.destroyBlock(pos, true);
             }
         }

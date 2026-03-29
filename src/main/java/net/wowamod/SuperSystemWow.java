@@ -30,7 +30,7 @@ public class SuperSystemWow {
 
         @SubscribeEvent
         public static void onKeyRegister(RegisterKeyMappingsEvent event) {
-            SUPER_FORM_KEY = new KeyMapping("key.universe3090.super_form", GLFW.GLFW_KEY_G, "key.categories.wowamod");
+            SUPER_FORM_KEY = new KeyMapping("key.universe3090.super_form", GLFW.GLFW_KEY_K, "key.categories.wowamod");
             event.register(SUPER_FORM_KEY);
         }
 
