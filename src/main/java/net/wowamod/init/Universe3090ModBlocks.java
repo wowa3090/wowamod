@@ -75,11 +75,6 @@ public class Universe3090ModBlocks {
 	public static final RegistryObject<Block> SOLARPANELGENERATORW = REGISTRY.register("solarpanelgeneratorw", () -> new SolarpanelgeneratorwBlock());
 	public static final RegistryObject<Block> TESTPLANT = REGISTRY.register("testplant", () -> new TestplantBlock());
 	public static final RegistryObject<Block> CABLE_N = REGISTRY.register("cable_n", () -> new CableNBlock());
-	public static final RegistryObject<Block> CORRUPTED_SOULS_BLOCK = REGISTRY.register("corrupted_souls_block", () -> new CorruptedSoulsBlockBlock());
-	public static final RegistryObject<Block> BLACK_WALLS_MYPLACE = REGISTRY.register("black_walls_myplace", () -> new BlackWallsMyplaceBlock());
-	public static final RegistryObject<Block> MYPLACEZONE_PORTAL = REGISTRY.register("myplacezone_portal", () -> new MyplacezonePortalBlock());
-	public static final RegistryObject<Block> TRUEROSE = REGISTRY.register("truerose", () -> new TrueroseBlock());
-	public static final RegistryObject<Block> CABLE_E = REGISTRY.register("cable_e", () -> new CableEBlock());
 	public static final RegistryObject<Block> DIAMONDLAPISBLOCK = REGISTRY.register("diamondlapisblock", () -> new DiamondlapisblockBlock());
 	public static final RegistryObject<Block> DARKIRONBLOCK = REGISTRY.register("darkironblock", () -> new DarkironblockBlock());
 	public static final RegistryObject<Block> REDEMPTYCORE = REGISTRY.register("redemptycore", () -> new RedemptycoreBlock());
@@ -87,9 +82,14 @@ public class Universe3090ModBlocks {
 	public static final RegistryObject<Block> BERILLIUM = REGISTRY.register("berillium", () -> new BerilliumBlock());
 	public static final RegistryObject<Block> SMELTERBLOCK = REGISTRY.register("smelterblock", () -> new SmelterblockBlock());
 	public static final RegistryObject<Block> BERILLIUMDEEPSLATE = REGISTRY.register("berilliumdeepslate", () -> new BerilliumdeepslateBlock());
-	public static final RegistryObject<Block> REDSTONE_9X = REGISTRY.register("redstone_9x", () -> new Redstone9xBlock());
 	public static final RegistryObject<Block> ROSE_IN_JAR = REGISTRY.register("rose_in_jar", () -> new RoseInJarBlock());
+	public static final RegistryObject<Block> REDSTONE_9X = REGISTRY.register("redstone_9x", () -> new Redstone9xBlock());
+	public static final RegistryObject<Block> CORRUPTED_SOULS_BLOCK = REGISTRY.register("corrupted_souls_block", () -> new CorruptedSoulsBlockBlock());
+	public static final RegistryObject<Block> BLACK_WALLS_MYPLACE = REGISTRY.register("black_walls_myplace", () -> new BlackWallsMyplaceBlock());
+	public static final RegistryObject<Block> MYPLACEZONE_PORTAL = REGISTRY.register("myplacezone_portal", () -> new MyplacezonePortalBlock());
+	public static final RegistryObject<Block> TRUEROSE = REGISTRY.register("truerose", () -> new TrueroseBlock());
 	public static final RegistryObject<Block> BLACKWALLSMYPLACESLAB = REGISTRY.register("blackwallsmyplaceslab", () -> new BlackwallsmyplaceslabBlock());
+	public static final RegistryObject<Block> CABLE_E = REGISTRY.register("cable_e", () -> new CableEBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

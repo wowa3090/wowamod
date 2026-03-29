@@ -28,13 +28,13 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.STB_HSWORD.get());
 				tabData.accept(Universe3090ModItems.GUIDEBOOKITEM.get());
 				tabData.accept(Universe3090ModItems.SOULCORE.get());
-				tabData.accept(Universe3090ModItems.REDEMERALD.get());
+				tabData.accept(Universe3090ModItems.YELLOWEMERALD.get());
 				tabData.accept(Universe3090ModItems.GREENEMERALD.get());
 				tabData.accept(Universe3090ModItems.BLUEEMERALD.get());
 				tabData.accept(Universe3090ModItems.LIGHTBLUEEMERALD.get());
 				tabData.accept(Universe3090ModItems.PURPLEEMERALD.get());
 				tabData.accept(Universe3090ModItems.WHITEEMERALD.get());
-				tabData.accept(Universe3090ModItems.YELLOWEMERALD.get());
+				tabData.accept(Universe3090ModItems.REDEMERALD.get());
 				tabData.accept(Universe3090ModItems.RAINBOWEMERALD.get());
 				tabData.accept(Universe3090ModItems.REDSOUL.get());
 				tabData.accept(Universe3090ModItems.ORANGESOUL.get());
@@ -55,18 +55,13 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.DERJATILI.get());
 				tabData.accept(Universe3090ModItems.MIMICTKANB.get());
 				tabData.accept(Universe3090ModItems.MIMICKOJA.get());
-				tabData.accept(Universe3090ModItems.ADARKPLACESOUND.get());
-				tabData.accept(Universe3090ModItems.DISSASEBMLYREQUIRED.get());
 				tabData.accept(Universe3090ModItems.NIGHTMARE_SPAWN_EGG.get());
 				tabData.accept(Universe3090ModItems.WOWASWORDOSNOVA.get());
 				tabData.accept(Universe3090ModItems.EKRANCHIK.get());
 				tabData.accept(Universe3090ModItems.MAGICIRONINGOT.get());
-				tabData.accept(Universe3090ModItems.EXTRACTLBSOUL.get());
-				tabData.accept(Universe3090ModItems.KOLBA.get());
 				tabData.accept(Universe3090ModItems.EXTRACTGOLUBAYSOUL_BUCKET.get());
 				tabData.accept(Universe3090ModItems.KLAVA.get());
 				tabData.accept(Universe3090ModItems.ROTOR.get());
-				tabData.accept(Universe3090ModItems.EXTRACTREDSOUL.get());
 				tabData.accept(Universe3090ModItems.WHITESOUL_MYPLACE.get());
 				tabData.accept(Universe3090ModItems.BLACKSOUL_MYPLACE.get());
 				tabData.accept(Universe3090ModItems.AAA_GLASS.get());
@@ -127,6 +122,7 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModBlocks.CABLE_N.get().asItem());
 				tabData.accept(Universe3090ModItems.DIAMOND_MULTI_TOOLW.get());
 				tabData.accept(Universe3090ModItems.DIAMONDLAPIS.get());
+				tabData.accept(Universe3090ModBlocks.DIAMONDLAPISBLOCK.get().asItem());
 				tabData.accept(Universe3090ModItems.REDDIAMONDMULTITOOLPLUSW.get());
 				tabData.accept(Universe3090ModItems.REDDIAMONDLAPIS.get());
 				tabData.accept(Universe3090ModItems.DIAMOND_LAPIS_ARMOR_ARMOR_HELMET.get());
@@ -145,7 +141,6 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.ULTRASTRONGCOATING.get());
 				tabData.accept(Universe3090ModItems.ENERGYPIPESUSC.get());
 				tabData.accept(Universe3090ModItems.PIPES.get());
-				tabData.accept(Universe3090ModBlocks.DIAMONDLAPISBLOCK.get().asItem());
 				tabData.accept(Universe3090ModItems.ENERGYMAGICCONTROLLER.get());
 				tabData.accept(Universe3090ModItems.ELECTROMAGICCORE.get());
 				tabData.accept(Universe3090ModItems.FIRSTBRONYACOMPONENT.get());
@@ -157,6 +152,9 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModBlocks.REDCORE.get().asItem());
 				tabData.accept(Universe3090ModBlocks.BERILLIUM.get().asItem());
 				tabData.accept(Universe3090ModItems.BERILLIUM_CRYSTAL.get());
+				tabData.accept(Universe3090ModItems.KOLBA.get());
+				tabData.accept(Universe3090ModItems.EXTRACTLBSOUL.get());
+				tabData.accept(Universe3090ModItems.EXTRACTREDSOUL.get());
 				tabData.accept(Universe3090ModItems.EXTRACTORANGESOUL.get());
 				tabData.accept(Universe3090ModItems.EXTRACT_GREEN_SOUL.get());
 				tabData.accept(Universe3090ModItems.EXTRACT_PURPLE_SOUL.get());
@@ -165,19 +163,21 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.COMBINED_ALLOY.get());
 				tabData.accept(Universe3090ModBlocks.SMELTERBLOCK.get().asItem());
 				tabData.accept(Universe3090ModItems.MIRROR_COMPONENTBERILLIUM.get());
-				tabData.accept(Universe3090ModItems.CHARASKNIFE.get());
 				tabData.accept(Universe3090ModBlocks.BERILLIUMDEEPSLATE.get().asItem());
-				tabData.accept(Universe3090ModBlocks.REDSTONE_9X.get().asItem());
-				tabData.accept(Universe3090ModItems.SOULCOMBINE.get());
 				tabData.accept(Universe3090ModItems.WILL.get());
 				tabData.accept(Universe3090ModItems.LIFEKOLBA.get());
+				tabData.accept(Universe3090ModItems.SOULCOMBINE.get());
 				tabData.accept(Universe3090ModItems.SOSUD.get());
-				tabData.accept(Universe3090ModBlocks.ROSE_IN_JAR.get().asItem());
+				tabData.accept(Universe3090ModBlocks.REDSTONE_9X.get().asItem());
+				tabData.accept(Universe3090ModItems.CHARASKNIFE.get());
+				tabData.accept(Universe3090ModItems.ADARKPLACESOUND.get());
+				tabData.accept(Universe3090ModItems.DISSASEBMLYREQUIRED.get());
 			})
 
 					.build());
 	public static final RegistryObject<CreativeModeTab> MYPLACEVKLADKA = REGISTRY.register("myplacevkladka",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.universe3090.myplacevkladka")).icon(() -> new ItemStack(Universe3090ModBlocks.TRUEROSE.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(Universe3090ModBlocks.ROSE_IN_JAR.get().asItem());
 				tabData.accept(Universe3090ModItems.ROSE.get());
 				tabData.accept(Universe3090ModBlocks.CORRUPTED_SOULS_BLOCK.get().asItem());
 				tabData.accept(Universe3090ModBlocks.BLACK_WALLS_MYPLACE.get().asItem());

@@ -4,7 +4,7 @@ license="Custom license"
 
 [[mods]]
 modId="universe3090"
-version="1.7.0"
+version="1.7.1"
 displayName="Universe3090-stories"
 displayURL="https://nosite.com"
 logoFile="logo.png"
@@ -21,6 +21,12 @@ description="This Mod will add to your minecraft world items from Universe3090 A
 
 
 
+[[dependencies.universe3090]]
+    modId="ryoamiclights"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 [[dependencies.universe3090]]
     modId="geckolib"
     mandatory=false

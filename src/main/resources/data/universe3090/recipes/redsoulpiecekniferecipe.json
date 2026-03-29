@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "universe3090:redsoul"
+    },
+    {
+      "item": "universe3090:charasknife"
+    }
+  ],
+  "result": {
+    "item": "universe3090:redsoulpiece",
+    "count": 9
+  }
+}
