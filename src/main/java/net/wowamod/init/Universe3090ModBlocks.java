@@ -13,6 +13,7 @@ import net.wowamod.block.RedstoneportBlock;
 import net.wowamod.block.RedstonecommandblockBlock;
 import net.wowamod.block.Redstone9xBlock;
 import net.wowamod.block.RedemptycoreBlock;
+import net.wowamod.block.RedemeraldcrystalBlock;
 import net.wowamod.block.RedcoreBlock;
 import net.wowamod.block.PortconstructorBlock;
 import net.wowamod.block.PogranichnikBlock;
@@ -33,6 +34,7 @@ import net.wowamod.block.CrafterbroniBlock;
 import net.wowamod.block.CorruptedSoulsBlockBlock;
 import net.wowamod.block.CableNBlock;
 import net.wowamod.block.CableEBlock;
+import net.wowamod.block.BlueemeraldcrystalBlock;
 import net.wowamod.block.BlockforprofessiafixBlock;
 import net.wowamod.block.BlackwallsmyplaceslabBlock;
 import net.wowamod.block.BlackWallsMyplaceBlock;
@@ -90,6 +92,8 @@ public class Universe3090ModBlocks {
 	public static final RegistryObject<Block> TRUEROSE = REGISTRY.register("truerose", () -> new TrueroseBlock());
 	public static final RegistryObject<Block> BLACKWALLSMYPLACESLAB = REGISTRY.register("blackwallsmyplaceslab", () -> new BlackwallsmyplaceslabBlock());
 	public static final RegistryObject<Block> CABLE_E = REGISTRY.register("cable_e", () -> new CableEBlock());
+	public static final RegistryObject<Block> REDEMERALDCRYSTAL = REGISTRY.register("redemeraldcrystal", () -> new RedemeraldcrystalBlock());
+	public static final RegistryObject<Block> BLUEEMERALDCRYSTAL = REGISTRY.register("blueemeraldcrystal", () -> new BlueemeraldcrystalBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

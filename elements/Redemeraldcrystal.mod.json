@@ -2,14 +2,14 @@
   "_fv": 57,
   "_type": "block",
   "definition": {
-    "texture": "aluminium",
+    "texture": "texture_crystal",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 11,
-    "customModelName": "Single texture",
+    "renderType": 2,
+    "customModelName": "red_emerald_crystal:default",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -18,26 +18,62 @@
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 0.0,
+        "mx": 7.25,
         "my": 0.0,
-        "mz": 0.0,
-        "Mx": 16.0,
-        "My": 16.0,
-        "Mz": 16.0,
+        "mz": 7.25,
+        "Mx": 8.75,
+        "My": 4.25,
+        "Mz": 8.75,
+        "subtract": false
+      },
+      {
+        "mx": 7.25,
+        "my": 0.0,
+        "mz": 7.25,
+        "Mx": 8.75,
+        "My": 4.75,
+        "Mz": 8.75,
+        "subtract": false
+      },
+      {
+        "mx": 7.0,
+        "my": 0.25,
+        "mz": 7.0,
+        "Mx": 8.5,
+        "My": 3.25,
+        "Mz": 8.5,
+        "subtract": false
+      },
+      {
+        "mx": 7.25,
+        "my": 0.0,
+        "mz": 7.25,
+        "Mx": 8.75,
+        "My": 4.0,
+        "Mz": 8.75,
+        "subtract": false
+      },
+      {
+        "mx": 7.0,
+        "my": 0.0,
+        "mz": 6.75,
+        "Mx": 8.5,
+        "My": 4.0,
+        "Mz": 8.25,
         "subtract": false
       }
     ],
-    "name": "Бокситы",
+    "name": "Red emerald crystal",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 4.95,
+    "hardness": 2.4,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
@@ -49,14 +85,14 @@
       "value": ""
     },
     "dropAmount": 1,
-    "useLootTableForDrops": false,
-    "requiresCorrectTool": true,
+    "useLootTableForDrops": true,
+    "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 15,
+    "lightOpacity": 0,
     "material": {
-      "value": "ROCK"
+      "value": "AMETHYST"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -81,7 +117,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "AMETHYST_BLOCK"
     },
     "breakSound": {
       "value": ""
@@ -98,9 +134,9 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 0,
+    "luminance": 7,
     "unbreakable": false,
-    "breakHarvestLevel": 2,
+    "breakHarvestLevel": 1,
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
@@ -127,9 +163,9 @@
       }
     ],
     "generationShape": "TRIANGLE",
-    "frequencyPerChunks": 11,
-    "frequencyOnChunk": 8,
-    "minGenerateHeight": -10,
-    "maxGenerateHeight": 84
+    "frequencyPerChunks": 4,
+    "frequencyOnChunk": 11,
+    "minGenerateHeight": -32,
+    "maxGenerateHeight": 64
   }
 }

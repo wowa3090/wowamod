@@ -18,7 +18,7 @@ import java.util.List;
 
 public class BerilliumdeepslateBlock extends Block {
 	public BerilliumdeepslateBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.DEEPSLATE).strength(1.75f, 10f).lightLevel(s -> 1));
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.DEEPSLATE).strength(1.65f, 10f).lightLevel(s -> 1));
 	}
 
 	@Override

@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "universe3090:redemeraldcrystal",
+  "step": "underground_decoration"
+}

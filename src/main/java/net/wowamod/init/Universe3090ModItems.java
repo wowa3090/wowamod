@@ -119,6 +119,7 @@ import net.wowamod.item.BlueEmeraldPieceItem;
 import net.wowamod.item.BlacksoulMYPLACEItem;
 import net.wowamod.item.BlackironingotItem;
 import net.wowamod.item.BeyondtheBrightItem;
+import net.wowamod.item.BerylstonechunkItem;
 import net.wowamod.item.BerilliumCrystalItem;
 import net.wowamod.item.BatareykaItem;
 import net.wowamod.item.AluminiumdiamondbaseItem;
@@ -312,6 +313,9 @@ public class Universe3090ModItems {
 	public static final RegistryObject<Item> SHANTYOGG = REGISTRY.register("shantyogg", () -> new ShantyoggItem());
 	public static final RegistryObject<Item> SEALEDVESSELDISC = REGISTRY.register("sealedvesseldisc", () -> new SealedvesseldiscItem());
 	public static final RegistryObject<Item> CABLE_E = block(Universe3090ModBlocks.CABLE_E);
+	public static final RegistryObject<Item> BERYLSTONECHUNK = REGISTRY.register("berylstonechunk", () -> new BerylstonechunkItem());
+	public static final RegistryObject<Item> REDEMERALDCRYSTAL = block(Universe3090ModBlocks.REDEMERALDCRYSTAL);
+	public static final RegistryObject<Item> BLUEEMERALDCRYSTAL = block(Universe3090ModBlocks.BLUEEMERALDCRYSTAL);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

@@ -1,0 +1,244 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features":[
+      {
+        "chance": 0.166,
+        "feature": {
+          "feature": {
+            "type": "minecraft:random_patch",
+            "config": {
+              "tries": 12,
+              "xz_spread": 4,
+              "y_spread": 4,
+              "feature": {
+                "feature": {
+                  "type": "minecraft:simple_block",
+                  "config": {
+                    "to_place": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "universe3090:blueemeraldcrystal",
+                        "Properties": { "facing": "down" }
+                      }
+                    }
+                  }
+                },
+                "placement":[
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:all_of",
+                      "predicates":[
+                        { "type": "minecraft:matching_blocks", "blocks": ["minecraft:air", "minecraft:cave_air"] },
+                        { "type": "minecraft:has_sturdy_face", "offset":[0, 1, 0], "direction": "down" }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "placement":[]
+        }
+      },
+      {
+        "chance": 0.2,
+        "feature": {
+          "feature": {
+            "type": "minecraft:random_patch",
+            "config": {
+              "tries": 12,
+              "xz_spread": 4,
+              "y_spread": 4,
+              "feature": {
+                "feature": {
+                  "type": "minecraft:simple_block",
+                  "config": {
+                    "to_place": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "universe3090:blueemeraldcrystal",
+                        "Properties": { "facing": "north" }
+                      }
+                    }
+                  }
+                },
+                "placement":[
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:all_of",
+                      "predicates":[
+                        { "type": "minecraft:matching_blocks", "blocks":["minecraft:air", "minecraft:cave_air"] },
+                        { "type": "minecraft:has_sturdy_face", "offset": [0, 0, 1], "direction": "north" }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "placement":[]
+        }
+      },
+      {
+        "chance": 0.25,
+        "feature": {
+          "feature": {
+            "type": "minecraft:random_patch",
+            "config": {
+              "tries": 12,
+              "xz_spread": 4,
+              "y_spread": 4,
+              "feature": {
+                "feature": {
+                  "type": "minecraft:simple_block",
+                  "config": {
+                    "to_place": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "universe3090:blueemeraldcrystal",
+                        "Properties": { "facing": "south" }
+                      }
+                    }
+                  }
+                },
+                "placement":[
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:all_of",
+                      "predicates": [
+                        { "type": "minecraft:matching_blocks", "blocks":["minecraft:air", "minecraft:cave_air"] },
+                        { "type": "minecraft:has_sturdy_face", "offset": [0, 0, -1], "direction": "south" }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "placement":[]
+        }
+      },
+      {
+        "chance": 0.333,
+        "feature": {
+          "feature": {
+            "type": "minecraft:random_patch",
+            "config": {
+              "tries": 12,
+              "xz_spread": 4,
+              "y_spread": 4,
+              "feature": {
+                "feature": {
+                  "type": "minecraft:simple_block",
+                  "config": {
+                    "to_place": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "universe3090:blueemeraldcrystal",
+                        "Properties": { "facing": "west" }
+                      }
+                    }
+                  }
+                },
+                "placement":[
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:all_of",
+                      "predicates":[
+                        { "type": "minecraft:matching_blocks", "blocks": ["minecraft:air", "minecraft:cave_air"] },
+                        { "type": "minecraft:has_sturdy_face", "offset": [1, 0, 0], "direction": "west" }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "placement":[]
+        }
+      },
+      {
+        "chance": 0.5,
+        "feature": {
+          "feature": {
+            "type": "minecraft:random_patch",
+            "config": {
+              "tries": 12,
+              "xz_spread": 4,
+              "y_spread": 4,
+              "feature": {
+                "feature": {
+                  "type": "minecraft:simple_block",
+                  "config": {
+                    "to_place": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "universe3090:blueemeraldcrystal",
+                        "Properties": { "facing": "east" }
+                      }
+                    }
+                  }
+                },
+                "placement":[
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:all_of",
+                      "predicates":[
+                        { "type": "minecraft:matching_blocks", "blocks":["minecraft:air", "minecraft:cave_air"] },
+                        { "type": "minecraft:has_sturdy_face", "offset":[-1, 0, 0], "direction": "east" }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "placement":[]
+        }
+      }
+    ],
+    "default": {
+      "feature": {
+        "type": "minecraft:random_patch",
+        "config": {
+          "tries": 12,
+          "xz_spread": 4,
+          "y_spread": 4,
+          "feature": {
+            "feature": {
+              "type": "minecraft:simple_block",
+              "config": {
+                "to_place": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "universe3090:blueemeraldcrystal",
+                    "Properties": { "facing": "up" }
+                  }
+                }
+              }
+            },
+            "placement":[
+              {
+                "type": "minecraft:block_predicate_filter",
+                "predicate": {
+                  "type": "minecraft:all_of",
+                  "predicates":[
+                    { "type": "minecraft:matching_blocks", "blocks": ["minecraft:air", "minecraft:cave_air"] },
+                    { "type": "minecraft:has_sturdy_face", "offset":[0, -1, 0], "direction": "up" }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      "placement":[]
+    }
+  }
+}

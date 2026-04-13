@@ -20,7 +20,7 @@ import java.util.Collections;
 
 public class AluminiumBlock extends Block {
 	public AluminiumBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(15.5f, 10f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(4.95f, 10f).requiresCorrectToolForDrops());
 	}
 
 	@Override

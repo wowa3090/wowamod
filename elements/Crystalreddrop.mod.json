@@ -14,7 +14,7 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:Berylstonechunk"
+              "value": "CUSTOM:RedEmeraldPiece"
             },
             "weight": 1,
             "minCount": 1,
@@ -28,7 +28,7 @@
         ]
       }
     ],
-    "name": "blocks/berillium",
+    "name": "blocks/redemeraldcrystal",
     "namespace": "mod"
   }
 }

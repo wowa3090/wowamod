@@ -47,6 +47,8 @@ public class SuperFormServerHandler {
     private static final ResourceLocation WHITE_EMERALD_ID = new ResourceLocation(MOD_ID, "whiteemerald");
     private static final ResourceLocation YELLOW_EMERALD_ID = new ResourceLocation(MOD_ID, "yellowemerald");
 
+    private static final ResourceLocation RAINBOW_EMERALD_ID = new ResourceLocation(MOD_ID, "rainbowemerald");
+
     // UUID для атрибутов 
     private static final UUID SPEED_MOD_UUID = UUID.fromString("a8b8c8d8-e8f8-48a8-b8c8-d8e8f8a8b8c8");
     private static final UUID DAMAGE_MOD_UUID = UUID.fromString("b9c9d9e9-f9a9-59b9-c9d9-e9f9a9b9c9d9");
@@ -119,8 +121,10 @@ public class SuperFormServerHandler {
         int purple = getItemCount(player, BuiltInRegistries.ITEM.get(PURPLE_EMERALD_ID));
         int white = getItemCount(player, BuiltInRegistries.ITEM.get(WHITE_EMERALD_ID));
         int yellow = getItemCount(player, BuiltInRegistries.ITEM.get(YELLOW_EMERALD_ID));
+		int rainbow = getItemCount(player, BuiltInRegistries.ITEM.get(RAINBOW_EMERALD_ID));
 
-        return rings >= 50 && red >= 1 && green >= 1 && blue >= 1 && lightblue >= 1 && purple >= 1 && white >= 1 && yellow >= 1;
+        return rings >= 100 && red >= 1 && green >= 1 && blue >= 1 && lightblue >= 1 && 
+               purple >= 1 && white >= 1 && yellow >= 1 && rainbow >= 1;
     }
 
     private static void activateSuperForm(ServerPlayer player) {

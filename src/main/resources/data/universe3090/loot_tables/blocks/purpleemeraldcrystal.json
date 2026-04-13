@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "universe3090:berylstonechunk",
+          "name": "universe3090:purple_emerald_piece",
           "weight": 1,
           "functions": [
             {
@@ -26,5 +26,5 @@
       ]
     }
   ],
-  "random_sequence": "universe3090:blocks/berillium"
+  "random_sequence": "universe3090:blocks/purpleemeraldcrystal"
 }

@@ -172,6 +172,9 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.CHARASKNIFE.get());
 				tabData.accept(Universe3090ModItems.ADARKPLACESOUND.get());
 				tabData.accept(Universe3090ModItems.DISSASEBMLYREQUIRED.get());
+				tabData.accept(Universe3090ModItems.BERYLSTONECHUNK.get());
+				tabData.accept(Universe3090ModBlocks.REDEMERALDCRYSTAL.get().asItem());
+				tabData.accept(Universe3090ModBlocks.BLUEEMERALDCRYSTAL.get().asItem());
 			})
 
 					.build());
