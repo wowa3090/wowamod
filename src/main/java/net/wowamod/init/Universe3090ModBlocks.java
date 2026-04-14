@@ -4,6 +4,8 @@
  */
 package net.wowamod.init;
 
+import net.wowamod.block.YellowemeraldcrystalBlock;
+import net.wowamod.block.WhiteemeraldcrystalBlock;
 import net.wowamod.block.TrueroseBlock;
 import net.wowamod.block.TestplantBlock;
 import net.wowamod.block.SolarpanelgeneratorwBlock;
@@ -15,11 +17,14 @@ import net.wowamod.block.Redstone9xBlock;
 import net.wowamod.block.RedemptycoreBlock;
 import net.wowamod.block.RedemeraldcrystalBlock;
 import net.wowamod.block.RedcoreBlock;
+import net.wowamod.block.PurpleemeraldcrystalBlock;
 import net.wowamod.block.PortconstructorBlock;
 import net.wowamod.block.PogranichnikBlock;
 import net.wowamod.block.MyplacezonePortalBlock;
 import net.wowamod.block.MagicironblockBlock;
+import net.wowamod.block.LightblueemeraldcrystalBlock;
 import net.wowamod.block.InterfaceconstructorBlock;
+import net.wowamod.block.GreenemeraldcrystalBlock;
 import net.wowamod.block.ExtractorBlock;
 import net.wowamod.block.ExtractgolubaysoulBlock;
 import net.wowamod.block.EmeraldCombinerBlock;
@@ -94,6 +99,11 @@ public class Universe3090ModBlocks {
 	public static final RegistryObject<Block> CABLE_E = REGISTRY.register("cable_e", () -> new CableEBlock());
 	public static final RegistryObject<Block> REDEMERALDCRYSTAL = REGISTRY.register("redemeraldcrystal", () -> new RedemeraldcrystalBlock());
 	public static final RegistryObject<Block> BLUEEMERALDCRYSTAL = REGISTRY.register("blueemeraldcrystal", () -> new BlueemeraldcrystalBlock());
+	public static final RegistryObject<Block> GREENEMERALDCRYSTAL = REGISTRY.register("greenemeraldcrystal", () -> new GreenemeraldcrystalBlock());
+	public static final RegistryObject<Block> YELLOWEMERALDCRYSTAL = REGISTRY.register("yellowemeraldcrystal", () -> new YellowemeraldcrystalBlock());
+	public static final RegistryObject<Block> PURPLEEMERALDCRYSTAL = REGISTRY.register("purpleemeraldcrystal", () -> new PurpleemeraldcrystalBlock());
+	public static final RegistryObject<Block> WHITEEMERALDCRYSTAL = REGISTRY.register("whiteemeraldcrystal", () -> new WhiteemeraldcrystalBlock());
+	public static final RegistryObject<Block> LIGHTBLUEEMERALDCRYSTAL = REGISTRY.register("lightblueemeraldcrystal", () -> new LightblueemeraldcrystalBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

@@ -175,6 +175,11 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.BERYLSTONECHUNK.get());
 				tabData.accept(Universe3090ModBlocks.REDEMERALDCRYSTAL.get().asItem());
 				tabData.accept(Universe3090ModBlocks.BLUEEMERALDCRYSTAL.get().asItem());
+				tabData.accept(Universe3090ModBlocks.GREENEMERALDCRYSTAL.get().asItem());
+				tabData.accept(Universe3090ModBlocks.YELLOWEMERALDCRYSTAL.get().asItem());
+				tabData.accept(Universe3090ModBlocks.PURPLEEMERALDCRYSTAL.get().asItem());
+				tabData.accept(Universe3090ModBlocks.WHITEEMERALDCRYSTAL.get().asItem());
+				tabData.accept(Universe3090ModBlocks.LIGHTBLUEEMERALDCRYSTAL.get().asItem());
 			})
 
 					.build());

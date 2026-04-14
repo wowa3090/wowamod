@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=up": {
+      "model": "universe3090:block/lightblueemeraldcrystal"
+    },
+    "facing=down": {
+      "model": "universe3090:block/lightblueemeraldcrystal",
+      "x": 180
+    },
+    "facing=north": {
+      "model": "universe3090:block/lightblueemeraldcrystal",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "universe3090:block/lightblueemeraldcrystal",
+      "x": 90,
+      "y": 180
+    },
+    "facing=east": {
+      "model": "universe3090:block/lightblueemeraldcrystal",
+      "x": 90,
+      "y": 90
+    },
+    "facing=west": {
+      "model": "universe3090:block/lightblueemeraldcrystal",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

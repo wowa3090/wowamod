@@ -7098,6 +7098,101 @@
           "src/main/resources/data/universe3090/worldgen/configured_feature/blueemeraldcrystal.json"
         ]
       }
+    },
+    {
+      "name": "Greenemeraldcrystal",
+      "type": "block",
+      "sortid": 444,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "greenemeraldcrystal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/universe3090/models/item/greenemeraldcrystal.json",
+          "src/main/resources/assets/universe3090/blockstates/greenemeraldcrystal.json",
+          "src/main/resources/assets/universe3090/models/block/greenemeraldcrystal.json",
+          "src/main/resources/data/universe3090/worldgen/placed_feature/greenemeraldcrystal.json",
+          "src/main/java/net/wowamod/block/GreenemeraldcrystalBlock.java",
+          "src/main/resources/data/universe3090/forge/biome_modifier/greenemeraldcrystal_biome_modifier.json",
+          "src/main/resources/data/universe3090/worldgen/configured_feature/greenemeraldcrystal.json"
+        ]
+      }
+    },
+    {
+      "name": "Yellowemeraldcrystal",
+      "type": "block",
+      "sortid": 445,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "yellowemeraldcrystal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/universe3090/blockstates/yellowemeraldcrystal.json",
+          "src/main/resources/assets/universe3090/models/item/yellowemeraldcrystal.json",
+          "src/main/resources/data/universe3090/worldgen/placed_feature/yellowemeraldcrystal.json",
+          "src/main/resources/assets/universe3090/models/block/yellowemeraldcrystal.json",
+          "src/main/resources/data/universe3090/forge/biome_modifier/yellowemeraldcrystal_biome_modifier.json",
+          "src/main/resources/data/universe3090/worldgen/configured_feature/yellowemeraldcrystal.json",
+          "src/main/java/net/wowamod/block/YellowemeraldcrystalBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Purpleemeraldcrystal",
+      "type": "block",
+      "sortid": 446,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "purpleemeraldcrystal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/universe3090/models/item/purpleemeraldcrystal.json",
+          "src/main/resources/assets/universe3090/blockstates/purpleemeraldcrystal.json",
+          "src/main/resources/data/universe3090/worldgen/configured_feature/purpleemeraldcrystal.json",
+          "src/main/java/net/wowamod/block/PurpleemeraldcrystalBlock.java",
+          "src/main/resources/data/universe3090/forge/biome_modifier/purpleemeraldcrystal_biome_modifier.json",
+          "src/main/resources/data/universe3090/worldgen/placed_feature/purpleemeraldcrystal.json",
+          "src/main/resources/assets/universe3090/models/block/purpleemeraldcrystal.json"
+        ]
+      }
+    },
+    {
+      "name": "Whiteemeraldcrystal",
+      "type": "block",
+      "sortid": 447,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "whiteemeraldcrystal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/block/WhiteemeraldcrystalBlock.java",
+          "src/main/resources/assets/universe3090/models/item/whiteemeraldcrystal.json",
+          "src/main/resources/data/universe3090/forge/biome_modifier/whiteemeraldcrystal_biome_modifier.json",
+          "src/main/resources/assets/universe3090/blockstates/whiteemeraldcrystal.json",
+          "src/main/resources/assets/universe3090/models/block/whiteemeraldcrystal.json",
+          "src/main/resources/data/universe3090/worldgen/placed_feature/whiteemeraldcrystal.json",
+          "src/main/resources/data/universe3090/worldgen/configured_feature/whiteemeraldcrystal.json"
+        ]
+      }
+    },
+    {
+      "name": "Lightblueemeraldcrystal",
+      "type": "block",
+      "sortid": 448,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lightblueemeraldcrystal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/universe3090/models/block/lightblueemeraldcrystal.json",
+          "src/main/java/net/wowamod/block/LightblueemeraldcrystalBlock.java",
+          "src/main/resources/data/universe3090/forge/biome_modifier/lightblueemeraldcrystal_biome_modifier.json",
+          "src/main/resources/assets/universe3090/models/item/lightblueemeraldcrystal.json",
+          "src/main/resources/assets/universe3090/blockstates/lightblueemeraldcrystal.json",
+          "src/main/resources/data/universe3090/worldgen/placed_feature/lightblueemeraldcrystal.json",
+          "src/main/resources/data/universe3090/worldgen/configured_feature/lightblueemeraldcrystal.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -7301,8 +7396,8 @@
       "item.universe3090.derjatili": "Держатель для необычного механизма",
       "item.universe3090.whiteemerald": "Белый Изумруд",
       "item.universe3090.soulcombine": "Комбинированная душа",
-      "item.universe3090.mirror_componentberillium": "Зеркальный компонент",
       "painting.universe3090.pc_dev_painting.author": "XerStudios",
+      "item.universe3090.mirror_componentberillium": "Зеркальный компонент",
       "item.universe3090.soulsvazivatel": "Связыватель душ",
       "item.universe3090.will": "Воля",
       "gui.universe3090.guidebookstart.button_nazad": "Назад",
@@ -7312,6 +7407,7 @@
       "block.universe3090.solarpanelgeneratorw": "Солнечная панель",
       "painting.universe3090.rose_my_place_1.title": "Rose My Place 1",
       "key.universe3090.super_form": "Супер форма",
+      "block.universe3090.whiteemeraldcrystal": "Red emerald crystal",
       "key.categories.wowamod": "Universe3090-Stories",
       "item.universe3090.bluesoulpiece": "Частичка Синий души",
       "gui.universe3090.extractorinteface.label_empty1": "|",
@@ -7320,13 +7416,14 @@
       "subtitles.hollow-knight-ost-sealed-vessel": "SealedVessel - Hollow Knight OST",
       "item.universe3090.purpleemerald": "Пёрпл Изумруд",
       "item.universe3090.blueemerald": "Синий изумруд",
-      "item.universe3090.superpalka": "Жезл",
       "item.universe3090.diamond_multi_toolw": "Алмазно-ляписовый мультитул",
+      "item.universe3090.superpalka": "Жезл",
       "item.universe3090.sealedvesseldisc": "Sealed vessel [Hollow Knight OST] disc",
       "block.universe3090.redemeraldcrystal": "Red emerald crystal",
       "item.universe3090.soulcore": "Ядро душ",
       "item.universe3090.mt_wtestanim": "М_Т_В",
       "item.universe3090.solarpanelelement": "Элемент солнечной панели",
+      "block.universe3090.lightblueemeraldcrystal": "Red emerald crystal",
       "block.universe3090.redstoneport": "Редстоун порт конструктора",
       "block.universe3090.interfaceconstructor": "Интерфейс конструктора",
       "gui.universe3090.wowabronyacraftring.label_crafting": "Создание предметов",
@@ -7339,6 +7436,7 @@
       "item.universe3090.extractbluesoul": "Экстракт желтой души",
       "item.universe3090.sealedvesseldisc.desc": "Sealed vessel [Hollow Knight OST] disc",
       "item.universe3090.red_plastine": "Красная пластина",
+      "block.universe3090.greenemeraldcrystal": "Red emerald crystal",
       "item.universe3090.darkironplastine": "Пластина темного железа",
       "item.universe3090.reddiamondmultitoolplusw": "К.И.А.Л мультитул",
       "item.universe3090.greenemerald": "Зелёный Изумруд",
@@ -7354,8 +7452,8 @@
       "item.universe3090.extract_purple_soul": "Экстракт зеленой души",
       "item.universe3090.purplesoulpiece": "Частичка Фиолетовой души",
       "item.universe3090.green_emerald_piece": "Осколок зелёного изумруда",
-      "gui.universe3090.port_constructora.label_port": "Основа",
       "effect.universe3090.neuyazvimost": "Неуязвимость!",
+      "gui.universe3090.port_constructora.label_port": "Основа",
       "block.universe3090.cable_n": "Кабель",
       "item.universe3090.ring": "Кольцо порядка",
       "item.universe3090.guidebookitem": "Супер Универсальный Компактный \"Айпад\"",
@@ -7463,6 +7561,7 @@
       "subtitles.shanty.ogg": "Shanty.ogg",
       "effect.universe3090.nightmareish": "NIGHTMARISH ENDINGE",
       "painting.universe3090.pc_dev_painting.title": "Pc Dev Painting",
+      "block.universe3090.yellowemeraldcrystal": "Red emerald crystal",
       "item.universe3090.diamond_lapis_armor_armor_chestplate": "Нагрудник из алмазного ляписа",
       "block.universe3090.redstone_9x": "Блок 9x",
       "item_group.universe3090.myplacevkladka": "My place elements",
@@ -7511,6 +7610,7 @@
       "item.universe3090.multitoolcomponent": "М.Т.К",
       "item.universe3090.blue_emerald_piece": "Осколок синего изумруда",
       "gui.universe3090.wowabronyacraftring.button_empty": "Создать",
+      "block.universe3090.purpleemeraldcrystal": "Red emerald crystal",
       "painting.universe3090.pc_dev_painting_3.author": "XerStudios",
       "item.universe3090.charasknife": "Нож",
       "subtitles.faza2perexod": "HAHAHAHAHAHAH",
@@ -7561,8 +7661,8 @@
       "item.universe3090.derjatili": "Держатель для необычного механизма",
       "item.universe3090.whiteemerald": "Белый Изумруд",
       "item.universe3090.soulcombine": "Soul combine",
-      "item.universe3090.mirror_componentberillium": "Mirror Component berillium",
       "painting.universe3090.pc_dev_painting.author": "XerStudios",
+      "item.universe3090.mirror_componentberillium": "Mirror Component berillium",
       "item.universe3090.will": "Will",
       "item.universe3090.soulsvazivatel": "Связыватель Душ",
       "gui.universe3090.guidebookstart.button_nazad": "Назад",
@@ -7572,6 +7672,7 @@
       "block.universe3090.solarpanelgeneratorw": "Solarpanelgeneratorw",
       "painting.universe3090.rose_my_place_1.title": "Rose My Place 1",
       "key.universe3090.super_form": "Super Form",
+      "block.universe3090.whiteemeraldcrystal": "Red emerald crystal",
       "key.categories.wowamod": "Universe3090-Stories",
       "item.universe3090.bluesoulpiece": "Частичка Синий души",
       "gui.universe3090.extractorinteface.label_empty1": "|",
@@ -7580,13 +7681,14 @@
       "subtitles.hollow-knight-ost-sealed-vessel": "SealedVessel - Hollow Knight OST",
       "item.universe3090.purpleemerald": "Пёрпл Изумруд",
       "item.universe3090.blueemerald": "Синий изумруд",
-      "item.universe3090.diamond_multi_toolw": "Diamond MultiTool",
       "item.universe3090.superpalka": "Жезл",
+      "item.universe3090.diamond_multi_toolw": "Diamond MultiTool",
       "item.universe3090.sealedvesseldisc": "Sealed vessel [Hollow Knight OST] disc",
       "block.universe3090.redemeraldcrystal": "Red emerald crystal",
       "item.universe3090.soulcore": "ЯдроДуш",
       "item.universe3090.mt_wtestanim": "M_T_W",
       "item.universe3090.solarpanelelement": "Solarpanelelement",
+      "block.universe3090.lightblueemeraldcrystal": "Red emerald crystal",
       "block.universe3090.redstoneport": "Редстоун порт конструктора",
       "block.universe3090.interfaceconstructor": "Интерфейс конструктора",
       "gui.universe3090.wowabronyacraftring.label_crafting": "Создание предметов",
@@ -7599,6 +7701,7 @@
       "item.universe3090.extractbluesoul": "Экстракт синей души",
       "item.universe3090.sealedvesseldisc.desc": "Sealed vessel [Hollow Knight OST] disc",
       "item.universe3090.red_plastine": "Red Plastine",
+      "block.universe3090.greenemeraldcrystal": "Red emerald crystal",
       "item.universe3090.darkironplastine": "Darkironplastine",
       "item.universe3090.reddiamondmultitoolplusw": "Diamond MultiTool Plus",
       "item.universe3090.greenemerald": "Зелёный Изумруд",
@@ -7614,8 +7717,8 @@
       "item.universe3090.extract_purple_soul": "Экстракт фиолетовой души",
       "item.universe3090.purplesoulpiece": "Частичка Фиолетовой души",
       "item.universe3090.green_emerald_piece": "Green Emerald Piece",
-      "gui.universe3090.port_constructora.label_port": "Основа",
       "effect.universe3090.neuyazvimost": "Неуязвимость!",
+      "gui.universe3090.port_constructora.label_port": "Основа",
       "block.universe3090.cable_n": "Cable",
       "item.universe3090.ring": "Ring",
       "item.universe3090.guidebookitem": "Guidebookitem",
@@ -7723,6 +7826,7 @@
       "subtitles.shanty.ogg": "Shanty.ogg",
       "effect.universe3090.nightmareish": "NIGHTMARISH ENDINGE",
       "painting.universe3090.pc_dev_painting.title": "Pc Dev Painting",
+      "block.universe3090.yellowemeraldcrystal": "Red emerald crystal",
       "item.universe3090.diamond_lapis_armor_armor_chestplate": "Diamond lapis Chestplate",
       "block.universe3090.redstone_9x": "Redstone 9x",
       "item_group.universe3090.myplacevkladka": "My place",
@@ -7771,6 +7875,7 @@
       "item.universe3090.multitoolcomponent": "М.Т.К",
       "item.universe3090.blue_emerald_piece": "Blue Emerald Piece",
       "gui.universe3090.wowabronyacraftring.button_empty": "Создать",
+      "block.universe3090.purpleemeraldcrystal": "Red emerald crystal",
       "painting.universe3090.pc_dev_painting_3.author": "XerStudios",
       "item.universe3090.charasknife": "Charas knife",
       "subtitles.faza2perexod": "HAHAHAHAHAHAH",

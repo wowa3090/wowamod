@@ -316,6 +316,11 @@ public class Universe3090ModItems {
 	public static final RegistryObject<Item> BERYLSTONECHUNK = REGISTRY.register("berylstonechunk", () -> new BerylstonechunkItem());
 	public static final RegistryObject<Item> REDEMERALDCRYSTAL = block(Universe3090ModBlocks.REDEMERALDCRYSTAL);
 	public static final RegistryObject<Item> BLUEEMERALDCRYSTAL = block(Universe3090ModBlocks.BLUEEMERALDCRYSTAL);
+	public static final RegistryObject<Item> GREENEMERALDCRYSTAL = block(Universe3090ModBlocks.GREENEMERALDCRYSTAL);
+	public static final RegistryObject<Item> YELLOWEMERALDCRYSTAL = block(Universe3090ModBlocks.YELLOWEMERALDCRYSTAL);
+	public static final RegistryObject<Item> PURPLEEMERALDCRYSTAL = block(Universe3090ModBlocks.PURPLEEMERALDCRYSTAL);
+	public static final RegistryObject<Item> WHITEEMERALDCRYSTAL = block(Universe3090ModBlocks.WHITEEMERALDCRYSTAL);
+	public static final RegistryObject<Item> LIGHTBLUEEMERALDCRYSTAL = block(Universe3090ModBlocks.LIGHTBLUEEMERALDCRYSTAL);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

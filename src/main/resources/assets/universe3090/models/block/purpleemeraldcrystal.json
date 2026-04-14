@@ -1,0 +1,9 @@
+{
+  "parent": "universe3090:custom/red_emerald_crystal",
+  "textures": {
+    "all": "universe3090:block/texture_crystal_purple",
+    "particle": "universe3090:block/texture_crystal_purple",
+    "0": "universe3090:block/texture_crystal_purple"
+  },
+  "render_type": "solid"
+}
