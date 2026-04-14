@@ -143,67 +143,77 @@ public class SuperFormServerHandler {
     }
 
     private static void handleSuperFormTick(ServerPlayer player) {
-        MobEffect superFormEffect = BuiltInRegistries.MOB_EFFECT.get(SUPER_FORM_EFFECT_ID);
-        if (superFormEffect == null) return;
+    MobEffect superFormEffect = BuiltInRegistries.MOB_EFFECT.get(SUPER_FORM_EFFECT_ID);
+    if (superFormEffect == null) return;
 
-        if (player.hasEffect(superFormEffect)) {
-            Item ringItem = BuiltInRegistries.ITEM.get(RING_ID);
-            int rings = getItemCount(player, ringItem);
+    if (player.hasEffect(superFormEffect)) {
+        Item ringItem = BuiltInRegistries.ITEM.get(RING_ID);
+        int rings = getItemCount(player, ringItem);
 
-            if (rings > 0) {
-                if (player.tickCount % 20 == 0) {
-                    consumeItem(player, ringItem, 1);
-                    player.addEffect(new MobEffectInstance(superFormEffect, 30, 0, false, false, true)); 
-                    player.addEffect(new MobEffectInstance(MobEffects.GLOWING, 30, 0, false, false, false));
-                }
-                
-                applySuperFormAttributes(player);
-                performSuperMechanics(player);
-            } else {
-                deactivateSuperForm(player, true);
+        if (rings > 0) {
+            if (player.tickCount % 20 == 0) {
+                consumeItem(player, ringItem, 1);
+                player.addEffect(new MobEffectInstance(superFormEffect, 30, 0, false, false, true)); 
+                player.addEffect(new MobEffectInstance(MobEffects.GLOWING, 30, 0, false, false, false));
             }
-        } else {
-            removeSuperFormAttributes(player);
-            if (player.gameMode.getGameModeForPlayer() != net.minecraft.world.level.GameType.CREATIVE) {
-                player.getAbilities().flying = false;
-                player.getAbilities().mayfly = false;
-                player.onUpdateAbilities();
-            }
-        }
-    }
+            
+            applySuperFormAttributes(player);
+            performSuperMechanics(player);
+	        } else {
+	            deactivateSuperForm(player, true);
+	        }
+		    } else {
+		        // ИСПРАВЛЕНИЕ: Очищаем атрибуты только если игрок только что потерял эффект
+		        // (удалили командой, выпил молоко или умер), а не спамим каждый тик.
+		        if (previousFlightState.containsKey(player.getUUID())) {
+		            deactivateSuperForm(player, false);
+		        }
+		    }
+		}
 
     private static void deactivateSuperForm(ServerPlayer player, boolean sendMessage) {
-        MobEffect superFormEffect = BuiltInRegistries.MOB_EFFECT.get(SUPER_FORM_EFFECT_ID);
-        if (superFormEffect != null) {
-            player.removeEffect(superFormEffect);
-        }
-        player.removeEffect(MobEffects.GLOWING);
-
-        removeSuperFormAttributes(player);
-
-        boolean wasAbleToFly = previousFlightState.getOrDefault(player.getUUID(), false);
-        if (player.gameMode.getGameModeForPlayer() != net.minecraft.world.level.GameType.CREATIVE) {
-            player.getAbilities().flying = false;
-            player.getAbilities().mayfly = wasAbleToFly; 
-        } else {
-            player.getAbilities().mayfly = true; 
-        }
-        
-        player.onUpdateAbilities();
-        player.setMaxUpStep(0.6f); 
-        player.setInvulnerable(false); 
-
-        previousFlightState.remove(player.getUUID());
-
-        if (sendMessage) {
-            player.level().playSound(null, player.blockPosition(), SoundEvents.BEACON_DEACTIVATE, SoundSource.PLAYERS, 1.0f, 1.0f);
-        }
-    }
+	    MobEffect superFormEffect = BuiltInRegistries.MOB_EFFECT.get(SUPER_FORM_EFFECT_ID);
+	    if (superFormEffect != null) {
+	        player.removeEffect(superFormEffect);
+	    }
+	    player.removeEffect(MobEffects.GLOWING);
+		
+		    removeSuperFormAttributes(player);
+	
+	    boolean wasAbleToFly = previousFlightState.getOrDefault(player.getUUID(), false);
+	    net.minecraft.world.level.GameType gameMode = player.gameMode.getGameModeForPlayer();
+	
+	    // ИСПРАВЛЕНИЕ: Корректно распределяем выдачу прав на полет в зависимости от режима
+		if (gameMode == net.minecraft.world.level.GameType.SPECTATOR) {
+	        player.getAbilities().mayfly = true;
+	        player.getAbilities().flying = true;
+	    } else if (gameMode == net.minecraft.world.level.GameType.CREATIVE) {
+	        player.getAbilities().mayfly = true;
+	        // В креативе игрок сам решает, лететь или нет, flying не трогаем
+	    } else {
+	        player.getAbilities().flying = false;
+	        player.getAbilities().mayfly = wasAbleToFly; 
+	    }
+	    
+	    player.onUpdateAbilities();
+	    player.setMaxUpStep(0.6f); 
+	    player.setInvulnerable(false); 
+	
+	    previousFlightState.remove(player.getUUID());
+	
+	    if (sendMessage) {
+	        player.level().playSound(null, player.blockPosition(), SoundEvents.BEACON_DEACTIVATE, SoundSource.PLAYERS, 1.0f, 1.0f);
+	    }
+	}
 
     private static void applySuperFormAttributes(ServerPlayer player) {
-        player.getAbilities().mayfly = true;
-        player.getAbilities().flying = true;
-        player.onUpdateAbilities();
+
+    	if (!player.getAbilities().mayfly || !player.getAbilities().flying) {
+	        player.getAbilities().mayfly = true;
+	        player.getAbilities().flying = true;
+	        player.onUpdateAbilities();
+	    }
+    	
         player.setInvulnerable(true);
         player.setMaxUpStep(1.5f);
 
