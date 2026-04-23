@@ -18,10 +18,7 @@ public class EnergyBallSposobkaProcedure {
     public static void execute(Player player) {
         // Проверка условий
         if (!AbilityConfig.hasWowaArmor(player)) {
-            player.displayClientMessage(
-                net.minecraft.network.chat.Component.translatable("message.wowamod.need_wowa_armor"), 
-                true
-            );
+            
         }
     }
 
@@ -51,7 +48,6 @@ public class EnergyBallSposobkaProcedure {
                             chargeAmount = 2;
                         }
                         // Ускорение игрока (~36-40%)
-                        // Теперь ошибки не будет, так как импорты добавлены выше
                         player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 5, 1, false, false));
                     }
                     

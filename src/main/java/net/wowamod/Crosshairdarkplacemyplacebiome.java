@@ -49,7 +49,7 @@ public class Crosshairdarkplacemyplacebiome {
                     
                     // --- НАСТРОЙКИ РАЗМЕРА ---
                     // Уменьшаем размер до 12 пикселей (стандарт — 16)
-                    int renderSize = 12; 
+                    int renderSize = 16; 
                     int offset = renderSize / 2; // Центрирование (6 пикселей)
                     
                     int x = screenWidth / 2 - offset;

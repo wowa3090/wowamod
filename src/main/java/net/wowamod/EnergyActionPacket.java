@@ -96,12 +96,6 @@ public class EnergyActionPacket {
                 }
             }
         }
-        
-        // Если нашли цель - выводим в консоль (для отладки)
-        //if (target != null) {
-        //    System.out.println("SERVER DEBUG: Автонаведение захватило: " + target.getName().getString());
-        //}
-        // -----------------------------------------------------
 
         // ГОЛУБОЙ: Шар летит быстрее (скорость 3.0 вместо 1.5)
         float speed = (flags & 4) != 0 ? 3.0f : 1.5f;
