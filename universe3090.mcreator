@@ -2354,7 +2354,7 @@
       "name": "Guidebook",
       "type": "gui",
       "sortid": 243,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "guidebook",
       "metadata": {
@@ -2377,56 +2377,6 @@
           "src/main/resources/assets/universe3090/models/item/guidebookitem.json",
           "src/main/java/net/wowamod/item/inventory/GuidebookitemInventoryCapability.java",
           "src/main/java/net/wowamod/item/GuidebookitemItem.java"
-        ]
-      }
-    },
-    {
-      "name": "Guidebookstart",
-      "type": "gui",
-      "sortid": 244,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "guidebookstart",
-      "metadata": {
-        "files": [
-          "src/main/java/net/wowamod/network/GuidebookstartButtonMessage.java",
-          "src/main/java/net/wowamod/world/inventory/GuidebookstartMenu.java",
-          "src/main/java/net/wowamod/client/gui/GuidebookstartScreen.java"
-        ]
-      }
-    },
-    {
-      "name": "Startguidebook",
-      "type": "procedure",
-      "sortid": 245,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "startguidebook",
-      "metadata": {
-        "files": [
-          "src/main/java/net/wowamod/procedures/StartguidebookProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       }
     },
@@ -7396,11 +7346,10 @@
       "item.universe3090.derjatili": "Держатель для необычного механизма",
       "item.universe3090.whiteemerald": "Белый Изумруд",
       "item.universe3090.soulcombine": "Комбинированная душа",
-      "painting.universe3090.pc_dev_painting.author": "XerStudios",
       "item.universe3090.mirror_componentberillium": "Зеркальный компонент",
+      "painting.universe3090.pc_dev_painting.author": "XerStudios",
       "item.universe3090.soulsvazivatel": "Связыватель душ",
       "item.universe3090.will": "Воля",
-      "gui.universe3090.guidebookstart.button_nazad": "Назад",
       "item.universe3090.wowabronya_boots": "Ботинки вовы3090",
       "item.universe3090.redemerald": "Красный Изумруд",
       "subtitles.fadingworld-2faza": "\u003d)",
@@ -7416,8 +7365,8 @@
       "subtitles.hollow-knight-ost-sealed-vessel": "SealedVessel - Hollow Knight OST",
       "item.universe3090.purpleemerald": "Пёрпл Изумруд",
       "item.universe3090.blueemerald": "Синий изумруд",
-      "item.universe3090.diamond_multi_toolw": "Алмазно-ляписовый мультитул",
       "item.universe3090.superpalka": "Жезл",
+      "item.universe3090.diamond_multi_toolw": "Алмазно-ляписовый мультитул",
       "item.universe3090.sealedvesseldisc": "Sealed vessel [Hollow Knight OST] disc",
       "block.universe3090.redemeraldcrystal": "Red emerald crystal",
       "item.universe3090.soulcore": "Ядро душ",
@@ -7452,8 +7401,8 @@
       "item.universe3090.extract_purple_soul": "Экстракт зеленой души",
       "item.universe3090.purplesoulpiece": "Частичка Фиолетовой души",
       "item.universe3090.green_emerald_piece": "Осколок зелёного изумруда",
-      "effect.universe3090.neuyazvimost": "Неуязвимость!",
       "gui.universe3090.port_constructora.label_port": "Основа",
+      "effect.universe3090.neuyazvimost": "Неуязвимость!",
       "block.universe3090.cable_n": "Кабель",
       "item.universe3090.ring": "Кольцо порядка",
       "item.universe3090.guidebookitem": "Супер Универсальный Компактный \"Айпад\"",
@@ -7500,14 +7449,12 @@
       "item.universe3090.elissaarmor_leggings": "Поножи Алисы",
       "item.universe3090.orangesoul": "Оранжевая душа",
       "item.universe3090.firstbronyacomponent": "Компонент первой брони",
-      "gui.universe3090.guidebookstart.label_zhielatielno_zapastis_miediu_i_zhiel": "Желательно запастись медью и железом",
       "item.universe3090.whitesoul_myplace": "Белая душа из игры MY PLACE",
       "item.universe3090.mtwmodeorbital": "M_T_W",
       "fluid.universe3090.extractgolubaysoul": "Экстракт голубой души",
       "item.universe3090.accessviolation": "!!ACCESS VIOLATION!!",
       "block.universe3090.darkgrass": "Dark Grass",
       "item.universe3090.diamond_lapis_armor_armor_leggings": "Поножи из алмазного ляписа",
-      "gui.universe3090.guidebookstart.label_nachalo": "Начало",
       "item.universe3090.accessviolation.desc": "A Dark Place 2 [ FADING PLACE ] Theme - ACCESS VIOLATION (XerStudios)",
       "block.universe3090.blackwallsmyplaceslab": "Black Walls Myplace",
       "item.universe3090.wowabronya_helmet": "Шлем вовы3090",
@@ -7519,7 +7466,6 @@
       "item.universe3090.pipes": "Трубы",
       "item.universe3090.alphaelement": "Элемент Альфа",
       "gui.universe3090.guidebook.label_krafty": "Крафты",
-      "gui.universe3090.guidebookstart.label_izumrudov": "Изумрудов",
       "subtitles.happyandsad": "a dark place",
       "item.universe3090.aluminium_plate": "Алюминиевая пластина",
       "item.universe3090.gold_plastine": "Золотая пластина",
@@ -7551,7 +7497,6 @@
       "item.universe3090.yellowsoulpiece": "Частичка Жёлтой души",
       "item.universe3090.yellowemerald": "Жёлтый Изумруд",
       "block.universe3090.crafterbroni": "Необычный Механизм",
-      "gui.universe3090.guidebookstart.label_dlia_nachala_vam_ponadobitsia_nait": "Для начала вам понадобиться найти множество ресурсов в виде :",
       "item.universe3090.extract_yellow_soul": "Экстракт фиолетовой души",
       "block.universe3090.testplant": "Заражённая тьмой трава",
       "item.universe3090.ultrastrongcoating": "Сверхпрочное покрытие",
@@ -7572,7 +7517,6 @@
       "item.universe3090.mimictkanb": "Мимикрирующая Ткань",
       "item.universe3090.beyondthe_bright": "Beyond the Bright",
       "block.universe3090.darkironblock": "Блок темного железа",
-      "gui.universe3090.guidebookstart.label_dush": "Душ",
       "item.universe3090.electromagiccore": "Энергетическо-магическое ядро",
       "item.universe3090.copperplate": "Медная пластина",
       "entity.universe3090.dark_head": "Dark Head",
@@ -7601,7 +7545,6 @@
       "block.universe3090.pogranichnik": "Пограничная ткань пространства времени",
       "item.universe3090.magicironingot": "Сталемагический слиток",
       "block.universe3090.redstonecommandblock": "Р.К.Б",
-      "gui.universe3090.guidebookstart.label_kozhi_mimika": "Кожи мимика",
       "item.universe3090.clearetheriumlight": "Очищенный Эфириум",
       "item_group.universe3090.musicdiscs": "Music discs",
       "item.universe3090.lightbluesoul": "Голубая душа",
@@ -7661,11 +7604,10 @@
       "item.universe3090.derjatili": "Держатель для необычного механизма",
       "item.universe3090.whiteemerald": "Белый Изумруд",
       "item.universe3090.soulcombine": "Soul combine",
-      "painting.universe3090.pc_dev_painting.author": "XerStudios",
       "item.universe3090.mirror_componentberillium": "Mirror Component berillium",
+      "painting.universe3090.pc_dev_painting.author": "XerStudios",
       "item.universe3090.will": "Will",
       "item.universe3090.soulsvazivatel": "Связыватель Душ",
-      "gui.universe3090.guidebookstart.button_nazad": "Назад",
       "item.universe3090.wowabronya_boots": "Ботинки 3090",
       "item.universe3090.redemerald": "Красный Изумруд",
       "subtitles.fadingworld-2faza": "\u003d)",
@@ -7681,8 +7623,8 @@
       "subtitles.hollow-knight-ost-sealed-vessel": "SealedVessel - Hollow Knight OST",
       "item.universe3090.purpleemerald": "Пёрпл Изумруд",
       "item.universe3090.blueemerald": "Синий изумруд",
-      "item.universe3090.superpalka": "Жезл",
       "item.universe3090.diamond_multi_toolw": "Diamond MultiTool",
+      "item.universe3090.superpalka": "Жезл",
       "item.universe3090.sealedvesseldisc": "Sealed vessel [Hollow Knight OST] disc",
       "block.universe3090.redemeraldcrystal": "Red emerald crystal",
       "item.universe3090.soulcore": "ЯдроДуш",
@@ -7717,8 +7659,8 @@
       "item.universe3090.extract_purple_soul": "Экстракт фиолетовой души",
       "item.universe3090.purplesoulpiece": "Частичка Фиолетовой души",
       "item.universe3090.green_emerald_piece": "Green Emerald Piece",
-      "effect.universe3090.neuyazvimost": "Неуязвимость!",
       "gui.universe3090.port_constructora.label_port": "Основа",
+      "effect.universe3090.neuyazvimost": "Неуязвимость!",
       "block.universe3090.cable_n": "Cable",
       "item.universe3090.ring": "Ring",
       "item.universe3090.guidebookitem": "Guidebookitem",
@@ -7765,14 +7707,12 @@
       "item.universe3090.elissaarmor_leggings": "Elissa Leggings",
       "item.universe3090.orangesoul": "Оранжевая душа",
       "item.universe3090.firstbronyacomponent": "First bronya component",
-      "gui.universe3090.guidebookstart.label_zhielatielno_zapastis_miediu_i_zhiel": "Желательно запастись медью и железом и алюминием",
       "item.universe3090.whitesoul_myplace": "Белая душа из игры MY PLACE",
       "item.universe3090.mtwmodeorbital": "M_T_W",
       "fluid.universe3090.extractgolubaysoul": "Extractgolubaysoul",
       "item.universe3090.accessviolation": "!!ACCESS VIOLATION!!",
       "block.universe3090.darkgrass": "Dark Grass",
       "item.universe3090.diamond_lapis_armor_armor_leggings": "Diamond lapis Leggings",
-      "gui.universe3090.guidebookstart.label_nachalo": "Начало",
       "item.universe3090.accessviolation.desc": "A Dark Place 2 [ FADING PLACE ] Theme - ACCESS VIOLATION (XerStudios)",
       "block.universe3090.blackwallsmyplaceslab": "Black Slab Myplace ",
       "item.universe3090.wowabronya_helmet": "Шлем 3090",
@@ -7784,7 +7724,6 @@
       "item.universe3090.pipes": "Pipes",
       "item.universe3090.alphaelement": "Alpha element",
       "gui.universe3090.guidebook.label_krafty": "Крафты",
-      "gui.universe3090.guidebookstart.label_izumrudov": "Изумрудов",
       "subtitles.happyandsad": "a dark place",
       "item.universe3090.aluminium_plate": "Aluminium Plate",
       "item.universe3090.gold_plastine": "Gold Plastine",
@@ -7816,7 +7755,6 @@
       "item.universe3090.yellowsoulpiece": "Частичка Жёлтой души",
       "item.universe3090.yellowemerald": "Жёлтый Изумруд",
       "block.universe3090.crafterbroni": "Необычный Механизм",
-      "gui.universe3090.guidebookstart.label_dlia_nachala_vam_ponadobitsia_nait": "Для начала вам понадобиться найти множество ресурсов в виде :",
       "item.universe3090.extract_yellow_soul": "Экстракт желтой души",
       "item.universe3090.ultrastrongcoating": "Ultrastrongcoating",
       "block.universe3090.testplant": "Testplant",
@@ -7837,7 +7775,6 @@
       "item.universe3090.mimictkanb": "Мимикрирующая Ткань",
       "item.universe3090.beyondthe_bright": "Beyond the Bright",
       "block.universe3090.darkironblock": "Dark iron block",
-      "gui.universe3090.guidebookstart.label_dush": "Душ",
       "item.universe3090.electromagiccore": "Energy electro magic core",
       "item.universe3090.copperplate": "Медная пластина",
       "entity.universe3090.dark_head": "Dark Head",
@@ -7866,7 +7803,6 @@
       "block.universe3090.pogranichnik": "Пограничная ткань пространства времени",
       "item.universe3090.magicironingot": "Сталемагический слиток",
       "block.universe3090.redstonecommandblock": "Р.К.Б",
-      "gui.universe3090.guidebookstart.label_kozhi_mimika": "Кожи мимика",
       "item.universe3090.clearetheriumlight": "Light Etherium",
       "item_group.universe3090.musicdiscs": "Music discs",
       "item.universe3090.lightbluesoul": "Голубая душа",

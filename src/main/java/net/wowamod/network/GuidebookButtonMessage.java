@@ -2,7 +2,6 @@
 package net.wowamod.network;
 
 import net.wowamod.world.inventory.GuidebookMenu;
-import net.wowamod.procedures.StartguidebookProcedure;
 import net.wowamod.procedures.GuidebookextractorProcedure;
 import net.wowamod.Universe3090Mod;
 
@@ -63,10 +62,6 @@ public class GuidebookButtonMessage {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
-		if (buttonID == 2) {
-
-			StartguidebookProcedure.execute(world, x, y, z, entity);
-		}
 		if (buttonID == 3) {
 
 			GuidebookextractorProcedure.execute(world, x, y, z, entity);

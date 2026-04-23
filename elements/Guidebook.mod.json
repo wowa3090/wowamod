@@ -66,9 +66,6 @@
           "name": "imagebutton_netherite_sword",
           "image": "netherite_sword.png",
           "hoveredImage": "",
-          "onClick": {
-            "name": "Startguidebook"
-          },
           "x": 15,
           "y": 59
         }

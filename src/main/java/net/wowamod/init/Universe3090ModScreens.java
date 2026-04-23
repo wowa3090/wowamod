@@ -7,7 +7,6 @@ package net.wowamod.init;
 import net.wowamod.client.gui.WowabronyacraftringScreen;
 import net.wowamod.client.gui.SolarpanelmenuScreen;
 import net.wowamod.client.gui.PortConstructoraScreen;
-import net.wowamod.client.gui.GuidebookstartScreen;
 import net.wowamod.client.gui.GuidebookScreen;
 import net.wowamod.client.gui.ExtractorintefaceScreen;
 import net.wowamod.client.gui.ExtractorGuideScreen;
@@ -31,7 +30,6 @@ public class Universe3090ModScreens {
 			MenuScreens.register(Universe3090ModMenus.PORT_CONSTRUCTORA.get(), PortConstructoraScreen::new);
 			MenuScreens.register(Universe3090ModMenus.EXTRACTORINTEFACE.get(), ExtractorintefaceScreen::new);
 			MenuScreens.register(Universe3090ModMenus.GUIDEBOOK.get(), GuidebookScreen::new);
-			MenuScreens.register(Universe3090ModMenus.GUIDEBOOKSTART.get(), GuidebookstartScreen::new);
 			MenuScreens.register(Universe3090ModMenus.ECI.get(), ECIScreen::new);
 			MenuScreens.register(Universe3090ModMenus.SOLARPANELMENU.get(), SolarpanelmenuScreen::new);
 			MenuScreens.register(Universe3090ModMenus.EXTRACTOR_GUIDE.get(), ExtractorGuideScreen::new);

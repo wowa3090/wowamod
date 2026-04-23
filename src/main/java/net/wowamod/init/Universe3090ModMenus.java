@@ -7,7 +7,6 @@ package net.wowamod.init;
 import net.wowamod.world.inventory.WowabronyacraftringMenu;
 import net.wowamod.world.inventory.SolarpanelmenuMenu;
 import net.wowamod.world.inventory.PortConstructoraMenu;
-import net.wowamod.world.inventory.GuidebookstartMenu;
 import net.wowamod.world.inventory.GuidebookMenu;
 import net.wowamod.world.inventory.ExtractorintefaceMenu;
 import net.wowamod.world.inventory.ExtractorGuideMenu;
@@ -29,7 +28,6 @@ public class Universe3090ModMenus {
 	public static final RegistryObject<MenuType<PortConstructoraMenu>> PORT_CONSTRUCTORA = REGISTRY.register("port_constructora", () -> IForgeMenuType.create(PortConstructoraMenu::new));
 	public static final RegistryObject<MenuType<ExtractorintefaceMenu>> EXTRACTORINTEFACE = REGISTRY.register("extractorinteface", () -> IForgeMenuType.create(ExtractorintefaceMenu::new));
 	public static final RegistryObject<MenuType<GuidebookMenu>> GUIDEBOOK = REGISTRY.register("guidebook", () -> IForgeMenuType.create(GuidebookMenu::new));
-	public static final RegistryObject<MenuType<GuidebookstartMenu>> GUIDEBOOKSTART = REGISTRY.register("guidebookstart", () -> IForgeMenuType.create(GuidebookstartMenu::new));
 	public static final RegistryObject<MenuType<ECIMenu>> ECI = REGISTRY.register("eci", () -> IForgeMenuType.create(ECIMenu::new));
 	public static final RegistryObject<MenuType<SolarpanelmenuMenu>> SOLARPANELMENU = REGISTRY.register("solarpanelmenu", () -> IForgeMenuType.create(SolarpanelmenuMenu::new));
 	public static final RegistryObject<MenuType<ExtractorGuideMenu>> EXTRACTOR_GUIDE = REGISTRY.register("extractor_guide", () -> IForgeMenuType.create(ExtractorGuideMenu::new));
