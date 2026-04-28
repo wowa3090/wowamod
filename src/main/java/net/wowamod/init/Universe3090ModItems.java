@@ -32,6 +32,7 @@ import net.wowamod.item.STBHswordItem;
 import net.wowamod.item.RotorItem;
 import net.wowamod.item.RoseItem;
 import net.wowamod.item.RingItem;
+import net.wowamod.item.ResonateCrystalItem;
 import net.wowamod.item.RedsoulpieceItem;
 import net.wowamod.item.RedsoulItem;
 import net.wowamod.item.RedemeraldItem;
@@ -94,6 +95,7 @@ import net.wowamod.item.EtheriumdarkItem;
 import net.wowamod.item.EnergypipesuscItem;
 import net.wowamod.item.EnergymagiccontrollerItem;
 import net.wowamod.item.EnergyelementItem;
+import net.wowamod.item.EmeraldspickaxeItem;
 import net.wowamod.item.ElissclawItem;
 import net.wowamod.item.ElissaarmorItem;
 import net.wowamod.item.ElissClawsItem;
@@ -321,6 +323,8 @@ public class Universe3090ModItems {
 	public static final RegistryObject<Item> PURPLEEMERALDCRYSTAL = block(Universe3090ModBlocks.PURPLEEMERALDCRYSTAL);
 	public static final RegistryObject<Item> WHITEEMERALDCRYSTAL = block(Universe3090ModBlocks.WHITEEMERALDCRYSTAL);
 	public static final RegistryObject<Item> LIGHTBLUEEMERALDCRYSTAL = block(Universe3090ModBlocks.LIGHTBLUEEMERALDCRYSTAL);
+	public static final RegistryObject<Item> RESONATE_CRYSTAL = REGISTRY.register("resonate_crystal", () -> new ResonateCrystalItem());
+	public static final RegistryObject<Item> EMERALDSPICKAXE = REGISTRY.register("emeraldspickaxe", () -> new EmeraldspickaxeItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

@@ -1,0 +1,33 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Pickaxe",
+    "renderType": 1,
+    "blockingRenderType": 0,
+    "texture": "redemeraldpickaxe",
+    "customModelName": "emerald:default",
+    "blockingModelName": "Normal blocking",
+    "name": "Emeralds pickaxe",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Wowamodvkladka"
+    },
+    "harvestLevel": 1,
+    "efficiency": 13.5,
+    "attackSpeed": 1.6,
+    "enchantability": 33,
+    "damageVsEntity": 6.5,
+    "usageCount": 3301,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

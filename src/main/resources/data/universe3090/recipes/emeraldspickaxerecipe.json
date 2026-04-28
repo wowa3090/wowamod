@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    " c ",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:redemeraldcrystal"
+    },
+    "b": {
+      "item": "universe3090:resonate_crystal"
+    },
+    "c": {
+      "item": "universe3090:redstone_9x"
+    },
+    "d": {
+      "item": "universe3090:superpalka"
+    }
+  },
+  "result": {
+    "item": "universe3090:emeraldspickaxe",
+    "count": 1
+  }
+}

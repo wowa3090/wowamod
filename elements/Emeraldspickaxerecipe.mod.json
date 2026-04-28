@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Redemeraldcrystal"
+      },
+      {
+        "value": "CUSTOM:ResonateCrystal"
+      },
+      {
+        "value": "CUSTOM:Redemeraldcrystal"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Redstone9x"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Superpalka"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Emeraldspickaxe"
+    },
+    "name": "emeraldspickaxerecipe",
+    "namespace": "mod"
+  }
+}

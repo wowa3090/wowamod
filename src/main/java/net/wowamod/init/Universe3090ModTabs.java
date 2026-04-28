@@ -180,6 +180,8 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModBlocks.PURPLEEMERALDCRYSTAL.get().asItem());
 				tabData.accept(Universe3090ModBlocks.WHITEEMERALDCRYSTAL.get().asItem());
 				tabData.accept(Universe3090ModBlocks.LIGHTBLUEEMERALDCRYSTAL.get().asItem());
+				tabData.accept(Universe3090ModItems.RESONATE_CRYSTAL.get());
+				tabData.accept(Universe3090ModItems.EMERALDSPICKAXE.get());
 			})
 
 					.build());

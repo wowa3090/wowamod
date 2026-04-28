@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aea"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:quartz"
+    },
+    "b": {
+      "item": "universe3090:purple_emerald_piece"
+    },
+    "c": {
+      "item": "universe3090:extract_purple_soul"
+    },
+    "d": {
+      "item": "universe3090:berillium_crystal"
+    },
+    "e": {
+      "item": "universe3090:redstone_9x"
+    }
+  },
+  "result": {
+    "item": "universe3090:resonate_crystal",
+    "count": 1
+  }
+}

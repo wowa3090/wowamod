@@ -1,0 +1,7 @@
+{
+  "parent": "universe3090:custom/emerald",
+  "textures": {
+    "0": "universe3090:block/texture_pickaxe",
+    "particle": "universe3090:item/redemeraldpickaxe"
+  }
+}

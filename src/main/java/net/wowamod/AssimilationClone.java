@@ -13,10 +13,6 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-/**
- * Этот класс объединяет сущность и регистрацию в одном файле.
- * Размещен в пакете .custom, чтобы избежать перезаписи со стороны MCreator.
- */
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class AssimilationClone extends Zombie {
 
