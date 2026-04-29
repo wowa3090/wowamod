@@ -50,10 +50,10 @@ public class Universe3090ModBiomes {
 				// Inject biomes to biome source
 				if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
 					List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters().values());
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.2046f, 0.9646f), Climate.Parameter.span(-0.466f, 0.4983f), Climate.Parameter.span(0.1657f, 0.6271f), Climate.Parameter.span(-0.9412f, 0.9785f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(-0.91f, 0.9411f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("universe3090", "darkbiome")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.2046f, 0.9646f), Climate.Parameter.span(-0.466f, 0.4983f), Climate.Parameter.span(0.1657f, 0.6271f), Climate.Parameter.span(-0.9412f, 0.9785f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(-0.91f, 0.9411f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("universe3090", "darkbiome")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.2046f, 0.9646f), Climate.Parameter.span(-0.466f, 0.4983f), Climate.Parameter.span(0.1657f, 0.6271f), Climate.Parameter.span(-0.7511f, 0.5001f),
+							Climate.Parameter.point(0.0f), Climate.Parameter.span(-0.8001f, 0.8219f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("universe3090", "darkbiome")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.2046f, 0.9646f), Climate.Parameter.span(-0.466f, 0.4983f), Climate.Parameter.span(0.1657f, 0.6271f), Climate.Parameter.span(-0.7511f, 0.5001f),
+							Climate.Parameter.point(1.0f), Climate.Parameter.span(-0.8001f, 0.8219f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("universe3090", "darkbiome")))));
 					chunkGenerator.biomeSource = MultiNoiseBiomeSource.createFromList(new Climate.ParameterList<>(parameters));
 					chunkGenerator.featuresPerStep = Suppliers
 							.memoize(() -> FeatureSorter.buildFeaturesPerStep(List.copyOf(chunkGenerator.biomeSource.possibleBiomes()), biome -> chunkGenerator.generationSettingsGetter.apply(biome).features(), true));
