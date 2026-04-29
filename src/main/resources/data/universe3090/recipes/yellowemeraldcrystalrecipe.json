@@ -11,14 +11,14 @@
       "item": "universe3090:berillium_crystal"
     },
     "b": {
-      "item": "universe3090:red_emerald_piece"
+      "item": "universe3090:yellow_emerald_piece"
     },
     "c": {
-      "item": "universe3090:redemerald"
+      "item": "universe3090:yellowemerald"
     }
   },
   "result": {
-    "item": "universe3090:redemeraldcrystal",
+    "item": "universe3090:yellowemeraldcrystal",
     "count": 1
   }
 }

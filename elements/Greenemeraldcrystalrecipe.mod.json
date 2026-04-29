@@ -15,34 +15,34 @@
         "value": "CUSTOM:BerilliumCrystal"
       },
       {
-        "value": "CUSTOM:RedEmeraldPiece"
+        "value": "CUSTOM:GreenEmeraldPiece"
       },
       {
         "value": "CUSTOM:BerilliumCrystal"
       },
       {
-        "value": "CUSTOM:RedEmeraldPiece"
+        "value": "CUSTOM:GreenEmeraldPiece"
       },
       {
-        "value": "CUSTOM:Redemerald"
+        "value": "CUSTOM:Greenemerald"
       },
       {
-        "value": "CUSTOM:RedEmeraldPiece"
+        "value": "CUSTOM:GreenEmeraldPiece"
       },
       {
         "value": "CUSTOM:BerilliumCrystal"
       },
       {
-        "value": "CUSTOM:RedEmeraldPiece"
+        "value": "CUSTOM:GreenEmeraldPiece"
       },
       {
         "value": "CUSTOM:BerilliumCrystal"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Redemeraldcrystal"
+      "value": "CUSTOM:Greenemeraldcrystal"
     },
-    "name": "redemeraldcrystalrecipe",
+    "name": "greenemeraldcrystalrecipe",
     "namespace": "mod"
   }
 }

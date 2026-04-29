@@ -7210,6 +7210,84 @@
           "src/main/resources/data/universe3090/recipes/redemeraldcrystalrecipe.json"
         ]
       }
+    },
+    {
+      "name": "Blueemeraldcrystalrecipe",
+      "type": "recipe",
+      "sortid": 454,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blueemeraldcrystalrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/blueemeraldcrystalrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Greenemeraldcrystalrecipe",
+      "type": "recipe",
+      "sortid": 455,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "greenemeraldcrystalrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/greenemeraldcrystalrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Yellowemeraldcrystalrecipe",
+      "type": "recipe",
+      "sortid": 456,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellowemeraldcrystalrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/yellowemeraldcrystalrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Purpleemeraldcrystalrecipe",
+      "type": "recipe",
+      "sortid": 457,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purpleemeraldcrystalrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/purpleemeraldcrystalrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Whiteemeraldcrystalrecipe",
+      "type": "recipe",
+      "sortid": 458,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "whiteemeraldcrystalrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/whiteemeraldcrystalrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Lightblueemeraldcrystalrecipe",
+      "type": "recipe",
+      "sortid": 459,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightblueemeraldcrystalrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/lightblueemeraldcrystalrecipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
