@@ -1,0 +1,21 @@
+{
+  "_fv": 57,
+  "_type": "particle",
+  "definition": {
+    "texture": "superform_particle_anim.png",
+    "animate": true,
+    "frameDuration": 2,
+    "width": 0.2,
+    "height": 0.30000000000000004,
+    "scale": 1.4000000000000001,
+    "speedFactor": 0.9,
+    "gravity": -0.2,
+    "maxAge": 7,
+    "maxAgeDiff": 0,
+    "angularVelocity": 0.0,
+    "angularAcceleration": 0.0,
+    "canCollide": true,
+    "alwaysShow": true,
+    "renderType": "LIT"
+  }
+}

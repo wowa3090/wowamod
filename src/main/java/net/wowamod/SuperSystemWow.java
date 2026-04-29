@@ -14,7 +14,10 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.registries.ForgeRegistries;
 import org.lwjgl.glfw.GLFW;
+
+import net.wowamod.init.Universe3090ModParticleTypes;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class SuperSystemWow {
@@ -66,15 +69,23 @@ public class SuperSystemWow {
             Player player = event.player;
             Level level = player.level();
 
-            // Золотые искры
+            // Золотые искры 
             if (level.isClientSide()) {
-                MobEffect superFormEffect = BuiltInRegistries.MOB_EFFECT.get(SUPER_FORM_EFFECT_ID);
+                MobEffect superFormEffect = ForgeRegistries.MOB_EFFECTS.getValue(SUPER_FORM_EFFECT_ID);
+                
                 if (superFormEffect != null && player.hasEffect(superFormEffect)) {
-                    if (player.tickCount % 3 == 0) {
+                    // Увеличена частота: спавним партиклы каждый тик. Цикл добавляет плотности (2 искры за тик)
+                    for (int i = 0; i < 2; i++) {
                         double x = player.getX() + (level.random.nextDouble() - 0.5) * 1.5;
                         double y = player.getY() + level.random.nextDouble() * 2.0;
                         double z = player.getZ() + (level.random.nextDouble() - 0.5) * 1.5;
-                        level.addParticle(net.minecraft.core.particles.ParticleTypes.END_ROD, x, y, z, 0, 0, 0);
+                        
+                        // Задаем им легкое рассеивание и движение вверх.
+                        double vx = (level.random.nextDouble() - 0.5) * 0.1;
+                        double vy = level.random.nextDouble() * 0.1;
+                        double vz = (level.random.nextDouble() - 0.5) * 0.1;
+                        
+                        level.addParticle(Universe3090ModParticleTypes.SUPERFORMPARTICLE.get(), x, y, z, vx, vy, vz);
                     }
                 }
             }

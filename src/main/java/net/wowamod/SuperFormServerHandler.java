@@ -163,8 +163,6 @@ public class SuperFormServerHandler {
 	            deactivateSuperForm(player, true);
 	        }
 		    } else {
-		        // ИСПРАВЛЕНИЕ: Очищаем атрибуты только если игрок только что потерял эффект
-		        // (удалили командой, выпил молоко или умер), а не спамим каждый тик.
 		        if (previousFlightState.containsKey(player.getUUID())) {
 		            deactivateSuperForm(player, false);
 		        }
@@ -183,7 +181,6 @@ public class SuperFormServerHandler {
 	    boolean wasAbleToFly = previousFlightState.getOrDefault(player.getUUID(), false);
 	    net.minecraft.world.level.GameType gameMode = player.gameMode.getGameModeForPlayer();
 	
-	    // ИСПРАВЛЕНИЕ: Корректно распределяем выдачу прав на полет в зависимости от режима
 		if (gameMode == net.minecraft.world.level.GameType.SPECTATOR) {
 	        player.getAbilities().mayfly = true;
 	        player.getAbilities().flying = true;

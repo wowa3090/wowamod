@@ -7288,6 +7288,20 @@
           "src/main/resources/data/universe3090/recipes/lightblueemeraldcrystalrecipe.json"
         ]
       }
+    },
+    {
+      "name": "Superformparticle",
+      "type": "particle",
+      "sortid": 460,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "superformparticle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/client/particle/SuperformparticleParticle.java",
+          "src/main/resources/assets/universe3090/particles/superformparticle.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -8012,11 +8026,11 @@
   "workspaceSettings": {
     "modid": "universe3090",
     "modName": "Universe3090-stories",
-    "version": "1.7.1",
+    "version": "1.7.2",
     "description": "This Mod will add to your minecraft world items from Universe3090 And.. a lot of content",
     "author": "wowa3090",
     "websiteURL": "https://nosite.com",
-    "license": "Custom license",
+    "license": "All Rights Reserved",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "modPicture": "schlemwowi",
