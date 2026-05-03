@@ -1,0 +1,9 @@
+{
+  "parent": "universe3090:custom/mwemitterblock",
+  "textures": {
+    "all": "universe3090:block/texture_emitter",
+    "particle": "universe3090:block/texture_emitter",
+    "0": "universe3090:block/texture_emitter"
+  },
+  "render_type": "cutout"
+}

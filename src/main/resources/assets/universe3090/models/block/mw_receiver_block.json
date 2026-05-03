@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "universe3090:block/mwreceiverblock",
+    "up": "universe3090:block/mwreceiverblockactive",
+    "north": "universe3090:block/mwreceiverblock",
+    "east": "universe3090:block/mwreceiverblock",
+    "south": "universe3090:block/mwreceiverblock",
+    "west": "universe3090:block/mwreceiverblock",
+    "particle": "universe3090:block/mwreceiverblock"
+  },
+  "render_type": "solid"
+}

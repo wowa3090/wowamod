@@ -325,6 +325,8 @@ public class Universe3090ModItems {
 	public static final RegistryObject<Item> LIGHTBLUEEMERALDCRYSTAL = block(Universe3090ModBlocks.LIGHTBLUEEMERALDCRYSTAL);
 	public static final RegistryObject<Item> RESONATE_CRYSTAL = REGISTRY.register("resonate_crystal", () -> new ResonateCrystalItem());
 	public static final RegistryObject<Item> EMERALDSPICKAXE = REGISTRY.register("emeraldspickaxe", () -> new EmeraldspickaxeItem());
+	public static final RegistryObject<Item> MW_RECEIVER_BLOCK = block(Universe3090ModBlocks.MW_RECEIVER_BLOCK);
+	public static final RegistryObject<Item> MW_EMITTER_BLOCK = block(Universe3090ModBlocks.MW_EMITTER_BLOCK);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

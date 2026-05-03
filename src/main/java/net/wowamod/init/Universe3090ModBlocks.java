@@ -22,6 +22,8 @@ import net.wowamod.block.PortconstructorBlock;
 import net.wowamod.block.PogranichnikBlock;
 import net.wowamod.block.MyplacezonePortalBlock;
 import net.wowamod.block.MagicironblockBlock;
+import net.wowamod.block.MWReceiverBlockBlock;
+import net.wowamod.block.MWEmitterBlockBlock;
 import net.wowamod.block.LightblueemeraldcrystalBlock;
 import net.wowamod.block.InterfaceconstructorBlock;
 import net.wowamod.block.GreenemeraldcrystalBlock;
@@ -104,6 +106,8 @@ public class Universe3090ModBlocks {
 	public static final RegistryObject<Block> PURPLEEMERALDCRYSTAL = REGISTRY.register("purpleemeraldcrystal", () -> new PurpleemeraldcrystalBlock());
 	public static final RegistryObject<Block> WHITEEMERALDCRYSTAL = REGISTRY.register("whiteemeraldcrystal", () -> new WhiteemeraldcrystalBlock());
 	public static final RegistryObject<Block> LIGHTBLUEEMERALDCRYSTAL = REGISTRY.register("lightblueemeraldcrystal", () -> new LightblueemeraldcrystalBlock());
+	public static final RegistryObject<Block> MW_RECEIVER_BLOCK = REGISTRY.register("mw_receiver_block", () -> new MWReceiverBlockBlock());
+	public static final RegistryObject<Block> MW_EMITTER_BLOCK = REGISTRY.register("mw_emitter_block", () -> new MWEmitterBlockBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
