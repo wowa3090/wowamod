@@ -24,11 +24,14 @@ public class EmitterScreen extends AbstractContainerScreen<EmitterMenu> {
     private EditBox waveNameBox;
     private EditBox limitBox;
     
+    // --- ЛОКАЛЬНАЯ ПАМЯТЬ GUI (Для мгновенной реакции монитора) ---
     private String localWaveName = "";
     private String localLimit = "10000";
     private boolean localModeOutput = true;
     
+    // Флаг безопасной перерисовки (Защита от крашей ConcurrentModificationException)
     private boolean needsReinit = false;
+
     private int tickCount = 0;
     private final String[] cmdLines = {
         "sys.route_power(fw_net);", "auth: UUID_VERIFIED", "wave_link.establish()...",
@@ -39,8 +42,9 @@ public class EmitterScreen extends AbstractContainerScreen<EmitterMenu> {
     public EmitterScreen(EmitterMenu menu, Inventory inventory, Component title) {
         super(menu, inventory, title);
         this.imageWidth = 176;
-        this.imageHeight = 175; // Сделал чуть выше для красоты
+        this.imageHeight = 175;
         
+        // Подхватываем стартовые значения из блока (если они есть)
         if (menu.blockEntity != null) {
             this.localWaveName = menu.blockEntity.getActiveWaveName();
             this.localLimit = String.valueOf(menu.blockEntity.getTransferLimit());
@@ -54,16 +58,47 @@ public class EmitterScreen extends AbstractContainerScreen<EmitterMenu> {
         super.containerTick();
         this.tickCount++; 
 
+        // Безопасная перерисовка экрана ПОСЛЕ того, как пакет обработан
         if (this.needsReinit) {
             this.needsReinit = false;
             if (this.currentTab == 1) this.init(); 
         }
 
+        // Синхронизируем локальную память с текстовыми полями каждую секунду, чтобы терминал обновлялся
         if (this.currentTab == 0 && this.waveNameBox != null && this.limitBox != null) {
             this.localWaveName = this.waveNameBox.getValue();
             this.localLimit = this.limitBox.getValue();
         }
     }
+
+    @Override
+    public boolean keyPressed(int keyCode, int scanCode, int modifiers) {
+        // Клавиша Escape (256) всегда закрывает меню (безопасный выход)
+        if (keyCode == 256) {
+            if (this.minecraft != null && this.minecraft.player != null) {
+                this.minecraft.player.closeContainer();
+            }
+            return true;
+        }
+
+        boolean isFocused = (this.waveNameBox != null && this.waveNameBox.isFocused()) || 
+                            (this.limitBox != null && this.limitBox.isFocused());
+
+        // Даем полям ввода обработать системные клавиши (Backspace, стрелки и т.д.)
+        if (this.waveNameBox != null && this.waveNameBox.isFocused() && this.waveNameBox.keyPressed(keyCode, scanCode, modifiers)) {
+            return true;
+        }
+        if (this.limitBox != null && this.limitBox.isFocused() && this.limitBox.keyPressed(keyCode, scanCode, modifiers)) {
+            return true;
+        }
+
+        if (isFocused && this.minecraft != null && this.minecraft.options.keyInventory.matches(keyCode, scanCode)) {
+            return true; 
+        }
+
+        return super.keyPressed(keyCode, scanCode, modifiers);
+    }
+    // ==========================================
 
     @Override
     protected void init() {
@@ -72,7 +107,6 @@ public class EmitterScreen extends AbstractContainerScreen<EmitterMenu> {
         int x = (this.width - this.imageWidth) / 2;
         int y = (this.height - this.imageHeight) / 2;
 
-        // Используем наши кастомные кибер-кнопки
         CyberButton tab1Btn = new CyberButton(x, y - 22, 85, 20, Component.literal("Настройки"), b -> switchTab(0));
         tab1Btn.active = (currentTab != 0);
         this.addRenderableWidget(tab1Btn);
@@ -94,8 +128,8 @@ public class EmitterScreen extends AbstractContainerScreen<EmitterMenu> {
         this.waveNameBox = new EditBox(this.font, x + 40, y + 70, 96, 16, Component.literal("Имя сети"));
         this.waveNameBox.setMaxLength(16);
         this.waveNameBox.setValue(this.localWaveName);
-        this.waveNameBox.setBordered(false); // Отключаем стандартную рамку
-        this.waveNameBox.setTextColor(0xFF00FF00); // Неоновый зеленый текст
+        this.waveNameBox.setBordered(false); 
+        this.waveNameBox.setTextColor(0xFF00FF00); 
         this.addRenderableWidget(this.waveNameBox);
 
         this.limitBox = new EditBox(this.font, x + 40, y + 95, 96, 16, Component.literal("Лимит FE"));
@@ -175,22 +209,17 @@ public class EmitterScreen extends AbstractContainerScreen<EmitterMenu> {
         int x = (this.width - this.imageWidth) / 2;
         int y = (this.height - this.imageHeight) / 2;
         
-        // --- 1. КИБЕР ФОН ---
-        graphics.fill(x, y, x + this.imageWidth, y + this.imageHeight, 0xEE080808); // Темно-серый почти черный фон
-        drawBorder(graphics, x, y, this.imageWidth, this.imageHeight, 0xFF00CC00); // Зеленая рамка
-        graphics.fill(x, y + 16, x + this.imageWidth, y + 17, 0xFF00CC00); // Полоска-разделитель заголовка
+        graphics.fill(x, y, x + this.imageWidth, y + this.imageHeight, 0xEE080808); 
+        drawBorder(graphics, x, y, this.imageWidth, this.imageHeight, 0xFF00CC00); 
+        graphics.fill(x, y + 16, x + this.imageWidth, y + 17, 0xFF00CC00); 
 
-        // --- 2. КАСТОМНЫЕ РАМКИ ДЛЯ ТЕКСТОВЫХ ПОЛЕЙ ---
         if (currentTab == 0) {
-            // Рамки вокруг EditBox
             drawBorder(graphics, x + 38, y + 68, 100, 20, 0xFF00AA00);
             drawBorder(graphics, x + 38, y + 93, 100, 20, 0xFF00AA00);
 
-            // Текстовые подсказки
             graphics.drawString(this.font, "NAME", x + 10, y + 74, 0xFF008800, false);
             graphics.drawString(this.font, "MAX", x + 12, y + 99, 0xFF008800, false);
             
-            // --- 3. ТЕРМИНАЛ CMD ---
             int termX = x + 10;
             int termY = y + 20;
             int termW = 156;
@@ -233,17 +262,13 @@ public class EmitterScreen extends AbstractContainerScreen<EmitterMenu> {
         }
     }
 
-    // --- УТИЛИТА ДЛЯ ОТРИСОВКИ РАМОК ---
     public static void drawBorder(GuiGraphics g, int x, int y, int w, int h, int color) {
-        g.fill(x, y, x + w, y + 1, color); // Верх
-        g.fill(x, y + h - 1, x + w, y + h, color); // Низ
-        g.fill(x, y + 1, x + 1, y + h - 1, color); // Лево
-        g.fill(x + w - 1, y + 1, x + w, y + h - 1, color); // Право
+        g.fill(x, y, x + w, y + 1, color); 
+        g.fill(x, y + h - 1, x + w, y + h, color); 
+        g.fill(x, y + 1, x + 1, y + h - 1, color); 
+        g.fill(x + w - 1, y + 1, x + w, y + h - 1, color); 
     }
 
-    // ==========================================
-    // ВНУТРЕННИЙ КЛАСС: ПРОЦЕДУРНАЯ КИБЕР-КНОПКА
-    // ==========================================
     private class CyberButton extends Button {
         public CyberButton(int x, int y, int width, int height, Component message, OnPress onPress) {
             super(x, y, width, height, message, onPress, DEFAULT_NARRATION);
@@ -252,19 +277,13 @@ public class EmitterScreen extends AbstractContainerScreen<EmitterMenu> {
         @Override
         public void renderWidget(GuiGraphics graphics, int mouseX, int mouseY, float partialTick) {
             boolean hovered = this.isHoveredOrFocused();
-            // Цвета фона
             int bgColor = hovered ? 0xAA004400 : 0xDD000000;
-            // Цвета рамок (если неактивна - серая, если наведена - яркая)
             int borderColor = this.active ? (hovered ? 0xFF00FF00 : 0xFF008800) : 0xFF333333;
-            // Цвет текста
             int textColor = this.active ? (hovered ? 0xFFFFFFFF : 0xFF00CC00) : 0xFF555555;
 
-            // Рисуем фон кнопки
             graphics.fill(this.getX(), this.getY(), this.getX() + this.width, this.getY() + this.height, bgColor);
-            // Рисуем границу кнопки через нашу утилиту
             drawBorder(graphics, this.getX(), this.getY(), this.width, this.height, borderColor);
             
-            // Центрируем текст внутри кнопки
             int textWidth = font.width(this.getMessage());
             graphics.drawString(font, this.getMessage(), this.getX() + (this.width - textWidth) / 2, this.getY() + (this.height - 8) / 2, textColor, false);
         }

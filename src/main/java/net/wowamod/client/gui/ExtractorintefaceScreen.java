@@ -74,10 +74,10 @@ public class ExtractorintefaceScreen extends AbstractContainerScreen<Extractorin
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.universe3090.extractorinteface.label_centrifuge"), 61, 10, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.universe3090.extractorinteface.label_centrifuge"), 61, -13, -1777183, false);
 		guiGraphics.drawString(this.font,
 
-				CraftprogressProcedure.execute(world, x, y, z), 81, 38, -12829636, false);
+				CraftprogressProcedure.execute(world, x, y, z), 81, 38, -986896, false);
 		guiGraphics.drawString(this.font,
 
 				EciprocProcedure.execute(world, x, y, z), -81, 4, -3289651, false);

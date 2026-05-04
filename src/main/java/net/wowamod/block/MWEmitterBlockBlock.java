@@ -116,7 +116,7 @@ public class MWEmitterBlockBlock extends Block implements EntityBlock {
         if (blockEntity instanceof MWEmitterBlockBlockEntity emitter) {
             
             if (emitter.getOwnerUUID() == null) {
-                System.out.println("[WOWA-LOG] Блок восстановлен! Назначен владелец: " + player.getName().getString());
+                // System.out.println("[WOWA-LOG] Блок восстановлен! Назначен владелец: " + player.getName().getString());
                 emitter.setOwnerUUID(player.getUUID());
             }
 
@@ -126,7 +126,7 @@ public class MWEmitterBlockBlock extends Block implements EntityBlock {
             }
 
             if (!(world.getBlockEntity(pos.below()) instanceof MWReceiverBlockBlockEntity)) {
-                player.displayClientMessage(Component.literal("§eРаздатчик (Шар) должен быть установлен на Приемник (Куб)!"), true);
+                player.displayClientMessage(Component.literal("§cРаздатчик (Шар) должен быть установлен на Приемник (Куб)!"), true);
                 return InteractionResult.PASS;
             }
 
@@ -134,7 +134,7 @@ public class MWEmitterBlockBlock extends Block implements EntityBlock {
             if (menuProvider != null && player instanceof ServerPlayer serverPlayer) {
                 net.wowamod.network.wave.WaveManager manager = net.wowamod.network.wave.WaveManager.get((net.minecraft.server.level.ServerLevel) world);
                 java.util.List<String> names = manager.getAllNetworkNames(player.getUUID());
-                System.out.println("[WOWA-LOG] Отправляем сети игроку: " + names.toString());
+                // System.out.println("[WOWA-LOG] Отправляем сети игроку: " + names.toString());
                 net.wowamod.network.MWNetwork.sendToPlayer(new net.wowamod.network.S2CSyncWavesPacket(names), serverPlayer);
                 
                 NetworkHooks.openScreen(serverPlayer, menuProvider, pos);

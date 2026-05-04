@@ -155,7 +155,7 @@ public class MWEmitterBlockBlockEntity extends BlockEntity implements MenuProvid
         compound.put("Energy", energyStorage.serializeNBT());
     }
 
-    // --- НОВОЕ: ПЕРЕДАЧА NBT КЛИЕНТУ ДЛЯ GUI ---
+    // --- ПЕРЕДАЧА NBT КЛИЕНТУ ДЛЯ GUI ---
     @Override
     public CompoundTag getUpdateTag() {
         CompoundTag tag = new CompoundTag();

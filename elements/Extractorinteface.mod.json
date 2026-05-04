@@ -48,11 +48,11 @@
             "fixedValue": "Centrifuge"
           },
           "color": {
-            "value": -12829636,
+            "value": -1777183,
             "falpha": 0.0
           },
           "x": 187,
-          "y": 47
+          "y": 24
         }
       },
       {
@@ -109,7 +109,7 @@
             "name": "Craftprogress"
           },
           "color": {
-            "value": -12829636,
+            "value": -986896,
             "falpha": 0.0
           },
           "x": 207,
