@@ -8,119 +8,51 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.wowamod.block.entity.CableNBlockEntity;
+
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
+import java.util.Set;
 
 public class CableUpdateTickEnergyProcedure {
-    private static final int MAX_TRANSFER_RATE = 50000;
+    private static final int MAX_TRANSFER_RATE = 10000; // Мгновенная передача
+    private static final int MAX_NETWORK_SIZE = 512; // Защита от зависаний при огромных сетях
 
     public static void execute(LevelAccessor world, double x, double y, double z) {
         if (world.isClientSide()) return;
 
         BlockPos currentPos = BlockPos.containing(x, y, z);
         BlockEntity currentBlockEntity = world.getBlockEntity(currentPos);
-        if (currentBlockEntity == null) return;
+        
+        if (!(currentBlockEntity instanceof CableNBlockEntity)) return;
 
         IEnergyStorage currentEnergy = currentBlockEntity.getCapability(ForgeCapabilities.ENERGY, null).orElse(null);
         if (currentEnergy == null) return;
 
         boolean changed = false;
 
-        List<EnergyTransferTarget> machines = new ArrayList<>();
-        List<EnergyTransferTarget> cables = new ArrayList<>();
-
         // ==========================================
-        // ЭТАП 1: АКТИВНЫЙ "ПЫЛЕСОС" И ПОИСК ЦЕЛЕЙ
+        // ЭТАП 1: ВЫТЯГИВАНИЕ ИЗ ЧИСТЫХ ГЕНЕРАТОРОВ
         // ==========================================
-        for (Direction direction : Direction.values()) {
-            BlockEntity neighbor = world.getBlockEntity(currentPos.relative(direction));
-            if (neighbor == null) continue;
+        if (currentEnergy.getEnergyStored() < currentEnergy.getMaxEnergyStored()) {
+            for (Direction direction : Direction.values()) {
+                BlockEntity neighbor = world.getBlockEntity(currentPos.relative(direction));
+                if (neighbor == null || neighbor instanceof CableNBlockEntity) continue;
 
-            IEnergyStorage neighborEnergy = neighbor.getCapability(ForgeCapabilities.ENERGY, direction.getOpposite()).orElse(null);
-            if (neighborEnergy == null) continue;
-
-            // Проверяем, является ли сосед таким же кабелем
-            boolean isCable = neighbor.getBlockState().getBlock() == currentBlockEntity.getBlockState().getBlock();
-
-            // 1. АКТИВНОЕ ВЫТЯГИВАНИЕ ИЗ ПАНЕЛЕЙ (ГЕНЕРАТОРОВ)
-            // Если сосед - не кабель, МОЖЕТ отдавать энергию и НЕ МОЖЕТ принимать (чистый генератор)
-            if (!isCable && neighborEnergy.canExtract() && !neighborEnergy.canReceive()) {
-                int spaceInCable = currentEnergy.receiveEnergy(MAX_TRANSFER_RATE, true);
-                if (spaceInCable > 0) {
-                    // Силой забираем энергию у ленивой панели
-                    int extracted = neighborEnergy.extractEnergy(spaceInCable, false);
-                    if (extracted > 0) {
-                        currentEnergy.receiveEnergy(extracted, false);
-                        neighbor.setChanged();
-                        changed = true;
-                    }
-                }
-            }
-
-            // 2. СОРТИРОВКА ПОЛУЧАТЕЛЕЙ (VIP-Маршрутизация)
-            if (neighborEnergy.canReceive()) {
-                if (!isCable) {
-                    // Механизмы (Smelter и т.д.) отправляются в приоритетный список!
-                    machines.add(new EnergyTransferTarget(neighbor, neighborEnergy));
-                } else {
-                    // Кабели отправляются во вторичный список (защита от пинг-понга: только если у соседа меньше энергии)
-                    if (neighborEnergy.getEnergyStored() < currentEnergy.getEnergyStored()) {
-                        cables.add(new EnergyTransferTarget(neighbor, neighborEnergy));
-                    }
-                }
-            }
-        }
-
-        // ==========================================
-        // ЭТАП 2: РАСПРЕДЕЛЕНИЕ (ПУШ)
-        // ==========================================
-        int availableToTransfer = currentEnergy.extractEnergy(MAX_TRANSFER_RATE, true);
-        if (availableToTransfer > 0) {
-            
-            // ПРИОРИТЕТ 1: Кормим МЕХАНИЗМЫ 
-            // Отдаем им всё, что они могут проглотить! Никаких задержек.
-            if (!machines.isEmpty()) {
-                int remainingMachines = machines.size();
+                IEnergyStorage neighborEnergy = neighbor.getCapability(ForgeCapabilities.ENERGY, direction.getOpposite()).orElse(null);
                 
-                for (EnergyTransferTarget target : machines) {
-                    if (availableToTransfer <= 0) break;
-                    
-                    // Делим оставшуюся энергию на количество голодных механизмов
-                    int amountToOffer = availableToTransfer / remainingMachines;
-                    if (amountToOffer == 0) amountToOffer = availableToTransfer;
-                    
-                    int simReceived = target.energyStorage.receiveEnergy(amountToOffer, true);
-                    if (simReceived > 0) {
-                        int actualExtracted = currentEnergy.extractEnergy(simReceived, false);
-                        target.energyStorage.receiveEnergy(actualExtracted, false);
-                        availableToTransfer -= actualExtracted;
-                        target.blockEntity.setChanged();
-                        changed = true;
-                    }
-                    remainingMachines--; // Уменьшаем счетчик, чтобы оставшиеся получили больше
-                }
-            }
-
-            // ПРИОРИТЕТ 2: Если механизмы сыты, проталкиваем остатки дальше по КАБЕЛЯМ
-            if (availableToTransfer > 0 && !cables.isEmpty()) {
-                int perCable = availableToTransfer / cables.size();
-                if (perCable == 0) perCable = availableToTransfer;
-
-                for (EnergyTransferTarget target : cables) {
-                    if (availableToTransfer <= 0) break;
-                    
-                    // Балансируем энергию между кабелями, чтобы она ползла вперед
-                    int diff = currentEnergy.getEnergyStored() - target.energyStorage.getEnergyStored();
-                    int maxToBalance = (int) Math.ceil(diff / 2.0);
-                    int amountToPush = Math.min(perCable, maxToBalance);
-
-                    if (amountToPush > 0) {
-                        int simReceived = target.energyStorage.receiveEnergy(amountToPush, true);
-                        if (simReceived > 0) {
-                            int actualExtracted = currentEnergy.extractEnergy(simReceived, false);
-                            target.energyStorage.receiveEnergy(actualExtracted, false);
-                            availableToTransfer -= actualExtracted;
-                            target.blockEntity.setChanged();
+                if (neighborEnergy != null && neighborEnergy.canExtract() && !neighborEnergy.canReceive()) {
+                    int space = currentEnergy.receiveEnergy(MAX_TRANSFER_RATE, true);
+                    if (space > 0) {
+                        int extracted = neighborEnergy.extractEnergy(space, false);
+                        if (extracted > 0) {
+                            currentEnergy.receiveEnergy(extracted, false);
+                            neighbor.setChanged();
                             changed = true;
                         }
                     }
@@ -128,20 +60,93 @@ public class CableUpdateTickEnergyProcedure {
             }
         }
 
-        // Сохраняем состояние кабеля только если были реальные изменения
+        // ==========================================
+        // ЭТАП 2: ПОИСК ПОЛУЧАТЕЛЕЙ ПО СЕТИ (BFS)
+        // ==========================================
+        int availableToTransfer = currentEnergy.extractEnergy(MAX_TRANSFER_RATE, true);
+
+        if (availableToTransfer > 0) {
+            List<IEnergyStorage> receivers = new ArrayList<>();
+            Set<BlockPos> visited = new HashSet<>();
+            Queue<BlockPos> queue = new LinkedList<>();
+
+            queue.add(currentPos);
+            visited.add(currentPos);
+
+            int processedBlocks = 0;
+
+            while (!queue.isEmpty() && processedBlocks < MAX_NETWORK_SIZE) {
+                BlockPos pos = queue.poll();
+                processedBlocks++;
+
+                for (Direction dir : Direction.values()) {
+                    BlockPos neighborPos = pos.relative(dir);
+                    
+                    if (visited.contains(neighborPos)) continue;
+                    visited.add(neighborPos); // Помечаем, чтобы не проверять дважды
+                    
+                    BlockEntity be = world.getBlockEntity(neighborPos);
+                    if (be == null) continue;
+
+                    if (be instanceof CableNBlockEntity) {
+                        queue.add(neighborPos); // Расширяем сеть кабелей
+                    } else {
+                        // Если это механизм и он может принимать энергию
+                        IEnergyStorage cap = be.getCapability(ForgeCapabilities.ENERGY, dir.getOpposite()).orElse(null);
+                        if (cap != null && cap.canReceive()) {
+                            receivers.add(cap);
+                        }
+                    }
+                }
+            }
+
+            // ==========================================
+            // ЭТАП 3: РАВНОМЕРНОЕ РАСПРЕДЕЛЕНИЕ (Круговая порука)
+            // ==========================================
+            if (!receivers.isEmpty()) {
+                // Перемешиваем список, чтобы при нехватке энергии дальние механизмы не голодали
+                Collections.shuffle(receivers); 
+
+                boolean energyDistributed = true;
+                int totalExtractedFromCable = 0;
+
+                // Крутим цикл раздачи до тех пор, пока есть энергия и хоть кто-то её принимает
+                while (availableToTransfer > 0 && energyDistributed && !receivers.isEmpty()) {
+                    energyDistributed = false;
+                    
+                    // Делим остаток поровну на всех голодных. Если энергии мало, даем хотя бы по 1 FE.
+                    int amountPerMachine = Math.max(1, availableToTransfer / receivers.size());
+                    
+                    Iterator<IEnergyStorage> iterator = receivers.iterator();
+                    while (iterator.hasNext()) {
+                        IEnergyStorage receiver = iterator.next();
+                        
+                        int simReceived = receiver.receiveEnergy(amountPerMachine, true);
+                        if (simReceived > 0) {
+                            // Отправляем реально
+                            int actualReceived = receiver.receiveEnergy(simReceived, false);
+                            availableToTransfer -= actualReceived;
+                            totalExtractedFromCable += actualReceived;
+                            energyDistributed = true; // Мы кому-то отдали энергию, значит продолжаем цикл
+                            
+                            if (availableToTransfer <= 0) break;
+                        } else {
+                            // Механизм наелся или не принимает -> выкидываем из текущей очереди
+                            iterator.remove();
+                        }
+                    }
+                }
+
+                // Списываем реально потраченную энергию из начального кабеля
+                if (totalExtractedFromCable > 0) {
+                    currentEnergy.extractEnergy(totalExtractedFromCable, false);
+                    changed = true;
+                }
+            }
+        }
+
         if (changed) {
             currentBlockEntity.setChanged();
-        }
-    }
-
-    // Вспомогательный класс-структура
-    private static class EnergyTransferTarget {
-        public final BlockEntity blockEntity;
-        public final IEnergyStorage energyStorage;
-
-        public EnergyTransferTarget(BlockEntity blockEntity, IEnergyStorage energyStorage) {
-            this.blockEntity = blockEntity;
-            this.energyStorage = energyStorage;
         }
     }
 }

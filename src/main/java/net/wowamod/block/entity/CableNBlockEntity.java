@@ -5,6 +5,7 @@ import net.wowamod.init.Universe3090ModBlockEntities;
 import net.minecraftforge.items.wrapper.SidedInvWrapper;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.energy.EnergyStorage;
+import net.minecraftforge.energy.IEnergyStorage;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.capabilities.Capability;
@@ -32,6 +33,28 @@ import java.util.stream.IntStream;
 public class CableNBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
 	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(0, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
+
+	private final EnergyStorage energyStorage = new EnergyStorage(10000, 10000, 10000, 0) {
+		@Override
+		public int receiveEnergy(int maxReceive, boolean simulate) {
+			int retval = super.receiveEnergy(maxReceive, simulate);
+			if (!simulate && retval > 0) {
+				setChanged();
+			}
+			return retval;
+		}
+
+		@Override
+		public int extractEnergy(int maxExtract, boolean simulate) {
+			int retval = super.extractEnergy(maxExtract, simulate);
+			if (!simulate && retval > 0) {
+				setChanged();
+			}
+			return retval;
+		}
+	};
+
+	private final LazyOptional<IEnergyStorage> energyHolder = LazyOptional.of(() -> energyStorage);
 
 	public CableNBlockEntity(BlockPos position, BlockState state) {
 		super(Universe3090ModBlockEntities.CABLE_N.get(), position, state);
@@ -129,34 +152,15 @@ public class CableNBlockEntity extends RandomizableContainerBlockEntity implemen
 		return true;
 	}
 
-	private final EnergyStorage energyStorage = new EnergyStorage(64, 64, 64, 0) {
-		@Override
-		public int receiveEnergy(int maxReceive, boolean simulate) {
-			int retval = super.receiveEnergy(maxReceive, simulate);
-			if (!simulate) {
-				setChanged();
-				level.sendBlockUpdated(worldPosition, level.getBlockState(worldPosition), level.getBlockState(worldPosition), 2);
-			}
-			return retval;
-		}
-
-		@Override
-		public int extractEnergy(int maxExtract, boolean simulate) {
-			int retval = super.extractEnergy(maxExtract, simulate);
-			if (!simulate) {
-				setChanged();
-				level.sendBlockUpdated(worldPosition, level.getBlockState(worldPosition), level.getBlockState(worldPosition), 2);
-			}
-			return retval;
-		}
-	};
-
 	@Override
 	public <T> LazyOptional<T> getCapability(Capability<T> capability, @Nullable Direction facing) {
 		if (!this.remove && facing != null && capability == ForgeCapabilities.ITEM_HANDLER)
 			return handlers[facing.ordinal()].cast();
+		
+		// Возвращаем кэшированный инстанс вместо создания нового каждый раз
 		if (!this.remove && capability == ForgeCapabilities.ENERGY)
-			return LazyOptional.of(() -> energyStorage).cast();
+			return energyHolder.cast();
+			
 		return super.getCapability(capability, facing);
 	}
 
@@ -165,5 +169,8 @@ public class CableNBlockEntity extends RandomizableContainerBlockEntity implemen
 		super.setRemoved();
 		for (LazyOptional<? extends IItemHandler> handler : handlers)
 			handler.invalidate();
+			
+		// Обязательно инвалидируем кэшированный Handler при разрушении блока
+		energyHolder.invalidate(); 
 	}
 }
