@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:redstone_9x"
+    },
+    "b": {
+      "item": "universe3090:the_core_of_the_sphere"
+    }
+  },
+  "result": {
+    "item": "universe3090:the_core_of_the_sphere_redstone",
+    "count": 1
+  }
+}

@@ -5,6 +5,7 @@
 package net.wowamod.init;
 
 import net.wowamod.fluid.ExtractgolubaysoulFluid;
+import net.wowamod.fluid.ActiveRedstoneFluid;
 import net.wowamod.Universe3090Mod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -24,6 +25,8 @@ public class Universe3090ModFluids {
 	public static final DeferredRegister<Fluid> REGISTRY = DeferredRegister.create(ForgeRegistries.FLUIDS, Universe3090Mod.MODID);
 	public static final RegistryObject<FlowingFluid> EXTRACTGOLUBAYSOUL = REGISTRY.register("extractgolubaysoul", () -> new ExtractgolubaysoulFluid.Source());
 	public static final RegistryObject<FlowingFluid> FLOWING_EXTRACTGOLUBAYSOUL = REGISTRY.register("flowing_extractgolubaysoul", () -> new ExtractgolubaysoulFluid.Flowing());
+	public static final RegistryObject<FlowingFluid> ACTIVE_REDSTONE = REGISTRY.register("active_redstone", () -> new ActiveRedstoneFluid.Source());
+	public static final RegistryObject<FlowingFluid> FLOWING_ACTIVE_REDSTONE = REGISTRY.register("flowing_active_redstone", () -> new ActiveRedstoneFluid.Flowing());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -31,6 +34,8 @@ public class Universe3090ModFluids {
 		public static void clientSetup(FMLClientSetupEvent event) {
 			ItemBlockRenderTypes.setRenderLayer(EXTRACTGOLUBAYSOUL.get(), RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_EXTRACTGOLUBAYSOUL.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(ACTIVE_REDSTONE.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(FLOWING_ACTIVE_REDSTONE.get(), RenderType.translucent());
 		}
 	}
 }

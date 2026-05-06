@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:energy_module"
+    },
+    "b": {
+      "item": "universe3090:energyelement"
+    },
+    "c": {
+      "item": "universe3090:redstonecommandblock"
+    },
+    "d": {
+      "item": "universe3090:uncommon_dark_case"
+    }
+  },
+  "result": {
+    "item": "universe3090:mw_receiver_block",
+    "count": 1
+  }
+}

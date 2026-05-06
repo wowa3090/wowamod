@@ -6,6 +6,7 @@ package net.wowamod.init;
 
 import net.wowamod.block.YellowemeraldcrystalBlock;
 import net.wowamod.block.WhiteemeraldcrystalBlock;
+import net.wowamod.block.UncommonDarkCaseBlock;
 import net.wowamod.block.TrueroseBlock;
 import net.wowamod.block.TestplantBlock;
 import net.wowamod.block.SolarpanelgeneratorwBlock;
@@ -49,6 +50,7 @@ import net.wowamod.block.BigBatterywBlock;
 import net.wowamod.block.BerilliumdeepslateBlock;
 import net.wowamod.block.BerilliumBlock;
 import net.wowamod.block.AluminiumBlock;
+import net.wowamod.block.ActiveRedstoneBlock;
 import net.wowamod.Universe3090Mod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -108,6 +110,8 @@ public class Universe3090ModBlocks {
 	public static final RegistryObject<Block> LIGHTBLUEEMERALDCRYSTAL = REGISTRY.register("lightblueemeraldcrystal", () -> new LightblueemeraldcrystalBlock());
 	public static final RegistryObject<Block> MW_RECEIVER_BLOCK = REGISTRY.register("mw_receiver_block", () -> new MWReceiverBlockBlock());
 	public static final RegistryObject<Block> MW_EMITTER_BLOCK = REGISTRY.register("mw_emitter_block", () -> new MWEmitterBlockBlock());
+	public static final RegistryObject<Block> UNCOMMON_DARK_CASE = REGISTRY.register("uncommon_dark_case", () -> new UncommonDarkCaseBlock());
+	public static final RegistryObject<Block> ACTIVE_REDSTONE = REGISTRY.register("active_redstone", () -> new ActiveRedstoneBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

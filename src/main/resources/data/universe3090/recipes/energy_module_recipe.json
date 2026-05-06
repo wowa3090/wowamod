@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "efe"
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:darkironplastine"
+    },
+    "b": {
+      "item": "universe3090:wiresprovoda"
+    },
+    "c": {
+      "item": "universe3090:pipes"
+    },
+    "d": {
+      "item": "universe3090:big_batteryw"
+    },
+    "e": {
+      "item": "universe3090:ironplastinewowa"
+    },
+    "f": {
+      "item": "universe3090:redstone_9x"
+    }
+  },
+  "result": {
+    "item": "universe3090:energy_module",
+    "count": 1
+  }
+}

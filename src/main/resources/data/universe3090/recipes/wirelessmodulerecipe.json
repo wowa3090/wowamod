@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:resonate_crystal"
+    },
+    "b": {
+      "item": "universe3090:gold_plastine"
+    },
+    "c": {
+      "item": "universe3090:redemptycore"
+    },
+    "d": {
+      "item": "universe3090:ironplastinewowa"
+    }
+  },
+  "result": {
+    "item": "universe3090:wireless_module",
+    "count": 1
+  }
+}

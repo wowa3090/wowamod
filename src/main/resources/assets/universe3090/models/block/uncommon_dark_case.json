@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "universe3090:block/uncommondarkcase",
+    "particle": "universe3090:block/uncommondarkcase"
+  },
+  "render_type": "solid"
+}

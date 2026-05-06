@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcb",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:aluminium_plate"
+    },
+    "b": {
+      "item": "universe3090:ironplastinewowa"
+    },
+    "c": {
+      "item": "universe3090:resonate_crystal"
+    }
+  },
+  "result": {
+    "item": "universe3090:the_core_of_the_sphere",
+    "count": 1
+  }
+}

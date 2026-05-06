@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Blackironingot"
+        "value": "CUSTOM:AluminiumPlate"
       },
       {
-        "value": "CUSTOM:Darkironplastine"
+        "value": "CUSTOM:AluminiumPlate"
       },
       {
-        "value": "CUSTOM:Blackironingot"
+        "value": "CUSTOM:AluminiumPlate"
       },
       {
-        "value": "CUSTOM:Darkironplastine"
+        "value": "CUSTOM:Ironplastinewowa"
       },
       {
-        "value": "Items.REDSTONE"
+        "value": "CUSTOM:ResonateCrystal"
       },
       {
-        "value": "CUSTOM:Darkironplastine"
+        "value": "CUSTOM:Ironplastinewowa"
       },
       {
-        "value": "CUSTOM:Blackironingot"
+        "value": "CUSTOM:AluminiumPlate"
       },
       {
-        "value": "CUSTOM:Darkironplastine"
+        "value": "CUSTOM:AluminiumPlate"
       },
       {
-        "value": "CUSTOM:Blackironingot"
+        "value": "CUSTOM:AluminiumPlate"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:DarkIronMachineCasing"
+      "value": "CUSTOM:TheCoreOfTheSphere"
     },
-    "name": "darkironmachinecasingrecipe",
+    "name": "the_core_of_the_sphere_recipe",
     "namespace": "mod"
   }
 }

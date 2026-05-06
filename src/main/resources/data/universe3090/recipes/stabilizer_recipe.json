@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    "ddd"
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:ultrastrongcoating"
+    },
+    "b": {
+      "item": "universe3090:combined_alloy"
+    },
+    "c": {
+      "item": "universe3090:diamond_lapis_bronya_cpre"
+    },
+    "d": {
+      "item": "universe3090:darkironplastine"
+    }
+  },
+  "result": {
+    "item": "universe3090:stabilizer",
+    "count": 1
+  }
+}

@@ -5,6 +5,7 @@
 package net.wowamod.init;
 
 import net.wowamod.fluid.types.ExtractgolubaysoulFluidType;
+import net.wowamod.fluid.types.ActiveRedstoneFluidType;
 import net.wowamod.Universe3090Mod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -15,4 +16,5 @@ import net.minecraftforge.fluids.FluidType;
 public class Universe3090ModFluidTypes {
 	public static final DeferredRegister<FluidType> REGISTRY = DeferredRegister.create(ForgeRegistries.Keys.FLUID_TYPES, Universe3090Mod.MODID);
 	public static final RegistryObject<FluidType> EXTRACTGOLUBAYSOUL_TYPE = REGISTRY.register("extractgolubaysoul", () -> new ExtractgolubaysoulFluidType());
+	public static final RegistryObject<FluidType> ACTIVE_REDSTONE_TYPE = REGISTRY.register("active_redstone", () -> new ActiveRedstoneFluidType());
 }

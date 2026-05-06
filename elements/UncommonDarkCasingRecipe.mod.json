@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Blackironingot"
+        "value": "CUSTOM:Magicironplate"
       },
       {
-        "value": "CUSTOM:Darkironplastine"
+        "value": "CUSTOM:CombinedAlloy"
       },
       {
-        "value": "CUSTOM:Blackironingot"
+        "value": "CUSTOM:Magicironplate"
       },
       {
-        "value": "CUSTOM:Darkironplastine"
+        "value": "CUSTOM:CombinedAlloy"
       },
       {
-        "value": "Items.REDSTONE"
+        "value": "CUSTOM:DarkIronMachineCasing"
       },
       {
-        "value": "CUSTOM:Darkironplastine"
+        "value": "CUSTOM:CombinedAlloy"
       },
       {
-        "value": "CUSTOM:Blackironingot"
+        "value": "CUSTOM:Magicironplate"
       },
       {
-        "value": "CUSTOM:Darkironplastine"
+        "value": "CUSTOM:CombinedAlloy"
       },
       {
-        "value": "CUSTOM:Blackironingot"
+        "value": "CUSTOM:Magicironplate"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:DarkIronMachineCasing"
+      "value": "CUSTOM:UncommonDarkCase"
     },
-    "name": "darkironmachinecasingrecipe",
+    "name": "uncommon_dark_casing_recipe",
     "namespace": "mod"
   }
 }

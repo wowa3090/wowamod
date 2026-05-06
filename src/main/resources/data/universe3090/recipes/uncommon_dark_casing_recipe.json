@@ -8,17 +8,17 @@
   ],
   "key": {
     "a": {
-      "item": "universe3090:blackironingot"
+      "item": "universe3090:magicironplate"
     },
     "b": {
-      "item": "universe3090:darkironplastine"
+      "item": "universe3090:combined_alloy"
     },
     "c": {
-      "item": "minecraft:redstone"
+      "item": "universe3090:dark_iron_machine_casing"
     }
   },
   "result": {
-    "item": "universe3090:dark_iron_machine_casing",
+    "item": "universe3090:uncommon_dark_case",
     "count": 1
   }
 }

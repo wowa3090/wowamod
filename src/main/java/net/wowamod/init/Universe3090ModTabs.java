@@ -184,6 +184,15 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.EMERALDSPICKAXE.get());
 				tabData.accept(Universe3090ModBlocks.MW_RECEIVER_BLOCK.get().asItem());
 				tabData.accept(Universe3090ModBlocks.MW_EMITTER_BLOCK.get().asItem());
+				tabData.accept(Universe3090ModItems.IRON_SPHERE.get());
+				tabData.accept(Universe3090ModItems.THE_CORE_OF_THE_SPHERE.get());
+				tabData.accept(Universe3090ModItems.THE_CORE_OF_THE_SPHERE_REDSTONE.get());
+				tabData.accept(Universe3090ModItems.ENERGY_MODULE.get());
+				tabData.accept(Universe3090ModItems.WIRELESS_MODULE.get());
+				tabData.accept(Universe3090ModBlocks.UNCOMMON_DARK_CASE.get().asItem());
+				tabData.accept(Universe3090ModItems.MAGICIRONPLATE.get());
+				tabData.accept(Universe3090ModItems.STABILIZER.get());
+				tabData.accept(Universe3090ModItems.ACTIVE_REDSTONE_BUCKET.get());
 			})
 
 					.build());

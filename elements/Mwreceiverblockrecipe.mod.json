@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Blackironingot"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Darkironplastine"
+        "value": "CUSTOM:EnergyModule"
       },
       {
-        "value": "CUSTOM:Blackironingot"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Darkironplastine"
+        "value": "CUSTOM:Energyelement"
       },
       {
-        "value": "Items.REDSTONE"
+        "value": "CUSTOM:Redstonecommandblock"
       },
       {
-        "value": "CUSTOM:Darkironplastine"
+        "value": "CUSTOM:Energyelement"
       },
       {
-        "value": "CUSTOM:Blackironingot"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Darkironplastine"
+        "value": "CUSTOM:UncommonDarkCase"
       },
       {
-        "value": "CUSTOM:Blackironingot"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:DarkIronMachineCasing"
+      "value": "CUSTOM:MWReceiverBlock"
     },
-    "name": "darkironmachinecasingrecipe",
+    "name": "mwreceiverblockrecipe",
     "namespace": "mod"
   }
 }

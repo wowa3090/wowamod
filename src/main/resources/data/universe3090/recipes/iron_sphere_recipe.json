@@ -8,17 +8,17 @@
   ],
   "key": {
     "a": {
-      "item": "universe3090:blackironingot"
+      "item": "minecraft:iron_ingot"
     },
     "b": {
-      "item": "universe3090:darkironplastine"
+      "item": "universe3090:ironplastinewowa"
     },
     "c": {
-      "item": "minecraft:redstone"
+      "item": "universe3090:the_core_of_the_sphere_redstone"
     }
   },
   "result": {
-    "item": "universe3090:dark_iron_machine_casing",
+    "item": "universe3090:iron_sphere",
     "count": 1
   }
 }

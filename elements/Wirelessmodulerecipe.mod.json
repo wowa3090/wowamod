@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Blackironingot"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Darkironplastine"
+        "value": "CUSTOM:ResonateCrystal"
       },
       {
-        "value": "CUSTOM:Blackironingot"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Darkironplastine"
+        "value": "CUSTOM:GoldPlastine"
       },
       {
-        "value": "Items.REDSTONE"
+        "value": "CUSTOM:Redemptycore"
       },
       {
-        "value": "CUSTOM:Darkironplastine"
+        "value": "CUSTOM:GoldPlastine"
       },
       {
-        "value": "CUSTOM:Blackironingot"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Darkironplastine"
+        "value": "CUSTOM:Ironplastinewowa"
       },
       {
-        "value": "CUSTOM:Blackironingot"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:DarkIronMachineCasing"
+      "value": "CUSTOM:WirelessModule"
     },
-    "name": "darkironmachinecasingrecipe",
+    "name": "wirelessmodulerecipe",
     "namespace": "mod"
   }
 }
