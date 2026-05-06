@@ -3,13 +3,13 @@
   "_type": "block",
   "definition": {
     "texture": "uncommondarkcase",
-    "textureTop": "",
-    "textureLeft": "",
-    "textureFront": "",
-    "textureRight": "",
-    "textureBack": "",
-    "renderType": 11,
-    "customModelName": "Single texture",
+    "textureTop": "crafterbronitop",
+    "textureLeft": "redcore",
+    "textureFront": "redcore",
+    "textureRight": "redcore",
+    "textureBack": "redcore",
+    "renderType": 10,
+    "customModelName": "Normal",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -33,11 +33,11 @@
         "subtract": false
       }
     ],
-    "name": "Uncommon Dark Case",
+    "name": "Charger [W.I.P]",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 2.5,
+    "hardness": 5.0,
     "resistance": 100.0,
     "hasGravity": false,
     "isWaterloggable": false,
@@ -50,7 +50,7 @@
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
-    "requiresCorrectTool": false,
+    "requiresCorrectTool": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,

@@ -20,7 +20,7 @@ import java.util.Queue;
 import java.util.Set;
 
 public class CableUpdateTickEnergyProcedure {
-    private static final int MAX_TRANSFER_RATE = 10000; // Мгновенная передача
+    private static final int MAX_TRANSFER_RATE = 100000; // Мгновенная передача
     private static final int MAX_NETWORK_SIZE = 512; // Защита от зависаний при огромных сетях
 
     public static void execute(LevelAccessor world, double x, double y, double z) {

@@ -193,6 +193,8 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.MAGICIRONPLATE.get());
 				tabData.accept(Universe3090ModItems.STABILIZER.get());
 				tabData.accept(Universe3090ModItems.ACTIVE_REDSTONE_BUCKET.get());
+				tabData.accept(Universe3090ModBlocks.CHARGER.get().asItem());
+				tabData.accept(Universe3090ModItems.ACTIVE_REDSTONE_ITEM.get());
 			})
 
 					.build());

@@ -34,7 +34,7 @@ public class CableNBlockEntity extends RandomizableContainerBlockEntity implemen
 	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(0, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
-	private final EnergyStorage energyStorage = new EnergyStorage(10000, 10000, 10000, 0) {
+	private final EnergyStorage energyStorage = new EnergyStorage(100000, 100000, 100000, 0) {
 		@Override
 		public int receiveEnergy(int maxReceive, boolean simulate) {
 			int retval = super.receiveEnergy(maxReceive, simulate);

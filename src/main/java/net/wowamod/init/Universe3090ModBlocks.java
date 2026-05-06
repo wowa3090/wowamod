@@ -40,6 +40,7 @@ import net.wowamod.block.DarkIronMachineCasingBlock;
 import net.wowamod.block.DarkBiomeOreBlock;
 import net.wowamod.block.CrafterbroniBlock;
 import net.wowamod.block.CorruptedSoulsBlockBlock;
+import net.wowamod.block.ChargerBlock;
 import net.wowamod.block.CableNBlock;
 import net.wowamod.block.CableEBlock;
 import net.wowamod.block.BlueemeraldcrystalBlock;
@@ -112,6 +113,7 @@ public class Universe3090ModBlocks {
 	public static final RegistryObject<Block> MW_EMITTER_BLOCK = REGISTRY.register("mw_emitter_block", () -> new MWEmitterBlockBlock());
 	public static final RegistryObject<Block> UNCOMMON_DARK_CASE = REGISTRY.register("uncommon_dark_case", () -> new UncommonDarkCaseBlock());
 	public static final RegistryObject<Block> ACTIVE_REDSTONE = REGISTRY.register("active_redstone", () -> new ActiveRedstoneBlock());
+	public static final RegistryObject<Block> CHARGER = REGISTRY.register("charger", () -> new ChargerBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

@@ -136,6 +136,7 @@ import net.wowamod.item.AluminiumPlateItem;
 import net.wowamod.item.AluminiumIngotItem;
 import net.wowamod.item.AlphaelementItem;
 import net.wowamod.item.AdarkplacesoundItem;
+import net.wowamod.item.ActiveRedstoneItemItem;
 import net.wowamod.item.ActiveRedstoneItem;
 import net.wowamod.item.AccessviolationItem;
 import net.wowamod.item.AaaGlassItem;
@@ -344,6 +345,8 @@ public class Universe3090ModItems {
 	public static final RegistryObject<Item> MAGICIRONPLATE = REGISTRY.register("magicironplate", () -> new MagicironplateItem());
 	public static final RegistryObject<Item> STABILIZER = REGISTRY.register("stabilizer", () -> new StabilizerItem());
 	public static final RegistryObject<Item> ACTIVE_REDSTONE_BUCKET = REGISTRY.register("active_redstone_bucket", () -> new ActiveRedstoneItem());
+	public static final RegistryObject<Item> CHARGER = block(Universe3090ModBlocks.CHARGER);
+	public static final RegistryObject<Item> ACTIVE_REDSTONE_ITEM = REGISTRY.register("active_redstone_item", () -> new ActiveRedstoneItemItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
