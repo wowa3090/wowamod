@@ -8,7 +8,7 @@
 
 ## Key Features:
 
-### Magical Realms
+### Various Dimensions
 ### Technological Wonders: Advanced machines, energy cores 🔧💡
 ### Stay Updated:
 ### Join our Telegram for the latest news and updates:
@@ -19,4 +19,4 @@ Thank you, adventurers! Your curiosity fuels this universe. Gear up, and travel 
 Your fellow creator,
 wowa3090
 
-created in mcreator
+created using mcreator, intellij idea
