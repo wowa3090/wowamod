@@ -2474,14 +2474,14 @@
   "display": {
     "thirdperson_righthand": {
       "rotation": [
-        3,
-        58,
+        4,
+        27,
         0
       ],
       "translation": [
         0,
         2.5,
-        0.75
+        1.5
       ]
     },
     "thirdperson_lefthand": {
@@ -2532,6 +2532,11 @@
         -32,
         56,
         0
+      ],
+      "scale": [
+        1.65,
+        1.65,
+        1.65
       ]
     },
     "head": {
@@ -2546,6 +2551,11 @@
         0,
         -90,
         0
+      ],
+      "scale": [
+        1.25,
+        1.25,
+        1.25
       ]
     },
     "on_shelf": {
