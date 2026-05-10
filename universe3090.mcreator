@@ -17,7 +17,7 @@
     {
       "name": "WowaswordPKM",
       "type": "procedure",
-      "sortid": 162,
+      "sortid": 188,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wowasword_pkm",
@@ -52,7 +52,7 @@
     {
       "name": "WowaswordPriUdarie",
       "type": "procedure",
-      "sortid": 163,
+      "sortid": 189,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wowasword_pri_udarie",
@@ -217,7 +217,7 @@
     {
       "name": "Redemeraldsdelka",
       "type": "villagertrade",
-      "sortid": 164,
+      "sortid": 190,
       "compiles": true,
       "locked_code": false,
       "registry_name": "emeraldssdelka",
@@ -455,7 +455,7 @@
     {
       "name": "Soulcorecraft",
       "type": "recipe",
-      "sortid": 165,
+      "sortid": 191,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soulcorecraft",
@@ -468,7 +468,7 @@
     {
       "name": "Soulsvazivatelcraft",
       "type": "recipe",
-      "sortid": 166,
+      "sortid": 192,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soulsvazivatelcraft",
@@ -481,7 +481,7 @@
     {
       "name": "Redsoulgiving",
       "type": "procedure",
-      "sortid": 167,
+      "sortid": 193,
       "compiles": true,
       "locked_code": false,
       "registry_name": "redsoulgiving",
@@ -520,7 +520,7 @@
     {
       "name": "Bluesoulgiving",
       "type": "procedure",
-      "sortid": 168,
+      "sortid": 194,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bluesoulgiving",
@@ -559,7 +559,7 @@
     {
       "name": "Lightbluesoulgiving",
       "type": "procedure",
-      "sortid": 169,
+      "sortid": 195,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lightbluesoulgiving",
@@ -594,7 +594,7 @@
     {
       "name": "Redsoulcraft",
       "type": "recipe",
-      "sortid": 170,
+      "sortid": 196,
       "compiles": true,
       "locked_code": false,
       "registry_name": "redsoulcraft",
@@ -607,7 +607,7 @@
     {
       "name": "Orangesoulcraft",
       "type": "recipe",
-      "sortid": 171,
+      "sortid": 197,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orangesoulcraft",
@@ -620,7 +620,7 @@
     {
       "name": "Yellowsoulcraft",
       "type": "recipe",
-      "sortid": 172,
+      "sortid": 198,
       "compiles": true,
       "locked_code": false,
       "registry_name": "yellowsoulcraft",
@@ -633,7 +633,7 @@
     {
       "name": "Greensoulcraft",
       "type": "recipe",
-      "sortid": 173,
+      "sortid": 199,
       "compiles": true,
       "locked_code": false,
       "registry_name": "greensoulcraft",
@@ -646,7 +646,7 @@
     {
       "name": "Bluesoulcraft",
       "type": "recipe",
-      "sortid": 174,
+      "sortid": 200,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bluesoulcraft",
@@ -659,7 +659,7 @@
     {
       "name": "Lightbluecraft",
       "type": "recipe",
-      "sortid": 175,
+      "sortid": 201,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lightbluecraft",
@@ -672,7 +672,7 @@
     {
       "name": "Purplesoulcraft",
       "type": "recipe",
-      "sortid": 176,
+      "sortid": 202,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purplesoulcraft",
@@ -685,7 +685,7 @@
     {
       "name": "Greensoulgiving",
       "type": "procedure",
-      "sortid": 177,
+      "sortid": 203,
       "compiles": true,
       "locked_code": false,
       "registry_name": "greensoulgiving",
@@ -716,7 +716,7 @@
     {
       "name": "Purplesoulgiving",
       "type": "procedure",
-      "sortid": 178,
+      "sortid": 204,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purplesoulgiving",
@@ -747,7 +747,7 @@
     {
       "name": "Yellowsoulgiving",
       "type": "procedure",
-      "sortid": 179,
+      "sortid": 205,
       "compiles": true,
       "locked_code": false,
       "registry_name": "yellowsoulgiving",
@@ -782,7 +782,7 @@
     {
       "name": "Orangesoulgiving",
       "type": "procedure",
-      "sortid": 180,
+      "sortid": 206,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orangesoulgiving",
@@ -821,7 +821,7 @@
     {
       "name": "Wowamodvkladka",
       "type": "tab",
-      "sortid": 181,
+      "sortid": 207,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wowamodvkladka",
@@ -832,7 +832,7 @@
     {
       "name": "Orangesoulcraft2",
       "type": "recipe",
-      "sortid": 182,
+      "sortid": 208,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orangesoulcraft_2",
@@ -859,7 +859,7 @@
     {
       "name": "Superpalkacraft",
       "type": "recipe",
-      "sortid": 183,
+      "sortid": 209,
       "compiles": true,
       "locked_code": false,
       "registry_name": "superpalkacraft",
@@ -872,7 +872,7 @@
     {
       "name": "Rainbowemeraldcraft",
       "type": "recipe",
-      "sortid": 184,
+      "sortid": 210,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rainbowemeraldcraft",
@@ -885,7 +885,7 @@
     {
       "name": "Wowaswordbronya",
       "type": "procedure",
-      "sortid": 185,
+      "sortid": 211,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wowaswordbronya",
@@ -904,7 +904,7 @@
     {
       "name": "WowabronyaShliemanightvision",
       "type": "procedure",
-      "sortid": 186,
+      "sortid": 212,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wowabronya_shliemanightvision",
@@ -923,7 +923,7 @@
     {
       "name": "Wowabronyachestplate",
       "type": "procedure",
-      "sortid": 187,
+      "sortid": 213,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wowabronyachestplate",
@@ -942,7 +942,7 @@
     {
       "name": "Wowabronyashtani",
       "type": "procedure",
-      "sortid": 188,
+      "sortid": 214,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wowabronyashtani",
@@ -961,7 +961,7 @@
     {
       "name": "Wowabronyatapki",
       "type": "procedure",
-      "sortid": 189,
+      "sortid": 215,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wowabronyatapki",
@@ -996,7 +996,7 @@
     {
       "name": "Wowabronyacraftring",
       "type": "gui",
-      "sortid": 190,
+      "sortid": 216,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wowabronyacraftring",
@@ -1011,7 +1011,7 @@
     {
       "name": "Crafterbroni",
       "type": "block",
-      "sortid": 78,
+      "sortid": 77,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crafterbroni",
@@ -1028,7 +1028,7 @@
     {
       "name": "Crafterbronicraft",
       "type": "recipe",
-      "sortid": 191,
+      "sortid": 217,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crafterbronicraft",
@@ -1055,7 +1055,7 @@
     {
       "name": "Derjatelicraft",
       "type": "recipe",
-      "sortid": 192,
+      "sortid": 218,
       "compiles": true,
       "locked_code": false,
       "registry_name": "derjatelicraft",
@@ -1082,7 +1082,7 @@
     {
       "name": "Craftingwowabronya",
       "type": "procedure",
-      "sortid": 193,
+      "sortid": 219,
       "compiles": true,
       "locked_code": false,
       "registry_name": "craftingwowabronya",
@@ -1115,7 +1115,7 @@
     {
       "name": "Mimictkanbcraft",
       "type": "recipe",
-      "sortid": 194,
+      "sortid": 220,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mimictkanbcraft",
@@ -1128,7 +1128,7 @@
     {
       "name": "Emeraldshopper",
       "type": "villagerprofession",
-      "sortid": 195,
+      "sortid": 221,
       "compiles": true,
       "locked_code": false,
       "registry_name": "emeraldshopper",
@@ -1141,7 +1141,7 @@
     {
       "name": "Emeraldshoppersdelka",
       "type": "villagertrade",
-      "sortid": 196,
+      "sortid": 222,
       "compiles": true,
       "locked_code": false,
       "registry_name": "emeraldshoppersdelka",
@@ -1152,7 +1152,7 @@
     {
       "name": "Emeraldsgiving",
       "type": "procedure",
-      "sortid": 197,
+      "sortid": 223,
       "compiles": true,
       "locked_code": false,
       "registry_name": "emeraldsgiving",
@@ -1183,7 +1183,7 @@
     {
       "name": "Neuyazvimost",
       "type": "potioneffect",
-      "sortid": 198,
+      "sortid": 224,
       "compiles": true,
       "locked_code": false,
       "registry_name": "neuyazvimost",
@@ -1196,7 +1196,7 @@
     {
       "name": "NeuyazvimostPASSIVEffiekt",
       "type": "procedure",
-      "sortid": 199,
+      "sortid": 225,
       "compiles": true,
       "locked_code": false,
       "registry_name": "neuyazvimost_passiv_effiekt",
@@ -1219,7 +1219,7 @@
     {
       "name": "Faza2",
       "type": "procedure",
-      "sortid": 200,
+      "sortid": 226,
       "compiles": true,
       "locked_code": false,
       "registry_name": "faza_2",
@@ -1254,7 +1254,7 @@
     {
       "name": "Souls",
       "type": "overlay",
-      "sortid": 201,
+      "sortid": 227,
       "compiles": true,
       "locked_code": false,
       "registry_name": "souls",
@@ -1267,7 +1267,7 @@
     {
       "name": "Soulsgiving",
       "type": "procedure",
-      "sortid": 202,
+      "sortid": 228,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soulsgiving",
@@ -1290,7 +1290,7 @@
     {
       "name": "Soulsvivod",
       "type": "procedure",
-      "sortid": 203,
+      "sortid": 229,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soulsvivod",
@@ -1310,7 +1310,7 @@
     {
       "name": "Adarkplacesound",
       "type": "musicdisc",
-      "sortid": 145,
+      "sortid": 140,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adarkplacesound",
@@ -1324,7 +1324,7 @@
     {
       "name": "Dissasebmlyrequired",
       "type": "musicdisc",
-      "sortid": 146,
+      "sortid": 141,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dissasebmlyrequired",
@@ -1338,7 +1338,7 @@
     {
       "name": "Purplesoulgiving2",
       "type": "procedure",
-      "sortid": 204,
+      "sortid": 230,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purplesoulgiving_2",
@@ -1392,7 +1392,7 @@
     {
       "name": "Nightmarerising",
       "type": "overlay",
-      "sortid": 205,
+      "sortid": 231,
       "compiles": true,
       "locked_code": false,
       "registry_name": "nightmarerising",
@@ -1405,7 +1405,7 @@
     {
       "name": "NightmarerisingUsloviiePokazaNalozhieniia",
       "type": "procedure",
-      "sortid": 206,
+      "sortid": 232,
       "compiles": true,
       "locked_code": false,
       "registry_name": "nightmarerising_usloviie_pokaza_nalozhieniia",
@@ -1425,7 +1425,7 @@
     {
       "name": "Nightmareish",
       "type": "potioneffect",
-      "sortid": 207,
+      "sortid": 233,
       "compiles": true,
       "locked_code": false,
       "registry_name": "nightmareish",
@@ -1438,7 +1438,7 @@
     {
       "name": "Soulsworddamage",
       "type": "damagetype",
-      "sortid": 208,
+      "sortid": 234,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soulsworddamage",
@@ -1451,7 +1451,7 @@
     {
       "name": "NightmarePriStolknovieniiIghrokaSSushchnostiu",
       "type": "procedure",
-      "sortid": 209,
+      "sortid": 235,
       "compiles": true,
       "locked_code": false,
       "registry_name": "nightmare_pri_stolknovienii_ighroka_s_sushchnostiu",
@@ -1482,7 +1482,7 @@
     {
       "name": "Soulsget",
       "type": "command",
-      "sortid": 210,
+      "sortid": 236,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soulsget",
@@ -1495,7 +1495,7 @@
     {
       "name": "Soulsgetprocedure",
       "type": "procedure",
-      "sortid": 211,
+      "sortid": 237,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soulsgetprocedure",
@@ -1518,7 +1518,7 @@
     {
       "name": "TeleportPriNazhatiiKlavishi",
       "type": "procedure",
-      "sortid": 212,
+      "sortid": 238,
       "compiles": true,
       "locked_code": true,
       "registry_name": "teleport_pri_nazhatii_klavishi",
@@ -1553,7 +1553,7 @@
     {
       "name": "Teleport",
       "type": "keybind",
-      "sortid": 213,
+      "sortid": 239,
       "compiles": true,
       "locked_code": false,
       "registry_name": "teleport",
@@ -1566,7 +1566,7 @@
     {
       "name": "Soulsremoveprocedure",
       "type": "procedure",
-      "sortid": 214,
+      "sortid": 240,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soulsremoveprocedure",
@@ -1603,7 +1603,7 @@
     {
       "name": "ShadowbladePriUdarie",
       "type": "procedure",
-      "sortid": 215,
+      "sortid": 241,
       "compiles": true,
       "locked_code": false,
       "registry_name": "shadowblade_pri_udarie",
@@ -1630,7 +1630,7 @@
     {
       "name": "Soulsremoveall",
       "type": "procedure",
-      "sortid": 216,
+      "sortid": 242,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soulsremoveall",
@@ -1649,7 +1649,7 @@
     {
       "name": "Shadowswordpassive",
       "type": "procedure",
-      "sortid": 217,
+      "sortid": 243,
       "compiles": true,
       "locked_code": true,
       "registry_name": "shadowswordpassive",
@@ -1699,7 +1699,7 @@
     {
       "name": "Blagoslovleniestar",
       "type": "procedure",
-      "sortid": 218,
+      "sortid": 244,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blagoslovleniestar",
@@ -1718,7 +1718,7 @@
     {
       "name": "Blagoslovleniestaref",
       "type": "potioneffect",
-      "sortid": 219,
+      "sortid": 245,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blagoslovleniestaref",
@@ -1731,7 +1731,7 @@
     {
       "name": "NetherstarswordPriUdariePoSushchnosti",
       "type": "procedure",
-      "sortid": 220,
+      "sortid": 246,
       "compiles": true,
       "locked_code": false,
       "registry_name": "netherstarsword_pri_udarie_po_sushchnosti",
@@ -1754,7 +1754,7 @@
     {
       "name": "Netherstarrecipe",
       "type": "recipe",
-      "sortid": 221,
+      "sortid": 247,
       "compiles": true,
       "locked_code": false,
       "registry_name": "netherstarrecipe",
@@ -1767,7 +1767,7 @@
     {
       "name": "Redstonecommandblock",
       "type": "block",
-      "sortid": 81,
+      "sortid": 80,
       "compiles": true,
       "locked_code": false,
       "registry_name": "redstonecommandblock",
@@ -1783,7 +1783,7 @@
     {
       "name": "Magicironblock",
       "type": "block",
-      "sortid": 82,
+      "sortid": 81,
       "compiles": true,
       "locked_code": false,
       "registry_name": "magicironblock",
@@ -1799,7 +1799,7 @@
     {
       "name": "Portconstructor",
       "type": "block",
-      "sortid": 83,
+      "sortid": 82,
       "compiles": true,
       "locked_code": false,
       "registry_name": "portconstructor",
@@ -1816,7 +1816,7 @@
     {
       "name": "Interfaceconstructor",
       "type": "block",
-      "sortid": 84,
+      "sortid": 83,
       "compiles": true,
       "locked_code": false,
       "registry_name": "interfaceconstructor",
@@ -1833,7 +1833,7 @@
     {
       "name": "Timer",
       "type": "potioneffect",
-      "sortid": 222,
+      "sortid": 248,
       "compiles": true,
       "locked_code": false,
       "registry_name": "timer",
@@ -1846,7 +1846,7 @@
     {
       "name": "Constructor",
       "type": "procedure",
-      "sortid": 223,
+      "sortid": 249,
       "compiles": true,
       "locked_code": false,
       "registry_name": "constructor",
@@ -1881,7 +1881,7 @@
     {
       "name": "Constructorinterface",
       "type": "gui",
-      "sortid": 224,
+      "sortid": 250,
       "compiles": true,
       "locked_code": false,
       "registry_name": "constructorinterface",
@@ -1895,7 +1895,7 @@
     {
       "name": "PortConstructora",
       "type": "gui",
-      "sortid": 225,
+      "sortid": 251,
       "compiles": true,
       "locked_code": false,
       "registry_name": "port_constructora",
@@ -1909,7 +1909,7 @@
     {
       "name": "PortconstructorPriShchielchkiePKM",
       "type": "procedure",
-      "sortid": 226,
+      "sortid": 252,
       "compiles": true,
       "locked_code": false,
       "registry_name": "portconstructor_pri_shchielchkie_pkm",
@@ -1944,7 +1944,7 @@
     {
       "name": "Redstoneport",
       "type": "block",
-      "sortid": 85,
+      "sortid": 84,
       "compiles": true,
       "locked_code": false,
       "registry_name": "redstoneport",
@@ -1960,7 +1960,7 @@
     {
       "name": "RedstoneportRiedstounVkliuchion",
       "type": "procedure",
-      "sortid": 227,
+      "sortid": 253,
       "compiles": true,
       "locked_code": false,
       "registry_name": "redstoneport_riedstoun_vkliuchion",
@@ -1991,7 +1991,7 @@
     {
       "name": "Constructorcreatewowasword",
       "type": "procedure",
-      "sortid": 228,
+      "sortid": 254,
       "compiles": true,
       "locked_code": false,
       "registry_name": "constructorcreatewowasword",
@@ -2036,7 +2036,7 @@
     {
       "name": "Redstonecorecraft",
       "type": "recipe",
-      "sortid": 229,
+      "sortid": 255,
       "compiles": true,
       "locked_code": false,
       "registry_name": "redstonecorecraft",
@@ -2049,7 +2049,7 @@
     {
       "name": "Interfaceconstructorcraft",
       "type": "recipe",
-      "sortid": 230,
+      "sortid": 256,
       "compiles": true,
       "locked_code": false,
       "registry_name": "interfaceconstructorcraft",
@@ -2076,7 +2076,7 @@
     {
       "name": "Ekranchikrecipe",
       "type": "recipe",
-      "sortid": 231,
+      "sortid": 257,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ekranchikrecipe",
@@ -2103,7 +2103,7 @@
     {
       "name": "Extractlbsoul",
       "type": "item",
-      "sortid": 127,
+      "sortid": 125,
       "compiles": true,
       "locked_code": false,
       "registry_name": "extractlbsoul",
@@ -2117,7 +2117,7 @@
     {
       "name": "Kolba",
       "type": "item",
-      "sortid": 126,
+      "sortid": 124,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kolba",
@@ -2131,7 +2131,7 @@
     {
       "name": "Kolbacraft",
       "type": "recipe",
-      "sortid": 232,
+      "sortid": 258,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kolbacraft",
@@ -2144,7 +2144,7 @@
     {
       "name": "Extractor",
       "type": "block",
-      "sortid": 86,
+      "sortid": 85,
       "compiles": true,
       "locked_code": false,
       "registry_name": "extractor",
@@ -2180,7 +2180,7 @@
     {
       "name": "Extractorinteface",
       "type": "gui",
-      "sortid": 233,
+      "sortid": 259,
       "compiles": true,
       "locked_code": false,
       "registry_name": "extractorinteface",
@@ -2194,7 +2194,7 @@
     {
       "name": "Magicironingotrecipe",
       "type": "recipe",
-      "sortid": 234,
+      "sortid": 260,
       "compiles": true,
       "locked_code": false,
       "registry_name": "magicironingotrecipe",
@@ -2207,7 +2207,7 @@
     {
       "name": "Magicironblockrecipe",
       "type": "recipe",
-      "sortid": 235,
+      "sortid": 261,
       "compiles": true,
       "locked_code": false,
       "registry_name": "magicironblockrecipe",
@@ -2234,7 +2234,7 @@
     {
       "name": "Klavarecipe",
       "type": "recipe",
-      "sortid": 236,
+      "sortid": 262,
       "compiles": true,
       "locked_code": false,
       "registry_name": "klavarecipe",
@@ -2247,7 +2247,7 @@
     {
       "name": "Extractorrecipe",
       "type": "recipe",
-      "sortid": 237,
+      "sortid": 263,
       "compiles": true,
       "locked_code": false,
       "registry_name": "extractorrecipe",
@@ -2260,7 +2260,7 @@
     {
       "name": "Rotorrecipe",
       "type": "recipe",
-      "sortid": 238,
+      "sortid": 264,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rotorrecipe",
@@ -2287,7 +2287,7 @@
     {
       "name": "Redstoneportrecipe",
       "type": "recipe",
-      "sortid": 239,
+      "sortid": 265,
       "compiles": true,
       "locked_code": false,
       "registry_name": "redstoneportrecipe",
@@ -2300,7 +2300,7 @@
     {
       "name": "Portconstructorrecipe",
       "type": "recipe",
-      "sortid": 240,
+      "sortid": 266,
       "compiles": true,
       "locked_code": false,
       "registry_name": "portconstructorrecipe",
@@ -2313,7 +2313,7 @@
     {
       "name": "Redstonecommandblockrecipe",
       "type": "recipe",
-      "sortid": 241,
+      "sortid": 267,
       "compiles": true,
       "locked_code": false,
       "registry_name": "redstonecommandblockrecipe",
@@ -2326,7 +2326,7 @@
     {
       "name": "Extractredsoul",
       "type": "item",
-      "sortid": 128,
+      "sortid": 126,
       "compiles": true,
       "locked_code": false,
       "registry_name": "extractredsoul",
@@ -2340,7 +2340,7 @@
     {
       "name": "TmpWowaswordosnovarecipe",
       "type": "recipe",
-      "sortid": 242,
+      "sortid": 268,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tmp_wowaswordosnovarecipe",
@@ -2353,7 +2353,7 @@
     {
       "name": "Guidebook",
       "type": "gui",
-      "sortid": 243,
+      "sortid": 269,
       "compiles": true,
       "locked_code": false,
       "registry_name": "guidebook",
@@ -2383,7 +2383,7 @@
     {
       "name": "Backguide",
       "type": "procedure",
-      "sortid": 246,
+      "sortid": 270,
       "compiles": true,
       "locked_code": false,
       "registry_name": "backguide",
@@ -2418,7 +2418,7 @@
     {
       "name": "Shadowbladetooltip",
       "type": "procedure",
-      "sortid": 247,
+      "sortid": 271,
       "compiles": true,
       "locked_code": false,
       "registry_name": "shadowbladetooltip",
@@ -2445,7 +2445,7 @@
     {
       "name": "Guidebookrecipe",
       "type": "recipe",
-      "sortid": 248,
+      "sortid": 272,
       "compiles": true,
       "locked_code": false,
       "registry_name": "guidebookrecipe",
@@ -2486,7 +2486,7 @@
     {
       "name": "Rose",
       "type": "item",
-      "sortid": 147,
+      "sortid": 173,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rose",
@@ -2500,7 +2500,7 @@
     {
       "name": "ShakerosePriNazhatiiKlavishi",
       "type": "procedure",
-      "sortid": 249,
+      "sortid": 273,
       "compiles": true,
       "locked_code": false,
       "registry_name": "shakerose_pri_nazhatii_klavishi",
@@ -2527,7 +2527,7 @@
     {
       "name": "Trailofrose2",
       "type": "particle",
-      "sortid": 250,
+      "sortid": 274,
       "compiles": true,
       "locked_code": false,
       "registry_name": "trailofrose_2",
@@ -2541,7 +2541,7 @@
     {
       "name": "CorruptedSoulsBlock",
       "type": "block",
-      "sortid": 148,
+      "sortid": 174,
       "compiles": true,
       "locked_code": false,
       "registry_name": "corrupted_souls_block",
@@ -2557,7 +2557,7 @@
     {
       "name": "BlackWallsMyplace",
       "type": "block",
-      "sortid": 149,
+      "sortid": 175,
       "compiles": true,
       "locked_code": false,
       "registry_name": "black_walls_myplace",
@@ -2573,7 +2573,7 @@
     {
       "name": "Myplacevkladka",
       "type": "tab",
-      "sortid": 251,
+      "sortid": 275,
       "compiles": true,
       "locked_code": false,
       "registry_name": "myplacevkladka",
@@ -2584,7 +2584,7 @@
     {
       "name": "Myplacezone",
       "type": "dimension",
-      "sortid": 150,
+      "sortid": 176,
       "compiles": true,
       "locked_code": true,
       "registry_name": "myplacezone",
@@ -2607,7 +2607,7 @@
     {
       "name": "MyPlaceBiome",
       "type": "biome",
-      "sortid": 252,
+      "sortid": 276,
       "compiles": true,
       "locked_code": false,
       "registry_name": "my_place_biome",
@@ -2622,7 +2622,7 @@
     {
       "name": "Truerose",
       "type": "plant",
-      "sortid": 151,
+      "sortid": 177,
       "compiles": true,
       "locked_code": false,
       "registry_name": "truerose",
@@ -2641,7 +2641,7 @@
     {
       "name": "Rosecraft",
       "type": "recipe",
-      "sortid": 253,
+      "sortid": 277,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rosecraft",
@@ -2654,7 +2654,7 @@
     {
       "name": "Myplacestructure",
       "type": "loottable",
-      "sortid": 254,
+      "sortid": 278,
       "compiles": true,
       "locked_code": false,
       "registry_name": "myplacestructure",
@@ -2667,7 +2667,7 @@
     {
       "name": "Myplacestruckture",
       "type": "structure",
-      "sortid": 255,
+      "sortid": 279,
       "compiles": true,
       "locked_code": false,
       "registry_name": "myplacestruckture",
@@ -2682,7 +2682,7 @@
     {
       "name": "Soulsview",
       "type": "procedure",
-      "sortid": 256,
+      "sortid": 280,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soulsview",
@@ -2702,7 +2702,7 @@
     {
       "name": "SoulsViewbuttonPriNazhatiiKlavishi",
       "type": "procedure",
-      "sortid": 257,
+      "sortid": 281,
       "compiles": true,
       "locked_code": false,
       "registry_name": "souls_viewbutton_pri_nazhatii_klavishi",
@@ -2721,7 +2721,7 @@
     {
       "name": "SoulsViewbutton",
       "type": "keybind",
-      "sortid": 258,
+      "sortid": 282,
       "compiles": true,
       "locked_code": false,
       "registry_name": "souls_viewbutton",
@@ -2734,7 +2734,7 @@
     {
       "name": "Corruptedsoulsblockrecipe",
       "type": "recipe",
-      "sortid": 259,
+      "sortid": 283,
       "compiles": true,
       "locked_code": false,
       "registry_name": "corruptedsoulsblockrecipe",
@@ -2803,7 +2803,7 @@
     {
       "name": "Osnovaaaglassrecipe",
       "type": "recipe",
-      "sortid": 260,
+      "sortid": 284,
       "compiles": true,
       "locked_code": false,
       "registry_name": "osnovaaaglassrecipe",
@@ -2816,7 +2816,7 @@
     {
       "name": "Aaaglassrecipe",
       "type": "recipe",
-      "sortid": 261,
+      "sortid": 285,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aaaglassrecipe",
@@ -2871,7 +2871,7 @@
     {
       "name": "Wiresrecipe",
       "type": "recipe",
-      "sortid": 262,
+      "sortid": 286,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wiresrecipe",
@@ -2884,7 +2884,7 @@
     {
       "name": "Instrumentprosto",
       "type": "item",
-      "sortid": 51,
+      "sortid": 99,
       "compiles": true,
       "locked_code": false,
       "registry_name": "instrumentprosto",
@@ -2898,7 +2898,7 @@
     {
       "name": "Ironmassrecipe",
       "type": "recipe",
-      "sortid": 263,
+      "sortid": 287,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ironmassrecipe",
@@ -2911,7 +2911,7 @@
     {
       "name": "Coppermassrecipe",
       "type": "recipe",
-      "sortid": 264,
+      "sortid": 288,
       "compiles": true,
       "locked_code": false,
       "registry_name": "coppermassrecipe",
@@ -2924,7 +2924,7 @@
     {
       "name": "Instrumentrecipe",
       "type": "recipe",
-      "sortid": 265,
+      "sortid": 289,
       "compiles": true,
       "locked_code": false,
       "registry_name": "instrumentrecipe",
@@ -2937,7 +2937,7 @@
     {
       "name": "Myplacezonerecipe",
       "type": "recipe",
-      "sortid": 266,
+      "sortid": 290,
       "compiles": true,
       "locked_code": false,
       "registry_name": "myplacezonerecipe",
@@ -2950,7 +2950,7 @@
     {
       "name": "Betaelementloot",
       "type": "lootmodifier",
-      "sortid": 267,
+      "sortid": 291,
       "compiles": true,
       "locked_code": false,
       "registry_name": "betaelementloot",
@@ -2963,7 +2963,7 @@
     {
       "name": "Alphaelement",
       "type": "item",
-      "sortid": 52,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "registry_name": "alphaelement",
@@ -2977,7 +2977,7 @@
     {
       "name": "Alphaelementloot",
       "type": "loottable",
-      "sortid": 268,
+      "sortid": 292,
       "compiles": true,
       "locked_code": false,
       "registry_name": "alphaelementloot",
@@ -2990,7 +2990,7 @@
     {
       "name": "Ironplastinerecipe",
       "type": "recipe",
-      "sortid": 269,
+      "sortid": 293,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ironplastinerecipe",
@@ -3003,7 +3003,7 @@
     {
       "name": "Testelementes",
       "type": "code",
-      "sortid": 270,
+      "sortid": 294,
       "compiles": true,
       "locked_code": true,
       "registry_name": "testelementes",
@@ -3016,7 +3016,7 @@
     {
       "name": "Darkbiome",
       "type": "biome",
-      "sortid": 271,
+      "sortid": 295,
       "compiles": true,
       "locked_code": false,
       "registry_name": "darkbiome",
@@ -3031,7 +3031,7 @@
     {
       "name": "Darkgrass",
       "type": "block",
-      "sortid": 53,
+      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "registry_name": "darkgrass",
@@ -3047,7 +3047,7 @@
     {
       "name": "Darkgrassblockniz",
       "type": "block",
-      "sortid": 54,
+      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "registry_name": "darkgrassblockniz",
@@ -3063,7 +3063,7 @@
     {
       "name": "DarkBiomeOre",
       "type": "block",
-      "sortid": 55,
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_biome_ore",
@@ -3082,7 +3082,7 @@
     {
       "name": "Whatasvazka",
       "type": "tag",
-      "sortid": 272,
+      "sortid": 296,
       "compiles": true,
       "locked_code": false,
       "registry_name": "whatasvazka",
@@ -3095,7 +3095,7 @@
     {
       "name": "Etheriumdark",
       "type": "item",
-      "sortid": 57,
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "registry_name": "etheriumdark",
@@ -3109,7 +3109,7 @@
     {
       "name": "Darkironrecipe",
       "type": "recipe",
-      "sortid": 273,
+      "sortid": 297,
       "compiles": true,
       "locked_code": false,
       "registry_name": "darkironrecipe",
@@ -3122,7 +3122,7 @@
     {
       "name": "Ignorbroni",
       "type": "code",
-      "sortid": 274,
+      "sortid": 298,
       "compiles": true,
       "locked_code": true,
       "registry_name": "ignorbroni",
@@ -3135,7 +3135,7 @@
     {
       "name": "Blockforprofessiafix",
       "type": "block",
-      "sortid": 77,
+      "sortid": 76,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blockforprofessiafix",
@@ -3151,7 +3151,7 @@
     {
       "name": "Blockforprofessiarecipe",
       "type": "recipe",
-      "sortid": 275,
+      "sortid": 299,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blockforprofessiarecipe",
@@ -3164,7 +3164,7 @@
     {
       "name": "Aluminium",
       "type": "block",
-      "sortid": 56,
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aluminium_ore_wowa",
@@ -3183,7 +3183,7 @@
     {
       "name": "Batareyka",
       "type": "item",
-      "sortid": 58,
+      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "registry_name": "batareyka",
@@ -3197,7 +3197,7 @@
     {
       "name": "Zagatovkablackiron",
       "type": "item",
-      "sortid": 59,
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "registry_name": "zagatovkablackiron",
@@ -3211,7 +3211,7 @@
     {
       "name": "Zagatovkarecipe",
       "type": "recipe",
-      "sortid": 276,
+      "sortid": 300,
       "compiles": true,
       "locked_code": false,
       "registry_name": "zagatovkarecipe",
@@ -3224,7 +3224,7 @@
     {
       "name": "Darkironrecipe2",
       "type": "recipe",
-      "sortid": 277,
+      "sortid": 301,
       "compiles": true,
       "locked_code": false,
       "registry_name": "darkironrecipe_2",
@@ -3237,7 +3237,7 @@
     {
       "name": "Posudina",
       "type": "item",
-      "sortid": 60,
+      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "registry_name": "posudina",
@@ -3251,7 +3251,7 @@
     {
       "name": "Posudinarecipe",
       "type": "recipe",
-      "sortid": 278,
+      "sortid": 302,
       "compiles": true,
       "locked_code": false,
       "registry_name": "posudinarecipe",
@@ -3264,7 +3264,7 @@
     {
       "name": "Karmannielectrolizer",
       "type": "item",
-      "sortid": 61,
+      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "registry_name": "karmannielectrolizer",
@@ -3278,7 +3278,7 @@
     {
       "name": "Karmannielectrolizerrecipe",
       "type": "recipe",
-      "sortid": 279,
+      "sortid": 303,
       "compiles": true,
       "locked_code": false,
       "registry_name": "karmannielectrolizerrecipe",
@@ -3291,7 +3291,7 @@
     {
       "name": "Batareykarecipe",
       "type": "recipe",
-      "sortid": 280,
+      "sortid": 304,
       "compiles": true,
       "locked_code": false,
       "registry_name": "batareykarecipe",
@@ -3304,7 +3304,7 @@
     {
       "name": "Molotwowa",
       "type": "item",
-      "sortid": 62,
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "registry_name": "molotwowa",
@@ -3318,7 +3318,7 @@
     {
       "name": "Izolationw",
       "type": "item",
-      "sortid": 63,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "registry_name": "izolationw",
@@ -3332,7 +3332,7 @@
     {
       "name": "Izolationrecipe",
       "type": "recipe",
-      "sortid": 281,
+      "sortid": 305,
       "compiles": true,
       "locked_code": false,
       "registry_name": "izolationrecipe",
@@ -3345,7 +3345,7 @@
     {
       "name": "Plastinerecipe",
       "type": "recipe",
-      "sortid": 282,
+      "sortid": 306,
       "compiles": true,
       "locked_code": false,
       "registry_name": "plastinerecipe",
@@ -3358,7 +3358,7 @@
     {
       "name": "Copperplastinerecipe",
       "type": "recipe",
-      "sortid": 283,
+      "sortid": 307,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copperplastinerecipe",
@@ -3371,7 +3371,7 @@
     {
       "name": "Copperplate",
       "type": "item",
-      "sortid": 64,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copperplate",
@@ -3385,7 +3385,7 @@
     {
       "name": "Multitoolcomponent",
       "type": "item",
-      "sortid": 65,
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "registry_name": "multitoolcomponent",
@@ -3399,7 +3399,7 @@
     {
       "name": "Pogranichnik",
       "type": "block",
-      "sortid": 66,
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pogranichnik",
@@ -3415,7 +3415,7 @@
     {
       "name": "WWorldBiomeOne",
       "type": "biome",
-      "sortid": 284,
+      "sortid": 308,
       "compiles": true,
       "locked_code": false,
       "registry_name": "w_world_biome_one",
@@ -3428,7 +3428,7 @@
     {
       "name": "Wworld",
       "type": "dimension",
-      "sortid": 159,
+      "sortid": 185,
       "compiles": true,
       "locked_code": true,
       "registry_name": "wworld",
@@ -3443,7 +3443,7 @@
     {
       "name": "TeleporttoWWorld",
       "type": "keybind",
-      "sortid": 285,
+      "sortid": 309,
       "compiles": true,
       "locked_code": false,
       "registry_name": "teleportto_w_world",
@@ -3456,7 +3456,7 @@
     {
       "name": "TeleporttoWWorldPriNazhatiiKlavishi",
       "type": "procedure",
-      "sortid": 286,
+      "sortid": 310,
       "compiles": true,
       "locked_code": false,
       "registry_name": "teleportto_w_world_pri_nazhatii_klavishi",
@@ -3491,7 +3491,7 @@
     {
       "name": "DarkStrkBLK",
       "type": "block",
-      "sortid": 67,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_strk_blk",
@@ -3507,7 +3507,7 @@
     {
       "name": "RedEmeraldPiece",
       "type": "item",
-      "sortid": 68,
+      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "registry_name": "red_emerald_piece",
@@ -3521,7 +3521,7 @@
     {
       "name": "BlueEmeraldPiece",
       "type": "item",
-      "sortid": 69,
+      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blue_emerald_piece",
@@ -3535,7 +3535,7 @@
     {
       "name": "WhiteEmeraldPiece",
       "type": "item",
-      "sortid": 70,
+      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "registry_name": "white_emerald_piece",
@@ -3549,7 +3549,7 @@
     {
       "name": "YellowEmeraldPiece",
       "type": "item",
-      "sortid": 71,
+      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "registry_name": "yellow_emerald_piece",
@@ -3563,7 +3563,7 @@
     {
       "name": "LightBlueEmeraldPiece",
       "type": "item",
-      "sortid": 72,
+      "sortid": 71,
       "compiles": true,
       "locked_code": false,
       "registry_name": "light_blue_emerald_piece",
@@ -3577,7 +3577,7 @@
     {
       "name": "PurpleEmeraldPiece",
       "type": "item",
-      "sortid": 73,
+      "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_emerald_piece",
@@ -3591,7 +3591,7 @@
     {
       "name": "GreenEmeraldPiece",
       "type": "item",
-      "sortid": 74,
+      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "registry_name": "green_emerald_piece",
@@ -3605,7 +3605,7 @@
     {
       "name": "AluminiumIngot",
       "type": "item",
-      "sortid": 75,
+      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aluminium_ingot",
@@ -3619,7 +3619,7 @@
     {
       "name": "AluminiumPlate",
       "type": "item",
-      "sortid": 76,
+      "sortid": 75,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aluminium_plate",
@@ -3633,7 +3633,7 @@
     {
       "name": "AluminiumPlastineRecipe",
       "type": "recipe",
-      "sortid": 287,
+      "sortid": 311,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aluminium_plastine_recipe",
@@ -3646,7 +3646,7 @@
     {
       "name": "EmeraldCombiner",
       "type": "block",
-      "sortid": 79,
+      "sortid": 78,
       "compiles": true,
       "locked_code": false,
       "registry_name": "emerald_combiner",
@@ -3663,7 +3663,7 @@
     {
       "name": "ECI",
       "type": "gui",
-      "sortid": 288,
+      "sortid": 312,
       "compiles": true,
       "locked_code": false,
       "registry_name": "eci",
@@ -3677,7 +3677,7 @@
     {
       "name": "Eciproc",
       "type": "procedure",
-      "sortid": 289,
+      "sortid": 313,
       "compiles": true,
       "locked_code": false,
       "registry_name": "eciproc",
@@ -3709,7 +3709,7 @@
     {
       "name": "BigBatteryw",
       "type": "block",
-      "sortid": 80,
+      "sortid": 79,
       "compiles": true,
       "locked_code": false,
       "registry_name": "big_batteryw",
@@ -3726,7 +3726,7 @@
     {
       "name": "BigBatterywObnovlieniieTika",
       "type": "procedure",
-      "sortid": 290,
+      "sortid": 314,
       "compiles": true,
       "locked_code": false,
       "registry_name": "big_batteryw_obnovlieniie_tika",
@@ -3757,7 +3757,7 @@
     {
       "name": "InstrumentprostoPriShchielchkiePKMPoBloku",
       "type": "procedure",
-      "sortid": 291,
+      "sortid": 315,
       "compiles": true,
       "locked_code": false,
       "registry_name": "instrumentprosto_pri_shchielchkie_pkm_po_bloku",
@@ -3792,7 +3792,7 @@
     {
       "name": "EmeraldCraft",
       "type": "procedure",
-      "sortid": 292,
+      "sortid": 316,
       "compiles": true,
       "locked_code": false,
       "registry_name": "emerald_craft",
@@ -3823,7 +3823,7 @@
     {
       "name": "Craftprogress",
       "type": "procedure",
-      "sortid": 293,
+      "sortid": 317,
       "compiles": true,
       "locked_code": false,
       "registry_name": "craftprogress",
@@ -3855,7 +3855,7 @@
     {
       "name": "DarkIronMachineCasing",
       "type": "block",
-      "sortid": 87,
+      "sortid": 86,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_iron_machine_casing",
@@ -3871,7 +3871,7 @@
     {
       "name": "Darkironplastine",
       "type": "item",
-      "sortid": 89,
+      "sortid": 88,
       "compiles": true,
       "locked_code": false,
       "registry_name": "darkironplastine",
@@ -3885,7 +3885,7 @@
     {
       "name": "Darkironplastinerecipe",
       "type": "recipe",
-      "sortid": 294,
+      "sortid": 318,
       "compiles": true,
       "locked_code": false,
       "registry_name": "darkironplastinerecipe",
@@ -3898,7 +3898,7 @@
     {
       "name": "Darkironmachinecasingrecipe",
       "type": "recipe",
-      "sortid": 295,
+      "sortid": 319,
       "compiles": true,
       "locked_code": false,
       "registry_name": "darkironmachinecasingrecipe",
@@ -3911,7 +3911,7 @@
     {
       "name": "Molotrecipe",
       "type": "recipe",
-      "sortid": 296,
+      "sortid": 320,
       "compiles": true,
       "locked_code": false,
       "registry_name": "molotrecipe",
@@ -3924,7 +3924,7 @@
     {
       "name": "Multitoolcomponentrecipe",
       "type": "recipe",
-      "sortid": 297,
+      "sortid": 321,
       "compiles": true,
       "locked_code": false,
       "registry_name": "multitoolcomponentrecipe",
@@ -3937,7 +3937,7 @@
     {
       "name": "Aluminiumdiamondbase",
       "type": "item",
-      "sortid": 90,
+      "sortid": 89,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aluminiumdiamondbase",
@@ -3951,7 +3951,7 @@
     {
       "name": "Aluminiumdiamondrecipe",
       "type": "recipe",
-      "sortid": 298,
+      "sortid": 322,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aluminiumdiamondrecipe",
@@ -3964,7 +3964,7 @@
     {
       "name": "Energyelement",
       "type": "item",
-      "sortid": 91,
+      "sortid": 90,
       "compiles": true,
       "locked_code": false,
       "registry_name": "energyelement",
@@ -3978,7 +3978,7 @@
     {
       "name": "Energyelementrecipe",
       "type": "recipe",
-      "sortid": 299,
+      "sortid": 323,
       "compiles": true,
       "locked_code": false,
       "registry_name": "energyelementrecipe",
@@ -3991,7 +3991,7 @@
     {
       "name": "Emeraldcombinerrecipe",
       "type": "recipe",
-      "sortid": 300,
+      "sortid": 324,
       "compiles": true,
       "locked_code": false,
       "registry_name": "emeraldcombinerrecipe",
@@ -4004,7 +4004,7 @@
     {
       "name": "Multitoolcomponentnottrue",
       "type": "item",
-      "sortid": 92,
+      "sortid": 91,
       "compiles": true,
       "locked_code": false,
       "registry_name": "multitoolcomponentnottrue",
@@ -4018,7 +4018,7 @@
     {
       "name": "Multitoolcomponent2recipe",
       "type": "recipe",
-      "sortid": 301,
+      "sortid": 325,
       "compiles": true,
       "locked_code": false,
       "registry_name": "multitoolcomponent_2recipe",
@@ -4031,7 +4031,7 @@
     {
       "name": "Aluminuimrecipe",
       "type": "recipe",
-      "sortid": 302,
+      "sortid": 326,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aluminuimrecipe",
@@ -4044,7 +4044,7 @@
     {
       "name": "Solarpanelgeneratorw",
       "type": "block",
-      "sortid": 88,
+      "sortid": 87,
       "compiles": true,
       "locked_code": false,
       "registry_name": "solarpanelgeneratorw",
@@ -4061,7 +4061,7 @@
     {
       "name": "SolarpanelgeneratorwUpdateTick",
       "type": "procedure",
-      "sortid": 303,
+      "sortid": 327,
       "compiles": true,
       "locked_code": false,
       "registry_name": "solarpanelgeneratorw_update_tick",
@@ -4092,7 +4092,7 @@
     {
       "name": "Solarpanelgeneratorwrecipe",
       "type": "recipe",
-      "sortid": 304,
+      "sortid": 328,
       "compiles": true,
       "locked_code": false,
       "registry_name": "solarpanelgeneratorwrecipe",
@@ -4105,7 +4105,7 @@
     {
       "name": "Solarpanelelement",
       "type": "item",
-      "sortid": 93,
+      "sortid": 92,
       "compiles": true,
       "locked_code": false,
       "registry_name": "solarpanelelement",
@@ -4119,7 +4119,7 @@
     {
       "name": "Solarpanelelementrecipe",
       "type": "recipe",
-      "sortid": 305,
+      "sortid": 329,
       "compiles": true,
       "locked_code": false,
       "registry_name": "solarpanelelementrecipe",
@@ -4132,7 +4132,7 @@
     {
       "name": "BigBatteryrecipew",
       "type": "recipe",
-      "sortid": 306,
+      "sortid": 330,
       "compiles": true,
       "locked_code": false,
       "registry_name": "big_batteryrecipew",
@@ -4145,7 +4145,7 @@
     {
       "name": "Copperplastinerecipe2",
       "type": "recipe",
-      "sortid": 307,
+      "sortid": 331,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copperplastinerecipe_2",
@@ -4158,7 +4158,7 @@
     {
       "name": "Testlaserparticle",
       "type": "particle",
-      "sortid": 308,
+      "sortid": 332,
       "compiles": true,
       "locked_code": false,
       "registry_name": "testlaserparticle",
@@ -4172,7 +4172,7 @@
     {
       "name": "Lasergunrecipetest",
       "type": "recipe",
-      "sortid": 309,
+      "sortid": 333,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lasergunrecipetest",
@@ -4185,7 +4185,7 @@
     {
       "name": "ClearetheriumlightItemInInventoryTick",
       "type": "procedure",
-      "sortid": 310,
+      "sortid": 334,
       "compiles": true,
       "locked_code": false,
       "registry_name": "clearetheriumlight_item_in_inventory_tick",
@@ -4204,7 +4204,7 @@
     {
       "name": "Clearetheriumlight",
       "type": "item",
-      "sortid": 94,
+      "sortid": 93,
       "compiles": true,
       "locked_code": false,
       "registry_name": "clearetheriumlight",
@@ -4232,7 +4232,7 @@
     {
       "name": "STBHswordLivingEntityIsHitWithTool",
       "type": "procedure",
-      "sortid": 311,
+      "sortid": 335,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stb_hsword_living_entity_is_hit_with_tool",
@@ -4267,7 +4267,7 @@
     {
       "name": "Energysp",
       "type": "procedure",
-      "sortid": 312,
+      "sortid": 336,
       "compiles": true,
       "locked_code": false,
       "registry_name": "energysp",
@@ -4299,7 +4299,7 @@
     {
       "name": "Solarpanelmenu",
       "type": "gui",
-      "sortid": 313,
+      "sortid": 337,
       "compiles": true,
       "locked_code": false,
       "registry_name": "solarpanelmenu",
@@ -4313,7 +4313,7 @@
     {
       "name": "STBHAbilities",
       "type": "code",
-      "sortid": 314,
+      "sortid": 338,
       "compiles": true,
       "locked_code": true,
       "registry_name": "stbh_abilities",
@@ -4326,7 +4326,7 @@
     {
       "name": "STBHLaserOnSwingProcedure",
       "type": "code",
-      "sortid": 315,
+      "sortid": 339,
       "compiles": true,
       "locked_code": true,
       "registry_name": "stbh_laser_on_swing_procedure",
@@ -4339,7 +4339,7 @@
     {
       "name": "RedsoulItemInInventoryTick",
       "type": "procedure",
-      "sortid": 316,
+      "sortid": 340,
       "compiles": true,
       "locked_code": false,
       "registry_name": "redsoul_item_in_inventory_tick",
@@ -4362,7 +4362,7 @@
     {
       "name": "BluesoulItemininventory",
       "type": "procedure",
-      "sortid": 317,
+      "sortid": 341,
       "compiles": true,
       "locked_code": true,
       "registry_name": "bluesoul_itemininventory",
@@ -4385,7 +4385,7 @@
     {
       "name": "GreensoulRightclicked",
       "type": "procedure",
-      "sortid": 318,
+      "sortid": 342,
       "compiles": true,
       "locked_code": true,
       "registry_name": "greensoul_rightclicked",
@@ -4399,7 +4399,7 @@
     {
       "name": "Mimic",
       "type": "animatedentity",
-      "sortid": 95,
+      "sortid": 94,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mimic",
@@ -4416,7 +4416,7 @@
     {
       "name": "PlayerInDarkBiome",
       "type": "procedure",
-      "sortid": 319,
+      "sortid": 343,
       "compiles": true,
       "locked_code": false,
       "registry_name": "player_in_dark_biome",
@@ -4439,7 +4439,7 @@
     {
       "name": "OrangeSoulItemininventorytick",
       "type": "procedure",
-      "sortid": 320,
+      "sortid": 344,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orange_soul_itemininventorytick",
@@ -4462,7 +4462,7 @@
     {
       "name": "LightBlueSoulItemInventoryTick",
       "type": "procedure",
-      "sortid": 321,
+      "sortid": 345,
       "compiles": true,
       "locked_code": false,
       "registry_name": "light_blue_soul_item_inventory_tick",
@@ -4485,7 +4485,7 @@
     {
       "name": "PurpleSoulInventoryTick",
       "type": "procedure",
-      "sortid": 322,
+      "sortid": 346,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purple_soul_inventory_tick",
@@ -4508,7 +4508,7 @@
     {
       "name": "Ring",
       "type": "item",
-      "sortid": 96,
+      "sortid": 95,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ring",
@@ -4522,7 +4522,7 @@
     {
       "name": "Testplant",
       "type": "plant",
-      "sortid": 98,
+      "sortid": 97,
       "compiles": true,
       "locked_code": false,
       "registry_name": "testplant",
@@ -4541,7 +4541,7 @@
     {
       "name": "SuperForm",
       "type": "potioneffect",
-      "sortid": 323,
+      "sortid": 347,
       "compiles": true,
       "locked_code": false,
       "registry_name": "super_form",
@@ -4554,7 +4554,7 @@
     {
       "name": "SuperFormOnEffectActiveTick",
       "type": "procedure",
-      "sortid": 324,
+      "sortid": 348,
       "compiles": true,
       "locked_code": false,
       "registry_name": "super_form_on_effect_active_tick",
@@ -4573,7 +4573,7 @@
     {
       "name": "GoldPlastine",
       "type": "item",
-      "sortid": 97,
+      "sortid": 96,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gold_plastine",
@@ -4587,7 +4587,7 @@
     {
       "name": "Goldplaterecipe",
       "type": "recipe",
-      "sortid": 325,
+      "sortid": 349,
       "compiles": true,
       "locked_code": false,
       "registry_name": "goldplaterecipe",
@@ -4600,7 +4600,7 @@
     {
       "name": "CableN",
       "type": "block",
-      "sortid": 99,
+      "sortid": 98,
       "compiles": true,
       "locked_code": true,
       "registry_name": "cable_n",
@@ -4618,7 +4618,7 @@
     {
       "name": "CableE",
       "type": "block",
-      "sortid": 326,
+      "sortid": 350,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cable_e",
@@ -4636,7 +4636,7 @@
     {
       "name": "CableUpdateTickEnergy",
       "type": "procedure",
-      "sortid": 327,
+      "sortid": 351,
       "compiles": true,
       "locked_code": true,
       "registry_name": "cable_update_tick_energy",
@@ -4668,7 +4668,7 @@
     {
       "name": "SolarpanelgeneratorwBlockAdded",
       "type": "procedure",
-      "sortid": 328,
+      "sortid": 352,
       "compiles": true,
       "locked_code": false,
       "registry_name": "solarpanelgeneratorw_block_added",
@@ -4699,7 +4699,7 @@
     {
       "name": "EmeraldCombinerBlockAdded",
       "type": "procedure",
-      "sortid": 329,
+      "sortid": 353,
       "compiles": true,
       "locked_code": false,
       "registry_name": "emerald_combiner_block_added",
@@ -4730,7 +4730,7 @@
     {
       "name": "ClearLightEtheriumRecipe",
       "type": "recipe",
-      "sortid": 330,
+      "sortid": 354,
       "compiles": true,
       "locked_code": false,
       "registry_name": "clear_light_etherium_recipe",
@@ -4743,7 +4743,7 @@
     {
       "name": "YellowsoulRightclicked",
       "type": "procedure",
-      "sortid": 331,
+      "sortid": 355,
       "compiles": true,
       "locked_code": true,
       "registry_name": "yellowsoul_rightclicked",
@@ -4757,7 +4757,7 @@
     {
       "name": "ExtractorUpdateTick",
       "type": "procedure",
-      "sortid": 332,
+      "sortid": 356,
       "compiles": true,
       "locked_code": false,
       "registry_name": "extractor_update_tick",
@@ -4788,7 +4788,7 @@
     {
       "name": "ExtractorGuide",
       "type": "gui",
-      "sortid": 333,
+      "sortid": 357,
       "compiles": true,
       "locked_code": false,
       "registry_name": "extractor_guide",
@@ -4803,7 +4803,7 @@
     {
       "name": "Guidebookextractor",
       "type": "procedure",
-      "sortid": 334,
+      "sortid": 358,
       "compiles": true,
       "locked_code": false,
       "registry_name": "guidebookextractor",
@@ -4838,7 +4838,7 @@
     {
       "name": "Provodarecipe",
       "type": "recipe",
-      "sortid": 335,
+      "sortid": 359,
       "compiles": true,
       "locked_code": false,
       "registry_name": "provodarecipe",
@@ -4851,7 +4851,7 @@
     {
       "name": "DarkHead",
       "type": "animatedentity",
-      "sortid": 152,
+      "sortid": 178,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_head",
@@ -4867,7 +4867,7 @@
     {
       "name": "DiamondMultiToolw",
       "type": "tool",
-      "sortid": 100,
+      "sortid": 102,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamond_multi_toolw",
@@ -4881,7 +4881,7 @@
     {
       "name": "Diamondlapis",
       "type": "item",
-      "sortid": 101,
+      "sortid": 103,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamondlapis",
@@ -4895,7 +4895,7 @@
     {
       "name": "Diamondlapisrecipe",
       "type": "recipe",
-      "sortid": 336,
+      "sortid": 360,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamondlapisrecipe",
@@ -4908,7 +4908,7 @@
     {
       "name": "Diamondmultitoolwrecipe",
       "type": "recipe",
-      "sortid": 337,
+      "sortid": 361,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamondmultitoolwrecipe",
@@ -4921,7 +4921,7 @@
     {
       "name": "Reddiamondmultitoolplusw",
       "type": "tool",
-      "sortid": 103,
+      "sortid": 105,
       "compiles": true,
       "locked_code": true,
       "registry_name": "reddiamondmultitoolplusw",
@@ -4935,7 +4935,7 @@
     {
       "name": "Reddiamondmultitoolpluisrecipe",
       "type": "recipe",
-      "sortid": 338,
+      "sortid": 362,
       "compiles": true,
       "locked_code": false,
       "registry_name": "reddiamondmultitoolpluisrecipe",
@@ -4948,7 +4948,7 @@
     {
       "name": "Rdmtpprocedure",
       "type": "procedure",
-      "sortid": 339,
+      "sortid": 363,
       "compiles": true,
       "locked_code": true,
       "registry_name": "rdmtpprocedure",
@@ -4962,7 +4962,7 @@
     {
       "name": "Reddiamondlapis",
       "type": "item",
-      "sortid": 104,
+      "sortid": 106,
       "compiles": true,
       "locked_code": false,
       "registry_name": "reddiamondlapis",
@@ -4976,7 +4976,7 @@
     {
       "name": "Reddiamondlapisrecipe",
       "type": "recipe",
-      "sortid": 340,
+      "sortid": 364,
       "compiles": true,
       "locked_code": false,
       "registry_name": "reddiamondlapisrecipe",
@@ -4989,7 +4989,7 @@
     {
       "name": "Diamond_lapis_armorArmor",
       "type": "armor",
-      "sortid": 105,
+      "sortid": 107,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamond_lapis_armor_armor",
@@ -5006,7 +5006,7 @@
     {
       "name": "Diamond_lapis_armorArmorHelmetRecipe",
       "type": "recipe",
-      "sortid": 341,
+      "sortid": 365,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamond_lapis_armor_armor_helmet_recipe",
@@ -5019,7 +5019,7 @@
     {
       "name": "Diamond_lapis_armorArmorChestplateRecipe",
       "type": "recipe",
-      "sortid": 342,
+      "sortid": 366,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamond_lapis_armor_armor_chestplate_recipe",
@@ -5032,7 +5032,7 @@
     {
       "name": "Diamond_lapis_armorArmorLeggingsRecipe",
       "type": "recipe",
-      "sortid": 343,
+      "sortid": 367,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamond_lapis_armor_armor_leggings_recipe",
@@ -5045,7 +5045,7 @@
     {
       "name": "Diamond_lapis_armorArmorBootsRecipe",
       "type": "recipe",
-      "sortid": 344,
+      "sortid": 368,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamond_lapis_armor_armor_boots_recipe",
@@ -5058,7 +5058,7 @@
     {
       "name": "DiamondLapisBronyaCpre",
       "type": "item",
-      "sortid": 106,
+      "sortid": 108,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamond_lapis_bronya_cpre",
@@ -5072,7 +5072,7 @@
     {
       "name": "Dlbcore",
       "type": "recipe",
-      "sortid": 345,
+      "sortid": 369,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dlbcore",
@@ -5085,7 +5085,7 @@
     {
       "name": "Armorbuff",
       "type": "procedure",
-      "sortid": 346,
+      "sortid": 370,
       "compiles": true,
       "locked_code": true,
       "registry_name": "armorbuff",
@@ -5099,7 +5099,7 @@
     {
       "name": "ArmorSpeedEventHandler",
       "type": "procedure",
-      "sortid": 347,
+      "sortid": 371,
       "compiles": true,
       "locked_code": true,
       "registry_name": "armor_speed_event_handler",
@@ -5113,7 +5113,7 @@
     {
       "name": "Diamondlapistoolsword",
       "type": "tool",
-      "sortid": 107,
+      "sortid": 109,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamondlapistoolsword",
@@ -5127,7 +5127,7 @@
     {
       "name": "Diamondlapisswordrecipe",
       "type": "recipe",
-      "sortid": 348,
+      "sortid": 372,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamondlapisswordrecipe",
@@ -5140,7 +5140,7 @@
     {
       "name": "MTWtestanim",
       "type": "animateditem",
-      "sortid": 108,
+      "sortid": 100,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mt_wtestanim",
@@ -5156,7 +5156,7 @@
     {
       "name": "SoulSystemW",
       "type": "procedure",
-      "sortid": 349,
+      "sortid": 373,
       "compiles": true,
       "locked_code": true,
       "registry_name": "soul_system_w",
@@ -5170,7 +5170,7 @@
     {
       "name": "SoulSystemWGUI",
       "type": "procedure",
-      "sortid": 350,
+      "sortid": 374,
       "compiles": true,
       "locked_code": true,
       "registry_name": "soul_system_wgui",
@@ -5184,7 +5184,7 @@
     {
       "name": "NetworksyncSoulSystem",
       "type": "code",
-      "sortid": 351,
+      "sortid": 375,
       "compiles": true,
       "locked_code": true,
       "registry_name": "networksync_soul_system",
@@ -5197,7 +5197,7 @@
     {
       "name": "SoulsSystemWEffects",
       "type": "code",
-      "sortid": 352,
+      "sortid": 376,
       "compiles": true,
       "locked_code": true,
       "registry_name": "souls_system_w_effects",
@@ -5210,7 +5210,7 @@
     {
       "name": "LaserRayHandler",
       "type": "code",
-      "sortid": 353,
+      "sortid": 377,
       "compiles": true,
       "locked_code": true,
       "registry_name": "laser_ray_handler",
@@ -5223,7 +5223,7 @@
     {
       "name": "PacketHandler",
       "type": "code",
-      "sortid": 354,
+      "sortid": 378,
       "compiles": true,
       "locked_code": true,
       "registry_name": "packet_handler",
@@ -5236,7 +5236,7 @@
     {
       "name": "DealLaserDamagePacket",
       "type": "code",
-      "sortid": 355,
+      "sortid": 379,
       "compiles": true,
       "locked_code": true,
       "registry_name": "deal_laser_damage_packet",
@@ -5249,7 +5249,7 @@
     {
       "name": "Elissaarmor",
       "type": "animatedarmor",
-      "sortid": 109,
+      "sortid": 110,
       "compiles": true,
       "locked_code": false,
       "registry_name": "elissaarmor",
@@ -5268,7 +5268,7 @@
     {
       "name": "PlayerModelHiderEvents",
       "type": "code",
-      "sortid": 356,
+      "sortid": 380,
       "compiles": true,
       "locked_code": true,
       "registry_name": "player_model_hider_events",
@@ -5281,7 +5281,7 @@
     {
       "name": "ElissClaws",
       "type": "tool",
-      "sortid": 110,
+      "sortid": 111,
       "compiles": true,
       "locked_code": false,
       "registry_name": "eliss_claws",
@@ -5295,7 +5295,7 @@
     {
       "name": "ElissClawsDoubleArms",
       "type": "code",
-      "sortid": 357,
+      "sortid": 381,
       "compiles": true,
       "locked_code": true,
       "registry_name": "eliss_claws_double_arms",
@@ -5308,7 +5308,7 @@
     {
       "name": "Elissclaw",
       "type": "item",
-      "sortid": 111,
+      "sortid": 112,
       "compiles": true,
       "locked_code": false,
       "registry_name": "elissclaw",
@@ -5322,7 +5322,7 @@
     {
       "name": "Elissclawsrecipe",
       "type": "recipe",
-      "sortid": 358,
+      "sortid": 382,
       "compiles": true,
       "locked_code": false,
       "registry_name": "elissclawsrecipe",
@@ -5335,7 +5335,7 @@
     {
       "name": "Ultrastrongcoating",
       "type": "item",
-      "sortid": 112,
+      "sortid": 113,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ultrastrongcoating",
@@ -5349,7 +5349,7 @@
     {
       "name": "Energypipesusc",
       "type": "item",
-      "sortid": 113,
+      "sortid": 114,
       "compiles": true,
       "locked_code": false,
       "registry_name": "energypipesusc",
@@ -5363,7 +5363,7 @@
     {
       "name": "Pipes",
       "type": "item",
-      "sortid": 114,
+      "sortid": 115,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pipes",
@@ -5377,7 +5377,7 @@
     {
       "name": "Ultrastrongcoatingrecipe",
       "type": "recipe",
-      "sortid": 359,
+      "sortid": 383,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ultrastrongcoatingrecipe",
@@ -5390,7 +5390,7 @@
     {
       "name": "Energypipesuscrecipe",
       "type": "recipe",
-      "sortid": 360,
+      "sortid": 384,
       "compiles": true,
       "locked_code": false,
       "registry_name": "energypipesuscrecipe",
@@ -5403,7 +5403,7 @@
     {
       "name": "Diamondlapisblock",
       "type": "block",
-      "sortid": 102,
+      "sortid": 104,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamondlapisblock",
@@ -5419,7 +5419,7 @@
     {
       "name": "Diamondlapisblockrecipe",
       "type": "recipe",
-      "sortid": 361,
+      "sortid": 385,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamondlapisblockrecipe",
@@ -5432,7 +5432,7 @@
     {
       "name": "Pipesrecipe",
       "type": "recipe",
-      "sortid": 362,
+      "sortid": 386,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pipesrecipe",
@@ -5445,7 +5445,7 @@
     {
       "name": "Elissclawrecipe",
       "type": "recipe",
-      "sortid": 363,
+      "sortid": 387,
       "compiles": true,
       "locked_code": false,
       "registry_name": "elissclawrecipe",
@@ -5458,7 +5458,7 @@
     {
       "name": "Diamondlapisblockrecipe2",
       "type": "recipe",
-      "sortid": 364,
+      "sortid": 388,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diamondlapisblockrecipe_2",
@@ -5471,7 +5471,7 @@
     {
       "name": "Energymagiccontroller",
       "type": "item",
-      "sortid": 115,
+      "sortid": 116,
       "compiles": true,
       "locked_code": false,
       "registry_name": "energymagiccontroller",
@@ -5485,7 +5485,7 @@
     {
       "name": "Energymagiccontrollerrecipe",
       "type": "recipe",
-      "sortid": 365,
+      "sortid": 389,
       "compiles": true,
       "locked_code": false,
       "registry_name": "energymagiccontrollerrecipe",
@@ -5498,7 +5498,7 @@
     {
       "name": "Energymagiccorerecipe",
       "type": "recipe",
-      "sortid": 366,
+      "sortid": 390,
       "compiles": true,
       "locked_code": false,
       "registry_name": "energymagiccorerecipe",
@@ -5511,7 +5511,7 @@
     {
       "name": "Electromagiccore",
       "type": "item",
-      "sortid": 116,
+      "sortid": 117,
       "compiles": true,
       "locked_code": false,
       "registry_name": "electromagiccore",
@@ -5525,7 +5525,7 @@
     {
       "name": "ElissClawsSuperAbility",
       "type": "code",
-      "sortid": 367,
+      "sortid": 391,
       "compiles": true,
       "locked_code": true,
       "registry_name": "eliss_claws_super_ability",
@@ -5538,7 +5538,7 @@
     {
       "name": "NetworkInit",
       "type": "code",
-      "sortid": 368,
+      "sortid": 392,
       "compiles": true,
       "locked_code": true,
       "registry_name": "network_init",
@@ -5551,7 +5551,7 @@
     {
       "name": "Elissaarmorpassive",
       "type": "code",
-      "sortid": 369,
+      "sortid": 393,
       "compiles": true,
       "locked_code": true,
       "registry_name": "elissaarmorpassive",
@@ -5564,7 +5564,7 @@
     {
       "name": "Firstbronyacomponent",
       "type": "item",
-      "sortid": 117,
+      "sortid": 118,
       "compiles": true,
       "locked_code": false,
       "registry_name": "firstbronyacomponent",
@@ -5578,7 +5578,7 @@
     {
       "name": "Firstbronyacomponentrecipe",
       "type": "recipe",
-      "sortid": 370,
+      "sortid": 394,
       "compiles": true,
       "locked_code": false,
       "registry_name": "firstbronyacomponentrecipe",
@@ -5591,7 +5591,7 @@
     {
       "name": "Darkironblock",
       "type": "block",
-      "sortid": 118,
+      "sortid": 119,
       "compiles": true,
       "locked_code": false,
       "registry_name": "darkironblock",
@@ -5607,7 +5607,7 @@
     {
       "name": "Darkironblockrecipe",
       "type": "recipe",
-      "sortid": 371,
+      "sortid": 395,
       "compiles": true,
       "locked_code": false,
       "registry_name": "darkironblockrecipe",
@@ -5620,7 +5620,7 @@
     {
       "name": "Darkironblockrecipe2",
       "type": "recipe",
-      "sortid": 372,
+      "sortid": 396,
       "compiles": true,
       "locked_code": false,
       "registry_name": "darkironblockrecipe_2",
@@ -5633,7 +5633,7 @@
     {
       "name": "Mtwmodeorbital",
       "type": "animateditem",
-      "sortid": 119,
+      "sortid": 101,
       "compiles": true,
       "locked_code": true,
       "registry_name": "mtwmodeorbital",
@@ -5649,7 +5649,7 @@
     {
       "name": "AreaRendererMTW",
       "type": "code",
-      "sortid": 373,
+      "sortid": 397,
       "compiles": true,
       "locked_code": true,
       "registry_name": "area_renderer_mtw",
@@ -5662,7 +5662,7 @@
     {
       "name": "OrbitalBeamEntity",
       "type": "code",
-      "sortid": 374,
+      "sortid": 398,
       "compiles": true,
       "locked_code": true,
       "registry_name": "orbital_beam_entity",
@@ -5675,7 +5675,7 @@
     {
       "name": "OrbitalBeamRenderer",
       "type": "code",
-      "sortid": 375,
+      "sortid": 399,
       "compiles": true,
       "locked_code": true,
       "registry_name": "orbital_beam_renderer",
@@ -5688,7 +5688,7 @@
     {
       "name": "ClientSetupOrbital",
       "type": "code",
-      "sortid": 376,
+      "sortid": 400,
       "compiles": true,
       "locked_code": true,
       "registry_name": "client_setup_orbital",
@@ -5701,7 +5701,7 @@
     {
       "name": "ModEntityBeamOrbital",
       "type": "code",
-      "sortid": 377,
+      "sortid": 401,
       "compiles": true,
       "locked_code": true,
       "registry_name": "mod_entity_beam_orbital",
@@ -5714,7 +5714,7 @@
     {
       "name": "RegisterOrbitalBeamEntity",
       "type": "code",
-      "sortid": 378,
+      "sortid": 402,
       "compiles": true,
       "locked_code": true,
       "registry_name": "register_orbital_beam_entity",
@@ -5727,7 +5727,7 @@
     {
       "name": "OrbitalBeamDamageController",
       "type": "code",
-      "sortid": 379,
+      "sortid": 403,
       "compiles": true,
       "locked_code": true,
       "registry_name": "orbital_beam_damage_controller",
@@ -5740,7 +5740,7 @@
     {
       "name": "Zagatovkarecipe2",
       "type": "recipe",
-      "sortid": 380,
+      "sortid": 404,
       "compiles": true,
       "locked_code": false,
       "registry_name": "zagatovkarecipe_2",
@@ -5753,7 +5753,7 @@
     {
       "name": "AbilityConfig",
       "type": "code",
-      "sortid": 381,
+      "sortid": 405,
       "compiles": true,
       "locked_code": true,
       "registry_name": "ability_config",
@@ -5766,7 +5766,7 @@
     {
       "name": "EnergyBallEntity",
       "type": "code",
-      "sortid": 382,
+      "sortid": 406,
       "compiles": true,
       "locked_code": true,
       "registry_name": "energy_ball_entity",
@@ -5779,7 +5779,7 @@
     {
       "name": "EnergyCapability",
       "type": "code",
-      "sortid": 383,
+      "sortid": 407,
       "compiles": true,
       "locked_code": true,
       "registry_name": "energy_capability",
@@ -5792,7 +5792,7 @@
     {
       "name": "EnergyInputHandler",
       "type": "code",
-      "sortid": 384,
+      "sortid": 408,
       "compiles": true,
       "locked_code": true,
       "registry_name": "energy_input_handler",
@@ -5805,7 +5805,7 @@
     {
       "name": "EnergyBallSposobkaProcedure",
       "type": "code",
-      "sortid": 385,
+      "sortid": 409,
       "compiles": true,
       "locked_code": true,
       "registry_name": "energy_ball_sposobka_procedure",
@@ -5818,7 +5818,7 @@
     {
       "name": "EnergyBallRenderer",
       "type": "code",
-      "sortid": 386,
+      "sortid": 410,
       "compiles": true,
       "locked_code": true,
       "registry_name": "energy_ball_renderer",
@@ -5831,7 +5831,7 @@
     {
       "name": "KeyInitEnergy",
       "type": "code",
-      "sortid": 387,
+      "sortid": 411,
       "compiles": true,
       "locked_code": true,
       "registry_name": "key_init_energy",
@@ -5844,7 +5844,7 @@
     {
       "name": "ModRegisterEnergySp",
       "type": "code",
-      "sortid": 388,
+      "sortid": 412,
       "compiles": true,
       "locked_code": true,
       "registry_name": "mod_register_energy_sp",
@@ -5857,7 +5857,7 @@
     {
       "name": "EnergyActionPacket",
       "type": "code",
-      "sortid": 389,
+      "sortid": 413,
       "compiles": true,
       "locked_code": true,
       "registry_name": "energy_action_packet",
@@ -5870,7 +5870,7 @@
     {
       "name": "ModMessages",
       "type": "code",
-      "sortid": 390,
+      "sortid": 414,
       "compiles": true,
       "locked_code": true,
       "registry_name": "mod_messages",
@@ -5883,7 +5883,7 @@
     {
       "name": "KeyBindings",
       "type": "code",
-      "sortid": 391,
+      "sortid": 415,
       "compiles": true,
       "locked_code": true,
       "registry_name": "key_bindings",
@@ -5896,7 +5896,7 @@
     {
       "name": "CapabilityAttacher",
       "type": "code",
-      "sortid": 392,
+      "sortid": 416,
       "compiles": true,
       "locked_code": true,
       "registry_name": "capability_attacher",
@@ -5909,7 +5909,7 @@
     {
       "name": "EnergyChargeRenderer",
       "type": "code",
-      "sortid": 393,
+      "sortid": 417,
       "compiles": true,
       "locked_code": true,
       "registry_name": "energy_charge_renderer",
@@ -5922,7 +5922,7 @@
     {
       "name": "BeyondtheBright",
       "type": "musicdisc",
-      "sortid": 153,
+      "sortid": 179,
       "compiles": true,
       "locked_code": false,
       "registry_name": "beyondthe_bright",
@@ -5936,7 +5936,7 @@
     {
       "name": "RealityMachine",
       "type": "musicdisc",
-      "sortid": 154,
+      "sortid": 180,
       "compiles": true,
       "locked_code": false,
       "registry_name": "reality_machine",
@@ -5950,7 +5950,7 @@
     {
       "name": "Accessviolation",
       "type": "musicdisc",
-      "sortid": 155,
+      "sortid": 181,
       "compiles": true,
       "locked_code": false,
       "registry_name": "accessviolation",
@@ -5964,7 +5964,7 @@
     {
       "name": "TheWelcomeCenter",
       "type": "musicdisc",
-      "sortid": 156,
+      "sortid": 182,
       "compiles": true,
       "locked_code": false,
       "registry_name": "the_welcome_center",
@@ -6006,7 +6006,7 @@
     {
       "name": "Redbronyacorerecipe",
       "type": "recipe",
-      "sortid": 394,
+      "sortid": 418,
       "compiles": true,
       "locked_code": false,
       "registry_name": "redbronyacorerecipe",
@@ -6051,7 +6051,7 @@
     {
       "name": "Berillium",
       "type": "block",
-      "sortid": 124,
+      "sortid": 143,
       "compiles": true,
       "locked_code": false,
       "registry_name": "berillium",
@@ -6070,7 +6070,7 @@
     {
       "name": "BerilliumCrystal",
       "type": "item",
-      "sortid": 125,
+      "sortid": 144,
       "compiles": true,
       "locked_code": false,
       "registry_name": "berillium_crystal",
@@ -6084,7 +6084,7 @@
     {
       "name": "Bercrysdrop",
       "type": "loottable",
-      "sortid": 395,
+      "sortid": 419,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bercrysdrop",
@@ -6097,7 +6097,7 @@
     {
       "name": "Extractorangesoul",
       "type": "item",
-      "sortid": 129,
+      "sortid": 127,
       "compiles": true,
       "locked_code": false,
       "registry_name": "extractorangesoul",
@@ -6111,7 +6111,7 @@
     {
       "name": "ExtractGreenSoul",
       "type": "item",
-      "sortid": 130,
+      "sortid": 128,
       "compiles": true,
       "locked_code": false,
       "registry_name": "extract_green_soul",
@@ -6125,7 +6125,7 @@
     {
       "name": "ExtractPurpleSoul",
       "type": "item",
-      "sortid": 131,
+      "sortid": 129,
       "compiles": true,
       "locked_code": false,
       "registry_name": "extract_purple_soul",
@@ -6139,7 +6139,7 @@
     {
       "name": "ExtractYellowSoul",
       "type": "item",
-      "sortid": 132,
+      "sortid": 130,
       "compiles": true,
       "locked_code": false,
       "registry_name": "extract_yellow_soul",
@@ -6153,7 +6153,7 @@
     {
       "name": "Extractbluesoul",
       "type": "item",
-      "sortid": 133,
+      "sortid": 131,
       "compiles": true,
       "locked_code": false,
       "registry_name": "extractbluesoul",
@@ -6167,7 +6167,7 @@
     {
       "name": "CombinedAlloy",
       "type": "item",
-      "sortid": 134,
+      "sortid": 132,
       "compiles": true,
       "locked_code": false,
       "registry_name": "combined_alloy",
@@ -6181,7 +6181,7 @@
     {
       "name": "Smelterblock",
       "type": "block",
-      "sortid": 135,
+      "sortid": 133,
       "compiles": true,
       "locked_code": true,
       "registry_name": "smelterblock",
@@ -6198,7 +6198,7 @@
     {
       "name": "SmelterCrafts",
       "type": "code",
-      "sortid": 396,
+      "sortid": 420,
       "compiles": true,
       "locked_code": true,
       "registry_name": "smelter_crafts",
@@ -6211,7 +6211,7 @@
     {
       "name": "SmelterMenu",
       "type": "code",
-      "sortid": 397,
+      "sortid": 421,
       "compiles": true,
       "locked_code": true,
       "registry_name": "smelter_menu",
@@ -6224,7 +6224,7 @@
     {
       "name": "SmelterScreen",
       "type": "code",
-      "sortid": 398,
+      "sortid": 422,
       "compiles": true,
       "locked_code": true,
       "registry_name": "smelter_screen",
@@ -6237,7 +6237,7 @@
     {
       "name": "MirrorComponentberillium",
       "type": "item",
-      "sortid": 136,
+      "sortid": 145,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mirror_componentberillium",
@@ -6251,7 +6251,7 @@
     {
       "name": "Redemptycorerecipe",
       "type": "recipe",
-      "sortid": 399,
+      "sortid": 423,
       "compiles": true,
       "locked_code": false,
       "registry_name": "redemptycorerecipe",
@@ -6264,7 +6264,7 @@
     {
       "name": "Redcorerecipe",
       "type": "recipe",
-      "sortid": 400,
+      "sortid": 424,
       "compiles": true,
       "locked_code": false,
       "registry_name": "redcorerecipe",
@@ -6277,7 +6277,7 @@
     {
       "name": "Redplastinerecipe",
       "type": "recipe",
-      "sortid": 401,
+      "sortid": 425,
       "compiles": true,
       "locked_code": false,
       "registry_name": "redplastinerecipe",
@@ -6290,7 +6290,7 @@
     {
       "name": "Charasknife",
       "type": "tool",
-      "sortid": 144,
+      "sortid": 139,
       "compiles": true,
       "locked_code": false,
       "registry_name": "charasknife",
@@ -6304,7 +6304,7 @@
     {
       "name": "Berilliumdeepslate",
       "type": "block",
-      "sortid": 137,
+      "sortid": 142,
       "compiles": true,
       "locked_code": false,
       "registry_name": "berilliumdeepslate",
@@ -6323,7 +6323,7 @@
     {
       "name": "Deepslateberyldrop",
       "type": "loottable",
-      "sortid": 402,
+      "sortid": 426,
       "compiles": true,
       "locked_code": false,
       "registry_name": "deepslateberyldrop",
@@ -6336,7 +6336,7 @@
     {
       "name": "Redstone9x",
       "type": "block",
-      "sortid": 143,
+      "sortid": 138,
       "compiles": true,
       "locked_code": false,
       "registry_name": "redstone_9x",
@@ -6352,7 +6352,7 @@
     {
       "name": "Redstone9xrecipe",
       "type": "recipe",
-      "sortid": 403,
+      "sortid": 427,
       "compiles": true,
       "locked_code": false,
       "registry_name": "redstone_9xrecipe",
@@ -6365,7 +6365,7 @@
     {
       "name": "Shantyogg",
       "type": "musicdisc",
-      "sortid": 160,
+      "sortid": 186,
       "compiles": true,
       "locked_code": false,
       "registry_name": "shantyogg",
@@ -6379,7 +6379,7 @@
     {
       "name": "Musicdiscs",
       "type": "tab",
-      "sortid": 404,
+      "sortid": 428,
       "compiles": true,
       "locked_code": false,
       "registry_name": "musicdiscs",
@@ -6390,7 +6390,7 @@
     {
       "name": "Sealedvesseldisc",
       "type": "musicdisc",
-      "sortid": 161,
+      "sortid": 187,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sealedvesseldisc",
@@ -6404,7 +6404,7 @@
     {
       "name": "Discs",
       "type": "lootmodifier",
-      "sortid": 405,
+      "sortid": 429,
       "compiles": true,
       "locked_code": false,
       "registry_name": "discs",
@@ -6417,7 +6417,7 @@
     {
       "name": "Discss",
       "type": "loottable",
-      "sortid": 406,
+      "sortid": 430,
       "compiles": true,
       "locked_code": false,
       "registry_name": "discss",
@@ -6430,7 +6430,7 @@
     {
       "name": "Soulcombine",
       "type": "item",
-      "sortid": 140,
+      "sortid": 136,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soulcombine",
@@ -6444,7 +6444,7 @@
     {
       "name": "Will",
       "type": "item",
-      "sortid": 138,
+      "sortid": 134,
       "compiles": true,
       "locked_code": false,
       "registry_name": "will",
@@ -6458,7 +6458,7 @@
     {
       "name": "Lifekolba",
       "type": "item",
-      "sortid": 139,
+      "sortid": 135,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lifekolba",
@@ -6472,7 +6472,7 @@
     {
       "name": "CharasknifeRightclicked",
       "type": "procedure",
-      "sortid": 407,
+      "sortid": 431,
       "compiles": true,
       "locked_code": false,
       "registry_name": "charasknife_rightclicked",
@@ -6507,7 +6507,7 @@
     {
       "name": "SoulcombineItemInInventoryTick",
       "type": "procedure",
-      "sortid": 408,
+      "sortid": 432,
       "compiles": true,
       "locked_code": true,
       "registry_name": "soulcombine_item_in_inventory_tick",
@@ -6526,7 +6526,7 @@
     {
       "name": "Charaskniferecipe",
       "type": "recipe",
-      "sortid": 409,
+      "sortid": 433,
       "compiles": true,
       "locked_code": false,
       "registry_name": "charaskniferecipe",
@@ -6539,7 +6539,7 @@
     {
       "name": "Sosud",
       "type": "item",
-      "sortid": 141,
+      "sortid": 137,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sosud",
@@ -6553,7 +6553,7 @@
     {
       "name": "Soulspiceces",
       "type": "tag",
-      "sortid": 410,
+      "sortid": 434,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soulspiceces",
@@ -6566,7 +6566,7 @@
     {
       "name": "Sosudrecipe",
       "type": "recipe",
-      "sortid": 411,
+      "sortid": 435,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sosudrecipe",
@@ -6579,7 +6579,7 @@
     {
       "name": "RoseInJar",
       "type": "block",
-      "sortid": 142,
+      "sortid": 172,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rose_in_jar",
@@ -6595,7 +6595,7 @@
     {
       "name": "RoseMyPlace1",
       "type": "painting",
-      "sortid": 412,
+      "sortid": 436,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rose_my_place_1",
@@ -6606,7 +6606,7 @@
     {
       "name": "RoseInJarStructure",
       "type": "structure",
-      "sortid": 413,
+      "sortid": 437,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rose_in_jar_structure",
@@ -6621,7 +6621,7 @@
     {
       "name": "RoseInJarStructure2",
       "type": "structure",
-      "sortid": 414,
+      "sortid": 438,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rose_in_jar_structure_2",
@@ -6636,7 +6636,7 @@
     {
       "name": "Orangesoulpiecerecipe",
       "type": "recipe",
-      "sortid": 415,
+      "sortid": 439,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orangesoulpiecerecipe",
@@ -6649,7 +6649,7 @@
     {
       "name": "Blackwallsmyplaceslab",
       "type": "block",
-      "sortid": 157,
+      "sortid": 183,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blackwallsmyplaceslab",
@@ -6667,7 +6667,7 @@
     {
       "name": "Crosshairdarkplacemyplacebiome",
       "type": "code",
-      "sortid": 416,
+      "sortid": 440,
       "compiles": true,
       "locked_code": true,
       "registry_name": "crosshairdarkplacemyplacebiome",
@@ -6680,7 +6680,7 @@
     {
       "name": "LepestkiRosy",
       "type": "item",
-      "sortid": 158,
+      "sortid": 184,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lepestki_rosy",
@@ -6694,7 +6694,7 @@
     {
       "name": "LepestokrosyRecipe",
       "type": "recipe",
-      "sortid": 417,
+      "sortid": 441,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lepestokrosy_recipe",
@@ -6707,7 +6707,7 @@
     {
       "name": "Trainyardchests",
       "type": "loottable",
-      "sortid": 418,
+      "sortid": 442,
       "compiles": true,
       "locked_code": false,
       "registry_name": "trainyardchests",
@@ -6720,7 +6720,7 @@
     {
       "name": "TrainyardDarkPlace",
       "type": "structure",
-      "sortid": 419,
+      "sortid": 443,
       "compiles": true,
       "locked_code": false,
       "registry_name": "trainyard_dark_place",
@@ -6735,7 +6735,7 @@
     {
       "name": "LightHeartPainting",
       "type": "painting",
-      "sortid": 420,
+      "sortid": 444,
       "compiles": true,
       "locked_code": false,
       "registry_name": "light_heart_painting",
@@ -6746,7 +6746,7 @@
     {
       "name": "PCpainting",
       "type": "painting",
-      "sortid": 421,
+      "sortid": 445,
       "compiles": true,
       "locked_code": false,
       "registry_name": "p_cpainting",
@@ -6757,7 +6757,7 @@
     {
       "name": "PcDevPainting",
       "type": "painting",
-      "sortid": 422,
+      "sortid": 446,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pc_dev_painting",
@@ -6768,7 +6768,7 @@
     {
       "name": "PcDevPainting2",
       "type": "painting",
-      "sortid": 423,
+      "sortid": 447,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pc_dev_painting_2",
@@ -6779,7 +6779,7 @@
     {
       "name": "PcDevPainting3",
       "type": "painting",
-      "sortid": 424,
+      "sortid": 448,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pc_dev_painting_3",
@@ -6790,7 +6790,7 @@
     {
       "name": "TreeOfLifeX",
       "type": "structure",
-      "sortid": 425,
+      "sortid": 449,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tree_of_life_x",
@@ -6805,7 +6805,7 @@
     {
       "name": "Redsoulpiecekniferecipe",
       "type": "recipe",
-      "sortid": 426,
+      "sortid": 450,
       "compiles": true,
       "locked_code": false,
       "registry_name": "redsoulpiecekniferecipe",
@@ -6818,7 +6818,7 @@
     {
       "name": "Bluesoulpiecekniferecipe",
       "type": "recipe",
-      "sortid": 427,
+      "sortid": 451,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bluesoulpiecekniferecipe",
@@ -6831,7 +6831,7 @@
     {
       "name": "Greensoulpieceknifecraft",
       "type": "recipe",
-      "sortid": 428,
+      "sortid": 452,
       "compiles": true,
       "locked_code": false,
       "registry_name": "greensoulpieceknifecraft",
@@ -6844,7 +6844,7 @@
     {
       "name": "Yellowsoulpiecekniferecipe",
       "type": "recipe",
-      "sortid": 429,
+      "sortid": 453,
       "compiles": true,
       "locked_code": false,
       "registry_name": "yellowsoulpiecekniferecipe",
@@ -6857,7 +6857,7 @@
     {
       "name": "Purplesoulpiecekniferecipe",
       "type": "recipe",
-      "sortid": 430,
+      "sortid": 454,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purplesoulpiecekniferecipe",
@@ -6870,7 +6870,7 @@
     {
       "name": "Lightbluesoulpiecekniferecipe",
       "type": "recipe",
-      "sortid": 431,
+      "sortid": 455,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lightbluesoulpiecekniferecipe",
@@ -6883,7 +6883,7 @@
     {
       "name": "SuperSystemWow",
       "type": "code",
-      "sortid": 432,
+      "sortid": 456,
       "compiles": true,
       "locked_code": true,
       "registry_name": "super_system_wow",
@@ -6896,7 +6896,7 @@
     {
       "name": "SuperFormServerHandler",
       "type": "code",
-      "sortid": 433,
+      "sortid": 457,
       "compiles": true,
       "locked_code": true,
       "registry_name": "super_form_server_handler",
@@ -6909,7 +6909,7 @@
     {
       "name": "SuperFormLightCompat",
       "type": "code",
-      "sortid": 434,
+      "sortid": 458,
       "compiles": true,
       "locked_code": true,
       "registry_name": "super_form_light_compat",
@@ -6922,7 +6922,7 @@
     {
       "name": "AssimilationDarkBiome",
       "type": "code",
-      "sortid": 435,
+      "sortid": 459,
       "compiles": true,
       "locked_code": true,
       "registry_name": "assimilation_dark_biome",
@@ -6935,7 +6935,7 @@
     {
       "name": "AssimilationClone",
       "type": "code",
-      "sortid": 436,
+      "sortid": 460,
       "compiles": true,
       "locked_code": true,
       "registry_name": "assimilation_clone",
@@ -6948,7 +6948,7 @@
     {
       "name": "AssimilationOverlay",
       "type": "code",
-      "sortid": 437,
+      "sortid": 461,
       "compiles": true,
       "locked_code": true,
       "registry_name": "assimilation_overlay",
@@ -6961,7 +6961,7 @@
     {
       "name": "Berylstonechunk",
       "type": "item",
-      "sortid": 438,
+      "sortid": 146,
       "compiles": true,
       "locked_code": false,
       "registry_name": "berylstonechunk",
@@ -6975,7 +6975,7 @@
     {
       "name": "Zagatovkarecipe3",
       "type": "recipe",
-      "sortid": 439,
+      "sortid": 462,
       "compiles": true,
       "locked_code": false,
       "registry_name": "zagatovkarecipe_3",
@@ -6988,7 +6988,7 @@
     {
       "name": "Bcrystalrecipe",
       "type": "recipe",
-      "sortid": 440,
+      "sortid": 463,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bcrystalrecipe",
@@ -7001,7 +7001,7 @@
     {
       "name": "Redemeraldcrystal",
       "type": "block",
-      "sortid": 441,
+      "sortid": 147,
       "compiles": true,
       "locked_code": true,
       "registry_name": "redemeraldcrystal",
@@ -7020,7 +7020,7 @@
     {
       "name": "Crystalreddrop",
       "type": "loottable",
-      "sortid": 442,
+      "sortid": 464,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crystalreddrop",
@@ -7033,7 +7033,7 @@
     {
       "name": "Blueemeraldcrystal",
       "type": "block",
-      "sortid": 443,
+      "sortid": 148,
       "compiles": true,
       "locked_code": true,
       "registry_name": "blueemeraldcrystal",
@@ -7052,7 +7052,7 @@
     {
       "name": "Greenemeraldcrystal",
       "type": "block",
-      "sortid": 444,
+      "sortid": 149,
       "compiles": true,
       "locked_code": true,
       "registry_name": "greenemeraldcrystal",
@@ -7071,7 +7071,7 @@
     {
       "name": "Yellowemeraldcrystal",
       "type": "block",
-      "sortid": 445,
+      "sortid": 150,
       "compiles": true,
       "locked_code": true,
       "registry_name": "yellowemeraldcrystal",
@@ -7090,7 +7090,7 @@
     {
       "name": "Purpleemeraldcrystal",
       "type": "block",
-      "sortid": 446,
+      "sortid": 151,
       "compiles": true,
       "locked_code": true,
       "registry_name": "purpleemeraldcrystal",
@@ -7109,7 +7109,7 @@
     {
       "name": "Whiteemeraldcrystal",
       "type": "block",
-      "sortid": 447,
+      "sortid": 152,
       "compiles": true,
       "locked_code": true,
       "registry_name": "whiteemeraldcrystal",
@@ -7128,7 +7128,7 @@
     {
       "name": "Lightblueemeraldcrystal",
       "type": "block",
-      "sortid": 448,
+      "sortid": 153,
       "compiles": true,
       "locked_code": true,
       "registry_name": "lightblueemeraldcrystal",
@@ -7147,7 +7147,7 @@
     {
       "name": "ResonateCrystal",
       "type": "item",
-      "sortid": 449,
+      "sortid": 154,
       "compiles": true,
       "locked_code": false,
       "registry_name": "resonate_crystal",
@@ -7161,7 +7161,7 @@
     {
       "name": "Resonatingcrystal",
       "type": "recipe",
-      "sortid": 450,
+      "sortid": 465,
       "compiles": true,
       "locked_code": false,
       "registry_name": "resonatingcrystal",
@@ -7174,7 +7174,7 @@
     {
       "name": "Emeraldspickaxe",
       "type": "tool",
-      "sortid": 451,
+      "sortid": 169,
       "compiles": true,
       "locked_code": false,
       "registry_name": "emeraldspickaxe",
@@ -7188,7 +7188,7 @@
     {
       "name": "Emeraldspickaxerecipe",
       "type": "recipe",
-      "sortid": 452,
+      "sortid": 466,
       "compiles": true,
       "locked_code": false,
       "registry_name": "emeraldspickaxerecipe",
@@ -7201,7 +7201,7 @@
     {
       "name": "Redemeraldcrystalrecipe",
       "type": "recipe",
-      "sortid": 453,
+      "sortid": 467,
       "compiles": true,
       "locked_code": false,
       "registry_name": "redemeraldcrystalrecipe",
@@ -7214,7 +7214,7 @@
     {
       "name": "Blueemeraldcrystalrecipe",
       "type": "recipe",
-      "sortid": 454,
+      "sortid": 468,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blueemeraldcrystalrecipe",
@@ -7227,7 +7227,7 @@
     {
       "name": "Greenemeraldcrystalrecipe",
       "type": "recipe",
-      "sortid": 455,
+      "sortid": 469,
       "compiles": true,
       "locked_code": false,
       "registry_name": "greenemeraldcrystalrecipe",
@@ -7240,7 +7240,7 @@
     {
       "name": "Yellowemeraldcrystalrecipe",
       "type": "recipe",
-      "sortid": 456,
+      "sortid": 470,
       "compiles": true,
       "locked_code": false,
       "registry_name": "yellowemeraldcrystalrecipe",
@@ -7253,7 +7253,7 @@
     {
       "name": "Purpleemeraldcrystalrecipe",
       "type": "recipe",
-      "sortid": 457,
+      "sortid": 471,
       "compiles": true,
       "locked_code": false,
       "registry_name": "purpleemeraldcrystalrecipe",
@@ -7266,7 +7266,7 @@
     {
       "name": "Whiteemeraldcrystalrecipe",
       "type": "recipe",
-      "sortid": 458,
+      "sortid": 472,
       "compiles": true,
       "locked_code": false,
       "registry_name": "whiteemeraldcrystalrecipe",
@@ -7279,7 +7279,7 @@
     {
       "name": "Lightblueemeraldcrystalrecipe",
       "type": "recipe",
-      "sortid": 459,
+      "sortid": 473,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lightblueemeraldcrystalrecipe",
@@ -7292,7 +7292,7 @@
     {
       "name": "Superformparticle",
       "type": "particle",
-      "sortid": 460,
+      "sortid": 474,
       "compiles": true,
       "locked_code": false,
       "registry_name": "superformparticle",
@@ -7306,7 +7306,7 @@
     {
       "name": "MWReceiverBlock",
       "type": "block",
-      "sortid": 461,
+      "sortid": 155,
       "compiles": true,
       "locked_code": true,
       "registry_name": "mw_receiver_block",
@@ -7323,7 +7323,7 @@
     {
       "name": "MWEmitterBlock",
       "type": "block",
-      "sortid": 462,
+      "sortid": 156,
       "compiles": true,
       "locked_code": true,
       "registry_name": "mw_emitter_block",
@@ -7340,7 +7340,7 @@
     {
       "name": "WaveNetwork",
       "type": "code",
-      "sortid": 463,
+      "sortid": 475,
       "compiles": true,
       "locked_code": true,
       "registry_name": "wave_network",
@@ -7353,7 +7353,7 @@
     {
       "name": "WaveManager",
       "type": "code",
-      "sortid": 464,
+      "sortid": 476,
       "compiles": true,
       "locked_code": true,
       "registry_name": "wave_manager",
@@ -7366,7 +7366,7 @@
     {
       "name": "C2SUpdateEmitterPacket",
       "type": "code",
-      "sortid": 465,
+      "sortid": 477,
       "compiles": true,
       "locked_code": true,
       "registry_name": "c_2_s_update_emitter_packet",
@@ -7379,7 +7379,7 @@
     {
       "name": "EmitterMenu",
       "type": "code",
-      "sortid": 466,
+      "sortid": 478,
       "compiles": true,
       "locked_code": true,
       "registry_name": "emitter_menu",
@@ -7392,7 +7392,7 @@
     {
       "name": "EmitterScreen",
       "type": "code",
-      "sortid": 467,
+      "sortid": 479,
       "compiles": true,
       "locked_code": true,
       "registry_name": "emitter_screen",
@@ -7405,7 +7405,7 @@
     {
       "name": "MWNetwork",
       "type": "code",
-      "sortid": 468,
+      "sortid": 480,
       "compiles": true,
       "locked_code": true,
       "registry_name": "mw_network",
@@ -7418,7 +7418,7 @@
     {
       "name": "S2CSyncWavesPacket",
       "type": "code",
-      "sortid": 469,
+      "sortid": 481,
       "compiles": true,
       "locked_code": true,
       "registry_name": "s_2_c_sync_waves_packet",
@@ -7431,7 +7431,7 @@
     {
       "name": "C2SDeleteWavePacket",
       "type": "code",
-      "sortid": 470,
+      "sortid": 482,
       "compiles": true,
       "locked_code": true,
       "registry_name": "c_2_s_delete_wave_packet",
@@ -7444,7 +7444,7 @@
     {
       "name": "IronSphere",
       "type": "item",
-      "sortid": 471,
+      "sortid": 157,
       "compiles": true,
       "locked_code": false,
       "registry_name": "iron_sphere",
@@ -7458,7 +7458,7 @@
     {
       "name": "TheCoreOfTheSphere",
       "type": "item",
-      "sortid": 472,
+      "sortid": 158,
       "compiles": true,
       "locked_code": false,
       "registry_name": "the_core_of_the_sphere",
@@ -7472,7 +7472,7 @@
     {
       "name": "TheCoreOfTheSphereRedstone",
       "type": "item",
-      "sortid": 473,
+      "sortid": 159,
       "compiles": true,
       "locked_code": false,
       "registry_name": "the_core_of_the_sphere_redstone",
@@ -7486,7 +7486,7 @@
     {
       "name": "TheCoreOfTheSphereRecipe",
       "type": "recipe",
-      "sortid": 474,
+      "sortid": 483,
       "compiles": true,
       "locked_code": false,
       "registry_name": "the_core_of_the_sphere_recipe",
@@ -7499,7 +7499,7 @@
     {
       "name": "IronSphereRecipe",
       "type": "recipe",
-      "sortid": 475,
+      "sortid": 484,
       "compiles": true,
       "locked_code": false,
       "registry_name": "iron_sphere_recipe",
@@ -7512,7 +7512,7 @@
     {
       "name": "TheCoreOfTheSphereRedstoneRecipe",
       "type": "recipe",
-      "sortid": 476,
+      "sortid": 485,
       "compiles": true,
       "locked_code": false,
       "registry_name": "the_core_of_the_sphere_redstone_recipe",
@@ -7525,7 +7525,7 @@
     {
       "name": "MWEmitterBlockRecipe",
       "type": "recipe",
-      "sortid": 477,
+      "sortid": 486,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mw_emitter_block_recipe",
@@ -7538,7 +7538,7 @@
     {
       "name": "EnergyModule",
       "type": "item",
-      "sortid": 478,
+      "sortid": 160,
       "compiles": true,
       "locked_code": false,
       "registry_name": "energy_module",
@@ -7552,7 +7552,7 @@
     {
       "name": "EnergyModuleRecipe",
       "type": "recipe",
-      "sortid": 479,
+      "sortid": 487,
       "compiles": true,
       "locked_code": false,
       "registry_name": "energy_module_recipe",
@@ -7565,7 +7565,7 @@
     {
       "name": "WirelessModule",
       "type": "item",
-      "sortid": 480,
+      "sortid": 161,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wireless_module",
@@ -7579,7 +7579,7 @@
     {
       "name": "UncommonDarkCase",
       "type": "block",
-      "sortid": 481,
+      "sortid": 162,
       "compiles": true,
       "locked_code": false,
       "registry_name": "uncommon_dark_case",
@@ -7595,7 +7595,7 @@
     {
       "name": "UncommonDarkCasingRecipe",
       "type": "recipe",
-      "sortid": 482,
+      "sortid": 488,
       "compiles": true,
       "locked_code": false,
       "registry_name": "uncommon_dark_casing_recipe",
@@ -7608,7 +7608,7 @@
     {
       "name": "Magicironplate",
       "type": "item",
-      "sortid": 483,
+      "sortid": 163,
       "compiles": true,
       "locked_code": false,
       "registry_name": "magicironplate",
@@ -7622,7 +7622,7 @@
     {
       "name": "Magicironplaterecipe",
       "type": "recipe",
-      "sortid": 484,
+      "sortid": 489,
       "compiles": true,
       "locked_code": false,
       "registry_name": "magicironplaterecipe",
@@ -7635,7 +7635,7 @@
     {
       "name": "Wirelessmodulerecipe",
       "type": "recipe",
-      "sortid": 485,
+      "sortid": 490,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wirelessmodulerecipe",
@@ -7648,7 +7648,7 @@
     {
       "name": "Stabilizer",
       "type": "item",
-      "sortid": 486,
+      "sortid": 164,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stabilizer",
@@ -7662,7 +7662,7 @@
     {
       "name": "StabilizerRecipe",
       "type": "recipe",
-      "sortid": 487,
+      "sortid": 491,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stabilizer_recipe",
@@ -7675,7 +7675,7 @@
     {
       "name": "Mwreceiverblockrecipe",
       "type": "recipe",
-      "sortid": 488,
+      "sortid": 492,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mwreceiverblockrecipe",
@@ -7688,7 +7688,7 @@
     {
       "name": "ActiveRedstone",
       "type": "fluid",
-      "sortid": 489,
+      "sortid": 165,
       "compiles": true,
       "locked_code": false,
       "registry_name": "active_redstone",
@@ -7707,7 +7707,7 @@
     {
       "name": "Charger",
       "type": "block",
-      "sortid": 490,
+      "sortid": 166,
       "compiles": true,
       "locked_code": false,
       "registry_name": "charger",
@@ -7723,7 +7723,7 @@
     {
       "name": "ActiveRedstoneItem",
       "type": "item",
-      "sortid": 491,
+      "sortid": 167,
       "compiles": true,
       "locked_code": false,
       "registry_name": "active_redstone_item",
@@ -7731,6 +7731,87 @@
         "files": [
           "src/main/java/net/wowamod/item/ActiveRedstoneItemItem.java",
           "src/main/resources/assets/universe3090/models/item/active_redstone_item.json"
+        ]
+      }
+    },
+    {
+      "name": "Emeraldsword",
+      "type": "tool",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emeraldsword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/EmeraldswordItem.java",
+          "src/main/resources/assets/universe3090/models/item/emeraldsword.json"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldShovel",
+      "type": "tool",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_shovel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/item/EmeraldShovelItem.java",
+          "src/main/resources/assets/universe3090/models/item/emerald_shovel.json"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldAxe",
+      "type": "tool",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/universe3090/models/item/emerald_axe.json",
+          "src/main/java/net/wowamod/item/EmeraldAxeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldSwordRecipe",
+      "type": "recipe",
+      "sortid": 493,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/emerald_sword_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldAxeRecipe",
+      "type": "recipe",
+      "sortid": 494,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/emerald_axe_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldShovelRecipe",
+      "type": "recipe",
+      "sortid": 495,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/emerald_shovel_recipe.json"
         ]
       }
     }
@@ -7931,18 +8012,20 @@
       "item.universe3090.mimic_spawn_egg": "Мимик",
       "item.universe3090.nightmare_spawn_egg": "Nightmare.trojan Spawn Egg",
       "item.universe3090.batareyka": "Батарейка",
-      "item.universe3090.stabilizer": "Stabilizer",
       "gui.universe3090.extractorinteface.label_centrifuge": "Бета центрифуга",
+      "item.universe3090.stabilizer": "Стабилизатор",
       "gui.universe3090.guidebook.label_dushi": "Души",
       "item.universe3090.instrumentprosto": "М.Т.В",
       "item.universe3090.derjatili": "Держатель для необычного механизма",
       "item.universe3090.whiteemerald": "Белый Изумруд",
       "item.universe3090.soulcombine": "Комбинированная душа",
-      "item.universe3090.wireless_module": "Wireless Module",
-      "painting.universe3090.pc_dev_painting.author": "XerStudios",
+      "item.universe3090.emeraldsword": "Изумрудный Меч",
       "item.universe3090.mirror_componentberillium": "Зеркальный компонент",
+      "painting.universe3090.pc_dev_painting.author": "XerStudios",
+      "item.universe3090.wireless_module": "Беспроводной модуль",
       "item.universe3090.soulsvazivatel": "Связыватель душ",
       "item.universe3090.will": "Воля",
+      "item.universe3090.emerald_axe": "Изумрудный Топор",
       "item.universe3090.wowabronya_boots": "Ботинки вовы3090",
       "item.universe3090.redemerald": "Красный Изумруд",
       "subtitles.fadingworld-2faza": "\u003d)",
@@ -7950,7 +8033,7 @@
       "painting.universe3090.rose_my_place_1.title": "Rose My Place 1",
       "key.universe3090.super_form": "Супер форма",
       "block.universe3090.whiteemeraldcrystal": "Белый изумрудный кристалл",
-      "item.universe3090.emeraldspickaxe": "Emeralds pickaxe",
+      "item.universe3090.emeraldspickaxe": "Изумрудная Кирка",
       "key.categories.wowamod": "Universe3090-Stories",
       "item.universe3090.bluesoulpiece": "Частичка Синий души",
       "gui.universe3090.extractorinteface.label_empty1": "|",
@@ -7960,8 +8043,8 @@
       "item.universe3090.purpleemerald": "Пёрпл Изумруд",
       "item.universe3090.active_redstone_bucket": "Active Redstone Bucket [W.I.P]",
       "item.universe3090.blueemerald": "Синий изумруд",
-      "item.universe3090.diamond_multi_toolw": "Алмазно-ляписовый мультитул",
       "item.universe3090.superpalka": "Жезл",
+      "item.universe3090.diamond_multi_toolw": "Алмазно-ляписовый мультитул",
       "item.universe3090.sealedvesseldisc": "Sealed vessel [Hollow Knight OST] disc",
       "block.universe3090.redemeraldcrystal": "Красный изумрудный кристалл",
       "item.universe3090.soulcore": "Ядро душ",
@@ -7970,7 +8053,7 @@
       "block.universe3090.lightblueemeraldcrystal": "Голубой изумрудный кристалл",
       "block.universe3090.redstoneport": "Редстоун порт конструктора",
       "block.universe3090.interfaceconstructor": "Интерфейс конструктора",
-      "item.universe3090.the_core_of_the_sphere": "The Core Of The Sphere",
+      "item.universe3090.the_core_of_the_sphere": "Ядро сферы",
       "gui.universe3090.wowabronyacraftring.label_crafting": "Создание предметов",
       "painting.universe3090.pc_dev_painting_2.author": "XerStudios",
       "gui.universe3090.guidebook.label_multiblok": "Мультиблок",
@@ -7995,7 +8078,7 @@
       "item.universe3090.wowasword": "Клинок вовы3090",
       "block.universe3090.dark_iron_machine_casing": "Основа из черного железа",
       "item.universe3090.extract_purple_soul": "Экстракт зеленой души",
-      "item.universe3090.iron_sphere": "Iron Sphere",
+      "item.universe3090.iron_sphere": "Сфера",
       "item.universe3090.purplesoulpiece": "Частичка Фиолетовой души",
       "item.universe3090.green_emerald_piece": "Осколок зелёного изумруда",
       "effect.universe3090.neuyazvimost": "Неуязвимость!",
@@ -8022,7 +8105,7 @@
       "item.universe3090.rose": "Роза",
       "block.universe3090.redemptycore": "Красное деактивированное",
       "effect.universe3090.super_form": "Супер",
-      "block.universe3090.charger": "Charger",
+      "block.universe3090.charger": "Зарядник",
       "item.universe3090.molotwowa": "Молот",
       "gui.universe3090.guidebook.label_izumrudy": "Изумруды",
       "item.universe3090.extractlbsoul": "Экстракт голубой души",
@@ -8031,7 +8114,7 @@
       "item.universe3090.energymagiccontroller": "Энерго-магический контроллер",
       "item.universe3090.the_welcome_center": "The Welcome Center",
       "item.universe3090.lightblueemerald": "Голубой Изумруд",
-      "item.universe3090.energy_module": "Energy Module",
+      "item.universe3090.energy_module": "Энерго-модуль",
       "item.universe3090.wowaswordosnova": "Основа для меча",
       "key.universe3090.open_soul_gui": "Открыть меню душ",
       "death.attack.soulsworddamage.player": "%1$s пытался убежать от %2$s, но потерпел крах",
@@ -8074,10 +8157,10 @@
       "subtitles.ambientmyplacezone": "",
       "item.universe3090.purplesoul": "Фиолетовая душа",
       "gui.universe3090.extractor_guide.label_empty": "\u003e",
-      "item.universe3090.berylstonechunk": "Berylstonechunk",
+      "item.universe3090.berylstonechunk": "Кусок камня с бериллием",
       "painting.universe3090.pc_dev_painting_2.title": "Pc Dev Painting",
       "item.universe3090.diamondlapis": "Алмазный ляпис",
-      "block.universe3090.active_redstone": "Active Redstone [W.I.P]",
+      "block.universe3090.active_redstone": "Заряженный Редстоун [W.I.P]",
       "item.universe3090.etheriumdark": "Тёмный Эфир",
       "item.universe3090.elissaarmor_boots": "Ботинки Алисы",
       "block.universe3090.black_walls_myplace": "Black Walls Myplace",
@@ -8139,6 +8222,7 @@
       "block.universe3090.rose_in_jar": "Роза в банке",
       "item.universe3090.izolationw": "Часть изоляции",
       "subtitles.wowa_world_theme": "wowa_world_theme.mp3",
+      "item.universe3090.emerald_shovel": "Изумрудная Лопата",
       "item.universe3090.shadowblade": "Теневой клинок",
       "item.universe3090.dissasebmlyrequired.desc": "Dissasebmly Required",
       "block.universe3090.aluminium_ore_wowa": "Бокситы",
@@ -8168,7 +8252,7 @@
       "block.universe3090.berilliumdeepslate": "Бериллий",
       "block.universe3090.mw_receiver_block": "Раздатчик",
       "painting.universe3090.light_heart_painting.author": "XerStudios",
-      "item.universe3090.the_core_of_the_sphere_redstone": "The Core Of The Sphere Redstone",
+      "item.universe3090.the_core_of_the_sphere_redstone": "Редстоун Обогащенное Ядро сферы",
       "death.attack.soulsworddamage.item": "%1$s Уничтожен %2$s используя %3$s",
       "item.universe3090.shantyogg": "Shanty.ogg",
       "item.universe3090.kolba": "Пустая колба",
@@ -8179,7 +8263,7 @@
       "item.universe3090.light_blue_emerald_piece": "Осколок голубого изумруда",
       "item.universe3090.coppermass_1": "Медная масса",
       "item_group.universe3090.wowamodvkladka": "Universe3090",
-      "fluid.universe3090.active_redstone": "Active Redstone [W.I.P]",
+      "fluid.universe3090.active_redstone": "Заряженный Редстоун [W.I.P]",
       "block.universe3090.diamondlapisblock": "Алмазно ляписовый блок",
       "item.universe3090.mimickoja": "\"Кожа\" мимика",
       "item.universe3090.redsoul": "Красная Душа",
@@ -8195,7 +8279,7 @@
       "item.universe3090.extractgolubaysoul_bucket": "Экстракт голубой души в ведре",
       "gui.universe3090.extractor_guide.button_nazad": "Назад",
       "item.universe3090.diamond_lapis_armor_armor_boots": "Ботинки из алмазного ляписа",
-      "item.universe3090.magicironplate": "Magicironplate",
+      "item.universe3090.magicironplate": "Пластина из магического металла",
       "item.universe3090.diamond_lapis_bronya_cpre": "Ядро из алмазного ляписа",
       "block.universe3090.extractor": "Экстрактор"
     },
@@ -8213,11 +8297,13 @@
       "item.universe3090.derjatili": "Держатель для необычного механизма",
       "item.universe3090.whiteemerald": "Белый Изумруд",
       "item.universe3090.soulcombine": "Soul combine",
+      "item.universe3090.emeraldsword": "Emeraldsword",
       "item.universe3090.wireless_module": "Wireless Module",
       "item.universe3090.mirror_componentberillium": "Mirror Component berillium",
       "painting.universe3090.pc_dev_painting.author": "XerStudios",
       "item.universe3090.will": "Will",
       "item.universe3090.soulsvazivatel": "Связыватель Душ",
+      "item.universe3090.emerald_axe": "Emerald Axe",
       "item.universe3090.wowabronya_boots": "Boots 3090",
       "item.universe3090.redemerald": "Красный Изумруд",
       "subtitles.fadingworld-2faza": "\u003d)",
@@ -8414,6 +8500,7 @@
       "block.universe3090.rose_in_jar": "Rose In Jar",
       "item.universe3090.izolationw": "Часть изоляции",
       "subtitles.wowa_world_theme": "wowa_world_theme.mp3",
+      "item.universe3090.emerald_shovel": "Emerald Shovel",
       "item.universe3090.shadowblade": "Теневой клинок",
       "item.universe3090.dissasebmlyrequired.desc": "Dissasebmly Required",
       "block.universe3090.aluminium_ore_wowa": "Бокситы",

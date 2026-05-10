@@ -1,0 +1,7 @@
+{
+  "parent": "universe3090:custom/emeraldshovel",
+  "textures": {
+    "0": "universe3090:block/texture_shovel",
+    "particle": "universe3090:item/emeraldsshovel"
+  }
+}

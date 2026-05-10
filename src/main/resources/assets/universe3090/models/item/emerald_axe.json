@@ -1,0 +1,7 @@
+{
+  "parent": "universe3090:custom/emeraldaxe",
+  "textures": {
+    "0": "universe3090:block/texture_axe",
+    "particle": "universe3090:item/emeraldaxes"
+  }
+}

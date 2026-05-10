@@ -1,0 +1,7 @@
+{
+  "parent": "universe3090:custom/emeralds",
+  "textures": {
+    "0": "universe3090:block/texture_sword",
+    "particle": "universe3090:item/emeraldsword"
+  }
+}

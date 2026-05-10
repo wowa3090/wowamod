@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:redemeraldcrystal"
+    },
+    "b": {
+      "item": "universe3090:resonate_crystal"
+    },
+    "c": {
+      "item": "universe3090:superpalka"
+    }
+  },
+  "result": {
+    "item": "universe3090:emeraldsword",
+    "count": 1
+  }
+}

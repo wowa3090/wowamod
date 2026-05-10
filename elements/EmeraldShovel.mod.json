@@ -1,0 +1,33 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Spade",
+    "renderType": 1,
+    "blockingRenderType": 0,
+    "texture": "emeraldsshovel",
+    "customModelName": "emeraldshovel:default",
+    "blockingModelName": "Normal blocking",
+    "name": "Emerald Shovel",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Wowamodvkladka"
+    },
+    "harvestLevel": 6,
+    "efficiency": 15.0,
+    "attackSpeed": 1.0,
+    "enchantability": 30,
+    "damageVsEntity": 5.0,
+    "usageCount": 4096,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

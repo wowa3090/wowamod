@@ -71,7 +71,6 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.BLACKIRONINGOT.get());
 				tabData.accept(Universe3090ModItems.COPPERMASS_1.get());
 				tabData.accept(Universe3090ModItems.WIRESPROVODA.get());
-				tabData.accept(Universe3090ModItems.INSTRUMENTPROSTO.get());
 				tabData.accept(Universe3090ModItems.ALPHAELEMENT.get());
 				tabData.accept(Universe3090ModBlocks.DARKGRASS.get().asItem());
 				tabData.accept(Universe3090ModBlocks.DARKGRASSBLOCKNIZ.get().asItem());
@@ -120,6 +119,9 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.GOLD_PLASTINE.get());
 				tabData.accept(Universe3090ModBlocks.TESTPLANT.get().asItem());
 				tabData.accept(Universe3090ModBlocks.CABLE_N.get().asItem());
+				tabData.accept(Universe3090ModItems.INSTRUMENTPROSTO.get());
+				tabData.accept(Universe3090ModItems.MT_WTESTANIM.get());
+				tabData.accept(Universe3090ModItems.MTWMODEORBITAL.get());
 				tabData.accept(Universe3090ModItems.DIAMOND_MULTI_TOOLW.get());
 				tabData.accept(Universe3090ModItems.DIAMONDLAPIS.get());
 				tabData.accept(Universe3090ModBlocks.DIAMONDLAPISBLOCK.get().asItem());
@@ -131,7 +133,6 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.DIAMOND_LAPIS_ARMOR_ARMOR_BOOTS.get());
 				tabData.accept(Universe3090ModItems.DIAMOND_LAPIS_BRONYA_CPRE.get());
 				tabData.accept(Universe3090ModItems.DIAMONDLAPISTOOLSWORD.get());
-				tabData.accept(Universe3090ModItems.MT_WTESTANIM.get());
 				tabData.accept(Universe3090ModItems.ELISSAARMOR_HELMET.get());
 				tabData.accept(Universe3090ModItems.ELISSAARMOR_CHESTPLATE.get());
 				tabData.accept(Universe3090ModItems.ELISSAARMOR_LEGGINGS.get());
@@ -145,13 +146,10 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.ELECTROMAGICCORE.get());
 				tabData.accept(Universe3090ModItems.FIRSTBRONYACOMPONENT.get());
 				tabData.accept(Universe3090ModBlocks.DARKIRONBLOCK.get().asItem());
-				tabData.accept(Universe3090ModItems.MTWMODEORBITAL.get());
 				tabData.accept(Universe3090ModItems.RED_BRONYA_CORE.get());
 				tabData.accept(Universe3090ModItems.RED_PLASTINE.get());
 				tabData.accept(Universe3090ModBlocks.REDEMPTYCORE.get().asItem());
 				tabData.accept(Universe3090ModBlocks.REDCORE.get().asItem());
-				tabData.accept(Universe3090ModBlocks.BERILLIUM.get().asItem());
-				tabData.accept(Universe3090ModItems.BERILLIUM_CRYSTAL.get());
 				tabData.accept(Universe3090ModItems.KOLBA.get());
 				tabData.accept(Universe3090ModItems.EXTRACTLBSOUL.get());
 				tabData.accept(Universe3090ModItems.EXTRACTREDSOUL.get());
@@ -162,8 +160,6 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.EXTRACTBLUESOUL.get());
 				tabData.accept(Universe3090ModItems.COMBINED_ALLOY.get());
 				tabData.accept(Universe3090ModBlocks.SMELTERBLOCK.get().asItem());
-				tabData.accept(Universe3090ModItems.MIRROR_COMPONENTBERILLIUM.get());
-				tabData.accept(Universe3090ModBlocks.BERILLIUMDEEPSLATE.get().asItem());
 				tabData.accept(Universe3090ModItems.WILL.get());
 				tabData.accept(Universe3090ModItems.LIFEKOLBA.get());
 				tabData.accept(Universe3090ModItems.SOULCOMBINE.get());
@@ -172,6 +168,10 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.CHARASKNIFE.get());
 				tabData.accept(Universe3090ModItems.ADARKPLACESOUND.get());
 				tabData.accept(Universe3090ModItems.DISSASEBMLYREQUIRED.get());
+				tabData.accept(Universe3090ModBlocks.BERILLIUMDEEPSLATE.get().asItem());
+				tabData.accept(Universe3090ModBlocks.BERILLIUM.get().asItem());
+				tabData.accept(Universe3090ModItems.BERILLIUM_CRYSTAL.get());
+				tabData.accept(Universe3090ModItems.MIRROR_COMPONENTBERILLIUM.get());
 				tabData.accept(Universe3090ModItems.BERYLSTONECHUNK.get());
 				tabData.accept(Universe3090ModBlocks.REDEMERALDCRYSTAL.get().asItem());
 				tabData.accept(Universe3090ModBlocks.BLUEEMERALDCRYSTAL.get().asItem());
@@ -181,7 +181,6 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModBlocks.WHITEEMERALDCRYSTAL.get().asItem());
 				tabData.accept(Universe3090ModBlocks.LIGHTBLUEEMERALDCRYSTAL.get().asItem());
 				tabData.accept(Universe3090ModItems.RESONATE_CRYSTAL.get());
-				tabData.accept(Universe3090ModItems.EMERALDSPICKAXE.get());
 				tabData.accept(Universe3090ModBlocks.MW_RECEIVER_BLOCK.get().asItem());
 				tabData.accept(Universe3090ModBlocks.MW_EMITTER_BLOCK.get().asItem());
 				tabData.accept(Universe3090ModItems.IRON_SPHERE.get());
@@ -195,6 +194,10 @@ public class Universe3090ModTabs {
 				tabData.accept(Universe3090ModItems.ACTIVE_REDSTONE_BUCKET.get());
 				tabData.accept(Universe3090ModBlocks.CHARGER.get().asItem());
 				tabData.accept(Universe3090ModItems.ACTIVE_REDSTONE_ITEM.get());
+				tabData.accept(Universe3090ModItems.EMERALDSWORD.get());
+				tabData.accept(Universe3090ModItems.EMERALDSPICKAXE.get());
+				tabData.accept(Universe3090ModItems.EMERALD_SHOVEL.get());
+				tabData.accept(Universe3090ModItems.EMERALD_AXE.get());
 			})
 
 					.build());

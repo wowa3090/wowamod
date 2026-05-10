@@ -36,9 +36,9 @@ public class Universe3090ModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> SOLARPANELGENERATORW = register("solarpanelgeneratorw", Universe3090ModBlocks.SOLARPANELGENERATORW, SolarpanelgeneratorwBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> CABLE_N = register("cable_n", Universe3090ModBlocks.CABLE_N, CableNBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> SMELTERBLOCK = register("smelterblock", Universe3090ModBlocks.SMELTERBLOCK, SmelterblockBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> CABLE_E = register("cable_e", Universe3090ModBlocks.CABLE_E, CableEBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> MW_RECEIVER_BLOCK = register("mw_receiver_block", Universe3090ModBlocks.MW_RECEIVER_BLOCK, MWReceiverBlockBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> MW_EMITTER_BLOCK = register("mw_emitter_block", Universe3090ModBlocks.MW_EMITTER_BLOCK, MWEmitterBlockBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> CABLE_E = register("cable_e", Universe3090ModBlocks.CABLE_E, CableEBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));
