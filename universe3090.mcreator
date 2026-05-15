@@ -7713,6 +7713,7 @@
       "registry_name": "charger",
       "metadata": {
         "files": [
+          "src/main/java/net/wowamod/block/entity/ChargerBlockEntity.java",
           "src/main/resources/assets/universe3090/models/block/charger.json",
           "src/main/java/net/wowamod/block/ChargerBlock.java",
           "src/main/resources/assets/universe3090/blockstates/charger.json",

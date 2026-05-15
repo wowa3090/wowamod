@@ -1,13 +1,9 @@
 {
-  "parent": "block/cube",
+  "parent": "universe3090:custom/charger",
   "textures": {
-    "down": "universe3090:block/uncommondarkcase",
-    "up": "universe3090:block/crafterbronitop",
-    "north": "universe3090:block/redcore",
-    "east": "universe3090:block/redcore",
-    "south": "universe3090:block/redcore",
-    "west": "universe3090:block/redcore",
-    "particle": "universe3090:block/uncommondarkcase"
+    "all": "universe3090:block/texture_block_charger",
+    "particle": "universe3090:block/texture_block_charger",
+    "0": "universe3090:block/texture_block_charger"
   },
   "render_type": "solid"
 }

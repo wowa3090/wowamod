@@ -13,6 +13,7 @@ import net.wowamod.block.entity.InterfaceconstructorBlockEntity;
 import net.wowamod.block.entity.ExtractorBlockEntity;
 import net.wowamod.block.entity.EmeraldCombinerBlockEntity;
 import net.wowamod.block.entity.CrafterbroniBlockEntity;
+import net.wowamod.block.entity.ChargerBlockEntity;
 import net.wowamod.block.entity.CableNBlockEntity;
 import net.wowamod.block.entity.CableEBlockEntity;
 import net.wowamod.block.entity.BigBatterywBlockEntity;
@@ -38,6 +39,7 @@ public class Universe3090ModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> SMELTERBLOCK = register("smelterblock", Universe3090ModBlocks.SMELTERBLOCK, SmelterblockBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> MW_RECEIVER_BLOCK = register("mw_receiver_block", Universe3090ModBlocks.MW_RECEIVER_BLOCK, MWReceiverBlockBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> MW_EMITTER_BLOCK = register("mw_emitter_block", Universe3090ModBlocks.MW_EMITTER_BLOCK, MWEmitterBlockBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> CHARGER = register("charger", Universe3090ModBlocks.CHARGER, ChargerBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> CABLE_E = register("cable_e", Universe3090ModBlocks.CABLE_E, CableEBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
