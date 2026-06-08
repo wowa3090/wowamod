@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:derjatili"
+    },
+    "b": {
+      "item": "universe3090:energy_module"
+    },
+    "c": {
+      "item": "universe3090:the_core_of_the_sphere_redstone"
+    },
+    "d": {
+      "item": "universe3090:uncommon_dark_case"
+    }
+  },
+  "result": {
+    "item": "universe3090:charger",
+    "count": 1
+  }
+}

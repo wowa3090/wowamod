@@ -7176,7 +7176,7 @@
       "type": "tool",
       "sortid": 169,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "emeraldspickaxe",
       "metadata": {
         "files": [
@@ -7709,7 +7709,7 @@
       "type": "block",
       "sortid": 166,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "charger",
       "metadata": {
         "files": [
@@ -7740,7 +7740,7 @@
       "type": "tool",
       "sortid": 168,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "emeraldsword",
       "metadata": {
         "files": [
@@ -7754,7 +7754,7 @@
       "type": "tool",
       "sortid": 170,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "emerald_shovel",
       "metadata": {
         "files": [
@@ -7768,7 +7768,7 @@
       "type": "tool",
       "sortid": 171,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "emerald_axe",
       "metadata": {
         "files": [
@@ -7813,6 +7813,32 @@
       "metadata": {
         "files": [
           "src/main/resources/data/universe3090/recipes/emerald_shovel_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ChargerRecipe",
+      "type": "recipe",
+      "sortid": 496,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charger_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/universe3090/recipes/charger_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ChargerBlockEntityRenderer",
+      "type": "code",
+      "sortid": 497,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "charger_block_entity_renderer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/wowamod/ChargerBlockEntityRenderer.java"
         ]
       }
     }
