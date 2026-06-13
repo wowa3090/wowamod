@@ -3,7 +3,6 @@ package net.wowamod.handlers;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.resources.sounds.AbstractTickableSoundInstance;
@@ -20,14 +19,15 @@ import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.item.ItemStack; 
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.InputEvent;
 import net.minecraftforge.client.event.RenderLevelStageEvent;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.wowamod.init.Universe3090ModItems;
-// import net.wowamod.init.Universe3090ModSounds; // <-- Раскомментируйте, когда создадите свои звуки
+import net.wowamod.item.MTWtestanimItem; 
+import net.minecraftforge.common.capabilities.ForgeCapabilities; 
 import net.wowamod.network.DealLaserDamagePacket;
 import net.wowamod.network.PacketHandler;
 import org.joml.Matrix4f;
@@ -51,38 +51,7 @@ public class LaserRayHandler {
     private static final float LASER_WIDTH = 0.1F;
     public static final float MAX_DAMAGE_AMOUNT = 15.0F;
 
-    @SubscribeEvent
-    public static void onMouseInput(InputEvent.MouseButton.Pre event) {
-        if (event.getButton() != 1) return;
-
-        Minecraft mc = Minecraft.getInstance();
-        LocalPlayer player = mc.player;
-        if (player == null || mc.screen != null) return;
-
-        boolean mainHandHasItem = player.getMainHandItem().is(Universe3090ModItems.MT_WTESTANIM.get());
-        boolean offHandHasItem = player.getOffhandItem().is(Universe3090ModItems.MT_WTESTANIM.get());
-
-        if (mainHandHasItem || offHandHasItem) {
-            InteractionHand hand = mainHandHasItem ? InteractionHand.MAIN_HAND : InteractionHand.OFF_HAND;
-            if (event.getAction() == 1) { // Press
-                if (!laserActive) { // Предотвращаем повторный вызов
-                    laserActive = true;
-                    player.startUsingItem(hand);
-                }
-            } else if (event.getAction() == 0) { // Release
-                if (laserActive) {
-                    laserActive = false;
-                    player.stopUsingItem();
-                }
-            }
-            event.setCanceled(true);
-        } else {
-            if (laserActive) {
-                laserActive = false;
-                player.stopUsingItem();
-            }
-        }
-    }
+    // МЕТОД onMouseInput УДАЛЕН. Майнкрафт теперь нативно обрабатывает клики и не ломает интерфейсы.
 
     @SubscribeEvent
     public static void onClientTick(TickEvent.ClientTickEvent event) {
@@ -90,14 +59,22 @@ public class LaserRayHandler {
             Minecraft mc = Minecraft.getInstance();
             if (mc.player == null) return;
 
-            // --- ИСПРАВЛЕННАЯ ЛОГИКА ---
-            // Добавляем защитную проверку: если лазер должен быть активен, но игрок сменил предмет, выключаем.
-            if (laserActive) {
-                 boolean hasItem = mc.player.getMainHandItem().is(Universe3090ModItems.MT_WTESTANIM.get()) ||
-                                   mc.player.getOffhandItem().is(Universe3090ModItems.MT_WTESTANIM.get());
-                if (!hasItem) {
-                    laserActive = false;
-                    // stopUsingItem() будет вызван автоматически, так как предмет сменился
+            // Считываем предмет, который игрок активно удерживает в данный момент
+            ItemStack stack = mc.player.getUseItem();
+            boolean isHoldingLaser = stack.is(Universe3090ModItems.MT_WTESTANIM.get());
+            
+            // Проверяем наличие энергии у удерживаемого предмета на клиенте
+            boolean hasEnergy = stack.getCapability(ForgeCapabilities.ENERGY)
+                    .map(energy -> energy.getEnergyStored() >= MTWtestanimItem.ENERGY_PER_TICK)
+                    .orElse(false);
+
+            if (isHoldingLaser && hasEnergy) {
+                laserActive = true;
+            } else {
+                laserActive = false;
+                // На всякий случай останавливаем ванильный зажим, если кончилась батарея
+                if (isHoldingLaser) {
+                    mc.player.stopUsingItem();
                 }
             }
             
@@ -105,7 +82,6 @@ public class LaserRayHandler {
             prevLaserStart = laserStart;
             prevLaserEnd = laserEnd;
 
-            // Убрана проблемная проверка isStillUsing, которая вызывала баг
             if (laserActive || laserIntensity > 0.01f) {
                 updateLaserState(mc.player);
             }
@@ -252,7 +228,6 @@ public class LaserRayHandler {
 
         @Override
         public void tick() {
-            // ИСПРАВЛЕНО: Условие остановки звука теперь более простое и надежное
             if (!laserActive || !player.isAlive()) {
                 this.stop();
                 return;

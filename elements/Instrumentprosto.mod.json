@@ -2,12 +2,12 @@
   "_fv": 57,
   "_type": "item",
   "definition": {
-    "renderType": 1,
-    "texture": "instrument",
-    "customModelName": "m.t.w:default",
+    "renderType": 0,
+    "texture": "energy_scanner",
+    "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "М.Т.В",
+    "name": "Energy Scanner",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Wowamodvkladka"

@@ -21,22 +21,22 @@
         "value": "CUSTOM:Derjatili"
       },
       {
-        "value": "CUSTOM:EnergyModule"
-      },
-      {
-        "value": "CUSTOM:TheCoreOfTheSphereRedstone"
+        "value": "CUSTOM:Redstone9x"
       },
       {
         "value": "CUSTOM:EnergyModule"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Redstone9x"
+      },
+      {
+        "value": "CUSTOM:Stabilizer"
       },
       {
         "value": "CUSTOM:UncommonDarkCase"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Stabilizer"
       }
     ],
     "recipeReturnStack": {

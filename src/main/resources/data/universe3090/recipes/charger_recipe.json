@@ -4,19 +4,22 @@
   "pattern": [
     "a a",
     "bcb",
-    " d "
+    "ded"
   ],
   "key": {
     "a": {
       "item": "universe3090:derjatili"
     },
     "b": {
-      "item": "universe3090:energy_module"
+      "item": "universe3090:redstone_9x"
     },
     "c": {
-      "item": "universe3090:the_core_of_the_sphere_redstone"
+      "item": "universe3090:energy_module"
     },
     "d": {
+      "item": "universe3090:stabilizer"
+    },
+    "e": {
       "item": "universe3090:uncommon_dark_case"
     }
   },

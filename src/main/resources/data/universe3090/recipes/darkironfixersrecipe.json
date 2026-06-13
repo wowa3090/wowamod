@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    "aa "
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:darkironplastine"
+    },
+    "b": {
+      "item": "universe3090:derjatili"
+    }
+  },
+  "result": {
+    "item": "universe3090:darkironfixers",
+    "count": 1
+  }
+}

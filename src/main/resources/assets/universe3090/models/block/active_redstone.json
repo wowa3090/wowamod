@@ -1,5 +1,5 @@
 {
   "textures": {
-    "particle": "universe3090:block/redstone_compressed"
+    "particle": "universe3090:block/redstone_active_fluid"
   }
 }

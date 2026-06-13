@@ -2,28 +2,28 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "aba",
-    "cde",
-    "afa"
+    "abc",
+    "def",
+    "abc"
   ],
   "key": {
     "a": {
       "item": "universe3090:blackironingot"
     },
     "b": {
-      "item": "universe3090:ekranchik"
+      "item": "universe3090:mirror_componentberillium"
     },
     "c": {
-      "item": "universe3090:wiresprovoda"
+      "item": "universe3090:darkironfixers"
     },
     "d": {
-      "item": "universe3090:rainbowemerald"
+      "item": "universe3090:multitoolcomponent"
     },
     "e": {
-      "item": "universe3090:aaa_glass"
+      "item": "universe3090:the_core_of_the_sphere"
     },
     "f": {
-      "item": "universe3090:etheriumdark"
+      "item": "universe3090:redemerald"
     }
   },
   "result": {

@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Batareyka"
+        "value": ""
       },
       {
-        "value": "Items.WATER_BUCKET"
+        "value": "CUSTOM:Darkironplastine"
       },
       {
-        "value": "CUSTOM:Wiresprovoda"
+        "value": ""
       },
       {
-        "value": "Items.COPPER_INGOT"
+        "value": "CUSTOM:Darkironplastine"
       },
       {
-        "value": "CUSTOM:Posudina"
+        "value": "CUSTOM:Derjatili"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:Darkironplastine"
       },
       {
-        "value": "CUSTOM:Blackironingot"
+        "value": "CUSTOM:Darkironplastine"
       },
       {
-        "value": "Blocks.LEVER"
+        "value": "CUSTOM:Darkironplastine"
       },
       {
-        "value": "CUSTOM:Blackironingot"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Karmannielectrolizer"
+      "value": "CUSTOM:Darkironfixers"
     },
-    "name": "karmannielectrolizerrecipe",
+    "name": "darkironfixersrecipe",
     "namespace": "mod"
   }
 }

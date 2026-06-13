@@ -28,15 +28,15 @@ import net.minecraft.world.level.block.Block;
 
 public class Universe3090ModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, Universe3090Mod.MODID);
-	public static final RegistryObject<BlockEntityType<?>> CRAFTERBRONI = register("crafterbroni", Universe3090ModBlocks.CRAFTERBRONI, CrafterbroniBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> EMERALD_COMBINER = register("emerald_combiner", Universe3090ModBlocks.EMERALD_COMBINER, EmeraldCombinerBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> BIG_BATTERYW = register("big_batteryw", Universe3090ModBlocks.BIG_BATTERYW, BigBatterywBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> PORTCONSTRUCTOR = register("portconstructor", Universe3090ModBlocks.PORTCONSTRUCTOR, PortconstructorBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> INTERFACECONSTRUCTOR = register("interfaceconstructor", Universe3090ModBlocks.INTERFACECONSTRUCTOR, InterfaceconstructorBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> EXTRACTOR = register("extractor", Universe3090ModBlocks.EXTRACTOR, ExtractorBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> SOLARPANELGENERATORW = register("solarpanelgeneratorw", Universe3090ModBlocks.SOLARPANELGENERATORW, SolarpanelgeneratorwBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> CABLE_N = register("cable_n", Universe3090ModBlocks.CABLE_N, CableNBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> CRAFTERBRONI = register("crafterbroni", Universe3090ModBlocks.CRAFTERBRONI, CrafterbroniBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> BIG_BATTERYW = register("big_batteryw", Universe3090ModBlocks.BIG_BATTERYW, BigBatterywBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> EMERALD_COMBINER = register("emerald_combiner", Universe3090ModBlocks.EMERALD_COMBINER, EmeraldCombinerBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> EXTRACTOR = register("extractor", Universe3090ModBlocks.EXTRACTOR, ExtractorBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> SMELTERBLOCK = register("smelterblock", Universe3090ModBlocks.SMELTERBLOCK, SmelterblockBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> SOLARPANELGENERATORW = register("solarpanelgeneratorw", Universe3090ModBlocks.SOLARPANELGENERATORW, SolarpanelgeneratorwBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> MW_RECEIVER_BLOCK = register("mw_receiver_block", Universe3090ModBlocks.MW_RECEIVER_BLOCK, MWReceiverBlockBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> MW_EMITTER_BLOCK = register("mw_emitter_block", Universe3090ModBlocks.MW_EMITTER_BLOCK, MWEmitterBlockBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> CHARGER = register("charger", Universe3090ModBlocks.CHARGER, ChargerBlockEntity::new);

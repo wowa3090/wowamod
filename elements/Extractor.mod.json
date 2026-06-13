@@ -116,14 +116,20 @@
     "energyCapacity": 100000,
     "energyMaxReceive": 256,
     "energyMaxExtract": 0,
-    "isFluidTank": false,
-    "fluidCapacity": 8000,
+    "isFluidTank": true,
+    "fluidCapacity": 16000,
     "fluidRestrictions": [
       {
         "value": "CUSTOM:Extractgolubaysoul"
       },
       {
         "value": "WATER"
+      },
+      {
+        "value": "CUSTOM:Extractredsoulfluid"
+      },
+      {
+        "value": "CUSTOM:ExtractGreenSoulFluid"
       }
     ],
     "onBlockAdded": {

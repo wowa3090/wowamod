@@ -2,28 +2,25 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "abc",
-    "def",
-    "abc"
+    "aba",
+    "cde",
+    "aaa"
   ],
   "key": {
     "a": {
       "item": "universe3090:darkironplastine"
     },
     "b": {
-      "item": "universe3090:alphaelement"
+      "item": "universe3090:ekranchik"
     },
     "c": {
-      "item": "universe3090:blackironingot"
+      "item": "universe3090:energy_module"
     },
     "d": {
-      "item": "universe3090:multitoolcomponent"
+      "item": "universe3090:redstonecommandblock"
     },
     "e": {
-      "item": "universe3090:aluminiumdiamondbase"
-    },
-    "f": {
-      "item": "universe3090:redemerald"
+      "item": "universe3090:wiresprovoda"
     }
   },
   "result": {

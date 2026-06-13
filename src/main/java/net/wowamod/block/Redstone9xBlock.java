@@ -18,17 +18,18 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.ChatFormatting;
+
 import java.util.List;
 import java.util.Collections;
 
 public class Redstone9xBlock extends Block {
 	public Redstone9xBlock() {
 		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(1.5f, 10f).lightLevel(s -> 2).requiresCorrectToolForDrops());
-	}
-
-	@Override
-	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
 	}
 
 	@Override
@@ -64,5 +65,20 @@ public class Redstone9xBlock extends Block {
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(this, 1));
+	}
+	
+	@Override
+	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
+	    super.appendHoverText(itemstack, world, list, flag);
+	    
+	    int charge = itemstack.hasTag() ? itemstack.getTag().getInt("Charge") : 0;
+	    
+	    if (charge == 0) {
+	        list.add(Component.literal("Статус: Не заряжен").withStyle(ChatFormatting.RED));
+	    } else {
+	        int percent = (charge * 100) / 50000;
+	        list.add(Component.literal("Статус: В процессе (" + percent + "%)").withStyle(ChatFormatting.YELLOW));
+	        list.add(Component.literal("Заряд: " + charge + " / 50000 FE").withStyle(ChatFormatting.GRAY));
+	    }
 	}
 }

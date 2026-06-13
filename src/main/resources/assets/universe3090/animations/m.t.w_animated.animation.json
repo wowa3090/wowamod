@@ -2,9 +2,6 @@
 	"format_version": "1.8.0",
 	"animations": {
 		"animation.M.T.W_animated.idle": {
-			"animation_length": 0.0417
-		},
-		"animation.M.T.W_animated.active": {
 			"animation_length": 1,
 			"bones": {
 				"fixers": {
@@ -16,11 +13,14 @@
 							"vector": [0, 0, 0]
 						},
 						"1.0": {
-							"vector": [0, -360, 0]
+							"vector": [0, 360, 0]
 						}
 					}
 				}
 			}
+		},
+		"animation.M.T.W_animated.idle2": {
+			"loop": true
 		}
 	},
 	"geckolib_format_version": 2

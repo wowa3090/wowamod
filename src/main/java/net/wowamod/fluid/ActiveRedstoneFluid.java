@@ -15,7 +15,7 @@ import net.minecraft.world.level.block.LiquidBlock;
 
 public abstract class ActiveRedstoneFluid extends ForgeFlowingFluid {
 	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> Universe3090ModFluidTypes.ACTIVE_REDSTONE_TYPE.get(), () -> Universe3090ModFluids.ACTIVE_REDSTONE.get(),
-			() -> Universe3090ModFluids.FLOWING_ACTIVE_REDSTONE.get()).explosionResistance(100f).bucket(() -> Universe3090ModItems.ACTIVE_REDSTONE_BUCKET.get()).block(() -> (LiquidBlock) Universe3090ModBlocks.ACTIVE_REDSTONE.get());
+			() -> Universe3090ModFluids.FLOWING_ACTIVE_REDSTONE.get()).explosionResistance(100f).tickRate(10).bucket(() -> Universe3090ModItems.ACTIVE_REDSTONE_BUCKET.get()).block(() -> (LiquidBlock) Universe3090ModBlocks.ACTIVE_REDSTONE.get());
 
 	private ActiveRedstoneFluid() {
 		super(PROPERTIES);
