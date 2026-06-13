@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Darkironfixers"
+        "value": "CUSTOM:Darkironplastine"
       },
       {
-        "value": ""
+        "value": "CUSTOM:MirrorComponentberillium"
       },
       {
-        "value": "CUSTOM:Darkironfixers"
+        "value": "CUSTOM:Darkironplastine"
       },
       {
-        "value": "CUSTOM:Redstone9x"
+        "value": "CUSTOM:Pipes"
       },
       {
-        "value": "CUSTOM:EnergyModule"
+        "value": "CUSTOM:AaaGlass"
       },
       {
-        "value": "CUSTOM:Redstone9x"
+        "value": "CUSTOM:Wiresprovoda"
       },
       {
-        "value": "CUSTOM:Stabilizer"
+        "value": "CUSTOM:Darkironplastine"
       },
       {
-        "value": "CUSTOM:UncommonDarkCase"
+        "value": "CUSTOM:MirrorComponentberillium"
       },
       {
-        "value": "CUSTOM:Stabilizer"
+        "value": "CUSTOM:Darkironplastine"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Charger"
+      "value": "CUSTOM:LaserLensModule"
     },
-    "name": "charger_recipe",
+    "name": "laser_lens_module_recipe",
     "namespace": "mod"
   }
 }

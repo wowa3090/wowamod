@@ -73,19 +73,19 @@ import net.minecraft.world.level.block.Block;
 
 public class Universe3090ModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, Universe3090Mod.MODID);
+	public static final RegistryObject<Block> TESTPLANT = REGISTRY.register("testplant", () -> new TestplantBlock());
+	public static final RegistryObject<Block> DARK_STRK_BLK = REGISTRY.register("dark_strk_blk", () -> new DarkStrkBLKBlock());
 	public static final RegistryObject<Block> DARKGRASS = REGISTRY.register("darkgrass", () -> new DarkgrassBlock());
 	public static final RegistryObject<Block> DARKGRASSBLOCKNIZ = REGISTRY.register("darkgrassblockniz", () -> new DarkgrassblocknizBlock());
 	public static final RegistryObject<Block> DARK_BIOME_ORE = REGISTRY.register("dark_biome_ore", () -> new DarkBiomeOreBlock());
 	public static final RegistryObject<Block> ALUMINIUM_ORE_WOWA = REGISTRY.register("aluminium_ore_wowa", () -> new AluminiumBlock());
 	public static final RegistryObject<Block> POGRANICHNIK = REGISTRY.register("pogranichnik", () -> new PogranichnikBlock());
-	public static final RegistryObject<Block> DARK_STRK_BLK = REGISTRY.register("dark_strk_blk", () -> new DarkStrkBLKBlock());
 	public static final RegistryObject<Block> REDSTONECOMMANDBLOCK = REGISTRY.register("redstonecommandblock", () -> new RedstonecommandblockBlock());
 	public static final RegistryObject<Block> MAGICIRONBLOCK = REGISTRY.register("magicironblock", () -> new MagicironblockBlock());
 	public static final RegistryObject<Block> PORTCONSTRUCTOR = REGISTRY.register("portconstructor", () -> new PortconstructorBlock());
 	public static final RegistryObject<Block> INTERFACECONSTRUCTOR = REGISTRY.register("interfaceconstructor", () -> new InterfaceconstructorBlock());
 	public static final RegistryObject<Block> REDSTONEPORT = REGISTRY.register("redstoneport", () -> new RedstoneportBlock());
 	public static final RegistryObject<Block> DARK_IRON_MACHINE_CASING = REGISTRY.register("dark_iron_machine_casing", () -> new DarkIronMachineCasingBlock());
-	public static final RegistryObject<Block> TESTPLANT = REGISTRY.register("testplant", () -> new TestplantBlock());
 	public static final RegistryObject<Block> CABLE_N = REGISTRY.register("cable_n", () -> new CableNBlock());
 	public static final RegistryObject<Block> DIAMONDLAPISBLOCK = REGISTRY.register("diamondlapisblock", () -> new DiamondlapisblockBlock());
 	public static final RegistryObject<Block> DARKIRONBLOCK = REGISTRY.register("darkironblock", () -> new DarkironblockBlock());
@@ -101,6 +101,7 @@ public class Universe3090ModBlocks {
 	public static final RegistryObject<Block> MW_RECEIVER_BLOCK = REGISTRY.register("mw_receiver_block", () -> new MWReceiverBlockBlock());
 	public static final RegistryObject<Block> MW_EMITTER_BLOCK = REGISTRY.register("mw_emitter_block", () -> new MWEmitterBlockBlock());
 	public static final RegistryObject<Block> REDSTONE_9X = REGISTRY.register("redstone_9x", () -> new Redstone9xBlock());
+	public static final RegistryObject<Block> REDSTONE_9X_ENERGIZED = REGISTRY.register("redstone_9x_energized", () -> new Redstone9xEnergizedBlock());
 	public static final RegistryObject<Block> BERILLIUMDEEPSLATE = REGISTRY.register("berilliumdeepslate", () -> new BerilliumdeepslateBlock());
 	public static final RegistryObject<Block> BERILLIUM = REGISTRY.register("berillium", () -> new BerilliumBlock());
 	public static final RegistryObject<Block> REDEMERALDCRYSTAL = REGISTRY.register("redemeraldcrystal", () -> new RedemeraldcrystalBlock());
@@ -127,7 +128,6 @@ public class Universe3090ModBlocks {
 	public static final RegistryObject<Block> TRUEROSE = REGISTRY.register("truerose", () -> new TrueroseBlock());
 	public static final RegistryObject<Block> BLACKWALLSMYPLACESLAB = REGISTRY.register("blackwallsmyplaceslab", () -> new BlackwallsmyplaceslabBlock());
 	public static final RegistryObject<Block> CABLE_E = REGISTRY.register("cable_e", () -> new CableEBlock());
-	public static final RegistryObject<Block> REDSTONE_9X_ENERGIZED = REGISTRY.register("redstone_9x_energized", () -> new Redstone9xEnergizedBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "universe3090:darkironplastine"
+    },
+    "b": {
+      "item": "universe3090:mirror_componentberillium"
+    },
+    "c": {
+      "item": "universe3090:pipes"
+    },
+    "d": {
+      "item": "universe3090:aaa_glass"
+    },
+    "e": {
+      "item": "universe3090:wiresprovoda"
+    }
+  },
+  "result": {
+    "item": "universe3090:laser_lens_module",
+    "count": 1
+  }
+}
